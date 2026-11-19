@@ -314,11 +314,12 @@ async function loadOfficialSources(){
     euPortalRows.forEach(x=>add(x.country_code,"eu"));
     unRows.forEach(x=>add(x.country_code,"historical"));
     const countryNameFor=code=>{try{return new Intl.DisplayNames([hu?"hu":"en"],{type:"region"}).of(code)||code}catch(_){return code}};
+    const countryNameEnglish=code=>{try{return new Intl.DisplayNames(["en"],{type:"region"}).of(code)||code}catch(_){return code}};
     const registryByCountry=new Map();
     sources.forEach(x=>{
      const text=String(x.coverage||"")+" "+String(x.id||"");
      for(const code of byCode.keys()){
-      const name=countryNameFor(code);
+      const name=countryNameEnglish(code);
       if(text.toLowerCase().includes(name.toLowerCase())||String(x.id||"").toLowerCase().startsWith(code.toLowerCase()+"-")){
        const old=registryByCountry.get(code)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(code,old);
       }
