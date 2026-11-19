@@ -1302,6 +1302,17 @@
       "access": "Official public searchable catalogue; no public API confirmed",
       "status": "discovery-source",
       "notes": "The catalogue lists grants and provides filters and eligibility/application details. Do not treat every listed record as currently open; verify the specific grant page. No automated adapter is claimed."
+    },
+    {
+      "id": "fr-aides-territoires",
+      "name": "Aides-territoires — public aid finder",
+      "publisher": "French Government — ANCT / DGALN / France Mobilités",
+      "url": "https://aides-territoires.beta.gouv.fr/",
+      "coverage": "France; public financial and engineering support for local authorities and their partners",
+      "kind": "public-aid-catalogue",
+      "access": "Open public API; base URL https://aides-territoires.beta.gouv.fr/api; no OpenAPI documentation or published rate limit confirmed",
+      "status": "discovery-source",
+      "notes": "Official catalogue describes nearly 3,000 support schemes from more than 600 providers. Target users are primarily local authorities and their partners. API records can include provider, description, nature, geographic area, eligibility criteria and application link. Validate current API schema, licensing and individual programme status before building an automated importer."
     }
   ],
   "publication_requirements": [

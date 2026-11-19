@@ -10,9 +10,9 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
 - Tíz támogatási kategória: lakhatás, család, mezőgazdaság, vállalkozás, oktatás, egészségügy, energia, foglalkoztatás, szociális támogatás és közlekedés.
 - Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
-- 67 ország-specifikus hivatalos forráslink 46 országra. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
+- 69 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
-- Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok.
+- Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires nyílt API-jának automatizált feldolgozása külön fejlesztési feladat; a forrás jelenleg keresőlinkként szerepel.
 - A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants és Chile CORFO.
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
 - Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.

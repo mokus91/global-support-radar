@@ -954,6 +954,20 @@
       "description_hu": "Hivatalos brit támogatáskereső magánszemélyeknek, civil szervezeteknek és vállalkozásoknak. A találatoknál külön ellenőrizd a jogosultságot, a nyitvatartási időszakot és a beadási feltételeket.",
       "description_en": "Official UK government grant finder for individuals, voluntary organisations and businesses. Check eligibility, application windows and requirements on each grant page.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "fr-aides-territoires",
+      "country_code": "FR",
+      "country_en": "France",
+      "category": "business",
+      "name_hu": "Franciaország – Aides-territoires helyi támogatáskereső",
+      "name_en": "France — Aides-territoires local public aid finder",
+      "url": "https://aides-territoires.beta.gouv.fr/",
+      "publisher": "French Government — ANCT / DGALN / France Mobilités",
+      "kind": "public-aid-search-engine",
+      "description_hu": "Hivatalos francia kereső elsősorban önkormányzatoknak, helyi közintézményeknek és partnereiknek szóló pénzügyi és szakmai támogatásokhoz. Területi és jogosultsági szűrőket, valamint pályázati ügyintézési hivatkozásokat kínál; nem általános lakossági támogatáskereső.",
+      "description_en": "Official French finder primarily for financial and engineering support aimed at local authorities, public bodies and their partners. It offers geographic and eligibility filters and application links; it is not a general household-benefits finder.",
+      "verification_status": "official-domain-source"
     }
   ],
   "records_count": 67
