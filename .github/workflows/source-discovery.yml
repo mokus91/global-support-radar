@@ -12,6 +12,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: official-source-discovery
+  cancel-in-progress: false
+
 jobs:
   discover:
     runs-on: ubuntu-latest
@@ -32,11 +36,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/discovery-index.json data/eu-funding-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json
+          mkdir -p /tmp/gsr-discovery
+          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json /tmp/gsr-discovery/
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/gsr-discovery/*.json data/
+          git add data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh official source discovery index"
-            git pull --rebase origin main
-            git push
+            git push origin main
           else
             echo "No discovery changes."
           fi
