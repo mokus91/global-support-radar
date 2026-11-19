@@ -1,8 +1,13 @@
 {
-  "generated_at": "2026-11-19T00:00:00Z",
+  "generated_at": "2026-11-19T11:56:25.227847+00:00",
   "source_id": "eu-funding",
   "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-  "purpose": "Compact audit summary only. Curated official portal candidates are published separately in eu-open-calls-discovery.json. Raw API payloads are intentionally not committed because they can exceed GitHub file limits.",
+  "purpose": "Compact audit summary of the official API discovery run. The curated candidate feed is stored separately in eu-open-calls-discovery.json. Raw API payloads are intentionally not committed.",
   "verification_status": "unverified",
-  "note": "Will be refreshed by the next successful automated discovery run."
+  "pages_fetched": 20,
+  "records_received": 2000,
+  "total_results_reported": 19419,
+  "candidate_records": 72,
+  "expired_deadline_records_excluded": 1928,
+  "error": null
 }

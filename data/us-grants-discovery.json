@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T11:18:57.772833+00:00",
+  "generated_at": "2026-11-19T11:58:24.602359+00:00",
   "source_id": "us-grants-gov",
   "source_url": "https://www.grants.gov/",
   "api_url": "https://api.grants.gov/v1/api/search2",
@@ -19258,20 +19258,6 @@
       "verification_status": "unverified"
     },
     {
-      "id": "364213",
-      "title": "APEX Accelerator-Option Period for Existing Award Recipients",
-      "identifier": "DOW2027APEXACCELERATORCLOSED",
-      "agency": "DOD-AMC-ACCAPGADA",
-      "open_date": "11/04/2026",
-      "deadline": "07/12/2027",
-      "status": "posted",
-      "category_codes": [],
-      "official_url": "https://www.grants.gov/search-results-detail/364213",
-      "source_id": "us-grants-gov",
-      "record_type": "official-api-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
       "id": "363912",
       "title": "Advancing Global Health",
       "identifier": "DFOP0017890",
@@ -19379,6 +19365,20 @@
       "status": "posted",
       "category_codes": [],
       "official_url": "https://www.grants.gov/search-results-detail/363615",
+      "source_id": "us-grants-gov",
+      "record_type": "official-api-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "id": "364213",
+      "title": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "identifier": "DOW2027APEXACCELERATORCLOSED",
+      "agency": "DOD-AMC-ACCAPGADA",
+      "open_date": "11/04/2026",
+      "deadline": "07/12/2027",
+      "status": "posted",
+      "category_codes": [],
+      "official_url": "https://www.grants.gov/search-results-detail/364213",
       "source_id": "us-grants-gov",
       "record_type": "official-api-discovery-candidate",
       "verification_status": "unverified"
