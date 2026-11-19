@@ -216,8 +216,8 @@ def main():
     if 'url.pathname.endsWith(".json")' not in worker or 'url.pathname.includes("/data/")' not in worker:
         raise SystemExit("Service worker must never cache live JSON opportunity data")
 
-    opening_script_tags = len(re.findall(r"<script\\b", html, re.I))
-    closing_script_tags = len(re.findall(r"</script\\s*>", html, re.I))
+    opening_script_tags = len(re.findall(r"<script\b", html, re.I))
+    closing_script_tags = len(re.findall(r"</script\s*>", html, re.I))
     if opening_script_tags != closing_script_tags:
         raise SystemExit(
             f"HTML script tag count mismatch: {opening_script_tags} opening, {closing_script_tags} closing"
