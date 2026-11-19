@@ -41,3 +41,7 @@ Every future adapter must:
 ## Hungary: official discovery sources
 
 The source registry includes Hungarian official discovery portals for FAIR/Pályázatkereső, Pályázat.gov.hu, the KAP Strategic Plan, the National Cultural Fund (NKA), and the National Research, Development and Innovation Office (NKFIH). The FAIR help centre states that its call data is sourced from FAIR and refreshed daily. At present, no public machine-readable API/feed has been confirmed for these Hungarian portals in this project, so they are registered as discovery sources only; no crawler or scraper is assumed. The next integration step is to verify each portal's published access terms and any documented export/API before implementing an adapter. A portal listing is never sufficient to mark a programme open or a person eligible.
+
+## Hungarian open-data catalogue adapter
+
+`scripts/discover_hu_open_data.py` queries the National Public Data Portal's CKAN `package_search` endpoint for Hungarian support-related dataset metadata. The result is written to `data/hu-open-data-discovery.json` and committed by the daily workflow. This adapter discovers datasets only; it does not extract grant calls, infer eligibility, or mark a programme active. Every record remains `unverified` until the dataset and its original publisher are reviewed. The portal itself links to its CKAN API; the general CKAN Action API supports GET requests to `package_search`.
