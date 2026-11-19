@@ -112,6 +112,9 @@ def main():
     for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
+    for required in ("trustPolicy", "trustPolicyTitle", "Official source", "Open status", "Eligibility & amount", "nem garantál támogatást"):
+        if required not in html:
+            raise SystemExit(f"Trust and verification policy panel is missing: {required}")
 
     if "schema.org" not in html or "SearchAction" not in html:
         raise SystemExit("Structured website/search metadata is missing")
