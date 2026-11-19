@@ -20,7 +20,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Curated Hungarian household-support directory with eight official information entries, including direct GYES and GYET pages.
 - Browser-only Hungarian support guide: users can optionally select broad household circumstances to see which official benefit pages may be relevant. Answers are processed locally and are not sent to the server or stored. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 69 entries in the official source registry, with country/subject coverage notes.
+- 70 entries in the official source registry, with country/subject coverage notes.
 - Official European Commission directory of national EU-funding portals for all 27 EU Member States; the worldwide finder displays the selected country's portal, or all 27 when no country is selected. These are shared-management EU-fund portals, not a complete household-benefit catalogue.
 - Six additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
 - Country-specific European Commission/MISSOC social security guides for all 27 EU Member States, filtered by selected country and family/social/employment/healthcare categories.
@@ -32,6 +32,10 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - `data/eu-aid-award-transparency.json` — official EU and national registers of aid already awarded (not open applications).
 - Daily automated refresh scheduled for 04:17 UTC; manual GitHub Actions run is also configured.
 - Official source links are checked against allowed hostnames before being displayed.
+
+
+- Country-coded UN DESA national government portal directory for 193 UN Member States in `data/un-national-portals.json`. The frontend shows the selected country's direct portal lead. These are historical starting points only: UN DESA states that government website URLs were last assessed during April–August 2013, so current status must be verified.
+- `data/un-national-portals-seed.tsv` and `scripts/build_un_national_portals.py` maintain the country list and generate ISO-coded records; the daily source-discovery workflow rebuilds the JSON directory.
 
 ## Important coverage and verification limits
 
@@ -46,7 +50,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 ## Repository layout
 
 - `index.html` — responsive frontend and search/filter logic.
-- `data/source-registry.json` — official source directory (69 entries).
+- `data/source-registry.json` — official source directory (70 entries).
 - `data/europe-national-portals.json` — European Commission-listed national funding portals for all 27 EU Member States.
 - `data/global-support-directory.json` — worldwide official government portal and social-protection reference directories.
 - `data/hu-household-support.json` — curated Hungarian household-support information directory (not a live eligibility feed).
