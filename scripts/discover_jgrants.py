@@ -99,7 +99,6 @@ def main():
                     "official_url": item_url,
                     "application_url": item_url,
                     "source_language": "ja",
-                    "eligible_beneficiaries_original": item.get("target_area_search", ""),
                     "publisher": "Japan Digital Agency — JGrants",
                     "verification_status": "official_api_live_acceptance_candidate",
                     "status": "acceptance-open-api-filtered",
