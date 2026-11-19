@@ -113,7 +113,7 @@ def main():
             if not isinstance(feed, dict):
                 raise SystemExit(f"{label}: entry must be an object")
             filename = feed.get("file")
-            if not isinstance(filename, str) or not filename.endswith(".json") or "/" in filename or "\\\\" in filename:
+            if not isinstance(filename, str) or not filename.endswith(".json") or "/" in filename or "\\" in filename:
                 raise SystemExit(f"{label}: file must be a simple JSON filename")
             if filename in seen_files:
                 raise SystemExit(f"{label}: duplicate feed filename {filename!r}")
