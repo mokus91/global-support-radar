@@ -55,14 +55,14 @@ def main():
             records.append({"id":code,"country_code":"ES","title_original":title,"coofficial_title":d.get("descripcionLeng"),
               "publisher":"Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
               "granting_authority":" · ".join(x for x in [org.get("nivel1"),org.get("nivel2"),org.get("nivel3")] if x),
-              "regions":regions,"eligible_beneficiaries_original":beneficiaries,"purpose_original":d.get("descripcionFinalidad"),
-              "start_date":start,"deadline":end,"indefinite_open":indefinite,"amount_total":budget,
-              "currency":"EUR" if budget is not None else None,"categories":categories(d),
+              "regions":regions,"eligible_beneficiaries_original":beneficiaries,"eligibility_status":"beneficiary_types_listed_in_official_api" if beneficiaries else "not_specified_in_api","purpose_original":d.get("descripcionFinalidad"),
+              "start_date":start,"deadline":end,"indefinite_open":indefinite,"total_call_budget":budget,
+              "amount_currency":"EUR" if budget is not None else None,"amount_type":"total_call_budget_not_individual_award" if budget is not None else None,"amount_status":"published" if budget is not None else "not_published","categories":categories(d),
               "official_url":f"{PORTAL}/convocatoria/{code}","application_url":d.get("sedeElectronica"),
               "legal_bases_url":d.get("urlBasesReguladoras"),"status":"official-api-window-current",
-              "eligibility_verified":bool(beneficiaries),"amount_verified":budget is not None,"source_api":BASE,
+              "eligibility_verified":False,"amount_verified":False,"source_api":BASE,
               "note_hu":"Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-              "note_en":"The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."})
+              "note_en":"The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."})
         except Exception as e: errors.append({"id":code,"error":str(e)[:200]})
         time.sleep(0.2)
     out={"generated_at":datetime.now(timezone.utc).isoformat(),"country_code":"ES","source":BASE,
