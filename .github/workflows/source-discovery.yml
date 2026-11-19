@@ -22,11 +22,13 @@ jobs:
         run: python scripts/discover_eu_funding.py
       - name: Discover Hungarian open-data datasets
         run: python scripts/discover_hu_open_data.py
+      - name: Probe official Hungarian grant announcements feed
+        run: python scripts/discover_hu_palyazat_feed.py
       - name: Commit discovery indexes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/discovery-index.json data/eu-funding-discovery.json data/hu-open-data-discovery.json
+          git add data/discovery-index.json data/eu-funding-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh official source discovery index"
             git push
