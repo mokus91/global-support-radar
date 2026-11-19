@@ -1,0 +1,19 @@
+{
+  "name": "Global Support Radar — támogatáskereső",
+  "short_name": "Support Radar",
+  "description": "Hivatalos állami támogatások és pályázatok keresése ország és kategória szerint.",
+  "lang": "hu",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#101a2d",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
