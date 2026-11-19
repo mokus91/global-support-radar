@@ -1,0 +1,77 @@
+name: Update beta feedback statistics
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: beta-feedback-statistics
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Aggregate anonymous feedback statistics
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const all = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'all', per_page: 100
+            });
+            const feedback = all.filter(issue => {
+              if (issue.pull_request) return false;
+              const body = issue.body || '';
+              return issue.title.includes('[Beta feedback]') ||
+                body.includes('Feedback type:') ||
+                (issue.labels || []).some(label =>
+                  (typeof label === 'string' ? label : label.name) === 'user-feedback');
+            });
+            const categories = {
+              'Usability': 0,
+              'Broken function': 0,
+              'Data accuracy / missing data': 0,
+              'Feature idea': 0,
+              'Accessibility': 0,
+              'Other': 0
+            };
+            const ratings = {'1': 0, '2': 0, '3': 0, '4': 0, '5': 0, 'Unrated': 0};
+            for (const issue of feedback) {
+              const body = issue.body || '';
+              const type = body.match(/^Feedback type:\s*(.+)$/mi)?.[1]?.trim();
+              const rating = body.match(/^Rating:\s*([1-5])\s*$/mi)?.[1];
+              const normalized = (type || '').toLowerCase();
+              const category = Object.keys(categories).find(key =>
+                key.toLowerCase() === normalized) || 'Other';
+              categories[category]++;
+              ratings[rating || 'Unrated']++;
+            }
+            const stats = {
+              generated_at: new Date().toISOString(),
+              total_feedback: feedback.length,
+              open_feedback: feedback.filter(issue => issue.state === 'open').length,
+              closed_feedback: feedback.filter(issue => issue.state === 'closed').length,
+              categories,
+              ratings,
+              privacy: 'Aggregate counts only. No names, issue text, device data or personal details are published.'
+            };
+            const path = 'data/beta-feedback-stats.json';
+            let sha;
+            try {
+              const existing = await github.rest.repos.getContent({owner, repo, path});
+              sha = existing.data.sha;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+            await github.rest.repos.createOrUpdateFileContents({
+              owner, repo, path, message: 'Update anonymous beta feedback statistics',
+              content: Buffer.from(JSON.stringify(stats, null, 2) + '\n').toString('base64'),
+              ...(sha ? {sha} : {})
+            });
