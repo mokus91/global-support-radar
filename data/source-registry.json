@@ -741,6 +741,17 @@
       "access": "Official public webpage monitored daily; extracted records remain unverified leads",
       "status": "discovery-source",
       "notes": "Expired dated calls are excluded where a deadline is parsed. Planned announcements are labelled as not yet open. Every candidate requires confirmation on its original call page."
+    },
+    {
+      "id": "eu-national-category-discovery",
+      "name": "EU national funding portals — category link discovery",
+      "publisher": "European Commission national portal directory and national public authorities",
+      "url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en",
+      "coverage": "Agriculture, business, housing, energy, education, employment and transport links discovered on 27 EU national shared-management funding portals",
+      "kind": "automated-national-funding-link-discovery",
+      "access": "Daily automated same-host HTTPS link discovery; results remain unverified leads",
+      "status": "discovery-source",
+      "notes": "Discovered links are not confirmed open calls, eligibility decisions or complete national benefit catalogues. Verify every opportunity at its original official publisher."
     }
   ],
   "publication_requirements": [
