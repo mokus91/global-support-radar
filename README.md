@@ -20,7 +20,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Curated Hungarian household-support directory with eight official information entries, including direct GYES and GYET pages.
 - Browser-only Hungarian support guide: users can optionally select broad household circumstances to see which official benefit pages may be relevant. Answers are processed locally and are not sent to the server or stored. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 66 entries in the official source registry, with country/subject coverage notes.
+- 68 entries in the official source registry, with country/subject coverage notes.
 - Official European Commission directory of national EU-funding portals for all 27 EU Member States; the worldwide finder displays the selected country's portal, or all 27 when no country is selected. These are shared-management EU-fund portals, not a complete household-benefit catalogue.
 - Six additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
 - Country-specific European Commission/MISSOC social security guides for all 27 EU Member States, filtered by selected country and family/social/employment/healthcare categories.
@@ -46,13 +46,13 @@ The site does not submit applications, make eligibility decisions, collect sensi
 ## Repository layout
 
 - `index.html` — responsive frontend and search/filter logic.
-- `data/source-registry.json` — official source directory (66 entries).
+- `data/source-registry.json` — official source directory (68 entries).
 - `data/europe-national-portals.json` — European Commission-listed national funding portals for all 27 EU Member States.
 - `data/global-support-directory.json` — worldwide official government portal and social-protection reference directories.
 - `data/hu-household-support.json` — curated Hungarian household-support information directory (not a live eligibility feed).
 - Browser-only support guide in `index.html` — preliminary suggestions only; no personal answers are transmitted or saved.
 - `data/programme.schema.json` — normalized record schema and verification states.
-- `data/*-discovery.json` — generated source discovery records.
+- `data/*-discovery.json` — generated source discovery records, including daily EU CAP Network agriculture call leads in `data/eu-cap-network-discovery.json`.
 - `scripts/` — official API/feed adapters.
 - `.github/workflows/source-discovery.yml` — daily scheduled discovery and manual run.
 - `docs/architecture.md` — architecture and verification principles.
@@ -62,6 +62,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 | Source | Use | Important limitation |
 | --- | --- | --- |
 | EU Funding & Tenders | Calls and competitive opportunities | Candidate status must be checked on the official topic page |
+| EU CAP Network | Agriculture, forestry and rural innovation call leads | Daily page monitoring; every lead remains unverified until checked on the original call page |
 | Grants.gov | Posted and forecast US federal opportunities | Many are restricted to eligible organisations; forecast items are not open calls |
 | UKRI | Recent UKRI opportunity feed entries | Feed is not a complete listing and may omit deadlines |
 | CIHR | Canadian health-research RSS notices | Latest successful retrieval returned zero items; narrow health-research coverage only |
