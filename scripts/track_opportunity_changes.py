@@ -38,10 +38,13 @@ def key_for(row):
             return "id:" + str(value).strip().lower()
     url = row.get("official_url") or row.get("application_url") or row.get("url")
     title = row.get("title_original") or row.get("title") or row.get("title_en") or ""
-    deadline = row.get("deadline") or row.get("acceptance_end") or row.get("application_deadline") or ""
-    identity = "|".join((str(url or "").split("#")[0].rstrip("/"), str(title).strip().lower(), str(deadline)[:10]))
-    if not title and not url:
+    normalized_url = str(url or "").strip().split("#")[0].rstrip("/").lower()
+    normalized_title = " ".join(str(title).split()).casefold()
+    # Keep deadlines out of identity: a changed deadline must be detected as an update,
+    # not misreported as one removed record plus one new record.
+    if not normalized_title and not normalized_url:
         return None
+    identity = "|".join((normalized_url, normalized_title))
     return "fallback:" + hashlib.sha256(identity.encode("utf-8")).hexdigest()
 
 def signature(row):
