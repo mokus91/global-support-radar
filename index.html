@@ -221,8 +221,67 @@ async function loadOfficialFeed(file,boxId,statusId,sourceName,officialBase){
 async function loadGrantConnect(){const hu=lang==="hu";$("auGcTitle").textContent=hu?"Ausztrália – kormányzati támogatások":"Australia — government grants";$("auGcSub").textContent=hu?"A GrantConnect hivatalos RSS-közleményei. Minden rekord ellenőrizetlen jelölt.":"Official GrantConnect RSS notices. Every record is an unverified candidate.";await loadOfficialFeed("au-grantconnect-discovery.json","auGcList","auGcStatus","GRANTCONNECT","https://www.grants.gov.au/");}
 async function loadCihr(){const hu=lang==="hu";$("caCihrTitle").textContent=hu?"Kanada – egészségkutatási támogatások":"Canada — health research funding";$("caCihrSub").textContent=hu?"A Canadian Institutes of Health Research hivatalos RSS-közleményei. Nem teljes kanadai támogatáslista.":"Official Canadian Institutes of Health Research RSS notices. Not a complete Canadian grants list.";await loadOfficialFeed("ca-cihr-discovery.json","caCihrList","caCihrStatus","CIHR","https://cihr-irsc.gc.ca/e/193.html");}
 function render(){const t=translations[lang];const huCopy=lang==="hu";$("huLiveTitle").textContent=huCopy?"Magyarország – élő hivatalos pályázatkeresés":"Hungary — official live grant search";$("huLiveSub").textContent=huCopy?"A hivatalos portálon ellenőrizheted az aktuális felhívásokat és a beadási határidőket.":"Check current calls and application deadlines on the official portal.";$("huFairDesc").textContent=huCopy?"A FAIR adatai naponta frissülnek. A keresőben státusz, kedvezményezetti kör, program, régió és határidő szerint szűrhetsz. A Radar jelenleg nem importál automatikusan ellenőrzött pályázati rekordokat.":"FAIR data is refreshed daily. Filter by status, eligible applicants, programme, region and deadline. Radar does not currently import verified grant records automatically.";$("huPublicDesc").textContent=huCopy?"Korábbi támogatási kérelmekről, döntésekről, kedvezményezettekről és odaítélt közpénzekről ad tájékoztatást. Ez nem aktuális pályázati felhíváslista.":"Search historical applications, decisions, beneficiaries and awarded public funds. This is not a list of currently open calls.";$("huLiveCaveat").textContent=huCopy?"A Global Support Radar jelenleg hivatalos kiindulópontokat biztosít; nem állítja, hogy a FAIR felhívásait automatikusan begyűjti. A jogosultságot és a beadási feltételeket mindig az eredeti kiírásban ellenőrizd.":"Global Support Radar currently provides official starting points; it does not claim to collect FAIR calls automatically. Always verify eligibility and application rules in the original call.";$("lang").value=lang;["eyebrow","title","subtitle","browseTitle","browseSub","howTitle","howSub"].forEach(k=>$(k).textContent=t[k]);$("q").placeholder=t.placeholder;$("searchBtn").textContent=t.search;$("s1").textContent=t.s1;$("s2").textContent=t.s2;$("s3").textContent=t.s3;$("notice").innerHTML=t.notice;$("footnote").textContent=t.foot;["h1","h2","h3"].forEach((id,i)=>$(id).textContent=t.h[i]);["hd1","hd2","hd3"].forEach((id,i)=>$(id).textContent=t.hd[i]);$("filters").innerHTML=[t.all,...t.categories].map((c,i)=>'<button class="filter '+((i===0&&active===-1)||(i-1===active)?"active":"")+'" data-cat="'+(i-1)+'">'+c+'</button>').join("");document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{active=Number(b.dataset.cat);renderCards()});renderCards()}
-function renderCards(){const t=translations[lang],q=$("q").value.toLowerCase(),country=$("country").value;const rows=data.filter(d=>(active<0||d.cat===active)&&(country==="all"||d.country==="all"||d.country===country)&&((d.name[lang]+" "+d.desc[lang]+" "+t.categories[d.cat]).toLowerCase().includes(q)));$("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results");$("cards").innerHTML=rows.length?rows.map(d=>'<article class="card"><div class="cardtop"><span class="tag">'+t.categories[d.cat]+'</span><span class="demo">'+t.demo+'</span></div><h3>'+d.name[lang]+'</h3><p>'+d.desc[lang]+'</p><div class="meta"><span>🌍 '+(d.country==="all"?t.allcountries:$("country").selectedOptions[0].textContent)+'</span><span>◷ '+t.deadline+": "+d.deadline+'</span><span>↗ '+t.amount+": "+d.amount+'</span></div><div class="cardfoot"><span>'+t.source+'</span><span style="color:var(--muted)">'+t.apply+' ↗</span></div></article>').join(""):'<div class="empty">'+t.empty+'</div>'}
-$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr()};$("country").onchange=()=>{renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("searchBtn").onclick=renderCards;$("q").oninput=renderCards;$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadOfficialSources();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
+let liveListings=[];
+function inferCategory(row){
+ const text=[row.title,row.summary,row.identifier,row.agency,row.programme].filter(Boolean).join(" ").toLowerCase();
+ const rules=[
+  /hous|housing|home|rent|accommodation|lakhat|otthon/,
+  /family|families|child|children|parent|maternity|család|gyermek/,
+  /agri|farm|rural|farming|mezőgaz|agrár/,
+  /business|enterprise|sme|startup|company|vállalkoz|kkv/,
+  /scholar|student|education|training|university|school|ösztöndíj|oktatás/,
+  /health|medical|clinic|hospital|dementia|egészség/,
+  /energy|solar|renewable|efficiency|energetic|energia/,
+  /employment|job|workforce|worker|foglalkoztat/,
+  /social|welfare|poverty|benefit|assistance|szociális/,
+  /transport|vehicle|mobility|electric car|közleked/
+ ];
+ const idx=rules.findIndex(r=>r.test(text));return idx<0? -1:idx;
+}
+async function loadLiveListings(){
+ const feeds=[
+  {file:"eu-open-calls-discovery.json",country:"EU",source:"EU Funding & Tenders",host:"ec.europa.eu",historical:false},
+  {file:"us-grants-discovery.json",country:"US",source:"Grants.gov",host:"www.grants.gov",historical:false},
+  {file:"ukri-discovery.json",country:"GB",source:"UKRI",host:"www.ukri.org",historical:false},
+  {file:"au-arc-grants-discovery.json",country:"AU",source:"Australian Research Council",host:"dataportal.arc.gov.au",historical:true}
+ ];
+ const results=await Promise.all(feeds.map(async feed=>{
+  try{const res=await fetch("./data/"+feed.file,{cache:"no-store"});if(!res.ok)return[];const payload=await res.json();return (payload.records||[]).map(row=>({...row,_country:feed.country,_source:feed.source,_host:feed.host,_historical:feed.historical}));}catch(_){return[]}
+ }));
+ liveListings=results.flat();
+ renderCards();
+}
+function renderCards(){
+ const t=translations[lang],q=$("q").value.trim().toLowerCase(),country=$("country").value;
+ const rows=liveListings.filter(row=>{
+  const category=inferCategory(row);
+  const text=[row.title,row.summary,row.identifier,row.agency,row.programme,row._source].filter(Boolean).join(" ").toLowerCase();
+  return (active<0||category===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q));
+ });
+ $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results");
+ const box=$("cards");box.replaceChildren();
+ if(!rows.length){const empty=document.createElement("div");empty.className="empty";empty.textContent=liveListings.length?t.empty:(lang==="hu"?"A hivatalos adatforrások betöltése folyamatban van, vagy jelenleg nem adtak vissza találatot.":"Official source data is loading or currently has no results.");box.append(empty);return;}
+ rows.slice(0,60).forEach(row=>{
+  const card=document.createElement("article");card.className="card";
+  const top=document.createElement("div");top.className="cardtop";
+  const tag=document.createElement("span");tag.className="tag";const cat=inferCategory(row);tag.textContent=cat<0?(lang==="hu"?"Egyéb támogatás":"Other support"):t.categories[cat];
+  const badge=document.createElement("span");badge.className="demo";badge.textContent=row._historical?(lang==="hu"?"ADATBÁZIS-REKORD":"DATABASE RECORD"):(lang==="hu"?"ELLENŐRIZETLEN JELÖLT":"UNVERIFIED CANDIDATE");top.append(tag,badge);
+  const title=document.createElement("h3");title.textContent=row.title||row.identifier||"—";
+  const desc=document.createElement("p");desc.textContent=[row.summary,row.identifier].filter(Boolean).join(" · ")||(lang==="hu"?"A részleteket az eredeti hivatalos oldalon ellenőrizd.":"Check details on the original official page.");
+  const meta=document.createElement("div");meta.className="meta";
+  const countryMeta=document.createElement("span");countryMeta.textContent=(lang==="hu"?"Forrás országa: ":"Source country: ")+row._country;
+  const dateMeta=document.createElement("span");dateMeta.textContent=(lang==="hu"?"Határidő: ":"Deadline: ")+(row.deadline||"—");
+  const sourceMeta=document.createElement("span");sourceMeta.textContent=row._source;meta.append(countryMeta,dateMeta,sourceMeta);
+  const foot=document.createElement("div");foot.className="cardfoot";
+  const note=document.createElement("span");note.textContent=row._historical?(lang==="hu"?"Nem feltétlenül nyitott felhívás":"Not necessarily an open call"):(lang==="hu"?"Eredeti kiírás ellenőrzése szükséges":"Verify original notice");
+  const link=document.createElement("a");let href="";
+  try{const u=new URL(row.official_url||"");if(u.protocol==="https:"&&(u.hostname===row._host||u.hostname.endsWith("."+row._host)))href=u.href;}catch(_){}
+  if(!href)href=row._source==="Grants.gov"?"https://www.grants.gov/":row._source==="UKRI"?"https://www.ukri.org/opportunity/":row._source==="EU Funding & Tenders"?"https://ec.europa.eu/info/funding-tenders/opportunities/portal/":"https://dataportal.arc.gov.au/RGS/Web/Grants";
+  link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=lang==="hu"?"Hivatalos forrás ↗":"Official source ↗";foot.append(note,link);
+  card.append(top,title,desc,meta,foot);box.append(card);
+ });
+}
+$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("searchBtn").onclick=renderCards;$("q").oninput=renderCards;$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadLiveListings();loadOfficialSources();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
 </script>
 
 <script id="global-country-expansion">
