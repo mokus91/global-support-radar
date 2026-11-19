@@ -22,13 +22,14 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
 - 66 entries in the official source registry, with country/subject coverage notes.
 - Official European Commission directory of national EU-funding portals for all 27 EU Member States; the worldwide finder displays the selected country's portal, or all 27 when no country is selected. These are shared-management EU-fund portals, not a complete household-benefit catalogue.
-- Five additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
+- Six additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
 - Country-specific European Commission/MISSOC social security guides for all 27 EU Member States, filtered by selected country and family/social/employment/healthcare categories.
 - Official SME funding and support directories, including the European Commission Access to Finance and SME support tools.
 - Verified national business funding databases for France and Germany; other EU countries continue to use their national EU funding portal until a dedicated national business database is verified.
 - `data/europe-category-directories.json` — official EU-wide category-specific support and finance directories.
 - `data/eu-social-protection-country-pages.json` — official MISSOC/European Commission country guides for all 27 EU Member States.
 - `data/eu-national-business-funding.json` — verified national business funding databases for France and Germany.
+- `data/eu-aid-award-transparency.json` — official EU and national registers of aid already awarded (not open applications).
 - Daily automated refresh scheduled for 04:17 UTC; manual GitHub Actions run is also configured.
 - Official source links are checked against allowed hostnames before being displayed.
 
