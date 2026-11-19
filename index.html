@@ -317,10 +317,14 @@ async function loadOfficialSources(){
     const countryNameEnglish=code=>{try{return new Intl.DisplayNames(["en"],{type:"region"}).of(code)||code}catch(_){return code}};
     const registryByCountry=new Map();
     sources.forEach(x=>{
-     const text=String(x.coverage||"")+" "+String(x.id||"");
+     const explicit=String(x.country_code||"").toUpperCase();
+     if(explicit&&byCode.has(explicit)){
+      const old=registryByCountry.get(explicit)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(explicit,old);
+      return;
+     }
+     const id=String(x.id||"").toLowerCase();
      for(const code of byCode.keys()){
-      const name=countryNameEnglish(code);
-      if(text.toLowerCase().includes(name.toLowerCase())||String(x.id||"").toLowerCase().startsWith(code.toLowerCase()+"-")){
+      if(id.startsWith(code.toLowerCase()+"-")){
        const old=registryByCountry.get(code)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(code,old);
       }
      }

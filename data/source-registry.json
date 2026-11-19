@@ -12,7 +12,8 @@
       "kind": "research-grants-data",
       "access": "Official JSON:API; paginated grants endpoint",
       "status": "automated-discovery",
-      "notes": "Automated adapter imports research-grant records only. This is not a complete register of all Australian grants, personal benefits or currently open calls. Every record remains unverified."
+      "notes": "Automated adapter imports research-grant records only. This is not a complete register of all Australian grants, personal benefits or currently open calls. Every record remains unverified.",
+      "country_code": "AU"
     },
     {
       "id": "au-business-grants-finder",
@@ -23,7 +24,8 @@
       "kind": "business-funding-catalogue",
       "access": "Official government searchable catalogue; no public API confirmed",
       "status": "discovery-source",
-      "notes": "Useful official starting point for federal and selected state/territory business support. Check each programme's current status and eligibility."
+      "notes": "Useful official starting point for federal and selected state/territory business support. Check each programme's current status and eligibility.",
+      "country_code": "AU"
     },
     {
       "id": "au-dss-benefits-payments",
@@ -34,7 +36,8 @@
       "kind": "social-support-directory",
       "access": "Official programme directory; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official overview of Australian income-support and supplementary payments. Services Australia delivers many payments; check the current individual payment page for eligibility and claims."
+      "notes": "Official overview of Australian income-support and supplementary payments. Services Australia delivers many payments; check the current individual payment page for eligibility and claims.",
+      "country_code": "AU"
     },
     {
       "id": "au-grantconnect",
@@ -45,7 +48,8 @@
       "kind": "funding-calls",
       "access": "Official RSS endpoint identified, but automated requests currently receive HTTP 403",
       "status": "discovery-source",
-      "notes": "The official GrantConnect RSS URL is known, but automated retrieval is blocked with HTTP 403 in the current runner. The Radar does not publish records from this feed until access works; use the official portal directly."
+      "notes": "The official GrantConnect RSS URL is known, but automated retrieval is blocked with HTTP 403 in the current runner. The Radar does not publish records from this feed until access works; use the official portal directly.",
+      "country_code": "AU"
     },
     {
       "id": "au-qld-agribusiness-grants",
@@ -56,7 +60,8 @@
       "kind": "agriculture-funding-directory",
       "access": "Official programme directory; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Queensland-specific agriculture funding directory. Confirm the current programme page, closing date, geography and applicant eligibility."
+      "notes": "Queensland-specific agriculture funding directory. Confirm the current programme page, closing date, geography and applicant eligibility.",
+      "country_code": "AU"
     },
     {
       "id": "au-services-australia-payment-finder",
@@ -67,7 +72,8 @@
       "kind": "benefits-finder",
       "access": "Official interactive finder; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official interactive Payment Finder for Centrelink and other government payments. Individual payment rules, current rates and eligibility must be checked on the linked official payment page."
+      "notes": "Official interactive Payment Finder for Centrelink and other government payments. Individual payment rules, current rates and eligibility must be checked on the linked official payment page.",
+      "country_code": "AU"
     },
     {
       "id": "au-wa-industry-grants-register",
@@ -78,7 +84,8 @@
       "kind": "regional-funding-directory",
       "access": "Official register; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "State-level register of available and potential industry support. Individual listings require current status verification."
+      "notes": "State-level register of available and potential industry support. Individual listings require current status verification.",
+      "country_code": "AU"
     },
     {
       "id": "br-fapesp",
@@ -89,7 +96,8 @@
       "kind": "research-and-innovation-funding",
       "access": "Official searchable call listings; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Regional Brazilian funding source covering research, scholarships and innovation. Eligibility is often limited to São Paulo-based institutions or collaborations."
+      "notes": "Regional Brazilian funding source covering research, scholarships and innovation. Eligibility is often limited to São Paulo-based institutions or collaborations.",
+      "country_code": "BR"
     },
     {
       "id": "br-gov-benefits",
@@ -100,7 +108,8 @@
       "kind": "citizen-benefits-catalogue",
       "access": "Official government service catalogue; no single public grants API confirmed",
       "status": "discovery-source",
-      "notes": "Broad official service catalogue; search by benefit name and confirm eligibility through the responsible ministry or agency."
+      "notes": "Broad official service catalogue; search by benefit name and confirm eligibility through the responsible ministry or agency.",
+      "country_code": "BR"
     },
     {
       "id": "ca-agriculture-funding",
@@ -111,7 +120,8 @@
       "kind": "agricultural-funding-catalogue",
       "access": "Official programme catalogue; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Federal agriculture and agri-food programmes. Provincial programmes may be administered separately."
+      "notes": "Federal agriculture and agri-food programmes. Provincial programmes may be administered separately.",
+      "country_code": "CA"
     },
     {
       "id": "ca-benefits-finder",
@@ -122,7 +132,8 @@
       "kind": "citizen-benefits-finder",
       "access": "Official government interactive finder; no public structured feed confirmed",
       "status": "discovery-source",
-      "notes": "Federal benefits discovery tool for individuals and families; results depend on personal circumstances and must be verified with the administering programme."
+      "notes": "Federal benefits discovery tool for individuals and families; results depend on personal circumstances and must be verified with the administering programme.",
+      "country_code": "CA"
     },
     {
       "id": "ca-cihr",
@@ -133,7 +144,8 @@
       "kind": "research-funding-calls",
       "access": "Official ResearchNet RSS feed",
       "status": "automated-discovery",
-      "notes": "RSS candidates are collected automatically. These are health research opportunities, not a complete list of Canadian public benefits or all grants; each notice remains unverified."
+      "notes": "RSS candidates are collected automatically. These are health research opportunities, not a complete list of Canadian public benefits or all grants; each notice remains unverified.",
+      "country_code": "CA"
     },
     {
       "id": "ca-grants-funding",
@@ -144,7 +156,8 @@
       "kind": "funding-calls",
       "access": "Official searchable government directory; no public structured API confirmed",
       "status": "discovery-source",
-      "notes": "National starting point for federal grants and funding. Individual programmes may be administered through separate departmental portals."
+      "notes": "National starting point for federal grants and funding. Individual programmes may be administered through separate departmental portals.",
+      "country_code": "CA"
     },
     {
       "id": "de-foerderdatenbank",
@@ -154,7 +167,8 @@
       "coverage": "Germany",
       "kind": "funding-programmes",
       "access": "Official website; structured feed availability to be verified",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "DE"
     },
     {
       "id": "de-funding-database",
@@ -164,7 +178,8 @@
       "coverage": "Germany federal, state and EU funding programmes",
       "kind": "national-funding-database",
       "access": "Official German federal database referenced by European Commission guidance",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "DE"
     },
     {
       "id": "eu-access-finance",
@@ -175,7 +190,8 @@
       "kind": "finance-intermediary-directory",
       "access": "Official EU country/category directory",
       "status": "discovery-source",
-      "notes": "Find local intermediaries for EU-backed loans and financial instruments. Not a complete list of non-repayable grants."
+      "notes": "Find local intermediaries for EU-backed loans and financial instruments. Not a complete list of non-repayable grants.",
+      "country_code": "EU"
     },
     {
       "id": "eu-access-to-finance",
@@ -185,7 +201,8 @@
       "coverage": "EU-backed SME loans, venture capital and finance intermediaries",
       "kind": "business-finance-directory",
       "access": "Official European Commission portal",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "EU"
     },
     {
       "id": "eu-aid-award-transparency-registers",
@@ -196,7 +213,8 @@
       "kind": "awarded-aid-transparency-registers",
       "access": "Official EU and national public registers",
       "status": "discovery-source",
-      "notes": "These registers describe aid already awarded/reported; they are not open calls or application portals. Use to identify aid instruments, beneficiaries and awarding authorities."
+      "notes": "These registers describe aid already awarded/reported; they are not open calls or application portals. Use to identify aid instruments, beneficiaries and awarding authorities.",
+      "country_code": "EU"
     },
     {
       "id": "eu-business-finance",
@@ -207,7 +225,8 @@
       "kind": "business-finance-directory",
       "access": "Official EU country/category directory",
       "status": "discovery-source",
-      "notes": "Overview of EU and national business finance, grants, loans and guarantees."
+      "notes": "Overview of EU and national business finance, grants, loans and guarantees.",
+      "country_code": "EU"
     },
     {
       "id": "eu-cap-country-plans",
@@ -218,7 +237,8 @@
       "kind": "agriculture-country-directory",
       "access": "Official EU country/category directory",
       "status": "discovery-source",
-      "notes": "Member States' CAP Strategic Plans and agricultural interventions. Verify actual calls with the national paying agency."
+      "notes": "Member States' CAP Strategic Plans and agricultural interventions. Verify actual calls with the national paying agency.",
+      "country_code": "EU"
     },
     {
       "id": "eu-cap-network-funding-opportunities",
@@ -229,7 +249,8 @@
       "kind": "automated-agriculture-call-discovery",
       "access": "Official public webpage monitored daily; extracted records remain unverified leads",
       "status": "discovery-source",
-      "notes": "Expired dated calls are excluded where a deadline is parsed. Planned announcements are labelled as not yet open. Every candidate requires confirmation on its original call page."
+      "notes": "Expired dated calls are excluded where a deadline is parsed. Planned announcements are labelled as not yet open. Every candidate requires confirmation on its original call page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-data",
@@ -240,7 +261,8 @@
       "kind": "open-data-catalogue",
       "access": "API/SPARQL options",
       "status": "discovery-source",
-      "notes": "Catalogue metadata may point to datasets; each grant must be verified at the original publisher."
+      "notes": "Catalogue metadata may point to datasets; each grant must be verified at the original publisher.",
+      "country_code": "EU"
     },
     {
       "id": "eu-esf-country-pages",
@@ -251,7 +273,8 @@
       "kind": "country-programme-directory",
       "access": "Official EU country/category directory",
       "status": "discovery-source",
-      "notes": "Country information on ESF+ programmes, national priorities and managing authorities. Not all support is available directly to individuals."
+      "notes": "Country information on ESF+ programmes, national priorities and managing authorities. Not all support is available directly to individuals.",
+      "country_code": "EU"
     },
     {
       "id": "eu-funding",
@@ -261,7 +284,8 @@
       "coverage": "EU funding calls",
       "kind": "funding-calls",
       "access": "Official portal; adapter/API availability to be verified",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "EU"
     },
     {
       "id": "eu-funding-tenders",
@@ -272,7 +296,8 @@
       "kind": "direct-eu-calls",
       "access": "Official EU country/category directory",
       "status": "discovery-source",
-      "notes": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call."
+      "notes": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call.",
+      "country_code": "EU"
     },
     {
       "id": "eu-missoc-social-rights-country-guides",
@@ -283,7 +308,8 @@
       "kind": "national-social-protection-guides",
       "access": "Official European Commission country guide directory and MISSOC network",
       "status": "discovery-source",
-      "notes": "Country-specific guide URLs for all 27 EU Member States are stored in data/eu-social-protection-country-pages.json. Covers family, unemployment, healthcare, pensions and other social rights; not a live open-grant feed."
+      "notes": "Country-specific guide URLs for all 27 EU Member States are stored in data/eu-social-protection-country-pages.json. Covers family, unemployment, healthcare, pensions and other social rights; not a live open-grant feed.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-category-discovery",
@@ -294,7 +320,8 @@
       "kind": "automated-national-funding-link-discovery",
       "access": "Daily automated same-host HTTPS link discovery; results remain unverified leads",
       "status": "discovery-source",
-      "notes": "Discovered links are not confirmed open calls, eligibility decisions or complete national benefit catalogues. Verify every opportunity at its original official publisher."
+      "notes": "Discovered links are not confirmed open calls, eligibility decisions or complete national benefit catalogues. Verify every opportunity at its original official publisher.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-single-portals",
@@ -305,7 +332,8 @@
       "kind": "national-funding-portals-directory",
       "access": "European Commission official directory linking to each Member State portal",
       "status": "discovery-source",
-      "notes": "The country-specific portal links are stored in data/europe-national-portals.json. These cover shared-management EU funds, not all household benefits or every national grant."
+      "notes": "The country-specific portal links are stored in data/europe-national-portals.json. These cover shared-management EU funds, not all household benefits or every national grant.",
+      "country_code": "EU"
     },
     {
       "id": "eu-sme-support-tools",
@@ -315,7 +343,8 @@
       "coverage": "SME funding, advice, training, partnerships and market access",
       "kind": "business-support-directory",
       "access": "Official Your Europe directory",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "EU"
     },
     {
       "id": "fr-national-business-aid",
@@ -325,7 +354,8 @@
       "coverage": "France national business aid and funding programmes",
       "kind": "national-business-aid-database",
       "access": "Official national database referenced by European Commission guidance",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "FR"
     },
     {
       "id": "global-gef-sgp",
@@ -347,7 +377,8 @@
       "kind": "funding-calls",
       "access": "Official programme pages and notices; no public API confirmed",
       "status": "discovery-source",
-      "notes": "Official programme pages include the National Cooperation Fund, Magyar Falu Programme and other civil/community calls. Check each call's exact year, eligible applicants and deadline."
+      "notes": "Official programme pages include the National Cooperation Fund, Magyar Falu Programme and other civil/community calls. Check each call's exact year, eligible applicants and deadline.",
+      "country_code": "HU"
     },
     {
       "id": "hu-emet",
@@ -358,7 +389,8 @@
       "kind": "funding-calls",
       "access": "Official searchable announcements; no public API confirmed",
       "status": "discovery-source",
-      "notes": "Official calls and announcements. Some notices are not open applications; check the original call and its deadline."
+      "notes": "Official calls and announcements. Some notices are not open applications; check the original call and its deadline.",
+      "country_code": "HU"
     },
     {
       "id": "hu-fair-palyazatkereso",
@@ -369,7 +401,8 @@
       "kind": "funding-calls",
       "access": "Official searchable portal; no public machine-readable API confirmed",
       "status": "discovery-source",
-      "notes": "The official help centre states that calls originate from FAIR and are refreshed daily. Use the portal for discovery; verify each call on its official call page."
+      "notes": "The official help centre states that calls originate from FAIR and are refreshed daily. Use the portal for discovery; verify each call on its official call page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-family-support",
@@ -380,7 +413,8 @@
       "kind": "citizen-benefits",
       "access": "Official government information and application guidance",
       "status": "discovery-source",
-      "notes": "Official information on family benefits and application routes; check current eligibility and amounts on the official page."
+      "notes": "Official information on family benefits and application routes; check current eligibility and amounts on the official page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-housing-support",
@@ -391,7 +425,8 @@
       "kind": "housing-support",
       "access": "Official government information and application guidance",
       "status": "discovery-source",
-      "notes": "Official overview of state housing support and related administration; some applications are handled by banks."
+      "notes": "Official overview of state housing support and related administration; some applications are handled by banks.",
+      "country_code": "HU"
     },
     {
       "id": "hu-kap",
@@ -402,7 +437,8 @@
       "kind": "agricultural-funding-calls",
       "access": "Official website; public structured feed not confirmed",
       "status": "discovery-source",
-      "notes": "Agricultural and rural-development calls; verify current status and applicant eligibility on the original call page."
+      "notes": "Agricultural and rural-development calls; verify current status and applicant eligibility on the original call page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-kozpenzpalyazat",
@@ -413,7 +449,8 @@
       "kind": "public-funding-transparency-database",
       "access": "Official searchable website; public API/export not confirmed",
       "status": "discovery-source",
-      "notes": "Historical and transparency records about applications and awarded public funding. Not an open-call feed and not proof that an application is currently available."
+      "notes": "Historical and transparency records about applications and awarded public funding. Not an open-call feed and not proof that an application is currently available.",
+      "country_code": "HU"
     },
     {
       "id": "hu-local-social-support",
@@ -424,7 +461,8 @@
       "kind": "citizen-services",
       "access": "Official government e-administration portal; municipality-specific benefits require local rules",
       "status": "discovery-source",
-      "notes": "Municipal support varies by settlement and local decree. This is a navigation starting point, not a central nationwide benefit catalogue."
+      "notes": "Municipal support varies by settlement and local decree. This is a navigation starting point, not a central nationwide benefit catalogue.",
+      "country_code": "HU"
     },
     {
       "id": "hu-magyarorszag-services",
@@ -435,7 +473,8 @@
       "kind": "government-services",
       "access": "Official electronic administration portal",
       "status": "discovery-source",
-      "notes": "Official portal lists online applications including family allowance, GYED, GYES, maternity support, jobseeker allowance and selected housing assistance."
+      "notes": "Official portal lists online applications including family allowance, GYED, GYES, maternity support, jobseeker allowance and selected housing assistance.",
+      "country_code": "HU"
     },
     {
       "id": "hu-mak-family-allowance",
@@ -446,7 +485,8 @@
       "kind": "citizen-benefits",
       "access": "Official detailed information and application guidance",
       "status": "discovery-source",
-      "notes": "Eligibility depends on applicant and child circumstances; verify current conditions on the official page."
+      "notes": "Eligibility depends on applicant and child circumstances; verify current conditions on the official page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-mak-gyes",
@@ -457,7 +497,8 @@
       "kind": "citizen-benefits",
       "access": "Official detailed information and application guidance",
       "status": "discovery-source",
-      "notes": "Standard eligibility generally runs to age three, with special rules for twins, long-term illness or severe disability and grandparents."
+      "notes": "Standard eligibility generally runs to age three, with special rules for twins, long-term illness or severe disability and grandparents.",
+      "country_code": "HU"
     },
     {
       "id": "hu-mak-gyet",
@@ -468,7 +509,8 @@
       "kind": "citizen-benefits",
       "access": "Official detailed information and application guidance",
       "status": "discovery-source",
-      "notes": "Potentially available when the youngest child is aged three to eight; verify all statutory conditions and work restrictions."
+      "notes": "Potentially available when the youngest child is aged three to eight; verify all statutory conditions and work restrictions.",
+      "country_code": "HU"
     },
     {
       "id": "hu-mak-maternity",
@@ -479,7 +521,8 @@
       "kind": "citizen-benefits",
       "access": "Official detailed information and application forms",
       "status": "discovery-source",
-      "notes": "Check the current legal conditions and six-month application deadline on the official page."
+      "notes": "Check the current legal conditions and six-month application deadline on the official page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-national-open-data",
@@ -490,7 +533,8 @@
       "kind": "open-data-catalogue",
       "access": "Official DCAT-AP catalogue documentation is public; machine endpoint still needs confirmation",
       "status": "discovery-source",
-      "notes": "The current official portal is opendata.gov.hu and documents DCAT-AP metadata. The older t.data.gov.hu CKAN endpoint has not passed the scheduled connection test; no grant records are inferred from catalogue metadata."
+      "notes": "The current official portal is opendata.gov.hu and documents DCAT-AP metadata. The older t.data.gov.hu CKAN endpoint has not passed the scheduled connection test; no grant records are inferred from catalogue metadata.",
+      "country_code": "HU"
     },
     {
       "id": "hu-nka",
@@ -500,7 +544,8 @@
       "coverage": "Hungary; cultural grants",
       "kind": "cultural-funding-calls",
       "access": "Official website; public API/feed not confirmed",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "HU"
     },
     {
       "id": "hu-nkfih",
@@ -511,7 +556,8 @@
       "kind": "funding-calls",
       "access": "Automated daily HTML discovery from the official current-calls listing page",
       "status": "automated-official-listing",
-      "notes": "Listing does not prove every application window is open or that a visitor is eligible; verify each detailed call page."
+      "notes": "Listing does not prove every application window is open or that a visitor is eligible; verify each detailed call page.",
+      "country_code": "HU"
     },
     {
       "id": "hu-palyazat-gov",
@@ -522,7 +568,8 @@
       "kind": "funding-calls",
       "access": "Official portal; public API/feed not confirmed",
       "status": "discovery-source",
-      "notes": "Official publication destination for Hungarian development calls. Do not scrape restricted or authenticated areas."
+      "notes": "Official publication destination for Hungarian development calls. Do not scrape restricted or authenticated areas.",
+      "country_code": "HU"
     },
     {
       "id": "ilo-social-protection-profiles",
@@ -544,7 +591,8 @@
       "kind": "research-and-innovation-funding",
       "access": "Official call-for-proposals listing; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official central-government calls for proposals. Applicant and institution eligibility varies by scheme."
+      "notes": "Official central-government calls for proposals. Applicant and institution eligibility varies by scheme.",
+      "country_code": "IN"
     },
     {
       "id": "in-national-scholarships",
@@ -555,7 +603,8 @@
       "kind": "education-benefits-portal",
       "access": "Official government portal; no public API/feed confirmed",
       "status": "discovery-source",
-      "notes": "Central scholarship discovery and application portal; scheme eligibility varies by state, education level and applicant category."
+      "notes": "Central scholarship discovery and application portal; scheme eligibility varies by state, education level and applicant category.",
+      "country_code": "IN"
     },
     {
       "id": "japan-jgrants-live-api",
@@ -566,7 +615,8 @@
       "kind": "official-government-grant-api",
       "access": "Public read-only REST API; no authentication documented",
       "status": "automated-discovery-adapter",
-      "notes": "Daily keyword queries for currently accepting subsidies. Results are candidates, not a complete national inventory. Original Japanese titles are retained; verify details, eligibility and deadlines on the original JGrants notice. Attribute source to JGrants."
+      "notes": "Daily keyword queries for currently accepting subsidies. Results are candidates, not a complete national inventory. Original Japanese titles are retained; verify details, eligibility and deadlines on the original JGrants notice. Attribute source to JGrants.",
+      "country_code": "JP"
     },
     {
       "id": "jp-japan-foundation",
@@ -577,7 +627,8 @@
       "kind": "cultural-and-education-grants",
       "access": "Official programme catalogue; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official programme catalogue for cultural exchange, education and international cooperation grants. Applicant country and programme conditions vary."
+      "notes": "Official programme catalogue for cultural exchange, education and international cooperation grants. Applicant country and programme conditions vary.",
+      "country_code": "JP"
     },
     {
       "id": "jp-jst-funding",
@@ -588,7 +639,8 @@
       "kind": "research-and-innovation-funding",
       "access": "Official agency website; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "National science and technology funding agency. Individual calls may have restricted applicant eligibility and require Japanese institutional partners."
+      "notes": "National science and technology funding agency. Individual calls may have restricted applicant eligibility and require Japanese institutional partners.",
+      "country_code": "JP"
     },
     {
       "id": "jp-mhlw-support",
@@ -599,7 +651,8 @@
       "kind": "citizen-benefits-catalogue",
       "access": "Official ministry information; no consolidated public API confirmed",
       "status": "discovery-source",
-      "notes": "Official ministry starting point for social welfare and labour support. Detailed programme information may be available only in Japanese."
+      "notes": "Official ministry starting point for social welfare and labour support. Detailed programme information may be available only in Japanese.",
+      "country_code": "JP"
     },
     {
       "id": "nz-funding-explorer",
@@ -610,7 +663,8 @@
       "kind": "funding-catalogue",
       "access": "Official government finder; public API/feed not confirmed",
       "status": "discovery-source",
-      "notes": "Government-wide business funding finder. Confirm current availability and eligibility with the administering agency."
+      "notes": "Government-wide business funding finder. Confirm current availability and eligibility with the administering agency.",
+      "country_code": "NZ"
     },
     {
       "id": "nz-mbie-open-funding",
@@ -621,7 +675,8 @@
       "kind": "funding-calls",
       "access": "Official programme listings; public structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official list of open and upcoming science and innovation funding rounds. Dates and eligibility must be checked on each programme page."
+      "notes": "Official list of open and upcoming science and innovation funding rounds. Dates and eligibility must be checked on each programme page.",
+      "country_code": "NZ"
     },
     {
       "id": "nz-rural-support",
@@ -632,7 +687,8 @@
       "kind": "agricultural-rural-support",
       "access": "Official programme listings; no public structured API confirmed",
       "status": "discovery-source",
-      "notes": "Official agriculture and rural support programmes; check current application windows and eligibility."
+      "notes": "Official agriculture and rural support programmes; check current application windows and eligibility.",
+      "country_code": "NZ"
     },
     {
       "id": "nz-work-income",
@@ -643,7 +699,8 @@
       "kind": "citizen-benefits-catalogue",
       "access": "Official eligibility and payments catalogue; no public API confirmed",
       "status": "discovery-source",
-      "notes": "Official benefit eligibility information. Individual entitlement depends on residency, income, household and other conditions."
+      "notes": "Official benefit eligibility information. Individual entitlement depends on residency, income, household and other conditions.",
+      "country_code": "NZ"
     },
     {
       "id": "tw-nstc-calls",
@@ -654,7 +711,8 @@
       "kind": "research-and-innovation-funding",
       "access": "Official searchable call listing; no public feed/API confirmed",
       "status": "discovery-source",
-      "notes": "Official page lists open calls, proposal periods and fields. Most programmes are aimed at eligible Taiwanese institutions or researchers."
+      "notes": "Official page lists open calls, proposal periods and fields. Most programmes are aimed at eligible Taiwanese institutions or researchers.",
+      "country_code": "TW"
     },
     {
       "id": "uk-find-grant",
@@ -664,7 +722,8 @@
       "coverage": "United Kingdom",
       "kind": "funding-calls",
       "access": "Official website; structured feed availability to be verified",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "UK"
     },
     {
       "id": "uk-ukri",
@@ -675,7 +734,8 @@
       "kind": "funding-calls",
       "access": "Official RSS feed at https://www.ukri.org/opportunity/feed/",
       "status": "automated-discovery",
-      "notes": "The RSS feed is a discovery stream and may not include every opportunity or deadline. Each opportunity must be checked on its official page; all imported records remain unverified."
+      "notes": "The RSS feed is a discovery stream and may not include every opportunity or deadline. Each opportunity must be checked on its official page; all imported records remain unverified.",
+      "country_code": "UK"
     },
     {
       "id": "un-government-portals",
@@ -686,7 +746,8 @@
       "kind": "official-government-portal-directory",
       "access": "UN country and city portals directory",
       "status": "discovery-source",
-      "notes": "Starting point for finding a national government services portal; not a grant or benefit feed."
+      "notes": "Starting point for finding a national government services portal; not a grant or benefit feed.",
+      "country_code": "UN"
     },
     {
       "id": "un-national-portals",
@@ -697,7 +758,8 @@
       "kind": "national-government-portal-directory",
       "access": "UN DESA Resources directory; country portal list transcribed into a country-coded local index",
       "status": "historical-directory-lead",
-      "notes": "UN DESA states that government website URLs were last assessed during April–August 2013. Local records are historical leads, not currently verified portals or grant listings. Verify each link before relying on it."
+      "notes": "UN DESA states that government website URLs were last assessed during April–August 2013. Local records are historical leads, not currently verified portals or grant listings. Verify each link before relying on it.",
+      "country_code": "UN"
     },
     {
       "id": "undp-open",
@@ -718,7 +780,8 @@
       "coverage": "United States federal and participating subnational datasets",
       "kind": "open-data-catalogue",
       "access": "Catalogue/API",
-      "status": "discovery-source"
+      "status": "discovery-source",
+      "country_code": "US"
     },
     {
       "id": "us-grants-gov",
@@ -729,7 +792,8 @@
       "kind": "funding-calls",
       "access": "Official public REST API (search2; no authentication required)",
       "status": "automated-discovery",
-      "notes": "The adapter imports posted and forecasted federal opportunities. Grants.gov states that its federal opportunities are generally for organisations and entities, not personal financial assistance. Check eligibility on each original notice."
+      "notes": "The adapter imports posted and forecasted federal opportunities. Grants.gov states that its federal opportunities are generally for organisations and entities, not personal financial assistance. Check eligibility on each original notice.",
+      "country_code": "US"
     },
     {
       "id": "us-sam-assistance",
@@ -740,7 +804,8 @@
       "kind": "assistance-programme-catalogue",
       "access": "Official federal assistance listings; public API/data files described by SAM.gov",
       "status": "discovery-source",
-      "notes": "Programme catalogue includes grants, loans, scholarships, insurance and other assistance; distinct from current open opportunity notices on Grants.gov."
+      "notes": "Programme catalogue includes grants, loans, scholarships, insurance and other assistance; distinct from current open opportunity notices on Grants.gov.",
+      "country_code": "US"
     },
     {
       "id": "world-bank-aspire",
@@ -773,7 +838,8 @@
       "kind": "research-and-education-funding",
       "access": "Official funding portal; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Official South African research and postgraduate funding opportunities. Not a complete catalogue of household or business support."
+      "notes": "Official South African research and postgraduate funding opportunities. Not a complete catalogue of household or business support.",
+      "country_code": "ZA"
     },
     {
       "id": "za-sassa-grants",
@@ -784,7 +850,8 @@
       "kind": "citizen-benefits-catalogue",
       "access": "Official agency website; no public structured feed confirmed",
       "status": "discovery-source",
-      "notes": "Official source for social grant eligibility and applications. Verify current requirements directly with SASSA."
+      "notes": "Official source for social grant eligibility and applications. Verify current requirements directly with SASSA.",
+      "country_code": "ZA"
     },
     {
       "id": "eu-national-funds-at",
@@ -795,7 +862,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-be",
@@ -806,7 +874,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-bg",
@@ -817,7 +886,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-cy",
@@ -828,7 +898,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-cz",
@@ -839,7 +910,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-dk",
@@ -850,7 +922,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-ee",
@@ -861,7 +934,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-fi",
@@ -872,7 +946,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-fr",
@@ -883,7 +958,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-de",
@@ -894,7 +970,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-gr",
@@ -905,7 +982,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-it",
@@ -916,7 +994,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-lv",
@@ -927,7 +1006,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-lt",
@@ -938,7 +1018,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-lu",
@@ -949,7 +1030,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-mt",
@@ -960,7 +1042,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-nl",
@@ -971,7 +1054,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-pl",
@@ -982,7 +1066,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-pt",
@@ -993,7 +1078,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-ro",
@@ -1004,7 +1090,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-es",
@@ -1015,7 +1102,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-se",
@@ -1026,7 +1114,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-si",
@@ -1037,7 +1126,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-national-funds-sk",
@@ -1048,7 +1138,8 @@
       "kind": "national-eu-funds-portal",
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page.",
+      "country_code": "EU"
     },
     {
       "id": "national-no-business-1",
@@ -1059,7 +1150,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "NO"
     },
     {
       "id": "national-ch-business-1",
@@ -1070,7 +1162,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "CH"
     },
     {
       "id": "national-tr-business-1",
@@ -1081,7 +1174,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "TR"
     },
     {
       "id": "national-tr-all-2",
@@ -1092,7 +1186,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "TR"
     },
     {
       "id": "national-mx-all-1",
@@ -1103,7 +1198,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "MX"
     },
     {
       "id": "national-mx-social-2",
@@ -1114,7 +1210,8 @@
       "kind": "social-support-directory",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "MX"
     },
     {
       "id": "national-co-business-1",
@@ -1125,7 +1222,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "CO"
     },
     {
       "id": "national-co-social-2",
@@ -1136,7 +1234,8 @@
       "kind": "social-support-directory",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "CO"
     },
     {
       "id": "national-my-business-1",
@@ -1147,7 +1246,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "MY"
     },
     {
       "id": "national-my-business-2",
@@ -1158,7 +1258,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "MY"
     },
     {
       "id": "national-my-business-3",
@@ -1169,7 +1270,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "MY"
     },
     {
       "id": "national-ph-employment-1",
@@ -1180,7 +1282,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "PH"
     },
     {
       "id": "national-ph-agriculture-2",
@@ -1191,7 +1294,8 @@
       "kind": "agriculture-support-directory",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "PH"
     },
     {
       "id": "national-ph-business-3",
@@ -1202,7 +1306,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "PH"
     },
     {
       "id": "national-cl-business-1",
@@ -1213,7 +1318,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "CL"
     },
     {
       "id": "national-cl-all-2",
@@ -1224,7 +1330,8 @@
       "kind": "national-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "CL"
     },
     {
       "id": "national-pe-agriculture-1",
@@ -1235,7 +1342,8 @@
       "kind": "agriculture-support-directory",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "PE"
     },
     {
       "id": "national-id-business-1",
@@ -1246,7 +1354,8 @@
       "kind": "business-support-finder",
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
-      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher.",
+      "country_code": "ID"
     },
     {
       "id": "cl-fondos-gob",
@@ -1257,7 +1366,8 @@
       "kind": "national-public-funding-portal",
       "access": "Official central portal with search, categories, opening/closing dates and online application tracking",
       "status": "discovery-source",
-      "notes": "Official national catalogue; individual programme status, applicant eligibility, amount and deadline must be checked on the current call notice. The portal itself is a source directory, not an automated feed."
+      "notes": "Official national catalogue; individual programme status, applicant eligibility, amount and deadline must be checked on the current call notice. The portal itself is a source directory, not an automated feed.",
+      "country_code": "CL"
     },
     {
       "id": "cl-corfo-open-calls",
@@ -1268,7 +1378,8 @@
       "kind": "automated-open-call-discovery",
       "access": "Daily adapter reads the original CORFO call page and extracts application status, opening/closing dates and maximum co-financing only when the official page exposes those fields",
       "status": "automated-discovery",
-      "notes": "The adapter refuses to publish the record as open if the official page no longer says applications are open or if the deadline has passed. Detailed applicant eligibility must still be checked in the official legal rules."
+      "notes": "The adapter refuses to publish the record as open if the official page no longer says applications are open or if the deadline has passed. Detailed applicant eligibility must still be checked in the official legal rules.",
+      "country_code": "CL"
     },
     {
       "id": "national-gb-all-find-a-grant",
@@ -1290,7 +1401,8 @@
       "kind": "automated-open-call-discovery",
       "access": "Public REST API; latest 50 call records checked daily against official application-window fields",
       "status": "automated-discovery",
-      "notes": "The API includes open, closed and resolved calls. Adapter only publishes records with an active date window or indefinite application flag. Not exhaustive; total call budget is not an individual award. Reuse subject to official legal notice."
+      "notes": "The API includes open, closed and resolved calls. Adapter only publishes records with an active date window or indefinite application flag. Not exhaustive; total call budget is not an individual award. Reuse subject to official legal notice.",
+      "country_code": "ES"
     },
     {
       "id": "gb-find-a-grant",
@@ -1301,7 +1413,8 @@
       "kind": "government-grant-catalogue",
       "access": "Official public searchable catalogue; no public API confirmed",
       "status": "discovery-source",
-      "notes": "The catalogue lists grants and provides filters and eligibility/application details. Do not treat every listed record as currently open; verify the specific grant page. No automated adapter is claimed."
+      "notes": "The catalogue lists grants and provides filters and eligibility/application details. Do not treat every listed record as currently open; verify the specific grant page. No automated adapter is claimed.",
+      "country_code": "GB"
     },
     {
       "id": "fr-aides-territoires",
@@ -1312,7 +1425,8 @@
       "kind": "public-aid-catalogue",
       "access": "Open public API; base URL https://aides-territoires.beta.gouv.fr/api; no OpenAPI documentation or published rate limit confirmed",
       "status": "discovery-source",
-      "notes": "Official catalogue describes nearly 3,000 support schemes from more than 600 providers. Target users are primarily local authorities and their partners. API records can include provider, description, nature, geographic area, eligibility criteria and application link. Validate current API schema, licensing and individual programme status before building an automated importer."
+      "notes": "Official catalogue describes nearly 3,000 support schemes from more than 600 providers. Target users are primarily local authorities and their partners. API records can include provider, description, nature, geographic area, eligibility criteria and application link. Validate current API schema, licensing and individual programme status before building an automated importer.",
+      "country_code": "FR"
     },
     {
       "id": "nz-business-funding-explorer",
@@ -1323,7 +1437,8 @@
       "kind": "government-funding-directory",
       "access": "Official HTML catalogue; automated daily snapshot of listed programme links",
       "status": "automated-discovery",
-      "notes": "The adapter extracts programme names and official links only. It does not infer open status, deadlines, amounts or applicant eligibility."
+      "notes": "The adapter extracts programme names and official links only. It does not infer open status, deadlines, amounts or applicant eligibility.",
+      "country_code": "NZ"
     },
     {
       "id": "nz-mfe-funding",
@@ -1334,7 +1449,8 @@
       "kind": "government-funding-directory",
       "access": "Official government directory; daily URL reachability check",
       "status": "official-source-directory",
-      "notes": "Directory includes funds from MfE and other organisations. Listing/status snippets do not prove application availability; verify each programme."
+      "notes": "Directory includes funds from MfE and other organisations. Listing/status snippets do not prove application availability; verify each programme.",
+      "country_code": "NZ"
     },
     {
       "id": "hu-fair-eptk",
@@ -1345,7 +1461,8 @@
       "kind": "grant-search-portal",
       "access": "Official public search portal; source documentation states that the opportunity list is refreshed daily",
       "status": "official-manual-link",
-      "notes": "Direct official portal link only. Automated import is not enabled; do not present the portal as an integrated live feed."
+      "notes": "Direct official portal link only. Automated import is not enabled; do not present the portal as an integrated live feed.",
+      "country_code": "HU"
     },
     {
       "id": "eu-step-platform",
@@ -1356,7 +1473,8 @@
       "kind": "funding-opportunity-dashboard",
       "access": "Official European Commission interactive funding dashboard; opportunities are presented across direct, indirect and shared management",
       "status": "discovery-source",
-      "notes": "The Commission describes the dashboard as a continuously updated overview of funding opportunities. It is a discovery dashboard, not a single grant database; verify each opportunity and eligibility on the originating programme page."
+      "notes": "The Commission describes the dashboard as a continuously updated overview of funding opportunities. It is a discovery dashboard, not a single grant database; verify each opportunity and eligibility on the originating programme page.",
+      "country_code": "EU"
     },
     {
       "id": "eu-missoc-comparative-database",
@@ -1367,7 +1485,8 @@
       "kind": "comparative-social-protection-database",
       "access": "Official European Commission comparative database and country guides",
       "status": "discovery-source",
-      "notes": "Covers 12 areas including healthcare, sickness, maternity, invalidity, old-age, survivors, employment injuries, family, unemployment, minimum resources and long-term care. The MISSOC database moved to the European Commission website on 14 October 2026. Reference information, not a live grant feed or proof of individual eligibility."
+      "notes": "Covers 12 areas including healthcare, sickness, maternity, invalidity, old-age, survivors, employment injuries, family, unemployment, minimum resources and long-term care. The MISSOC database moved to the European Commission website on 14 October 2026. Reference information, not a live grant feed or proof of individual eligibility.",
+      "country_code": "EU"
     }
   ],
   "publication_requirements": [
