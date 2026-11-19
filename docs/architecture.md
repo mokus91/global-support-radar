@@ -24,7 +24,7 @@ A történeti portálhivatkozások külön `historical-directory-lead` státusz�
 A `.github/workflows/source-discovery.yml` napi, 04:17 UTC-s futása az alábbiakat frissíti:
 
 - data.europa.eu nyíltadat-katalógus.
-- Európai Bizottság Funding & Tenders kereső.
+- Európai Bizottság Funding & Tenders kereső: a lekérés a legkésőbbi határidők felől halad, hogy a régi, lejárt rekordok ne töltsék ki az első oldalakat; a lejárt dátumú rekordok kiszűrésre kerülnek. A státusz továbbra is ellenőrizetlen jelölt, amíg az eredeti felhívásoldalt nem vizsgáltuk meg.
 - EU CAP Network mezőgazdasági és vidéki innovációs lehetőségek.
 - 27 EU nemzeti finanszírozási portál mezőgazdasági és egyéb ágazati linkjei.
 - Grants.gov amerikai szövetségi pályázatok.

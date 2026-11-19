@@ -67,7 +67,11 @@ def main():
                     value = data.get(source_key)
                     if isinstance(value, (int, float)):
                         entry[status_key] = value
-                if data.get("query_errors"):
+                if data.get("error"):
+                    entry["status"] = "temporarily-unavailable"
+                    entry["note"] = str(data["error"])[:240]
+                elif data.get("query_errors"):
+                    entry["status"] = "temporarily-unavailable"
                     entry["note"] = "One or more upstream queries reported errors."
                 elif data.get("note"):
                     entry["note"] = str(data["note"])[:240]

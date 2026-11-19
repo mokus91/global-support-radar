@@ -8,7 +8,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/eu-funding-discovery.json"
-URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber={page}&sortBy=deadlineDate&orderBy=ASC"
+URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber={page}&sortBy=deadlineDate&orderBy=DESC"
 QUERY = {"bool": {"must": [
     {"terms": {"type": ["1", "2", "8"]}},
     {"terms": {"status": ["31094501", "31094502"]}}
@@ -107,9 +107,11 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters only, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
+        "purpose": "Candidates returned by the official portal status filters, sorted by latest deadline first; past closing dates are excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
         "expired_deadline_records_excluded": expired_excluded,
         "status_filters": ["31094501", "31094502"],
+        "sort_field": "deadlineDate",
+        "sort_order": "DESC",
         "records_count": len(candidates),
         "records": candidates,
         "error": error
@@ -128,6 +130,8 @@ def main():
         "verification_status": "unverified",
         "pages_fetched": pages_fetched,
         "maximum_pages": 20,
+        "sort_field": "deadlineDate",
+        "sort_order": "DESC",
         "page_size": 100,
         "records_received": len(payload.get("results", [])),
         "total_results_reported": payload.get("totalResults", 0),
