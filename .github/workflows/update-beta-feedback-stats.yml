@@ -4,6 +4,8 @@ on:
   issues:
     types: [opened, edited, closed, reopened]
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write
@@ -30,10 +32,26 @@ jobs:
               if (issue.pull_request) return false;
               const body = issue.body || '';
               return issue.title.includes('[Beta feedback]') ||
+                /^##?\\s*Feedback type/im.test(body) ||
                 body.includes('Feedback type:') ||
                 (issue.labels || []).some(label =>
                   (typeof label === 'string' ? label : label.name) === 'user-feedback');
             });
+
+            function answerAfterHeading(body, heading) {
+              const lines = body.split(/\\r?\\n/);
+              const index = lines.findIndex(line =>
+                new RegExp('^\\\\s*#{1,6}\\\\s*' + heading + '\\\\s*$', 'i').test(line));
+              if (index < 0) return '';
+              for (let i = index + 1; i < lines.length; i++) {
+                const value = lines[i].trim();
+                if (!value || value.startsWith('<!--')) continue;
+                if (value.startsWith('#')) break;
+                return value;
+              }
+              return '';
+            }
+
             const categories = {
               'Usability': 0,
               'Broken function': 0,
@@ -45,12 +63,16 @@ jobs:
             const ratings = {'1': 0, '2': 0, '3': 0, '4': 0, '5': 0, 'Unrated': 0};
             for (const issue of feedback) {
               const body = issue.body || '';
-              const type = body.match(/^Feedback type:\s*(.+)$/mi)?.[1]?.trim();
-              const rating = body.match(/^Rating:\s*([1-5])(?:\s*\/\s*5)?\s*$/mi)?.[1];
-              const normalized = (type || '').toLowerCase();
+              const type = (body.match(/^Feedback type:\\s*(.+)$/mi)?.[1] ||
+                answerAfterHeading(body, 'Feedback type')).trim();
+              const ratingText = (body.match(/^Rating:\\s*(.+)$/mi)?.[1] ||
+                answerAfterHeading(body, 'Rating')).trim();
+              const rating = ratingText.match(/^[1-5](?:\\s*\\/\\s*5)?$/)?.[0]?.match(/[1-5]/)?.[0];
+              const normalized = type.toLowerCase();
               const aliases = {
                 'használhatóság': 'Usability', 'usability': 'Usability',
                 'hibás működés': 'Broken function', 'broken function': 'Broken function',
+                'adatpontosság / hiányzó adat': 'Data accuracy / missing data',
                 'pontatlan vagy hiányzó adat': 'Data accuracy / missing data',
                 'data accuracy / missing data': 'Data accuracy / missing data',
                 'ötlet / fejlesztési javaslat': 'Feature idea', 'feature idea': 'Feature idea',
@@ -60,6 +82,7 @@ jobs:
               categories[category]++;
               ratings[rating || 'Unrated']++;
             }
+
             const stats = {
               generated_at: new Date().toISOString(),
               total_feedback: feedback.length,
@@ -79,6 +102,6 @@ jobs:
             }
             await github.rest.repos.createOrUpdateFileContents({
               owner, repo, path, message: 'Update anonymous beta feedback statistics',
-              content: Buffer.from(JSON.stringify(stats, null, 2) + '\n').toString('base64'),
+              content: Buffer.from(JSON.stringify(stats, null, 2) + '\\n').toString('base64'),
               ...(sha ? {sha} : {})
             });
