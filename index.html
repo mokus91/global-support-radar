@@ -603,6 +603,28 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    }
   }
   try{
+   const response=await fetch("data/eu-national-category-discovery.json");
+   if(response.ok){
+    const feed=await response.json();
+    const relevant=feed.records.filter(record=>(code==="all"||code==="EU"||record.country_code===code)&&(category==="all"||record.category===category));
+    if(relevant.length){
+     const heading=document.createElement("h3");heading.textContent=isHu?"További országos támogatási találatok":"Additional national support leads";box.append(heading);
+     const note=document.createElement("p");note.className="notice";note.textContent=isHu?"Automatikus linkfelderítés hivatalos EU-tagállami portálokon. A találatok ellenőrizetlenek; nem jelentenek igazoltan nyitott pályázatot vagy személyes jogosultságot.":"Automated link discovery on official EU national portals. Results are unverified and do not establish an open call or personal eligibility.";box.append(note);
+     relevant.forEach(record=>{
+      const card=document.createElement("article");card.className="card";
+      const h=document.createElement("h3");h.textContent=(isHu?record.country_hu:record.country_en)+" – "+record.title;
+      const p=document.createElement("p");p.textContent=isHu?record.description+" A részleteket az eredeti oldalon ellenőrizd.":record.description+" Verify details on the original page.";
+      const meta=document.createElement("div");meta.className="meta";meta.textContent=(isHu?"Terület: ":"Category: ")+record.category+" · "+(isHu?"Ellenőrizetlen találat":"Unverified lead");
+      const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"Hivatalos nemzeti portál":"Official national portal";
+      const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Forrás megnyitása ↗":"Open source ↗";
+      foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+     });
+    }
+   }
+  }catch(error){
+   const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A további országos támogatási találatok most nem tölthetők be.":"Additional national support leads could not be loaded right now.";box.append(warning);
+  }
+  try{
    const response=await fetch("data/eu-social-protection-country-pages.json");
    if(response.ok){
     const directory=await response.json();
