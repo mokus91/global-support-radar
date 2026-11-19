@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T17:01:58.332460+00:00",
+  "generated_at": "2026-11-19T17:08:26.723113+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 179,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,7 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -245,17 +245,17 @@
       "verification_status": "unverified"
     },
     {
-      "title": "business R&D; sources of funding for own R&D activities; Every two years in 2007",
-      "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/FtgForskFinansSUM",
-      "query": "business funding",
+      "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
+      "url": "https://dati.agcm.it/dataset/p24994#",
+      "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
     },
     {
-      "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
-      "url": "https://dati.agcm.it/dataset/p24994#",
-      "query": "housing assistance",
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -320,6 +320,14 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -415,14 +423,6 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Energy Efficiency Action Plan (EEAP): glazing",
-      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -653,14 +653,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "HICP - housing",
-      "url": "https://ec.europa.eu/eurostat/databrowser/product/page/teicp040",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Horizon 2020 Energy Efficiency",
       "url": "https://ec.europa.eu/easme/en/horizon-2020-energy-efficiency",
       "query": "energy efficiency support",
@@ -751,6 +743,14 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -869,14 +869,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Inventories of subsidies - Sint-Gilles",
-      "url": "https://datastore.brussels/web/data/dataset/3fbe4704-5359-454d-8a8e-2a01fc1fbb4a",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
       "query": "subsidies",
@@ -904,14 +896,6 @@
       "title": "Inventory of subventions - Etterbeek",
       "url": "https://datastore.brussels/web/data/dataset/f5a2ea96-88e2-4ec7-82ae-ade6e47ee930",
       "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IPA03 - Structural business statistics",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -991,6 +975,14 @@
     {
       "title": "MIRRI_Subsidies 2022_2023-06-06",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-06-06",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023-06-06",
+      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1213,6 +1205,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Scholarship students in health and social training (Sept. 2012)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2012/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Scholarships for reimbursement of expenses",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/borse-di-studio-per-rimborso-spese#",
       "query": "scholarships",
@@ -1415,6 +1415,14 @@
     {
       "title": "VCA02 - Agricultural Output in Europe",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA02/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "VCA03 - Exports of Irish Agricultural Products",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA03/JSON-stat/2.0/en",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
