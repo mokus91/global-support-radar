@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Global Support Radar – béta teszt statisztika</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--line:#293b56;--text:#eef4ff;--muted:#9aabc4;--mint:#53e0b2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Arial}.wrap{max-width:900px;margin:auto;padding:28px 18px}a{color:var(--mint)}h1{font-size:clamp(28px,5vw,42px)}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}.box b{display:block;font-size:30px}.bar{height:10px;background:#25364e;border-radius:9px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--mint)}li{margin:10px 0}.note{border:1px solid var(--line);padding:14px;border-radius:12px;color:var(--muted);margin-top:22px}
+</style></head><body><main class="wrap"><p><a href="./">← Global Support Radar</a></p><h1>Béta teszt – visszajelzési statisztika</h1><p class="muted">Automatikusan frissülő, összesített adatok. A visszajelzések száma nem azonos az egyedi tesztelők számával.</p>
+<div class="grid"><section class="box"><span class="muted">Összes visszajelzés</span><b id="total">—</b></section><section class="box"><span class="muted">Nyitott</span><b id="open">—</b></section><section class="box"><span class="muted">Lezárt</span><b id="closed">—</b></section></div>
+<h2>Visszajelzések témák szerint</h2><div class="box" id="categories">Statisztika betöltése…</div><h2>Értékelések (1–5)</h2><div class="box" id="ratings">—</div><p class="muted" id="updated"></p>
+<div class="note">Adatvédelem: ezen az oldalon csak darabszámok jelennek meg. Nincs nyilvános névlista, hibaleírás, eszközadat vagy személyes adat. Az értékelések és kategóriák a tesztelő által beküldött űrlapmezőkből származnak.</div></main>
+<script>
+(async()=>{const el=id=>document.getElementById(id);try{const r=await fetch('./data/beta-feedback-stats.json',{cache:'no-store'});if(!r.ok)throw Error('not ready');const d=await r.json();el('total').textContent=d.total_feedback??0;el('open').textContent=d.open_feedback??0;el('closed').textContent=d.closed_feedback??0;
+const cats=Object.entries(d.categories||{});const max=Math.max(1,...cats.map(x=>x[1]));el('categories').innerHTML=cats.map(([k,v])=>'<div>'+k+' <b style="float:right">'+v+'</b><div class="bar"><i style="width:'+(v/max*100)+'%"></i></div></div>').join('')||'Még nincs visszajelzés.';
+const ratings=Object.entries(d.ratings||{});el('ratings').innerHTML=ratings.map(([k,v])=>'<span style="display:inline-block;margin:6px 14px 6px 0">'+(k==='Unrated'?'Nincs értékelés':k+' / 5')+': <b>'+v+'</b></span>').join('');
+el('updated').textContent='Utolsó frissítés: '+new Date(d.generated_at).toLocaleString(document.documentElement.lang==='hu'?'hu-HU':'en-GB');
+}catch(e){el('categories').textContent='A statisztika még nem készült el. Az első tesztelői visszajelzés után automatikusan létrejön.';el('ratings').textContent='Még nincs adat.';}})();
+</script></body></html>
