@@ -81,6 +81,32 @@
       "url": "https://kormanyhivatalok.hu/csaladtamogatasok",
       "publisher": "Kormányhivatalok",
       "status": "official-information"
+    },
+    {
+      "id": "hu-gyes",
+      "title_hu": "Gyermekgondozást segítő ellátás – GYES",
+      "title_en": "Childcare allowance — GYES",
+      "category": "family",
+      "summary_hu": "A GYES főszabály szerint a gyermek 3 éves koráig járhat; ikergyermekeknél és tartósan beteg vagy súlyosan fogyatékos gyermeknél eltérő korhatár érvényesülhet. Nagyszülő is jogosult lehet külön feltételekkel.",
+      "summary_en": "GYES may generally be available until a child turns 3; different age limits may apply for twins or a child with a long-term illness or severe disability. Grandparents may qualify under additional conditions.",
+      "beneficiary_hu": "A gyermeket saját háztartásában nevelő szülő vagy gyám, illetve külön feltételekkel nagyszülő.",
+      "beneficiary_en": "A parent or guardian raising the child in their household, or a grandparent under specific conditions.",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/gyermekgondozast-segito-ellatas",
+      "publisher": "Magyar Államkincstár",
+      "status": "official-information"
+    },
+    {
+      "id": "hu-gyet",
+      "title_hu": "Gyermeknevelési támogatás – GYET",
+      "title_en": "Child-raising support — GYET",
+      "category": "family",
+      "summary_hu": "A GYET három vagy több kiskorú gyermeket saját háztartásban nevelő szülőnek vagy gyámnak járhat, ha a legfiatalabb gyermek 3 és 8 év közötti. Munkavégzési korlátozások is vannak.",
+      "summary_en": "GYET may be available to a parent or guardian raising at least three minors in their household when the youngest child is aged 3 to 8. Work restrictions also apply.",
+      "beneficiary_hu": "Legalább három kiskorút saját háztartásban nevelő szülő vagy gyám, a törvényi feltételekkel.",
+      "beneficiary_en": "A parent or guardian raising at least three minors in their household, subject to statutory conditions.",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/gyermeknevelesi-tamogatas",
+      "publisher": "Magyar Államkincstár",
+      "status": "official-information"
     }
   ]
 }
