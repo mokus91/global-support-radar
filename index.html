@@ -490,7 +490,7 @@ function renderCards(){
   const link=document.createElement("a");let href="";
   try{const u=new URL(row._official||"");if(u.protocol==="https:"&&(row._hosts||[]).some(h=>u.hostname===h||u.hostname.endsWith("."+h)))href=u.href;}catch(_){}
   if(!href)href=row._fallback||"https://www.grants.gov/";
-  link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=lang==="hu"?"Hivatalos forrás ↗":"Official source ↗";foot.append(note,link);
+  link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=lang==="hu"?"Hivatalos forrás ↗":"Official source ↗";const actions=document.createElement("div");actions.style.display="flex";actions.style.alignItems="center";actions.style.gap="8px";actions.append(fav,link);foot.append(note,actions);
   card.append(top,title,desc,meta,foot);box.append(card);
  });
 
