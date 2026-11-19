@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:48:40.882964+00:00",
+  "generated_at": "2026-11-19T15:53:23.970954+00:00",
   "source_id": "us-grants-gov",
   "source_url": "https://www.grants.gov/",
   "api_url": "https://api.grants.gov/v1/api/search2",
@@ -18614,20 +18614,6 @@
       "verification_status": "unverified"
     },
     {
-      "id": "364003",
-      "title": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
-      "identifier": "UST-SIPPRA-2027-003",
-      "agency": "USDOT-DO-SIPPRA",
-      "open_date": "11/12/2026",
-      "deadline": "04/06/2027",
-      "status": "posted",
-      "category_codes": [],
-      "official_url": "https://www.grants.gov/search-results-detail/364003",
-      "source_id": "us-grants-gov",
-      "record_type": "official-api-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
       "id": "364265",
       "title": "The State Component of the National Cooperative Geologic Mapping Program",
       "identifier": "G27AS00148",
@@ -19407,6 +19393,20 @@
       "status": "posted",
       "category_codes": [],
       "official_url": "https://www.grants.gov/search-results-detail/364105",
+      "source_id": "us-grants-gov",
+      "record_type": "official-api-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "id": "364003",
+      "title": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
+      "identifier": "UST-SIPPRA-2027-003",
+      "agency": "USDOT-DO-SIPPRA",
+      "open_date": "11/12/2026",
+      "deadline": "04/06/2027",
+      "status": "posted",
+      "category_codes": [],
+      "official_url": "https://www.grants.gov/search-results-detail/364003",
       "source_id": "us-grants-gov",
       "record_type": "official-api-discovery-candidate",
       "verification_status": "unverified"
