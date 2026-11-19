@@ -12,7 +12,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
 - 69 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
-- Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires nyílt API-jának automatizált feldolgozása külön fejlesztési feladat; a forrás jelenleg keresőlinkként szerepel.
+- Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
 - A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants és Chile CORFO.
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
 - Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.

@@ -45,6 +45,8 @@ jobs:
         run: python scripts/discover_chile_calls.py
       - name: Discover Spanish national and regional grant calls from SNPSAP API
         run: python scripts/discover_spain_grants.py
+      - name: Discover French local public aid schemes from Aides-territoires API
+        run: python scripts/discover_france_aides_territoires.py
       - name: Discover EU Funding and Tenders calls
         run: python scripts/discover_eu_funding.py
       - name: Discover EU CAP Network agriculture funding calls
@@ -72,11 +74,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/gsr-discovery
-          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/eu-cap-network-discovery.json data/eu-national-agriculture-discovery.json data/eu-national-category-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json data/un-national-portals.json data/jgrants-discovery.json data/chile-discovery.json data/spain-discovery.json data/worldwide-portal-health.json /tmp/gsr-discovery/
+          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/eu-cap-network-discovery.json data/eu-national-agriculture-discovery.json data/eu-national-category-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json data/un-national-portals.json data/jgrants-discovery.json data/chile-discovery.json data/spain-discovery.json data/france-aides-territoires-discovery.json data/worldwide-portal-health.json /tmp/gsr-discovery/
           git fetch origin main
           git reset --hard origin/main
           cp /tmp/gsr-discovery/*.json data/
-          git add data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/eu-cap-network-discovery.json data/eu-national-agriculture-discovery.json data/eu-national-category-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json data/un-national-portals.json data/jgrants-discovery.json data/chile-discovery.json data/spain-discovery.json data/worldwide-portal-health.json
+          git add data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/eu-cap-network-discovery.json data/eu-national-agriculture-discovery.json data/eu-national-category-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json data/un-national-portals.json data/jgrants-discovery.json data/chile-discovery.json data/spain-discovery.json data/france-aides-territoires-discovery.json data/worldwide-portal-health.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh official source discovery index"
             pushed=false
