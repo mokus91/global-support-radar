@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:57:42Z",
+  "generated_at": "2026-11-19T13:01:32Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
@@ -732,6 +732,10 @@
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
+      "country_code": "CY",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
       "country_code": "FR",
       "error": "Remote end closed connection without response"
     },
@@ -750,10 +754,6 @@
     {
       "country_code": "LT",
       "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "country_code": "LV",
-      "error": "<urlopen error [Errno 111] Connection refused>"
     },
     {
       "country_code": "RO",
