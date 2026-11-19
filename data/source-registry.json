@@ -161,6 +161,17 @@
       "access": "Official federal assistance listings; public API/data files described by SAM.gov",
       "status": "discovery-source",
       "notes": "Programme catalogue includes grants, loans, scholarships, insurance and other assistance; distinct from current open opportunity notices on Grants.gov."
+    },
+    {
+      "id": "uk-ukri",
+      "name": "UK Research and Innovation – Funding Finder",
+      "publisher": "UK Research and Innovation",
+      "url": "https://www.ukri.org/opportunity/",
+      "coverage": "United Kingdom; research, innovation and business funding",
+      "kind": "funding-calls",
+      "access": "Official RSS feed at https://www.ukri.org/opportunity/feed/",
+      "status": "automated-discovery",
+      "notes": "The RSS feed is a discovery stream and may not include every opportunity or deadline. Each opportunity must be checked on its official page; all imported records remain unverified."
     }
   ],
   "publication_requirements": [
