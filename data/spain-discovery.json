@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T17:32:18.768546+00:00",
+  "generated_at": "2026-11-19T21:46:07.144901+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
@@ -70,8 +70,8 @@
         "business"
       ],
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943398",
-      "application_url": "www.sabarca.cat",
-      "legal_bases_url": "http://bop.diba.cat/anunci/3926629/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-dels-premis-concursos-i-o-sortejos-promoguts-per-l-ajuntament-ajuntament-de-sant-andreu-de-la-barca",
+      "application_url": "https://www.sabarca.cat",
+      "legal_bases_url": "https://bop.diba.cat/anunci/3926629/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-dels-premis-concursos-i-o-sortejos-promoguts-per-l-ajuntament-ajuntament-de-sant-andreu-de-la-barca",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
@@ -142,7 +142,7 @@
         "education"
       ],
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943290",
-      "application_url": "www.altemporda.org",
+      "application_url": "https://www.altemporda.org",
       "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/CONVOCATORIA_MO_2026-2027.pdf",
       "status": "official-api-window-current",
       "eligibility_verified": false,
