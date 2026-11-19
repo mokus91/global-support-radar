@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:04:22.839146+00:00",
+  "generated_at": "2026-11-19T15:40:07.843586+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 181,
@@ -861,6 +861,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Sint-Gilles",
+      "url": "https://datastore.brussels/web/data/dataset/3fbe4704-5359-454d-8a8e-2a01fc1fbb4a",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
       "query": "subsidies",
@@ -975,14 +983,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023-06-06",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-06-06",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_2023-06-06",
-      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

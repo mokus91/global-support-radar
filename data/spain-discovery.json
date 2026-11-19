@@ -1,47 +1,15 @@
 {
-  "generated_at": "2026-11-19T15:05:11.849967+00:00",
+  "generated_at": "2026-11-19T15:40:44.887803+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
-  "records_count": 14,
+  "records_count": 5,
   "query_errors": [],
   "records": [
     {
-      "id": "943125",
+      "id": "943462",
       "country_code": "ES",
-      "title_original": "2026 CONVOCATORIA DE SUBVENCION PARA PROYECTOS EDITORIALES Y AUDIOVISUALES",
-      "coofficial_title": "2026 DEIALDIA PROIEKTU EDITORIALAK ETA AUDIOBISUALAK. DIRULAGUNTZAK",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "AUTONOMICA · PAÍS VASCO · PRESIDENCIA DE GOBIERNO",
-      "regions": [
-        "ES21 - PAIS VASCO"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Cultura",
-      "start_date": "2026-11-06",
-      "deadline": "2026-12-07",
-      "indefinite_open": false,
-      "amount_total": 70000,
-      "currency": "EUR",
-      "categories": [
-        "all"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943125",
-      "application_url": "https://www.euskadi.eus/ayuda_subvencion/2026/subvenciones_para_proyectos_editoriales_y_audiovisuales_en_el_ambito_de_la_diaspora-vasca-2026/web01-tramite/es/",
-      "legal_bases_url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2025005538",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943120",
-      "country_code": "ES",
-      "title_original": "Convocatoria de tres becas de colaboración en la Escuela Internacional de Doctorado. Vicerrectorado de Política Científica de la Universidad de Castilla la Mancha. Año 2027",
+      "title_original": "III Convocatoria de Premios a Trabajos de fin de Máster de la Cátedra AgroBank “Mujer, Empresa y Mundo Rural” de la Universidad de Castilla-La Mancha. Curso académico 2025-2026",
       "coofficial_title": null,
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
       "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
@@ -53,339 +21,17 @@
       ],
       "purpose_original": "Educación",
       "start_date": "2026-11-19",
-      "deadline": "2026-12-03",
+      "deadline": "2026-12-31",
       "indefinite_open": false,
-      "amount_total": 18750,
-      "currency": "EUR",
-      "categories": [
-        "education"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943120",
-      "application_url": null,
-      "legal_bases_url": "https://www.uclm.es/estudios/eid",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943119",
-      "country_code": "ES",
-      "title_original": "Convocatoria para la participación y concesión de premios a las agrupaciones carnavalescas en el Carnaval 2027 de Santander",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SANTANDER · AYUNTAMIENTO DE SANTANDER",
-      "regions": [
-        "ES130 - Cantabria"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Cultura",
-      "start_date": "2026-11-16",
-      "deadline": "2027-12-31",
-      "indefinite_open": false,
-      "amount_total": 10450,
-      "currency": "EUR",
-      "categories": [
-        "all"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943119",
-      "application_url": null,
-      "legal_bases_url": "https://www.santander.es/ciudad/premios-distinciones/convocatoria-participacion-concesion-premios-agrupaciones-carnavalescas",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943117",
-      "country_code": "ES",
-      "title_original": "Convocatoria para la participación y concesión de ayudas a las agrupaciones carnavalescas en el Carnaval 2027",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SANTANDER · AYUNTAMIENTO DE SANTANDER",
-      "regions": [
-        "ES130 - Cantabria"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Cultura",
-      "start_date": "2026-11-16",
-      "deadline": "2027-01-11",
-      "indefinite_open": false,
-      "amount_total": 14550,
-      "currency": "EUR",
-      "categories": [
-        "all"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943117",
-      "application_url": null,
-      "legal_bases_url": "https://www.santander.es/content/convocatoria-participacion-concesion-ayudas-agrupaciones-carnavalescas-carnaval-2027",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943100",
-      "country_code": "ES",
-      "title_original": "Convocatoria de 5 ayudas de movilidad internacional Erasmus+ KA131 para estudiantes y recientes titulados en la modalidad de prácticas abiertas en Consejerías de Educación en el exterior. Curso académico 2026/27 (ref UCLM 1231-1232)",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
-      "regions": [
-        "ES42 - CASTILLA LA MANCHA"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Educación",
-      "start_date": "2026-11-10",
-      "deadline": "2026-11-27",
-      "indefinite_open": false,
-      "amount_total": 20000,
-      "currency": "EUR",
-      "categories": [
-        "education",
-        "transport"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943100",
-      "application_url": null,
-      "legal_bases_url": "https://www.uclm.es/global/promotores/organos-de-gobierno/vicerrectorado-de-politica-internacional-y-alianzas-globales/ori_publicaciones/2026-11-11-convocatoria-erasmus-ka131-epb_ept-cee-2026-27",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943097",
-      "country_code": "ES",
-      "title_original": "Convocatoria de subvenciones para asociaciones de estudiantes y de antiguos alumnos (alumni) de la Universidad de Castilla-La Mancha (UCLM) para el curso 2026/2027.",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
-      "regions": [
-        "ES42 - CASTILLA LA MANCHA"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Educación",
-      "start_date": "2026-11-11",
-      "deadline": "2027-01-20",
-      "indefinite_open": false,
-      "amount_total": 20000,
-      "currency": "EUR",
-      "categories": [
-        "education"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943097",
-      "application_url": null,
-      "legal_bases_url": "https://www.uclm.es/global/promotores/organos-de-gobierno/consejo-social/convocatorias-consejo-social/asociaciones_27",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943094",
-      "country_code": "ES",
-      "title_original": "Convocatoria de una beca de colaboración en Comunicación Institucional. Consejo Social de la Universidad de Castilla la Mancha. Año 2027",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
-      "regions": [
-        "ES42 - CASTILLA LA MANCHA"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Educación",
-      "start_date": "2026-11-10",
-      "deadline": "2026-11-25",
-      "indefinite_open": false,
-      "amount_total": 5399.24,
-      "currency": "EUR",
-      "categories": [
-        "education"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943094",
-      "application_url": null,
-      "legal_bases_url": "https://www.uclm.es/global/promotores/organos-de-gobierno/consejo-social/convocatorias-consejo-social/beca_comunicacion_27",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943091",
-      "country_code": "ES",
-      "title_original": "BASES DE SUBVENCIONES AL DEPORTE HERREÑO CONCURRENCIA COMPETITIVA, AÑO 2026.",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CABILDO INSULAR DE EL HIERRO · CABILDO INSULAR DE HIERRO, EL",
-      "regions": [
-        "ES703 - El Hierro"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Cultura",
-      "start_date": null,
-      "deadline": null,
-      "indefinite_open": true,
-      "amount_total": 250000,
-      "currency": "EUR",
-      "categories": [
-        "all"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943091",
-      "application_url": null,
-      "legal_bases_url": "elhierro.es",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943087",
-      "country_code": "ES",
-      "title_original": "BASES ESPECÍFICAS PARA EL OTORGAMIENTO DE SUBVENCIONES: ADQUISICIÓN DE ALIMENTOS PARA EL GANADO 2026",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CABILDO INSULAR DE EL HIERRO · CABILDO INSULAR DE HIERRO, EL",
-      "regions": [
-        "ES703 - El Hierro"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Agricultura, Pesca y Alimentación",
-      "start_date": null,
-      "deadline": null,
-      "indefinite_open": true,
-      "amount_total": 340000,
-      "currency": "EUR",
-      "categories": [
-        "agriculture"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943087",
-      "application_url": null,
-      "legal_bases_url": "elhierro.es",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943081",
-      "country_code": "ES",
-      "title_original": "BASES ESPECÍFICAS PARA EL OTORGAMIENTO DE SUBVENCIÓN PARA TRANSPORTE DE FORRAJE AÑO 2026",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CABILDO INSULAR DE EL HIERRO · CABILDO INSULAR DE HIERRO, EL",
-      "regions": [
-        "ES703 - El Hierro"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Agricultura, Pesca y Alimentación",
-      "start_date": null,
-      "deadline": null,
-      "indefinite_open": true,
-      "amount_total": 150000,
-      "currency": "EUR",
-      "categories": [
-        "agriculture",
-        "transport"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943081",
-      "application_url": null,
-      "legal_bases_url": "elhierro.es",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943076",
-      "country_code": "ES",
-      "title_original": "CONVOCATORIA DE BECAS DE FORMACIÓN PRÁCTICA ASOCIADAS A LA REALIZACIÓN DE PROYECTOS DE INVESTIGACIÓN E INNOVACIÓN DE APLICACIÓN EN LA ASOCIACIÓN EMPRESARIAL DE INVESTIGACIÓN CENTRO TECNOLÓGICO NACIONAL DE LA CONSERVA",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "AUTONOMICA · REGIÓN DE MURCIA · FUNDACIÓN SÉNECA (AGENCIA REGIONAL DE CIENCIA Y TECNOLOGÍA)",
-      "regions": [
-        "ES62 - REGION DE MURCIA"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Investigación, desarrollo e innovación",
-      "start_date": "2026-11-19",
-      "deadline": "2026-12-03",
-      "indefinite_open": false,
-      "amount_total": 34340,
+      "amount_total": 4000,
       "currency": "EUR",
       "categories": [
         "education",
         "business"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943076",
-      "application_url": "https://www.fseneca.es/web/ayudas-abiertas",
-      "legal_bases_url": "https://www.fseneca.es/web/ayudas-abiertas",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "943042",
-      "country_code": "ES",
-      "title_original": "BASES SUBVENCIONES AL FOMENTO DE LA PLANTACIÓN Y RECUPERACIÓN DE HIGUERAS 2026",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CABILDO INSULAR DE EL HIERRO · CABILDO INSULAR DE HIERRO, EL",
-      "regions": [
-        "ES703 - El Hierro"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Agricultura, Pesca y Alimentación",
-      "start_date": null,
-      "deadline": null,
-      "indefinite_open": true,
-      "amount_total": 74000,
-      "currency": "EUR",
-      "categories": [
-        "agriculture"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943042",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943462",
       "application_url": null,
-      "legal_bases_url": "elhierro.es",
+      "legal_bases_url": "https://www.uclm.es/empresas/mecenazgo/catedrasaulasempresa/catedra_agrobank",
       "status": "official-api-window-current",
       "eligibility_verified": true,
       "amount_verified": true,
@@ -394,62 +40,126 @@
       "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
     },
     {
-      "id": "943008",
+      "id": "943398",
       "country_code": "ES",
-      "title_original": "BASES ESPECÍFICAS REGULADORAS PARA LA AYUDA DESTINADA A GASTOS DE LA SEGURIDAD SOCIAL DEL SECTOR TURÍSTICO",
-      "coofficial_title": null,
+      "title_original": "Decreto 2026DECL003683, de 16 de noviembre de 2026 por la que se aprueba la convocatoria  del concurso de escaparates y paradas de mercado de la campaña de Navidad 2026",
+      "coofficial_title": "Decret 2026DECL003683, de 16 de novembre  de 2026 pel que s'aprova la convocatoria del concurs d'aparadors i parades de mercat de la campanya de Nadal 2026",
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CABILDO INSULAR DE EL HIERRO · CABILDO INSULAR DE HIERRO, EL",
+      "granting_authority": "LOCAL · SANT ANDREU DE LA BARCA · AYUNTAMIENTO DE SANT ANDREU DE LA BARCA",
       "regions": [
-        "ES703 - El Hierro"
+        "ES511 - Barcelona"
       ],
       "eligible_beneficiaries_original": [
         "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
       "purpose_original": "Comercio, Turismo y Pymes",
-      "start_date": null,
-      "deadline": null,
-      "indefinite_open": true,
-      "amount_total": 200000,
-      "currency": "EUR",
-      "categories": [
-        "business"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943008",
-      "application_url": null,
-      "legal_bases_url": "elhierro.es",
-      "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
-    },
-    {
-      "id": "942971",
-      "country_code": "ES",
-      "title_original": "BASES CONVOCATORIA DE LA CAMPAÑA “BONO SESTAO 2026”\nPARA EL ESTIMULO AL CONSUMO DIRECTO EN EL COMERCIO Y SECTOR SERVICIOS DE SESTAO",
-      "coofficial_title": "SESTAOKO MERKATARITZA ETA ZERBITZUEN SEKTOREAN ZUZENEKO KONTSUMOA SUSPERTZEKO\n\"SESTAO BONUA 2026\" KANPAINAREN OINARRIAK”\n",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SESTAO · AYUNTAMIENTO DE SESTAO",
-      "regions": [
-        "ES213 - Bizkaia"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "purpose_original": "Comercio, Turismo y Pymes",
-      "start_date": "2026-11-18",
-      "deadline": "2026-12-10",
+      "start_date": "2026-11-01",
+      "deadline": "2026-11-30",
       "indefinite_open": false,
-      "amount_total": 56800,
+      "amount_total": 475,
       "currency": "EUR",
       "categories": [
         "business"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/942971",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943398",
+      "application_url": "www.sabarca.cat",
+      "legal_bases_url": "http://bop.diba.cat/anunci/3926629/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-dels-premis-concursos-i-o-sortejos-promoguts-per-l-ajuntament-ajuntament-de-sant-andreu-de-la-barca",
+      "status": "official-api-window-current",
+      "eligibility_verified": true,
+      "amount_verified": true,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+    },
+    {
+      "id": "943334",
+      "country_code": "ES",
+      "title_original": "Convocatoria 2026 del Concurso de Escaparates de Navidad",
+      "coofficial_title": "Convocatòria 2026 del Concurs Aparadors de Nadal",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · SANT QUIRZE DEL VALLÈS · AYUNTAMIENTO DE SANT QUIRZE DEL VALLÈS",
+      "regions": [
+        "ES511 - Barcelona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "purpose_original": "Comercio, Turismo y Pymes",
+      "start_date": "2026-11-13",
+      "deadline": "2026-12-11",
+      "indefinite_open": false,
+      "amount_total": 3600,
+      "currency": "EUR",
+      "categories": [
+        "business"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943334",
       "application_url": null,
-      "legal_bases_url": "https://www.sestao.eus/es-ES/Ayuntamiento/servicios/OficinaTecnicadecomercio/Paginas/bono-comercio-2026.aspx",
+      "legal_bases_url": "https://eacat.aoc.cat/etauler/detall/592149",
+      "status": "official-api-window-current",
+      "eligibility_verified": true,
+      "amount_verified": true,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+    },
+    {
+      "id": "943290",
+      "country_code": "ES",
+      "title_original": "Convocatoria para la concesión de ayudas de comedor obligatorio escolar para el curso 2026-2027.",
+      "coofficial_title": "Convocatòria per a la concessió dels ajuts de menjador obligatori escolar pel curs 2026-2027",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · CONSELL COMARCAL DE ALT EMPORDÀ · CONSELL COMARCAL DE ALT EMPORDÀ",
+      "regions": [
+        "ES512 - Girona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "purpose_original": "Educación",
+      "start_date": null,
+      "deadline": null,
+      "indefinite_open": true,
+      "amount_total": 1024346.02,
+      "currency": "EUR",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943290",
+      "application_url": "www.altemporda.org",
+      "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/CONVOCATORIA_MO_2026-2027.pdf",
+      "status": "official-api-window-current",
+      "eligibility_verified": true,
+      "amount_verified": true,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+    },
+    {
+      "id": "943269",
+      "country_code": "ES",
+      "title_original": "Convocatoria para la concesión de ayudas individuales de comedor escolar para el curso 2026-2027",
+      "coofficial_title": "Convocatòria per a la concessió dels ajuts individuals de menjador escolar per al curs 2026-2027",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · CONSELL COMARCAL DE ALT EMPORDÀ · CONSELL COMARCAL DE ALT EMPORDÀ",
+      "regions": [
+        "ES512 - Girona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "purpose_original": "Educación",
+      "start_date": "2026-05-15",
+      "deadline": "2026-11-19",
+      "indefinite_open": false,
+      "amount_total": 5322136.25,
+      "currency": "EUR",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943269",
+      "application_url": "https://www.altemporda.org/",
+      "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/Bases_26-27.pdf",
       "status": "official-api-window-current",
       "eligibility_verified": true,
       "amount_verified": true,
