@@ -552,6 +552,30 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   }catch(error){
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A támogatási nyilvántartások most nem tölthetők be.":"Aid transparency registers could not be loaded right now.";box.append(warning);
   }
+  if(category==="agriculture"||category==="business"||category==="all"){
+   try{
+    const response=await fetch("data/eu-cap-network-discovery.json");
+    if(response.ok){
+     const feed=await response.json();
+     const records=feed.records.filter(record=>category==="all"||record.categories.includes(category));
+     if(records.length){
+      const heading=document.createElement("h3");heading.textContent=isHu?"Friss mezőgazdasági és vidéki innovációs támogatási lehetőségek":"Current agriculture and rural innovation funding leads";box.append(heading);
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"Automatikusan figyelt EU CAP Network-forrás. A találatok előzetes jelöltek: a nyitottságot, jogosultságot és határidőt a kiíró oldalán ellenőrizd.":"Automatically monitored EU CAP Network source. These are discovery leads: verify opening status, eligibility and deadlines on the original publisher's page.";box.append(note);
+      records.forEach(record=>{
+       const card=document.createElement("article");card.className="card";
+       const h=document.createElement("h3");h.textContent=record.title;
+       const p=document.createElement("p");p.textContent=record.description||"";
+       const meta=document.createElement("div");meta.className="meta";meta.textContent=(isHu?"Határidő: ":"Deadline: ")+(record.deadline|| (isHu?"nincs megadva":"not stated"))+" · "+(isHu?"Állapot: ":"Status: ")+record.status;
+       const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"EU CAP Network · előzetes találat":"EU CAP Network · discovery lead";
+       const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Eredeti kiírás megnyitása ↗":"Open original call ↗";
+       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+      });
+     }
+    }
+   }catch(error){
+    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A mezőgazdasági támogatási hírek most nem tölthetők be.":"Agriculture funding leads could not be loaded right now.";box.append(warning);
+   }
+  }
   try{
    const response=await fetch("data/eu-social-protection-country-pages.json");
    if(response.ok){
