@@ -52,10 +52,12 @@ def first(meta, key, default=None):
 def main():
     error = None
     payload = {}
+    pages_fetched = 0
     try:
         payload = {"results": [], "totalResults": 0}
         for page in range(1, 21):
             part = collect(page)
+            pages_fetched += 1
             payload["results"].extend(part.get("results", []))
             payload["totalResults"] = part.get("totalResults", payload["totalResults"])
             if len(part.get("results", [])) < 100 or len(payload["results"]) >= payload["totalResults"]:
@@ -114,15 +116,21 @@ def main():
     (ROOT / "data/eu-open-calls-discovery.json").write_text(
         json.dumps(candidate_output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    # Preserve the raw official API response for audit and future field mapping.
+    # Keep the audit file compact. The raw API response can exceed GitHub's
+    # 100 MB per-file limit and is not needed by the website; the curated
+    # candidate feed above contains the fields used by the frontend.
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Official call discovery only. Portal status filters are retained; parseable past deadlines are excluded. Every result requires individual page verification before publication.",
+        "purpose": "Compact audit summary of the official API discovery run. The curated candidate feed is stored separately in eu-open-calls-discovery.json. Raw API payloads are intentionally not committed.",
         "verification_status": "unverified",
-        "error": error,
-        "response": payload
+        "pages_fetched": pages_fetched,
+        "records_received": len(payload.get("results", [])),
+        "total_results_reported": payload.get("totalResults", 0),
+        "candidate_records": len(candidates),
+        "expired_deadline_records_excluded": expired_excluded,
+        "error": error
     }
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
