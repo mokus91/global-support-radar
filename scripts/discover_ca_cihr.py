@@ -6,6 +6,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
+import ssl
+import certifi
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/ca-cihr-discovery.json"
@@ -19,7 +21,7 @@ def main():
     records, error = [], None
     try:
         req = Request(FEED, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/rss+xml, application/xml, text/xml"})
-        with urlopen(req, timeout=45) as response:
+        with urlopen(req, timeout=45, context=ssl.create_default_context(cafile=certifi.where())) as response:
             root = ET.fromstring(response.read())
         for item in root.findall(".//item"):
             title = clean(item.findtext("title"))
