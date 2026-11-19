@@ -163,6 +163,19 @@ def main():
     if "maximum_pages" in arc_feed and arc_feed.get("pages_fetched", 0) >= arc_feed["maximum_pages"] and arc_feed.get("pagination_complete") is not False:
         raise SystemExit("Australian ARC feed reached its page cap without an incomplete-pagination warning")
 
+    health_script = ROOT / "scripts" / "check_published_site.py"
+    health_workflow = ROOT / ".github" / "workflows" / "site-health.yml"
+    if not health_script.is_file() or not health_workflow.is_file():
+        raise SystemExit("Scheduled published-site health monitor is missing")
+    health_text = health_script.read_text(encoding="utf-8")
+    workflow_text = health_workflow.read_text(encoding="utf-8")
+    for required in ("feed-status.json", "max_age_hours", "temporarily-unavailable", "records_count"):
+        if required not in health_text:
+            raise SystemExit(f"Published-site health check is missing: {required}")
+    for required in ('cron: "17 */6 * * *"', "timeout-minutes: 5", "check_published_site.py"):
+        if required not in workflow_text:
+            raise SystemExit(f"Scheduled site-health workflow is missing: {required}")
+
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):
         if required not in html:
