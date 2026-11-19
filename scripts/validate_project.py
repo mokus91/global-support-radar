@@ -68,6 +68,32 @@ def main():
     if not (DATA / "eu-funding-discovery.json").is_file():
         raise SystemExit("EU Funding & Tenders API audit file is missing")
 
+    # Keep historical national portal leads visibly separate from verified live funding sources.
+    historical = load_json(DATA / "un-national-portals.json")
+    historical_records = historical.get("records", [])
+    if len(historical_records) != 193 or historical.get("records_count") != 193:
+        raise SystemExit("UN national portal directory must retain all 193 Member State leads")
+    for row in historical_records:
+        if row.get("status") != "historical-directory-lead" or row.get("verification_status") != "not-currently-verified":
+            raise SystemExit("Historical UN portal leads must never be presented as currently verified")
+        if not re.fullmatch(r"[A-Z]{2}", row.get("country_code", "")):
+            raise SystemExit("Historical national portal lead has an invalid country code")
+        parsed = urlparse(row.get("url", ""))
+        if parsed.scheme != "https" or not parsed.netloc:
+            raise SystemExit("Historical national portal lead has an invalid HTTPS URL")
+
+    worldwide = load_json(DATA / "worldwide-national-support-sources.json")
+    worldwide_records = worldwide.get("records", [])
+    worldwide_ids = [row.get("id") for row in worldwide_records]
+    if len(worldwide_ids) != len(set(worldwide_ids)):
+        raise SystemExit("Duplicate IDs in worldwide national support source directory")
+    for row in worldwide_records:
+        if not re.fullmatch(r"[A-Z]{2}", row.get("country_code", "")) and row.get("country_code") != "EU":
+            raise SystemExit("Worldwide support source has an invalid country code")
+        parsed = urlparse(row.get("url", ""))
+        if parsed.scheme != "https" or not parsed.netloc:
+            raise SystemExit("Worldwide support source must use an HTTPS URL")
+
     feed_status = load_json(DATA / "feed-status.json")
     feeds = feed_status.get("feeds", [])
     if not isinstance(feeds, list) or not feeds:
