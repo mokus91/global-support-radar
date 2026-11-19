@@ -10,7 +10,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Country selector covering the ISO country-code list, localized into Hungarian or English.
 - Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
 - The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
-- Country-specific official support finders now cover 41 countries across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
+- Country-specific official support finders now cover 46 countries across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
 - Japan has an additional daily automated discovery adapter using the Japan Digital Agency's public JGrants REST API. It queries several Japanese keywords for subsidies filtered to active application periods, retains original Japanese titles and links to the official notice. Search results are not a complete inventory; users must verify eligibility and deadlines at the publisher.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
 - Main search currently reads discovery records from three working official data connections:
@@ -124,3 +124,8 @@ The worldwide finder also includes 24 additional national single portals for EU 
 ### Additional national support finders
 
 The directory has been expanded with official public support finders for Norway (Innovation Norway), Switzerland (Innosuisse), Türkiye (KOSGEB and the national investment support finder), Mexico (federal support finder and social programmes) and Colombia (Innovamos and Prosperidad Social). These are country-specific source portals; their inclusion does not mean every listed programme is open or that eligibility has been checked for an applicant.
+
+
+### Asia and Latin America expansion
+
+The worldwide directory now adds official support sources in Malaysia (KUSKOP, MIDA and Bank Negara Malaysia), the Philippines (DOLE livelihood grants, agricultural finance and Startup Philippines), Chile (Chile Emprende and the national Entrepreneurship Portal), Peru (FONCODES) and Indonesia (KUR programme information). These entries are national source portals and programme guides; they do not imply that every scheme is currently accepting applications.
