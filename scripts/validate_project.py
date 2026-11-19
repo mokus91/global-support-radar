@@ -91,7 +91,7 @@ def main():
         if required not in html:
             raise SystemExit(f"Closed/withdrawn opportunity filtering is missing: {required}")
 
-    for required in ("const merged=new Map()", "normalizeUrl", "titleKey(row)", "liveListings=[...merged.values()]"):
+    for required in ("const merged=new Map()", "normalizeUrl", "titleKey(row)", "stableId=row.id||row.identifier", "unkeyed::"+row._source+"::"+index", "liveListings=[...merged.values()]"):
         if required not in html:
             raise SystemExit(f"Cross-feed duplicate protection is missing: {required}")
 

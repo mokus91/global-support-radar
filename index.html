@@ -481,11 +481,12 @@ async function loadLiveListings(){
  const normalizeUrl=value=>{try{const url=new URL(value);url.hash="";url.search="";return url.origin+url.pathname.replace(/\\/+$/,"");}catch(_){return""}};
  const titleKey=row=>String(row.title_original||row.title||row.title_en||row.identifier||"").normalize("NFKC").toLowerCase().replace(/[^\\p{L}\\p{N}]+/gu," ").trim();
  const quality=row=>[row.summary,row.description_original,row.eligibility_status,row.deadline,row.official_url,row.amount_maximum,row.total_call_budget].filter(value=>value!==undefined&&value!==null&&value!=="").length;
- results.flat().forEach(row=>{
+ results.flat().forEach((row,index)=>{
   const urlKey=normalizeUrl(row._official);
   const title=titleKey(row);
   const deadline=String(row._deadline||"").slice(0,10);
-  const key=urlKey?row._country+"::url::"+urlKey:(row.id||row.identifier?row._country+"::"+row._source+"::id::"+String(row.id||row.identifier):row._country+"::title::"+title+"::"+deadline);
+  const stableId=row.id||row.identifier;
+  const key=urlKey?row._country+"::url::"+urlKey:(stableId?row._country+"::"+row._source+"::id::"+String(stableId):(title?row._country+"::title::"+title+"::"+deadline:row._country+"::unkeyed::"+row._source+"::"+index));
   const existing=merged.get(key);
   if(!existing){merged.set(key,row);return;}
   const preferred=quality(row)>quality(existing)?row:existing;
