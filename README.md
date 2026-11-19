@@ -23,7 +23,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
 - Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
 - Egységes nemzetközi támogatási adatstandard: az egyéni maximális támogatási összeg és a teljes pályázati keret külön mezőben szerepel; a pénznem és az összeg jelentése is megőrződik. A kereső ezeket a közös mezőket használja, és a teljes keretet nem nevezi egyéni támogatásnak.
-- A fő kereső öt automatikus hivatalos adatkapcsolatból jelenít meg jelölteket: Japan JGrants (Japán), CORFO (Chile), SNPSAP/BDNS (Spanyolország), Grants.gov (USA) és UKRI (Egyesült Királyság). A rekordok státusza és ellenőrzöttsége forrásonként eltér; a kereső nem állítja, hogy minden jelölt nyitott pályázat.
+- A fő kereső hét automatikus hivatalos adatkapcsolatból jelenít meg jelölteket: Japan JGrants (Japán), CORFO (Chile), SNPSAP/BDNS (Spanyolország), Grants.gov (USA), UKRI (Egyesült Királyság), NKFIH (Magyarország) és EU Funding & Tenders (Európai Unió). A rekordok státusza és ellenőrzöttsége forrásonként eltér; a kereső nem állítja, hogy minden jelölt nyitott pályázat.
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
 - Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.
 - Spanyolország SNPSAP/BDNS: napi nyilvános REST API-lekérdezés; az utolsó 50 regisztrált felhívás részletes jelentkezési időszakát ellenőrzi, és csak aktív vagy határozatlan jelentkezési ablakot mutat. Nem teljes katalógus. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
@@ -32,7 +32,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Magyar hivatalos kiindulópontok családtámogatáshoz, lakhatáshoz, mezőgazdasághoz, vállalkozáshoz, civil/kulturális támogatáshoz és kutatás-fejlesztéshez.
 - Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
 - Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
-- 122 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
+- 124 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
 - Automatikus forrásfrissítés naponta négyszer (01:23, 07:23, 13:23 és 19:23 UTC) GitHub Actions segítségével; kézi workflow-indítás is be van állítva. A sikertelen külső lekérések külön hibastátuszt kapnak, és ahol biztonságos, az előző adatpillanatkép megmarad.
 - A források elérhetőségét külön napi ellenőrzés vizsgálja. A weboldalon külön adatfrissítési állapotpanel mutatja a 18 automatikusan vizsgált adatfolyam legutóbbi ellenőrzési idejét és eredményét; az ellenőrzés nem jelent támogatási jogosultságot vagy nyitott pályázatot. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
 
