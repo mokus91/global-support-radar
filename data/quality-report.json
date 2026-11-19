@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19T22:26:19.765588+00:00",
+  "generated_at": "2026-11-19T22:26:30.232939+00:00",
   "feeds_checked": 18,
-  "records_checked": 22220,
+  "records_checked": 2220,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 22000,
+  "unverified_status": 2000,
   "verification_tiers": {
     "verified_open": 0,
     "api_window_candidate": 214,
     "official_listing_candidate": 0,
-    "unverified": 22000,
+    "unverified": 2000,
     "other": 6
   },
   "feed_summary": [
@@ -21,135 +21,154 @@
       "records": 214,
       "unverified": 0,
       "api_window_candidates": 214,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "chile-discovery.json",
       "records": 1,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "spain-discovery.json",
       "records": 5,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "france-aides-territoires-discovery.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "nz-funding-explorer-discovery.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "eu-funding-discovery.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "eu-open-calls-discovery.json",
       "records": 496,
       "unverified": 496,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "eu-cap-network-discovery.json",
       "records": 4,
       "unverified": 4,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "eu-national-agriculture-discovery.json",
       "records": 7,
       "unverified": 7,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
       "records": 51,
       "unverified": 51,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "us-grants-discovery.json",
       "records": 1389,
       "unverified": 1389,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "ukri-discovery.json",
       "records": 20,
       "unverified": 20,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "au-arc-grants-discovery.json",
-      "records": 20000,
-      "unverified": 20000,
+      "records": 0,
+      "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 20000
     },
     {
       "file": "ca-cihr-discovery.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "hu-open-data-discovery.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "hu-palyazat-announcements.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "hu-nkfih-discovery.json",
       "records": 33,
       "unverified": 33,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     },
     {
       "file": "worldwide-portal-health.json",
       "records": 0,
       "unverified": 0,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0
+      "official_listing_candidates": 0,
+      "historical_archive_records": 0
     }
   ],
   "non_opportunity_records": 5,
+  "historical_archive_records": 20000,
   "diagnostic_records_checked": 74,
   "diagnostic_missing_urls": 8,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
-    "Portal reachability diagnostics and dataset catalogue entries are not counted as grant opportunities.",
+    "Portal reachability diagnostics, dataset catalogue entries and historical award archives are not counted as current grant opportunities.",
     "Unverified status is an information flag, not automatically a data error.",
     "No source opportunity records are modified by this audit."
   ]
