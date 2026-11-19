@@ -507,11 +507,11 @@
       "name": "NKFIH – aktuális pályázati felhívások",
       "publisher": "Nemzeti Kutatási, Fejlesztési és Innovációs Hivatal",
       "url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
-      "coverage": "Hungary; research, development, innovation and related business/academic support",
+      "coverage": "Hungary; research, development, innovation and related business and academic support",
       "kind": "funding-calls",
-      "access": "Official grant-news RSS: https://rss.nkfih.gov.hu/hirek-180603?rss=1",
-      "status": "automated-discovery",
-      "notes": "The adapter imports the official NKFIH Pályázati hírek RSS feed as unverified news candidates. This is not a complete list of open calls; confirm status, deadlines and eligibility on the official opportunity page."
+      "access": "Automated daily HTML discovery from the official current-calls listing page",
+      "status": "automated-official-listing",
+      "notes": "Listing does not prove every application window is open or that a visitor is eligible; verify each detailed call page."
     },
     {
       "id": "hu-palyazat-gov",

@@ -455,6 +455,7 @@ async function loadLiveListings(){
   {file:"spain-discovery.json",country:"ES",source:"Spain SNPSAP / BDNS",hosts:["www.infosubvenciones.es","www.euskadi.eus"],fallback:"https://www.infosubvenciones.es/"},
   {file:"us-grants-discovery.json",country:"US",source:"US Grants.gov",hosts:["www.grants.gov"],fallback:"https://www.grants.gov/"},
   {file:"ukri-discovery.json",country:"GB",source:"UKRI",hosts:["www.ukri.org"],fallback:"https://www.ukri.org/opportunity/"},
+  {file:"hu-nkfih-discovery.json",country:"HU",source:"Hungary NKFIH",hosts:["nkfih.gov.hu"],fallback:"https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok"},
  ];
  const results=await Promise.all(feeds.map(async feed=>{
   try{
@@ -518,7 +519,7 @@ function renderCards(){
  }).sort((a,b)=>{const da=Date.parse(a._deadline||"");const db=Date.parse(b._deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||a.title_original||"").localeCompare(String(b.title||b.title_original||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
  currentRows=rows;
  syncSearchUrl();
- $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"5 adatkapcsolat":"5 data connections");
+ $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"6 adatkapcsolat":"6 data connections");
  const savedButton=$("savedToggle");if(savedButton){savedButton.textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+saved.size+")";savedButton.classList.toggle("active",showSavedOnly);$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items stay on this device only."; }
  const box=$("cards");box.replaceChildren();
  if(!rows.length){$("loadMoreWrap").style.display="none";const empty=document.createElement("div");empty.className="empty";const countryHasFeed=country==="all"||liveListings.some(row=>row._country===country);empty.textContent=!countryHasFeed?(lang==="hu"?"Ehhez az országhoz még nincs bekötött automatikus élő pályázati adatfolyam. Az alábbi hivatalos forrásjegyzékben találsz kiindulópontokat.":"No automated live grant feed is connected for this country yet. Check the official source directory below for starting points."):liveListings.length?t.empty:(lang==="hu"?"A hivatalos adatforrások betöltése folyamatban van, vagy jelenleg nem adtak vissza találatot.":"Official source data is loading or currently has no results.");box.append(empty);return;}

@@ -30,7 +30,7 @@ FEEDS = [
     ("Canada — CIHR", "ca-cihr-discovery.json"),
     ("Hungary — open data", "hu-open-data-discovery.json"),
     ("Hungary — grant announcements", "hu-palyazat-announcements.json"),
-    ("Hungary — NKFIH", "hu-nkfih-discovery.json"),
+    ("Hungary — NKFIH current calls", "hu-nkfih-discovery.json"),
     ("Worldwide — portal reachability", "worldwide-portal-health.json"),
 ]
 
