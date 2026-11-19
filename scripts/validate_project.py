@@ -104,6 +104,10 @@ def main():
     for required_file in ("robots.txt", "sitemap.xml"):
         if not (ROOT / required_file).is_file():
             raise SystemExit(f"SEO discovery file is missing: {required_file}")
+    for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants"):
+        if required not in html:
+            raise SystemExit(f"Source coverage transparency panel is missing: {required}")
+
     if "schema.org" not in html or "SearchAction" not in html:
         raise SystemExit("Structured website/search metadata is missing")
 
