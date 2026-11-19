@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T12:17:15Z",
+  "generated_at": "2026-11-19T12:28:44Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 53,
+  "records_count": 52,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -517,20 +517,6 @@
       "country_en": "Poland",
       "country_hu": "Lengyelország",
       "category": "business",
-      "title": "https://funduszeeuropejskie.gov.pl/aktualnosci/podwojna-transformacja-podwojna-korzysc-nowa-pozyczka-na-cyfrowe-i-zielone-zmiany-w-firmie",
-      "official_url": "https://funduszeeuropejskie.gov.pl/aktualnosci/podwojna-transformacja-podwojna-korzysc-nowa-pozyczka-na-cyfrowe-i-zielone-zmiany-w-firmie",
-      "portal_url": "https://funduszeeuropejskie.gov.pl/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-pl-business-2",
-      "country_code": "PL",
-      "country_en": "Poland",
-      "country_hu": "Lengyelország",
-      "category": "business",
       "title": "Ekologia i oszczędność energii w firmie",
       "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/ekologia",
       "portal_url": "https://funduszeeuropejskie.gov.pl/",
@@ -540,7 +526,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-3",
+      "id": "eu-pl-business-2",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
@@ -554,7 +540,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-4",
+      "id": "eu-pl-business-3",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
@@ -568,7 +554,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-5",
+      "id": "eu-pl-business-4",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
@@ -582,7 +568,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-6",
+      "id": "eu-pl-business-5",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
@@ -596,7 +582,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-7",
+      "id": "eu-pl-business-6",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
@@ -610,7 +596,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-pl-business-8",
+      "id": "eu-pl-business-7",
       "country_code": "PL",
       "country_en": "Poland",
       "country_hu": "Lengyelország",
