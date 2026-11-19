@@ -755,14 +755,14 @@
     },
     {
       "id": "worldwide-national-support-finders",
-      "name": "Official national support finders — 41-country directory",
+      "name": "Official national support finders — 46-country directory",
       "publisher": "National governments and official public agencies",
       "url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html",
-      "coverage": "41 countries across North America, Europe, Asia, Africa and South America; federal grants, EU shared-management funds, business support, agriculture and selected social benefits",
+      "coverage": "46 countries across North America, Europe, Asia, Africa and South America; federal grants, EU shared-management funds, business support, agriculture and selected social benefits",
       "kind": "national-support-discovery-directories",
       "access": "Country/category-filtered static directory of official national portals; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "Fifty-five country-specific official source links across 41 countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
+      "notes": "Sixty-five country-specific official source links across 46 countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
     },
     {
       "id": "za-nrf-funding",
@@ -1137,6 +1137,116 @@
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
       "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-my-business-1",
+      "name": "Malaysia — KUSKOP business grants and financing",
+      "publisher": "Government of Malaysia — KUSKOP",
+      "url": "https://www.malaysia.gov.my/en/topics/identifying-kuskop-grants-and-financing-opportunities",
+      "coverage": "Malaysia; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-my-business-2",
+      "name": "Malaysia — MIDA business grants",
+      "publisher": "Malaysian Investment Development Authority",
+      "url": "https://www.mida.gov.my/forms-and-guidelines/grants/",
+      "coverage": "Malaysia; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-my-business-3",
+      "name": "Malaysia — Bank Negara SME financing funds",
+      "publisher": "Bank Negara Malaysia",
+      "url": "https://www.bnm.gov.my/funds4sme",
+      "coverage": "Malaysia; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-ph-employment-1",
+      "name": "Philippines — DOLE Kabuhayan livelihood assistance",
+      "publisher": "Department of Labor and Employment — Philippines",
+      "url": "https://bwsc.dole.gov.ph/dileep/dilp/",
+      "coverage": "Philippines; official national employment support and programme information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-ph-agriculture-2",
+      "name": "Philippines — agricultural credit and financing programmes",
+      "publisher": "Department of Agriculture — Philippines",
+      "url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/",
+      "coverage": "Philippines; official national agriculture support and programme information",
+      "kind": "agriculture-support-directory",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-ph-business-3",
+      "name": "Philippines — Startup Philippines government support",
+      "publisher": "Department of Information and Communications Technology — Philippines",
+      "url": "https://startup.gov.ph/",
+      "coverage": "Philippines; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-cl-business-1",
+      "name": "Chile — Chile Emprende public support finder",
+      "publisher": "Government of Chile — Ministry of Economy, Development and Tourism",
+      "url": "https://www.chileemprende.gob.cl/",
+      "coverage": "Chile; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-cl-all-2",
+      "name": "Chile — Entrepreneurship Portal grants and training",
+      "publisher": "Government of Chile — inter-agency entrepreneurship portal",
+      "url": "https://miportalemprendimiento.gob.cl/programas",
+      "coverage": "Chile; official national all support and programme information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-pe-agriculture-1",
+      "name": "Peru — FONCODES rural and community development",
+      "publisher": "Government of Peru — FONCODES",
+      "url": "https://www.gob.pe/foncodes",
+      "coverage": "Peru; official national agriculture support and programme information",
+      "kind": "agriculture-support-directory",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-id-business-1",
+      "name": "Indonesia — KUR government SME financing",
+      "publisher": "Coordinating Ministry for Economic Affairs — Republic of Indonesia",
+      "url": "https://www.ekon.go.id/",
+      "coverage": "Indonesia; official national business support and programme information",
+      "kind": "business-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
     }
   ],
   "publication_requirements": [
