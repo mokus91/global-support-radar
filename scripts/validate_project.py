@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Lightweight integrity checks for the Global Support Radar MVP."""
+import datetime as dt
 import json
 import re
 import subprocess
@@ -101,12 +102,32 @@ def main():
     feeds = feed_status.get("feeds", [])
     if not isinstance(feeds, list) or not feeds:
         raise SystemExit("feed-status.json must contain a non-empty feeds list")
+    try:
+        checked_at = dt.datetime.fromisoformat(feed_status.get("checked_at", "").replace("Z", "+00:00"))
+        if checked_at.tzinfo is None:
+            raise ValueError("checked_at must include a timezone")
+    except (TypeError, ValueError):
+        raise SystemExit("feed-status.json must include a valid timezone-aware checked_at timestamp")
     filenames = [feed.get("file") for feed in feeds]
     if len(filenames) != len(set(filenames)):
         raise SystemExit("Duplicate feed filenames in feed-status.json")
-    for filename in filenames:
+    allowed_feed_statuses = {"checked", "checked-empty", "temporarily-unavailable", "missing", "invalid-json"}
+    for feed in feeds:
+        filename = feed.get("file")
         if not filename or Path(filename).name != filename:
             raise SystemExit(f"Unsafe feed filename in feed-status.json: {filename}")
+        if feed.get("status") not in allowed_feed_statuses:
+            raise SystemExit(f"Unsupported feed status for {filename}: {feed.get('status')}")
+        if feed.get("status") == "checked" and not isinstance(feed.get("records_count"), int):
+            raise SystemExit(f"Checked feed must report an integer records_count: {filename}")
+        if feed.get("status") == "checked-empty" and feed.get("records_count") != 0:
+            raise SystemExit(f"Checked-empty feed must report zero records: {filename}")
+        try:
+            stamp = dt.datetime.fromisoformat(feed.get("checked_at", "").replace("Z", "+00:00"))
+            if stamp.tzinfo is None:
+                raise ValueError("checked_at must include a timezone")
+        except (TypeError, ValueError):
+            raise SystemExit(f"Feed must include a valid timezone-aware checked_at timestamp: {filename}")
 
     for adapter in ("discover_eu_national_categories.py", "discover_eu_national_agriculture.py", "discover_eu_funding.py"):
         adapter_text = (ROOT / "scripts" / adapter).read_text(encoding="utf-8")
