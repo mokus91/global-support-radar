@@ -4,7 +4,9 @@ import json
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/eu-funding-discovery.json"
@@ -40,8 +42,18 @@ def collect(page=1):
         "User-Agent": "Mozilla/5.0 (compatible; GlobalSupportRadar/0.1)",
         "Referer": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/"
     })
-    with urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    for attempt in range(3):
+        try:
+            with urlopen(req, timeout=30) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (URLError, TimeoutError):
+            if attempt == 2:
+                raise
+        time.sleep(3 * (attempt + 1))
+    raise RuntimeError("EU Funding & Tenders API retry loop exhausted")
 
 def first(meta, key, default=None):
     value = (meta or {}).get(key)
@@ -55,7 +67,8 @@ def main():
     pages_fetched = 0
     try:
         payload = {"results": [], "totalResults": 0}
-        for page in range(1, 21):
+        max_pages = 100
+        for page in range(1, max_pages + 1):
             part = collect(page)
             pages_fetched += 1
             payload["results"].extend(part.get("results", []))

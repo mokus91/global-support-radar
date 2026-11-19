@@ -108,10 +108,13 @@ def main():
         if not filename or Path(filename).name != filename:
             raise SystemExit(f"Unsafe feed filename in feed-status.json: {filename}")
 
-    for adapter in ("discover_eu_national_categories.py", "discover_eu_national_agriculture.py"):
+    for adapter in ("discover_eu_national_categories.py", "discover_eu_national_agriculture.py", "discover_eu_funding.py"):
         adapter_text = (ROOT / "scripts" / adapter).read_text(encoding="utf-8")
         if "for attempt in range(3)" not in adapter_text or "time.sleep(3 * (attempt + 1))" not in adapter_text:
             raise SystemExit(f"Transient network retry policy is missing from {adapter}")
+    eu_adapter = (ROOT / "scripts" / "discover_eu_funding.py").read_text(encoding="utf-8")
+    if "max_pages = 100" not in eu_adapter or '"maximum_pages": 100' not in eu_adapter:
+        raise SystemExit("EU Funding & Tenders pagination cap is missing or inconsistent")
 
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):
