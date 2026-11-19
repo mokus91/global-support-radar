@@ -479,8 +479,8 @@ async function loadLiveListings(){
   }catch(_){return[]}
  }));
  const merged=new Map();
- const normalizeUrl=value=>{try{const url=new URL(value);url.hash="";url.search="";return url.origin+url.pathname.replace(/\\/+$/,"");}catch(_){return""}};
- const titleKey=row=>String(row.title_original||row.title||row.title_en||row.identifier||"").normalize("NFKC").toLowerCase().replace(/[^\\p{L}\\p{N}]+/gu," ").trim();
+ const normalizeUrl=value=>{try{const url=new URL(value);url.hash="";url.search="";return url.origin+url.pathname.replace(/\/+$/,"");}catch(_){return""}};
+ const titleKey=row=>String(row.title_original||row.title||row.title_en||row.identifier||"").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim();
  const quality=row=>[row.summary,row.description_original,row.eligibility_status,row.deadline,row.official_url,row.amount_maximum,row.total_call_budget].filter(value=>value!==undefined&&value!==null&&value!=="").length;
  results.flat().forEach((row,index)=>{
   const urlKey=normalizeUrl(row._official);
