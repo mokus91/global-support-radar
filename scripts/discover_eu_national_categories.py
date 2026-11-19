@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data/europe-national-portals.json"
 OUTPUT = ROOT / "data/eu-national-category-discovery.json"
-TIMEOUT = 18
+TIMEOUT = 9
 MAX_PER_PORTAL_CATEGORY = 12
 HEADERS = {"User-Agent": "GlobalSupportRadar/1.0 (official public funding link discovery)"}
 KEYWORDS = {
@@ -59,20 +59,20 @@ def fetch(url):
         pass
     request = Request(url, headers=HEADERS)
     last_error = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             with urlopen(request, timeout=TIMEOUT, context=context) as response:
                 charset = response.headers.get_content_charset() or "utf-8"
                 return response.geturl(), response.read(2_500_000).decode(charset, errors="replace")
         except urllib.error.HTTPError as exc:
-            if exc.code < 500 and exc.code != 429 or attempt == 2:
+            if exc.code < 500 and exc.code != 429 or attempt == 1:
                 raise
             last_error = exc
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
-            if attempt == 2:
+            if attempt == 1:
                 raise
             last_error = exc
-        time.sleep(3 * (attempt + 1))
+        time.sleep(2)
     raise RuntimeError(f"Official portal request failed after retries: {last_error}")
 
 def main():
