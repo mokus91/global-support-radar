@@ -542,13 +542,24 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    if(response.ok){
     const directory=await response.json();
     let portalHealthById={};
+    let portalHealthCheckedAt="";
+    let portalHealthSummary={};
     try{
      const healthResponse=await fetch("data/worldwide-portal-health.json",{cache:"no-store"});
      if(healthResponse.ok){
       const healthData=await healthResponse.json();
+      portalHealthCheckedAt=healthData.checked_at||"";
+      portalHealthSummary=healthData.summary||{};
       portalHealthById=Object.fromEntries((healthData.records||[]).map(item=>[item.id,item]));
      }
     }catch(healthError){}
+    if(portalHealthCheckedAt){
+     const healthNotice=document.createElement("p");healthNotice.className="notice";
+     const checkedLabel=new Date(portalHealthCheckedAt).toLocaleString(isHu?"hu-HU":"en-GB");
+     const reachableCount=portalHealthSummary.reachable||0;
+     healthNotice.textContent=isHu?"Automatikus hivatkozás-ellenőrzés: "+checkedLabel+" · elérhető portálok: "+reachableCount+"/"+(Object.keys(portalHealthById).length||directory.records.length)+". A korlátozott vagy időtúllépéses ellenőrzés nem feltétlenül jelent hibás oldalt.":"Automated link check: "+checkedLabel+" · reachable portals: "+reachableCount+"/"+(Object.keys(portalHealthById).length||directory.records.length)+". Restricted or timed-out checks do not necessarily mean a broken website.";
+     box.append(healthNotice);
+    }
     const relevant=directory.records.filter(record=>(code==="all"||record.country_code===code)&&(category==="all"||record.category==="all"||record.category===category));
     if(relevant.length){
      const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos támogatáskeresők":"Country-specific official support finders";box.append(heading);
