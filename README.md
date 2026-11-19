@@ -10,7 +10,7 @@ A multilingual discovery service for official government grants, benefits and pu
 - Country selector covering ISO country codes.
 - Ten support categories.
 - Official-source registry and common programme-record JSON Schema.
-- Scheduled discovery of potentially relevant EU public datasets through the official data.europa.eu Search API.
+- Scheduled discovery through two official EU services: the data.europa.eu Search API and the European Commission Funding & Tenders Search API.
 - Discovery output is stored in `data/discovery-index.json`.
 
 ## Important distinction
@@ -24,8 +24,8 @@ The current demo cards are explicitly labelled as examples. The collector report
 - `index.html` — static frontend.
 - `data/source-registry.json` — official discovery sources and coverage notes.
 - `data/programme.schema.json` — normalized programme record contract.
-- `data/discovery-index.json` — generated dataset discovery results.
-- `scripts/discover_sources.py` — EU catalogue discovery client.
+- `data/discovery-index.json` — generated dataset discovery results.\n- `data/eu-funding-discovery.json` — raw EU Funding & Tenders API candidates, pending verification.
+- `scripts/discover_sources.py` — EU catalogue dataset discovery client.\n- `scripts/discover_eu_funding.py` — EU Funding & Tenders call discovery client.
 - `.github/workflows/source-discovery.yml` — daily scheduled workflow and manual run.
 - `docs/architecture.md` — pipeline and verification rules.
 
