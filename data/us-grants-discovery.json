@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T16:17:32.756664+00:00",
+  "generated_at": "2026-11-19T16:23:43.828960+00:00",
   "source_id": "us-grants-gov",
   "source_url": "https://www.grants.gov/",
   "api_url": "https://api.grants.gov/v1/api/search2",
   "purpose": "Posted and forecasted federal funding opportunities returned by the official public Grants.gov API. Records remain unverified until their official detail pages and eligibility are checked.",
-  "total_available": 1386,
-  "records_count": 1386,
+  "total_available": 1387,
+  "records_count": 1387,
   "records": [
     {
       "id": "355824",
@@ -19407,6 +19407,20 @@
       "status": "posted",
       "category_codes": [],
       "official_url": "https://www.grants.gov/search-results-detail/364003",
+      "source_id": "us-grants-gov",
+      "record_type": "official-api-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "id": "364292",
+      "title": "IVV-FT-OPP-11192026112006",
+      "identifier": "IVV-FT-OPP-11192026112006",
+      "agency": "IVV",
+      "open_date": "11/19/2026",
+      "deadline": "11/19/2027",
+      "status": "posted",
+      "category_codes": [],
+      "official_url": "https://www.grants.gov/search-results-detail/364292",
       "source_id": "us-grants-gov",
       "record_type": "official-api-discovery-candidate",
       "verification_status": "unverified"

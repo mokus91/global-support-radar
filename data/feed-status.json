@@ -1,169 +1,169 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:19:01+00:00",
+  "checked_at": "2026-11-19T16:24:33+00:00",
   "note": "checked_at means the automation inspected the local feed file; it is not proof of upstream publication time or that every opportunity is open.",
   "feeds": [
     {
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 214,
-      "source_updated_at": "2026-11-19T16:14:45.282887+00:00",
+      "source_updated_at": "2026-11-19T16:20:18.141051+00:00",
       "note": ""
     },
     {
       "name": "Chile — CORFO / Sercotec",
       "file": "chile-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 1,
-      "source_updated_at": "2026-11-19T16:14:47+00:00",
+      "source_updated_at": "2026-11-19T16:20:20+00:00",
       "note": ""
     },
     {
       "name": "Spain — SNPSAP",
       "file": "spain-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 5,
-      "source_updated_at": "2026-11-19T16:15:24.169933+00:00",
+      "source_updated_at": "2026-11-19T16:20:55.955124+00:00",
       "note": ""
     },
     {
       "name": "France — Aides-territoires",
       "file": "france-aides-territoires-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "temporarily-restricted",
       "records_count": 0,
-      "source_updated_at": "2026-11-19T16:15:25+00:00",
+      "source_updated_at": "2026-11-19T16:20:56+00:00",
       "note": "",
       "http_status": 401
     },
     {
       "name": "New Zealand — Government Funding Explorer",
       "file": "nz-funding-explorer-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked-empty",
       "records_count": 0,
-      "source_updated_at": "2026-11-19T16:18:12+00:00",
+      "source_updated_at": "2026-11-19T16:24:24+00:00",
       "note": "The official page currently reports zero listed funding options."
     },
     {
       "name": "EU — Funding & Tenders",
       "file": "eu-funding-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": null,
-      "source_updated_at": "2026-11-19T16:15:33.716741+00:00",
+      "source_updated_at": "2026-11-19T16:21:57.456413+00:00",
       "note": ""
     },
     {
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
-      "status": "checked-empty",
-      "records_count": 0,
-      "source_updated_at": "2026-11-19T16:15:33.716420+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
+      "status": "checked",
+      "records_count": 494,
+      "source_updated_at": "2026-11-19T16:21:57.449675+00:00",
       "note": ""
     },
     {
       "name": "EU — CAP Network",
       "file": "eu-cap-network-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 4,
-      "source_updated_at": "2026-11-19T16:15:34.387165+00:00",
+      "source_updated_at": "2026-11-19T16:21:58.002115+00:00",
       "note": ""
     },
     {
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 7,
-      "source_updated_at": "2026-11-19T16:16:24Z",
+      "source_updated_at": "2026-11-19T16:22:51Z",
       "note": ""
     },
     {
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 50,
-      "source_updated_at": "2026-11-19T16:17:28Z",
+      "source_updated_at": "2026-11-19T16:23:40Z",
       "note": ""
     },
     {
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
-      "records_count": 1386,
-      "source_updated_at": "2026-11-19T16:17:32.756664+00:00",
+      "records_count": 1387,
+      "source_updated_at": "2026-11-19T16:23:43.828960+00:00",
       "note": ""
     },
     {
       "name": "UK — UKRI",
       "file": "ukri-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 20,
-      "source_updated_at": "2026-11-19T16:17:33.714935+00:00",
+      "source_updated_at": "2026-11-19T16:23:44.848868+00:00",
       "note": ""
     },
     {
       "name": "Australia — ARC",
       "file": "au-arc-grants-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 2000,
-      "source_updated_at": "2026-11-19T16:18:12.384268+00:00",
+      "source_updated_at": "2026-11-19T16:24:23.721901+00:00",
       "note": ""
     },
     {
       "name": "Canada — CIHR",
       "file": "ca-cihr-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked-empty",
       "records_count": 0,
-      "source_updated_at": "2026-11-19T16:18:13.141750+00:00",
+      "source_updated_at": "2026-11-19T16:24:24.771393+00:00",
       "note": ""
     },
     {
       "name": "Hungary — open data",
       "file": "hu-open-data-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
       "records_count": 5,
-      "source_updated_at": "2026-11-19T16:18:20.145963+00:00",
+      "source_updated_at": "2026-11-19T16:24:30.842884+00:00",
       "note": ""
     },
     {
       "name": "Hungary — grant announcements",
       "file": "hu-palyazat-announcements.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked-empty",
       "records_count": 0,
-      "source_updated_at": "2026-11-19T16:18:20.200157+00:00",
+      "source_updated_at": "2026-11-19T16:24:30.934917+00:00",
       "note": ""
     },
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
-      "status": "temporarily-unavailable",
-      "records_count": 0,
-      "source_updated_at": "2026-11-19T16:18:20.486080+00:00",
-      "note": "Latest fetch failed; previous successful snapshot is preserved and may be stale."
+      "checked_at": "2026-11-19T16:24:33+00:00",
+      "status": "checked",
+      "records_count": 33,
+      "source_updated_at": "2026-11-19T16:24:31.260116+00:00",
+      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
     },
     {
       "name": "Worldwide — portal reachability",
       "file": "worldwide-portal-health.json",
-      "checked_at": "2026-11-19T16:19:01+00:00",
+      "checked_at": "2026-11-19T16:24:33+00:00",
       "status": "checked",
-      "records_count": 71,
-      "source_updated_at": "2026-11-19T16:14:27+00:00",
+      "records_count": 74,
+      "source_updated_at": "2026-11-19T16:20:02+00:00",
       "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline."
     }
   ]
