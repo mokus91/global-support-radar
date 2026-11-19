@@ -66,7 +66,7 @@ def main():
         "error": error
     }
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Australian ARC grants: {len(records)} records from {pages} pages; error={error or 'none'}")
 
 if __name__ == "__main__":
