@@ -45,3 +45,7 @@ The source registry includes Hungarian official discovery portals for FAIR/Pály
 ## Hungarian open-data catalogue adapter
 
 `scripts/discover_hu_open_data.py` queries the National Public Data Portal's CKAN `package_search` endpoint for Hungarian support-related dataset metadata. The result is written to `data/hu-open-data-discovery.json` and committed by the daily workflow. This adapter discovers datasets only; it does not extract grant calls, infer eligibility, or mark a programme active. Every record remains `unverified` until the dataset and its original publisher are reviewed. The portal itself links to its CKAN API; the general CKAN Action API supports GET requests to `package_search`.
+
+## Official Hungarian grant-announcement feed probe
+
+`scripts/discover_hu_palyazat_feed.py` probes the Pályázat.gov.hu announcements RSS endpoint (`rssfeed.php?type=kozlemenyek`). It uses only the official host, validates RSS XML, and stores candidate announcement titles, dates and official links as `unverified`. If the feed is unavailable or invalid, the error and probe status are saved without substituting third-party copies or fabricating records. Independent feed monitoring has reported this endpoint as non-responsive since 2023-12-15, so successful delivery must be confirmed by the scheduled run before relying on it. The FAIR help centre remains the official user-facing route for current calls and documents.
