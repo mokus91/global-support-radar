@@ -11,7 +11,7 @@ OUT = ROOT / "data/eu-funding-discovery.json"
 URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber={page}&sortBy=deadlineDate&orderBy=ASC"
 QUERY = {"bool": {"must": [
     {"terms": {"type": ["1", "2", "8"]}},
-    {"terms": {"status": ["31094501", "31094502", "31094503"]}}
+    {"terms": {"status": ["31094501", "31094502"]}}
 ]}}
 
 def multipart(parts):
@@ -55,12 +55,12 @@ def main():
     pages_fetched = 0
     try:
         payload = {"results": [], "totalResults": 0}
-        for page in range(1, 6):
+        for page in range(1, 21):
             part = collect(page)
             pages_fetched += 1
             payload["results"].extend(part.get("results", []))
             payload["totalResults"] = part.get("totalResults", payload["totalResults"])
-            if len(part.get("results", [])) < 100 or len(payload["results"]) >= payload["totalResults"]:
+            if len(part.get("results", [])) < 100 or len(payload["results"]) >= int(payload["totalResults"] or 0):
                 break
     except Exception as exc:
         error = str(exc)[:500]
@@ -100,15 +100,16 @@ def main():
             "verification_status": "unverified",
             "status": first(meta, "status"),
             "status_code": first(meta, "status"),
+            "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
             "last_discovered_at": datetime.now(timezone.utc).isoformat()
         })
     candidate_output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING/CLOSED portal status filters, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
+        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters only, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
         "expired_deadline_records_excluded": expired_excluded,
-        "status_filters": ["31094501", "31094502", "31094503"],
+        "status_filters": ["31094501", "31094502"],
         "records_count": len(candidates),
         "records": candidates,
         "error": error
@@ -126,6 +127,8 @@ def main():
         "purpose": "Compact audit summary of the official API discovery run. The curated candidate feed is stored separately in eu-open-calls-discovery.json. Raw API payloads are intentionally not committed.",
         "verification_status": "unverified",
         "pages_fetched": pages_fetched,
+        "maximum_pages": 20,
+        "page_size": 100,
         "records_received": len(payload.get("results", [])),
         "total_results_reported": payload.get("totalResults", 0),
         "candidate_records": len(candidates),
