@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "publisher": "European Commission — Your Europe / national government portals",
+  "scope": "Verified examples of official national business funding databases. Not a complete EU-wide list; additional countries are represented by their national EU funding portals until a dedicated national business database is validated.",
+  "records": [
+    {
+      "country_code": "FR",
+      "country_en": "France",
+      "country_hu": "Franciaország",
+      "name_hu": "Francia állami vállalkozástámogatási adatbázis",
+      "name_en": "France — national business aid database",
+      "url": "https://aides-entreprises.fr/",
+      "publisher": "French public authorities",
+      "categories": [
+        "business"
+      ],
+      "kind": "national-business-aid-database",
+      "description_hu": "Franciaország hivatalos vállalkozási támogatási adatbázisa: állami és társfinanszírozott támogatások, finanszírozási lehetőségek, jogosultság és ügyintéző szervek. Az aktuális felhívást mindig az eredeti kiírásban ellenőrizd.",
+      "description_en": "France's national business aid database covering public and co-funded support, finance opportunities, eligibility and managing bodies. Confirm each live call with its original publisher."
+    },
+    {
+      "country_code": "DE",
+      "country_en": "Germany",
+      "country_hu": "Németország",
+      "name_hu": "Német szövetségi támogatási adatbázis",
+      "name_en": "Germany — federal funding database",
+      "url": "https://www.foerderdatenbank.de/FDB/DE/Home/home.html",
+      "publisher": "German Federal Government",
+      "categories": [
+        "business",
+        "employment",
+        "education",
+        "energy",
+        "housing"
+      ],
+      "kind": "national-funding-database",
+      "description_hu": "A német szövetségi kormány támogatási adatbázisa szövetségi, tartományi és EU-s finanszírozási programok kereséséhez. A jogosultság és a határidő programonként eltér.",
+      "description_en": "The German federal government's database for federal, state and EU funding programmes. Eligibility and deadlines vary by programme."
+    }
+  ]
+}
