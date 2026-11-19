@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-19T14:56:24+00:00",
+  "country_code": "NZ",
+  "source": "New Zealand Government — Business.govt.nz Funding Explorer",
+  "source_url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer",
+  "records_count": 0,
+  "records": [],
+  "fetch_status": "parser-no-matches",
+  "scope": "Official directory snapshot only. No open status, deadlines, grant amounts or eligibility are inferred.",
+  "expected_programmes": 15
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T13:26:50+00:00",
-  "records_count": 69,
+  "checked_at": "2026-11-19T14:52:44+00:00",
+  "records_count": 71,
   "summary": {
     "connection_error": 7,
-    "http_error": 1,
-    "reachable": 53,
+    "http_error": 2,
+    "reachable": 54,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -416,6 +416,18 @@
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://aides-territoires.beta.gouv.fr/"
+    },
+    {
+      "id": "nz-business-funding-explorer",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer"
+    },
+    {
+      "id": "nz-environment-funding",
+      "status": "http_error",
+      "http_status": 302,
+      "final_url": "https://environment.govt.nz/what-you-can-do/funding/"
     }
   ]
 }
