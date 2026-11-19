@@ -211,7 +211,7 @@ async function loadEuOpenCalls(){
    const meta=document.createElement("div");meta.className="meta";
    const deadline=document.createElement("span");deadline.textContent=(hu?"Határidő: ":"Deadline: ")+(row.deadline?String(row.deadline).slice(0,10):"—");
    const programme=document.createElement("span");programme.textContent=(hu?"Program: ":"Programme: ")+(row.programme||"—");
-   const state=document.createElement("span");state.textContent=(hu?"Portál státuszkód: ":"Portal status code: ")+(row.status||"—");
+   const state=document.createElement("span");state.textContent=(hu?"Portál státuszkód: ":"Portal status code: ")+(row.status||row.status_code||"—");
    meta.append(deadline,programme,state);
    const foot=document.createElement("div");foot.className="cardfoot";
    const note=document.createElement("span");note.textContent=hu?"Eredeti kiírás ellenőrzése szükséges":"Original call verification required";
