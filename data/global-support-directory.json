@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "scope": "Worldwide discovery resources; these are official directories and comparative databases, not a complete live list of national benefits or open grants.",
+  "records": [
+    {
+      "id": "un-national-portals",
+      "name_hu": "ENSZ – nemzeti kormányzati portálok",
+      "name_en": "United Nations — national government portals",
+      "coverage": "193 UN Member States",
+      "kind": "official-government-portal-directory",
+      "url": "https://ekap.desa.un.org/Resources",
+      "publisher": "United Nations Department of Economic and Social Affairs",
+      "description_hu": "Az ENSZ országonkénti nemzeti e-kormányzati portálokat gyűjtő oldala. Innen lehet továbblépni az adott ország hivatalos kormányzati ügyintézési oldalára.",
+      "description_en": "The UN directory of national e-government portals. Use it to continue to the selected country's official government services portal.",
+      "status": "official-directory"
+    },
+    {
+      "id": "ilo-country-profiles",
+      "name_hu": "ILO – országprofilok és szociális védelem",
+      "name_en": "ILO — country profiles and social protection",
+      "coverage": "International country profiles; coverage varies by dataset",
+      "kind": "international-social-protection-reference",
+      "url": "https://www.social-protection.org/gimi/ShowCountryProfiles.action",
+      "publisher": "International Labour Organization",
+      "description_hu": "Országprofilok és szociális védelmi rendszerekkel kapcsolatos nemzetközi tájékoztatók. Nem helyettesíti a nemzeti jogosultsági szabályokat.",
+      "description_en": "Country profiles and international information on social protection systems. It does not replace national eligibility rules.",
+      "status": "international-reference"
+    },
+    {
+      "id": "world-bank-aspire",
+      "name_hu": "Világbank – ASPIRE szociális támogatási adatbázis",
+      "name_en": "World Bank — ASPIRE social protection database",
+      "coverage": "Comparable social protection indicators for approximately 140 countries",
+      "kind": "international-social-protection-database",
+      "url": "https://www.worldbank.org/en/data/datatopics/aspire",
+      "publisher": "World Bank",
+      "description_hu": "Nemzetközi adatbázis szociális segélyekről, társadalombiztosításról és munkaerőpiaci programokról. Elemzési adatbázis, nem közvetlen támogatásigénylő felület.",
+      "description_en": "International data on social assistance, social insurance and labour-market programmes. This is an analytical database, not an application portal.",
+      "status": "international-reference"
+    }
+  ]
+}
