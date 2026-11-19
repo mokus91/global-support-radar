@@ -1,0 +1,1457 @@
+{
+  "generated_at": "2026-11-19T10:16:25.119990+00:00",
+  "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
+  "verified_programmes_count": 0,
+  "discovered_datasets_count": 181,
+  "records": [
+    {
+      "title": "2014 Grants – Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2014-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "2015 Grants – Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2015-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "2016 Grants – Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2016-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "2017 Grants – Aéroscopia Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2017-aeroscopia-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "2017 Grants – Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2017-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "2018 Grants – Aéroscopia Blagnac",
+      "url": "https://data.toulouse-metropole.fr/explore/dataset/subventions-versees-2018-aeroscopia-blagnac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "[Challenge 4] Energy Efficiency & Public Buildings",
+      "url": "https://www.data.gouv.fr/datasets/defi-4-efficacite-energetique-batiments-publics",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A 2023–2024-ES KEPEA-PROGRAMOK",
+      "url": "https://data.gov.gr/dataset/programmata-kepea-2023-2024",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "a _ MEZŐGAZDASÁGI GYÓGYÁSZATI KERESKEDELMI TÁROLÁSAI",
+      "url": "https://data.gov.gr/dataset/katasthmata-emporias-gewrgikwn-farmakwn_",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A GÖRÖG EGYETEMEK TELJESÍTMÉNYI ISKOLÁINAK ELOSZTÁSA (2010–2011)",
+      "url": "https://data.gov.gr/dataset/katanomh-8esewn-ypotrofiwn-epidoshs-sta-panepisthmia-ths-elladas-2010-11",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A GÖRÖG EGYETEMEK TELJESÍTMÉNYI ISKOLÁINAK ELOSZTÁSA (2011–2012)",
+      "url": "https://data.gov.gr/dataset/katanomh-8esewn-ypotrofiwn-epidoshs-sta-panepisthmia-ths-elladas-2011-12",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A GÖRÖGORSZÁGI TEIS TELJESÍTMÉNYI ISKOLÁK ELOSZTÁSA (2010–2011)",
+      "url": "https://data.gov.gr/dataset/katanomh-8esewn-ypotrofiwn-epidoshs-sta-tei-ths-elladas-2010-11",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A GÖRÖGORSZÁGI TEIS TELJESÍTMÉNYI ISKOLÁK ELOSZTÁSA (2011–2012)",
+      "url": "https://data.gov.gr/dataset/katanomh-8esewn-ypotrofiwn-epidoshs-sta-tei-ths-elladas-2011-12",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "A KÖRFORGALMI MEZŐGAZDASÁGI GYÓGYSZERKEZETI KERESKEDELMI TÁROLÁS TÁBLÁZATA",
+      "url": "https://data.gov.gr/dataset/http-www-pnai-gov-gr",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Advertising medium line Vienna",
+      "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Agreste - Mapping Agricultural Census Data",
+      "url": "https://www.data.gouv.fr/datasets/agreste-cartographie-des-donnees-du-recensement-agricole",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AGRICULTURAL PR",
+      "url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-ea56a9e6-f60f-4a84-bbd4-01b2f39ca536",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Agricultural use parcels LV, 2009",
+      "url": "https://www.vlaanderen.be/DataCatalogRecord/87029616-A885-4091-8800-54DF893104A8",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
+      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Animal Assistance Foundation",
+      "url": "https://www.data.gouv.fr/datasets/fondation-assistance-aux-animaux",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "ASKL1 - Permanent Agricultural Workers",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/ASKL1/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "ASKL2 - Permanent Agricultural Workers",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/ASKL2/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "ASKL3 - Permanent Agricultural Workers",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/ASKL3/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AVA07 - Agricultural Holdings",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/AVA07/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AVA09 - Agricultural Holdings",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/AVA09/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AZ ACHIEON STREET DRAFI ALAPÍTÁSA",
+      "url": "https://data.gov.gr/dataset/brysh-sthn-odo-axaiwn-ntrafi",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Beneficiaries of housing assistance — Sailly-Lez-Lannoy",
+      "url": "https://www.data.gouv.fr/datasets/beneficiaires-dune-aide-au-logement-sailly-lez-lannoy",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "BPI ALAPÍTÓ JOG - ORGANOGRAM - MÓDOSÍTÁSOK - FELELŐSSÉG",
+      "url": "https://data.gov.gr/dataset/idrytikos-nomos-mfi-organogramma-tropopoihseis-armodiothtesn",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Business Park Street",
+      "url": "https://dadosabertos.cm-agueda.pt/dataset/rua-do-parque-empresarial",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Business premises restructuring fund",
+      "url": "https://www.data.gouv.fr/datasets/fonds-de-restructuration-des-locaux-dactivite",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
+      "url": "https://dati.agcm.it/dataset/p24994#",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12502 - NEXI/BPER BANK BUSINESS RANGE",
+      "url": "https://dati.agcm.it/dataset/p30415#",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "CCVG Buyer Profile Support for the publication of essential data",
+      "url": "https://www.data.gouv.fr/datasets/profil-dacheteur-de-la-ccvg-support-de-publication-des-donnees-essentielles",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "CHLORDECONE AGRICULTURAL AREA",
+      "url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-9d763ab7-21d0-45d4-95d8-ba6c0d015975",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "ChtxM_OPAH_subsidies_façades",
+      "url": "https://data.chateauroux-metropole.fr/explore/dataset/chtxm_opah_subventions_facades/",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "CMTirano - Subsidies subsidies subsidies economic advantages",
+      "url": "https://www.dati.gov.it/view-dataset/dataset_id/dd95c544b8a9508807bd93f90184f04b71af3287d19aa85695ef7bc243ea7b70#",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "CO2 emissions and changes in energy efficiency by beam",
+      "url": "https://www.data.gouv.fr/datasets/emission-co2-et-evolution-de-l-efficience-energetique-par-faisceau-30381917",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Coastal Rim Programmes (POC) - Marine Protected Area",
+      "url": "https://dados.gov.pt/datasets/programas-da-orla-costeira-poc-zona-maritima-de-protecao",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Communal fund agricultural census in Corsica",
+      "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Conservatories – CD92 Grants",
+      "url": "https://data.seineouest.fr/explore/dataset/conservatoires-subventions-du-conseil-departemental-des-hauts-de-seine/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Conservatories – DRAC Grants",
+      "url": "https://data.seineouest.fr/explore/dataset/conservatoires-subventions-de-la-drac/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Contribution rates Autoferrotranvieri Fund I",
+      "url": "https://opendata.inps.it/opendata/dataset/aliquote-contributive-fondo-autoferrotranvieri-i#",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Cost of advertising media (€) of companies",
+      "url": "https://www.ine.pt/xurl/indx/0006846",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Curriculum Swimming Support Programme",
+      "url": "http://www.cm-lisboa.pt/viver/educacao/dentro-da-escola/projetos-promovidos-pelo-municipio",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Data from European-funded projects retrieved from Funding and Tenders",
+      "url": "https://www.data.gouv.fr/datasets/donnees-des-projets-finances-par-leurope-recuperees-du-site-funding-and-tenders",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Dataset Grants",
+      "url": "https://www.data.gouv.fr/datasets/jeu-de-donnees-subventions",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Degree programmes",
+      "url": "https://dati.unibo.it/dataset/8cbba6bd-1686-4828-b223-6f4dab477434#",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Elérhetőségeink Army Equity Fund",
+      "url": "https://data.gov.gr/dataset/stoixeia-epikoinwnias-metoxiko-tameio-stratoy",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "EMERYTURY POMOSTOWE",
+      "url": "https://dane.gov.pl/pl/dataset/3639,emerytury-pomostowe",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Community NECPR: Progress to targets for energy efficiency (Annex IV), 2025",
+      "url": "https://doi.org/10.2909/3d449b56-5035-45ea-98ab-4a8e211ef31b",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): boiler",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): other",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=18#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): PAC",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=14#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): total",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=12#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Actions",
+      "url": "https://opendata-corse-outremer.edf.fr/explore/dataset/actions-defficacite-energetique/",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Fund",
+      "url": "https://dati.puglia.it/ckan/dataset/fondo-efficientamento-energetico-po-2014-2020#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Item Named Authority List",
+      "url": "https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/energy-efficiency-item",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Public Buildings",
+      "url": "https://dati.regione.umbria.it/dataset/efficientamento_energetico_edifici_pubblici#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy-efficient cooling systems",
+      "url": "https://www.umweltbundesamt.at/studien-reports",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Environmenal Fund subsidies",
+      "url": "https://data.gov.sk/dataset/dotacie-environmenalneho-fondu",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Espa végrehajtó struktúra – Transznacionális programok és más uniós eszközök programjai – Nyilvánosság",
+      "url": "https://data.gov.gr/dataset/epitelikh-domh-espa-diakratikwn-programmatwn-kai-programmatwn-allwn-mhxanismwn-ths-ee-dhmosiothta",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Families relocated under public resettlement programmes (N.º)",
+      "url": "https://www.ine.pt/xurl/indx/0009015",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "FINANSZÍROZÁSI ELOSZTÁSOK",
+      "url": "https://data.gov.gr/dataset/katanomes-xrhmatodothsewn",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "FSS - Scholarship students by grade and by training sector",
+      "url": "https://data.iledefrance.fr/explore/dataset/fss_-_etudiants_boursiers_par_echelon_et_par_secteur_de_formation/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "FSS — Scholarship students by level and sector of training",
+      "url": "https://www.data.gouv.fr/datasets/fss-etudiants-boursiers-par-echelon-et-par-secteur-de-formation-idf",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "FVG University Scholarships",
+      "url": "https://www.dati.gov.it/view-dataset/dataset_id/borse-di-studio-universitarie-fvg#",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "FWB Grants Cadastre 2024",
+      "url": "https://www.odwb.be/explore/dataset/fwb-cadastre-des-subventions-2024/information/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "goult-housing",
+      "url": "https://opendata.ozwillo.com/dataset/goult-logement",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "GPS Grants 2021",
+      "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "grants",
+      "url": "https://www.data.gouv.fr/datasets/subventions",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Grants - City of Lorient",
+      "url": "https://opendata56.fr/explore/dataset/subventions-ville-de-lorient/information/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Grants 2017-2019 perspective.brussels",
+      "url": "https://datastore.brussels/web/data/dataset/e1765d6e-d5ee-468a-91f0-57f62664c2a4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "GRANTS 2022",
+      "url": "https://www.data.gouv.fr/datasets/subventions-2022-1",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Grants Commune de Fronton",
+      "url": "https://data.haute-garonne.fr/explore/dataset/subventions-commune-de-fronton/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Grants Commune of Ramonville-Sainte-Agne",
+      "url": "https://data.haute-garonne.fr/explore/dataset/subventions-commune-de-ramonville-sainte-agne/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "GRANTS PAYD IN 2024",
+      "url": "https://www.data.gouv.fr/datasets/subventions-versees-en-2024",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "GRANTS TAKEN 2025",
+      "url": "https://www.data.gouv.fr/datasets/subventions-versees-2025",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Grants_perceived_2019_20",
+      "url": "https://www.data.gouv.fr/datasets/subventions-percues-2019-20",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Guide to Scholarships-Awards-Grants of Public Benefit Properties",
+      "url": "https://www1.gsis.gr/gspp/dhpe/faces/adf.task-flow?adf.tfDoc=%2FWEB-INF%2Fodhgos-task-flow.xml&adf.tfId=odhgos-task-flow",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "HICP - housing",
+      "url": "https://ec.europa.eu/eurostat/databrowser/product/page/teicp040",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Horizon 2020 Energy Efficiency",
+      "url": "https://ec.europa.eu/easme/en/horizon-2020-energy-efficiency",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Households relocated under public resettlement programmes (No)",
+      "url": "https://www.ine.pt/xurl/indx/0004238",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "HOUSING - Annee_construction",
+      "url": "https://www.data.gouv.fr/datasets/logement-annee-construction",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "HOUSING - Evolution_number",
+      "url": "https://www.data.gouv.fr/datasets/logement-evolution-nombre",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "HOUSING - Number_pieces",
+      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing assistance for HEPA seniors by Canton CD76 2023",
+      "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-canton-cd76-2023",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing assistance for HEPA seniors by EPCI CD76 2023",
+      "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-epci-cd76-2023",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing Solidarity Fund (FSL): assistance with access to housing in Loire-Atlantique",
+      "url": "https://data.loire-atlantique.fr/explore/dataset/224400028_nb-fonds-solidarite-logement-acces-logement-loire-atlantique/",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing Solidarity Fund (FSL): housing maintenance assistance in Loire-Atlantique",
+      "url": "https://data.loire-atlantique.fr/explore/dataset/224400028_nb-fonds-solidarite-logement-maintien-logement-loire-atlantique/",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing Solidarity Fund (FSL): housing maintenance assistance in Loire-Atlantique by municipality",
+      "url": "https://data.loire-atlantique.fr/explore/dataset/224400028_nb-fonds-solidarite-logement-maintien-logement-par-commune/",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Housing Support Programmes",
+      "url": "https://www.lisboa.pt/temas/habitacao/entrada",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "HOUSING_Car",
+      "url": "https://www.data.gouv.fr/datasets/logement-voiture",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA13 - Households (with and without disability) on Housing Assistance Payment (HAP) Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA13/JSON-stat/2.0/en",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA16 - Households on Housing Assistance Payment Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA16/JSON-stat/2.0/en",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA17 - Households on Housing Assistance Payment Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA17/JSON-stat/2.0/en",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Ile-de-France Mobilités Grants",
+      "url": "https://data.iledefrance-mobilites.fr/explore/dataset/subventions-2017/",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Actiris",
+      "url": "https://datastore.brussels/web/data/dataset/3a9a6fc0-375d-4bca-aa64-3e226520f557",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Anderlecht",
+      "url": "https://datastore.brussels/web/data/dataset/dcf558ca-b4c2-41a2-9bce-2ddceff65b0a",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Auderghem",
+      "url": "https://datastore.brussels/web/data/dataset/b669a55b-c07b-4b1e-b551-5d76e09d0515",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Brussels Environment",
+      "url": "https://datastore.brussels/web/data/dataset/73138534-dc38-40f9-b1d7-2bb7d8f0697a",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Evere",
+      "url": "https://datastore.brussels/web/data/dataset/3d2230d6-fba1-44b9-9e9a-72da1b885b65",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Forest",
+      "url": "https://datastore.brussels/web/data/dataset/d145abb1-4aff-4b67-943e-cf455a0f5c8c",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Ganshoren",
+      "url": "https://datastore.brussels/web/data/dataset/b5000eb6-8e1b-4a93-bbda-8cbbf40159c2",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Ixelles",
+      "url": "https://datastore.brussels/web/data/dataset/7681098e-35a4-4dde-8d86-cbe8349d6e5d",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Jette",
+      "url": "https://datastore.brussels/web/data/dataset/fc8249ba-fb94-49d3-bf63-3303185cef27",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Schaerbeek",
+      "url": "https://datastore.brussels/web/data/dataset/ea7cffcb-28e5-4704-bfd4-a283b73750b3",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Uccle",
+      "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subventions - Koekelberg",
+      "url": "https://datastore.brussels/web/data/dataset/ddfd820a-b31d-4970-a12f-68e52b35684c",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventory of subventions - Etterbeek",
+      "url": "https://datastore.brussels/web/data/dataset/f5a2ea96-88e2-4ec7-82ae-ade6e47ee930",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IPA03 - Structural business statistics",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IPA04 - Structural Business Statistics",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA04/JSON-stat/2.0/en",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Locksmith Paris Assistance",
+      "url": "https://www.data.gouv.fr/datasets/serrurier-paris-assistance",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MEZŐGAZDASÁGI FIGYELMEZTETÉSEK",
+      "url": "https://data.gov.gr/dataset/gewrgikes-proeidopoihseis",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MEZŐGAZDASÁGI GÉPEK KÖZLEKEDÉSE",
+      "url": "https://data.gov.gr/dataset/kykloforia-agrotikwn-mhxanhmatwn",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MEZŐGAZDASÁGI SZÁMVITELI HÁLÓZAT",
+      "url": "https://data.gov.gr/dataset/diktyo-gewrgikhs-logistikhs",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI Subsidies-Applications OPTP Section (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-ziadosti-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI Subsidies-Schemes Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-schemy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023-06-06",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-06-06",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023-06-06",
+      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023_interreg hu_en_call list",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-hu-sk-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_2023_SRIN_Call list",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-srin-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Municipality of Barlassina - Subsidies, grants, subsidies, updated economic benefits",
+      "url": "https://www.opendata.maggioli.cloud/dataset/comune-di-barlassina---sovvenzioni--contributi--sussidi--vantaggi-economici--aggiornati#",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "National education grants and allowances",
+      "url": "https://www.data.gouv.fr/datasets/primes-et-indemnites-de-leducation-nationale",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Number of scholarship students on scholarship API by COG",
+      "url": "https://www.data.gouv.fr/datasets/nombre-detudiants-boursiers-sur-api-boursier-par-cog",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "OAED KÜLÖNLEGES SEGÍTSÉGNYÚJTÁSOK 2018",
+      "url": "https://data.gov.gr/dataset/eidika-boh8hmata-oaed-2018",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Open Business 2016",
+      "url": "https://aperto.comune.torino.it/dataset/attivita-commerciali-aperte-2016#",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Otwarte Dane - Programy Wsparcia - Automatyczny - Dane z iPFRON+",
+      "url": "https://dane.gov.pl/pl/dataset/2873,otwarte-dane-programy-wsparcia-dane-z-ipfron",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "PoliS - Lombardy Grants subsidies economic advantages - Grants Scholarships -",
+      "url": "https://www.dati.gov.it/view-dataset/dataset_id/polis-lombardia-sovvenzioni-sussidi-vantaggi-economici-contributi-borse-di-studio#",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Population covered by housing assistance — Gironde",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Population covered by housing assistance — Gironde",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "POR Energy efficiency 2014-2020",
+      "url": "http://dati.lazio.it/catalog/dataset/96414a05-df79-4514-8f84-71dfcbdf3497#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Prizes and Scholarships",
+      "url": "https://opendata.muenchen.de/dataset/preise_stipendien",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Projects eligible for funding - Notice \"Business Possible\"",
+      "url": "https://dati.puglia.it/ckan/dataset/4cd4721a-221a-47e0-a636-e9134032ee7c#",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Projects with extended path in ENERGY EFFICIENCY IN THE MUNICIPALITIES",
+      "url": "https://opencoesione.gov.it/it/opendata#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Prospectus scholarships awarded",
+      "url": "https://www.storiaantica.eu/bandi-premi#",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Public support for business innovation",
+      "url": "https://www.data.gouv.fr/datasets/les-aides-publiques-a-linnovation-des-entreprises",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Public support for corporate sponsorship",
+      "url": "https://www.data.gouv.fr/datasets/le-soutien-public-au-mecenat-dentreprises",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Publicly supported (OF)",
+      "url": "https://danmarksdatavindue.dk/DDVDatasafari/#/registers/210/overview",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Regional Doctoral Scholarships",
+      "url": "https://www.datasud.fr/explorer/fr/jeux-de-donnees/bourses-doctorales-regionales",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "RES-ASSISTANCE",
+      "url": "https://www.ats-bg.it/web/guest/dipartimento-per-la-programmazione-accreditamento-acquisto-delle-prestazioni-sanitarie-e-sociosanitarie#",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Retrofits for Energy Efficiency Housing Stock FCC",
+      "url": "https://data.smartdublin.ie/dataset/retrofits-for-energy-efficiency-housing-stock-fcc1",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Sale of advertising media (€) of Companies",
+      "url": "https://www.ine.pt/xurl/indx/0006845",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship Rules",
+      "url": "https://dados.gov.pt/datasets/regulamento-de-atribuicao-de-bolsas-de-estudo",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship students in health and social training (Feb. 2009)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2009/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship students in health and social training (Feb. 2012)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2012/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship students in health and social training (Feb. 2014)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants-boursiers-des-formations-sanitaires-et-sociales-fev-2014/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship students in health and social training (Sept. 2012)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2012/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarships for reimbursement of expenses",
+      "url": "https://www.dati.gov.it/view-dataset/dataset_id/borse-di-studio-per-rimborso-spese#",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarships for university students of Lazio",
+      "url": "http://dati.lazio.it/catalog/dataset/d3a64343-4f62-4052-8924-fd0dadb3f961#",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Service “Building Information Desk” efficiency",
+      "url": "https://dati.toscana.it/dataset/servizio-sportello-informativo-edilizia-efficienza#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "SOUTT_list of subsidies",
+      "url": "https://data.gov.sk/dataset/soutt-zoznam-dotacie",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "SOUTT_list_clenov_self-government",
+      "url": "https://data.gov.sk/dataset/soutt-zoznam-clenov-samospravy",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Special Programs of Public Albufeiras (PAAP) - Margin",
+      "url": "https://dados.gov.pt/datasets/programas-especiais-de-albufeiras-publicas-paap-margem",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Specialist assistance",
+      "url": "https://dati.puglia.it/ckan/dataset/20fefe8a-b91e-4787-a4b1-f91655aaf519#",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies",
+      "url": "https://data.gov.sk/dataset/dotacie",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies",
+      "url": "https://www.banskabystrica.sk/",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes as at 31 December 2005. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes at 30. 11. 2023",
+      "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (calls) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-vyzvy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (limits) - Department of State Support and Technical Assistance of EU Programmes at 30. 11. 2023",
+      "url": "https://data.gov.sk/dataset/dotacie-limity-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (schemes) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-schemy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies awarded by the City of Namur",
+      "url": "https://www.odwb.be/explore/dataset/subsides-attribues/information/",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies for European programmes",
+      "url": "https://www.odwb.be/explore/dataset/le-bep-va-chercher-dimportants-fonds-europeens-pour-son-departement-aide-aux-ent/information/",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Support for renewable energy",
+      "url": "https://www.data.gouv.fr/datasets/le-soutien-aux-energies-renouvelables",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Support programmes in the energy sector",
+      "url": "https://www.energiefranken.ch",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Support to Renewable Energy Directive",
+      "url": "https://esdac.jrc.ec.europa.eu/content/support-renewable-energy-directive",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Supports Eclairage Public du SDE18",
+      "url": "https://www.data.gouv.fr/datasets/supports-eclairage-public-du-sde18",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "the Annual Literary Creation Scholarship Program",
+      "url": "https://dados.gov.pt/datasets/programa-bolsas-anuais-de-criacao-literaria",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Tuscany Region – Protesic Assistance – Divisions",
+      "url": "https://dati.toscana.it//dataset/regione-toscana-assistenza-protesica-divisioni#",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Tuscany Region – Protesic Assistance – Subclasses",
+      "url": "https://dati.toscana.it//dataset/regione-toscana-assistenza-protesica-sottoclassi#",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "TÁMOGATÁSOK",
+      "url": "https://data.gov.gr/dataset/epixorhghseis",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "VCA01 - Irish Agricultural Output",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA01/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "VCA02 - Agricultural Output in Europe",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA02/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "VCA14 - Exports of Agricultural Products",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA14/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Ιδρύματα Κληροδοτήματα για υποτροφίες - βραβεία - βοηθήματα Κρήτης",
+      "url": "https://www.apdkritis.gov.gr/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    }
+  ],
+  "errors": []
+}

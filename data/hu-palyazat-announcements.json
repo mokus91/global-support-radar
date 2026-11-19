@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-11-19T10:16:32.025008+00:00",
+  "source_id": "hu-palyazat-gov",
+  "source_url": "https://www.palyazat.gov.hu/",
+  "feed_url": "https://www.palyazat.gov.hu/rssfeed.php?type=kozlemenyek",
+  "feed_status": "unavailable-or-invalid",
+  "record_type": "official-announcement-discovery",
+  "records": [],
+  "errors": [
+    "<urlopen error [Errno 111] Connection refused>"
+  ]
+}

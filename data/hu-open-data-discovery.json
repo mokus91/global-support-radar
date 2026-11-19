@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-11-19T10:16:31.778284+00:00",
+  "source": "https://t.data.gov.hu/",
+  "api": "https://t.data.gov.hu/api/3/action/package_search",
+  "record_type": "open-data-dataset-discovery-not-grant-listings",
+  "query_count": 7,
+  "result_count": 0,
+  "errors": [
+    {
+      "query": "támogatás",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "pályázat",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "agrártámogatás",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "lakhatási támogatás",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "vállalkozásfejlesztés",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "ösztöndíj",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    },
+    {
+      "query": "energiahatékonyság",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    }
+  ],
+  "records": []
+}
