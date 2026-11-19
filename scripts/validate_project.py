@@ -79,6 +79,12 @@ def main():
         if required not in html:
             raise SystemExit(f"Main search quality feature is missing: {required}")
 
+    for required_file in ("robots.txt", "sitemap.xml"):
+        if not (ROOT / required_file).is_file():
+            raise SystemExit(f"SEO discovery file is missing: {required_file}")
+    if "schema.org" not in html or "SearchAction" not in html:
+        raise SystemExit("Structured website/search metadata is missing")
+
     manifest = load_json(ROOT / "manifest.webmanifest")
     if manifest.get("start_url") != "./" or manifest.get("scope") != "./":
         raise SystemExit("PWA manifest must use the repository-relative GitHub Pages scope")

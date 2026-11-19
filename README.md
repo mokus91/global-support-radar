@@ -99,3 +99,12 @@ Egy rekord csak akkor kaphat „open-and-current” státuszt, ha az eredeti hiv
 ## Adatvédelem és későbbi bevételszerzés
 
 A jelenlegi MVP nem igényel felhasználói fiókot, és nem tárol személyes jogosultsági profilokat. Érzékeny adatot nem szabad gyűjteni, ha az nem feltétlenül szükséges. A személyes adatokat nem szabad értékesíteni. A későbbi hirdetések vagy szponzorált megjelenések egyértelműen jelölendők, és nem befolyásolhatják a források ellenőrzését vagy az organikus találati sorrendet.
+
+
+## Keresőoptimalizálás és felfedezhetőség
+
+A weboldal magyar nyelvű alapértelmezett címet és leírást, Open Graph megosztási metaadatokat, Schema.org WebSite/SearchAction strukturált adatot, robots.txt fájlt és XML oldaltérképet használ. Az oldaltérkép kizárólag a stabil kezdőoldalt tartalmazza; az automatikusan felfedezett támogatásjelöltek nem kapnak külön indexelhető URL-t, amíg nincs hozzájuk ellenőrzött, önálló részletes oldal. Ez segít elkerülni a vékony vagy félrevezető keresőtalálatokat.
+
+## Bevételi modell és termékfejlesztési irány
+
+A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorált felületek, opcionális prémium értesítések, mentett keresések és szervezeti/partneri csomagok tervezhetők. A jelenlegi GitHub Pages kiadás statikus frontend: önmagában nem biztosít biztonságos felhasználói fiókot, előfizetés-kezelést, fizetést vagy szerveroldali jogosultság-ellenőrzést. Ezeket csak külön backenddel, adatvédelmi és fizetési folyamatokkal szabad élesíteni. A fizetős funkciók nem befolyásolhatják a hivatalos források minősítését vagy a természetes találati sorrendet.
