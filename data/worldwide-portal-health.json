@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T12:59:25+00:00",
-  "records_count": 66,
+  "checked_at": "2026-11-19T13:06:26+00:00",
+  "records_count": 67,
   "summary": {
-    "connection_error": 8,
+    "connection_error": 7,
     "http_error": 1,
-    "reachable": 49,
+    "reachable": 51,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -107,8 +107,9 @@
     },
     {
       "id": "za-incentives",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
     },
     {
       "id": "za-sassa",
@@ -142,8 +143,9 @@
     },
     {
       "id": "us-grants",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.grants.gov/"
     },
     {
       "id": "eu-national-funds-at",
@@ -277,9 +279,8 @@
     },
     {
       "id": "eu-national-funds-si",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://evropskasredstva.si/"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-national-funds-sk",
@@ -397,6 +398,12 @@
       "status": "restricted",
       "http_status": 403,
       "final_url": "https://fondos.gob.cl/"
+    },
+    {
+      "id": "national-gb-all-find-a-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://find-government-grants.service.gov.uk/grants"
     }
   ]
 }
