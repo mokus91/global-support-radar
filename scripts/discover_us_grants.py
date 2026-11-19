@@ -4,6 +4,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/us-grants-discovery.json"
@@ -18,8 +20,16 @@ def fetch_page(start):
     req = Request(URL, data=json.dumps(body).encode("utf-8"), method="POST",
                   headers={"Content-Type": "application/json", "Accept": "application/json",
                            "User-Agent": "GlobalSupportRadar/0.1"})
-    with urlopen(req, timeout=45) as response:
-        return json.loads(response.read().decode("utf-8"))
+    last_error = None
+    for attempt in range(4):
+        try:
+            with urlopen(req, timeout=60) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except (HTTPError, URLError, TimeoutError) as exc:
+            last_error = exc
+            if attempt < 3:
+                time.sleep(2 ** attempt)
+    raise RuntimeError(f"Grants.gov API page {start} failed after 4 attempts: {last_error}")
 
 def main():
     error = None
