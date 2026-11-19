@@ -75,6 +75,10 @@ jobs:
         run: python scripts/validate_discovery_outputs.py
       - name: Build feed freshness and result-status manifest
         run: python scripts/build_feed_status.py
+      - name: Validate the generated feed status manifest
+        run: python scripts/validate_discovery_outputs.py
+      - name: Validate all refreshed JSON and website assets
+        run: python scripts/validate_project.py
       - name: Commit discovery indexes
         run: |
           git config user.name "github-actions[bot]"
