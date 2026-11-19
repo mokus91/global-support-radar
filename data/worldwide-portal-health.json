@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:00:30+00:00",
+  "checked_at": "2026-11-19T16:05:44+00:00",
   "records_count": 71,
   "summary": {
     "connection_error": 7,
@@ -219,7 +219,7 @@
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.esfondi.lv/"
     },
     {

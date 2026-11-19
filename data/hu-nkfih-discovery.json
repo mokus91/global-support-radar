@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-11-19T16:04:27.034361+00:00",
+  "generated_at": "2026-11-19T16:09:40.764859+00:00",
   "source_id": "hu-nkfih",
   "source_url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
-  "feed_url": "https://rss.nkfih.gov.hu/hirek-180603?rss=1",
-  "feed_status": "unavailable-or-invalid",
-  "record_type": "official-grant-news-discovery",
+  "fetch_status": "temporarily-unavailable",
+  "record_type": "official-current-calls-listing-candidates",
   "records_count": 0,
   "records": [],
-  "errors": [
-    "<urlopen error timed out>"
-  ]
+  "note": "Latest fetch failed; previous successful snapshot is preserved and may be stale.",
+  "error": "<urlopen error timed out>",
+  "last_successful_fetch": "2026-11-19T15:59:12.565135+00:00"
 }
