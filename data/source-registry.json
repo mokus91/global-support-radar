@@ -719,6 +719,17 @@
       "kind": "national-funding-database",
       "access": "Official German federal database referenced by European Commission guidance",
       "status": "discovery-source"
+    },
+    {
+      "id": "eu-aid-award-transparency-registers",
+      "name": "EU eAidRegister and national aid transparency registers",
+      "publisher": "European Commission and national competent authorities",
+      "url": "https://aid-register.ec.europa.eu/",
+      "coverage": "EU-wide plus national award transparency registers including Czechia, Estonia, France, Greece, Croatia, Hungary, Italy, Lithuania, Latvia, Poland, Romania, Slovenia and Slovakia",
+      "kind": "awarded-aid-transparency-registers",
+      "access": "Official EU and national public registers",
+      "status": "discovery-source",
+      "notes": "These registers describe aid already awarded/reported; they are not open calls or application portals. Use to identify aid instruments, beneficiaries and awarding authorities."
     }
   ],
   "publication_requirements": [
