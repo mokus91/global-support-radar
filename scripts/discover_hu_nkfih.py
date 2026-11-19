@@ -37,6 +37,13 @@ def clean(value, limit=900):
     return re.sub(r"\s+", " ", " ".join(parser.parts)).strip()[:limit]
 
 
+def child_text(element, wanted):
+    for child in element:
+        if child.tag.rsplit("}", 1)[-1] == wanted:
+            return child.text or ""
+    return ""
+
+
 def main():
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -62,16 +69,16 @@ def main():
             ns = {"atom": "http://www.w3.org/2005/Atom"}
             items = root.findall(".//atom:entry", ns)
         for item in items:
-            title = clean(item.findtext("title") or "")
-            link = (item.findtext("link") or "").strip()
+            title = clean(child_text(item, "title"))
+            link = child_text(item, "link").strip()
             if not link:
                 link_node = item.find("{http://www.w3.org/2005/Atom}link")
                 link = (link_node.attrib.get("href", "") if link_node is not None else "").strip()
             parsed = urlparse(link)
             if not title or parsed.scheme != "https" or parsed.hostname not in ALLOWED_HOSTS:
                 continue
-            description = item.findtext("description") or item.findtext("summary") or ""
-            published = item.findtext("pubDate") or item.findtext("published") or item.findtext("updated")
+            description = child_text(item, "description") or child_text(item, "summary") or ""
+            published = child_text(item, "pubDate") or child_text(item, "published") or child_text(item, "updated")
             output["records"].append({
                 "title": title,
                 "official_url": link,
