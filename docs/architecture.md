@@ -37,3 +37,7 @@ Every future adapter must:
 - `scripts/discover_eu_funding.py` calls the European Commission Funding & Tenders public Search API. Its query is restricted to selected grant/topic types and open/forthcoming status codes documented by the portal API guide.
 - Both outputs remain explicitly `unverified`. The Funding & Tenders response is preserved as raw JSON because field mappings and each call's original detail URL must be checked before normalization.
 - The daily GitHub Actions workflow refreshes both JSON discovery files. A successful API response is not equivalent to a verified, currently available grant.
+
+## Hungary: official discovery sources
+
+The source registry includes Hungarian official discovery portals for FAIR/Pályázatkereső, Pályázat.gov.hu, the KAP Strategic Plan, the National Cultural Fund (NKA), and the National Research, Development and Innovation Office (NKFIH). The FAIR help centre states that its call data is sourced from FAIR and refreshed daily. At present, no public machine-readable API/feed has been confirmed for these Hungarian portals in this project, so they are registered as discovery sources only; no crawler or scraper is assumed. The next integration step is to verify each portal's published access terms and any documented export/API before implementing an adapter. A portal listing is never sufficient to mark a programme open or a person eligible.
