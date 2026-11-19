@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "policy": "Only publish individual support programmes after checking the original official publisher page. Portal/catalogue records are discovery sources, not proof of eligibility or an open application.",
+  "sources": [
+    {
+      "id": "eu-data",
+      "name": "data.europa.eu",
+      "publisher": "European Union",
+      "url": "https://data.europa.eu/",
+      "coverage": "EU institutions and participating national/local public-sector catalogues",
+      "kind": "open-data-catalogue",
+      "access": "API/SPARQL options",
+      "status": "discovery-source",
+      "notes": "Catalogue metadata may point to datasets; each grant must be verified at the original publisher."
+    },
+    {
+      "id": "eu-funding",
+      "name": "EU Funding & Tenders Portal",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "coverage": "EU funding calls",
+      "kind": "funding-calls",
+      "access": "Official portal; adapter/API availability to be verified",
+      "status": "discovery-source"
+    },
+    {
+      "id": "uk-find-grant",
+      "name": "Find a grant",
+      "publisher": "UK Government",
+      "url": "https://www.find-government-grants.service.gov.uk/",
+      "coverage": "United Kingdom",
+      "kind": "funding-calls",
+      "access": "Official website; structured feed availability to be verified",
+      "status": "discovery-source"
+    },
+    {
+      "id": "de-foerderdatenbank",
+      "name": "Förderdatenbank",
+      "publisher": "German Federal Government",
+      "url": "https://www.foerderdatenbank.de/",
+      "coverage": "Germany",
+      "kind": "funding-programmes",
+      "access": "Official website; structured feed availability to be verified",
+      "status": "discovery-source"
+    },
+    {
+      "id": "us-assistance",
+      "name": "ForeignAssistance.gov",
+      "publisher": "United States Government",
+      "url": "https://foreignassistance.gov/",
+      "coverage": "US foreign assistance by country and sector",
+      "kind": "international-development-assistance",
+      "access": "Download/API options described by publisher",
+      "status": "discovery-source",
+      "notes": "Primarily foreign assistance data, not a general US household-benefits catalogue."
+    },
+    {
+      "id": "undp-open",
+      "name": "Open.undp.org",
+      "publisher": "United Nations Development Programme",
+      "url": "https://open.undp.org/",
+      "coverage": "UNDP projects in 170+ countries and territories",
+      "kind": "development-projects",
+      "access": "IATI XML, CSV and JSON downloads",
+      "status": "discovery-source",
+      "notes": "Development projects, not individual citizen benefits."
+    },
+    {
+      "id": "us-data",
+      "name": "Data.gov",
+      "publisher": "United States Government",
+      "url": "https://data.gov/",
+      "coverage": "United States federal and participating subnational datasets",
+      "kind": "open-data-catalogue",
+      "access": "Catalogue/API",
+      "status": "discovery-source"
+    }
+  ],
+  "publication_requirements": [
+    "official_publisher_url",
+    "programme_name_original_language",
+    "country_and_region",
+    "beneficiary_type",
+    "support_type",
+    "eligibility_summary",
+    "amount_and_currency_if_published",
+    "opening_date_if_published",
+    "deadline_or_ongoing_status",
+    "last_verified_at",
+    "source_language",
+    "licence_or_reuse_basis"
+  ]
+}
