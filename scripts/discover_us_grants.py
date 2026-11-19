@@ -14,7 +14,6 @@ def fetch_page(start):
         "rows": 100,
         "startRecordNum": start,
         "oppStatuses": "posted|forecasted",
-        "sortBy": "openDate|desc"
     }
     req = Request(URL, data=json.dumps(body).encode("utf-8"), method="POST",
                   headers={"Content-Type": "application/json", "Accept": "application/json",
