@@ -10,19 +10,19 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Country selector covering the ISO country-code list, localized into Hungarian or English.
 - Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
 - The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
-- Dedicated country-specific official support finders cover 193 UN Member States (46 with dedicated current official support-source links; remaining country entries are historical UN DESA portal leads) across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
+- Dedicated country-specific official support finders cover 193 UN Member States (46 with dedicated current official support-source links; remaining country entries are historical UN DESA portal leads) across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The current directory contains 66 country-specific source links, including dedicated official finders and clearly labelled historical UN portal leads for countries without a newer dedicated source. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
 - Japan has an additional daily automated discovery adapter using the Japan Digital Agency's public JGrants REST API. It queries several Japanese keywords for subsidies filtered to active application periods, retains original Japanese titles and links to the official notice. Search results are not a complete inventory; users must verify eligibility and deadlines at the publisher.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
-- Main search currently reads discovery records from three working official data connections:
+- Main search reads discovery records from several working official data connections:
   - European Commission Funding & Tenders Portal (EU)
   - Grants.gov (United States)
-  - UKRI opportunity feed (United Kingdom)
+  - UKRI opportunity feed (United Kingdom)\n  - Japan Digital Agency JGrants API (Japan)\n  - CORFO official call pages (Chile; daily page-checked adapter)
 - Separate Australian Research Council research-grant archive panel. These records are historical/discovery data and are not presented as open calls.
 - Hungarian official starting points for family support, maternity allowance, family allowance, GYES/GYET, housing, local social support, large-family gas discount, agriculture, civil/community grants, scholarships and research/innovation calls.
 - Curated Hungarian household-support directory with eight official information entries, including direct GYES and GYET pages.
 - Browser-only Hungarian support guide: users can optionally select broad household circumstances to see which official benefit pages may be relevant. Answers are processed locally and are not sent to the server or stored. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 72 entries in the official source registry, with country/subject coverage notes.
+- 116 entries in the official source registry, with country/subject coverage notes.
 - Official European Commission directory of national EU-funding portals for all 27 EU Member States; the worldwide finder displays the selected country's portal, or all 27 when no country is selected. These are shared-management EU-fund portals, not a complete household-benefit catalogue.
 - Six additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
 - Country-specific European Commission/MISSOC social security guides for all 27 EU Member States, filtered by selected country and family/social/employment/healthcare categories.
@@ -41,7 +41,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 
 ## Important coverage and verification limits
 
-This is a working MVP, **not yet a complete worldwide grants database**. The country selector and worldwide source navigator can be used globally, but they do not imply a complete country-by-country benefits catalogue. The country selector is broader than the current automated data coverage. The live automated search is currently concentrated on EU, US and UK records. The global finder provides official navigation resources for other countries rather than inventing local programme listings. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant/benefit feed. A curated household-support directory links to eight official information pages, but does not calculate eligibility or assert that a benefit is currently open. Municipal assistance varies by local decree. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
+This is a working MVP, **not yet a complete worldwide grants database**. The country selector and worldwide source navigator can be used globally, but they do not imply a complete country-by-country benefits catalogue. The country selector is broader than the current automated data coverage. The live automated search is currently concentrated on EU, US and UK records, with additional country-specific automated feeds for Japan and Chile. The global finder provides official navigation resources for other countries rather than inventing local programme listings. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant/benefit feed. A curated household-support directory links to eight official information pages, but does not calculate eligibility or assert that a benefit is currently open. Municipal assistance varies by local decree. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
 
 Automatically discovered records are labelled **unverified candidates**. They are not a promise that an opportunity is open, that its deadline is current, or that a particular visitor is eligible. Some records have no deadline. Always open the official notice and confirm eligibility, dates, amounts and application procedure with the publisher.
 
@@ -71,7 +71,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 | EU CAP Network | Agriculture, forestry and rural innovation call leads | Daily page monitoring; every lead remains unverified until checked on the original call page |
 | Grants.gov | Posted and forecast US federal opportunities | Many are restricted to eligible organisations; forecast items are not open calls |
 | UKRI | Recent UKRI opportunity feed entries | Feed is not a complete listing and may omit deadlines |
-| CIHR | Canadian health-research RSS notices | Latest successful retrieval returned zero items; narrow health-research coverage only |
+| CIHR | Canadian health-research RSS notices | Latest successful retrieval returned zero items; narrow health-research coverage only |\n| CORFO (Chile) | Daily check of official Start-Up Chile call page; open status, dates and maximum co-financing extracted | Current call is shown only while the original page marks it open and the deadline has not passed; detailed eligibility remains subject to the legal rules |
 | Australian ARC | Research grant records | Archive/discovery records, not a general Australian benefits feed |
 | Hungarian official portals | FAIR, KAP, family and maternity benefits, housing, municipal social assistance, energy discounts, BGA, EMET and NKFIH | Household benefits are curated official information links; NKFIH RSS imports unverified news candidates. No nationwide automated entitlement check exists. |
 
@@ -81,7 +81,7 @@ Python 3.12 is used by the discovery workflow. The Hungarian open-data and Canad
 
 ```bash
 python -m pip install certifi
-python scripts/discover_eu_funding.py
+python scripts/discover_chile_calls.py\npython scripts/discover_eu_funding.py
 python scripts/discover_eu_national_agriculture.py
 python scripts/discover_us_grants.py
 python scripts/discover_ukri.py
