@@ -61,6 +61,8 @@ jobs:
         run: python scripts/discover_ukri.py
       - name: Discover Australian ARC research grants
         run: python scripts/discover_au_arc_grants.py
+      - name: Discover New Zealand Government Funding Explorer listings
+        run: python scripts/discover_nz_funding_explorer.py
       - name: Discover Canadian CIHR funding opportunities
         run: python scripts/discover_ca_cihr.py
       - name: Discover Hungarian open-data datasets
