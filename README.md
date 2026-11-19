@@ -10,7 +10,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Country selector covering the ISO country-code list, localized into Hungarian or English.
 - Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
 - The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
-- Country-specific official support finders now cover the United States, United Kingdom, Canada, Australia, New Zealand and Ireland, with direct links for federal grants, business support and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
+- Country-specific official support finders now cover 12 countries across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
 - Main search currently reads discovery records from three working official data connections:
   - European Commission Funding & Tenders Portal (EU)
