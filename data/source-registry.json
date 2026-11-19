@@ -172,6 +172,61 @@
       "access": "Official RSS feed at https://www.ukri.org/opportunity/feed/",
       "status": "automated-discovery",
       "notes": "The RSS feed is a discovery stream and may not include every opportunity or deadline. Each opportunity must be checked on its official page; all imported records remain unverified."
+    },
+    {
+      "id": "au-grantconnect",
+      "name": "GrantConnect – Australian Government grants",
+      "publisher": "Australian Government Department of Finance",
+      "url": "https://www.grants.gov.au/",
+      "coverage": "Australia; Commonwealth grant opportunities, forecasts and awards",
+      "kind": "funding-calls",
+      "access": "Official national portal; public machine-readable API/feed not confirmed",
+      "status": "discovery-source",
+      "notes": "The Australian Government identifies GrantConnect as its whole-of-government source for forecast and current grants. This is a source link only until a permitted structured feed is confirmed."
+    },
+    {
+      "id": "au-arc-grants",
+      "name": "Australian Research Council Grants Data Portal",
+      "publisher": "Australian Research Council",
+      "url": "https://dataportal.arc.gov.au/RGS/Web/Grants",
+      "coverage": "Australia; ARC research grants and awards",
+      "kind": "research-grants-data",
+      "access": "Official JSON:API; paginated grants endpoint",
+      "status": "automated-discovery",
+      "notes": "Automated adapter imports research-grant records only. This is not a complete register of all Australian grants, personal benefits or currently open calls. Every record remains unverified."
+    },
+    {
+      "id": "ca-grants-funding",
+      "name": "Government of Canada – Grants and funding",
+      "publisher": "Government of Canada",
+      "url": "https://www.canada.ca/en/government/grants-funding.html",
+      "coverage": "Canada; agriculture, business, culture, education, health, jobs, research and social support",
+      "kind": "funding-calls",
+      "access": "Official searchable government directory; no public structured API confirmed",
+      "status": "discovery-source",
+      "notes": "National starting point for federal grants and funding. Individual programmes may be administered through separate departmental portals."
+    },
+    {
+      "id": "nz-funding-explorer",
+      "name": "Funding Explorer",
+      "publisher": "New Zealand Government – Business.govt.nz",
+      "url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer",
+      "coverage": "New Zealand; government funding options for businesses across sectors",
+      "kind": "funding-catalogue",
+      "access": "Official government finder; public API/feed not confirmed",
+      "status": "discovery-source",
+      "notes": "Government-wide business funding finder. Confirm current availability and eligibility with the administering agency."
+    },
+    {
+      "id": "nz-mbie-open-funding",
+      "name": "MBIE – Open and upcoming science and innovation funding",
+      "publisher": "New Zealand Ministry of Business, Innovation and Employment",
+      "url": "https://www.mbie.govt.nz/science-and-technology/science-and-innovation/open-and-upcoming-science-and-innovation-funding-opportunities",
+      "coverage": "New Zealand; research, science and innovation funding",
+      "kind": "funding-calls",
+      "access": "Official programme listings; public structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Official list of open and upcoming science and innovation funding rounds. Dates and eligibility must be checked on each programme page."
     }
   ],
   "publication_requirements": [
