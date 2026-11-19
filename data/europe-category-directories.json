@@ -54,9 +54,9 @@
       ],
       "name_hu": "Access to EU Finance – finanszírozási közvetítők",
       "name_en": "Access to EU Finance — finance intermediaries",
-      "url": "https://europa.eu/youreurope/business/finance-funding/getting-funding/index_en.htm",
-      "description_hu": "Az EU által támogatott hitelekhez és pénzügyi eszközökhöz kapcsolódó helyi közvetítők keresése. Nem vissza nem térítendő támogatások teljes listája.",
-      "description_en": "Find local intermediaries for EU-backed loans and financial instruments. Not a complete list of non-repayable grants.",
+      "url": "https://single-market-economy.ec.europa.eu/access-finance_en",
+      "description_hu": "Az Európai Bizottság Access to Finance portálja EU által támogatott finanszírozási lehetőségeket és helyi pénzügyi közvetítőket mutat be, különösen kkv-k számára. A nemzeti, kizárólag állami programok nem feltétlenül szerepelnek benne.",
+      "description_en": "The European Commission's Access to Finance portal helps SMEs find EU-backed finance and local financial intermediaries. Purely national schemes may not be included.",
       "kind": "finance-intermediary-directory"
     },
     {
@@ -76,6 +76,20 @@
       "description_hu": "Az Európai Bizottság és uniós intézmények közvetlenül kezelt pályázati felhívásai. A jogosultságot minden felhívásnál külön kell ellenőrizni.",
       "description_en": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call.",
       "kind": "direct-eu-calls"
+    },
+    {
+      "id": "eu-sme-support-tools",
+      "categories": [
+        "business",
+        "education",
+        "employment"
+      ],
+      "name_hu": "EU-s kkv-támogató eszközök",
+      "name_en": "EU support tools for SMEs",
+      "url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/eu-support-tools-sme/index_en.htm",
+      "description_hu": "Az Európai Bizottság összegyűjtött eszközei vállalkozásoknak: finanszírozás, tanácsadás, képzés, partnerségek és piacra jutás. Nem kizárólag pénzbeli támogatásokat tartalmaz.",
+      "description_en": "European Commission tools for SMEs covering finance, advice, training, partnerships and market access; not all are cash grants.",
+      "kind": "sme-support-directory"
     }
   ]
 }
