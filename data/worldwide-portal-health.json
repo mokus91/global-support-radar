@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T12:46:20+00:00",
+  "checked_at": "2026-11-19T12:55:11+00:00",
   "records_count": 65,
   "summary": {
-    "connection_error": 7,
+    "connection_error": 10,
     "http_error": 1,
-    "reachable": 51,
-    "restricted": 6
+    "reachable": 47,
+    "restricted": 7
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -107,9 +107,8 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "za-sassa",
@@ -166,7 +165,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 202,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -212,14 +211,14 @@
     },
     {
       "id": "eu-national-funds-it",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "restricted",
+      "http_status": 403,
       "final_url": "https://opencoesione.gov.it/it/"
     },
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.esfondi.lv/"
     },
     {
@@ -278,9 +277,8 @@
     },
     {
       "id": "eu-national-funds-si",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://evropskasredstva.si/"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-national-funds-sk",
@@ -361,9 +359,8 @@
     },
     {
       "id": "national-ph-agriculture-2",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "national-ph-business-3",
