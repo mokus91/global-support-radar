@@ -1313,6 +1313,28 @@
       "access": "Open public API; base URL https://aides-territoires.beta.gouv.fr/api; no OpenAPI documentation or published rate limit confirmed",
       "status": "discovery-source",
       "notes": "Official catalogue describes nearly 3,000 support schemes from more than 600 providers. Target users are primarily local authorities and their partners. API records can include provider, description, nature, geographic area, eligibility criteria and application link. Validate current API schema, licensing and individual programme status before building an automated importer."
+    },
+    {
+      "id": "nz-business-funding-explorer",
+      "name": "New Zealand Government Funding Explorer",
+      "publisher": "New Zealand Government — Business.govt.nz",
+      "url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer",
+      "coverage": "New Zealand; 15 government business funding and support options",
+      "kind": "government-funding-directory",
+      "access": "Official HTML catalogue; automated daily snapshot of listed programme links",
+      "status": "automated-discovery",
+      "notes": "The adapter extracts programme names and official links only. It does not infer open status, deadlines, amounts or applicant eligibility."
+    },
+    {
+      "id": "nz-mfe-funding",
+      "name": "New Zealand Ministry for the Environment — Get funding",
+      "publisher": "New Zealand Ministry for the Environment",
+      "url": "https://environment.govt.nz/what-you-can-do/funding/",
+      "coverage": "New Zealand; environmental funding and community/environmental support",
+      "kind": "government-funding-directory",
+      "access": "Official government directory; daily URL reachability check",
+      "status": "official-source-directory",
+      "notes": "Directory includes funds from MfE and other organisations. Listing/status snippets do not prove application availability; verify each programme."
     }
   ],
   "publication_requirements": [
@@ -1329,4 +1351,4 @@
     "source_language",
     "licence_or_reuse_basis"
   ]
-}
+}\n

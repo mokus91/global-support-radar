@@ -615,6 +615,18 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   }catch(error){
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A nemzetközi országforrások most nem tölthetők be.":"International country sources could not be loaded.";box.append(warning);
   }
+  if(code==="NZ"&&(category==="all"||category==="business")){
+   try{
+    const response=await fetch("data/nz-funding-explorer-discovery.json",{cache:"no-store"});
+    if(response.ok){
+     const feed=await response.json();
+     const heading=document.createElement("h3");heading.textContent=isHu?"Új-Zéland – kormányzati Funding Explorer":"New Zealand — Government Funding Explorer";box.append(heading);
+     const note=document.createElement("p");note.className="notice";note.textContent=isHu?"A hivatalos kormányzati Funding Explorer listázott programjai. Ez katalógus-pillanatkép: nem igazolja, hogy a jelentkezés nyitott, és nem tartalmaz ellenőrzött határidőt, támogatási összeget vagy jogosultságot. Mindig az eredeti programoldalt ellenőrizd.":"Listed programmes from the official government Funding Explorer. This is a directory snapshot: it does not establish that applications are open and does not verify deadlines, award amounts or eligibility. Always check the original programme page.";box.append(note);
+     if(!feed.records.length){const empty=document.createElement("p");empty.className="empty";empty.textContent=isHu?"A programhivatkozások most nem voltak automatikusan kinyerhetők. Nyisd meg a hivatalos katalógust.":"Programme links could not be extracted automatically. Open the official catalogue.";box.append(empty);}
+     feed.records.forEach(record=>{const card=document.createElement("article");card.className="card";const h=document.createElement("h3");h.textContent=record.title;const p=document.createElement("p");p.textContent=isHu?"A kormányzati Funding Explorer listázza. A feltételek és a jelentkezési időszak az eredeti oldalon ellenőrizendők.":"Listed by the government Funding Explorer. Check terms and application windows on the original page.";const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener";a.textContent=isHu?"Hivatalos programoldal":"Official programme page";card.append(h,p,a);box.append(card);});
+    }
+   }catch(error){const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"Az új-zélandi Funding Explorer adatfolyam most nem érhető el.":"New Zealand Funding Explorer feed is temporarily unavailable.";box.append(warning);}
+  }
   if(code==="JP"&&(category==="all"||["business","agriculture","family","education","employment","energy"].includes(category))){
    try{
     const response=await fetch("data/jgrants-discovery.json",{cache:"no-store"});

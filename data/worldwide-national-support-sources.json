@@ -968,7 +968,35 @@
       "description_hu": "Hivatalos francia kereső elsősorban önkormányzatoknak, helyi közintézményeknek és partnereiknek szóló pénzügyi és szakmai támogatásokhoz. Területi és jogosultsági szűrőket, valamint pályázati ügyintézési hivatkozásokat kínál; nem általános lakossági támogatáskereső.",
       "description_en": "Official French finder primarily for financial and engineering support aimed at local authorities, public bodies and their partners. It offers geographic and eligibility filters and application links; it is not a general household-benefits finder.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "nz-business-funding-explorer",
+      "country_code": "NZ",
+      "country_en": "New Zealand",
+      "category": "business",
+      "name_hu": "Új-Zéland – kormányzati Funding Explorer",
+      "name_en": "New Zealand — Government Funding Explorer",
+      "url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer",
+      "publisher": "New Zealand Government — Business.govt.nz",
+      "kind": "government-funding-directory",
+      "description_hu": "A kormányzati Funding Explorer 15 vállalkozási támogatási és finanszírozási lehetőséget gyűjt össze. A lista nem bizonyítja, hogy minden program nyitott; az aktuális feltételeket az eredeti programoldalon kell ellenőrizni.",
+      "description_en": "The government Funding Explorer brings together 15 business funding and support options. Listing does not prove a programme is open; verify current terms on the original programme page.",
+      "verification_status": "official-domain-source"
+    },
+    {
+      "id": "nz-environment-funding",
+      "country_code": "NZ",
+      "country_en": "New Zealand",
+      "category": "energy",
+      "name_hu": "Új-Zéland – Környezetvédelmi Minisztérium támogatásai",
+      "name_en": "New Zealand — Ministry for the Environment funding",
+      "url": "https://environment.govt.nz/what-you-can-do/funding/",
+      "publisher": "New Zealand Ministry for the Environment",
+      "kind": "government-funding-directory",
+      "description_hu": "Hivatalos környezetvédelmi támogatási katalógus, amely programneveket, szervezeteket, témákat és egyes esetekben nyitott/zárt státuszt mutat. A programoldalon kell ellenőrizni a jelentkezést.",
+      "description_en": "Official environmental funding catalogue with programme names, providers, topics and, for some entries, open/closed labels. Confirm application details on the programme page.",
+      "verification_status": "official-domain-source"
     }
   ],
   "records_count": 67
-}
+}\n

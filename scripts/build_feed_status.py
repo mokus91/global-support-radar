@@ -17,7 +17,7 @@ FEEDS = [
     ("Japan — JGrants", "jgrants-discovery.json"),
     ("Chile — CORFO / Sercotec", "chile-discovery.json"),
     ("Spain — SNPSAP", "spain-discovery.json"),
-    ("France — Aides-territoires", "france-aides-territoires-discovery.json"),
+    ("France — Aides-territoires", "france-aides-territoires-discovery.json"),\n    ("New Zealand — Government Funding Explorer", "nz-funding-explorer-discovery.json"),
     ("EU — Funding & Tenders", "eu-funding-discovery.json"),
     ("EU — open calls", "eu-open-calls-discovery.json"),
     ("EU — CAP Network", "eu-cap-network-discovery.json"),
