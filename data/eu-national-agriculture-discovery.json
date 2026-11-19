@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T11:57:25Z",
+  "generated_at": "2026-11-19T12:11:59Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 8,
+  "records_count": 7,
   "records": [
     {
       "id": "national-agri-cz-1",
@@ -30,21 +30,6 @@
       "title": "EU's Garantifond for Landbruget og Landdistriktsfonden I perioden 2023-2027 udgør tildelingen til den danske CAP-plan 6,425 mia. kr. årligt fra Den Europæiske Garantifond for Landbruget og 566 mio. kr. årligt fra Den Europæiske Landbrugsfond for Udvikling af Landdistrikterne. Dertil kommer særskilte midler til frugt- og grøntsektoren på 57 mio. kr. årligt og til ordningen for biavlsprodukter på 2,2 mio. kr. årligt.",
       "official_url": "https://eufonde.dk/eu-garantifond-for-landbruget-og-landdistriktsfonden",
       "portal_url": "https://eufonde.dk/",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
-      "id": "national-agri-ie-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "title": "LCETB Youthreach: Jordan’s Story",
-      "official_url": "https://www.eufunds.ie/story/jordans-story/",
-      "portal_url": "https://www.eufunds.ie/",
       "publisher": "Official national EU funding portal",
       "category": "agriculture",
       "record_type": "national-agriculture-link-discovery",

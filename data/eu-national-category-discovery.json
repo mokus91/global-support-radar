@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T11:58:18Z",
+  "generated_at": "2026-11-19T12:12:44Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 52,
+  "records_count": 53,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -272,6 +272,20 @@
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
       "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-ie-business-1",
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "category": "business",
+      "title": "Local Enterprise Support",
+      "official_url": "https://www.eufunds.ie/story/showergem-supported-by-local-enterprise-mayo-and-enterprise-ireland/",
+      "portal_url": "https://www.eufunds.ie/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
       "id": "eu-ie-employment-1",
