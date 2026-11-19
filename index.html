@@ -538,6 +538,30 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A kategória szerinti EU-források most nem tölthetők be.":"EU category sources could not be loaded right now.";box.append(warning);
   }
   try{
+   const response=await fetch("data/worldwide-national-support-sources.json",{cache:"no-store"});
+   if(response.ok){
+    const directory=await response.json();
+    const relevant=directory.records.filter(record=>(code==="all"||record.country_code===code)&&(category==="all"||record.category==="all"||record.category===category));
+    if(relevant.length){
+     const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos támogatáskeresők":"Country-specific official support finders";box.append(heading);
+     relevant.forEach(record=>{
+      const card=document.createElement("article");card.className="card";
+      const h=document.createElement("h3");h.textContent=isHu?record.name_hu:record.name_en;
+      const p=document.createElement("p");p.textContent=isHu?record.description_hu:record.description_en;
+      const meta=document.createElement("div");meta.className="meta";
+      const region=countryName(record.country_code);
+      meta.textContent=(isHu?"Ország: ":"Country: ")+region+" · "+(isHu?"Hivatalos kormányzati/ügynökségi forrás":"Official government/agency source");
+      const foot=document.createElement("div");foot.className="cardfoot";
+      const label=document.createElement("span");label.textContent=isHu?"Hivatalos forrás · programonként ellenőrizendő":"Official source · verify each programme";
+      const a=document.createElement("a");a.href=record.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Megnyitás ↗":"Open ↗";
+      foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+     });
+    }
+   }
+  }catch(error){
+   const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A nemzetközi országforrások most nem tölthetők be.":"International country sources could not be loaded.";box.append(warning);
+  }
+  try{
    const response=await fetch("data/eu-national-business-funding.json");
    if(response.ok){
     const directory=await response.json();
