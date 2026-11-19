@@ -11,4 +11,4 @@
   "http_status": 401,
   "error": "Unauthorized",
   "scope": "The official API did not permit this automated request. No current grant or application status is inferred; use the official catalogue directly."
-}\n
+}
