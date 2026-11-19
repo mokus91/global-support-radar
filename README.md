@@ -81,6 +81,7 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 - `scripts/` — adatforrás-adapterek, országportál-építők és ellenőrzések.
 - `.github/workflows/source-discovery.yml` — napi adatfrissítő folyamat.
 - `docs/architecture.md` — adatfolyam és ellenőrzési szabályok.
+- `docs/data-standard.md` — országokon átívelő közös rekord-, pénzügyi és jogosultsági adatstandard.
 
 ## Helyi futtatás
 
