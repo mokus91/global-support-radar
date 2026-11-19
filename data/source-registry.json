@@ -547,6 +547,28 @@
       "access": "Official government e-administration portal; municipality-specific benefits require local rules",
       "status": "discovery-source",
       "notes": "Municipal support varies by settlement and local decree. This is a navigation starting point, not a central nationwide benefit catalogue."
+    },
+    {
+      "id": "hu-mak-gyes",
+      "name": "Gyermekgondozást segítő ellátás – GYES",
+      "publisher": "Magyar Államkincstár",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/gyermekgondozast-segito-ellatas",
+      "coverage": "Hungary; childcare allowance for parents, guardians and eligible grandparents",
+      "kind": "citizen-benefits",
+      "access": "Official detailed information and application guidance",
+      "status": "discovery-source",
+      "notes": "Standard eligibility generally runs to age three, with special rules for twins, long-term illness or severe disability and grandparents."
+    },
+    {
+      "id": "hu-mak-gyet",
+      "name": "Gyermeknevelési támogatás – GYET",
+      "publisher": "Magyar Államkincstár",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/gyermeknevelesi-tamogatas",
+      "coverage": "Hungary; child-raising support for households raising at least three minors",
+      "kind": "citizen-benefits",
+      "access": "Official detailed information and application guidance",
+      "status": "discovery-source",
+      "notes": "Potentially available when the youngest child is aged three to eight; verify all statutory conditions and work restrictions."
     }
   ],
   "publication_requirements": [
