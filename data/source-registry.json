@@ -128,6 +128,28 @@
       "kind": "research-innovation-funding",
       "access": "Official website; public API/feed not confirmed",
       "status": "discovery-source"
+    },
+    {
+      "id": "hu-kozpenzpalyazat",
+      "name": "Közpénzekből nyújtott támogatások",
+      "publisher": "Magyarország – Közpénzportál",
+      "url": "https://www.kozpenzpalyazat.gov.hu/srv/",
+      "coverage": "Hungary; public funding applications, awards and beneficiaries since 2008",
+      "kind": "public-funding-transparency-database",
+      "access": "Official searchable website; public API/export not confirmed",
+      "status": "discovery-source",
+      "notes": "Historical and transparency records about applications and awarded public funding. Not an open-call feed and not proof that an application is currently available."
+    },
+    {
+      "id": "hu-national-open-data",
+      "name": "Nemzeti Közadat Portál",
+      "publisher": "Hungarian Government",
+      "url": "https://t.data.gov.hu/",
+      "coverage": "Hungary; national open government datasets",
+      "kind": "open-data-catalogue",
+      "access": "CKAN API is linked from the portal; GET package_search endpoint to be tested by scheduled adapter",
+      "status": "discovery-source",
+      "notes": "Dataset metadata discovery only. Dataset records must be checked for publisher, licence, update date and relevance before reuse."
     }
   ],
   "publication_requirements": [
