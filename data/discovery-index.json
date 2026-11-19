@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:10:48.716841+00:00",
+  "generated_at": "2026-11-19T12:03:03.827047+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 180,
@@ -149,6 +149,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
+      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Animal Assistance Foundation",
       "url": "https://www.data.gouv.fr/datasets/fondation-assistance-aux-animaux",
       "query": "housing assistance",
@@ -240,14 +248,6 @@
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
-      "url": "https://dati.agcm.it/dataset/p28329#",
-      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -415,6 +415,14 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): glazing",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -805,14 +813,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Inventories of subsidies - Brussels Environment",
-      "url": "https://datastore.brussels/web/data/dataset/73138534-dc38-40f9-b1d7-2bb7d8f0697a",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Inventories of subsidies - Evere",
       "url": "https://datastore.brussels/web/data/dataset/3d2230d6-fba1-44b9-9e9a-72da1b885b65",
       "query": "subsidies",
@@ -853,6 +853,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Port of Brussels",
+      "url": "https://datastore.brussels/web/data/dataset/a09de8f8-24f0-44f7-9190-9916a6c67179",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Schaerbeek",
       "url": "https://datastore.brussels/web/data/dataset/ea7cffcb-28e5-4704-bfd4-a283b73750b3",
       "query": "subsidies",
@@ -861,8 +869,24 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Sint-Gilles",
+      "url": "https://datastore.brussels/web/data/dataset/3fbe4704-5359-454d-8a8e-2a01fc1fbb4a",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Watermael-Boitsfort",
+      "url": "https://datastore.brussels/web/data/dataset/2b433797-3d51-43c6-9d5b-de425c8aa5e2",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -965,14 +989,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI_Subsidies 2022_2023-06-06",
-      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI_Subsidies 2022_2023_interreg hu_en_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-hu-sk-zoznam-vyziev",
       "query": "subsidies",
@@ -983,14 +999,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_2023_SRIN_Call list",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-srin-zoznam-vyziev",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1415,14 +1423,6 @@
     {
       "title": "VCA02 - Agricultural Output in Europe",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA02/JSON-stat/2.0/en",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "VCA03 - Exports of Irish Agricultural Products",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA03/JSON-stat/2.0/en",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
