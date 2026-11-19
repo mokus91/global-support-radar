@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:48:54+00:00",
+  "checked_at": "2026-11-19T17:01:47+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
-    "http_error": 2,
-    "reachable": 56,
+    "http_error": 3,
+    "reachable": 55,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -266,9 +266,9 @@
     },
     {
       "id": "eu-national-funds-es",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
+      "status": "http_error",
+      "http_status": 502,
+      "final_url": "https://fondoseuropeos.gob.es"
     },
     {
       "id": "eu-national-funds-se",
