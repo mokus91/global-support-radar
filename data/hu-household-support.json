@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-11-19T11:18:00Z",
+  "country": "HU",
+  "source_type": "curated-official-benefit-directory",
+  "verification_note": "These are official information and application starting points, not automatically verified current awards. Eligibility, amounts, deadlines and availability must be checked on the linked official page. Local municipal benefits vary by municipality.",
+  "records": [
+    {
+      "id": "hu-maternity-allowance",
+      "title_hu": "Anyasági támogatás",
+      "title_en": "Maternity allowance",
+      "category": "family",
+      "summary_hu": "Egyszeri családtámogatási ellátás szülés, örökbefogadás vagy gyámság esetén, a törvényi feltételekkel és határidővel.",
+      "summary_en": "One-time family benefit after childbirth, adoption or guardianship, subject to statutory conditions and the application deadline.",
+      "beneficiary_hu": "Várandósságon részt vett anya, örökbefogadó szülő vagy gyám – a jogszabály szerinti feltételekkel.",
+      "beneficiary_en": "Mother who attended prenatal care, adoptive parent or guardian, subject to statutory conditions.",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/gyermekvallalas-tamogatasa/anyasagi-tamogatas",
+      "publisher": "Magyar Államkincstár",
+      "status": "official-information"
+    },
+    {
+      "id": "hu-family-allowance",
+      "title_hu": "Családi pótlék",
+      "title_en": "Family allowance",
+      "category": "family",
+      "summary_hu": "Nevelési ellátás és iskoláztatási támogatás; a jogosultság a gyermek és a kérelmező körülményeitől függ.",
+      "summary_en": "Child-raising and schooling allowance; eligibility depends on the child’s and applicant’s circumstances.",
+      "beneficiary_hu": "A gyermeket saját háztartásban nevelő jogosult személyek, illetve egyes esetekben saját jogon igénylők.",
+      "beneficiary_en": "Eligible persons raising a child in their household, and applicants qualifying in their own right in certain cases.",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/csaladi-potlek",
+      "publisher": "Magyar Államkincstár",
+      "status": "official-information"
+    },
+    {
+      "id": "hu-family-benefits-overview",
+      "title_hu": "GYES, GYET és további családtámogatások",
+      "title_en": "GYES, GYET and other family benefits",
+      "category": "family",
+      "summary_hu": "A családtámogatási ügyek hivatalos áttekintője: GYES, GYET, fogyatékossági támogatás, nagycsaládos földgáz árkedvezmény és ügyintézés.",
+      "summary_en": "Official overview of family benefits, including GYES, GYET, disability support, the large-family natural-gas discount and application guidance.",
+      "beneficiary_hu": "A konkrét ellátás jogszabályi feltételeinek megfelelő családok és személyek.",
+      "beneficiary_en": "Families and individuals who meet the statutory conditions of each specific benefit.",
+      "url": "https://kormanyhivatalok.hu/csaladtamogatasok",
+      "publisher": "Kormányhivatalok",
+      "status": "official-information"
+    },
+    {
+      "id": "hu-housing-support-guide",
+      "title_hu": "Állami lakástámogatások és kamattámogatott kölcsönök",
+      "title_en": "State housing support and subsidised housing loans",
+      "category": "housing",
+      "summary_hu": "Hivatalos tájékoztató a lakáscélú állami támogatásokról, akadálymentesítési támogatásokról és kamattámogatott kölcsönökről. Egyes kérelmek bankon keresztül intézhetők.",
+      "summary_en": "Official information about state housing support, accessibility grants and subsidised housing loans. Some applications are handled through banks.",
+      "beneficiary_hu": "A mindenkori konstrukció feltételeinek megfelelő lakásvásárlók, építkezők és családok.",
+      "beneficiary_en": "Homebuyers, builders and families meeting the conditions of the current scheme.",
+      "url": "https://kormanyhivatalok.hu/lakastamogatas",
+      "publisher": "Kormányhivatalok",
+      "status": "official-information"
+    },
+    {
+      "id": "hu-municipal-social-support",
+      "title_hu": "Települési támogatások és helyi szociális segítség",
+      "title_en": "Municipal benefits and local social assistance",
+      "category": "social",
+      "summary_hu": "A lakóhely szerinti önkormányzat rendelete alapján kérhető helyi támogatás. A cél, összeg, jogosultság és kérelem módja településenként eltérhet.",
+      "summary_en": "Local assistance may be available under the rules of the municipality of residence. Purpose, amount, eligibility and application process vary by municipality.",
+      "beneficiary_hu": "A helyi önkormányzati rendeletben meghatározott feltételeknek megfelelő lakosok.",
+      "beneficiary_en": "Residents who meet the conditions set by their local municipality.",
+      "url": "https://www.magyarorszag.hu/",
+      "publisher": "Magyarország.hu / helyi önkormányzat",
+      "status": "local-rules-apply"
+    },
+    {
+      "id": "hu-large-family-gas-discount",
+      "title_hu": "Nagycsaládos földgáz árkedvezmény",
+      "title_en": "Large-family natural-gas price discount",
+      "category": "energy",
+      "summary_hu": "A nagycsaládos földgáz árkedvezmény hivatalos tájékoztatója és ügyintézési kiindulópontja a családtámogatási oldalon.",
+      "summary_en": "Official information and application starting point for the large-family natural-gas price discount.",
+      "beneficiary_hu": "A jogszabály szerinti gyermekszámmal és egyéb feltételekkel rendelkező nagycsaládos háztartások.",
+      "beneficiary_en": "Large families meeting the statutory child-count and other conditions.",
+      "url": "https://kormanyhivatalok.hu/csaladtamogatasok",
+      "publisher": "Kormányhivatalok",
+      "status": "official-information"
+    }
+  ]
+}
