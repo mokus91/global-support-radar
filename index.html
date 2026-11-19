@@ -28,7 +28,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <section class="hero"><div class="eyebrow" id="eyebrow">TÁMOGATÁSOK HATÁROK NÉLKÜL</div><h1 id="title">Találd meg a neked járó támogatásokat.</h1><p id="subtitle">Állami támogatások, pályázatok és kedvezmények egy helyen. Válassz országot, szűrj kategóriára, és indulj el a hivatalos forrás felé.</p><div class="searchrow"><input id="q" class="search" type="search" placeholder="Keresés támogatásra, témára vagy kulcsszóra…"><button id="searchBtn" class="btn">Keresés →</button></div></section>
 <section class="stats"><div class="stat"><b id="statFeeds">18</b><span id="s1">automatikus adatkapcsolat</span></div><div class="stat"><b id="statCategories">10</b><span id="s2">támogatási kategória</span></div><div class="stat"><b id="statRefresh">6 óra</b><span id="s3">tervezett frissítési ciklus</span></div></section>
 <section><div class="sectionhead"><div><h2 id="browseTitle">Hivatalos forrásokból gyűjtött lehetőségek</h2><p id="browseSub">EU, USA és Egyesült Királyság automatikus adatkapcsolatai. Kanada és Magyarország hivatalos forrásai külön böngészhetők.</p></div><span id="count" style="color:var(--muted);font-size:13px"></span></div>
-<div class="filters" id="filters"></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div><div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
+<div class="filters" id="filters"></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><button class="filter" id="exportCalendar" type="button">▦ Határidők naptárba</button><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div><div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
 <div class="notice" id="notice">⚠️ <b>Fontos:</b> A kereső hivatalos adatforrásokból gyűjtött, de egyedileg nem ellenőrzött jelölteket mutat. Az országválasztó önmagában nem jelent teljes adatlefedettséget. A határidőt, jogosultságot és feltételeket mindig az eredeti kiírásban ellenőrizd.</div>
 </section>
 <section id="huEligibilityHelper" class="card" style="margin:22px 0"><div class="sectionhead"><div><h2 id="huEligibilityTitle">Támogatás-ajánló – néhány válasz alapján</h2><p id="huEligibilitySub">Válaszolj néhány egyszerű kérdésre, és megmutatjuk, mely hivatalos magyar támogatásokat érdemes ellenőrizned.</p></div><span class="tag" id="huLocalOnly">CSAK EZEN AZ ESZKÖZÖN</span></div><div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
@@ -462,6 +462,25 @@ function exportCurrentResults(){
  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="global-support-radar-"+new Date().toISOString().slice(0,10)+".csv";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
+function exportSavedCalendar(){
+ const saved=getSaved();
+ const rows=liveListings.filter(row=>saved.has(savedId(row))&&row._deadline&&/^\\d{4}-\\d{2}-\\d{2}/.test(String(row._deadline)));
+ if(!rows.length){alert(lang==="hu"?"Nincs határidővel rendelkező mentett lehetőség. Először ments el egy találatot.":"No saved opportunities with a deadline. Save an item first.");return;}
+ const esc=value=>String(value??"").replace(/\\\\/g,"\\\\\\\\").replace(/;/g,"\\\\;").replace(/,/g,"\\\\,").replace(/\\r?\\n/g,"\\\\n");
+ const date=value=>String(value).slice(0,10).replace(/-/g,"");
+ const stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\\.\\d{3}/,"");
+ const events=rows.map((row,index)=>{
+  const start=date(row._deadline),endDate=new Date(start.slice(0,4)+"-"+start.slice(4,6)+"-"+start.slice(6,8)+"T00:00:00Z");endDate.setUTCDate(endDate.getUTCDate()+1);
+  const end=endDate.toISOString().slice(0,10).replace(/-/g,"");
+  const title=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"Grant deadline");
+  const url=row._official||row._fallback||"";
+  const description=(lang==="hu"?"Pályázati határidő. Ellenőrizd a feltételeket a hivatalos oldalon. ":"Application deadline. Verify eligibility on the official source. ")+url;
+  return ["BEGIN:VEVENT","UID:"+esc(savedId(row)+"-"+index)+"@global-support-radar","DTSTAMP:"+stamp,"DTSTART;VALUE=DATE:"+start,"DTEND;VALUE=DATE:"+end,"SUMMARY:"+esc((lang==="hu"?"Határidő: ":"Deadline: ")+title),"DESCRIPTION:"+esc(description),"URL:"+url,"BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY","DESCRIPTION:"+esc(lang==="hu"?"A támogatás határideje 7 nap múlva lejár":"Grant deadline in 7 days"),"END:VALARM","END:VEVENT"].join("\\r\\n");
+ });
+ const calendar=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Global Support Radar//Grant deadlines//HU","CALSCALE:GREGORIAN","METHOD:PUBLISH",...events,"END:VCALENDAR"].join("\\r\\n");
+ const blob=new Blob([calendar],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="global-support-radar-hataridok.ics";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
 function renderCards(){
  const t=translations[lang],q=$("q").value.trim().toLowerCase(),country=$("country").value,saved=getSaved();
  const rows=liveListings.filter(row=>{
@@ -510,7 +529,7 @@ function renderCards(){
  const more=$("loadMoreWrap");if(more){more.style.display=rows.length>visibleLimit?"block":"none";$("loadMore").textContent=lang==="hu"?"További találatok ("+(rows.length-visibleLimit)+")":"Load more ("+(rows.length-visibleLimit)+")";}
 
 }
-$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{visibleLimit=80;renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("savedToggle").onclick=()=>{showSavedOnly=!showSavedOnly;visibleLimit=80;renderCards();};$("loadMore").onclick=()=>{visibleLimit+=80;renderCards();};$("exportCsv").onclick=exportCurrentResults;$("searchBtn").onclick=()=>{visibleLimit=80;renderCards();};$("q").oninput=()=>{visibleLimit=80;renderCards();};$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
+$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{visibleLimit=80;renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("savedToggle").onclick=()=>{showSavedOnly=!showSavedOnly;visibleLimit=80;renderCards();};$("loadMore").onclick=()=>{visibleLimit+=80;renderCards();};$("exportCsv").onclick=exportCurrentResults;$("exportCalendar").onclick=exportSavedCalendar;$("searchBtn").onclick=()=>{visibleLimit=80;renderCards();};$("q").oninput=()=>{visibleLimit=80;renderCards();};$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
 </script>
 
 <script id="global-country-expansion">
