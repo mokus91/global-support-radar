@@ -1335,6 +1335,17 @@
       "access": "Official government directory; daily URL reachability check",
       "status": "official-source-directory",
       "notes": "Directory includes funds from MfE and other organisations. Listing/status snippets do not prove application availability; verify each programme."
+    },
+    {
+      "id": "hu-fair-eptk",
+      "name": "FAIR / EPTK – hivatalos Pályázatkereső",
+      "publisher": "Magyarország – Fejlesztéspolitikai Adatbázis és Információs Rendszer (FAIR)",
+      "url": "https://www.palyazat.gov.hu/",
+      "coverage": "Hungary; EU and selected domestic development-programme calls, including rural-development opportunities",
+      "kind": "grant-search-portal",
+      "access": "Official public search portal; source documentation states that the opportunity list is refreshed daily",
+      "status": "official-manual-link",
+      "notes": "Direct official portal link only. Automated import is not enabled; do not present the portal as an integrated live feed."
     }
   ],
   "publication_requirements": [
