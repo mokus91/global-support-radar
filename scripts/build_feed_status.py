@@ -59,7 +59,6 @@ def main():
                 for key in ("generated_at", "fetched_at", "retrieved_at", "checked_at"):
                     if data.get(key):
                         entry["feed_generated_at"] = data[key]
-                        entry["source_updated_at"] = data[key]
                         break
                 # This is the age of our local feed snapshot, not the publisher's
                 # publication timestamp. Never label it as source freshness.
