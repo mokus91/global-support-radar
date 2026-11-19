@@ -10,7 +10,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Country selector covering the ISO country-code list, localized into Hungarian or English.
 - Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
 - The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
-- Country-specific official support finders now cover 46 countries across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
+- Dedicated country-specific official support finders cover 193 UN Member States (46 with dedicated current official support-source links; remaining country entries are historical UN DESA portal leads) across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
 - Japan has an additional daily automated discovery adapter using the Japan Digital Agency's public JGrants REST API. It queries several Japanese keywords for subsidies filtered to active application periods, retains original Japanese titles and links to the official notice. Search results are not a complete inventory; users must verify eligibility and deadlines at the publisher.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
 - Main search currently reads discovery records from three working official data connections:
@@ -36,7 +36,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Official source links are checked against allowed hostnames before being displayed.
 
 
-- Country-coded UN DESA national government portal directory for 193 UN Member States in `data/un-national-portals.json`. The frontend shows the selected country's direct portal lead. These are historical starting points only: UN DESA states that government website URLs were last assessed during April–August 2013, so current status must be verified.
+- Country-coded UN DESA national government portal directory for 193 UN Member States in `data/un-national-portals.json`. The worldwide country navigator now includes a historical portal lead for every UN Member State not already covered by a dedicated source. UN DESA states that these URLs were last assessed during April–August 2013; they are explicitly labelled historical and unverified, and are excluded from the daily link-health check.
 - `data/un-national-portals-seed.tsv` and `scripts/build_un_national_portals.py` maintain the country list and generate ISO-coded records; the daily source-discovery workflow rebuilds the JSON directory.
 
 ## Important coverage and verification limits
@@ -59,7 +59,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 - Browser-only support guide in `index.html` — preliminary suggestions only; no personal answers are transmitted or saved.
 - `data/programme.schema.json` — normalized record schema and verification states.
 - `data/*-discovery.json` — generated source discovery records, including daily EU CAP Network agriculture call leads in `data/eu-cap-network-discovery.json`.
-- `scripts/` — official API/feed adapters.
+- `scripts/` — official API/feed adapters, including `expand_global_country_portals.py` for the 193-country historical portal expansion.
 - `.github/workflows/source-discovery.yml` — daily scheduled discovery and manual run.
 - `docs/architecture.md` — architecture and verification principles.
 
