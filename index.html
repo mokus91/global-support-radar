@@ -28,7 +28,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <section class="hero"><div class="eyebrow" id="eyebrow">TÁMOGATÁSOK HATÁROK NÉLKÜL</div><h1 id="title">Találd meg a neked járó támogatásokat.</h1><p id="subtitle">Állami támogatások, pályázatok és kedvezmények egy helyen. Válassz országot, szűrj kategóriára, és indulj el a hivatalos forrás felé.</p><div class="searchrow"><input id="q" class="search" type="search" placeholder="Keresés támogatásra, témára vagy kulcsszóra…"><button id="searchBtn" class="btn">Keresés →</button></div></section>
 <section class="stats"><div class="stat"><b id="statFeeds">18</b><span id="s1">automatikus adatkapcsolat</span></div><div class="stat"><b id="statCategories">10</b><span id="s2">támogatási kategória</span></div><div class="stat"><b id="statRefresh">6 óra</b><span id="s3">tervezett frissítési ciklus</span></div></section>
 <section><div class="sectionhead"><div><h2 id="browseTitle">Hivatalos forrásokból gyűjtött lehetőségek</h2><p id="browseSub">EU, USA és Egyesült Királyság automatikus adatkapcsolatai. Kanada és Magyarország hivatalos forrásai külön böngészhetők.</p></div><span id="count" style="color:var(--muted);font-size:13px"></span></div>
-<div class="filters" id="filters"></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><button class="filter" id="exportCalendar" type="button">▦ Határidők naptárba</button><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div><div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
+<div class="filters" id="filters"></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><button class="filter" id="exportCalendar" type="button">▦ Határidők naptárba</button><button class="filter" id="shareSearch" type="button">↗ Keresés megosztása</button><span id="shareSearchStatus" aria-live="polite" style="color:var(--muted);font-size:12px;align-self:center"></span><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div><div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
 <div class="notice" id="notice">⚠️ <b>Fontos:</b> A kereső hivatalos adatforrásokból gyűjtött, de egyedileg nem ellenőrzött jelölteket mutat. Az országválasztó önmagában nem jelent teljes adatlefedettséget. A határidőt, jogosultságot és feltételeket mindig az eredeti kiírásban ellenőrizd.</div>
 </section>
 <section id="huEligibilityHelper" class="card" style="margin:22px 0"><div class="sectionhead"><div><h2 id="huEligibilityTitle">Támogatás-ajánló – néhány válasz alapján</h2><p id="huEligibilitySub">Válaszolj néhány egyszerű kérdésre, és megmutatjuk, mely hivatalos magyar támogatásokat érdemes ellenőrizned.</p></div><span class="tag" id="huLocalOnly">CSAK EZEN AZ ESZKÖZÖN</span></div><div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
@@ -74,6 +74,24 @@ const SAVED_KEY="gsr_saved_opportunities_v1";
 function getSaved(){try{return new Set(JSON.parse(localStorage.getItem(SAVED_KEY)||"[]"));}catch(_){return new Set();}}
 function saveSaved(set){try{localStorage.setItem(SAVED_KEY,JSON.stringify([...set]));}catch(_){}}
 function savedId(row){return String(row._source||"")+"::"+String(row.id||row.identifier||row.title||row.title_original||"");}
+function syncSearchUrl(){
+ const url=new URL(window.location.href),q=$("q").value.trim(),country=$("country").value;
+ [["q",q],["country",country==="all"?"":country],["category",active<0?"":String(active)],["lang",lang]].forEach(([key,value])=>value?url.searchParams.set(key,value):url.searchParams.delete(key));
+ history.replaceState(null,"",url.pathname+url.search+url.hash);
+}
+function restoreSearchUrl(){
+ const params=new URLSearchParams(location.search),country=params.get("country"),category=params.get("category"),requestedLang=params.get("lang");
+ if(country&&[...$("country").options].some(option=>option.value===country))$("country").value=country;
+ if(category!==null&&/^(?:[0-9])$/.test(category)&&Number(category)<=9)active=Number(category);
+ if(requestedLang==="hu"||requestedLang==="en")lang=requestedLang;
+ $("q").value=params.get("q")||"";
+}
+async function copySearchLink(){
+ syncSearchUrl();
+ const url=location.href,status=$("shareSearchStatus");
+ try{await navigator.clipboard.writeText(url);status.textContent=lang==="hu"?"Megosztható keresési link másolva.":"Shareable search link copied.";}
+ catch(_){window.prompt(lang==="hu"?"Másold ki a megosztható keresési linket:":"Copy this shareable search link:",url);}
+}
 const $=id=>document.getElementById(id);
 async function loadHungarianAnnouncements(){
  const panel=$("huAnnouncements");if(!panel)return;
@@ -494,6 +512,7 @@ function renderCards(){
   return notExpired&&(active<0||cat===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q))&&(!showSavedOnly||saved.has(savedId(row)));
  }).sort((a,b)=>{const da=Date.parse(a._deadline||"");const db=Date.parse(b._deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||a.title_original||"").localeCompare(String(b.title||b.title_original||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
  currentRows=rows;
+ syncSearchUrl();
  $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"5 adatkapcsolat":"5 data connections");
  const savedButton=$("savedToggle");if(savedButton){savedButton.textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+saved.size+")";savedButton.classList.toggle("active",showSavedOnly);$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items stay on this device only."; }
  const box=$("cards");box.replaceChildren();
@@ -529,7 +548,8 @@ function renderCards(){
  const more=$("loadMoreWrap");if(more){more.style.display=rows.length>visibleLimit?"block":"none";$("loadMore").textContent=lang==="hu"?"További találatok ("+(rows.length-visibleLimit)+")":"Load more ("+(rows.length-visibleLimit)+")";}
 
 }
-$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{visibleLimit=80;renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("savedToggle").onclick=()=>{showSavedOnly=!showSavedOnly;visibleLimit=80;renderCards();};$("loadMore").onclick=()=>{visibleLimit+=80;renderCards();};$("exportCsv").onclick=exportCurrentResults;$("exportCalendar").onclick=exportSavedCalendar;$("searchBtn").onclick=()=>{visibleLimit=80;renderCards();};$("q").oninput=()=>{visibleLimit=80;renderCards();};$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
+restoreSearchUrl();$("lang").value=lang;document.documentElement.lang=lang;
+$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{visibleLimit=80;renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("savedToggle").onclick=()=>{showSavedOnly=!showSavedOnly;visibleLimit=80;renderCards();};$("loadMore").onclick=()=>{visibleLimit+=80;renderCards();};$("exportCsv").onclick=exportCurrentResults;$("exportCalendar").onclick=exportSavedCalendar;$("shareSearch").onclick=copySearchLink;$("searchBtn").onclick=()=>{visibleLimit=80;renderCards();};$("q").oninput=()=>{visibleLimit=80;renderCards();};$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
 </script>
 
 <script id="global-country-expansion">
