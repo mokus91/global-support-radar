@@ -74,13 +74,16 @@ def main():
             beneficiaries=[x.get("descripcion") for x in d.get("tiposBeneficiarios",[]) if isinstance(x,dict) and x.get("descripcion")]
             budget_raw=d.get("presupuestoTotal")
             budget=numeric_budget(budget_raw)
+            application_url=d.get("sedeElectronica")
+            if isinstance(application_url,str) and application_url.strip() and not application_url.strip().lower().startswith(("https://","http://")):
+                application_url="https://"+application_url.strip().lstrip("/")
             records.append({"id":code,"country_code":"ES","title_original":title,"coofficial_title":d.get("descripcionLeng"),
               "publisher":"Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
               "granting_authority":" · ".join(x for x in [org.get("nivel1"),org.get("nivel2"),org.get("nivel3")] if x),
               "regions":regions,"eligible_beneficiaries_original":beneficiaries,"eligibility_status":"beneficiary_types_listed_in_official_api" if beneficiaries else "not_specified_in_api","purpose_original":d.get("descripcionFinalidad"),
               "start_date":start,"deadline":end,"indefinite_open":indefinite,"total_call_budget":budget,"total_call_budget_original":budget_raw,
               "amount_currency":"EUR" if budget is not None else None,"amount_type":"total_call_budget_not_individual_award" if budget is not None else None,"amount_status":"published" if budget is not None else "source_field_untyped" if budget_raw not in (None, "") else "not_published","categories":categories(d),
-              "official_url":f"{PORTAL}/convocatoria/{code}","application_url":d.get("sedeElectronica"),
+              "official_url":f"{PORTAL}/convocatoria/{code}","application_url":application_url,
               "legal_bases_url":d.get("urlBasesReguladoras"),"status":"official-api-window-current",
               "eligibility_verified":False,"amount_verified":False,"source_api":BASE,
               "note_hu":"Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
