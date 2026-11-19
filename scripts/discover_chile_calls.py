@@ -63,6 +63,7 @@ def main():
       "opening_date":start,
       "deadline":deadline.isoformat(),
       "amount_max":amount_clp,"currency":"CLP",
+      "amount_maximum":amount_clp,"amount_currency":"CLP","amount_type":"maximum_co_funding_per_project","amount_status":"published",
       "funding_rate_max_percent":50,
       "funding_rate_female_project_lead_percent":60,
       "eligibility_summary_hu":"18 év feletti chilei vagy külföldi természetes személyek, illetve a kiírásban meghatározott chilei vagy külföldi startupvállalkozások. A Growth kategória fejlettebb, értékesítéssel rendelkező technológiai startupokat céloz; a pontos bevételi és jogi feltételeket az eredeti szabályzat tartalmazza.",

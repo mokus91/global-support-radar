@@ -53,6 +53,17 @@ def main():
                 parsed = urlparse(url)
                 if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
                     raise SystemExit(f"{path.name}: invalid official_url: {url}")
+            amount_status = row.get("amount_status")
+            if amount_status:
+                if amount_status not in ("published", "not_published", "not_published_or_zero_in_api", "source_field_untyped"):
+                    raise SystemExit(f"{path.name}: unsupported amount_status: {amount_status}")
+                currency = row.get("amount_currency")
+                if amount_status == "published" and (not isinstance(currency, str) or not re.fullmatch(r"[A-Z]{3}", currency)):
+                    raise SystemExit(f"{path.name}: published amount requires a three-letter currency code")
+                for amount_key in ("amount_maximum", "total_call_budget", "maximum_amount_jpy"):
+                    amount_value = row.get(amount_key)
+                    if amount_value is not None and (not isinstance(amount_value, (int, float)) or isinstance(amount_value, bool) or amount_value < 0):
+                        raise SystemExit(f"{path.name}: invalid non-negative numeric amount in {amount_key}")
 
     if not (DATA / "eu-funding-discovery.json").is_file():
         raise SystemExit("EU Funding & Tenders API audit file is missing")
