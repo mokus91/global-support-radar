@@ -11,7 +11,7 @@ OUT = ROOT / "data/eu-funding-discovery.json"
 URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber={page}&sortBy=deadlineDate&orderBy=ASC"
 QUERY = {"bool": {"must": [
     {"terms": {"type": ["1", "2", "8"]}},
-    {"terms": {"status": ["31094501", "31094502"]}}
+    {"terms": {"status": ["31094501", "31094502", "31094503"]}}
 ]}}
 
 def multipart(parts):
@@ -86,7 +86,7 @@ def main():
         candidates.append({
             "id": ref,
             "title": first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call",
-            "official_url": item.get("url") or first(meta, "url"),
+            "official_url": item.get("url") or first(meta, "url") or ("https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/" + str(ref)),
             "identifier": first(meta, "identifier"),
             "programme": first(meta, "frameworkProgramme"),
             "start_date": first(meta, "startDate"),
@@ -96,16 +96,16 @@ def main():
             "source_id": "eu-funding",
             "record_type": "current-deadline-discovery-candidate",
             "verification_status": "unverified",
-            "status_code": first(meta, "status"),
+            "status": first(meta, "status"),\n            "status_code": first(meta, "status"),
             "last_discovered_at": datetime.now(timezone.utc).isoformat()
         })
     candidate_output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
+        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING/CLOSED portal status filters, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
         "expired_deadline_records_excluded": expired_excluded,
-        "status_filters": ["31094501", "31094502"],
+        "status_filters": ["31094501", "31094502", "31094503"],
         "records_count": len(candidates),
         "records": candidates,
         "error": error
@@ -118,7 +118,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Official call discovery only. Every result requires individual page verification before publication.",
+        "purpose": "Official call discovery only. Portal status filters are retained; parseable past deadlines are excluded. Every result requires individual page verification before publication.",
         "verification_status": "unverified",
         "error": error,
         "response": payload
