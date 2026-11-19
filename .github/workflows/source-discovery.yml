@@ -69,7 +69,9 @@ jobs:
         run: python scripts/discover_hu_palyazat_feed.py
       - name: Discover Hungarian NKFIH grant news from official RSS
         run: python scripts/discover_hu_nkfih.py
-      - name: Build feed freshness and result-status manifest\n        run: python scripts/build_feed_status.py\n      - name: Commit discovery indexes
+      - name: Build feed freshness and result-status manifest
+        run: python scripts/build_feed_status.py
+      - name: Commit discovery indexes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
