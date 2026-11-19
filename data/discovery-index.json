@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T10:25:50.982931+00:00",
+  "generated_at": "2026-11-19T10:28:47.459444+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 178,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,7 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium Punkt Wien",
+      "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -645,6 +645,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "HICP - housing",
+      "url": "https://ec.europa.eu/eurostat/databrowser/product/page/teicp040",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Horizon 2020 Energy Efficiency",
       "url": "https://ec.europa.eu/easme/en/horizon-2020-energy-efficiency",
       "query": "energy efficiency support",
@@ -735,14 +743,6 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -863,6 +863,14 @@
     {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Watermael-Boitsfort",
+      "url": "https://datastore.brussels/web/data/dataset/2b433797-3d51-43c6-9d5b-de425c8aa5e2",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -991,14 +999,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_2023_SRIN_Call list",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-srin-zoznam-vyziev",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1189,6 +1189,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Scholarship students in health and social training (Feb. 2009)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2009/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Scholarship students in health and social training (Feb. 2012)",
       "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2012/",
       "query": "scholarships",
@@ -1199,6 +1207,14 @@
     {
       "title": "Scholarship students in health and social training (Feb. 2014)",
       "url": "https://data.iledefrance.fr/explore/dataset/etudiants-boursiers-des-formations-sanitaires-et-sociales-fev-2014/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Scholarship students in health and social training (Sept. 2012)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2012/",
       "query": "scholarships",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-11-19T10:29:37.472822+00:00",
+  "source_id": "au-grantconnect",
+  "source_url": "https://www.grants.gov.au/",
+  "feed_url": "https://www.grants.gov.au/public_data/rss/rss.xml",
+  "records_count": 0,
+  "records": [],
+  "error": "HTTP Error 403: Forbidden"
+}
