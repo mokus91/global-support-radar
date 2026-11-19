@@ -7,13 +7,14 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 ## Mi működik jelenleg?
 
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
+- Helyi könyvjelzők: a látogató elmentheti a számára érdekes lehetőségeket; a mentések kizárólag az adott böngésző eszközén, localStorage-ban maradnak.
 - Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
 - Tíz támogatási kategória: lakhatás, család, mezőgazdaság, vállalkozás, oktatás, egészségügy, energia, foglalkoztatás, szociális támogatás és közlekedés.
 - Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
 - 71 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
 - Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
-- A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants, Chile CORFO és Új-Zéland Business.govt.nz Funding Explorer (programkatalógus, nem igazolt nyitott felhívások).
+- A fő kereső öt automatikus hivatalos adatkapcsolatból jelenít meg jelölteket: Japan JGrants (Japán), CORFO (Chile), SNPSAP/BDNS (Spanyolország), Grants.gov (USA) és UKRI (Egyesült Királyság). A rekordok státusza és ellenőrzöttsége forrásonként eltér; a kereső nem állítja, hogy minden jelölt nyitott pályázat.
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
 - Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.
 - Spanyolország SNPSAP/BDNS: napi nyilvános REST API-lekérdezés; az utolsó 50 regisztrált felhívás részletes jelentkezési időszakát ellenőrzi, és csak aktív vagy határozatlan jelentkezési ablakot mutat. Nem teljes katalógus. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
