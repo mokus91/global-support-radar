@@ -458,6 +458,7 @@ async function loadLiveListings(){
   {file:"us-grants-discovery.json",country:"US",source:"US Grants.gov",hosts:["www.grants.gov"],fallback:"https://www.grants.gov/"},
   {file:"ukri-discovery.json",country:"GB",source:"UKRI",hosts:["www.ukri.org"],fallback:"https://www.ukri.org/opportunity/"},
   {file:"hu-nkfih-discovery.json",country:"HU",source:"Hungary NKFIH",hosts:["nkfih.gov.hu"],fallback:"https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok"},
+  {file:"eu-open-calls-discovery.json",country:"EU",source:"European Commission — Funding & Tenders",hosts:["ec.europa.eu"],fallback:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/"}
  ];
  const results=await Promise.all(feeds.map(async feed=>{
   try{

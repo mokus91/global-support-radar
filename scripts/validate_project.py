@@ -69,7 +69,7 @@ def main():
     for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):
         if required not in html:
             raise SystemExit(f"Missing feed-health dashboard component: {required}")
-    main_search_feeds = ("jgrants-discovery.json", "chile-discovery.json", "spain-discovery.json", "us-grants-discovery.json", "ukri-discovery.json", "hu-nkfih-discovery.json")
+    main_search_feeds = ("jgrants-discovery.json", "chile-discovery.json", "spain-discovery.json", "us-grants-discovery.json", "ukri-discovery.json", "hu-nkfih-discovery.json", "eu-open-calls-discovery.json")
     for filename in main_search_feeds:
         if not (DATA / filename).is_file() or filename not in html:
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
