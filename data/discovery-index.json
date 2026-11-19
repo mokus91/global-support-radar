@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T10:28:47.459444+00:00",
+  "generated_at": "2026-11-19T10:32:45.844396+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 180,
+  "discovered_datasets_count": 181,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -143,14 +143,6 @@
     {
       "title": "Agricultural use parcels LV, 2009",
       "url": "https://www.vlaanderen.be/DataCatalogRecord/87029616-A885-4091-8800-54DF893104A8",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
-      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -312,6 +304,14 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1423,6 +1423,14 @@
     {
       "title": "VCA02 - Agricultural Output in Europe",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA02/JSON-stat/2.0/en",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "VCA03 - Exports of Irish Agricultural Products",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA03/JSON-stat/2.0/en",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
