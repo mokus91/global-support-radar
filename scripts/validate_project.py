@@ -112,7 +112,7 @@ def main():
     for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
-    for required in ("MISSOC", "31 countries", "12 areas", "Open database"):
+    for required in ("MISSOC", "31 countries", "12 areas", "Open database", "Family benefits", "family-benefits/"):
         if required not in html:
             raise SystemExit(f"Comparative social protection directory is missing: {required}")
     for required in ("trustPolicy", "trustPolicyTitle", "Official source", "Open status", "Eligibility & amount", "nem garantál támogatást"):
