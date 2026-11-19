@@ -1,0 +1,23 @@
+{
+  "generated_at": null,
+  "total_feedback": 0,
+  "open_feedback": 0,
+  "closed_feedback": 0,
+  "categories": {
+    "Usability": 0,
+    "Broken function": 0,
+    "Data accuracy / missing data": 0,
+    "Feature idea": 0,
+    "Accessibility": 0,
+    "Other": 0
+  },
+  "ratings": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "Unrated": 0
+  },
+  "privacy": "Aggregate counts only. No names, issue text, device data or personal details are published."
+}
