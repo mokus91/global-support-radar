@@ -21,7 +21,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 
 ## Important coverage and verification limits
 
-This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records. The Canadian CIHR RSS adapter currently encounters a TLS certificate error in the automated runner, so Canada is shown as an official source link rather than counted as a working live search feed. Hungarian pages are official starting points rather than an automated live grant feed.
+This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are official starting points rather than an automated live grant feed.
 
 Automatically discovered records are labelled **unverified candidates**. They are not a promise that an opportunity is open, that its deadline is current, or that a particular visitor is eligible. Some records have no deadline. Always open the official notice and confirm eligibility, dates, amounts and application procedure with the publisher.
 
@@ -46,7 +46,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 | EU Funding & Tenders | Calls and competitive opportunities | Candidate status must be checked on the official topic page |
 | Grants.gov | Posted and forecast US federal opportunities | Many are restricted to eligible organisations; forecast items are not open calls |
 | UKRI | Recent UKRI opportunity feed entries | Feed is not a complete listing and may omit deadlines |
-| CIHR | Canadian health-research RSS notices | Automated runner currently cannot validate the feed's TLS certificate; shown as an official source, not a working live feed |
+| CIHR | Canadian health-research RSS notices | Latest successful retrieval returned zero items; narrow health-research coverage only |
 | Australian ARC | Research grant records | Archive/discovery records, not a general Australian benefits feed |
 | Hungarian official portals | Official application and information starting points | Not automatically imported as verified, live programme records |
 
