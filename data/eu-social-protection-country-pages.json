@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "publisher": "European Commission — DG Employment, Social Affairs and Inclusion / MISSOC network",
+  "scope": "Country-by-country official EU guides to social security rights. These explain national systems and rights; they are not a live register of open grants or a decision on eligibility.",
+  "categories": [
+    "family",
+    "social",
+    "employment",
+    "healthcare"
+  ],
+  "records": [
+    {
+      "country_code": "AT",
+      "country_en": "Austria",
+      "country_hu": "Ausztria",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/austria_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Ausztria-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Austria, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "BE",
+      "country_en": "Belgium",
+      "country_hu": "Belgium",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/belgium_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Belgium-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Belgium, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "BG",
+      "country_en": "Bulgaria",
+      "country_hu": "Bulgária",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/bulgaria_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Bulgária-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Bulgaria, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "HR",
+      "country_en": "Croatia",
+      "country_hu": "Horvátország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/croatia_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Horvátország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Croatia, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "CY",
+      "country_en": "Cyprus",
+      "country_hu": "Ciprus",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/cyprus_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Ciprus-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Cyprus, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "CZ",
+      "country_en": "Czech Republic",
+      "country_hu": "Csehország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/czech-republic_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Csehország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Czech Republic, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "DK",
+      "country_en": "Denmark",
+      "country_hu": "Dánia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/denmark_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Dánia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Denmark, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "EE",
+      "country_en": "Estonia",
+      "country_hu": "Észtország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/estonia_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Észtország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Estonia, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "FI",
+      "country_en": "Finland",
+      "country_hu": "Finnország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/finland_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Finnország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Finland, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "FR",
+      "country_en": "France",
+      "country_hu": "Franciaország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/france_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Franciaország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in France, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "DE",
+      "country_en": "Germany",
+      "country_hu": "Németország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/germany_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Németország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Germany, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "GR",
+      "country_en": "Greece",
+      "country_hu": "Görögország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/greece_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Görögország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Greece, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "HU",
+      "country_en": "Hungary",
+      "country_hu": "Magyarország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/hungary_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Magyarország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Hungary, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/ireland_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Írország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Ireland, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "IT",
+      "country_en": "Italy",
+      "country_hu": "Olaszország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/italy_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Olaszország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Italy, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "LV",
+      "country_en": "Latvia",
+      "country_hu": "Lettország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/latvia_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Lettország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Latvia, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "LT",
+      "country_en": "Lithuania",
+      "country_hu": "Litvánia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/lithuania_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Litvánia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Lithuania, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/luxembourg_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Luxemburg-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Luxembourg, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "MT",
+      "country_en": "Malta",
+      "country_hu": "Málta",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/malta_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Málta-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Malta, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "NL",
+      "country_en": "Netherlands",
+      "country_hu": "Hollandia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/netherlands_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Hollandia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Netherlands, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/poland_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Lengyelország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Poland, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "PT",
+      "country_en": "Portugal",
+      "country_hu": "Portugália",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/portugal_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Portugália-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Portugal, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "RO",
+      "country_en": "Romania",
+      "country_hu": "Románia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/romania_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Románia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Romania, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "SK",
+      "country_en": "Slovakia",
+      "country_hu": "Szlovákia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/slovakia_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Szlovákia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Slovakia, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "SI",
+      "country_en": "Slovenia",
+      "country_hu": "Szlovénia",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/slovenia_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Szlovénia-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Slovenia, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "ES",
+      "country_en": "Spain",
+      "country_hu": "Spanyolország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/spain_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Spanyolország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Spain, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    },
+    {
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights/sweden_en",
+      "publisher": "European Commission / MISSOC network",
+      "kind": "national-social-security-guide",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "healthcare"
+      ],
+      "status": "official-country-guide",
+      "description_hu": "Az Európai Bizottság országismertetője a Svédország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
+      "description_en": "European Commission country guide to social security rights in Sweden, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
+    }
+  ]
+}
