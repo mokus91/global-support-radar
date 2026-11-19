@@ -87,6 +87,10 @@ def main():
     for filename in main_search_feeds:
         if not (DATA / filename).is_file() or filename not in html:
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
+    for required in ("explicitlyClosed", "notExpired&&notClosed", "Status not verified", "Source says open"):
+        if required not in html:
+            raise SystemExit(f"Closed/withdrawn opportunity filtering is missing: {required}")
+
     for required in ("const merged=new Map()", "normalizeUrl", "titleKey(row)", "liveListings=[...merged.values()]"):
         if required not in html:
             raise SystemExit(f"Cross-feed duplicate protection is missing: {required}")
