@@ -97,7 +97,7 @@ def main():
 
     if "SAVED_KEY" not in html or "savedToggle" not in html:
         raise SystemExit("On-device saved opportunities feature is missing")
-    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "Date.parse(row._deadline)>=Date.now()", "loadMoreWrap", "visibleLimit", "staleAfterMs", "Check overdue", "syncSearchUrl", "restoreSearchUrl", "copySearchLink", "shareSearch", "manifest.webmanifest", "offlineNotice", "serviceWorker.register", "sw.js"):
+    for required in ("classifyOpportunity(row)", "opportunityState.key!==\"closed\"", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "Date.parse(row._deadline)>=Date.now()", "loadMoreWrap", "visibleLimit", "staleAfterMs", "Check overdue", "syncSearchUrl", "restoreSearchUrl", "copySearchLink", "shareSearch", "manifest.webmanifest", "offlineNotice", "serviceWorker.register", "sw.js"):
         if required not in html:
             raise SystemExit(f"Main search quality feature is missing: {required}")
 
