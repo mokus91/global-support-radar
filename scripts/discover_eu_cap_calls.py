@@ -87,7 +87,7 @@ def main():
         description = " ".join(raw.get("description", []))
         if not raw.get("title") or raw["official_url"] == SOURCE:
             continue
-        match = re.search(r"Deadline:\\s*(\\d{1,2})\\s+([A-Za-z]+)\\s+(\\d{4})", description, re.I)
+        match = re.search(r"Deadline:\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", description, re.I)
         deadline = None
         status = "unverified"
         if match:
