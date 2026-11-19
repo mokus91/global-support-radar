@@ -20,6 +20,8 @@ report = {
     "duplicate_ids": 0,
     "missing_titles": 0,
     "unverified_status": 0,
+    "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
+    "feed_summary": [],
     "non_opportunity_records": 0,
     "diagnostic_records_checked": 0,
     "diagnostic_missing_urls": 0,
@@ -58,6 +60,7 @@ for feed in manifest.get("feeds", []):
     # This file describes portal connectivity, not grant opportunities.
     is_diagnostic_feed = filename == "worldwide-portal-health.json"
     seen = set()
+    feed_counts = {"file": filename, "records": 0, "unverified": 0, "api_window_candidates": 0, "official_listing_candidates": 0}
     for record in records:
         if not isinstance(record, dict):
             report["feed_errors"].append(f"{filename}: non-object record")
@@ -80,6 +83,7 @@ for feed in manifest.get("feeds", []):
             continue
 
         report["records_checked"] += 1
+        feed_counts["records"] += 1
         rid = record.get("id")
         if rid:
             if rid in seen:
@@ -97,9 +101,23 @@ for feed in manifest.get("feeds", []):
             if parsed.scheme != "https" or not parsed.netloc:
                 report["invalid_urls"] += 1
 
-        status = str(record.get("verification_status") or "").lower()
-        if status and any(word in status for word in ("unverified", "not-yet-verified", "candidate")):
+        status = str(record.get("verification_status") or "").strip().lower()
+        record_state = str(record.get("status") or "").strip().lower()
+        combined = status + " " + record_state
+        if "unverified" in status or "not-yet-verified" in status:
             report["unverified_status"] += 1
+            report["verification_tiers"]["unverified"] += 1
+            feed_counts["unverified"] += 1
+        elif "candidate" in combined and ("api" in combined or "acceptance" in combined):
+            report["verification_tiers"]["api_window_candidate"] += 1
+            feed_counts["api_window_candidates"] += 1
+        elif "candidate" in combined or "not-yet-verified" in combined or "listed-on-official" in combined:
+            report["verification_tiers"]["official_listing_candidate"] += 1
+            feed_counts["official_listing_candidates"] += 1
+        elif "verified" in status and "unverified" not in status:
+            report["verification_tiers"]["verified_open"] += 1
+        else:
+            report["verification_tiers"]["other"] += 1
 
         deadline = record.get("deadline")
         if deadline:
@@ -109,6 +127,8 @@ for feed in manifest.get("feeds", []):
                     report["expired_deadlines"] += 1
             except ValueError:
                 report["feed_errors"].append(f"{filename}: invalid deadline format")
+
+report["feed_summary"].append(feed_counts)
 
 report["feed_errors"] = report["feed_errors"][:100]
 (DATA / "quality-report.json").write_text(
