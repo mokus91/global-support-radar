@@ -40,7 +40,7 @@ def collect(page=1):
         "User-Agent": "Mozilla/5.0 (compatible; GlobalSupportRadar/0.1)",
         "Referer": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/"
     })
-    with urlopen(req, timeout=60) as response:
+    with urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
 def first(meta, key, default=None):
@@ -55,7 +55,7 @@ def main():
     pages_fetched = 0
     try:
         payload = {"results": [], "totalResults": 0}
-        for page in range(1, 21):
+        for page in range(1, 6):
             part = collect(page)
             pages_fetched += 1
             payload["results"].extend(part.get("results", []))
