@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T15:42:56Z",
+  "generated_at": "2026-11-19T15:48:34Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 17,
-  "records_count": 43,
+  "portals_checked": 18,
+  "records_count": 50,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -484,6 +484,104 @@
       "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-pl-business-1",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Ekologia i oszczędność energii w firmie",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/ekologia",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-2",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Cyfryzacja",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/cyfryzacja",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-3",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "B+R+I oraz inwestycje w firmie – dotacje i preferencyjne pożyczki",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/bri",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-4",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Szkolenia",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/szkolenia",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-5",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Startupy",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/startupy",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-6",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Ekspansja zagraniczna",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-firmy-korzystaja-z-funduszy/ekspansja-zagraniczna",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-7",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Założenie działalności gospodarczej",
+      "official_url": "https://funduszeeuropejskie.gov.pl/jak-osoby-fizyczne-korzystaja-z-funduszy-europejskich/zalozenie-firmy",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-se-employment-1",
       "country_code": "SE",
       "country_en": "Sweden",
@@ -642,10 +740,6 @@
     {
       "country_code": "LT",
       "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "country_code": "PL",
-      "error": "The read operation timed out"
     },
     {
       "country_code": "RO",
