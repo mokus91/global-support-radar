@@ -656,7 +656,7 @@ function renderCards(){
   const category=direct>=0?direct:cat;
   const tag=document.createElement("span");tag.className="tag";tag.textContent=category<0?(lang==="hu"?"Egyéb támogatás":"Other support"):catNames[category];
   const badge=document.createElement("span");badge.className="demo";
-  const verified=["official_api_live_acceptance_candidate","official-page-open-status-and-amount-checked","official-api-window-current"].includes(row._verification);
+  const verified=["official_api_live_acceptance_candidate","official_page_open_status_and_amount_checked","official-page-open-status-and-amount-checked","official-api-window-current"].includes(String(row._verification||"").toLowerCase());
   badge.textContent=verified?(lang==="hu"?"HIVATALOS ADATELLENŐRZÉS":"OFFICIAL DATA CHECK"):(lang==="hu"?"ELLENŐRIZENDŐ JELÖLT":"VERIFY CANDIDATE");top.append(tag,badge);
   const title=document.createElement("h3");title.textContent=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"—");
   const desc=document.createElement("p");const summary=lang==="hu"?(row.summary||row.description_original||row.purpose_original||row.eligibility_summary_hu||row.note_hu||""):(row.summary||row.description_original||row.purpose_original||row.eligibility_summary_en||row.note_en||"");desc.textContent=[summary,row.identifier].filter(Boolean).join(" · ")||(lang==="hu"?"A részleteket az eredeti hivatalos oldalon ellenőrizd.":"Check details on the original official page.");
