@@ -576,6 +576,32 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
     const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A mezőgazdasági támogatási hírek most nem tölthetők be.":"Agriculture funding leads could not be loaded right now.";box.append(warning);
    }
   }
+  if(category==="agriculture"||category==="all"){
+   try{
+    const response=await fetch("data/eu-national-agriculture-discovery.json");
+    if(response.ok){
+     const feed=await response.json();
+     const relevant=feed.records.filter(record=>code==="all"||code==="EU"||record.country_code===code);
+     if(relevant.length){
+      const heading=document.createElement("h3");heading.textContent=isHu?"EU-tagállami mezőgazdasági támogatási források":"EU national agriculture funding sources";box.append(heading);
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"Automatikus linkfelderítés 27 hivatalos nemzeti EU-támogatási portálon. Ezek ellenőrizetlen forrásjelöltek, nem igazoltan nyitott pályázatok.":"Automated link discovery across 27 official national EU funding portals. These are unverified source leads, not confirmed open calls.";box.append(note);
+      relevant.forEach(record=>{
+       const card=document.createElement("article");card.className="card";
+       const h=document.createElement("h3");h.textContent=(isHu?record.country_hu:record.country_en)+" – "+record.title;
+       const p=document.createElement("p");p.textContent=isHu?"Mezőgazdasághoz kapcsolódó hivatkozás az ország hivatalos EU-finanszírozási portáljáról. A kiírás állapotát, határidejét és jogosultságát ellenőrizd az eredeti oldalon.":"Agriculture-related link from the country's official EU funding portal. Verify call status, deadline and eligibility on the original page.";
+       const meta=document.createElement("div");meta.className="meta";meta.textContent=(isHu?"Ország: ":"Country: ")+(isHu?record.country_hu:record.country_en)+" · "+(isHu?"Ellenőrizetlen találat":"Unverified lead");
+       const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"Nemzeti hivatalos portál":"Official national portal";
+       const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Forrás megnyitása ↗":"Open source ↗";
+       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+      });
+     }else if(code==="all"||code==="EU"){
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"A legutóbbi automatikus futás nem talált külön mezőgazdasági linket. Az országos portálok listája fentebb elérhető.":"The latest automated run found no distinct agriculture links. National portal links are listed above.";box.append(note);
+     }
+    }
+   }catch(error){
+    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A nemzeti mezőgazdasági linkek most nem tölthetők be.":"National agriculture links could not be loaded right now.";box.append(warning);
+   }
+  }
   try{
    const response=await fetch("data/eu-social-protection-country-pages.json");
    if(response.ok){
