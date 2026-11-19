@@ -22,7 +22,7 @@ ALIASES = {
 }
 records = []
 with seed.open(encoding="utf-8") as fh:
-    for row in csv.reader(fh, delimiter="\\t"):
+    for row in csv.reader(fh, delimiter="\t"):
         if not row or len(row) < 2:
             continue
         name, host = row[0].strip(), row[1].strip()
