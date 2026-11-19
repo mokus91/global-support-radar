@@ -36,7 +36,12 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <section class="hero"><div class="eyebrow" id="eyebrow">TÁMOGATÁSOK HATÁROK NÉLKÜL</div><h1 id="title">Találd meg a neked járó támogatásokat.</h1><p id="subtitle">Állami támogatások, pályázatok és kedvezmények egy helyen. Válassz országot, szűrj kategóriára, és indulj el a hivatalos forrás felé.</p><div class="searchrow"><input id="q" class="search" type="search" placeholder="Keresés támogatásra, témára vagy kulcsszóra…"><button id="searchBtn" class="btn">Keresés →</button></div></section>
 <section class="stats"><div class="stat"><b id="statFeeds">18</b><span id="s1">automatikus adatkapcsolat</span></div><div class="stat"><b id="statCategories">10</b><span id="s2">támogatási kategória</span></div><div class="stat"><b id="statRefresh">6 óra</b><span id="s3">tervezett frissítési ciklus</span></div></section>
 <section><div class="sectionhead"><div><h2 id="browseTitle">Hivatalos forrásokból gyűjtött lehetőségek</h2><p id="browseSub">EU, USA és Egyesült Királyság automatikus adatkapcsolatai. Kanada és Magyarország hivatalos forrásai külön böngészhetők.</p></div><span id="count" style="color:var(--muted);font-size:13px"></span></div>
-<div class="filters" id="filters"></div><div class="filters" style="margin-top:10px;align-items:center"><label id="applicantTypeLabel" for="applicantType" style="color:var(--muted);font-size:13px">Pályázó típusa</label><select id="applicantType" class="select" aria-label="Pályázó típusa"><option value="">Minden pályázó</option></select><span id="applicantTypeHint" style="color:var(--muted);font-size:12px">Csak akkor szűr, ha a hivatalos rekord megadja a kedvezményezett típusát.</span><label id="statusFilterLabel" for="statusFilter" style="color:var(--muted);font-size:13px">Nyitottság igazolása</label><select id="statusFilter" class="select" aria-label="Nyitottság igazolása"><option value="">Minden nem lezárt lehetőség</option><option value="verified-open">Hivatalos adat alapján nyitott</option><option value="source-listed-open">A forrás nyitottnak jelöli – ellenőrizendő</option><option value="unverified">Nyitottság nincs igazolva</option></select><label id="sortLabel" for="sortOrder" style="color:var(--muted);font-size:13px">Rendezés</label><select id="sortOrder" class="select" aria-label="Találatok rendezése"><option value="deadline">Legközelebbi határidő</option><option value="updated">Legfrissebb adat</option><option value="country">Ország szerint</option><option value="quality">Legteljesebb adatok</option><option value="relevance">Személyes relevancia</option></select></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><button class="filter" id="exportCalendar" type="button">▦ Határidők naptárba</button><button class="filter" id="shareSearch" type="button">↗ Keresés megosztása</button><span id="shareSearchStatus" aria-live="polite" style="color:var(--muted);font-size:12px;align-self:center"></span><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div><div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
+<div class="filters" id="filters"></div><div class="filters" style="margin-top:10px;align-items:center"><label id="applicantTypeLabel" for="applicantType" style="color:var(--muted);font-size:13px">Pályázó típusa</label><select id="applicantType" class="select" aria-label="Pályázó típusa"><option value="">Minden pályázó</option></select><span id="applicantTypeHint" style="color:var(--muted);font-size:12px">Csak akkor szűr, ha a hivatalos rekord megadja a kedvezményezett típusát.</span><label id="statusFilterLabel" for="statusFilter" style="color:var(--muted);font-size:13px">Nyitottság igazolása</label><select id="statusFilter" class="select" aria-label="Nyitottság igazolása"><option value="">Minden nem lezárt lehetőség</option><option value="verified-open">Hivatalos adat alapján nyitott</option><option value="source-listed-open">A forrás nyitottnak jelöli – ellenőrizendő</option><option value="unverified">Nyitottság nincs igazolva</option></select><label id="sortLabel" for="sortOrder" style="color:var(--muted);font-size:13px">Rendezés</label><select id="sortOrder" class="select" aria-label="Találatok rendezése"><option value="deadline">Legközelebbi határidő</option><option value="updated">Legfrissebb adat</option><option value="country">Ország szerint</option><option value="quality">Legteljesebb adatok</option><option value="relevance">Személyes relevancia</option></select></div><div class="filters"><button class="filter" id="savedToggle" type="button">★ Mentettek (0)</button><button class="filter" id="exportCsv" type="button">↓ CSV export</button><button class="filter" id="exportCalendar" type="button">▦ Határidők naptárba</button><button class="filter" id="shareSearch" type="button">↗ Keresés megosztása</button><span id="shareSearchStatus" aria-live="polite" style="color:var(--muted);font-size:12px;align-self:center"></span><span id="savedPrivacy" style="color:var(--muted);font-size:12px;align-self:center">A mentések csak ezen az eszközön tárolódnak.</span></div>
+<div id="opportunityAlerts" class="notice" style="display:none;margin:12px 0" aria-live="polite">
+ <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap"><strong id="alertsTitle">Támogatásfigyelő</strong><button class="filter" id="enableBrowserAlerts" type="button">Böngészőértesítések bekapcsolása</button></div>
+ <div id="alertsContent" style="margin-top:8px"></div><small id="alertsPrivacy" style="display:block;margin-top:8px">Az értesítések ezen az eszközön működnek, amíg az oldal nyitva van. Háttérben működő push értesítés nincs bekapcsolva.</small>
+</div>
+<div class="cards" id="cards"></div><div id="loadMoreWrap" style="display:none;text-align:center;margin:18px 0"><button class="btn" id="loadMore" type="button">További találatok</button></div>
 <div class="notice" id="notice">⚠️ <b>Fontos:</b> A kereső hivatalos adatforrásokból gyűjtött, de egyedileg nem ellenőrzött jelölteket mutat. Az országválasztó önmagában nem jelent teljes adatlefedettséget. A határidőt, jogosultságot és feltételeket mindig az eredeti kiírásban ellenőrizd.</div>
 </section>
 <section id="huEligibilityHelper" class="card" style="margin:22px 0"><div class="sectionhead"><div><h2 id="huEligibilityTitle">Támogatás-ajánló – néhány válasz alapján</h2><p id="huEligibilitySub">Válaszolj néhány egyszerű kérdésre, és megmutatjuk, mely hivatalos magyar támogatásokat érdemes ellenőrizned.</p></div><span class="tag" id="huLocalOnly">CSAK EZEN AZ ESZKÖZÖN</span></div><div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
@@ -642,6 +647,7 @@ async function loadLiveListings(){
  });
  liveListings=[...merged.values()];
  renderCards();
+ loadOpportunityAlerts();
 }
 function exportCurrentResults(){
  if(!currentRows.length){alert(lang==="hu"?"Nincs exportálható találat.":"No results to export.");return;}
@@ -670,6 +676,45 @@ function exportSavedCalendar(){
  const calendar=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Global Support Radar//Grant deadlines//HU","CALSCALE:GREGORIAN","METHOD:PUBLISH",...events,"END:VCALENDAR"].join("\r\n");
  const blob=new Blob([calendar],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="global-support-radar-hataridok.ics";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+const CHANGE_LOG_KEY="gsr_seen_change_events_v1";
+function alertEventId(event){return [event.type,event.feed,event.key,event.detected_at].join("|");}
+function alertTitle(row){return String(row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"")).trim().toLocaleLowerCase();}
+async function loadOpportunityAlerts(){
+ const panel=$("opportunityAlerts"),content=$("alertsContent"),button=$("enableBrowserAlerts");
+ if(!panel||!content)return;
+ try{
+  const response=await fetch("./data/opportunity-changes.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("change log unavailable");
+  const payload=await response.json(),events=Array.isArray(payload.events)?payload.events:[];
+  const saved=getSaved(),savedTitles=new Set(liveListings.filter(row=>saved.has(savedId(row))).map(alertTitle).filter(Boolean));
+  const relevant=events.filter(event=>event.type==="changed"&&savedTitles.has(String(event.title||"").trim().toLocaleLowerCase()));
+  const latestNew=events.filter(event=>event.type==="new").slice(-5).reverse();
+  const visible=[...relevant.slice(-10).reverse(),...latestNew];
+  if(!visible.length){panel.style.display="none";return;}
+  panel.style.display="block";
+  $("alertsTitle").textContent=lang==="hu"?"Támogatásfigyelő · "+relevant.length+" mentett változás":"Opportunity watch · "+relevant.length+" saved-item changes";
+  content.replaceChildren();
+  const seen=new Set();try{JSON.parse(localStorage.getItem(CHANGE_LOG_KEY)||"[]").forEach(x=>seen.add(x));}catch(_){}
+  const fresh=[];
+  visible.forEach(event=>{
+   const id=alertEventId(event);if(!seen.has(id))fresh.push(event);
+   const line=document.createElement("div");line.style.margin="5px 0";
+   const label=event.type==="changed"?(lang==="hu"?"Módosult mentett támogatás: ":"Saved opportunity changed: "):(lang==="hu"?"Új támogatásjelölt: ":"New opportunity candidate: ");
+   line.textContent=(event.type==="changed"?"⚠ ":"＋ ")+label+(event.title||"");
+   content.append(line);
+  });
+  if(fresh.length&&"Notification" in window&&Notification.permission==="granted"){
+   fresh.slice(0,5).forEach(event=>{try{new Notification(event.type==="changed"?(lang==="hu"?"Változott egy mentett támogatás":"A saved opportunity changed"):(lang==="hu"?"Új támogatásjelölt":"New opportunity found"),{body:event.title||"",tag:alertEventId(event)});}catch(_){}});
+  }
+  try{localStorage.setItem(CHANGE_LOG_KEY,JSON.stringify([...seen,...fresh.map(alertEventId)].slice(-300)));}catch(_){}
+  button.textContent=("Notification" in window&&Notification.permission==="granted")?(lang==="hu"?"Böngészőértesítések engedélyezve":"Browser notifications enabled"):(lang==="hu"?"Böngészőértesítések bekapcsolása":"Enable browser notifications");
+  button.disabled=!window.isSecureContext||!("Notification" in window)||Notification.permission==="denied"||Notification.permission==="granted";
+  button.onclick=async()=>{
+   if(!("Notification" in window))return;
+   try{const permission=await Notification.requestPermission();button.textContent=permission==="granted"?(lang==="hu"?"Böngészőértesítések engedélyezve":"Browser notifications enabled"):(lang==="hu"?"Értesítés nem engedélyezett":"Notifications not enabled");button.disabled=permission!=="default";if(permission==="granted")loadOpportunityAlerts();}catch(_){}
+  };
+ }catch(error){panel.style.display="none";}
 }
 function renderCards(){
  const savedCount=liveListings.reduce((count,row)=>count+(getSaved().has(savedId(row))?1:0),0);$("savedToggle").textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+savedCount+")";$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items are stored only on this device.";
