@@ -1247,6 +1247,17 @@
       "access": "Official government or public agency website; common cross-country API not confirmed",
       "status": "official-source-directory",
       "notes": "Official portal or programme information, not a normalized individual grant record. Verify current application status, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "cl-fondos-gob",
+      "name": "Portal Único de Fondos Concursables — fondos.gob.cl",
+      "publisher": "Government of Chile",
+      "url": "https://fondos.gob.cl/",
+      "coverage": "Chile; cross-ministry competitive public funding calls for individuals and civil-society organisations",
+      "kind": "national-public-funding-portal",
+      "access": "Official central portal with search, categories, opening/closing dates and online application tracking",
+      "status": "discovery-source",
+      "notes": "Official national catalogue; individual programme status, applicant eligibility, amount and deadline must be checked on the current call notice. The portal itself is a source directory, not an automated feed."
     }
   ],
   "publication_requirements": [
