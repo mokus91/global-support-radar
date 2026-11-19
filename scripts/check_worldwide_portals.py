@@ -49,7 +49,7 @@ def check(record: dict) -> dict:
 
 def main() -> None:
     directory = json.loads(INPUT.read_text(encoding="utf-8"))
-    records = directory.get("records", [])
+    records = [item for item in directory.get("records", []) if item.get("verification_status") != "not-currently-verified" and item.get("status") != "historical-directory-lead"]
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         results = list(pool.map(check, records))
     output = {
