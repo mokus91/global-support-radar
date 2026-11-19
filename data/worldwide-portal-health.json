@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-11-19T12:30:39+00:00",
+  "records_count": 55,
+  "summary": {
+    "connection_error": 5,
+    "http_error": 1,
+    "not_found": 1,
+    "reachable": 42,
+    "restricted": 6
+  },
+  "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
+  "records": [
+    {
+      "id": "au-benefits",
+      "status": "connection_error",
+      "error": "TimeoutError"
+    },
+    {
+      "id": "au-business",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://business.gov.au/grants-and-programs"
+    },
+    {
+      "id": "br-fomento-rural",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-fomento-rural"
+    },
+    {
+      "id": "br-social-programmes",
+      "status": "not_found",
+      "http_status": 404,
+      "final_url": "https://www.gov.br/mds/pt-br/pt-br/acoes-e-programas"
+    },
+    {
+      "id": "ca-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.canada.ca/en/services/benefits/finder.html"
+    },
+    {
+      "id": "ca-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.canada.ca/en/government/grants-funding.html"
+    },
+    {
+      "id": "in-myscheme",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.myscheme.gov.in/"
+    },
+    {
+      "id": "ie-enterprise",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.enterprise-ireland.com/en/"
+    },
+    {
+      "id": "ie-social",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gov.ie/en/department-of-social-protection/collections/social-welfare-schemes/"
+    },
+    {
+      "id": "jp-egov-benefits",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.e-gov.go.jp/benefitsandpayments/"
+    },
+    {
+      "id": "jp-jgrants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.jgrants-portal.go.jp/"
+    },
+    {
+      "id": "ke-youthfund",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.youthfund.go.ke/"
+    },
+    {
+      "id": "nz-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.workandincome.govt.nz/products/a-z-benefits/index.html"
+    },
+    {
+      "id": "nz-business",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.business.govt.nz/"
+    },
+    {
+      "id": "sg-bizsg",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bizsg.gov.sg/"
+    },
+    {
+      "id": "sg-oursg-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.oursggrants.gov.sg/grants/new"
+    },
+    {
+      "id": "za-incentives",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
+    },
+    {
+      "id": "za-sassa",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+    },
+    {
+      "id": "za-sedfa",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sedfa.org.za/"
+    },
+    {
+      "id": "gb-business",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.uk/business-finance-support"
+    },
+    {
+      "id": "gb-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://find-government-grants.service.gov.uk/"
+    },
+    {
+      "id": "us-benefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.usa.gov/benefits"
+    },
+    {
+      "id": "us-grants",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "eu-national-funds-at",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://www.oerok.gv.at/eu-fonds-2021-2027"
+    },
+    {
+      "id": "eu-national-funds-be",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "eu-national-funds-bg",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eufunds.bg/bg"
+    },
+    {
+      "id": "eu-national-funds-cy",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufunds.com.cy/"
+    },
+    {
+      "id": "eu-national-funds-cz",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.dotaceeu.cz/cs/uvod"
+    },
+    {
+      "id": "eu-national-funds-dk",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufonde.dk/"
+    },
+    {
+      "id": "eu-national-funds-ee",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.rtk.ee/"
+    },
+    {
+      "id": "eu-national-funds-fi",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.businessfinland.fi:443/palvelut/tieto-ja-neuvonta/eurahoitusneuvonta/"
+    },
+    {
+      "id": "eu-national-funds-fr",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europe-en-france.gouv.fr/fr"
+    },
+    {
+      "id": "eu-national-funds-de",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
+    },
+    {
+      "id": "eu-national-funds-gr",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "eu-national-funds-it",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://opencoesione.gov.it/it/"
+    },
+    {
+      "id": "eu-national-funds-lv",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.esfondi.lv/"
+    },
+    {
+      "id": "eu-national-funds-lt",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://lrv.lt/lt"
+    },
+    {
+      "id": "eu-national-funds-lu",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://fonds-europeens.public.lu/fr.html"
+    },
+    {
+      "id": "eu-national-funds-mt",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondi.eu/"
+    },
+    {
+      "id": "eu-national-funds-nl",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europaomdehoek.nl/"
+    },
+    {
+      "id": "eu-national-funds-pl",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://funduszeeuropejskie.gov.pl/"
+    },
+    {
+      "id": "eu-national-funds-pt",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://portugal2030.pt/"
+    },
+    {
+      "id": "eu-national-funds-ro",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.fonduri-ue.ro/"
+    },
+    {
+      "id": "eu-national-funds-es",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
+    },
+    {
+      "id": "eu-national-funds-se",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufonder.se/"
+    },
+    {
+      "id": "eu-national-funds-si",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://evropskasredstva.si/"
+    },
+    {
+      "id": "eu-national-funds-sk",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eurofondy.gov.sk/"
+    },
+    {
+      "id": "national-no-business-1",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.innovasjonnorge.no/en/our-services"
+    },
+    {
+      "id": "national-ch-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.innosuisse.admin.ch/en/support-offers"
+    },
+    {
+      "id": "national-tr-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri"
+    },
+    {
+      "id": "national-tr-all-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://yatirimadestek.gov.tr/searchsupport"
+    },
+    {
+      "id": "national-mx-all-1",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-mx-social-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.programasparaelbienestar.gob.mx/"
+    },
+    {
+      "id": "national-co-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.innovamos.gov.co/"
+    },
+    {
+      "id": "national-co-social-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+    }
+  ]
+}
