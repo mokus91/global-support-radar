@@ -104,3 +104,7 @@ The current automated adapters perform **discovery**, not full page-by-page elig
 ## Privacy and monetization
 
 The current MVP does not require accounts or personal eligibility profiles. Do not collect sensitive eligibility information unless strictly necessary. Never sell personal data. Any future sponsored placements must be clearly labelled and must not influence verification or organic ranking.
+
+### EU national category source discovery
+
+A second daily adapter scans the 27 official national EU shared-management funding portals for links related to business, housing, energy, education, employment and transport. It writes `data/eu-national-category-discovery.json`; the worldwide finder filters these unverified leads by selected country and category. Link discovery does not establish that a call is open, that a person or business is eligible, or that the source is a complete national benefits catalogue.
