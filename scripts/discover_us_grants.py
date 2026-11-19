@@ -36,7 +36,7 @@ def main():
     records = []
     hit_count = 0
     try:
-        for page in range(10):
+        for page in range(20):
             payload = fetch_page(page * 100)
             if payload.get("errorcode") not in (0, "0", None):
                 raise RuntimeError(str(payload.get("msg") or payload.get("errorcode")))
