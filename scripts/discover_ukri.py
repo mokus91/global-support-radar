@@ -13,7 +13,7 @@ FEED = "https://www.ukri.org/opportunity/feed/"
 
 def clean(value):
     value = re.sub(r"<[^>]+>", " ", value or "")
-    return re.sub(r"\\s+", " ", value).strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 def main():
     records, error = [], None
@@ -48,7 +48,7 @@ def main():
         "error": error
     }
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"UKRI RSS: {len(records)} candidates; error={error or 'none'}")
 
 if __name__ == "__main__":
