@@ -8,10 +8,10 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/eu-funding-discovery.json"
-URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*"
+URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber=1&sortBy=deadlineDate&orderBy=ASC"
 QUERY = {"bool": {"must": [
     {"terms": {"type": ["1", "2", "8"]}},
-    {"terms": {"status": ["31094501", "31094502"]}}
+    {"terms": {"status": ["31094501"]}}
 ]}}
 
 def multipart(parts):
@@ -43,6 +43,12 @@ def collect():
     with urlopen(req, timeout=60) as response:
         return json.loads(response.read().decode("utf-8"))
 
+def first(meta, key, default=None):
+    value = (meta or {}).get(key)
+    if isinstance(value, list):
+        return value[0] if value else default
+    return value if value is not None else default
+
 def main():
     error = None
     payload = {}
@@ -50,7 +56,46 @@ def main():
         payload = collect()
     except Exception as exc:
         error = str(exc)[:500]
-    # Preserve the raw official API response: do not infer deadlines, eligibility or status.
+    # Keep only records returned by the official API's OPEN status filter.
+    # They remain discovery candidates until each call page is individually checked.
+    candidates = []
+    seen = set()
+    for item in payload.get("results", []):
+        meta = item.get("metadata") or {}
+        ref = item.get("reference") or first(meta, "REFERENCE")
+        if not ref or ref in seen:
+            continue
+        seen.add(ref)
+        candidates.append({
+            "id": ref,
+            "title": first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call",
+            "official_url": item.get("url") or first(meta, "url"),
+            "identifier": first(meta, "identifier"),
+            "programme": first(meta, "frameworkProgramme"),
+            "start_date": first(meta, "startDate"),
+            "deadline": first(meta, "deadlineDate") or first(meta, "closingDate"),
+            "budget": first(meta, "budget"),
+            "source_language": item.get("language") or first(meta, "language") or "en",
+            "source_id": "eu-funding",
+            "record_type": "open-call-discovery-candidate",
+            "verification_status": "unverified",
+            "status_code": first(meta, "status"),
+            "last_discovered_at": datetime.now(timezone.utc).isoformat()
+        })
+    candidate_output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source_id": "eu-funding",
+        "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+        "purpose": "Candidates returned by the official portal's OPEN status filter. Not yet individually verified; check the original call page before relying on status or eligibility.",
+        "status_filter": "31094501",
+        "records_count": len(candidates),
+        "records": candidates,
+        "error": error
+    }
+    (ROOT / "data/eu-open-calls-discovery.json").write_text(
+        json.dumps(candidate_output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+    )
+    # Preserve the raw official API response for audit and future field mapping.
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
@@ -65,7 +110,7 @@ def main():
     if error:
         print("EU Funding & Tenders discovery failed: " + error)
     else:
-        print("EU Funding & Tenders API response saved for verification.")
+        print(f"EU Funding & Tenders API response saved; {len(candidates)} open-status discovery candidates (all unverified).")
 
 if __name__ == "__main__":
     main()
