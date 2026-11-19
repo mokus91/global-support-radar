@@ -1,16 +1,21 @@
 {
-  "generated_at": "2026-11-19T22:20:24.048851+00:00",
+  "generated_at": "2026-11-19T22:22:48.730043+00:00",
   "feeds_checked": 18,
-  "records_checked": 22299,
+  "records_checked": 22220,
   "expired_deadlines": 0,
-  "missing_urls": 79,
+  "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
-  "missing_titles": 293,
-  "unverified_status": 22219,
+  "missing_titles": 0,
+  "unverified_status": 22214,
+  "non_opportunity_records": 5,
+  "diagnostic_records_checked": 74,
+  "diagnostic_missing_urls": 8,
   "feed_errors": [],
   "notes": [
-    "Automated structural checks only; an expired date or reachable URL does not establish legal programme status or eligibility.",
-    "No opportunity records are modified by this audit."
+    "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
+    "Portal reachability diagnostics and dataset catalogue entries are not counted as grant opportunities.",
+    "Unverified status is an information flag, not automatically a data error.",
+    "No source opportunity records are modified by this audit."
   ]
 }
