@@ -34,7 +34,7 @@ class TextOnly(HTMLParser):
 def clean(value, limit=900):
     parser = TextOnly()
     parser.feed(html.unescape(value or ""))
-    return re.sub(r"\\s+", " ", " ".join(parser.parts)).strip()[:limit]
+    return re.sub(r"\s+", " ", " ".join(parser.parts)).strip()[:limit]
 
 
 def main():
@@ -87,7 +87,7 @@ def main():
         output["errors"].append(str(exc))
     output["records_count"] = len(output["records"])
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Official NKFIH RSS status: {output['feed_status']}; candidate items: {len(output['records'])}")
 
 
