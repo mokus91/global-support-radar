@@ -482,7 +482,7 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
     const portalRecords=portalData.records.filter(record=>code!=="all"&&record.country_code===code);
     if(portalRecords.length){
      const portal=portalRecords[0],portalCard=document.createElement("article");portalCard.className="card";
-     const portalHeading=document.createElement("h3");portalHeading.textContent=isHu?portal.country_en+" – hivatalos kormányzati portál":"Official government portal — "+portal.country_en;
+     const portalHeading=document.createElement("h3");portalHeading.textContent=isHu?display+" – hivatalos kormányzati portál":"Official government portal — "+display;
      const portalDesc=document.createElement("p");portalDesc.textContent=isHu?"Az ENSZ országportál-jegyzékében szereplő nemzeti kormányzati kiindulópont. A támogatási programok elérhetőségét és a portál jelenlegi működését külön ellenőrizd.":"National government starting point listed in the UN portal directory. Check that the portal is still active and verify support programmes separately.";
      const portalMeta=document.createElement("div");portalMeta.className="meta";portalMeta.textContent=isHu?"Forrás: ENSZ DESA · 2013-as címellenőrzés · jelenlegi állapot nem igazolt":"Source: UN DESA · URL assessment from 2013 · current status not verified";
      const portalFoot=document.createElement("div");portalFoot.className="cardfoot";const portalLabel=document.createElement("span");portalLabel.textContent=isHu?"Nemzeti portál – ellenőrizendő":"National portal — verify first";
