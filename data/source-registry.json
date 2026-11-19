@@ -1269,6 +1269,17 @@
       "access": "Daily adapter reads the original CORFO call page and extracts application status, opening/closing dates and maximum co-financing only when the official page exposes those fields",
       "status": "automated-discovery",
       "notes": "The adapter refuses to publish the record as open if the official page no longer says applications are open or if the deadline has passed. Detailed applicant eligibility must still be checked in the official legal rules."
+    },
+    {
+      "id": "national-gb-all-find-a-grant",
+      "name": "United Kingdom — Find a grant government grants finder",
+      "publisher": "UK Government — Cabinet Office",
+      "url": "https://find-government-grants.service.gov.uk/grants",
+      "coverage": "United Kingdom; central government grant opportunities for individuals, public sector, businesses and non-profits",
+      "kind": "government-grant-finder",
+      "access": "Official public search service; no documented API adapter is currently used in this project",
+      "status": "official-source-directory",
+      "notes": "Official search portal, not an automated feed in this project. Check each grant's current status, eligibility, deadlines, amount and application route on the original notice."
     }
   ],
   "publication_requirements": [
