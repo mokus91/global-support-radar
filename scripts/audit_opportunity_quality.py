@@ -119,7 +119,7 @@ for feed in manifest.get("feeds", []):
         else:
             report["verification_tiers"]["other"] += 1
 
-        deadline = record.get("deadline")
+        deadline = next((record.get(k) for k in ("deadline", "acceptance_end", "application_deadline", "close_date", "closeDate") if record.get(k)), None)
         if deadline:
             try:
                 day = dt.date.fromisoformat(str(deadline)[:10])
