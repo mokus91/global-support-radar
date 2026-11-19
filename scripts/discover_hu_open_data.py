@@ -6,6 +6,8 @@ import json
 import os
 import urllib.parse
 import urllib.request
+import ssl
+import certifi
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -21,8 +23,17 @@ def fetch(query):
         "User-Agent": "GlobalSupportRadar/1.0 (public-interest dataset discovery)",
         "Accept": "application/json"
     })
-    with urllib.request.urlopen(req, timeout=35) as response:
-        payload = json.loads(response.read().decode("utf-8"))
+    payload = None
+    tls_errors = []
+    for context in (ssl.create_default_context(), ssl.create_default_context(cafile=certifi.where())):
+        try:
+            with urllib.request.urlopen(req, timeout=35, context=context) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+            break
+        except Exception as exc:
+            tls_errors.append(str(exc))
+    if payload is None:
+        raise RuntimeError("; ".join(tls_errors)[:450])
     if payload.get("success") is not True:
         raise RuntimeError("CKAN API returned success=false")
     result = payload.get("result") or {}
