@@ -180,9 +180,9 @@
       "url": "https://www.grants.gov.au/",
       "coverage": "Australia; Commonwealth grant opportunities, forecasts and awards",
       "kind": "funding-calls",
-      "access": "Official public RSS feed",
-      "status": "automated-discovery",
-      "notes": "Adapter collects official RSS notices from GrantConnect. Every candidate remains unverified until the original notice confirms current status, deadline and eligibility."
+      "access": "Official RSS endpoint identified, but automated requests currently receive HTTP 403",
+      "status": "discovery-source",
+      "notes": "The official GrantConnect RSS URL is known, but automated retrieval is blocked with HTTP 403 in the current runner. The Radar does not publish records from this feed until access works; use the official portal directly."
     },
     {
       "id": "au-arc-grants",
