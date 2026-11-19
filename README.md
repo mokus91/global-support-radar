@@ -11,6 +11,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
 - The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
 - Country-specific official support finders now cover 12 countries across North America, Europe, Asia, Africa and South America: the United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil. The 23 source links cover federal grants, business support, agriculture and selected social benefits. The directory is filtered by country and support category; it is a source navigator, not a verified list of currently open programmes.
+- Japan has an additional daily automated discovery adapter using the Japan Digital Agency's public JGrants REST API. It queries several Japanese keywords for subsidies filtered to active application periods, retains original Japanese titles and links to the official notice. Search results are not a complete inventory; users must verify eligibility and deadlines at the publisher.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
 - Main search currently reads discovery records from three working official data connections:
   - European Commission Funding & Tenders Portal (EU)
@@ -21,7 +22,7 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Curated Hungarian household-support directory with eight official information entries, including direct GYES and GYET pages.
 - Browser-only Hungarian support guide: users can optionally select broad household circumstances to see which official benefit pages may be relevant. Answers are processed locally and are not sent to the server or stored. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 71 entries in the official source registry, with country/subject coverage notes.
+- 72 entries in the official source registry, with country/subject coverage notes.
 - Official European Commission directory of national EU-funding portals for all 27 EU Member States; the worldwide finder displays the selected country's portal, or all 27 when no country is selected. These are shared-management EU-fund portals, not a complete household-benefit catalogue.
 - Six additional EU-wide official category directories for social inclusion/employment/education, agriculture/CAP, business finance and direct EU calls; relevant links are filtered by the selected support category.
 - Country-specific European Commission/MISSOC social security guides for all 27 EU Member States, filtered by selected country and family/social/employment/healthcare categories.
