@@ -141,6 +141,10 @@ def main():
     for required in ("MISSOC", "31 countries", "12 areas", "Open database", "Family benefits", "family-benefits/", "Minimum income", "Housing, rent and energy-cost support", "JRC147049", "2025 Minimum Income Report", "access-high-quality-social-services", "category===\"housing\"", "category===\"energy\"", "ASPIRE global social protection database", "140 countries", "ILO — global social protection database", "222 countries and territories", "23.9%", "222 ország és terület"):
         if required not in html:
             raise SystemExit(f"Comparative social protection directory is missing: {required}")
+    for required in ("coverageMatrix", "Országonkénti lefedettség", "Automated feeds", "Historical portal lead", "un-national-portals.json", "worldwide-national-support-sources.json"):
+        if required not in html:
+            raise SystemExit(f"Country coverage matrix is missing: {required}")
+
     for required in ("trustPolicy", "trustPolicyTitle", "Official source", "Open status", "Eligibility & amount", "nem garantál támogatást"):
         if required not in html:
             raise SystemExit(f"Trust and verification policy panel is missing: {required}")
