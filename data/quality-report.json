@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:25:19.366042+00:00",
+  "generated_at": "2026-11-19T22:25:28.679453+00:00",
   "feeds_checked": 18,
   "records_checked": 22220,
   "expired_deadlines": 0,
@@ -16,6 +16,125 @@
     "other": 6
   },
   "feed_summary": [
+    {
+      "file": "jgrants-discovery.json",
+      "records": 214,
+      "unverified": 0,
+      "api_window_candidates": 214,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "chile-discovery.json",
+      "records": 1,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "spain-discovery.json",
+      "records": 5,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "france-aides-territoires-discovery.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "nz-funding-explorer-discovery.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "eu-funding-discovery.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "eu-open-calls-discovery.json",
+      "records": 496,
+      "unverified": 496,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "eu-cap-network-discovery.json",
+      "records": 4,
+      "unverified": 4,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "eu-national-agriculture-discovery.json",
+      "records": 7,
+      "unverified": 7,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "eu-national-category-discovery.json",
+      "records": 51,
+      "unverified": 51,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "us-grants-discovery.json",
+      "records": 1389,
+      "unverified": 1389,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "ukri-discovery.json",
+      "records": 20,
+      "unverified": 20,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "au-arc-grants-discovery.json",
+      "records": 20000,
+      "unverified": 20000,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "ca-cihr-discovery.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "hu-open-data-discovery.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "hu-palyazat-announcements.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
+    {
+      "file": "hu-nkfih-discovery.json",
+      "records": 33,
+      "unverified": 33,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    },
     {
       "file": "worldwide-portal-health.json",
       "records": 0,
