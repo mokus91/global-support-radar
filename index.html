@@ -276,8 +276,8 @@ function renderCards(){
   const foot=document.createElement("div");foot.className="cardfoot";
   const note=document.createElement("span");note.textContent=lang==="hu"?"Eredeti kiírás és jogosultság ellenőrzése szükséges":"Verify original call and eligibility";
   const link=document.createElement("a");let href="";
-  try{const u=new URL(row.official_url||"");if(u.protocol==="https:"&&(u.hostname===row._host||u.hostname.endsWith("."+row._host)))href=u.href;}catch(_){}
-  if(!href)href=row._source==="Grants.gov"?"https://www.grants.gov/":row._source==="UKRI"?"https://www.ukri.org/opportunity/":row._source==="EU Funding & Tenders"?"https://ec.europa.eu/info/funding-tenders/opportunities/portal/":"https://dataportal.arc.gov.au/RGS/Web/Grants";
+  try{const u=new URL(row.official_url||"");if(u.protocol==="https:"&&(row._hosts||[]).some(h=>u.hostname===h||u.hostname.endsWith("."+h)))href=u.href;}catch(_){}
+  if(!href)href=row._fallback||"https://ec.europa.eu/info/funding-tenders/opportunities/portal/";
   link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=lang==="hu"?"Hivatalos forrás ↗":"Official source ↗";foot.append(note,link);
   card.append(top,title,desc,meta,foot);box.append(card);
  });
