@@ -695,6 +695,51 @@ function renderCards(){
 }
 restoreSearchUrl();$("lang").value=lang;document.documentElement.lang=lang;
 $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("applicantType").onchange=()=>{visibleLimit=80;renderCards();};$("statusFilter").onchange=()=>{visibleLimit=80;renderCards();};$("sortOrder").onchange=()=>{visibleLimit=80;renderCards();};$("country").onchange=()=>{visibleLimit=80;renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("savedToggle").onclick=()=>{showSavedOnly=!showSavedOnly;visibleLimit=80;renderCards();};$("loadMore").onclick=()=>{visibleLimit+=80;renderCards();};$("exportCsv").onclick=exportCurrentResults;$("exportCalendar").onclick=exportSavedCalendar;$("shareSearch").onclick=copySearchLink;$("searchBtn").onclick=()=>{visibleLimit=80;renderCards();};$("q").oninput=()=>{visibleLimit=80;renderCards();};$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
+
+<script id="local-support-profile">
+(()=> {
+ const section=document.createElement("div");
+ section.className="filters";
+ section.style.cssText="margin:10px 0;align-items:center;padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(18,30,50,.55)";
+ section.innerHTML='<strong id="profileTitle" style="font-size:13px">Saját támogatási profil</strong><button type="button" class="filter" id="saveSupportProfile">Profil mentése ezen az eszközön</button><button type="button" class="filter" id="loadSupportProfile">Mentett profil betöltése</button><span id="profileStatus" role="status" aria-live="polite" style="color:var(--muted);font-size:12px"></span>';
+ const anchor=document.querySelector(".cards#cards");
+ const actionRow=document.getElementById("savedToggle")?.parentElement;
+ if(!actionRow||!anchor)return;
+ actionRow.parentElement.insertBefore(section,actionRow);
+ const key="gsr_support_profile_v1",byId=id=>document.getElementById(id);
+ const copy={
+  hu:{title:"Saját támogatási profil",save:"Profil mentése ezen az eszközön",load:"Mentett profil betöltése",saved:"A keresési profil mentve ezen az eszközön.",loaded:"A mentett profil betöltve.",empty:"Még nincs mentett profil ezen az eszközön.",failed:"A böngésző nem engedélyezte a helyi mentést.",privacy:"Csak országot, pályázótípust és keresési beállításokat tárolunk. Érzékeny személyes adatot nem."},
+  en:{title:"My support profile",save:"Save profile on this device",load:"Load saved profile",saved:"Search profile saved on this device.",loaded:"Saved profile loaded.",empty:"No saved profile on this device yet.",failed:"The browser did not allow local storage.",privacy:"Only country, applicant type and search settings are stored. No sensitive personal data."}
+ };
+ function localize(){
+  const t=copy[(document.documentElement.lang||"hu").startsWith("en")?"en":"hu"];
+  byId("profileTitle").textContent=t.title;byId("saveSupportProfile").textContent=t.save;byId("loadSupportProfile").textContent=t.load;byId("profileTitle").title=t.privacy;
+ }
+ byId("saveSupportProfile").addEventListener("click",()=>{
+  const profile={country:byId("country")?.value||"all",applicant:byId("applicantType")?.value||"",category:typeof active==="number"?active:-1,status:byId("statusFilter")?.value||"",sort:byId("sortOrder")?.value||"deadline",lang:byId("lang")?.value||"hu",savedAt:new Date().toISOString()};
+  try{localStorage.setItem(key,JSON.stringify(profile));byId("profileStatus").textContent=copy[profile.lang==="en"?"en":"hu"].saved;}
+  catch(_){byId("profileStatus").textContent=copy[profile.lang==="en"?"en":"hu"].failed;}
+ });
+ byId("loadSupportProfile").addEventListener("click",()=>{
+  let profile;try{profile=JSON.parse(localStorage.getItem(key)||"null");}catch(_){profile=null;}
+  const t=copy[(document.documentElement.lang||"hu").startsWith("en")?"en":"hu"];
+  if(!profile){byId("profileStatus").textContent=t.empty;return;}
+  if(profile.country&&Array.from(byId("country").options).some(o=>o.value===profile.country))byId("country").value=profile.country;
+  if(["","individual","business","nonprofit","public"].includes(profile.applicant||""))byId("applicantType").value=profile.applicant||"";
+  if(Number.isInteger(profile.category)&&profile.category>=-1&&profile.category<=9)active=profile.category;
+  if(["","verified-open","source-listed-open","unverified"].includes(profile.status||""))byId("statusFilter").value=profile.status||"";
+  if(["deadline","updated","country","quality","relevance"].includes(profile.sort||""))byId("sortOrder").value=profile.sort;
+  if(profile.lang==="hu"||profile.lang==="en"){byId("lang").value=profile.lang;lang=profile.lang;document.documentElement.lang=lang;}
+  byId("country").dispatchEvent(new Event("change",{bubbles:true}));
+  byId("applicantType").dispatchEvent(new Event("change",{bubbles:true}));
+  byId("statusFilter").dispatchEvent(new Event("change",{bubbles:true}));
+  byId("sortOrder").dispatchEvent(new Event("change",{bubbles:true}));
+  renderCards();byId("profileStatus").textContent=t.loaded;
+ });
+ byId("lang")?.addEventListener("change",localize);
+ localize();
+})();
+</script>
 </script>
 
 <script id="global-country-expansion">
