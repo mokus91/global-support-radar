@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "scope": "Official EU-wide country/category directories to complement the 27 national single portals. These are discovery entry points, not proof of an open grant or personal eligibility.",
+  "records": [
+    {
+      "id": "eu-esf-country-pages",
+      "categories": [
+        "family",
+        "social",
+        "employment",
+        "education",
+        "healthcare"
+      ],
+      "name_hu": "Európai Szociális Alap Plusz – országoldalak",
+      "name_en": "European Social Fund Plus — country pages",
+      "url": "https://european-social-fund-plus.ec.europa.eu/en/in-your-country",
+      "description_hu": "Országonkénti információk az ESZA+ programokról, nemzeti prioritásokról és irányító hatóságokról. Nem minden támogatás közvetlenül magánszemélyeknek szól.",
+      "description_en": "Country information on ESF+ programmes, national priorities and managing authorities. Not all support is available directly to individuals.",
+      "kind": "country-programme-directory"
+    },
+    {
+      "id": "eu-cap-country-plans",
+      "categories": [
+        "agriculture"
+      ],
+      "name_hu": "Közös Agrárpolitika – országonkénti tervek",
+      "name_en": "Common Agricultural Policy — country plans",
+      "url": "https://agriculture.ec.europa.eu/cap-my-country/cap-strategic-plans_en",
+      "description_hu": "A tagállamok KAP stratégiai tervei és mezőgazdasági intézkedései. A konkrét pályázatokat a nemzeti kifizető ügynökségnél kell ellenőrizni.",
+      "description_en": "Member States' CAP Strategic Plans and agricultural interventions. Verify actual calls with the national paying agency.",
+      "kind": "agriculture-country-directory"
+    },
+    {
+      "id": "eu-business-finance",
+      "categories": [
+        "business"
+      ],
+      "name_hu": "EU-s vállalkozásfinanszírozás – Your Europe",
+      "name_en": "EU business funding — Your Europe",
+      "url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/index_en.htm",
+      "description_hu": "EU-s és tagállami vállalkozásfinanszírozási lehetőségek, támogatások, hitelek és garanciák áttekintése.",
+      "description_en": "Overview of EU and national business finance, grants, loans and guarantees.",
+      "kind": "business-finance-directory"
+    },
+    {
+      "id": "eu-access-finance",
+      "categories": [
+        "business",
+        "agriculture",
+        "energy",
+        "transport",
+        "housing"
+      ],
+      "name_hu": "Access to EU Finance – finanszírozási közvetítők",
+      "name_en": "Access to EU Finance — finance intermediaries",
+      "url": "https://europa.eu/youreurope/business/finance-funding/getting-funding/index_en.htm",
+      "description_hu": "Az EU által támogatott hitelekhez és pénzügyi eszközökhöz kapcsolódó helyi közvetítők keresése. Nem vissza nem térítendő támogatások teljes listája.",
+      "description_en": "Find local intermediaries for EU-backed loans and financial instruments. Not a complete list of non-repayable grants.",
+      "kind": "finance-intermediary-directory"
+    },
+    {
+      "id": "eu-funding-tenders",
+      "categories": [
+        "all",
+        "business",
+        "education",
+        "healthcare",
+        "energy",
+        "transport",
+        "environment"
+      ],
+      "name_hu": "EU Funding & Tenders – közvetlen EU-pályázatok",
+      "name_en": "EU Funding & Tenders — direct EU calls",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "description_hu": "Az Európai Bizottság és uniós intézmények közvetlenül kezelt pályázati felhívásai. A jogosultságot minden felhívásnál külön kell ellenőrizni.",
+      "description_en": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call.",
+      "kind": "direct-eu-calls"
+    }
+  ]
+}
