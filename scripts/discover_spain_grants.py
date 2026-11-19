@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Daily Spanish grant-call discovery using the official SNPSAP/BDNS API."""
+"""Daily Spanish grant-call discovery using the official SNPSAP/BDNS API.\n\nOnly active application windows are published; historic awards are excluded."""
 import json, re, sys, time
 from datetime import date, datetime, timezone
 from pathlib import Path
