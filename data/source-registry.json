@@ -668,6 +668,17 @@
       "access": "Official EU country/category directory",
       "status": "discovery-source",
       "notes": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call."
+    },
+    {
+      "id": "eu-missoc-social-rights-country-guides",
+      "name": "Your social security rights — country by country",
+      "publisher": "European Commission / MISSOC network",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/your-social-security-rights_en",
+      "coverage": "All 27 EU Member States plus Iceland, Liechtenstein, Norway and Switzerland; national social security rights",
+      "kind": "national-social-protection-guides",
+      "access": "Official European Commission country guide directory and MISSOC network",
+      "status": "discovery-source",
+      "notes": "Country-specific guide URLs for all 27 EU Member States are stored in data/eu-social-protection-country-pages.json. Covers family, unemployment, healthcare, pensions and other social rights; not a live open-grant feed."
     }
   ],
   "publication_requirements": [
