@@ -460,7 +460,8 @@ function renderCards(){
   const resolved=direct>=0?direct:(categories.length===1?["housing","family","agriculture","business","education","healthcare","energy","employment","social","transport"].indexOf(categories[0]):-1);
   const cat=resolved>=0?resolved:category;
   const text=[row.title,row.title_hu,row.title_original,row.summary,row.description_original,row.identifier,row.agency,row.programme,row.status,row._source].filter(Boolean).join(" ").toLowerCase();
-  const deadlineTime=Date.parse(row._deadline||"");const notExpired=Number.isNaN(deadlineTime)||deadlineTime>=Date.now();\n  return notExpired&&(active<0||cat===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q))&&(!showSavedOnly||saved.has(savedId(row)));
+  const deadlineTime=Date.parse(row._deadline||"");const notExpired=Number.isNaN(deadlineTime)||deadlineTime>=Date.now();
+  return notExpired&&(active<0||cat===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q))&&(!showSavedOnly||saved.has(savedId(row)));
  }).sort((a,b)=>{const da=Date.parse(a._deadline||"");const db=Date.parse(b._deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||a.title_original||"").localeCompare(String(b.title||b.title_original||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
  $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"5 adatkapcsolat":"5 data connections");
  const savedButton=$("savedToggle");if(savedButton){savedButton.textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+saved.size+")";savedButton.classList.toggle("active",showSavedOnly);$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items stay on this device only."; }
