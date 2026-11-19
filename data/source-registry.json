@@ -458,6 +458,39 @@
       "access": "Official register; structured feed/API not confirmed",
       "status": "discovery-source",
       "notes": "State-level register of available and potential industry support. Individual listings require current status verification."
+    },
+    {
+      "id": "hu-family-support",
+      "name": "Családtámogatások – Kormányhivatalok",
+      "publisher": "Magyarország Kormánya / Kormányhivatalok",
+      "url": "https://kormanyhivatalok.hu/csaladtamogatasok",
+      "coverage": "Hungary; family and child benefits, maternity allowance, family allowance, GYES, GYET and disability support",
+      "kind": "citizen-benefits",
+      "access": "Official government information and application guidance",
+      "status": "discovery-source",
+      "notes": "Official information on family benefits and application routes; check current eligibility and amounts on the official page."
+    },
+    {
+      "id": "hu-housing-support",
+      "name": "Lakástámogatás – Kormányhivatalok",
+      "publisher": "Magyarország Kormánya / Kormányhivatalok",
+      "url": "https://kormanyhivatalok.hu/lakastamogatas",
+      "coverage": "Hungary; housing, home purchase, accessibility and housing-loan support",
+      "kind": "housing-support",
+      "access": "Official government information and application guidance",
+      "status": "discovery-source",
+      "notes": "Official overview of state housing support and related administration; some applications are handled by banks."
+    },
+    {
+      "id": "hu-magyarorszag-services",
+      "name": "Magyarország.hu – Ügyintézés szabadon",
+      "publisher": "Magyarország Kormánya",
+      "url": "https://www.magyarorszag.hu/index.html",
+      "coverage": "Hungary; family benefits, employment and unemployment support, social benefits and public administration",
+      "kind": "government-services",
+      "access": "Official electronic administration portal",
+      "status": "discovery-source",
+      "notes": "Official portal lists online applications including family allowance, GYED, GYES, maternity support, jobseeker allowance and selected housing assistance."
     }
   ],
   "publication_requirements": [
