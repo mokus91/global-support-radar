@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "publisher": "European Commission",
+  "source_index_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
+  "scope": "Official national single portals for EU shared-management funds in the 2021–2027 period. These portals publish national and regional EU funding programmes and calls; they are not a complete directory of household benefits.",
+  "records": [
+    {
+      "country_code": "AT",
+      "country_en": "Austria",
+      "country_hu": "Ausztria",
+      "url": "https://www.oerok.gv.at/eu-fonds-2021-2027",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "BE",
+      "country_en": "Belgium",
+      "country_hu": "Belgium",
+      "url": "https://www.europeinbelgium.be/fr/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "BG",
+      "country_en": "Bulgaria",
+      "country_hu": "Bulgária",
+      "url": "https://www.eufunds.bg/bg",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "CY",
+      "country_en": "Cyprus",
+      "country_hu": "Ciprus",
+      "url": "https://eufunds.com.cy/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "CZ",
+      "country_en": "Czechia",
+      "country_hu": "Csehország",
+      "url": "https://www.dotaceeu.cz/cs/uvod",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "DE",
+      "country_en": "Germany",
+      "country_hu": "Németország",
+      "url": "https://www.bmwk.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "DK",
+      "country_en": "Denmark",
+      "country_hu": "Dánia",
+      "url": "https://eufonde.dk/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "EE",
+      "country_en": "Estonia",
+      "country_hu": "Észtország",
+      "url": "https://www.rtk.ee/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "ES",
+      "country_en": "Spain",
+      "country_hu": "Spanyolország",
+      "url": "https://fondoseuropeos.gob.es",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "FI",
+      "country_en": "Finland",
+      "country_hu": "Finnország",
+      "url": "https://www.eurahoitusneuvonta.fi/etusivu",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "FR",
+      "country_en": "France",
+      "country_hu": "Franciaország",
+      "url": "https://www.europe-en-france.gouv.fr/fr",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "GR",
+      "country_en": "Greece",
+      "country_hu": "Görögország",
+      "url": "https://www.espa.gr",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "HR",
+      "country_en": "Croatia",
+      "country_hu": "Horvátország",
+      "url": "https://fondovieu.gov.hr/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "HU",
+      "country_en": "Hungary",
+      "country_hu": "Magyarország",
+      "url": "https://www.palyazat.gov.hu/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "url": "https://www.eufunds.ie/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "IT",
+      "country_en": "Italy",
+      "country_hu": "Olaszország",
+      "url": "https://opencoesione.gov.it/it/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "LT",
+      "country_en": "Lithuania",
+      "country_hu": "Litvánia",
+      "url": "https://lrv.lt/lt",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "url": "https://fonds-europeens.public.lu/fr.html",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "LV",
+      "country_en": "Latvia",
+      "country_hu": "Lettország",
+      "url": "https://www.esfondi.lv/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "MT",
+      "country_en": "Malta",
+      "country_hu": "Málta",
+      "url": "https://fondi.eu/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "NL",
+      "country_en": "Netherlands",
+      "country_hu": "Hollandia",
+      "url": "https://www.europaomdehoek.nl/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "url": "https://www.funduszeeuropejskie.gov.pl/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "PT",
+      "country_en": "Portugal",
+      "country_hu": "Portugália",
+      "url": "https://portugal2030.pt/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "RO",
+      "country_en": "Romania",
+      "country_hu": "Románia",
+      "url": "https://www.fonduri-ue.ro/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "url": "https://eufonder.se/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "SI",
+      "country_en": "Slovenia",
+      "country_hu": "Szlovénia",
+      "url": "https://www.evropskasredstva.si/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    },
+    {
+      "country_code": "SK",
+      "country_en": "Slovakia",
+      "country_hu": "Szlovákia",
+      "url": "https://www.eurofondy.gov.sk/",
+      "kind": "national-eu-funds-portal",
+      "status": "official-national-portal",
+      "coverage": "EU shared-management funds; national and regional calls"
+    }
+  ]
+}
