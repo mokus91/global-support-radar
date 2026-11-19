@@ -1,12 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T12:30:39+00:00",
-  "records_count": 55,
+  "checked_at": "2026-11-19T12:46:20+00:00",
+  "records_count": 65,
   "summary": {
-    "connection_error": 5,
+    "connection_error": 7,
     "http_error": 1,
-    "not_found": 1,
-    "reachable": 42,
+    "reachable": 51,
     "restricted": 6
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -30,9 +29,9 @@
     },
     {
       "id": "br-social-programmes",
-      "status": "not_found",
-      "http_status": 404,
-      "final_url": "https://www.gov.br/mds/pt-br/pt-br/acoes-e-programas"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas"
     },
     {
       "id": "ca-benefits",
@@ -213,14 +212,14 @@
     },
     {
       "id": "eu-national-funds-it",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://opencoesione.gov.it/it/"
     },
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.esfondi.lv/"
     },
     {
@@ -335,6 +334,64 @@
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+    },
+    {
+      "id": "national-my-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.malaysia.gov.my/en/topics/identifying-kuskop-grants-and-financing-opportunities"
+    },
+    {
+      "id": "national-my-business-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
+    },
+    {
+      "id": "national-my-business-3",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bnm.gov.my/funds4sme"
+    },
+    {
+      "id": "national-ph-employment-1",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://bwsc.dole.gov.ph/dileep/dilp/"
+    },
+    {
+      "id": "national-ph-agriculture-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
+    },
+    {
+      "id": "national-ph-business-3",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://startup.gov.ph/"
+    },
+    {
+      "id": "national-cl-business-1",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.chileemprende.gob.cl/"
+    },
+    {
+      "id": "national-cl-all-2",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-pe-agriculture-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.gob.pe/foncodes"
+    },
+    {
+      "id": "national-id-business-1",
+      "status": "connection_error",
+      "error": "URLError"
     }
   ]
 }
