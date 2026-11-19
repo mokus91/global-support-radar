@@ -33,6 +33,9 @@ def main():
     if len(ids) != len(set(ids)):
         raise SystemExit("Duplicate source IDs in source-registry.json")
     for source in sources:
+        country_code = source.get("country_code")
+        if country_code is not None and not re.fullmatch(r"[A-Z]{2}", country_code):
+            raise SystemExit(f"Invalid country_code in source-registry.json: {source.get('id')}")
         parsed = urlparse(source.get("url", ""))
         if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
             raise SystemExit(f"Invalid official source URL: {source.get('id')}")

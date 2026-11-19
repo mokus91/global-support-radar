@@ -323,8 +323,9 @@ async function loadOfficialSources(){
       return;
      }
      const id=String(x.id||"").toLowerCase();
+     const firstCoverage=String(x.coverage||"").split(/[;—–]/)[0].trim().toLowerCase();
      for(const code of byCode.keys()){
-      if(id.startsWith(code.toLowerCase()+"-")){
+      if(id.startsWith(code.toLowerCase()+"-")||firstCoverage===countryNameEnglish(code).toLowerCase()){
        const old=registryByCountry.get(code)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(code,old);
       }
      }
