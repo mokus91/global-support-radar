@@ -14,15 +14,16 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
   - Grants.gov (United States)
   - UKRI opportunity feed (United Kingdom)
 - Separate Australian Research Council research-grant archive panel. These records are historical/discovery data and are not presented as open calls.
-- Hungarian official starting points for family support, housing, agriculture, civil/community grants, scholarships and research/innovation calls.
+- Hungarian official starting points for family support, maternity allowance, family allowance, GYES/GYET, housing, local social support, large-family gas discount, agriculture, civil/community grants, scholarships and research/innovation calls.
+- Curated Hungarian household-support directory with six official information entries. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 47 entries in the official source registry, with country/subject coverage notes.
+- 50 entries in the official source registry, with country/subject coverage notes.
 - Daily automated refresh scheduled for 04:17 UTC; manual GitHub Actions run is also configured.
 - Official source links are checked against allowed hostnames before being displayed.
 
 ## Important coverage and verification limits
 
-This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant feed. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
+This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant/benefit feed. A curated household-support directory links to six official information pages, but does not calculate eligibility or assert that a benefit is currently open. Municipal assistance varies by local decree. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
 
 Automatically discovered records are labelled **unverified candidates**. They are not a promise that an opportunity is open, that its deadline is current, or that a particular visitor is eligible. Some records have no deadline. Always open the official notice and confirm eligibility, dates, amounts and application procedure with the publisher.
 
@@ -34,6 +35,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 
 - `index.html` — responsive frontend and search/filter logic.
 - `data/source-registry.json` — official source directory.
+- `data/hu-household-support.json` — curated Hungarian household-support information directory (not a live eligibility feed).
 - `data/programme.schema.json` — normalized record schema and verification states.
 - `data/*-discovery.json` — generated source discovery records.
 - `scripts/` — official API/feed adapters.
@@ -49,7 +51,7 @@ The site does not submit applications, make eligibility decisions, collect sensi
 | UKRI | Recent UKRI opportunity feed entries | Feed is not a complete listing and may omit deadlines |
 | CIHR | Canadian health-research RSS notices | Latest successful retrieval returned zero items; narrow health-research coverage only |
 | Australian ARC | Research grant records | Archive/discovery records, not a general Australian benefits feed |
-| Hungarian official portals | FAIR, KAP, family/housing support, BGA, EMET and other official starting points | Most are direct links; NKFIH RSS imports unverified grant-news candidates only |
+| Hungarian official portals | FAIR, KAP, family and maternity benefits, housing, municipal social assistance, energy discounts, BGA, EMET and NKFIH | Household benefits are curated official information links; NKFIH RSS imports unverified news candidates. No nationwide automated entitlement check exists. |
 
 ## Run locally
 
