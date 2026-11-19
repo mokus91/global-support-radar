@@ -11,6 +11,25 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/us-grants-discovery.json"
 URL = "https://api.grants.gov/v1/api/search2"
 
+
+def normalize_api_date(value):
+    """Normalize Grants.gov dates (often MM/DD/YYYY) to ISO 8601 dates."""
+    if value in (None, ""):
+        return None
+    if not isinstance(value, str):
+        return value
+    value = value.strip()
+    for fmt in ("%m/%d/%Y", "%m/%d/%y"):
+        try:
+            return datetime.strptime(value, fmt).date().isoformat()
+        except ValueError:
+            pass
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).isoformat()
+    except ValueError:
+        # Preserve unexpected source values; the validator will flag them clearly.
+        return value
+
 def fetch_page(start):
     body = {
         "rows": 100,
@@ -52,9 +71,9 @@ def main():
                     "title": item.get("title") or item.get("number") or "Untitled opportunity",
                     "identifier": item.get("number"),
                     "agency": item.get("agencyName") or item.get("agencyCode"),
-                    "open_date": item.get("openDate"),
-                    "start_date": item.get("openDate") or None,
-                    "deadline": item.get("closeDate") or None,
+                    "open_date": normalize_api_date(item.get("openDate")),
+                    "start_date": normalize_api_date(item.get("openDate")),
+                    "deadline": normalize_api_date(item.get("closeDate")),
                     "country_code": "US",
                     "source_language": "en",
                     "status": item.get("oppStatus"),
