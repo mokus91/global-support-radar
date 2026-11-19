@@ -304,6 +304,116 @@
       "access": "Official programme and country-level pages; no global structured feed confirmed",
       "status": "discovery-source",
       "notes": "Global programme supporting eligible civil society organisations and community groups; country teams publish local calls and eligibility."
+    },
+    {
+      "id": "au-business-grants-finder",
+      "name": "business.gov.au – Grants and programmes finder",
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/grants-and-programs",
+      "coverage": "Australia; business grants, small business, innovation, energy, regional development",
+      "kind": "business-funding-catalogue",
+      "access": "Official government searchable catalogue; no public API confirmed",
+      "status": "discovery-source",
+      "notes": "Useful official starting point for federal and selected state/territory business support. Check each programme's current status and eligibility."
+    },
+    {
+      "id": "ca-benefits-finder",
+      "name": "Benefits Finder",
+      "publisher": "Government of Canada",
+      "url": "https://www.canada.ca/en/services/benefits/finder.html",
+      "coverage": "Canada; individuals and families, children, students, seniors, housing, disability and income support",
+      "kind": "citizen-benefits-finder",
+      "access": "Official government interactive finder; no public structured feed confirmed",
+      "status": "discovery-source",
+      "notes": "Federal benefits discovery tool for individuals and families; results depend on personal circumstances and must be verified with the administering programme."
+    },
+    {
+      "id": "ca-agriculture-funding",
+      "name": "Agriculture and Agri-Food Canada – Funding programs",
+      "publisher": "Government of Canada",
+      "url": "https://agriculture.canada.ca/en/programs",
+      "coverage": "Canada; farmers, agricultural businesses, food processors and rural development",
+      "kind": "agricultural-funding-catalogue",
+      "access": "Official programme catalogue; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Federal agriculture and agri-food programmes. Provincial programmes may be administered separately."
+    },
+    {
+      "id": "nz-work-income",
+      "name": "Work and Income – Benefits and payments",
+      "publisher": "New Zealand Government",
+      "url": "https://www.workandincome.govt.nz/eligibility/",
+      "coverage": "New Zealand; individuals and families, income support, housing, employment and childcare-related assistance",
+      "kind": "citizen-benefits-catalogue",
+      "access": "Official eligibility and payments catalogue; no public API confirmed",
+      "status": "discovery-source",
+      "notes": "Official benefit eligibility information. Individual entitlement depends on residency, income, household and other conditions."
+    },
+    {
+      "id": "nz-rural-support",
+      "name": "Ministry for Primary Industries – Funding and programmes",
+      "publisher": "New Zealand Government",
+      "url": "https://www.mpi.govt.nz/funding-rural-support/",
+      "coverage": "New Zealand; farmers, growers, forestry, rural communities and primary industries",
+      "kind": "agricultural-rural-support",
+      "access": "Official programme listings; no public structured API confirmed",
+      "status": "discovery-source",
+      "notes": "Official agriculture and rural support programmes; check current application windows and eligibility."
+    },
+    {
+      "id": "tw-nstc-calls",
+      "name": "National Science and Technology Council – Calls for proposals",
+      "publisher": "Taiwan Government",
+      "url": "https://www.nstc.gov.tw/folksonomy/rfpList",
+      "coverage": "Taiwan; research, talent development, industry collaboration and science infrastructure",
+      "kind": "research-and-innovation-funding",
+      "access": "Official searchable call listing; no public feed/API confirmed",
+      "status": "discovery-source",
+      "notes": "Official page lists open calls, proposal periods and fields. Most programmes are aimed at eligible Taiwanese institutions or researchers."
+    },
+    {
+      "id": "za-sassa-grants",
+      "name": "SASSA – Social grants",
+      "publisher": "South African Social Security Agency",
+      "url": "https://www.sassa.gov.za/",
+      "coverage": "South Africa; child support, older persons, disability and other social grants",
+      "kind": "citizen-benefits-catalogue",
+      "access": "Official agency website; no public structured feed confirmed",
+      "status": "discovery-source",
+      "notes": "Official source for social grant eligibility and applications. Verify current requirements directly with SASSA."
+    },
+    {
+      "id": "in-national-scholarships",
+      "name": "National Scholarship Portal",
+      "publisher": "Government of India",
+      "url": "https://scholarships.gov.in/",
+      "coverage": "India; student scholarships and education support",
+      "kind": "education-benefits-portal",
+      "access": "Official government portal; no public API/feed confirmed",
+      "status": "discovery-source",
+      "notes": "Central scholarship discovery and application portal; scheme eligibility varies by state, education level and applicant category."
+    },
+    {
+      "id": "br-gov-benefits",
+      "name": "Gov.br – Benefits and social assistance",
+      "publisher": "Government of Brazil",
+      "url": "https://www.gov.br/pt-br/servicos",
+      "coverage": "Brazil; federal citizen services including social assistance, family and income support",
+      "kind": "citizen-benefits-catalogue",
+      "access": "Official government service catalogue; no single public grants API confirmed",
+      "status": "discovery-source",
+      "notes": "Broad official service catalogue; search by benefit name and confirm eligibility through the responsible ministry or agency."
+    },
+    {
+      "id": "jp-mhlw-support",
+      "name": "Ministry of Health, Labour and Welfare – Benefits and support",
+      "publisher": "Government of Japan",
+      "url": "https://www.mhlw.go.jp/english/",
+      "coverage": "Japan; employment, health, family, child and social welfare support",
+      "kind": "citizen-benefits-catalogue",
+      "access": "Official ministry information; no consolidated public API confirmed",
+      "status": "discovery-source",
+      "notes": "Official ministry starting point for social welfare and labour support. Detailed programme information may be available only in Japanese."
     }
   ],
   "publication_requirements": [
