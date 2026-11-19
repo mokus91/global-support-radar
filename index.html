@@ -420,12 +420,28 @@ function inferCategory(row){
 }
 async function loadLiveListings(){
  const feeds=[
-  {file:"eu-open-calls-discovery.json",country:"EU",source:"EU Funding & Tenders",hosts:["ec.europa.eu"],fallback:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/"},
-  {file:"us-grants-discovery.json",country:"US",source:"Grants.gov",hosts:["www.grants.gov"],fallback:"https://www.grants.gov/"},
+  {file:"jgrants-discovery.json",country:"JP",source:"Japan JGrants",hosts:["www.jgrants-portal.go.jp"],fallback:"https://www.jgrants-portal.go.jp/"},
+  {file:"chile-discovery.json",country:"CL",source:"Chile CORFO",hosts:["www.corfo.gob.cl"],fallback:"https://www.corfo.gob.cl/"},
+  {file:"spain-discovery.json",country:"ES",source:"Spain SNPSAP / BDNS",hosts:["www.infosubvenciones.es","www.euskadi.eus"],fallback:"https://www.infosubvenciones.es/"},
+  {file:"us-grants-discovery.json",country:"US",source:"US Grants.gov",hosts:["www.grants.gov"],fallback:"https://www.grants.gov/"},
   {file:"ukri-discovery.json",country:"GB",source:"UKRI",hosts:["www.ukri.org"],fallback:"https://www.ukri.org/opportunity/"},
  ];
  const results=await Promise.all(feeds.map(async feed=>{
-  try{const res=await fetch("./data/"+feed.file,{cache:"no-store"});if(!res.ok)return[];const payload=await res.json();return (payload.records||[]).map(row=>({...row,_country:feed.country,_source:feed.source,_hosts:feed.hosts,_fallback:feed.fallback,_feedUpdated:payload.generated_at,_feedError:payload.error||null}));}catch(_){return[]}
+  try{
+   const res=await fetch("./data/"+feed.file,{cache:"no-store"});if(!res.ok)return[];
+   const payload=await res.json();
+   return (payload.records||[]).map(row=>{
+    const deadline=row.deadline||row.acceptance_end||row.closing_date||row.application_deadline||null;
+    const rawAmount=row.amount_max??row.maximum_amount_jpy??row.amount_total??row.amount??null;
+    const currency=row.currency||(feed.country==="JP"?"JPY":feed.country==="CL"?"CLP":feed.country==="ES"?"EUR":feed.country==="US"?"USD":feed.country==="GB"?"GBP":"");
+    const category=row.category||((Array.isArray(row.categories)&&row.categories.length===1)?row.categories[0]:null);
+    const official=row.official_url||row.application_url||row.url||"";
+    return {...row,_country:feed.country,_source:feed.source,_hosts:feed.hosts,_fallback:feed.fallback,
+     _deadline:deadline,_amount:rawAmount&&Number(rawAmount)>0?Number(rawAmount):null,_currency:currency,
+     _category:category,_official:official,_verification:row.verification_status||"unverified",
+     _feedUpdated:payload.generated_at||payload.updated_at,_feedError:payload.error||null};
+   });
+  }catch(_){return[]}
  }));
  liveListings=results.flat();
  renderCards();
@@ -434,32 +450,43 @@ function renderCards(){
  const t=translations[lang],q=$("q").value.trim().toLowerCase(),country=$("country").value;
  const rows=liveListings.filter(row=>{
   const category=inferCategory(row);
-  const text=[row.title,row.summary,row.identifier,row.agency,row.programme,row.status,row._source].filter(Boolean).join(" ").toLowerCase();
-  return (active<0||category===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q));
- }).sort((a,b)=>{const da=Date.parse(a.deadline||"");const db=Date.parse(b.deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||"").localeCompare(String(b.title||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
- $("count").textContent=rows.length+" "+(lang==="hu"?"jelölt":"candidates")+" · "+(lang==="hu"?"3 adatkapcsolat":"3 data connections");
+  const categories=Array.isArray(row.categories)?row.categories:[];
+  const direct=row._category?["housing","family","agriculture","business","education","healthcare","energy","employment","social","transport"].indexOf(row._category):-1;
+  const resolved=direct>=0?direct:(categories.length===1?["housing","family","agriculture","business","education","healthcare","energy","employment","social","transport"].indexOf(categories[0]):-1);
+  const cat=resolved>=0?resolved:category;
+  const text=[row.title,row.title_hu,row.title_original,row.summary,row.description_original,row.identifier,row.agency,row.programme,row.status,row._source].filter(Boolean).join(" ").toLowerCase();
+  return (active<0||cat===active)&&(country==="all"||row._country===country)&&(!q||text.includes(q));
+ }).sort((a,b)=>{const da=Date.parse(a._deadline||"");const db=Date.parse(b._deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||a.title_original||"").localeCompare(String(b.title||b.title_original||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
+ $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"5 adatkapcsolat":"5 data connections");
  const box=$("cards");box.replaceChildren();
  if(!rows.length){const empty=document.createElement("div");empty.className="empty";empty.textContent=liveListings.length?t.empty:(lang==="hu"?"A hivatalos adatforrások betöltése folyamatban van, vagy jelenleg nem adtak vissza találatot.":"Official source data is loading or currently has no results.");box.append(empty);return;}
- rows.slice(0,60).forEach(row=>{
+ rows.slice(0,80).forEach(row=>{
   const card=document.createElement("article");card.className="card";
   const top=document.createElement("div");top.className="cardtop";
-  const tag=document.createElement("span");tag.className="tag";const cat=inferCategory(row);tag.textContent=cat<0?(lang==="hu"?"Egyéb támogatás":"Other support"):t.categories[cat];
-  const badge=document.createElement("span");badge.className="demo";badge.textContent=lang==="hu"?"ELLENŐRIZETLEN JELÖLT":"UNVERIFIED CANDIDATE";top.append(tag,badge);
-  const title=document.createElement("h3");title.textContent=row.title||row.identifier||"—";
-  const desc=document.createElement("p");desc.textContent=[row.summary,row.identifier].filter(Boolean).join(" · ")||(lang==="hu"?"A részleteket az eredeti hivatalos oldalon ellenőrizd.":"Check details on the original official page.");
+  const cat=inferCategory(row),catNames=t.categories;
+  const direct=row._category?["housing","family","agriculture","business","education","healthcare","energy","employment","social","transport"].indexOf(row._category):-1;
+  const category=direct>=0?direct:cat;
+  const tag=document.createElement("span");tag.className="tag";tag.textContent=category<0?(lang==="hu"?"Egyéb támogatás":"Other support"):catNames[category];
+  const badge=document.createElement("span");badge.className="demo";
+  const verified=["official_api_live_acceptance_candidate","official-page-open-status-and-amount-checked","official-api-window-current"].includes(row._verification);
+  badge.textContent=verified?(lang==="hu"?"HIVATALOS ADATELLENŐRZÉS":"OFFICIAL DATA CHECK"):(lang==="hu"?"ELLENŐRIZENDŐ JELÖLT":"VERIFY CANDIDATE");top.append(tag,badge);
+  const title=document.createElement("h3");title.textContent=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"—");
+  const desc=document.createElement("p");desc.textContent=[row.summary||row.description_original||row.eligibility_summary_hu&&lang==="hu"?row.eligibility_summary_hu:row.summary||row.description_original||row.eligibility_summary_en,row.identifier].filter(Boolean).join(" · ")||(lang==="hu"?"A részleteket az eredeti hivatalos oldalon ellenőrizd.":"Check details on the original official page.");
   const meta=document.createElement("div");meta.className="meta";
-  const countryMeta=document.createElement("span");countryMeta.textContent=(lang==="hu"?"Forrás országa: ":"Source country: ")+row._country;
-  const dateMeta=document.createElement("span");dateMeta.textContent=(lang==="hu"?"Határidő: ":"Deadline: ")+(row.deadline?String(row.deadline).slice(0,10):"nincs megadva");
+  const countryMeta=document.createElement("span");countryMeta.textContent=(lang==="hu"?"Ország: ":"Country: ")+row._country;
+  const dateMeta=document.createElement("span");dateMeta.textContent=(lang==="hu"?"Határidő: ":"Deadline: ")+(row._deadline?String(row._deadline).slice(0,10):(lang==="hu"?"nincs megadva":"not listed"));
+  const amountMeta=document.createElement("span");amountMeta.textContent=(lang==="hu"?"Keret/összeg: ":"Amount/budget: ")+(row._amount?new Intl.NumberFormat(lang==="hu"?"hu-HU":"en-US",{maximumFractionDigits:0}).format(row._amount)+" "+row._currency:(lang==="hu"?"nincs megadva":"not listed"));
   const sourceMeta=document.createElement("span");sourceMeta.textContent=row._source;
-  const statusMeta=document.createElement("span");statusMeta.textContent=(lang==="hu"?"Státusz / státuszkód: ":"Status / source code: ")+(row.status||"nincs közölve");meta.append(countryMeta,dateMeta,sourceMeta,statusMeta);
+  const statusMeta=document.createElement("span");statusMeta.textContent=(lang==="hu"?"Státusz: ":"Status: ")+(row.status||"not specified");meta.append(countryMeta,dateMeta,amountMeta,sourceMeta,statusMeta);
   const foot=document.createElement("div");foot.className="cardfoot";
-  const note=document.createElement("span");note.textContent=lang==="hu"?"Eredeti kiírás és jogosultság ellenőrzése szükséges":"Verify original call and eligibility";
+  const note=document.createElement("span");note.textContent=lang==="hu"?"Ellenőrizd a feltételeket és a beadási időszakot":"Verify eligibility and application window";
   const link=document.createElement("a");let href="";
-  try{const u=new URL(row.official_url||"");if(u.protocol==="https:"&&(row._hosts||[]).some(h=>u.hostname===h||u.hostname.endsWith("."+h)))href=u.href;}catch(_){}
-  if(!href)href=row._fallback||"https://ec.europa.eu/info/funding-tenders/opportunities/portal/";
+  try{const u=new URL(row._official||"");if(u.protocol==="https:"&&(row._hosts||[]).some(h=>u.hostname===h||u.hostname.endsWith("."+h)))href=u.href;}catch(_){}
+  if(!href)href=row._fallback||"https://www.grants.gov/";
   link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=lang==="hu"?"Hivatalos forrás ↗":"Official source ↗";foot.append(note,link);
   card.append(top,title,desc,meta,foot);box.append(card);
  });
+
 }
 $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render();loadHungarianAnnouncements();loadHuHouseholdSupport();setupHuEligibilityHelper();loadFeedStatus();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();loadLiveListings()};$("country").onchange=()=>{renderCards();loadOfficialSources();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements()};$("searchBtn").onclick=renderCards;$("q").oninput=renderCards;$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadFeedStatus();loadLiveListings();loadOfficialSources();loadHuHouseholdSupport();setupHuEligibilityHelper();loadHuNkfih();loadEuOpenCalls();loadUsGrants();loadUkriCalls();loadAuArcGrants();loadGrantConnect();loadCihr();$("huLive").style.display=$("country").value==="HU"?"block":"none";loadHungarianAnnouncements();
 </script>
