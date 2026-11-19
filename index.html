@@ -201,7 +201,7 @@ async function loadOfficialFeed(file,boxId,statusId,sourceName,officialBase){
   const data=await response.json(),rows=Array.isArray(data.records)?data.records:[];
   status.textContent=(hu?"Jelöltek: ":"Candidates: ")+rows.length;
   box.replaceChildren();
-  if(!rows.length){const empty=document.createElement("div");empty.className="empty";empty.textContent=hu?"Még nincs megjeleníthető közlemény.":"No notices currently available.";box.append(empty);return;}
+  if(!rows.length){const empty=document.createElement("div");empty.className="empty";empty.textContent=data.error?(hu?"Az automatikus adatlekérés most nem érhető el. Nyisd meg közvetlenül a hivatalos forrást.":"Automatic retrieval is currently unavailable. Open the official source directly."):(hu?"Még nincs megjeleníthető közlemény.":"No notices currently available.");box.append(empty);return;}
   rows.slice(0,30).forEach(row=>{
    const card=document.createElement("article");card.className="card";
    const top=document.createElement("div");top.className="cardtop";
