@@ -755,14 +755,14 @@
     },
     {
       "id": "worldwide-national-support-finders",
-      "name": "Official national support finders — six-country expansion",
+      "name": "Official national support finders — 36-country directory",
       "publisher": "National governments and official public agencies",
       "url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html",
-      "coverage": "United States, United Kingdom, Canada, Australia, New Zealand, Ireland, India, Singapore, Japan, Kenya, South Africa and Brazil; federal grants, business support, agriculture and selected social benefits",
+      "coverage": "36 countries across North America, Europe, Asia, Africa and South America; federal grants, EU shared-management funds, business support, agriculture and selected social benefits",
       "kind": "national-support-discovery-directories",
       "access": "Country/category-filtered static directory of official national portals; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "Twenty-three country-specific official source links across twelve countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
+      "notes": "Forty-seven country-specific official source links across 36 countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
     },
     {
       "id": "za-nrf-funding",
@@ -785,6 +785,270 @@
       "access": "Official agency website; no public structured feed confirmed",
       "status": "discovery-source",
       "notes": "Official source for social grant eligibility and applications. Verify current requirements directly with SASSA."
+    },
+    {
+      "id": "eu-national-funds-at",
+      "name": "Austria — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.oerok.gv.at/eu-fonds-2021-2027",
+      "coverage": "Austria; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-be",
+      "name": "Belgium — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.europeinbelgium.be/fr/",
+      "coverage": "Belgium; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-bg",
+      "name": "Bulgaria — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.eufunds.bg/bg",
+      "coverage": "Bulgaria; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-cy",
+      "name": "Cyprus — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://eufunds.com.cy/",
+      "coverage": "Cyprus; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-cz",
+      "name": "Czechia — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.dotaceeu.cz/cs/uvod",
+      "coverage": "Czechia; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-dk",
+      "name": "Denmark — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://eufonde.dk/",
+      "coverage": "Denmark; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-ee",
+      "name": "Estonia — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.rtk.ee/",
+      "coverage": "Estonia; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-fi",
+      "name": "Finland — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.eurahoitusneuvonta.fi/etusivu",
+      "coverage": "Finland; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-fr",
+      "name": "France — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.europe-en-france.gouv.fr/fr",
+      "coverage": "France; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-de",
+      "name": "Germany — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.bmwk.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html",
+      "coverage": "Germany; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-gr",
+      "name": "Greece — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.espa.gr",
+      "coverage": "Greece; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-it",
+      "name": "Italy — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://opencoesione.gov.it/it/",
+      "coverage": "Italy; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-lv",
+      "name": "Latvia — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.esfondi.lv/",
+      "coverage": "Latvia; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-lt",
+      "name": "Lithuania — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://lrv.lt/lt",
+      "coverage": "Lithuania; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-lu",
+      "name": "Luxembourg — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://fonds-europeens.public.lu/fr.html",
+      "coverage": "Luxembourg; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-mt",
+      "name": "Malta — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://fondi.eu/",
+      "coverage": "Malta; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-nl",
+      "name": "Netherlands — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.europaomdehoek.nl/",
+      "coverage": "Netherlands; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-pl",
+      "name": "Poland — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.funduszeeuropejskie.gov.pl/",
+      "coverage": "Poland; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-pt",
+      "name": "Portugal — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://portugal2030.pt/",
+      "coverage": "Portugal; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-ro",
+      "name": "Romania — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.fonduri-ue.ro/",
+      "coverage": "Romania; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-es",
+      "name": "Spain — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://fondoseuropeos.gob.es",
+      "coverage": "Spain; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-se",
+      "name": "Sweden — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://eufonder.se/",
+      "coverage": "Sweden; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-si",
+      "name": "Slovenia — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.evropskasredstva.si/",
+      "coverage": "Slovenia; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "eu-national-funds-sk",
+      "name": "Slovakia — EU funds national single portal",
+      "publisher": "European Commission / national managing authorities",
+      "url": "https://www.eurofondy.gov.sk/",
+      "coverage": "Slovakia; national and regional EU shared-management funding programmes",
+      "kind": "national-eu-funds-portal",
+      "access": "Official national portal listed by the European Commission; no common cross-country API",
+      "status": "official-source-directory",
+      "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
     }
   ],
   "publication_requirements": [
