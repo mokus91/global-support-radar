@@ -475,6 +475,28 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   const unMeta=document.createElement("div");unMeta.className="meta";unMeta.textContent=isHu?"193 ENSZ-tagállam · hivatalos kiindulópont · a címeket ellenőrizni kell":"193 UN Member States · official starting point · portal URLs require verification";
   const unFoot=document.createElement("div");unFoot.className="cardfoot";const unLabel=document.createElement("span");unLabel.textContent=isHu?"ENSZ DESA – hivatalos forrás":"UN DESA — official source";const unLink=document.createElement("a");unLink.href="https://ekap.desa.un.org/Resources";unLink.target="_blank";unLink.rel="noopener noreferrer";unLink.textContent=isHu?"Országportálok megnyitása ↗":"Open country portals ↗";unFoot.append(unLabel,unLink);unCard.append(unTitle,unDesc,unMeta,unFoot);box.append(unCard);
   const unAge=document.createElement("p");unAge.className="notice";unAge.textContent=isHu?"Adatfrissítési figyelmeztetés: az ENSZ tájékoztatása szerint a kormányzati webcímek utolsó felmérése 2013-ban történt. Ezért a jegyzék csak kiindulópont; minden címet és támogatási programot az adott ország aktuális hivatalos oldalán ellenőrizz.":"Data freshness warning: the UN says its government website URLs were last assessed in 2013. Treat this directory only as a starting point; verify each address and support programme on the country's current official website.";box.append(unAge);
+  try{
+   const portalResponse=await fetch("data/un-national-portals.json",{cache:"no-store"});
+   if(portalResponse.ok){
+    const portalData=await portalResponse.json();
+    const portalRecords=portalData.records.filter(record=>code!=="all"&&record.country_code===code);
+    if(portalRecords.length){
+     const portal=portalRecords[0],portalCard=document.createElement("article");portalCard.className="card";
+     const portalHeading=document.createElement("h3");portalHeading.textContent=isHu?portal.country_en+" – hivatalos kormányzati portál":"Official government portal — "+portal.country_en;
+     const portalDesc=document.createElement("p");portalDesc.textContent=isHu?"Az ENSZ országportál-jegyzékében szereplő nemzeti kormányzati kiindulópont. A támogatási programok elérhetőségét és a portál jelenlegi működését külön ellenőrizd.":"National government starting point listed in the UN portal directory. Check that the portal is still active and verify support programmes separately.";
+     const portalMeta=document.createElement("div");portalMeta.className="meta";portalMeta.textContent=isHu?"Forrás: ENSZ DESA · 2013-as címellenőrzés · jelenlegi állapot nem igazolt":"Source: UN DESA · URL assessment from 2013 · current status not verified";
+     const portalFoot=document.createElement("div");portalFoot.className="cardfoot";const portalLabel=document.createElement("span");portalLabel.textContent=isHu?"Nemzeti portál – ellenőrizendő":"National portal — verify first";
+     const portalLink=document.createElement("a");portalLink.href=portal.url;portalLink.target="_blank";portalLink.rel="noopener noreferrer";portalLink.textContent=isHu?"Ország portáljának megnyitása ↗":"Open national portal ↗";
+     portalFoot.append(portalLabel,portalLink);portalCard.append(portalHeading,portalDesc,portalMeta,portalFoot);box.append(portalCard);
+    }else if(code!=="all"){
+     const missing=document.createElement("p");missing.className="notice";missing.textContent=isHu?"Ehhez az országhoz nincs ENSZ-tagállami portálrekord. Használd az ENSZ teljes jegyzékét és az ország hivatalos oldalát.":"No UN Member State portal record is available for this selection. Use the full UN directory and verify the country's official website.";box.append(missing);
+    }else{
+     const allNote=document.createElement("p");allNote.className="notice";allNote.textContent=isHu?"A teljes ENSZ-lista 193 országot tartalmaz. Válassz ki egy országot a fenti listából, hogy megjelenjen a hozzá tartozó közvetlen portálhivatkozás.":"The UN directory contains 193 country portal records. Select a country above to show its direct portal link.";box.append(allNote);
+    }
+   }
+  }catch(portalError){
+   const portalWarning=document.createElement("p");portalWarning.className="notice";portalWarning.textContent=isHu?"Az országonkénti ENSZ-portállista most nem tölthető be.":"The country-by-country UN portal directory could not be loaded.";box.append(portalWarning);
+  }
   sources.filter(src=>src.id!=="un").forEach(src=>{const card=document.createElement("article");card.className="card";const h=document.createElement("h3");h.textContent=isHu?src.hu:src.en;const p=document.createElement("p");p.textContent=isHu?src.huDesc:src.enDesc;const meta=document.createElement("div");meta.className="meta";meta.textContent=src.id==="wb"?(isHu?"Lefedettség: kb. 140 ország":"Coverage: around 140 countries"):(isHu?"Nemzetközi országprofilok":"International country profiles");const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"Hivatalos nemzetközi forrás":"Official international source";const a=document.createElement("a");a.href=src.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Megnyitás ↗":"Open ↗";foot.append(label,a);card.append(h,p,meta,foot);box.append(card)});
   try{
    const response=await fetch("data/europe-national-portals.json");
