@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-19T13:09:41.220356+00:00",
+  "generated_at": "2026-11-19T13:25:30.789801+00:00",
   "source_id": "hu-nkfih",
   "source_url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
   "feed_url": "https://rss.nkfih.gov.hu/hirek-180603?rss=1",
-  "feed_status": "responding",
+  "feed_status": "unavailable-or-invalid",
   "record_type": "official-grant-news-discovery",
   "records_count": 0,
   "records": [],
-  "errors": []
+  "errors": [
+    "<urlopen error timed out>"
+  ]
 }
