@@ -54,7 +54,7 @@ def main():
     payload = {}
     try:
         payload = {"results": [], "totalResults": 0}
-        for page in range(1, 11):
+        for page in range(1, 21):
             part = collect(page)
             payload["results"].extend(part.get("results", []))
             payload["totalResults"] = part.get("totalResults", payload["totalResults"])
@@ -65,13 +65,24 @@ def main():
     # Keep only official portal open/forthcoming status candidates.
     # They remain discovery candidates until each call page is individually checked.
     candidates = []
+    expired_excluded = 0
     seen = set()
+    today = datetime.now(timezone.utc).date()
     for item in payload.get("results", []):
         meta = item.get("metadata") or {}
         ref = item.get("reference") or first(meta, "REFERENCE")
         if not ref or ref in seen:
             continue
         seen.add(ref)
+        deadline_value = first(meta, "deadlineDate") or first(meta, "closingDate")
+        if deadline_value:
+            try:
+                deadline_date = datetime.fromisoformat(str(deadline_value).replace("Z", "+00:00")).date()
+                if deadline_date < today:
+                    expired_excluded += 1
+                    continue
+            except ValueError:
+                pass
         candidates.append({
             "id": ref,
             "title": first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call",
@@ -83,7 +94,7 @@ def main():
             "budget": first(meta, "budget"),
             "source_language": item.get("language") or first(meta, "language") or "en",
             "source_id": "eu-funding",
-            "record_type": "open-or-forthcoming-discovery-candidate",
+            "record_type": "current-deadline-discovery-candidate",
             "verification_status": "unverified",
             "status_code": first(meta, "status"),
             "last_discovered_at": datetime.now(timezone.utc).isoformat()
@@ -92,7 +103,8 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters. Not yet individually verified; check the original call page before relying on status or eligibility.",
+        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
+        "expired_deadline_records_excluded": expired_excluded,
         "status_filters": ["31094501", "31094502"],
         "records_count": len(candidates),
         "records": candidates,
@@ -116,7 +128,7 @@ def main():
     if error:
         print("EU Funding & Tenders discovery failed: " + error)
     else:
-        print(f"EU Funding & Tenders API response saved; {len(candidates)} open-status discovery candidates (all unverified).")
+        print(f"EU Funding & Tenders API response saved; {len(candidates)} current-deadline candidates; excluded {expired_excluded} past-deadline records (all remaining candidates unverified).")
 
 if __name__ == "__main__":
     main()
