@@ -115,6 +115,12 @@ def main():
     eu_adapter = (ROOT / "scripts" / "discover_eu_funding.py").read_text(encoding="utf-8")
     if "max_pages = 100" not in eu_adapter or '"maximum_pages": 100' not in eu_adapter:
         raise SystemExit("EU Funding & Tenders pagination cap is missing or inconsistent")
+    arc_adapter = (ROOT / "scripts" / "discover_au_arc_grants.py").read_text(encoding="utf-8")
+    if "max_pages = 200" not in arc_adapter or '"maximum_pages": 200' not in arc_adapter or "pagination_complete" not in arc_adapter:
+        raise SystemExit("Australian ARC pagination completeness tracking is missing")
+    arc_feed = load_json(DATA / "au-arc-grants-discovery.json")
+    if arc_feed.get("pages_fetched", 0) >= arc_feed.get("maximum_pages", 0) and arc_feed.get("pagination_complete") is not False:
+        raise SystemExit("Australian ARC feed reached its page cap without an incomplete-pagination warning")
 
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):

@@ -3,6 +3,8 @@
 This is a research-grants dataset, not a complete list of all Australian benefits or grants.
 """
 import json
+import time
+from urllib.error import HTTPError, URLError
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -20,11 +22,23 @@ def pick(obj, *keys):
 def main():
     records, error, pages = [], None, 0
     try:
-        for page in range(1, 21):
+        max_pages = 200
+        seen_ids = set()
+        for page in range(1, max_pages + 1):
             url = f"{API}?page%5Bnumber%5D={page}&page%5Bsize%5D=100"
             req = Request(url, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/vnd.api+json, application/json"})
-            with urlopen(req, timeout=45) as response:
-                payload = json.loads(response.read().decode("utf-8"))
+            for attempt in range(3):
+                try:
+                    with urlopen(req, timeout=45) as response:
+                        payload = json.loads(response.read().decode("utf-8"))
+                    break
+                except HTTPError as exc:
+                    if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                        raise
+                except (URLError, TimeoutError):
+                    if attempt == 2:
+                        raise
+                time.sleep(3 * (attempt + 1))
             items = payload.get("data", [])
             if not isinstance(items, list):
                 raise ValueError("Unexpected ARC API response: data is not a list")
@@ -37,6 +51,11 @@ def main():
                 if not title:
                     continue
                 identifier = pick(attrs, "grant-number", "grantNumber", "grant-id", "grantId", "id") or item.get("id")
+                stable_id = str(identifier) if identifier is not None else str(item.get("id") or "")
+                if stable_id and stable_id in seen_ids:
+                    continue
+                if stable_id:
+                    seen_ids.add(stable_id)
                 records.append({
                     "id": str(identifier) if identifier is not None else None,
                     "title": str(title),
@@ -61,6 +80,8 @@ def main():
         "api_url": API,
         "purpose": "Australian Research Council grant records. This dataset covers ARC research funding and is not a complete national register of household benefits or all government grants. Records are not live open calls unless verified separately.",
         "pages_fetched": pages,
+        "maximum_pages": 200,
+        "pagination_complete": pages < 200 and not error,
         "records_count": len(records),
         "records": records,
         "error": error
