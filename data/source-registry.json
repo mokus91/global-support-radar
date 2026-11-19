@@ -180,9 +180,9 @@
       "url": "https://www.grants.gov.au/",
       "coverage": "Australia; Commonwealth grant opportunities, forecasts and awards",
       "kind": "funding-calls",
-      "access": "Official national portal; public machine-readable API/feed not confirmed",
-      "status": "discovery-source",
-      "notes": "The Australian Government identifies GrantConnect as its whole-of-government source for forecast and current grants. This is a source link only until a permitted structured feed is confirmed."
+      "access": "Official public RSS feed",
+      "status": "automated-discovery",
+      "notes": "Adapter collects official RSS notices from GrantConnect. Every candidate remains unverified until the original notice confirms current status, deadline and eligibility."
     },
     {
       "id": "au-arc-grants",
@@ -227,6 +227,17 @@
       "access": "Official programme listings; public structured feed/API not confirmed",
       "status": "discovery-source",
       "notes": "Official list of open and upcoming science and innovation funding rounds. Dates and eligibility must be checked on each programme page."
+    },
+    {
+      "id": "ca-cihr",
+      "name": "Canadian Institutes of Health Research – Funding opportunities",
+      "publisher": "Government of Canada",
+      "url": "https://cihr-irsc.gc.ca/e/193.html",
+      "coverage": "Canada; health research, scholarships, fellowships and training",
+      "kind": "research-funding-calls",
+      "access": "Official ResearchNet RSS feed",
+      "status": "automated-discovery",
+      "notes": "RSS candidates are collected automatically. These are health research opportunities, not a complete list of Canadian public benefits or all grants; each notice remains unverified."
     }
   ],
   "publication_requirements": [
