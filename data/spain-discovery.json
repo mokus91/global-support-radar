@@ -1,0 +1,10 @@
+{
+  "generated_at": null,
+  "country_code": "ES",
+  "source": "https://www.infosubvenciones.es/bdnstrans/api",
+  "records_checked": 0,
+  "records_count": 0,
+  "query_errors": [],
+  "records": [],
+  "coverage_note": "Waiting for first scheduled official API discovery run."
+}

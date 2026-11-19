@@ -1280,6 +1280,17 @@
       "access": "Official public search service; no documented API adapter is currently used in this project",
       "status": "official-source-directory",
       "notes": "Official search portal, not an automated feed in this project. Check each grant's current status, eligibility, deadlines, amount and application route on the original notice."
+    },
+    {
+      "id": "es-snpsap-live-api",
+      "name": "Spain — National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS) API",
+      "publisher": "Intervención General de la Administración del Estado, Ministry of Finance, Spain",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias",
+      "coverage": "Spain; national, regional and local public grant calls registered in the national transparency database",
+      "kind": "automated-open-call-discovery",
+      "access": "Public REST API; latest 50 call records checked daily against official application-window fields",
+      "status": "automated-discovery",
+      "notes": "The API includes open, closed and resolved calls. Adapter only publishes records with an active date window or indefinite application flag. Not exhaustive; total call budget is not an individual award. Reuse subject to official legal notice."
     }
   ],
   "publication_requirements": [

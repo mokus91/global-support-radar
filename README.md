@@ -15,13 +15,14 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok.
 - A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants és Chile CORFO.
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
-- Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
+- Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.
+- Spanyolország SNPSAP/BDNS: napi nyilvános REST API-lekérdezés; az utolsó 50 regisztrált felhívás részletes jelentkezési időszakát ellenőrzi, és csak aktív vagy határozatlan jelentkezési ablakot mutat. Nem teljes katalógus. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
 - Chile Sercotec: hivatalos felhívásoldalról rögzített, külön jelölt pillanatfelvétel; jelenleg nem automatikus napi adatkapcsolat.
 - Külön ausztrál ARC kutatási támogatási panel (archív/felfedezési adatok, nem általános nyitott pályázati lista) és kanadai CIHR RSS-panel (szűk, egészségkutatási terület; üres lekérés nem jelenti azt, hogy Kanadában nincs támogatás).
 - Magyar hivatalos kiindulópontok családtámogatáshoz, lakhatáshoz, mezőgazdasághoz, vállalkozáshoz, civil/kulturális támogatáshoz és kutatás-fejlesztéshez.
 - Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
 - Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
-- 117 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
+- 118 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
 - Napi automatikus forrásfrissítés 04:17 UTC-kor GitHub Actions segítségével; kézi workflow-indítás is be van állítva.
 - A források elérhetőségét külön napi ellenőrzés vizsgálja. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
 
@@ -50,6 +51,7 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 | Grants.gov | Amerikai szövetségi pályázatok | Előre jelzett vagy szervezeteknek szóló lehetőségek is lehetnek |
 | UKRI | Brit kutatásfinanszírozási lehetőségek | Nem teljes brit támogatási katalógus |
 | Japan JGrants | Aktív jelentkezési időszakú japán támogatások | Kulcsszavas API-lekérdezés, nem teljes leltár |
+| Spain SNPSAP/BDNS | Legutóbbi 50 regisztrált felhívás jelentkezési időszakának ellenőrzése | Nem teljes katalógus; csak API szerinti aktív időszakok |
 | Chile CORFO | Start-Up Chile Growth 13 | Egy hivatalos felhívásoldal napi ellenőrzése |
 | Australian ARC | Kutatásfinanszírozási rekordok | Külön archív/felfedezési panel |
 | Canadian CIHR | Egészségkutatási RSS-hírek | Szűk terület, külön panel |
@@ -58,7 +60,7 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 ## Adatstruktúra
 
 - `index.html` — felhasználói felület és keresési logika.
-- `data/source-registry.json` — hivatalos forrásregiszter (117 rekord).
+- `data/source-registry.json` — hivatalos forrásregiszter (118 rekord).
 - `data/worldwide-national-support-sources.json` — 67 ország-specifikus forrás 46 országból.
 - `data/un-national-portals.json` — 193 ENSZ-tagállam történeti nemzeti portáljegyzéke.
 - `data/global-support-directory.json` — globális hivatalos és szociális védelmi hivatkozások.
