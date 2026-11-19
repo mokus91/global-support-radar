@@ -72,7 +72,8 @@ def main():
             org=d.get("organo") if isinstance(d.get("organo"),dict) else {}
             regions=[x.get("descripcion") for x in d.get("regiones",[]) if isinstance(x,dict) and x.get("descripcion")]
             beneficiaries=[x.get("descripcion") for x in d.get("tiposBeneficiarios",[]) if isinstance(x,dict) and x.get("descripcion")]
-            budget_raw=d.get("presupuestoTotal")\n            budget=numeric_budget(budget_raw)
+            budget_raw=d.get("presupuestoTotal")
+            budget=numeric_budget(budget_raw)
             records.append({"id":code,"country_code":"ES","title_original":title,"coofficial_title":d.get("descripcionLeng"),
               "publisher":"Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
               "granting_authority":" · ".join(x for x in [org.get("nivel1"),org.get("nivel2"),org.get("nivel3")] if x),
