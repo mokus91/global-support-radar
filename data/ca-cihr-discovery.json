@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T10:47:14.799906+00:00",
+  "generated_at": "2026-11-19T10:57:34.879353+00:00",
   "source_id": "ca-cihr",
   "source_url": "https://cihr-irsc.gc.ca/e/193.html",
   "feed_url": "https://www.researchnet-recherchenet.ca/rnr16/fodRss.do?type=ALL&chanTyp=ALL&lang=E",
   "records_count": 0,
   "records": [],
-  "error": null
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
 }
