@@ -46,7 +46,7 @@ jobs:
             for (const issue of feedback) {
               const body = issue.body || '';
               const type = body.match(/^Feedback type:\s*(.+)$/mi)?.[1]?.trim();
-              const rating = body.match(/^Rating:\s*([1-5])\s*$/mi)?.[1];
+              const rating = body.match(/^Rating:\s*([1-5])(?:\s*\/\s*5)?\s*$/mi)?.[1];
               const normalized = (type || '').toLowerCase();
               const aliases = {
                 'használhatóság': 'Usability', 'usability': 'Usability',
