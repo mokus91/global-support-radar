@@ -70,7 +70,7 @@ def main():
         if urlparse(full).scheme != "https":
             continue
         found[title] = full
-    records = [{
+    count_match = re.search(r"Showing\\s+(\\d+)\\s+of\\s+(\\d+)", html, re.I)\n    catalogue_count = int(count_match.group(2)) if count_match else None\n    records = [{
         "id": "nz-funding-" + re.sub(r"[^a-z0-9]+","-",title.casefold()).strip("-"),
         "title": title, "country_code": "NZ", "categories": ["business"],
         "official_url": link, "publisher": "New Zealand Government — Business.govt.nz",
