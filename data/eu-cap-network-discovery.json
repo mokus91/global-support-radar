@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-11-19T11:33:00Z",
+  "source_id": "eu-cap-network",
+  "source_url": "https://eu-cap-network.ec.europa.eu/eip-agri-innovation-cooperation-funding/funding-opportunities_en",
+  "purpose": "Featured agriculture and rural innovation funding leads from the official EU CAP Network. Expired dated calls are excluded; all records require manual verification on the original call page.",
+  "records_count": 2,
+  "records": [
+    {
+      "id": "forest-partnership-joint-call-2026",
+      "title": "Forest Partnership joint call 2026",
+      "description": "Proposals are invited under four topics. Deadline: 2 December 2026 (13:00 CET). Check the call page for eligibility and submission rules.",
+      "official_url": "https://forestvalue.org/forest-partnership-joint-call-2026/",
+      "deadline": "2026-12-02",
+      "country_code": "EU",
+      "categories": [
+        "agriculture",
+        "business"
+      ],
+      "source_id": "eu-cap-network",
+      "record_type": "agriculture-funding-discovery-candidate",
+      "verification_status": "unverified",
+      "status": "deadline-in-future-unverified"
+    },
+    {
+      "id": "agroecology-partnership",
+      "title": "Agroecology partnership — upcoming call announcement",
+      "description": "The next call is expected to be published by December 2026. This is an upcoming announcement, not an open call yet.",
+      "official_url": "https://www.agroecologypartnership.eu/",
+      "deadline": null,
+      "country_code": "EU",
+      "categories": [
+        "agriculture"
+      ],
+      "source_id": "eu-cap-network",
+      "record_type": "agriculture-funding-announcement",
+      "verification_status": "unverified",
+      "status": "planned-announcement-not-open"
+    }
+  ]
+}
