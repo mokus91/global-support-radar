@@ -9,6 +9,8 @@ from __future__ import annotations
 import json
 import re
 import ssl
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from html.parser import HTMLParser
@@ -32,9 +34,24 @@ def main():
         context=ssl.create_default_context(cafile=certifi.where())
     except ImportError:
         pass
-    with urllib.request.urlopen(request,timeout=30,context=context) as response:
-        html=response.read(4_000_000).decode(response.headers.get_content_charset() or "utf-8",errors="replace")
-        final_url=response.geturl()
+    last_error=None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request,timeout=30,context=context) as response:
+                html=response.read(4_000_000).decode(response.headers.get_content_charset() or "utf-8",errors="replace")
+                final_url=response.geturl()
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 or attempt == 2:
+                raise
+            last_error=exc
+        except urllib.error.URLError as exc:
+            if attempt == 2:
+                raise
+            last_error=exc
+        time.sleep(5*(attempt+1))
+    else:
+        raise RuntimeError(f"CORFO request failed after retries: {last_error}")
     parser=TextParser();parser.feed(html)
     text=" ".join(parser.parts)
     def require(pattern, label, flags=re.I):
