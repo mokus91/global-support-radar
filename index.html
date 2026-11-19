@@ -275,8 +275,8 @@ async function loadOfficialSources(){
    const portalResponse=await fetch("./data/europe-national-portals.json",{cache:"no-store"});
    if(portalResponse.ok){
     const portalData=await portalResponse.json();
-    const knownUrls=new Set(sources.map(x=>{try{return new URL(x.url).href.replace(/\\/$/,"")}catch(_){return ""}}));
-    nationalPortals=(portalData.records||[]).filter(x=>{try{return !knownUrls.has(new URL(x.url).href.replace(/\\/$/,""))}catch(_){return false}}).map(x=>({
+    const knownUrls=new Set(sources.map(x=>{try{return new URL(x.url).href.replace(/\/$/,"")}catch(_){return ""}}));
+    nationalPortals=(portalData.records||[]).filter(x=>{try{return !knownUrls.has(new URL(x.url).href.replace(/\/$/,""))}catch(_){return false}}).map(x=>({
      id:"eu-national-funds-"+String(x.country_code||"").toLowerCase(),
      country_code:x.country_code,
      name:hu?((x.country_hu||x.country_en)+" – hivatalos EU-alapok portál"):((x.country_en||x.country_code)+" — official EU funds portal"),
