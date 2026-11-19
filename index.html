@@ -300,47 +300,48 @@ async function loadOfficialSources(){
   const matrix=$("coverageMatrix");
   if(matrix){
    try{
-    const [worldResponse,unResponse]=await Promise.all([
+    const [worldResponse,unResponse,feedResponse]=await Promise.all([
      fetch("./data/worldwide-national-support-sources.json",{cache:"no-store"}),
-     fetch("./data/un-national-portals.json",{cache:"no-store"})
+     fetch("./data/un-national-portals.json",{cache:"no-store"}),
+     fetch("./data/feed-status.json",{cache:"no-store"})
     ]);
     const worldData=worldResponse.ok?await worldResponse.json():{records:[]};
     const unData=unResponse.ok?await unResponse.json():{records:[]};
+    const feedData=feedResponse.ok?await feedResponse.json():{feeds:[]};
     const worldRows=Array.isArray(worldData.records)?worldData.records:[];
     const unRows=Array.isArray(unData.records)?unData.records:[];
+    const feedRows=Array.isArray(feedData.feeds)?feedData.feeds:[];
+    const feedCountries=[
+     [/Japan/i,"JP"],[/Chile/i,"CL"],[/Spain/i,"ES"],[/France/i,"FR"],[/New Zealand/i,"NZ"],[/United States|USA/i,"US"],[/United Kingdom|UKRI/i,"GB"],[/Australia/i,"AU"],[/Canada/i,"CA"],[/Hungary/i,"HU"]
+    ];
+    const codeForFeed=feed=>{const name=String(feed.name||"");const found=feedCountries.find(([pattern])=>pattern.test(name));return found?found[1]:null;};
     const byCode=new Map();
-    const add=(code,kind)=>{if(!code||code==="EU")return;const row=byCode.get(code)||{code,world:0,eu:0,historical:0,automated:0};row[kind]++;byCode.set(code,row);};
+    const ensure=code=>{if(!code||code==="EU")return null;let row=byCode.get(code);if(!row){row={code,world:0,eu:0,historical:0,automated:0,failed:0,empty:0,feedNames:[],directory:0};byCode.set(code,row);}return row;};
+    const add=(code,kind)=>{const row=ensure(code);if(row)row[kind]++;};
     worldRows.forEach(x=>add(x.country_code,"world"));
     euPortalRows.forEach(x=>add(x.country_code,"eu"));
     unRows.forEach(x=>add(x.country_code,"historical"));
-    const countryNameFor=code=>{try{return new Intl.DisplayNames([hu?"hu":"en"],{type:"region"}).of(code)||code}catch(_){return code}};
-    const countryNameEnglish=code=>{try{return new Intl.DisplayNames(["en"],{type:"region"}).of(code)||code}catch(_){return code}};
-    const registryByCountry=new Map();
-    sources.forEach(x=>{
-     const explicit=String(x.country_code||"").toUpperCase();
-     if(explicit&&byCode.has(explicit)){
-      const old=registryByCountry.get(explicit)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(explicit,old);
-      return;
-     }
-     const id=String(x.id||"").toLowerCase();
-     const firstCoverage=String(x.coverage||"").split(/[;—–]/)[0].trim().toLowerCase();
-     for(const code of byCode.keys()){
-      if(id.startsWith(code.toLowerCase()+"-")||firstCoverage===countryNameEnglish(code).toLowerCase()){
-       const old=registryByCountry.get(code)||{total:0,automated:0};old.total++;if(String(x.status||"").startsWith("automated"))old.automated++;registryByCountry.set(code,old);
-      }
-     }
+    sources.forEach(x=>{const code=String(x.country_code||"").toUpperCase();const row=ensure(code);if(row)row.directory++;});
+    feedRows.forEach(feed=>{
+     const code=codeForFeed(feed);if(!code)return;
+     const row=ensure(code);if(!row)return;
+     row.feedNames.push(feed.name||feed.file||"Feed");
+     if(feed.status==="checked")row.automated++;
+     else if(feed.status==="checked-empty")row.empty++;
+     else row.failed++;
     });
-    const rows=[...byCode.values()].map(x=>({...x,...(registryByCountry.get(x.code)||{total:0,automated:0})})).sort((a,b)=>(b.automated-a.automated)||(b.world+b.eu-a.world-a.eu)||(a.code.localeCompare(b.code)));
-    const counts={catalogue:rows.filter(x=>x.world+x.eu>0).length,historical:rows.filter(x=>x.historical>0).length,automated:rows.filter(x=>x.automated>0).length};
+    const countryNameFor=code=>{try{return new Intl.DisplayNames([hu?"hu":"en"],{type:"region"}).of(code)||code}catch(_){return code}};
+    const rows=[...byCode.values()].sort((a,b)=>(b.automated-a.automated)||(b.empty-a.empty)||(b.world+b.eu-a.world-a.eu)||(a.code.localeCompare(b.code)));
+    const counts={catalogue:rows.filter(x=>x.world+x.eu>0).length,historical:rows.filter(x=>x.historical>0).length,automated:rows.filter(x=>x.automated>0).length,checkedEmpty:rows.filter(x=>x.empty>0).length,failed:rows.filter(x=>x.failed>0).length};
     matrix.replaceChildren();
     const legend=document.createElement("div");legend.className="coverage-legend";
-    [[counts.catalogue,hu?"Ország hivatalos támogatási portállal":"Countries with official support portals"],[counts.automated,hu?"Ország automatizált adatkapcsolattal":"Countries with automated feeds"],[counts.historical,hu?"Csak történeti ENSZ-portáljelölés is lehet":"Countries with historical UN portal leads"]].forEach(([n,label])=>{const p=document.createElement("span");p.className="coverage-pill";p.textContent=n+" · "+label;legend.append(p);});
+    [[counts.catalogue,hu?"Ország hivatalos támogatási portállal":"Countries with official support portals"],[counts.automated,hu?"Sikeresen lekérdezett adatfolyam":"Successfully checked feeds"],[counts.checkedEmpty,hu?"Lekérdezett, de üres adatfolyam":"Checked feeds with no records"],[counts.failed,hu?"Hibás vagy átmenetileg elérhetetlen adatfolyam":"Failed or temporarily unavailable feeds"],[counts.historical,hu?"Történeti ENSZ-portáljelölés":"Historical UN portal leads"]].forEach(([n,label])=>{const p=document.createElement("span");p.className="coverage-pill";p.textContent=n+" · "+label;legend.append(p);});
     const filter=document.createElement("input");filter.type="search";filter.className="search";filter.style.cssText="width:100%;max-width:420px;margin:8px 0 12px;padding:11px 13px";filter.placeholder=hu?"Ország keresése a nyilvántartott források között…":"Search countries in the registered source list…";filter.setAttribute("aria-label",filter.placeholder);
-    const scope=document.createElement("p");scope.className="notice";scope.textContent=hu?"A táblázat az adatbázisban szereplő országokat mutatja, nem mind a 249 országot és területet. Ha egy ország hiányzik, ahhoz még nincs felvett lefedettségi rekord; ez nem bizonyítja, hogy ott nincs támogatás.":"This table shows countries present in the source datasets, not all 249 countries and territories. If a country is absent, no coverage record has been registered yet; this does not mean that no support exists there.";
+    const scope=document.createElement("p");scope.className="notice";scope.textContent=hu?"A táblázat a nyilvántartott forrásrekordok országait mutatja, nem mind a 249 országot és területet. Az adatfolyam státusza a legutóbbi automatizált ellenőrzés eredménye; az „ellenőrizve” nem jelent nyitott támogatást vagy jogosultságot. Utolsó adatfolyam-ellenőrzés: "+String(feedData.checked_at||"ismeretlen").replace("T"," ").slice(0,16)+" UTC.":"The table shows countries represented in registered source records, not all 249 countries and territories. Feed status reflects the latest automated check; “checked” does not mean a grant is open or an applicant is eligible. Last feed check: "+String(feedData.checked_at||"unknown").replace("T"," ").slice(0,16)+" UTC.";
     const table=document.createElement("table"),thead=document.createElement("thead"),tr=document.createElement("tr");
-    (hu?["Ország","Hivatalos katalógus","Automatizált adatfolyam","Történeti portáljelölés","Értékelés"]:["Country","Official catalogues","Automated feeds","Historical portal lead","Assessment"]).forEach(label=>{const th=document.createElement("th");th.textContent=label;tr.append(th);});thead.append(tr);table.append(thead);
+    (hu?["Ország","Hivatalos portálkatalógus","Sikeres adatfolyam","Üres adatfolyam","Hibás / nem elérhető","Történeti portáljelölés","Állapot"]:["Country","Official portal catalogues","Successful feeds","Empty feeds","Failed / unavailable","Historical portal lead","Assessment"]).forEach(label=>{const th=document.createElement("th");th.textContent=label;tr.append(th);});thead.append(tr);table.append(thead);
     const tbody=document.createElement("tbody");
-    const drawRows=()=>{tbody.replaceChildren();const term=filter.value.trim().toLocaleLowerCase();const visible=rows.filter(x=>countryNameFor(x.code).toLocaleLowerCase().includes(term)||x.code.toLowerCase().includes(term));visible.forEach(x=>{const tr=document.createElement("tr");const values=[countryNameFor(x.code),x.world+x.eu,x.automated,x.historical,x.automated>0?(hu?"Automatizált kapcsolat":"Automated feed"):x.world+x.eu>0?(hu?"Hivatalos portál":"Official portal"):hu?"Történeti jelölés – ellenőrizendő":"Historical lead — verify"];values.forEach(v=>{const td=document.createElement("td");td.textContent=String(v);tr.append(td);});tbody.append(tr);});if(!visible.length){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=5;td.textContent=hu?"Nincs találat a nyilvántartott országok között.":"No matching country in the registered source list.";tr.append(td);tbody.append(tr);}};
+    const drawRows=()=>{tbody.replaceChildren();const term=filter.value.trim().toLocaleLowerCase();const visible=rows.filter(x=>countryNameFor(x.code).toLocaleLowerCase().includes(term)||x.code.toLowerCase().includes(term));visible.forEach(x=>{const tr=document.createElement("tr");const assessment=x.automated>0?(hu?"Adatfolyam lekérdezve":"Feed checked"):x.failed>0?(hu?"Adatfolyamhiba":"Feed error"):x.empty>0?(hu?"Lekérdezve · nincs rekord":"Checked · no records"):x.world+x.eu>0?(hu?"Hivatalos portál":"Official portal"):x.historical>0?(hu?"Történeti jelölés – ellenőrizendő":"Historical lead — verify"):(hu?"Forrásjegyzék":"Source directory");const values=[countryNameFor(x.code),x.world+x.eu,x.automated,x.empty,x.failed,x.historical,assessment];values.forEach((v,index)=>{const td=document.createElement("td");td.textContent=String(v);if(index===6&&x.feedNames.length)td.title=x.feedNames.join("; ");tr.append(td);});tbody.append(tr);});if(!visible.length){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=7;td.textContent=hu?"Nincs találat a nyilvántartott országok között.":"No matching country in the registered source list.";tr.append(td);tbody.append(tr);}};
     filter.addEventListener("input",drawRows);drawRows();table.append(tbody);matrix.append(legend,scope,filter,table);
    }catch(matrixError){matrix.textContent=hu?"Az országonkénti lefedettségi mátrix most nem érhető el.":"Country coverage matrix is temporarily unavailable.";}
   }
@@ -739,7 +740,6 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
  byId("lang")?.addEventListener("change",localize);
  localize();
 })();
-</script>
 </script>
 
 <script id="global-country-expansion">
