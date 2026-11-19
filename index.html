@@ -644,6 +644,7 @@ function exportSavedCalendar(){
  a.href=url;a.download="global-support-radar-hataridok.ics";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
 function renderCards(){
+ const savedCount=liveListings.reduce((count,row)=>count+(getSaved().has(savedId(row))?1:0),0);$("savedToggle").textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+savedCount+")";$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items are stored only on this device.";
  const t=translations[lang],q=$("q").value.trim().toLowerCase(),country=$("country").value,saved=getSaved(),applicantType=$("applicantType")?.value||"",statusFilter=$("statusFilter")?.value||"",sortOrder=$("sortOrder")?.value||"deadline";
  const rows=liveListings.filter(row=>{
   const category=inferCategory(row);
