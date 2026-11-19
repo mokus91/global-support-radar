@@ -534,7 +534,7 @@ function classifyOpportunity(row){
  const expired=!noDeadline&&deadline<Date.now();
  const closed=/\b(closed|expired|cancelled|canceled|withdrawn|terminated|suspended|paused)\b|lez[aá]rt|megsz[uű]nt|visszavont|felf[uü]ggeszt/i.test(raw);
  if(closed||expired)return {key:"closed",label:lang==="hu"?"Lezárt vagy lejárt":"Closed or expired"};
- const verifiedOpen=["official_api_live_acceptance_candidate","official-page-open-status-and-amount-checked","official-api-window-current"].includes(verification);
+ const verifiedOpen=["official_api_live_acceptance_candidate","official_page_open_status_and_amount_checked","official-page-open-status-and-amount-checked","official-api-window-current"].includes(verification);
  if(verifiedOpen)return {key:"verified-open",label:lang==="hu"?"Nyitott időablak – hivatalos adat alapján":"Open window – official source data"};
  const sourceClaimsOpen=/\b(open|current|accepting|active)\b|nyitott|akt[ií]v/i.test(raw);
  if(sourceClaimsOpen)return {key:"source-listed-open",label:lang==="hu"?"A forrás nyitottként jelöli – ellenőrizendő":"Source lists as open – verify"};
