@@ -730,6 +730,17 @@
       "access": "Official EU and national public registers",
       "status": "discovery-source",
       "notes": "These registers describe aid already awarded/reported; they are not open calls or application portals. Use to identify aid instruments, beneficiaries and awarding authorities."
+    },
+    {
+      "id": "eu-cap-network-funding-opportunities",
+      "name": "EU CAP Network — Funding opportunities",
+      "publisher": "European Commission / EU CAP Network",
+      "url": "https://eu-cap-network.ec.europa.eu/eip-agri-innovation-cooperation-funding/funding-opportunities_en",
+      "coverage": "EU-level agriculture, forestry, rural innovation and agri-food partnership funding calls and announcements",
+      "kind": "automated-agriculture-call-discovery",
+      "access": "Official public webpage monitored daily; extracted records remain unverified leads",
+      "status": "discovery-source",
+      "notes": "Expired dated calls are excluded where a deadline is parsed. Planned announcements are labelled as not yet open. Every candidate requires confirmation on its original call page."
     }
   ],
   "publication_requirements": [
