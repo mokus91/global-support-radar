@@ -7,7 +7,9 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 ## What is live now
 
 - Responsive website with Hungarian and English interface.
-- Country selector with ISO country codes. Selecting a country does **not** mean that every country's programmes are automatically indexed.
+- Country selector covering the ISO country-code list, localized into Hungarian or English.
+- Worldwide support finder for every country selection, linking to the UN national e-government portal directory (193 UN Member States), ILO social-protection country profiles and the World Bank ASPIRE database (about 140 countries).
+- The worldwide finder is a global official-source navigator, not a claim that individual benefit programmes are already indexed or that live automated feeds exist for every country.
 - Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
 - Main search currently reads discovery records from three working official data connections:
   - European Commission Funding & Tenders Portal (EU)
@@ -18,13 +20,13 @@ A mobile-friendly Hungarian/English directory and discovery search for official 
 - Curated Hungarian household-support directory with eight official information entries, including direct GYES and GYET pages.
 - Browser-only Hungarian support guide: users can optionally select broad household circumstances to see which official benefit pages may be relevant. Answers are processed locally and are not sent to the server or stored. It distinguishes central benefits from municipality-specific assistance and does not claim eligibility or current availability.
 - Automatic discovery of NKFIH grant-news items from its official RSS feed. These remain unverified news candidates, not confirmed open calls.
-- 52 entries in the official source registry, with country/subject coverage notes.
+- 55 entries in the official source registry, with country/subject coverage notes.
 - Daily automated refresh scheduled for 04:17 UTC; manual GitHub Actions run is also configured.
 - Official source links are checked against allowed hostnames before being displayed.
 
 ## Important coverage and verification limits
 
-This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant/benefit feed. A curated household-support directory links to eight official information pages, but does not calculate eligibility or assert that a benefit is currently open. Municipal assistance varies by local decree. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
+This is a working MVP, **not yet a complete worldwide grants database**. The country selector and worldwide source navigator can be used globally, but they do not imply a complete country-by-country benefits catalogue. The country selector is broader than the current automated data coverage. The live automated search is currently concentrated on EU, US and UK records. The global finder provides official navigation resources for other countries rather than inventing local programme listings. The Canadian CIHR RSS adapter is kept as a separate source panel rather than part of the main search; the latest successful retrieval returned zero items, which does not mean that Canada has no funding opportunities. Hungarian pages are mostly official starting points rather than a complete automated live grant/benefit feed. A curated household-support directory links to eight official information pages, but does not calculate eligibility or assert that a benefit is currently open. Municipal assistance varies by local decree. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open. The NKFIH RSS adapter adds research/innovation grant-news candidates, but does not verify whether an item is still open.
 
 Automatically discovered records are labelled **unverified candidates**. They are not a promise that an opportunity is open, that its deadline is current, or that a particular visitor is eligible. Some records have no deadline. Always open the official notice and confirm eligibility, dates, amounts and application procedure with the publisher.
 
@@ -35,7 +37,8 @@ The site does not submit applications, make eligibility decisions, collect sensi
 ## Repository layout
 
 - `index.html` — responsive frontend and search/filter logic.
-- `data/source-registry.json` — official source directory.
+- `data/source-registry.json` — official source directory (55 entries).
+- `data/global-support-directory.json` — worldwide official government portal and social-protection reference directories.
 - `data/hu-household-support.json` — curated Hungarian household-support information directory (not a live eligibility feed).
 - Browser-only support guide in `index.html` — preliminary suggestions only; no personal answers are transmitted or saved.
 - `data/programme.schema.json` — normalized record schema and verification states.
