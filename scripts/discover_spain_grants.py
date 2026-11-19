@@ -16,6 +16,27 @@ def get_json(path,params):
         data=json.loads(r.read().decode("utf-8"))
     if not isinstance(data,dict): raise RuntimeError("Unexpected SNPSAP response")
     return data
+def numeric_budget(value):
+    if isinstance(value, bool) or value is None:
+        return None
+    if isinstance(value, (int, float)):
+        return value if value >= 0 else None
+    if isinstance(value, str):
+        raw=value.strip().replace(" ", "")
+        if not raw:
+            return None
+        # Spanish-formatted values commonly use dots for thousands and comma decimals.
+        if "," in raw:
+            raw=raw.replace(".", "").replace(",", ".")
+        else:
+            raw=raw.replace(".", "")
+        try:
+            number=float(raw)
+            return number if number >= 0 else None
+        except ValueError:
+            return None
+    return None
+
 def categories(d):
     text=" ".join([str(d.get("descripcion") or ""),str(d.get("descripcionFinalidad") or ""),
       " ".join(x.get("descripcion","") for x in d.get("sectores",[]) if isinstance(x,dict)),
@@ -51,13 +72,13 @@ def main():
             org=d.get("organo") if isinstance(d.get("organo"),dict) else {}
             regions=[x.get("descripcion") for x in d.get("regiones",[]) if isinstance(x,dict) and x.get("descripcion")]
             beneficiaries=[x.get("descripcion") for x in d.get("tiposBeneficiarios",[]) if isinstance(x,dict) and x.get("descripcion")]
-            budget=d.get("presupuestoTotal")
+            budget_raw=d.get("presupuestoTotal")\n            budget=numeric_budget(budget_raw)
             records.append({"id":code,"country_code":"ES","title_original":title,"coofficial_title":d.get("descripcionLeng"),
               "publisher":"Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
               "granting_authority":" · ".join(x for x in [org.get("nivel1"),org.get("nivel2"),org.get("nivel3")] if x),
               "regions":regions,"eligible_beneficiaries_original":beneficiaries,"eligibility_status":"beneficiary_types_listed_in_official_api" if beneficiaries else "not_specified_in_api","purpose_original":d.get("descripcionFinalidad"),
-              "start_date":start,"deadline":end,"indefinite_open":indefinite,"total_call_budget":budget,
-              "amount_currency":"EUR" if budget is not None else None,"amount_type":"total_call_budget_not_individual_award" if budget is not None else None,"amount_status":"published" if budget is not None else "not_published","categories":categories(d),
+              "start_date":start,"deadline":end,"indefinite_open":indefinite,"total_call_budget":budget,"total_call_budget_original":budget_raw,
+              "amount_currency":"EUR" if budget is not None else None,"amount_type":"total_call_budget_not_individual_award" if budget is not None else None,"amount_status":"published" if budget is not None else "source_field_untyped" if budget_raw not in (None, "") else "not_published","categories":categories(d),
               "official_url":f"{PORTAL}/convocatoria/{code}","application_url":d.get("sedeElectronica"),
               "legal_bases_url":d.get("urlBasesReguladoras"),"status":"official-api-window-current",
               "eligibility_verified":False,"amount_verified":False,"source_api":BASE,

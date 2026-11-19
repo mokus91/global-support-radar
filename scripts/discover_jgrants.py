@@ -88,7 +88,7 @@ def main():
                     "use_purpose_original": item.get("use_purpose", ""),
                     "industry_original": item.get("industry", ""),
                     "target_area_original": item.get("target_area_search", ""),
-                    "maximum_amount_jpy": maximum_amount_number if maximum_amount_number and maximum_amount_number > 0 else None,
+                    "maximum_amount_jpy": maximum_amount_number if maximum_amount_number and maximum_amount_number > 0 else None,\n                    "amount_maximum": maximum_amount_number if maximum_amount_number and maximum_amount_number > 0 else None,
                     "amount_currency": "JPY" if maximum_amount_number and maximum_amount_number > 0 else None,
                     "amount_type": "maximum_subsidy_limit" if maximum_amount_number and maximum_amount_number > 0 else None,
                     "amount_status": "published" if maximum_amount_number and maximum_amount_number > 0 else "not_published_or_zero_in_api",
