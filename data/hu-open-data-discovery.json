@@ -1,39 +1,106 @@
 {
-  "generated_at": "2026-11-19T10:57:41.801875+00:00",
-  "source": "https://t.data.gov.hu/",
-  "api": "https://t.data.gov.hu/api/3/action/package_search",
+  "generated_at": "2026-11-19T10:59:40.835446+00:00",
+  "source": "https://opendata.gov.hu/",
+  "api": "https://opendata.gov.hu/api/3/action/package_search",
   "record_type": "open-data-dataset-discovery-not-grant-listings",
   "query_count": 7,
-  "result_count": 0,
-  "errors": [
+  "result_count": 5,
+  "errors": [],
+  "records": [
     {
-      "query": "támogatás",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+      "id": "6470564c-bd50-42b6-b794-0accd9496dd3",
+      "title": "Települési támogatás",
+      "name": "telepulesi-tamogatas",
+      "url": null,
+      "metadata_created": "2022-07-06T09:36:25.254940",
+      "metadata_modified": "2022-07-06T09:36:25.254945",
+      "organization": "Központi Statisztikai Hivatal",
+      "license_id": null,
+      "notes": "A táblázat települési támogatásra vonatkozó adatokat tartalmazza",
+      "tags": [
+        "szociális segély",
+        "szociálpolitika",
+        "társadalmi helyzet"
+      ],
+      "source_id": "hu-national-open-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
     },
     {
-      "query": "pályázat",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+      "id": "b5def0eb-51aa-4e5a-b725-bfdd39b8bd3e",
+      "title": "Egyéb szociális támogatás",
+      "name": "-egyeb-szocialis-tamogatas",
+      "url": null,
+      "metadata_created": "2022-07-06T09:39:06.500607",
+      "metadata_modified": "2022-07-06T09:39:06.500612",
+      "organization": "Központi Statisztikai Hivatal",
+      "license_id": null,
+      "notes": "A táblázat az egyéb szociális támogatásokat tartalmazza",
+      "tags": [
+        "család",
+        "szociális segély",
+        "szociálpolitika"
+      ],
+      "source_id": "hu-national-open-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
     },
     {
-      "query": "agrártámogatás",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+      "id": "e5f745c0-7af3-4395-a032-42367cf485fb",
+      "title": "Adományok-Támogatások",
+      "name": "4baee0dc-1b6b-4153-911f-015d3b2af07e",
+      "url": null,
+      "metadata_created": "2022-04-28T08:55:29.171657",
+      "metadata_modified": "2022-06-13T11:53:56.339667",
+      "organization": "Hungary Helps Ügynökség",
+      "license_id": "notspecified",
+      "notes": "A Hungary Helps Ügynökség által bonyolított adományozó ás támogató folyamatok összefoglaló eredményeit tartalmazza\n",
+      "tags": [
+        "gazdasági támogatás",
+        "regionális politika",
+        "segélypolitika"
+      ],
+      "source_id": "hu-national-open-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
     },
     {
-      "query": "lakhatási támogatás",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+      "id": "e58cdf8e-30ed-4d97-b073-3504db9e4454",
+      "title": "Nevelés-oktatási támogatások összesítő adatai",
+      "name": "eef221e4-cd11-4b2e-af6b-0cac9f7d9e81",
+      "url": null,
+      "metadata_created": "2022-04-28T08:50:04.188930",
+      "metadata_modified": "2022-06-13T11:53:56.473060",
+      "organization": "Bethlen Gábor Alapkezelő",
+      "license_id": "notspecified",
+      "notes": "A Betlen Gábor Alapkezelő Zrt. szervezésében lebonyolított határokon átnyúlú nevelési és oktatási támogatások összesítő adatait tartalmazza\n",
+      "tags": [
+        "gazdasági támogatás",
+        "regionális politika",
+        "segélypolitika"
+      ],
+      "source_id": "hu-national-open-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
     },
     {
-      "query": "vállalkozásfejlesztés",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
-    },
-    {
-      "query": "ösztöndíj",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
-    },
-    {
-      "query": "energiahatékonyság",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+      "id": "7fd07c13-2a35-4808-a8ac-2d720d860bf8",
+      "title": "Nemzeti Újrakezdés Program eredményei",
+      "name": "f47dbc23-1dfd-44ed-bccc-2d93be86ae5b",
+      "url": null,
+      "metadata_created": "2022-04-28T08:42:53.203507",
+      "metadata_modified": "2022-06-13T11:53:56.627736",
+      "organization": "Bethlen Gábor Alapkezelő",
+      "license_id": "notspecified",
+      "notes": "A Betlen Gábor Alapkezelő Zrt. szervezésében lebonyolított határokon átnyúlú Nemzeti Újrakezdési Program eredményeit tartalmazza",
+      "tags": [
+        "gazdasági támogatás",
+        "regionális politika",
+        "segélypolitika"
+      ],
+      "source_id": "hu-national-open-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
     }
-  ],
-  "records": []
+  ]
 }

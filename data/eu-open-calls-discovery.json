@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T10:56:48.072778+00:00",
+  "generated_at": "2026-11-19T10:58:48.821159+00:00",
   "source_id": "eu-funding",
   "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
   "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters, with past closing dates excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
-  "expired_deadline_records_excluded": 588,
+  "expired_deadline_records_excluded": 605,
   "status_filters": [
     "31094501",
     "31094502"
@@ -24,7 +24,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068871+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817919+00:00"
     },
     {
       "id": "13328COMPETITIVE_CALLen",
@@ -40,7 +40,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068889+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817938+00:00"
     },
     {
       "id": "12843COMPETITIVE_CALLen",
@@ -56,7 +56,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068899+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817947+00:00"
     },
     {
       "id": "13327COMPETITIVE_CALLen",
@@ -72,7 +72,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068912+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817957+00:00"
     },
     {
       "id": "11702COMPETITIVE_CALLen",
@@ -88,7 +88,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068918+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817962+00:00"
     },
     {
       "id": "11674COMPETITIVE_CALLen",
@@ -104,7 +104,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068926+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817968+00:00"
     },
     {
       "id": "13326COMPETITIVE_CALLen",
@@ -120,7 +120,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068933+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817975+00:00"
     },
     {
       "id": "12743COMPETITIVE_CALLen",
@@ -136,7 +136,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068941+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817981+00:00"
     },
     {
       "id": "12904COMPETITIVE_CALLen",
@@ -152,7 +152,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068947+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817987+00:00"
     },
     {
       "id": "12905COMPETITIVE_CALLen",
@@ -168,7 +168,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068953+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.817992+00:00"
     },
     {
       "id": "10941COMPETITIVE_CALLen",
@@ -184,7 +184,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068965+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818000+00:00"
     },
     {
       "id": "16061COMPETITIVE_CALLen",
@@ -200,7 +200,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068973+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818008+00:00"
     },
     {
       "id": "13301COMPETITIVE_CALLen",
@@ -216,7 +216,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068978+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818013+00:00"
     },
     {
       "id": "15982COMPETITIVE_CALLen",
@@ -232,7 +232,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068984+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818019+00:00"
     },
     {
       "id": "15661COMPETITIVE_CALLen",
@@ -248,7 +248,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068991+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818025+00:00"
     },
     {
       "id": "16101COMPETITIVE_CALLen",
@@ -264,7 +264,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.068996+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818029+00:00"
     },
     {
       "id": "16041COMPETITIVE_CALLen",
@@ -280,7 +280,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069002+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818034+00:00"
     },
     {
       "id": "16241COMPETITIVE_CALLen",
@@ -296,7 +296,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069008+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818038+00:00"
     },
     {
       "id": "16202COMPETITIVE_CALLen",
@@ -312,7 +312,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069016+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818043+00:00"
     },
     {
       "id": "16501COMPETITIVE_CALLen",
@@ -328,7 +328,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069022+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818048+00:00"
     },
     {
       "id": "16121COMPETITIVE_CALLen",
@@ -344,7 +344,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069029+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818052+00:00"
     },
     {
       "id": "15985COMPETITIVE_CALLen",
@@ -360,7 +360,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069034+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818059+00:00"
     },
     {
       "id": "15882COMPETITIVE_CALLen",
@@ -376,7 +376,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069039+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818064+00:00"
     },
     {
       "id": "15386COMPETITIVE_CALLen",
@@ -392,7 +392,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069045+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818070+00:00"
     },
     {
       "id": "16301COMPETITIVE_CALLen",
@@ -408,7 +408,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069050+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818074+00:00"
     },
     {
       "id": "16221COMPETITIVE_CALLen",
@@ -424,7 +424,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069055+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818079+00:00"
     },
     {
       "id": "16242COMPETITIVE_CALLen",
@@ -440,7 +440,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069060+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818084+00:00"
     },
     {
       "id": "16481COMPETITIVE_CALLen",
@@ -456,7 +456,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069066+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818089+00:00"
     },
     {
       "id": "16281COMPETITIVE_CALLen",
@@ -472,7 +472,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069072+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818094+00:00"
     },
     {
       "id": "16381COMPETITIVE_CALLen",
@@ -488,7 +488,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069077+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818098+00:00"
     },
     {
       "id": "16641COMPETITIVE_CALLen",
@@ -504,7 +504,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069084+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818103+00:00"
     },
     {
       "id": "16601COMPETITIVE_CALLen",
@@ -520,7 +520,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069090+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818109+00:00"
     },
     {
       "id": "16181COMPETITIVE_CALLen",
@@ -536,7 +536,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069097+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818116+00:00"
     },
     {
       "id": "16201COMPETITIVE_CALLen",
@@ -552,7 +552,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069102+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818121+00:00"
     },
     {
       "id": "16482COMPETITIVE_CALLen",
@@ -568,7 +568,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069107+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818125+00:00"
     },
     {
       "id": "15082COMPETITIVE_CALLen",
@@ -584,7 +584,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069113+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818132+00:00"
     },
     {
       "id": "15083COMPETITIVE_CALLen",
@@ -600,7 +600,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069118+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818138+00:00"
     },
     {
       "id": "15342COMPETITIVE_CALLen",
@@ -616,7 +616,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069123+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818142+00:00"
     },
     {
       "id": "14943COMPETITIVE_CALLen",
@@ -632,7 +632,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069133+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818151+00:00"
     },
     {
       "id": "15569COMPETITIVE_CALLen",
@@ -648,7 +648,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069140+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818157+00:00"
     },
     {
       "id": "13903COMPETITIVE_CALLen",
@@ -664,7 +664,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069153+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818168+00:00"
     },
     {
       "id": "15803COMPETITIVE_CALLen",
@@ -680,7 +680,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069159+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818174+00:00"
     },
     {
       "id": "14981COMPETITIVE_CALLen",
@@ -696,7 +696,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069166+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818180+00:00"
     },
     {
       "id": "15482COMPETITIVE_CALLen",
@@ -712,7 +712,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069175+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818187+00:00"
     },
     {
       "id": "15323COMPETITIVE_CALLen",
@@ -728,7 +728,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069184+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818194+00:00"
     },
     {
       "id": "50130080TOPICSen",
@@ -744,7 +744,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069190+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818199+00:00"
     },
     {
       "id": "50129926TOPICSen",
@@ -760,7 +760,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069196+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818204+00:00"
     },
     {
       "id": "50130058TOPICSen",
@@ -776,7 +776,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069202+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818209+00:00"
     },
     {
       "id": "51734636TOPICSen",
@@ -792,7 +792,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069208+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818214+00:00"
     },
     {
       "id": "50129862TOPICSen",
@@ -808,7 +808,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069215+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818220+00:00"
     },
     {
       "id": "50129970TOPICSen",
@@ -824,7 +824,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069222+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818225+00:00"
     },
     {
       "id": "50130350TOPICSen",
@@ -840,7 +840,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069230+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818234+00:00"
     },
     {
       "id": "50130105TOPICSen",
@@ -856,7 +856,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069235+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818239+00:00"
     },
     {
       "id": "50129948TOPICSen",
@@ -872,7 +872,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069241+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818244+00:00"
     },
     {
       "id": "50129841TOPICSen",
@@ -888,7 +888,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069247+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818249+00:00"
     },
     {
       "id": "50127991TOPICSen",
@@ -904,7 +904,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069252+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818253+00:00"
     },
     {
       "id": "50127970TOPICSen",
@@ -920,7 +920,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069258+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818259+00:00"
     },
     {
       "id": "50129698TOPICSen",
@@ -936,7 +936,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069266+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818264+00:00"
     },
     {
       "id": "50130465TOPICSen",
@@ -952,7 +952,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069272+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818269+00:00"
     },
     {
       "id": "50130209TOPICSen",
@@ -968,7 +968,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069277+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818274+00:00"
     },
     {
       "id": "50129793TOPICSen",
@@ -984,7 +984,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069284+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818279+00:00"
     },
     {
       "id": "50129654TOPICSen",
@@ -1000,7 +1000,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069290+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818285+00:00"
     },
     {
       "id": "50133091TOPICSen",
@@ -1016,7 +1016,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069295+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818290+00:00"
     },
     {
       "id": "50129307TOPICSen",
@@ -1032,7 +1032,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069301+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818295+00:00"
     },
     {
       "id": "50129191TOPICSen",
@@ -1048,7 +1048,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069306+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818299+00:00"
     },
     {
       "id": "50129330TOPICSen",
@@ -1064,7 +1064,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069312+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818304+00:00"
     },
     {
       "id": "50129721TOPICSen",
@@ -1080,7 +1080,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069317+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818309+00:00"
     },
     {
       "id": "50130325TOPICSen",
@@ -1096,7 +1096,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069322+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818314+00:00"
     },
     {
       "id": "50130277TOPICSen",
@@ -1112,7 +1112,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069328+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818320+00:00"
     },
     {
       "id": "50129484TOPICSen",
@@ -1128,7 +1128,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069333+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818325+00:00"
     },
     {
       "id": "50129216TOPICSen",
@@ -1144,7 +1144,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069340+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818329+00:00"
     },
     {
       "id": "50129441TOPICSen",
@@ -1160,7 +1160,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069346+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818335+00:00"
     },
     {
       "id": "50129464TOPICSen",
@@ -1176,7 +1176,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069352+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818340+00:00"
     },
     {
       "id": "50129746TOPICSen",
@@ -1192,7 +1192,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069357+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818345+00:00"
     },
     {
       "id": "50161257TOPICSen",
@@ -1208,7 +1208,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069363+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818358+00:00"
     },
     {
       "id": "50128100TOPICSen",
@@ -1224,7 +1224,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069368+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818363+00:00"
     },
     {
       "id": "50128150TOPICSen",
@@ -1240,7 +1240,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069374+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818368+00:00"
     },
     {
       "id": "50161057TOPICSen",
@@ -1256,7 +1256,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069392+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818373+00:00"
     },
     {
       "id": "50161078TOPICSen",
@@ -1272,7 +1272,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069399+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818378+00:00"
     },
     {
       "id": "50131280TOPICSen",
@@ -1288,7 +1288,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069405+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818383+00:00"
     },
     {
       "id": "52617926TOPICSen",
@@ -1304,7 +1304,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069413+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818389+00:00"
     },
     {
       "id": "50127691TOPICSen",
@@ -1320,7 +1320,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069419+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818395+00:00"
     },
     {
       "id": "52519621TOPICSen",
@@ -1336,7 +1336,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069424+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818400+00:00"
     },
     {
       "id": "52519580TOPICSen",
@@ -1352,7 +1352,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069432+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818404+00:00"
     },
     {
       "id": "52617949TOPICSen",
@@ -1368,7 +1368,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069438+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818409+00:00"
     },
     {
       "id": "50127765TOPICSen",
@@ -1384,7 +1384,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069443+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818415+00:00"
     },
     {
       "id": "52657951TOPICSen",
@@ -1400,7 +1400,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069449+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818421+00:00"
     },
     {
       "id": "52395722TOPICSen",
@@ -1416,7 +1416,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069454+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818426+00:00"
     },
     {
       "id": "51665394TOPICSen",
@@ -1432,7 +1432,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069460+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818432+00:00"
     },
     {
       "id": "52252040TOPICSen",
@@ -1448,7 +1448,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069465+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818437+00:00"
     },
     {
       "id": "50148703TOPICSen",
@@ -1464,7 +1464,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069474+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818443+00:00"
     },
     {
       "id": "51426227TOPICSen",
@@ -1480,7 +1480,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069480+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818450+00:00"
     },
     {
       "id": "50148390TOPICSen",
@@ -1496,7 +1496,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069485+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818454+00:00"
     },
     {
       "id": "50148234TOPICSen",
@@ -1512,7 +1512,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069493+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818461+00:00"
     },
     {
       "id": "50147687TOPICSen",
@@ -1528,7 +1528,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069498+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818466+00:00"
     },
     {
       "id": "50147893TOPICSen",
@@ -1544,7 +1544,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069504+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818471+00:00"
     },
     {
       "id": "51196323TOPICSen",
@@ -1560,7 +1560,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069509+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818476+00:00"
     },
     {
       "id": "50147803TOPICSen",
@@ -1576,7 +1576,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069515+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818480+00:00"
     },
     {
       "id": "50147778TOPICSen",
@@ -1592,7 +1592,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069520+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818485+00:00"
     },
     {
       "id": "50147875TOPICSen",
@@ -1608,7 +1608,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069526+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818489+00:00"
     },
     {
       "id": "50147711TOPICSen",
@@ -1624,7 +1624,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069534+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818494+00:00"
     },
     {
       "id": "52769227TOPICSen",
@@ -1640,7 +1640,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069540+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818500+00:00"
     },
     {
       "id": "50147543TOPICSen",
@@ -1656,7 +1656,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069545+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818504+00:00"
     },
     {
       "id": "50149561TOPICSen",
@@ -1672,7 +1672,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069551+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818508+00:00"
     },
     {
       "id": "50149211TOPICSen",
@@ -1688,7 +1688,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069556+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818514+00:00"
     },
     {
       "id": "50149329TOPICSen",
@@ -1704,7 +1704,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069562+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818519+00:00"
     },
     {
       "id": "50149852TOPICSen",
@@ -1720,7 +1720,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069568+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818523+00:00"
     },
     {
       "id": "50150122TOPICSen",
@@ -1736,7 +1736,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069573+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818528+00:00"
     },
     {
       "id": "50149084TOPICSen",
@@ -1752,7 +1752,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069581+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818532+00:00"
     },
     {
       "id": "50149248TOPICSen",
@@ -1768,7 +1768,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069587+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818537+00:00"
     },
     {
       "id": "50149891TOPICSen",
@@ -1784,7 +1784,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069594+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818542+00:00"
     },
     {
       "id": "50149486TOPICSen",
@@ -1800,7 +1800,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069601+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818548+00:00"
     },
     {
       "id": "50149693TOPICSen",
@@ -1816,7 +1816,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069607+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818552+00:00"
     },
     {
       "id": "50148548TOPICSen",
@@ -1832,7 +1832,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069612+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818557+00:00"
     },
     {
       "id": "50147519TOPICSen",
@@ -1848,7 +1848,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069619+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818561+00:00"
     },
     {
       "id": "50147567TOPICSen",
@@ -1864,7 +1864,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069625+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818566+00:00"
     },
     {
       "id": "50147590TOPICSen",
@@ -1880,7 +1880,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069630+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818570+00:00"
     },
     {
       "id": "50312599TOPICSen",
@@ -1896,7 +1896,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069636+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818574+00:00"
     },
     {
       "id": "50148490TOPICSen",
@@ -1912,7 +1912,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069642+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818579+00:00"
     },
     {
       "id": "50148757TOPICSen",
@@ -1928,7 +1928,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069648+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818585+00:00"
     },
     {
       "id": "50148280TOPICSen",
@@ -1944,7 +1944,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069655+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818589+00:00"
     },
     {
       "id": "50148438TOPICSen",
@@ -1960,7 +1960,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069661+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818595+00:00"
     },
     {
       "id": "50148180TOPICSen",
@@ -1976,7 +1976,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069666+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818600+00:00"
     },
     {
       "id": "50148317TOPICSen",
@@ -1992,7 +1992,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069672+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818604+00:00"
     },
     {
       "id": "50148353TOPICSen",
@@ -2008,7 +2008,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069678+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818608+00:00"
     },
     {
       "id": "50149025TOPICSen",
@@ -2024,7 +2024,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069684+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818612+00:00"
     },
     {
       "id": "50149059TOPICSen",
@@ -2040,7 +2040,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069689+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818616+00:00"
     },
     {
       "id": "50312687TOPICSen",
@@ -2056,7 +2056,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069695+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818620+00:00"
     },
     {
       "id": "50312783TOPICSen",
@@ -2072,7 +2072,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069700+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818624+00:00"
     },
     {
       "id": "50149284TOPICSen",
@@ -2088,7 +2088,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069706+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818629+00:00"
     },
     {
       "id": "50149121TOPICSen",
@@ -2104,7 +2104,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069713+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818633+00:00"
     },
     {
       "id": "50149265TOPICSen",
@@ -2120,7 +2120,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069719+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818638+00:00"
     },
     {
       "id": "50312892TOPICSen",
@@ -2136,7 +2136,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069724+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818642+00:00"
     },
     {
       "id": "50148919TOPICSen",
@@ -2152,7 +2152,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069729+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818647+00:00"
     },
     {
       "id": "50149001TOPICSen",
@@ -2168,7 +2168,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069735+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818651+00:00"
     },
     {
       "id": "50312660TOPICSen",
@@ -2184,7 +2184,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069741+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818656+00:00"
     },
     {
       "id": "50312746TOPICSen",
@@ -2200,7 +2200,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069746+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818662+00:00"
     },
     {
       "id": "50312640TOPICSen",
@@ -2216,7 +2216,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069751+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818666+00:00"
     },
     {
       "id": "50147829TOPICSen",
@@ -2232,7 +2232,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069756+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818671+00:00"
     },
     {
       "id": "50147756TOPICSen",
@@ -2248,7 +2248,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069762+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818675+00:00"
     },
     {
       "id": "50147853TOPICSen",
@@ -2264,7 +2264,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069770+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818680+00:00"
     },
     {
       "id": "50147617TOPICSen",
@@ -2280,7 +2280,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069775+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818685+00:00"
     },
     {
       "id": "50147640TOPICSen",
@@ -2296,7 +2296,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069781+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818690+00:00"
     },
     {
       "id": "50147734TOPICSen",
@@ -2312,7 +2312,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069786+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818695+00:00"
     },
     {
       "id": "50147665TOPICSen",
@@ -2328,7 +2328,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069792+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818700+00:00"
     },
     {
       "id": "51196315TOPICSen",
@@ -2344,7 +2344,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069798+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818705+00:00"
     },
     {
       "id": "52676497TOPICSen",
@@ -2360,7 +2360,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069804+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818710+00:00"
     },
     {
       "id": "52642893TOPICSen",
@@ -2376,7 +2376,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069812+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818715+00:00"
     },
     {
       "id": "50149659TOPICSen",
@@ -2392,7 +2392,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069817+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818720+00:00"
     },
     {
       "id": "50149799TOPICSen",
@@ -2408,7 +2408,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069823+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818725+00:00"
     },
     {
       "id": "50149768TOPICSen",
@@ -2424,7 +2424,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069830+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818729+00:00"
     },
     {
       "id": "50149727TOPICSen",
@@ -2440,7 +2440,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069836+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818735+00:00"
     },
     {
       "id": "50149595TOPICSen",
@@ -2456,7 +2456,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069841+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818740+00:00"
     },
     {
       "id": "50149633TOPICSen",
@@ -2472,7 +2472,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069846+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818745+00:00"
     },
     {
       "id": "50149419TOPICSen",
@@ -2488,7 +2488,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069852+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818751+00:00"
     },
     {
       "id": "50149169TOPICSen",
@@ -2504,7 +2504,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069858+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818756+00:00"
     },
     {
       "id": "52519120TOPICSen",
@@ -2520,7 +2520,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069864+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818761+00:00"
     },
     {
       "id": "50128116TOPICSen",
@@ -2536,7 +2536,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069869+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818766+00:00"
     },
     {
       "id": "50161094TOPICSen",
@@ -2552,7 +2552,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069875+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818771+00:00"
     },
     {
       "id": "50128131TOPICSen",
@@ -2568,7 +2568,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069882+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818775+00:00"
     },
     {
       "id": "51665660TOPICSen",
@@ -2584,7 +2584,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069889+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818780+00:00"
     },
     {
       "id": "51665634TOPICSen",
@@ -2600,7 +2600,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069895+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818787+00:00"
     },
     {
       "id": "50222141TOPICSen",
@@ -2616,7 +2616,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069900+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818791+00:00"
     },
     {
       "id": "50220812TOPICSen",
@@ -2632,7 +2632,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069906+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818796+00:00"
     },
     {
       "id": "52395682TOPICSen",
@@ -2648,7 +2648,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069911+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818801+00:00"
     },
     {
       "id": "50129572TOPICSen",
@@ -2664,7 +2664,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069916+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818805+00:00"
     },
     {
       "id": "50130896TOPICSen",
@@ -2680,7 +2680,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069922+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818810+00:00"
     },
     {
       "id": "50130852TOPICSen",
@@ -2696,7 +2696,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069927+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818815+00:00"
     },
     {
       "id": "52359060TOPICSen",
@@ -2712,7 +2712,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.069933+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818819+00:00"
     },
     {
       "id": "50130557TOPICSen",
@@ -2728,7 +2728,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069938+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818824+00:00"
     },
     {
       "id": "50132993TOPICSen",
@@ -2744,7 +2744,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069953+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818828+00:00"
     },
     {
       "id": "50133076TOPICSen",
@@ -2760,7 +2760,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069960+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818835+00:00"
     },
     {
       "id": "50133030TOPICSen",
@@ -2776,7 +2776,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069966+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818841+00:00"
     },
     {
       "id": "50133046TOPICSen",
@@ -2792,7 +2792,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069971+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818846+00:00"
     },
     {
       "id": "50133060TOPICSen",
@@ -2808,7 +2808,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069977+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818851+00:00"
     },
     {
       "id": "50130810TOPICSen",
@@ -2824,7 +2824,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069982+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818855+00:00"
     },
     {
       "id": "50130643TOPICSen",
@@ -2840,7 +2840,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069989+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818861+00:00"
     },
     {
       "id": "50130689TOPICSen",
@@ -2856,7 +2856,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.069994+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818866+00:00"
     },
     {
       "id": "50130943TOPICSen",
@@ -2872,7 +2872,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070000+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818871+00:00"
     },
     {
       "id": "50130730TOPICSen",
@@ -2888,7 +2888,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070006+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818875+00:00"
     },
     {
       "id": "50132976TOPICSen",
@@ -2904,7 +2904,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070014+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818880+00:00"
     },
     {
       "id": "50129993TOPICSen",
@@ -2920,7 +2920,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070019+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818886+00:00"
     },
     {
       "id": "50130488TOPICSen",
@@ -2936,7 +2936,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070025+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818891+00:00"
     },
     {
       "id": "50130230TOPICSen",
@@ -2952,7 +2952,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070031+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818895+00:00"
     },
     {
       "id": "50130372TOPICSen",
@@ -2968,7 +2968,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070038+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818899+00:00"
     },
     {
       "id": "50130167TOPICSen",
@@ -2984,7 +2984,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070044+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818904+00:00"
     },
     {
       "id": "50128050TOPICSen",
@@ -3000,7 +3000,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070049+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818909+00:00"
     },
     {
       "id": "50128065TOPICSen",
@@ -3016,7 +3016,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070055+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818916+00:00"
     },
     {
       "id": "50127953TOPICSen",
@@ -3032,7 +3032,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070061+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818920+00:00"
     },
     {
       "id": "50130511TOPICSen",
@@ -3048,7 +3048,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070066+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818924+00:00"
     },
     {
       "id": "50128010TOPICSen",
@@ -3064,7 +3064,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070074+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818929+00:00"
     },
     {
       "id": "50129401TOPICSen",
@@ -3080,7 +3080,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070079+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818936+00:00"
     },
     {
       "id": "50129528TOPICSen",
@@ -3096,7 +3096,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070085+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818940+00:00"
     },
     {
       "id": "50129422TOPICSen",
@@ -3112,7 +3112,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070091+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818945+00:00"
     },
     {
       "id": "50128083TOPICSen",
@@ -3128,7 +3128,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070096+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818949+00:00"
     },
     {
       "id": "50128031TOPICSen",
@@ -3144,7 +3144,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070102+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818953+00:00"
     },
     {
       "id": "50128912TOPICSen",
@@ -3160,7 +3160,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070108+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818957+00:00"
     },
     {
       "id": "50131715TOPICSen",
@@ -3176,7 +3176,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070114+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818962+00:00"
     },
     {
       "id": "50128935TOPICSen",
@@ -3192,7 +3192,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070119+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818967+00:00"
     },
     {
       "id": "50161234TOPICSen",
@@ -3208,7 +3208,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070125+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818972+00:00"
     },
     {
       "id": "52519691TOPICSen",
@@ -3224,7 +3224,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070136+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818977+00:00"
     },
     {
       "id": "50131259TOPICSen",
@@ -3240,7 +3240,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070142+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818983+00:00"
     },
     {
       "id": "52689240TOPICSen",
@@ -3256,7 +3256,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070147+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818987+00:00"
     },
     {
       "id": "50131748TOPICSen",
@@ -3272,7 +3272,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070153+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818992+00:00"
     },
     {
       "id": "50128894TOPICSen",
@@ -3288,7 +3288,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070157+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.818997+00:00"
     },
     {
       "id": "50161195TOPICSen",
@@ -3304,7 +3304,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070163+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819002+00:00"
     },
     {
       "id": "52519656TOPICSen",
@@ -3320,7 +3320,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070169+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819007+00:00"
     },
     {
       "id": "52252019TOPICSen",
@@ -3336,7 +3336,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070174+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819011+00:00"
     },
     {
       "id": "50220831TOPICSen",
@@ -3352,7 +3352,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070180+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819017+00:00"
     },
     {
       "id": "52641807TOPICSen",
@@ -3368,7 +3368,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070185+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819021+00:00"
     },
     {
       "id": "52805487TOPICSen",
@@ -3384,7 +3384,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070193+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819026+00:00"
     },
     {
       "id": "51659859TOPICSen",
@@ -3400,7 +3400,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070201+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819032+00:00"
     },
     {
       "id": "50139318TOPICSen",
@@ -3416,7 +3416,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070211+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819040+00:00"
     },
     {
       "id": "52696102TOPICSen",
@@ -3432,7 +3432,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070216+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819044+00:00"
     },
     {
       "id": "52663232TOPICSen",
@@ -3448,7 +3448,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070222+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819049+00:00"
     },
     {
       "id": "50139571TOPICSen",
@@ -3464,7 +3464,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070227+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819053+00:00"
     },
     {
       "id": "50138745TOPICSen",
@@ -3480,7 +3480,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070235+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819058+00:00"
     },
     {
       "id": "50138178TOPICSen",
@@ -3496,7 +3496,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070241+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819063+00:00"
     },
     {
       "id": "50138380TOPICSen",
@@ -3512,7 +3512,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070247+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819068+00:00"
     },
     {
       "id": "50138274TOPICSen",
@@ -3528,7 +3528,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070252+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819073+00:00"
     },
     {
       "id": "50138063TOPICSen",
@@ -3544,7 +3544,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070260+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819078+00:00"
     },
     {
       "id": "50138041TOPICSen",
@@ -3560,7 +3560,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070265+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819083+00:00"
     },
     {
       "id": "50138343TOPICSen",
@@ -3576,7 +3576,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070271+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819087+00:00"
     },
     {
       "id": "50138428TOPICSen",
@@ -3592,7 +3592,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070276+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819092+00:00"
     },
     {
       "id": "50144403TOPICSen",
@@ -3608,7 +3608,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070282+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819096+00:00"
     },
     {
       "id": "50143935TOPICSen",
@@ -3624,7 +3624,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070288+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819101+00:00"
     },
     {
       "id": "50144359TOPICSen",
@@ -3640,7 +3640,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070294+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819106+00:00"
     },
     {
       "id": "50143298TOPICSen",
@@ -3656,7 +3656,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070299+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819111+00:00"
     },
     {
       "id": "50143142TOPICSen",
@@ -3672,7 +3672,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070305+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819116+00:00"
     },
     {
       "id": "50144312TOPICSen",
@@ -3688,7 +3688,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070311+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819121+00:00"
     },
     {
       "id": "50144278TOPICSen",
@@ -3704,7 +3704,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070318+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819126+00:00"
     },
     {
       "id": "50143442TOPICSen",
@@ -3720,7 +3720,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070324+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819132+00:00"
     },
     {
       "id": "50143165TOPICSen",
@@ -3736,7 +3736,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070330+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819136+00:00"
     },
     {
       "id": "50143353TOPICSen",
@@ -3752,7 +3752,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070336+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819141+00:00"
     },
     {
       "id": "50143730TOPICSen",
@@ -3768,7 +3768,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070341+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819145+00:00"
     },
     {
       "id": "50143688TOPICSen",
@@ -3784,7 +3784,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070347+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819150+00:00"
     },
     {
       "id": "50143860TOPICSen",
@@ -3800,7 +3800,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070353+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819155+00:00"
     },
     {
       "id": "50143569TOPICSen",
@@ -3816,7 +3816,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070359+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819160+00:00"
     },
     {
       "id": "50143526TOPICSen",
@@ -3832,7 +3832,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070364+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819165+00:00"
     },
     {
       "id": "50143487TOPICSen",
@@ -3848,7 +3848,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070370+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819171+00:00"
     },
     {
       "id": "50143905TOPICSen",
@@ -3864,7 +3864,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070424+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819176+00:00"
     },
     {
       "id": "50143388TOPICSen",
@@ -3880,7 +3880,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070430+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819181+00:00"
     },
     {
       "id": "50143180TOPICSen",
@@ -3896,7 +3896,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070436+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819185+00:00"
     },
     {
       "id": "50143646TOPICSen",
@@ -3912,7 +3912,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070441+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819190+00:00"
     },
     {
       "id": "50143773TOPICSen",
@@ -3928,7 +3928,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070446+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819194+00:00"
     },
     {
       "id": "50143245TOPICSen",
@@ -3944,7 +3944,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070452+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819198+00:00"
     },
     {
       "id": "50143265TOPICSen",
@@ -3960,7 +3960,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070458+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819203+00:00"
     },
     {
       "id": "50142710TOPICSen",
@@ -3976,7 +3976,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070464+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819208+00:00"
     },
     {
       "id": "50142911TOPICSen",
@@ -3992,7 +3992,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070471+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819212+00:00"
     },
     {
       "id": "52503133TOPICSen",
@@ -4008,7 +4008,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070477+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819217+00:00"
     },
     {
       "id": "50143814TOPICSen",
@@ -4024,7 +4024,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070484+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819221+00:00"
     },
     {
       "id": "52503519TOPICSen",
@@ -4040,7 +4040,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070490+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819231+00:00"
     },
     {
       "id": "50144225TOPICSen",
@@ -4056,7 +4056,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070495+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819236+00:00"
     },
     {
       "id": "50142819TOPICSen",
@@ -4072,7 +4072,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070501+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819241+00:00"
     },
     {
       "id": "50142773TOPICSen",
@@ -4088,7 +4088,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070507+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819246+00:00"
     },
     {
       "id": "50142968TOPICSen",
@@ -4104,7 +4104,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070512+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819251+00:00"
     },
     {
       "id": "50142731TOPICSen",
@@ -4120,7 +4120,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070518+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819256+00:00"
     },
     {
       "id": "50142930TOPICSen",
@@ -4136,7 +4136,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070524+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819262+00:00"
     },
     {
       "id": "50142949TOPICSen",
@@ -4152,7 +4152,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070531+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819266+00:00"
     },
     {
       "id": "50142995TOPICSen",
@@ -4168,7 +4168,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070536+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819271+00:00"
     },
     {
       "id": "50142752TOPICSen",
@@ -4184,7 +4184,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070544+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819276+00:00"
     },
     {
       "id": "50144033TOPICSen",
@@ -4200,7 +4200,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070551+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819281+00:00"
     },
     {
       "id": "50143989TOPICSen",
@@ -4216,7 +4216,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070557+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819286+00:00"
     },
     {
       "id": "50142889TOPICSen",
@@ -4232,7 +4232,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070563+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819291+00:00"
     },
     {
       "id": "50142868TOPICSen",
@@ -4248,7 +4248,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070569+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819295+00:00"
     },
     {
       "id": "50142844TOPICSen",
@@ -4264,7 +4264,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070574+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819299+00:00"
     },
     {
       "id": "50143015TOPICSen",
@@ -4280,7 +4280,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070580+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819304+00:00"
     },
     {
       "id": "50140738TOPICSen",
@@ -4296,7 +4296,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070586+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819309+00:00"
     },
     {
       "id": "50140712TOPICSen",
@@ -4312,7 +4312,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070592+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819315+00:00"
     },
     {
       "id": "51188642TOPICSen",
@@ -4328,7 +4328,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070598+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819320+00:00"
     },
     {
       "id": "52663407TOPICSen",
@@ -4344,7 +4344,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070606+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819325+00:00"
     },
     {
       "id": "51188650TOPICSen",
@@ -4360,7 +4360,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070611+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819332+00:00"
     },
     {
       "id": "50140854TOPICSen",
@@ -4376,7 +4376,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070617+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819337+00:00"
     },
     {
       "id": "52664775TOPICSen",
@@ -4392,7 +4392,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070628+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819346+00:00"
     },
     {
       "id": "52664793TOPICSen",
@@ -4408,7 +4408,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070634+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819362+00:00"
     },
     {
       "id": "52664569TOPICSen",
@@ -4424,7 +4424,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070640+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819367+00:00"
     },
     {
       "id": "52664744TOPICSen",
@@ -4440,7 +4440,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070645+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819372+00:00"
     },
     {
       "id": "52303908TOPICSen",
@@ -4456,7 +4456,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070651+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819376+00:00"
     },
     {
       "id": "52664453TOPICSen",
@@ -4472,7 +4472,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070656+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819381+00:00"
     },
     {
       "id": "52303917TOPICSen",
@@ -4488,7 +4488,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070662+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819385+00:00"
     },
     {
       "id": "52303950TOPICSen",
@@ -4504,7 +4504,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070670+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819391+00:00"
     },
     {
       "id": "52303942TOPICSen",
@@ -4520,7 +4520,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070675+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819397+00:00"
     },
     {
       "id": "52664185TOPICSen",
@@ -4536,7 +4536,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070682+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819402+00:00"
     },
     {
       "id": "52664238TOPICSen",
@@ -4552,7 +4552,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070688+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819408+00:00"
     },
     {
       "id": "52303926TOPICSen",
@@ -4568,7 +4568,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070694+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819413+00:00"
     },
     {
       "id": "52664370TOPICSen",
@@ -4584,7 +4584,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070700+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819418+00:00"
     },
     {
       "id": "52303934TOPICSen",
@@ -4600,7 +4600,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070706+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819423+00:00"
     },
     {
       "id": "52664320TOPICSen",
@@ -4616,7 +4616,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070712+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819428+00:00"
     },
     {
       "id": "52664675TOPICSen",
@@ -4632,7 +4632,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070718+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819432+00:00"
     },
     {
       "id": "52664522TOPICSen",
@@ -4648,7 +4648,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070723+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819439+00:00"
     },
     {
       "id": "50140817TOPICSen",
@@ -4664,7 +4664,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070730+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819444+00:00"
     },
     {
       "id": "50140647TOPICSen",
@@ -4680,7 +4680,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070736+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819449+00:00"
     },
     {
       "id": "50140670TOPICSen",
@@ -4696,7 +4696,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070741+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819454+00:00"
     },
     {
       "id": "50140616TOPICSen",
@@ -4712,7 +4712,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070746+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819458+00:00"
     },
     {
       "id": "50140890TOPICSen",
@@ -4728,7 +4728,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070752+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819462+00:00"
     },
     {
       "id": "52303958TOPICSen",
@@ -4744,7 +4744,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070757+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819467+00:00"
     },
     {
       "id": "52664269TOPICSen",
@@ -4760,7 +4760,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070763+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819472+00:00"
     },
     {
       "id": "50140685TOPICSen",
@@ -4776,7 +4776,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070768+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819476+00:00"
     },
     {
       "id": "50139513TOPICSen",
@@ -4792,7 +4792,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070773+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819481+00:00"
     },
     {
       "id": "50139433TOPICSen",
@@ -4808,7 +4808,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070779+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819486+00:00"
     },
     {
       "id": "50139607TOPICSen",
@@ -4824,7 +4824,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070786+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819490+00:00"
     },
     {
       "id": "50139386TOPICSen",
@@ -4840,7 +4840,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070791+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819496+00:00"
     },
     {
       "id": "51121953TOPICSen",
@@ -4856,7 +4856,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070797+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819501+00:00"
     },
     {
       "id": "50138782TOPICSen",
@@ -4872,7 +4872,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070802+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819505+00:00"
     },
     {
       "id": "50138679TOPICSen",
@@ -4888,7 +4888,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070807+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819510+00:00"
     },
     {
       "id": "50138913TOPICSen",
@@ -4904,7 +4904,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070813+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819515+00:00"
     },
     {
       "id": "50139729TOPICSen",
@@ -4920,7 +4920,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070818+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819520+00:00"
     },
     {
       "id": "50139548TOPICSen",
@@ -4936,7 +4936,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070824+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819525+00:00"
     },
     {
       "id": "50139644TOPICSen",
@@ -4952,7 +4952,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070829+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819529+00:00"
     },
     {
       "id": "50138880TOPICSen",
@@ -4968,7 +4968,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070835+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819533+00:00"
     },
     {
       "id": "50139277TOPICSen",
@@ -4984,7 +4984,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070843+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819538+00:00"
     },
     {
       "id": "50139030TOPICSen",
@@ -5000,7 +5000,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070848+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819544+00:00"
     },
     {
       "id": "50138713TOPICSen",
@@ -5016,7 +5016,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070855+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819548+00:00"
     },
     {
       "id": "51121982TOPICSen",
@@ -5032,7 +5032,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070861+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819553+00:00"
     },
     {
       "id": "50138610TOPICSen",
@@ -5048,7 +5048,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070867+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819557+00:00"
     },
     {
       "id": "51188658TOPICSen",
@@ -5064,7 +5064,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070873+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819562+00:00"
     },
     {
       "id": "50139062TOPICSen",
@@ -5080,7 +5080,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070878+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819567+00:00"
     },
     {
       "id": "50139206TOPICSen",
@@ -5096,7 +5096,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070883+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819572+00:00"
     },
     {
       "id": "50139229TOPICSen",
@@ -5112,7 +5112,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070889+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819577+00:00"
     },
     {
       "id": "50138999TOPICSen",
@@ -5128,7 +5128,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070894+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819582+00:00"
     },
     {
       "id": "50139152TOPICSen",
@@ -5144,7 +5144,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070901+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819586+00:00"
     },
     {
       "id": "50139777TOPICSen",
@@ -5160,7 +5160,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070907+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819593+00:00"
     },
     {
       "id": "50139355TOPICSen",
@@ -5176,7 +5176,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070914+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819598+00:00"
     },
     {
       "id": "50138952TOPICSen",
@@ -5192,7 +5192,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070919+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819602+00:00"
     },
     {
       "id": "50138654TOPICSen",
@@ -5208,7 +5208,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070924+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819607+00:00"
     },
     {
       "id": "50138580TOPICSen",
@@ -5224,7 +5224,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070931+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819612+00:00"
     },
     {
       "id": "52692782TOPICSen",
@@ -5240,7 +5240,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070936+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819616+00:00"
     },
     {
       "id": "50136868TOPICSen",
@@ -5256,7 +5256,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.070942+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819621+00:00"
     },
     {
       "id": "16741COMPETITIVE_CALLen",
@@ -5272,7 +5272,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070948+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819626+00:00"
     },
     {
       "id": "52171134TOPICSen",
@@ -5288,7 +5288,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070954+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819630+00:00"
     },
     {
       "id": "51474264TOPICSen",
@@ -5304,7 +5304,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070961+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819635+00:00"
     },
     {
       "id": "51474284TOPICSen",
@@ -5320,7 +5320,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070967+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819641+00:00"
     },
     {
       "id": "51474244TOPICSen",
@@ -5336,7 +5336,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070972+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819646+00:00"
     },
     {
       "id": "52171217TOPICSen",
@@ -5352,7 +5352,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070978+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819651+00:00"
     },
     {
       "id": "51426107TOPICSen",
@@ -5368,7 +5368,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070983+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819656+00:00"
     },
     {
       "id": "52891293TOPICSen",
@@ -5384,7 +5384,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070989+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819660+00:00"
     },
     {
       "id": "16781COMPETITIVE_CALLen",
@@ -5400,7 +5400,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.070995+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819665+00:00"
     },
     {
       "id": "187862PROSPECTSEN",
@@ -5416,7 +5416,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071000+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819669+00:00"
     },
     {
       "id": "187764PROSPECTSEN",
@@ -5432,7 +5432,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071006+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819673+00:00"
     },
     {
       "id": "52663814TOPICSen",
@@ -5448,7 +5448,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071012+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819678+00:00"
     },
     {
       "id": "50218200TOPICSen",
@@ -5464,7 +5464,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071019+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819685+00:00"
     },
     {
       "id": "50218126TOPICSen",
@@ -5480,7 +5480,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071025+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819691+00:00"
     },
     {
       "id": "50218038TOPICSen",
@@ -5496,7 +5496,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071031+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819696+00:00"
     },
     {
       "id": "50217944TOPICSen",
@@ -5512,7 +5512,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071036+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819701+00:00"
     },
     {
       "id": "50217990TOPICSen",
@@ -5528,7 +5528,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071042+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819706+00:00"
     },
     {
       "id": "50218290TOPICSen",
@@ -5544,7 +5544,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071047+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819711+00:00"
     },
     {
       "id": "50218237TOPICSen",
@@ -5560,7 +5560,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071055+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819716+00:00"
     },
     {
       "id": "50218159TOPICSen",
@@ -5576,7 +5576,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071060+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819720+00:00"
     },
     {
       "id": "16801COMPETITIVE_CALLen",
@@ -5592,7 +5592,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071066+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819725+00:00"
     },
     {
       "id": "17001COMPETITIVE_CALLen",
@@ -5608,7 +5608,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071072+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819729+00:00"
     },
     {
       "id": "50140252TOPICSen",
@@ -5624,7 +5624,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071079+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819736+00:00"
     },
     {
       "id": "50139932TOPICSen",
@@ -5640,7 +5640,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071085+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819742+00:00"
     },
     {
       "id": "50140201TOPICSen",
@@ -5656,7 +5656,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071091+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819747+00:00"
     },
     {
       "id": "50140171TOPICSen",
@@ -5672,7 +5672,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071096+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819752+00:00"
     },
     {
       "id": "50140224TOPICSen",
@@ -5688,7 +5688,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071102+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819756+00:00"
     },
     {
       "id": "50140426TOPICSen",
@@ -5704,7 +5704,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071107+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819761+00:00"
     },
     {
       "id": "50140083TOPICSen",
@@ -5720,7 +5720,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071113+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819766+00:00"
     },
     {
       "id": "50140135TOPICSen",
@@ -5736,7 +5736,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071119+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819771+00:00"
     },
     {
       "id": "50139878TOPICSen",
@@ -5752,7 +5752,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071124+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819775+00:00"
     },
     {
       "id": "50140031TOPICSen",
@@ -5768,7 +5768,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071130+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819780+00:00"
     },
     {
       "id": "50140498TOPICSen",
@@ -5784,7 +5784,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071137+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819785+00:00"
     },
     {
       "id": "50139985TOPICSen",
@@ -5800,7 +5800,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071143+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819790+00:00"
     },
     {
       "id": "50140523TOPICSen",
@@ -5816,7 +5816,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071149+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819796+00:00"
     },
     {
       "id": "50140474TOPICSen",
@@ -5832,7 +5832,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071157+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819800+00:00"
     },
     {
       "id": "52256519TOPICSen",
@@ -5848,7 +5848,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071162+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819805+00:00"
     },
     {
       "id": "17045COMPETITIVE_CALLen",
@@ -5864,7 +5864,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071168+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819809+00:00"
     },
     {
       "id": "52762960TOPICSen",
@@ -5880,7 +5880,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071173+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819814+00:00"
     },
     {
       "id": "52766713TOPICSen",
@@ -5896,7 +5896,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071179+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819820+00:00"
     },
     {
       "id": "52663666TOPICSen",
@@ -5912,7 +5912,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071185+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819825+00:00"
     },
     {
       "id": "16761COMPETITIVE_CALLen",
@@ -5928,7 +5928,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071190+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819830+00:00"
     },
     {
       "id": "16842COMPETITIVE_CALLen",
@@ -5944,7 +5944,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071197+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819835+00:00"
     },
     {
       "id": "16821COMPETITIVE_CALLen",
@@ -5960,7 +5960,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071203+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819841+00:00"
     },
     {
       "id": "50218088TOPICSen",
@@ -5976,7 +5976,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071209+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819846+00:00"
     },
     {
       "id": "52641786TOPICSen",
@@ -5992,7 +5992,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071214+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819850+00:00"
     },
     {
       "id": "52617992TOPICSen",
@@ -6008,7 +6008,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071220+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819855+00:00"
     },
     {
       "id": "16721COMPETITIVE_CALLen",
@@ -6024,7 +6024,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071226+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819859+00:00"
     },
     {
       "id": "187968PROSPECTSEN",
@@ -6040,7 +6040,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071232+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819864+00:00"
     },
     {
       "id": "52663569TOPICSen",
@@ -6056,7 +6056,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071237+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819869+00:00"
     },
     {
       "id": "52663611TOPICSen",
@@ -6072,7 +6072,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071243+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819874+00:00"
     },
     {
       "id": "52663508TOPICSen",
@@ -6088,7 +6088,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071249+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819879+00:00"
     },
     {
       "id": "52663544TOPICSen",
@@ -6104,7 +6104,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071257+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819884+00:00"
     },
     {
       "id": "16981COMPETITIVE_CALLen",
@@ -6120,7 +6120,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071263+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819890+00:00"
     },
     {
       "id": "16962COMPETITIVE_CALLen",
@@ -6136,7 +6136,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071269+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819896+00:00"
     },
     {
       "id": "16961COMPETITIVE_CALLen",
@@ -6152,7 +6152,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071274+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819901+00:00"
     },
     {
       "id": "17041COMPETITIVE_CALLen",
@@ -6168,7 +6168,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071280+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819905+00:00"
     },
     {
       "id": "16861COMPETITIVE_CALLen",
@@ -6184,7 +6184,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071285+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819910+00:00"
     },
     {
       "id": "52676172TOPICSen",
@@ -6200,7 +6200,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071290+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819914+00:00"
     },
     {
       "id": "17043COMPETITIVE_CALLen",
@@ -6216,7 +6216,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071296+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819919+00:00"
     },
     {
       "id": "187897PROSPECTSEN",
@@ -6232,7 +6232,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071301+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819923+00:00"
     },
     {
       "id": "16841COMPETITIVE_CALLen",
@@ -6248,7 +6248,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071307+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819928+00:00"
     },
     {
       "id": "52739895TOPICSen",
@@ -6264,7 +6264,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071314+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819932+00:00"
     },
     {
       "id": "16261COMPETITIVE_CALLen",
@@ -6280,7 +6280,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071319+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819940+00:00"
     },
     {
       "id": "50146556TOPICSen",
@@ -6296,7 +6296,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071325+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819945+00:00"
     },
     {
       "id": "50146287TOPICSen",
@@ -6312,7 +6312,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071330+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819949+00:00"
     },
     {
       "id": "50145282TOPICSen",
@@ -6328,7 +6328,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071336+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819954+00:00"
     },
     {
       "id": "52570328TOPICSen",
@@ -6344,7 +6344,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071341+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819958+00:00"
     },
     {
       "id": "17021COMPETITIVE_CALLen",
@@ -6360,7 +6360,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071346+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819963+00:00"
     },
     {
       "id": "51348921TOPICSen",
@@ -6376,7 +6376,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071351+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819968+00:00"
     },
     {
       "id": "50134367TOPICSen",
@@ -6392,7 +6392,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071357+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819972+00:00"
     },
     {
       "id": "187805PROSPECTSEN",
@@ -6408,7 +6408,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071363+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819977+00:00"
     },
     {
       "id": "17181COMPETITIVE_CALLen",
@@ -6424,7 +6424,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071370+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819982+00:00"
     },
     {
       "id": "52616142TOPICSen",
@@ -6440,7 +6440,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071386+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819988+00:00"
     },
     {
       "id": "16881COMPETITIVE_CALLen",
@@ -6456,7 +6456,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071392+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819993+00:00"
     },
     {
       "id": "17121COMPETITIVE_CALLen",
@@ -6472,7 +6472,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071398+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.819998+00:00"
     },
     {
       "id": "52252519TOPICSen",
@@ -6488,7 +6488,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071404+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820002+00:00"
     },
     {
       "id": "17044COMPETITIVE_CALLen",
@@ -6504,7 +6504,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071410+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820007+00:00"
     },
     {
       "id": "50146633TOPICSen",
@@ -6520,7 +6520,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071415+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820012+00:00"
     },
     {
       "id": "50146494TOPICSen",
@@ -6536,7 +6536,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071420+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820017+00:00"
     },
     {
       "id": "50145692TOPICSen",
@@ -6552,7 +6552,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071426+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820021+00:00"
     },
     {
       "id": "50146905TOPICSen",
@@ -6568,7 +6568,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071431+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820026+00:00"
     },
     {
       "id": "50146996TOPICSen",
@@ -6584,7 +6584,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071440+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820031+00:00"
     },
     {
       "id": "187975PROSPECTSEN",
@@ -6600,7 +6600,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071446+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820037+00:00"
     },
     {
       "id": "50146610TOPICSen",
@@ -6616,7 +6616,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071452+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820041+00:00"
     },
     {
       "id": "50146584TOPICSen",
@@ -6632,7 +6632,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071458+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820045+00:00"
     },
     {
       "id": "50146852TOPICSen",
@@ -6648,7 +6648,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071463+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820050+00:00"
     },
     {
       "id": "50146803TOPICSen",
@@ -6664,7 +6664,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071474+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820055+00:00"
     },
     {
       "id": "50146116TOPICSen",
@@ -6680,7 +6680,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071480+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820059+00:00"
     },
     {
       "id": "50146083TOPICSen",
@@ -6696,7 +6696,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071485+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820064+00:00"
     },
     {
       "id": "50146154TOPICSen",
@@ -6712,7 +6712,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071491+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820068+00:00"
     },
     {
       "id": "187959PROSPECTSEN",
@@ -6728,7 +6728,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071496+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820073+00:00"
     },
     {
       "id": "51188707TOPICSen",
@@ -6744,7 +6744,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071503+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820079+00:00"
     },
     {
       "id": "187639PROSPECTSEN",
@@ -6760,7 +6760,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071509+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820085+00:00"
     },
     {
       "id": "17237COMPETITIVE_CALLen",
@@ -6776,7 +6776,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071514+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820090+00:00"
     },
     {
       "id": "17238COMPETITIVE_CALLen",
@@ -6792,7 +6792,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071520+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820095+00:00"
     },
     {
       "id": "51104692TOPICSen",
@@ -6808,7 +6808,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071525+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820100+00:00"
     },
     {
       "id": "52304288TOPICSen",
@@ -6824,7 +6824,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071531+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820104+00:00"
     },
     {
       "id": "16941COMPETITIVE_CALLen",
@@ -6840,7 +6840,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071537+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820110+00:00"
     },
     {
       "id": "51066276TOPICSen",
@@ -6856,7 +6856,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071542+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820114+00:00"
     },
     {
       "id": "51066294TOPICSen",
@@ -6872,7 +6872,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071548+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820119+00:00"
     },
     {
       "id": "187670PROSPECTSEN",
@@ -6888,7 +6888,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071554+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820124+00:00"
     },
     {
       "id": "16621COMPETITIVE_CALLen",
@@ -6904,7 +6904,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071562+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820128+00:00"
     },
     {
       "id": "52546784TOPICSen",
@@ -6920,7 +6920,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071568+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820135+00:00"
     },
     {
       "id": "187607PROSPECTSEN",
@@ -6936,7 +6936,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071573+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820139+00:00"
     },
     {
       "id": "17239COMPETITIVE_CALLen",
@@ -6952,7 +6952,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071578+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820143+00:00"
     },
     {
       "id": "15681COMPETITIVE_CALLen",
@@ -6968,7 +6968,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071584+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820148+00:00"
     },
     {
       "id": "187801PROSPECTSEN",
@@ -6984,7 +6984,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071589+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820152+00:00"
     },
     {
       "id": "17243COMPETITIVE_CALLen",
@@ -7000,7 +7000,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071595+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820156+00:00"
     },
     {
       "id": "52438216TOPICSen",
@@ -7016,7 +7016,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071601+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820161+00:00"
     },
     {
       "id": "52929270TOPICSen",
@@ -7032,7 +7032,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071607+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820166+00:00"
     },
     {
       "id": "52547845TOPICSen",
@@ -7048,7 +7048,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071612+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820171+00:00"
     },
     {
       "id": "52693007TOPICSen",
@@ -7064,7 +7064,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071619+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820175+00:00"
     },
     {
       "id": "52664986TOPICSen",
@@ -7080,7 +7080,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071625+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820181+00:00"
     },
     {
       "id": "52664946TOPICSen",
@@ -7096,7 +7096,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071633+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820186+00:00"
     },
     {
       "id": "52664966TOPICSen",
@@ -7112,7 +7112,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071639+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820192+00:00"
     },
     {
       "id": "52867543TOPICSen",
@@ -7128,7 +7128,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071644+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820196+00:00"
     },
     {
       "id": "52617886TOPICSen",
@@ -7144,7 +7144,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071650+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820201+00:00"
     },
     {
       "id": "17241COMPETITIVE_CALLen",
@@ -7160,7 +7160,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071656+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820205+00:00"
     },
     {
       "id": "52929366TOPICSen",
@@ -7176,7 +7176,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071661+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820209+00:00"
     },
     {
       "id": "16542COMPETITIVE_CALLen",
@@ -7192,7 +7192,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071667+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820214+00:00"
     },
     {
       "id": "52456240TOPICSen",
@@ -7208,7 +7208,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071673+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820218+00:00"
     },
     {
       "id": "17061COMPETITIVE_CALLen",
@@ -7224,7 +7224,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071681+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820223+00:00"
     },
     {
       "id": "15741COMPETITIVE_CALLen",
@@ -7240,7 +7240,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071687+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820229+00:00"
     },
     {
       "id": "17281COMPETITIVE_CALLen",
@@ -7256,7 +7256,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071694+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820236+00:00"
     },
     {
       "id": "50131963TOPICSen",
@@ -7272,7 +7272,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071700+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820242+00:00"
     },
     {
       "id": "50131779TOPICSen",
@@ -7288,7 +7288,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071705+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820246+00:00"
     },
     {
       "id": "50131870TOPICSen",
@@ -7304,7 +7304,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071710+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820250+00:00"
     },
     {
       "id": "50131925TOPICSen",
@@ -7320,7 +7320,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071716+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820254+00:00"
     },
     {
       "id": "50131803TOPICSen",
@@ -7336,7 +7336,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071721+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820259+00:00"
     },
     {
       "id": "50131847TOPICSen",
@@ -7352,7 +7352,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071727+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820264+00:00"
     },
     {
       "id": "50131822TOPICSen",
@@ -7368,7 +7368,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071733+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820268+00:00"
     },
     {
       "id": "50131894TOPICSen",
@@ -7384,7 +7384,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071740+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820272+00:00"
     },
     {
       "id": "50132021TOPICSen",
@@ -7400,7 +7400,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071746+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820280+00:00"
     },
     {
       "id": "50132047TOPICSen",
@@ -7416,7 +7416,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071751+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820284+00:00"
     },
     {
       "id": "50131996TOPICSen",
@@ -7432,7 +7432,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071757+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820289+00:00"
     },
     {
       "id": "50128974TOPICSen",
@@ -7448,7 +7448,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071762+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820293+00:00"
     },
     {
       "id": "50129170TOPICSen",
@@ -7464,7 +7464,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071769+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820297+00:00"
     },
     {
       "id": "50129041TOPICSen",
@@ -7480,7 +7480,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071775+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820302+00:00"
     },
     {
       "id": "50129614TOPICSen",
@@ -7496,7 +7496,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071781+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820308+00:00"
     },
     {
       "id": "50129635TOPICSen",
@@ -7512,7 +7512,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071787+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820312+00:00"
     },
     {
       "id": "50129079TOPICSen",
@@ -7528,7 +7528,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071792+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820316+00:00"
     },
     {
       "id": "50129018TOPICSen",
@@ -7544,7 +7544,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071800+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820320+00:00"
     },
     {
       "id": "17463COMPETITIVE_CALLen",
@@ -7560,7 +7560,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071806+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820326+00:00"
     },
     {
       "id": "52948028TOPICSen",
@@ -7576,7 +7576,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071811+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820331+00:00"
     },
     {
       "id": "52968829TOPICSen",
@@ -7592,7 +7592,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071816+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820335+00:00"
     },
     {
       "id": "187757PROSPECTSEN",
@@ -7608,7 +7608,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071824+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820340+00:00"
     },
     {
       "id": "17236COMPETITIVE_CALLen",
@@ -7624,7 +7624,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071830+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820344+00:00"
     },
     {
       "id": "17261COMPETITIVE_CALLen",
@@ -7640,7 +7640,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071835+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820348+00:00"
     },
     {
       "id": "17461COMPETITIVE_CALLen",
@@ -7656,7 +7656,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071841+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820363+00:00"
     },
     {
       "id": "52951142TOPICSen",
@@ -7672,7 +7672,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071846+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820368+00:00"
     },
     {
       "id": "188041PROSPECTSEN",
@@ -7688,7 +7688,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071851+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820372+00:00"
     },
     {
       "id": "188136PROSPECTSEN",
@@ -7704,7 +7704,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071858+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820377+00:00"
     },
     {
       "id": "52592866TOPICSen",
@@ -7720,7 +7720,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071864+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820384+00:00"
     },
     {
       "id": "17481COMPETITIVE_CALLen",
@@ -7736,7 +7736,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071869+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820388+00:00"
     },
     {
       "id": "52740317TOPICSen",
@@ -7752,7 +7752,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071875+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820393+00:00"
     },
     {
       "id": "52740251TOPICSen",
@@ -7768,7 +7768,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071881+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820398+00:00"
     },
     {
       "id": "53294913TOPICSen",
@@ -7784,7 +7784,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071887+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820404+00:00"
     },
     {
       "id": "52968501TOPICSen",
@@ -7800,7 +7800,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071892+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820408+00:00"
     },
     {
       "id": "53050046TOPICSen",
@@ -7816,7 +7816,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071898+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820413+00:00"
     },
     {
       "id": "53346112TOPICSen",
@@ -7832,7 +7832,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071904+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820417+00:00"
     },
     {
       "id": "53346144TOPICSen",
@@ -7848,7 +7848,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094501",
-      "last_discovered_at": "2026-11-19T10:56:48.071908+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820421+00:00"
     },
     {
       "id": "50132158TOPICSen",
@@ -7864,7 +7864,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071916+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820426+00:00"
     },
     {
       "id": "17002COMPETITIVE_CALLen",
@@ -7880,7 +7880,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071921+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820432+00:00"
     },
     {
       "id": "14881COMPETITIVE_CALLen",
@@ -7896,7 +7896,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071927+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820438+00:00"
     },
     {
       "id": "172802PROSPECTSEN",
@@ -7912,7 +7912,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.071943+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820454+00:00"
     },
     {
       "id": "170893PROSPECTSEN",
@@ -7928,7 +7928,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.072111+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820615+00:00"
     },
     {
       "id": "167264PROSPECTSEN",
@@ -7944,7 +7944,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.072117+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820620+00:00"
     },
     {
       "id": "173638PROSPECTSEN",
@@ -7960,7 +7960,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.072122+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820625+00:00"
     },
     {
       "id": "173682PROSPECTSEN",
@@ -7976,7 +7976,7 @@
       "record_type": "current-deadline-discovery-candidate",
       "verification_status": "unverified",
       "status_code": "31094502",
-      "last_discovered_at": "2026-11-19T10:56:48.072127+00:00"
+      "last_discovered_at": "2026-11-19T10:58:48.820629+00:00"
     }
   ],
   "error": null

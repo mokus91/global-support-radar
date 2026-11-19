@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T10:56:14.761100+00:00",
+  "generated_at": "2026-11-19T10:58:14.845014+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 180,
+  "discovered_datasets_count": 179,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,7 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -813,14 +813,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Inventories of subsidies - Brussels Environment",
-      "url": "https://datastore.brussels/web/data/dataset/73138534-dc38-40f9-b1d7-2bb7d8f0697a",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Inventories of subsidies - Evere",
       "url": "https://datastore.brussels/web/data/dataset/3d2230d6-fba1-44b9-9e9a-72da1b885b65",
       "query": "subsidies",
@@ -861,6 +853,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Port of Brussels",
+      "url": "https://datastore.brussels/web/data/dataset/a09de8f8-24f0-44f7-9190-9916a6c67179",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Schaerbeek",
       "url": "https://datastore.brussels/web/data/dataset/ea7cffcb-28e5-4704-bfd4-a283b73750b3",
       "query": "subsidies",
@@ -869,8 +869,24 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Sint-Gilles",
+      "url": "https://datastore.brussels/web/data/dataset/3fbe4704-5359-454d-8a8e-2a01fc1fbb4a",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Watermael-Boitsfort",
+      "url": "https://datastore.brussels/web/data/dataset/2b433797-3d51-43c6-9d5b-de425c8aa5e2",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -981,14 +997,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI_Subsidies 2022_2023-06-06",
-      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI_Subsidies 2022_2023_interreg hu_en_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-hu-sk-zoznam-vyziev",
       "query": "subsidies",
@@ -999,14 +1007,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_2023_SRIN_Call list",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-srin-zoznam-vyziev",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1078,7 +1078,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1086,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1207,14 +1207,6 @@
     {
       "title": "Scholarship students in health and social training (Feb. 2014)",
       "url": "https://data.iledefrance.fr/explore/dataset/etudiants-boursiers-des-formations-sanitaires-et-sociales-fev-2014/",
-      "query": "scholarships",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Scholarship students in health and social training (Sept. 2012)",
-      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2012/",
       "query": "scholarships",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
