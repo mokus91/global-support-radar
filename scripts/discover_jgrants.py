@@ -13,12 +13,16 @@ API = "https://api.jgrants-portal.go.jp/exp/v1/public/subsidies"
 PORTAL = "https://www.jgrants-portal.go.jp/grants/view/"
 KEYWORDS = ["事業", "農業", "子育て", "教育", "雇用", "エネルギー"]
 CATEGORY_RULES = [
-    ("agriculture", ["農業", "林業", "漁業"]),
-    ("family", ["子育て", "少子化", "教育・子育て"]),
-    ("education", ["教育", "人材育成"]),
-    ("employment", ["雇用", "職場環境", "人材"]),
-    ("energy", ["エコ", "省エネ", "エネルギー", "脱炭素"]),
-    ("business", ["事業", "販路", "設備", "IT導入", "資金繰り", "研究開発"]),
+    ("agriculture", ["農業", "林業", "漁業", "農林水産", "畜産", "園芸", "農地"]),
+    ("family", ["子育て", "出産", "保育", "児童", "ひとり親", "家族"]),
+    ("education", ["教育", "学校", "大学", "奨学金", "学生", "研修", "人材育成"]),
+    ("employment", ["雇用", "就職", "労働", "働き方", "人材確保", "賃上げ", "職業"]),
+    ("energy", ["エネルギー", "省エネ", "脱炭素", "再エネ", "太陽光", "蓄電池", "電力", "地熱", "GX"]),
+    ("healthcare", ["医療", "介護", "福祉", "病院", "看護", "健康"]),
+    ("housing", ["住宅", "空き家", "リフォーム", "耐震", "住まい", "建築"]),
+    ("social_support", ["生活困窮", "生活支援", "地域福祉", "障害者", "高齢者"]),
+    ("transport", ["交通", "運輸", "鉄道", "バス", "自動車", "物流"]),
+    ("business", ["中小企業", "小規模事業者", "事業者", "企業", "販路", "設備投資", "IT導入", "資金繰り", "創業", "経営", "生産性", "研究開発"]),
 ]
 
 def fetch(keyword):
@@ -43,7 +47,7 @@ def fetch(keyword):
     return payload.get("result", []) if isinstance(payload, dict) else []
 
 def categories(item):
-    text = " ".join(str(item.get(k, "")) for k in ("title", "institution_name", "use_purpose", "industry", "detail"))
+    text = " ".join(str(item.get(k, "")) for k in ("title", "institution_name", "use_purpose", "industry", "detail", "subsidy_catch_phrase", "target_area_search"))
     found = [category for category, words in CATEGORY_RULES if any(word in text for word in words)]
     return found or ["business"]
 
