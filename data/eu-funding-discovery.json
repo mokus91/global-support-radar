@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T10:19:54.828769+00:00",
+  "generated_at": "2026-11-19T10:21:30.290089+00:00",
   "source_id": "eu-funding",
   "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
   "purpose": "Official call discovery only. Every result requires individual page verification before publication.",
@@ -8,7 +8,7 @@
   "response": {
     "apiVersion": "2.159",
     "terms": "*",
-    "responseTime": 175,
+    "responseTime": 190,
     "totalResults": 598,
     "pageNumber": 1,
     "pageSize": 100,
