@@ -510,6 +510,27 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A kategória szerinti EU-források most nem tölthetők be.":"EU category sources could not be loaded right now.";box.append(warning);
   }
   try{
+   const response=await fetch("data/eu-national-business-funding.json");
+   if(response.ok){
+    const directory=await response.json();
+    const relevant=directory.records.filter(record=>(code==="all"||code==="EU"||record.country_code===code)&&(record.categories.includes(category)||category==="all"));
+    if(relevant.length){
+     const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus vállalkozási támogatási adatbázisok":"Country-specific business funding databases";box.append(heading);
+     relevant.forEach(record=>{
+      const card=document.createElement("article");card.className="card";
+      const h=document.createElement("h3");h.textContent=isHu?record.name_hu:record.name_en;
+      const p=document.createElement("p");p.textContent=isHu?record.description_hu:record.description_en;
+      const meta=document.createElement("div");meta.className="meta";meta.textContent=isHu?"Ország: "+record.country_hu+" · Hivatalos nemzeti adatbázis":"Country: "+record.country_en+" · Official national database";
+      const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"Nemzeti finanszírozási adatbázis":"National funding database";
+      const a=document.createElement("a");a.href=record.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Adatbázis megnyitása ↗":"Open database ↗";
+      foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+     });
+    }
+   }
+  }catch(error){
+   const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A nemzeti vállalkozási adatbázisok most nem tölthetők be.":"National business funding databases could not be loaded right now.";box.append(warning);
+  }
+  try{
    const response=await fetch("data/eu-social-protection-country-pages.json");
    if(response.ok){
     const directory=await response.json();
