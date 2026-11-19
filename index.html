@@ -651,6 +651,34 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
     const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A chilei Sercotec felhívások most nem tölthetők be.":"Chile Sercotec calls are temporarily unavailable.";box.append(warning);
    }
   }
+  if(code==="CL"&&(category==="all"||category==="business")){
+   try{
+    const response=await fetch("data/chile-discovery.json",{cache:"no-store"});
+    if(response.ok){
+     const feed=await response.json();
+     const relevant=feed.records.filter(record=>category==="all"||record.category===category);
+     if(relevant.length){
+      const heading=document.createElement("h3");heading.textContent=isHu?"Chile – CORFO aktuális állami támogatási kiírások":"Chile — current CORFO government funding calls";box.append(heading);
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"A CORFO hivatalos oldaláról naponta ellenőrzött felhívás. Az összeg a maximális társfinanszírozási plafon, nem automatikusan járó támogatás; a teljes jogosultságot és az önerőt az eredeti szabályzatban kell ellenőrizni.":"Call checked daily against the official CORFO page. The amount is a maximum co-financing cap, not an automatic award; verify full eligibility and matching contribution in the official rules.";box.append(note);
+      relevant.forEach(record=>{
+       const card=document.createElement("article");card.className="card";
+       const h=document.createElement("h3");h.textContent=isHu?(record.title_hu||record.title):record.title;
+       const p=document.createElement("p");p.textContent=isHu?record.eligibility_summary_hu:record.eligibility_summary_en;
+       const meta=document.createElement("div");meta.className="meta";
+       const deadline=record.deadline?new Date(record.deadline).toLocaleString(isHu?"hu-HU":"en-GB",{dateStyle:"medium",timeStyle:"short",timeZone:"America/Santiago"}):"";
+       const amount=record.amount_max?Number(record.amount_max).toLocaleString(isHu?"hu-HU":"en-US")+" "+record.currency:"";
+       meta.textContent=(isHu?"Terület: ":"Area: ")+record.region+" · "+(isHu?"Határidő: ":"Deadline: ")+deadline+" · "+(isHu?"Maximális összeg: ":"Maximum amount: ")+amount+" · "+(isHu?"Társfinanszírozás: ":"Co-financing: ")+record.funding_rate_max_percent+"%";
+       const foot=document.createElement("div");foot.className="cardfoot";
+       const label=document.createElement("span");label.textContent=isHu?"CORFO · hivatalos oldalon ellenőrizve":"CORFO · checked on official page";
+       const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Eredeti pályázati kiírás ↗":"Original official call ↗";
+       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+      });
+     }
+    }
+   }catch(error){
+    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A chilei CORFO pályázatok most nem tölthetők be.":"Chile CORFO calls are temporarily unavailable.";box.append(warning);
+   }
+  }
   try{
    const response=await fetch("data/eu-national-business-funding.json");
    if(response.ok){
