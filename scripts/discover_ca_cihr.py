@@ -15,14 +15,24 @@ FEED = "https://www.researchnet-recherchenet.ca/rnr16/fodRss.do?type=ALL&chanTyp
 
 def clean(value):
     value = re.sub(r"<[^>]+>", " ", value or "")
-    return re.sub(r"\\s+", " ", value).strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 def main():
     records, error = [], None
     try:
         req = Request(FEED, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/rss+xml, application/xml, text/xml"})
-        with urlopen(req, timeout=45, context=ssl.create_default_context(cafile=certifi.where())) as response:
-            root = ET.fromstring(response.read())
+        # Prefer the runner OS trust store, then fall back to certifi.
+        root = None
+        tls_errors = []
+        for context in (ssl.create_default_context(), ssl.create_default_context(cafile=certifi.where())):
+            try:
+                with urlopen(req, timeout=45, context=context) as response:
+                    root = ET.fromstring(response.read())
+                break
+            except Exception as exc:
+                tls_errors.append(str(exc))
+        if root is None:
+            raise RuntimeError("; ".join(tls_errors)[:450])
         for item in root.findall(".//item"):
             title = clean(item.findtext("title"))
             link = clean(item.findtext("link"))
