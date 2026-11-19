@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:26:30.232939+00:00",
+  "generated_at": "2026-11-19T22:27:58.783609+00:00",
   "feeds_checked": 18,
   "records_checked": 2220,
   "expired_deadlines": 0,
@@ -11,8 +11,8 @@
   "verification_tiers": {
     "verified_open": 0,
     "api_window_candidate": 214,
-    "official_listing_candidate": 0,
-    "unverified": 2000,
+    "official_listing_candidate": 1942,
+    "unverified": 58,
     "other": 6
   },
   "feed_summary": [
@@ -69,7 +69,7 @@
       "records": 496,
       "unverified": 496,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0,
+      "official_listing_candidates": 496,
       "historical_archive_records": 0
     },
     {
@@ -77,7 +77,7 @@
       "records": 4,
       "unverified": 4,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0,
+      "official_listing_candidates": 4,
       "historical_archive_records": 0
     },
     {
@@ -101,7 +101,7 @@
       "records": 1389,
       "unverified": 1389,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0,
+      "official_listing_candidates": 1389,
       "historical_archive_records": 0
     },
     {
@@ -109,7 +109,7 @@
       "records": 20,
       "unverified": 20,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0,
+      "official_listing_candidates": 20,
       "historical_archive_records": 0
     },
     {
@@ -149,7 +149,7 @@
       "records": 33,
       "unverified": 33,
       "api_window_candidates": 0,
-      "official_listing_candidates": 0,
+      "official_listing_candidates": 33,
       "historical_archive_records": 0
     },
     {
