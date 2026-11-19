@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T14:55:46.536774+00:00",
+  "generated_at": "2026-11-19T15:02:00.010277+00:00",
   "source_id": "us-grants-gov",
   "source_url": "https://www.grants.gov/",
   "api_url": "https://api.grants.gov/v1/api/search2",
   "purpose": "Posted and forecasted federal funding opportunities returned by the official public Grants.gov API. Records remain unverified until their official detail pages and eligibility are checked.",
-  "total_available": 1384,
-  "records_count": 1384,
+  "total_available": 1385,
+  "records_count": 1385,
   "records": [
     {
       "id": "355824",
@@ -19379,6 +19379,20 @@
       "status": "posted",
       "category_codes": [],
       "official_url": "https://www.grants.gov/search-results-detail/364162",
+      "source_id": "us-grants-gov",
+      "record_type": "official-api-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "id": "364290",
+      "title": "Research for PFAS Destruction in Environmental Media",
+      "identifier": "EPA-OA-OASES-26-09",
+      "agency": "EPA",
+      "open_date": "11/19/2026",
+      "deadline": "01/20/2027",
+      "status": "posted",
+      "category_codes": [],
+      "official_url": "https://www.grants.gov/search-results-detail/364290",
       "source_id": "us-grants-gov",
       "record_type": "official-api-discovery-candidate",
       "verification_status": "unverified"
