@@ -561,6 +561,39 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   }catch(error){
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A nemzetközi országforrások most nem tölthetők be.":"International country sources could not be loaded.";box.append(warning);
   }
+  if(code==="JP"&&(category==="all"||["business","agriculture","family","education","employment","energy"].includes(category))){
+   try{
+    const response=await fetch("data/jgrants-discovery.json",{cache:"no-store"});
+    if(response.ok){
+     const feed=await response.json();
+     const relevant=feed.records.filter(record=>category==="all"||record.categories.includes(category));
+     if(relevant.length){
+      const heading=document.createElement("h3");heading.textContent=isHu?"Japán – aktuális JGrants támogatási találatok":"Japan — current JGrants subsidy results";box.append(heading);
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"A japán Digitális Ügynökség nyilvános API-jából, aktív befogadási szűrővel lekért kulcsszavas találatok. A lista nem teljes; a jogosultságot és határidőt mindig az eredeti kiírásban ellenőrizd. Forrás: JGrants.":"Keyword-search results from the Japan Digital Agency's public API, filtered for active application periods. This is not a complete inventory; verify eligibility and deadlines on each original notice. Source: JGrants.";box.append(note);
+      relevant.forEach(record=>{
+       const card=document.createElement("article");card.className="card";
+       const h=document.createElement("h3");h.textContent=record.title_original;
+       const p=document.createElement("p");p.textContent=[record.description_original,record.use_purpose_original].filter(Boolean).join(" · ")||record.institution_name_original||"JGrants public subsidy record";
+       const meta=document.createElement("div");meta.className="meta";
+       const details=[];
+       if(record.acceptance_end)details.push((isHu?"Határidő: ":"Deadline: ")+new Date(record.acceptance_end).toLocaleDateString(isHu?"hu-HU":"en-GB"));
+       if(record.maximum_amount_jpy)details.push((isHu?"Maximum összeg: ":"Maximum amount: ")+Number(record.maximum_amount_jpy).toLocaleString(isHu?"hu-HU":"en-US")+" JPY");
+       if(record.target_area_original)details.push((isHu?"Terület: ":"Area: ")+record.target_area_original);
+       meta.textContent=details.join(" · ");
+       const foot=document.createElement("div");foot.className="cardfoot";
+       const label=document.createElement("span");label.textContent=isHu?"JGrants API · aktív jelentkezési időszak szűrő":"JGrants API · active acceptance filter";
+       const a=document.createElement("a");
+       let target="https://www.jgrants-portal.go.jp/grants/view/"+encodeURIComponent(record.id);
+       try{const candidate=new URL(record.url);if(candidate.protocol==="https:"&&(candidate.hostname==="www.jgrants-portal.go.jp"||candidate.hostname==="jgrants-portal.go.jp"))target=candidate.href;}catch(e){}
+       a.href=target;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Eredeti japán kiírás ↗":"Original Japanese notice ↗";
+       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+      });
+     }
+    }
+   }catch(error){
+    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A japán JGrants találatok most nem tölthetők be.":"Japanese JGrants results are temporarily unavailable.";box.append(warning);
+   }
+  }
   try{
    const response=await fetch("data/eu-national-business-funding.json");
    if(response.ok){
