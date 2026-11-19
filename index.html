@@ -464,20 +464,20 @@ function exportCurrentResults(){
 }
 function exportSavedCalendar(){
  const saved=getSaved();
- const rows=liveListings.filter(row=>saved.has(savedId(row))&&row._deadline&&/^\\d{4}-\\d{2}-\\d{2}/.test(String(row._deadline)));
+ const rows=liveListings.filter(row=>saved.has(savedId(row))&&row._deadline&&/^\d{4}-\d{2}-\d{2}/.test(String(row._deadline)));
  if(!rows.length){alert(lang==="hu"?"Nincs határidővel rendelkező mentett lehetőség. Először ments el egy találatot.":"No saved opportunities with a deadline. Save an item first.");return;}
- const esc=value=>String(value??"").replace(/\\\\/g,"\\\\\\\\").replace(/;/g,"\\\\;").replace(/,/g,"\\\\,").replace(/\\r?\\n/g,"\\\\n");
+ const esc=value=>String(value??"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n");
  const date=value=>String(value).slice(0,10).replace(/-/g,"");
- const stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\\.\\d{3}/,"");
+ const stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
  const events=rows.map((row,index)=>{
   const start=date(row._deadline),endDate=new Date(start.slice(0,4)+"-"+start.slice(4,6)+"-"+start.slice(6,8)+"T00:00:00Z");endDate.setUTCDate(endDate.getUTCDate()+1);
   const end=endDate.toISOString().slice(0,10).replace(/-/g,"");
   const title=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"Grant deadline");
   const url=row._official||row._fallback||"";
   const description=(lang==="hu"?"Pályázati határidő. Ellenőrizd a feltételeket a hivatalos oldalon. ":"Application deadline. Verify eligibility on the official source. ")+url;
-  return ["BEGIN:VEVENT","UID:"+esc(savedId(row)+"-"+index)+"@global-support-radar","DTSTAMP:"+stamp,"DTSTART;VALUE=DATE:"+start,"DTEND;VALUE=DATE:"+end,"SUMMARY:"+esc((lang==="hu"?"Határidő: ":"Deadline: ")+title),"DESCRIPTION:"+esc(description),"URL:"+url,"BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY","DESCRIPTION:"+esc(lang==="hu"?"A támogatás határideje 7 nap múlva lejár":"Grant deadline in 7 days"),"END:VALARM","END:VEVENT"].join("\\r\\n");
+  return ["BEGIN:VEVENT","UID:"+esc(savedId(row)+"-"+index)+"@global-support-radar","DTSTAMP:"+stamp,"DTSTART;VALUE=DATE:"+start,"DTEND;VALUE=DATE:"+end,"SUMMARY:"+esc((lang==="hu"?"Határidő: ":"Deadline: ")+title),"DESCRIPTION:"+esc(description),"URL:"+esc(url),"BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY","DESCRIPTION:"+esc(lang==="hu"?"A támogatás határideje 7 nap múlva lejár":"Grant deadline in 7 days"),"END:VALARM","END:VEVENT"].join("\r\n");
  });
- const calendar=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Global Support Radar//Grant deadlines//HU","CALSCALE:GREGORIAN","METHOD:PUBLISH",...events,"END:VCALENDAR"].join("\\r\\n");
+ const calendar=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Global Support Radar//Grant deadlines//HU","CALSCALE:GREGORIAN","METHOD:PUBLISH",...events,"END:VCALENDAR"].join("\r\n");
  const blob=new Blob([calendar],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="global-support-radar-hataridok.ics";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
