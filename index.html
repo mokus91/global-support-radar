@@ -62,7 +62,7 @@ async function loadOfficialSources(){
   const response=await fetch("./data/source-registry.json",{cache:"no-store"});
   if(!response.ok)throw new Error("HTTP "+response.status);
   const registry=await response.json();
-  const rows=registry.sources.filter(x=>country==="all"||(country==="HU"&&x.id.startsWith("hu-"))||(country!=="HU"&&x.coverage.toLowerCase().includes(country.toLowerCase())));
+  const countryName=country==="all"?"":new Intl.DisplayNames(["en"],{type:"region"}).of(country);const rows=registry.sources.filter(x=>country==="all"||x.coverage.toLowerCase().includes(countryName.toLowerCase())||(country==="HU"&&x.id.startsWith("hu-")));
   const chosen=rows.length?rows:registry.sources.filter(x=>x.id.startsWith("eu-"));
   box.innerHTML=chosen.map(x=>'<article class="card"><div class="cardtop"><span class="tag">'+x.kind.replaceAll("-"," ")+'</span><span class="demo">FORRÁSKATALÓGUS</span></div><h3>'+x.name+'</h3><p>'+((x.notes||x.coverage).replaceAll("<","&lt;").replaceAll(">","&gt;"))+'</p><div class="meta"><span>🌍 '+x.coverage+'</span><span>Állapot: '+x.status+'</span></div><div class="cardfoot"><span>Hivatalos kiadó: '+x.publisher+'</span><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Forrás megnyitása ↗</a></div></article>').join("");
  }catch(e){box.innerHTML='<div class="empty">A forrásjegyzék most nem tölthető be. Próbáld újra később.</div>'}
@@ -71,7 +71,7 @@ async function loadEuOpenCalls(){
  const box=$("euCallsList"),status=$("euCallsStatus"),hu=lang==="hu";
  $("euCallsTitle").textContent=hu?"Európai uniós támogatási felhívások":"European Union funding opportunities";
  $("euCallsSub").textContent=hu?"Az Európai Bizottság hivatalos portáljáról gyűjtött nyitott és hamarosan induló lehetőségek. Minden rekordot ellenőrizetlenként jelölünk.":"Open and forthcoming opportunities discovered from the European Commission's official portal. Every record remains unverified.";
- $("euCallsNote").textContent=hu?"A portál státusza és a beadási határidő változhat. A jogosultságot, a határidőt és a feltételeket mindig az eredeti felhívásban ellenőrizd.":"Most US federal opportunities are for organisations, not individuals. Verify eligibility, deadlines and conditions on the original Grants.gov notice.";
+ $("euCallsNote").textContent=hu?"A portál státusza és a beadási határidő változhat. A jogosultságot, a határidőt és a feltételeket mindig az eredeti felhívásban ellenőrizd.":"The portal status and deadline may change. Always verify eligibility, deadlines and conditions on the original call.";
  try{
   const response=await fetch("./data/eu-open-calls-discovery.json",{cache:"no-store"});
   if(!response.ok)throw new Error("HTTP "+response.status);
