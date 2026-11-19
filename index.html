@@ -611,18 +611,34 @@ async function loadLiveListings(){
  const merged=new Map();
  const normalizeUrl=value=>{try{const url=new URL(value);url.hash="";url.search="";return url.origin+url.pathname.replace(/\/+$/,"");}catch(_){return""}};
  const titleKey=row=>String(row.title_original||row.title||row.title_en||row.identifier||"").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim();
- const quality=row=>[row.summary,row.description_original,row.eligibility_status,row.deadline,row.official_url,row.amount_maximum,row.total_call_budget].filter(value=>value!==undefined&&value!==null&&value!=="").length;
+ const quality=row=>{
+  const fields=["summary","description_original","description","eligibility_status","eligibility_summary_hu","eligibility_summary_en","deadline","start_date","official_url","application_url","amount_maximum","amount_max","total_call_budget","amount_currency","publisher","granting_authority","regions","eligible_beneficiaries_original"];
+  return fields.reduce((score,key)=>{const value=row[key];return score+(value!==undefined&&value!==null&&value!==""&&(!Array.isArray(value)||value.length>0)?1:0);},0)
+   +(row.eligibility_verified===true?2:0)+(row.amount_verified===true?2:0)+(row._verification&&row._verification!=="unverified"?2:0);
+ };
  results.flat().forEach((row,index)=>{
   const urlKey=normalizeUrl(row._official);
   const title=titleKey(row);
   const deadline=String(row._deadline||"").slice(0,10);
   const stableId=row.id||row.identifier;
-  const key=urlKey?row._country+"::url::"+urlKey:(stableId?row._country+"::"+row._source+"::id::"+String(stableId):(title?row._country+"::title::"+title+"::"+deadline:row._country+"::unkeyed::"+row._source+"::"+index));
+  // Prefer a stable opportunity identifier. A shared portal URL alone is not unique:
+  // several different calls can legitimately point to the same programme page.
+  const key=stableId?row._country+"::id::"+String(stableId).trim().toLowerCase()
+   :(title?row._country+"::opportunity::"+title+"::"+deadline+(urlKey?"::"+urlKey:"")
+   :(urlKey?row._country+"::url::"+urlKey+"::"+deadline:"unkeyed::"+row._source+"::"+index));
   const existing=merged.get(key);
   if(!existing){merged.set(key,row);return;}
   const preferred=quality(row)>quality(existing)?row:existing;
   const secondary=preferred===row?existing:row;
-  merged.set(key,{...secondary,...preferred,_source:preferred._source||secondary._source,_official:preferred._official||secondary._official,_deadline:preferred._deadline||secondary._deadline,_amount:preferred._amount??secondary._amount,_currency:preferred._currency||secondary._currency,_amountType:preferred._amountType||secondary._amountType});
+  merged.set(key,{...secondary,...preferred,
+   _source:preferred._source||secondary._source,
+   _official:preferred._official||secondary._official,
+   _deadline:preferred._deadline||secondary._deadline,
+   _amount:preferred._amount??secondary._amount,
+   _currency:preferred._currency||secondary._currency,
+   _amountType:preferred._amountType||secondary._amountType,
+   _feedUpdated:preferred._feedUpdated||secondary._feedUpdated
+  });
  });
  liveListings=[...merged.values()];
  renderCards();
