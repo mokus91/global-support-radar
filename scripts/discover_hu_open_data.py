@@ -11,7 +11,7 @@ import certifi
 from datetime import datetime, timezone
 from pathlib import Path
 
-API = "https://t.data.gov.hu/api/3/action/package_search"
+API = "https://opendata.gov.hu/api/3/action/package_search"
 QUERIES = ["támogatás", "pályázat", "agrártámogatás", "lakhatási támogatás",
            "vállalkozásfejlesztés", "ösztöndíj", "energiahatékonyság"]
 OUT = Path("data/hu-open-data-discovery.json")
@@ -67,7 +67,7 @@ def main():
             errors.append({"query": query, "error": str(exc)})
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "https://t.data.gov.hu/",
+        "source": "https://opendata.gov.hu/",
         "api": API,
         "record_type": "open-data-dataset-discovery-not-grant-listings",
         "query_count": len(QUERIES),
