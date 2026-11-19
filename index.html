@@ -560,6 +560,30 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
      healthNotice.textContent=isHu?"Automatikus hivatkozás-ellenőrzés: "+checkedLabel+" · elérhető portálok: "+reachableCount+"/"+(Object.keys(portalHealthById).length||directory.records.length)+". A korlátozott vagy időtúllépéses ellenőrzés nem feltétlenül jelent hibás oldalt.":"Automated link check: "+checkedLabel+" · reachable portals: "+reachableCount+"/"+(Object.keys(portalHealthById).length||directory.records.length)+". Restricted or timed-out checks do not necessarily mean a broken website.";
      box.append(healthNotice);
     }
+    try{
+     const statusResponse=await fetch("data/feed-status.json",{cache:"no-store"});
+     if(statusResponse.ok){
+      const statusData=await statusResponse.json();
+      const statusNotice=document.createElement("div");statusNotice.className="notice";
+      const statusTitle=document.createElement("strong");
+      statusTitle.textContent=isHu?"Automatikus adatfrissítés állapota":"Automated feed refresh status";
+      const statusTime=document.createElement("span");
+      statusTime.textContent=" · "+new Date(statusData.checked_at).toLocaleString(isHu?"hu-HU":"en-GB");
+      statusNotice.append(statusTitle,statusTime);
+      const list=document.createElement("ul");
+      (statusData.feeds||[]).forEach(feed=>{
+       const li=document.createElement("li");
+       const label=feed.status==="checked"?"ellenőrizve":feed.status==="ok"?"sikeres":feed.status==="temporarily-restricted"?"ideiglenesen korlátozott":feed.status==="missing"?"hiányzó":feed.status==="invalid-json"?"hibás adat":feed.status==="checked-empty"?"üres":"ellenőrizve";
+       const english=feed.status==="checked"?"checked":feed.status==="ok"?"successful":feed.status==="temporarily-restricted"?"temporarily restricted":feed.status==="missing"?"missing":feed.status==="invalid-json"?"invalid data":feed.status==="checked-empty"?"empty":"checked";
+       li.textContent=feed.name+": "+(isHu?label:english)+(feed.records_count!==null?" · "+feed.records_count+" rekord":"");
+       list.append(li);
+      });
+      statusNotice.append(list);
+      const note=document.createElement("small");
+      note.textContent=isHu?(statusData.note||"Az ellenőrzés nem garantálja, hogy minden támogatás nyitott."):(statusData.note||"A check does not guarantee that every programme is open.");
+      statusNotice.append(note);box.append(statusNotice);
+     }
+    }catch(statusError){}
     const relevant=directory.records.filter(record=>(code==="all"||record.country_code===code)&&(category==="all"||record.category==="all"||record.category===category));
     if(relevant.length){
      const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos források":"Country-specific official sources";box.append(heading);
