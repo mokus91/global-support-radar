@@ -1291,6 +1291,17 @@
       "access": "Public REST API; latest 50 call records checked daily against official application-window fields",
       "status": "automated-discovery",
       "notes": "The API includes open, closed and resolved calls. Adapter only publishes records with an active date window or indefinite application flag. Not exhaustive; total call budget is not an individual award. Reuse subject to official legal notice."
+    },
+    {
+      "id": "gb-find-a-grant",
+      "name": "Find a Grant — UK Government grant finder",
+      "publisher": "UK Government — Cabinet Office",
+      "url": "https://find-government-grants.service.gov.uk/grants",
+      "coverage": "United Kingdom; government grants for individuals, voluntary/community organisations and businesses",
+      "kind": "government-grant-catalogue",
+      "access": "Official public searchable catalogue; no public API confirmed",
+      "status": "discovery-source",
+      "notes": "The catalogue lists grants and provides filters and eligibility/application details. Do not treat every listed record as currently open; verify the specific grant page. No automated adapter is claimed."
     }
   ],
   "publication_requirements": [

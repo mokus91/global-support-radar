@@ -940,6 +940,20 @@
       "description_hu": "A brit kormány központi pályázatkeresője. Magánszemélyek, közszféra, vállalkozások és nonprofit szervezetek számára is tartalmazhat támogatásokat; a jogosultságot és a határidőt az egyes hivatalos kiírásokban kell ellenőrizni.",
       "description_en": "The UK government's central grant finder. Listings can cover individuals, public-sector bodies, businesses and non-profits; check eligibility and deadlines on each official grant notice.",
       "verification_status": "official-government-portal"
+    },
+    {
+      "id": "gb-find-a-grant",
+      "country_code": "GB",
+      "country_en": "United Kingdom",
+      "category": "business",
+      "name_hu": "Egyesült Királyság – Find a Grant állami támogatáskereső",
+      "name_en": "United Kingdom — Find a Grant government funding finder",
+      "url": "https://find-government-grants.service.gov.uk/grants",
+      "publisher": "UK Government — Cabinet Office",
+      "kind": "government-grant-finder",
+      "description_hu": "Hivatalos brit támogatáskereső magánszemélyeknek, civil szervezeteknek és vállalkozásoknak. A találatoknál külön ellenőrizd a jogosultságot, a nyitvatartási időszakot és a beadási feltételeket.",
+      "description_en": "Official UK government grant finder for individuals, voluntary organisations and businesses. Check eligibility, application windows and requirements on each grant page.",
+      "verification_status": "official-domain-source"
     }
   ],
   "records_count": 67
