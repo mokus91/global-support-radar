@@ -88,7 +88,7 @@ async function loadHungarianAnnouncements(){
    const meta=document.createElement("div");meta.className="meta";const date=document.createElement("span");date.textContent=(hu?"Közzétéve: ":"Published: ")+(x.published_at||"—");meta.append(date);
    const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=hu?"Eredeti hivatalos forrás":"Original official source";
    const link=document.createElement("a");let href="https://www.palyazat.gov.hu/";
-   try{const u=new URL(x.official_url||"");if(u.protocol==="https:"&&u.hostname.endsWith("palyazat.gov.hu"))href=u.href;}catch(_){}
+   try{const u=new URL(x.official_url||"");if(u.protocol==="https:"&&(u.hostname==="palyazat.gov.hu"||u.hostname.endsWith(".palyazat.gov.hu")))href=u.href;}catch(_){}
    link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=hu?"Közlemény megnyitása ↗":"Open announcement ↗";
    foot.append(label,link);card.append(top,h,p,meta,foot);list.append(card);
   });
