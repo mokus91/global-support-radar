@@ -10,7 +10,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
 - Tíz támogatási kategória: lakhatás, család, mezőgazdaság, vállalkozás, oktatás, egészségügy, energia, foglalkoztatás, szociális támogatás és közlekedés.
 - Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
-- 69 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
+- 71 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
 - Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
 - A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants, Chile CORFO és Új-Zéland Business.govt.nz Funding Explorer (programkatalógus, nem igazolt nyitott felhívások).
@@ -22,9 +22,9 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Magyar hivatalos kiindulópontok családtámogatáshoz, lakhatáshoz, mezőgazdasághoz, vállalkozáshoz, civil/kulturális támogatáshoz és kutatás-fejlesztéshez.
 - Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
 - Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
-- 118 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
+- 122 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
 - Automatikus forrásfrissítés naponta négyszer (01:23, 07:23, 13:23 és 19:23 UTC) GitHub Actions segítségével; kézi workflow-indítás is be van állítva. A sikertelen külső lekérések külön hibastátuszt kapnak, és ahol biztonságos, az előző adatpillanatkép megmarad.
-- A források elérhetőségét külön napi ellenőrzés vizsgálja. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
+- A források elérhetőségét külön napi ellenőrzés vizsgálja. A weboldalon külön adatfrissítési állapotpanel mutatja a 18 automatikusan vizsgált adatfolyam legutóbbi ellenőrzési idejét és eredményét; az ellenőrzés nem jelent támogatási jogosultságot vagy nyitott pályázatot. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
 
 ## Fontos korlátok — mit nem állít a rendszer?
 
@@ -61,8 +61,8 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 ## Adatstruktúra
 
 - `index.html` — felhasználói felület és keresési logika.
-- `data/source-registry.json` — hivatalos forrásregiszter (118 rekord).
-- `data/worldwide-national-support-sources.json` — 67 ország-specifikus forrás 46 országból.
+- `data/source-registry.json` — hivatalos forrásregiszter (122 rekord).
+- `data/worldwide-national-support-sources.json` — 71 ország-specifikus forrás 46 országból.
 - `data/un-national-portals.json` — 193 ENSZ-tagállam történeti nemzeti portáljegyzéke.
 - `data/global-support-directory.json` — globális hivatalos és szociális védelmi hivatkozások.
 - `data/europe-national-portals.json` — EU-tagállami finanszírozási portálok.
