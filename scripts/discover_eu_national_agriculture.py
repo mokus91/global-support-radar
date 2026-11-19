@@ -74,7 +74,7 @@ def main():
             source_host = normalized_host(final_url)
             found = set()
             for item in parser.links:
-                label = re.sub(r"\\s+", " ", item["text"]).strip()
+                label = re.sub(r"\s+", " ", item["text"]).strip()
                 href = (item["href"] or "").strip()
                 if not href or href.startswith(("#", "mailto:", "javascript:")):
                     continue
@@ -118,7 +118,7 @@ def main():
         "records": records,
         "fetch_failures": failures
     }
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Checked {checked}/{payload['portals_total']} portals; found {len(records)} unverified agriculture links; failures: {len(failures)}")
 
 if __name__ == "__main__":
