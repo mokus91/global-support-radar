@@ -613,6 +613,61 @@
       "access": "European Commission official directory linking to each Member State portal",
       "status": "discovery-source",
       "notes": "The country-specific portal links are stored in data/europe-national-portals.json. These cover shared-management EU funds, not all household benefits or every national grant."
+    },
+    {
+      "id": "eu-esf-country-pages",
+      "name": "European Social Fund Plus — country pages",
+      "publisher": "European Commission",
+      "url": "https://european-social-fund-plus.ec.europa.eu/en/in-your-country",
+      "coverage": "EU Member States; category-specific programme and finance information",
+      "kind": "country-programme-directory",
+      "access": "Official EU country/category directory",
+      "status": "discovery-source",
+      "notes": "Country information on ESF+ programmes, national priorities and managing authorities. Not all support is available directly to individuals."
+    },
+    {
+      "id": "eu-cap-country-plans",
+      "name": "Common Agricultural Policy — country plans",
+      "publisher": "European Commission — Agriculture and Rural Development",
+      "url": "https://agriculture.ec.europa.eu/cap-my-country/cap-strategic-plans_en",
+      "coverage": "EU Member States; category-specific programme and finance information",
+      "kind": "agriculture-country-directory",
+      "access": "Official EU country/category directory",
+      "status": "discovery-source",
+      "notes": "Member States' CAP Strategic Plans and agricultural interventions. Verify actual calls with the national paying agency."
+    },
+    {
+      "id": "eu-business-finance",
+      "name": "EU business funding — Your Europe",
+      "publisher": "European Commission",
+      "url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/index_en.htm",
+      "coverage": "EU Member States; category-specific programme and finance information",
+      "kind": "business-finance-directory",
+      "access": "Official EU country/category directory",
+      "status": "discovery-source",
+      "notes": "Overview of EU and national business finance, grants, loans and guarantees."
+    },
+    {
+      "id": "eu-access-finance",
+      "name": "Access to EU Finance — finance intermediaries",
+      "publisher": "European Commission",
+      "url": "https://europa.eu/youreurope/business/finance-funding/getting-funding/index_en.htm",
+      "coverage": "EU Member States; category-specific programme and finance information",
+      "kind": "finance-intermediary-directory",
+      "access": "Official EU country/category directory",
+      "status": "discovery-source",
+      "notes": "Find local intermediaries for EU-backed loans and financial instruments. Not a complete list of non-repayable grants."
+    },
+    {
+      "id": "eu-funding-tenders",
+      "name": "EU Funding & Tenders — direct EU calls",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "coverage": "EU Member States; category-specific programme and finance information",
+      "kind": "direct-eu-calls",
+      "access": "Official EU country/category directory",
+      "status": "discovery-source",
+      "notes": "Calls managed directly by the European Commission and EU institutions. Eligibility must be checked for each call."
     }
   ],
   "publication_requirements": [
