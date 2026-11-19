@@ -48,8 +48,15 @@ jobs:
               const type = body.match(/^Feedback type:\s*(.+)$/mi)?.[1]?.trim();
               const rating = body.match(/^Rating:\s*([1-5])\s*$/mi)?.[1];
               const normalized = (type || '').toLowerCase();
-              const category = Object.keys(categories).find(key =>
-                key.toLowerCase() === normalized) || 'Other';
+              const aliases = {
+                'használhatóság': 'Usability', 'usability': 'Usability',
+                'hibás működés': 'Broken function', 'broken function': 'Broken function',
+                'pontatlan vagy hiányzó adat': 'Data accuracy / missing data',
+                'data accuracy / missing data': 'Data accuracy / missing data',
+                'ötlet / fejlesztési javaslat': 'Feature idea', 'feature idea': 'Feature idea',
+                'akadálymentesség': 'Accessibility', 'accessibility': 'Accessibility'
+              };
+              const category = aliases[normalized] || 'Other';
               categories[category]++;
               ratings[rating || 'Unrated']++;
             }
