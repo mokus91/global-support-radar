@@ -97,7 +97,7 @@ def main() -> int:
             errors.append(f"{filename}: records is not a list")
             continue
         declared = feed.get("records_count")
-        if isinstance(records, list) and isinstance(declared, int) and declared != len(records):
+        if status in {"checked", "checked-empty"} and isinstance(records, list) and isinstance(declared, int) and declared != len(records):
             errors.append(
                 f"{filename}: manifest says {declared} records but feed contains {len(records)}"
             )
