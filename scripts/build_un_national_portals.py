@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 seed = ROOT / "data/un-national-portals-seed.tsv"
 out = ROOT / "data/un-national-portals.json"
 ALIASES = {
-    "Congo": "CG", "Democratic People's Republic of Korea": "KP",
+    "Congo": "CG", "Niger": "NE", "Nigeria": "NG", "Democratic People's Republic of Korea": "KP",
     "Democratic Republic of the Congo": "CD", "Iran (Islamic Republic of)": "IR",
     "Lao People's Democratic Republic": "LA", "Micronesia (Federated States of)": "FM",
     "Republic of Korea": "KR", "Republic of Moldova": "MD",
