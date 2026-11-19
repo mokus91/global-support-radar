@@ -602,6 +602,17 @@
       "access": "Public dashboards and database",
       "status": "discovery-source",
       "notes": "Analytical data on social assistance, social insurance and labour-market programmes; not a direct application portal."
+    },
+    {
+      "id": "eu-national-single-portals",
+      "name": "EU Member State National Single Portals",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
+      "coverage": "All 27 EU Member States; national and regional programmes under shared-management EU funds 2021–2027",
+      "kind": "national-funding-portals-directory",
+      "access": "European Commission official directory linking to each Member State portal",
+      "status": "discovery-source",
+      "notes": "The country-specific portal links are stored in data/europe-national-portals.json. These cover shared-management EU funds, not all household benefits or every national grant."
     }
   ],
   "publication_requirements": [
