@@ -1357,6 +1357,17 @@
       "access": "Official European Commission interactive funding dashboard; opportunities are presented across direct, indirect and shared management",
       "status": "discovery-source",
       "notes": "The Commission describes the dashboard as a continuously updated overview of funding opportunities. It is a discovery dashboard, not a single grant database; verify each opportunity and eligibility on the originating programme page."
+    },
+    {
+      "id": "eu-missoc-comparative-database",
+      "name": "MISSOC — Comparative database on social protection",
+      "publisher": "European Commission — Directorate-General for Employment, Social Affairs and Inclusion",
+      "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en",
+      "coverage": "31 European countries including EU Member States, Iceland, Liechtenstein, Norway and Switzerland; social protection systems",
+      "kind": "comparative-social-protection-database",
+      "access": "Official European Commission comparative database and country guides",
+      "status": "discovery-source",
+      "notes": "Covers 12 areas including healthcare, sickness, maternity, invalidity, old-age, survivors, employment injuries, family, unemployment, minimum resources and long-term care. The MISSOC database moved to the European Commission website on 14 October 2026. Reference information, not a live grant feed or proof of individual eligibility."
     }
   ],
   "publication_requirements": [
@@ -1372,5 +1383,6 @@
     "last_verified_at",
     "source_language",
     "licence_or_reuse_basis"
-  ]
+  ],
+  "records_count": 125
 }

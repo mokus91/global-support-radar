@@ -469,5 +469,28 @@
       "description_hu": "Az Európai Bizottság országismertetője a Svédország-országi társadalombiztosítási és szociális jogosultságokról. Többek között családi ellátások, munkanélküli-ellátás, egészségügy és nyugdíj; az aktuális nemzeti feltételeket az illetékes hatóságnál kell ellenőrizni.",
       "description_en": "European Commission country guide to social security rights in Sweden, including family benefits, unemployment, healthcare and pensions. Confirm current national conditions with the competent authority."
     }
-  ]
+  ],
+  "comparative_database": {
+    "name": "MISSOC comparative database",
+    "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en",
+    "publisher": "European Commission",
+    "country_count": 31,
+    "areas": [
+      "financing",
+      "healthcare",
+      "sickness",
+      "maternity",
+      "invalidity",
+      "old-age",
+      "survivors",
+      "employment_injuries",
+      "family",
+      "unemployment",
+      "minimum_resources",
+      "long_term_care"
+    ],
+    "last_migration_notice": "2026-10-14",
+    "note_hu": "Összehasonlító szociális védelmi tájékoztató, nem élő pályázati adatfolyam.",
+    "note_en": "Comparative social protection reference, not a live grant feed."
+  }
 }

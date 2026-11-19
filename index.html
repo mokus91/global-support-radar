@@ -716,6 +716,13 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    const response=await fetch("data/europe-category-directories.json");
    if(response.ok){
     const directory=await response.json();
+    if(code==="all"||code==="EU"||category==="social"||category==="family"||category==="employment"||category==="healthcare"){
+     const comparative=document.createElement("article");comparative.className="card";
+     const title=document.createElement("h3");title.textContent=isHu?"Európai összehasonlító szociális védelmi adatbázis – MISSOC":"European comparative social protection database — MISSOC";
+     const summary=document.createElement("p");summary.textContent=isHu?"Az Európai Bizottság 31 európai ország szociális védelmi rendszereit hasonlítja össze 12 területen, többek között családi ellátások, munkanélküliség, egészségügy, nyugdíj és minimumjövedelem szerint. Ez tájékoztató adatbázis, nem aktuális pályázati lista.":"The European Commission compares social protection systems in 31 European countries across 12 areas, including family benefits, unemployment, healthcare, pensions and minimum income. This is a reference database, not a live grant list.";
+     const meta=document.createElement("div");meta.className="meta";meta.textContent=isHu?"31 ország · 12 terület · Európai Bizottság · összehasonlító tájékoztatás":"31 countries · 12 areas · European Commission · comparative information";
+     const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.className="tag";label.textContent=isHu?"Hivatalos összehasonlító adatbázis":"Official comparative database";const a=document.createElement("a");a.href="https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en";a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Adatbázis megnyitása →":"Open database →";foot.append(label,a);comparative.append(title,summary,meta,foot);box.append(comparative);
+    }
     const relevant=directory.records.filter(record=>record.categories.includes("all")||category==="all"||record.categories.includes(category));
     if(relevant.length){
      const heading=document.createElement("h3");heading.textContent=isHu?"További hivatalos EU-s források a kiválasztott területhez":"More official EU sources for the selected category";box.append(heading);
