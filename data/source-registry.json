@@ -238,6 +238,72 @@
       "access": "Official ResearchNet RSS feed",
       "status": "automated-discovery",
       "notes": "RSS candidates are collected automatically. These are health research opportunities, not a complete list of Canadian public benefits or all grants; each notice remains unverified."
+    },
+    {
+      "id": "br-fapesp",
+      "name": "FAPESP – Calls for Proposals",
+      "publisher": "São Paulo Research Foundation",
+      "url": "https://fapesp.br/en/calls",
+      "coverage": "Brazil; São Paulo state research, innovation, scholarships and business R&D",
+      "kind": "research-and-innovation-funding",
+      "access": "Official searchable call listings; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Regional Brazilian funding source covering research, scholarships and innovation. Eligibility is often limited to São Paulo-based institutions or collaborations."
+    },
+    {
+      "id": "jp-japan-foundation",
+      "name": "The Japan Foundation – Grant Programmes",
+      "publisher": "The Japan Foundation",
+      "url": "https://www.jpf.go.jp/e/program/",
+      "coverage": "Japan and international cultural exchange; eligible countries vary by programme",
+      "kind": "cultural-and-education-grants",
+      "access": "Official programme catalogue; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Official programme catalogue for cultural exchange, education and international cooperation grants. Applicant country and programme conditions vary."
+    },
+    {
+      "id": "jp-jst-funding",
+      "name": "Japan Science and Technology Agency – Funding",
+      "publisher": "Japan Science and Technology Agency",
+      "url": "https://www.jst.go.jp/EN/",
+      "coverage": "Japan; science, technology, research and innovation funding",
+      "kind": "research-and-innovation-funding",
+      "access": "Official agency website; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "National science and technology funding agency. Individual calls may have restricted applicant eligibility and require Japanese institutional partners."
+    },
+    {
+      "id": "za-nrf-funding",
+      "name": "National Research Foundation – Funding Opportunities",
+      "publisher": "South African National Research Foundation",
+      "url": "https://www.nrf.ac.za/funding/",
+      "coverage": "South Africa; research, postgraduate scholarships and science development",
+      "kind": "research-and-education-funding",
+      "access": "Official funding portal; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Official South African research and postgraduate funding opportunities. Not a complete catalogue of household or business support."
+    },
+    {
+      "id": "in-dst-funding",
+      "name": "India Department of Science and Technology – Funding",
+      "publisher": "Government of India, Department of Science and Technology",
+      "url": "https://dst.gov.in/call-for-proposals",
+      "coverage": "India; science, research, innovation and technology development",
+      "kind": "research-and-innovation-funding",
+      "access": "Official call-for-proposals listing; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Official central-government calls for proposals. Applicant and institution eligibility varies by scheme."
+    },
+    {
+      "id": "global-gef-sgp",
+      "name": "GEF Small Grants Programme",
+      "publisher": "Global Environment Facility / UNDP",
+      "url": "https://www.thegef.org/what-we-do/topics/gef-small-grants-program",
+      "coverage": "Eligible countries worldwide; community-led environmental, sustainable agriculture and energy projects",
+      "kind": "international-small-grants",
+      "access": "Official programme and country-level pages; no global structured feed confirmed",
+      "status": "discovery-source",
+      "notes": "Global programme supporting eligible civil society organisations and community groups; country teams publish local calls and eligibility."
     }
   ],
   "publication_requirements": [
