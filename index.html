@@ -23,6 +23,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <div class="filters" id="filters"></div><div class="cards" id="cards"></div>
 <div class="notice" id="notice">⚠️ <b>Fontos:</b> A jelenlegi elemek bemutató adatok, nem valódi, ellenőrzött pályázatok. Éles támogatást csak ellenőrzött hivatalos forrással és érvényes jelentkezési hivatkozással teszünk közzé.</div>
 </section>
+<section id="officialSources"><div class="sectionhead"><div><h2 id="sourceTitle">Hivatalos adatforrások</h2><p id="sourceSub">Ellenőrizhető kormányzati és intézményi kiindulópontok. Ezek források, nem automatikusan aktív támogatások.</p></div></div><div id="sourceList" class="cards"><div class="empty">Források betöltése…</div></div></section>
 <section><div class="sectionhead"><div><h2 id="howTitle">Hogyan működik?</h2><p id="howSub">A cél egy megbízható, országokon átívelő támogatáskereső.</p></div></div><div class="how"><div><b>01 · <span id="h1">Keresés</span></b><span id="hd1">Ország és támogatási kategória kiválasztása.</span></div><div><b>02 · <span id="h2">Ellenőrzés</span></b><span id="hd2">Hivatalos kormányzati vagy önkormányzati forrás megnyitása.</span></div><div><b>03 · <span id="h3">Jelentkezés</span></b><span id="hd3">A feltételek és határidők ellenőrzése után jelentkezés a kiíró oldalán.</span></div></div></section>
 </main>
 <footer><div class="footrow"><span>© 2026 Global Support Radar · Independent information project</span><span id="footnote">Nem állami weboldal. A végleges jogosultságot mindig a hivatalos kiíró határozza meg.</span></div></footer>
@@ -46,9 +47,20 @@ const data=[
 ];
 let lang=(navigator.language||"hu").toLowerCase().startsWith("hu")?"hu":"en",active=-1;
 const $=id=>document.getElementById(id);
+async function loadOfficialSources(){
+ const box=$("sourceList"),country=$("country").value;
+ try{
+  const response=await fetch("./data/source-registry.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("HTTP "+response.status);
+  const registry=await response.json();
+  const rows=registry.sources.filter(x=>country==="all"||(country==="HU"&&x.id.startsWith("hu-"))||(country!=="HU"&&x.coverage.toLowerCase().includes(country.toLowerCase())));
+  const chosen=rows.length?rows:registry.sources.filter(x=>x.id.startsWith("eu-"));
+  box.innerHTML=chosen.map(x=>'<article class="card"><div class="cardtop"><span class="tag">'+x.kind.replaceAll("-"," ")+'</span><span class="demo">FORRÁSKATALÓGUS</span></div><h3>'+x.name+'</h3><p>'+((x.notes||x.coverage).replaceAll("<","&lt;").replaceAll(">","&gt;"))+'</p><div class="meta"><span>🌍 '+x.coverage+'</span><span>Állapot: '+x.status+'</span></div><div class="cardfoot"><span>Hivatalos kiadó: '+x.publisher+'</span><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Forrás megnyitása ↗</a></div></article>').join("");
+ }catch(e){box.innerHTML='<div class="empty">A forrásjegyzék most nem tölthető be. Próbáld újra később.</div>'}
+}
 function render(){const t=translations[lang];$("lang").value=lang;["eyebrow","title","subtitle","browseTitle","browseSub","howTitle","howSub"].forEach(k=>$(k).textContent=t[k]);$("q").placeholder=t.placeholder;$("searchBtn").textContent=t.search;$("s1").textContent=t.s1;$("s2").textContent=t.s2;$("s3").textContent=t.s3;$("notice").innerHTML=t.notice;$("footnote").textContent=t.foot;["h1","h2","h3"].forEach((id,i)=>$(id).textContent=t.h[i]);["hd1","hd2","hd3"].forEach((id,i)=>$(id).textContent=t.hd[i]);$("filters").innerHTML=[t.all,...t.categories].map((c,i)=>'<button class="filter '+((i===0&&active===-1)||(i-1===active)?"active":"")+'" data-cat="'+(i-1)+'">'+c+'</button>').join("");document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{active=Number(b.dataset.cat);renderCards()});renderCards()}
 function renderCards(){const t=translations[lang],q=$("q").value.toLowerCase(),country=$("country").value;const rows=data.filter(d=>(active<0||d.cat===active)&&(country==="all"||d.country==="all"||d.country===country)&&((d.name[lang]+" "+d.desc[lang]+" "+t.categories[d.cat]).toLowerCase().includes(q)));$("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results");$("cards").innerHTML=rows.length?rows.map(d=>'<article class="card"><div class="cardtop"><span class="tag">'+t.categories[d.cat]+'</span><span class="demo">'+t.demo+'</span></div><h3>'+d.name[lang]+'</h3><p>'+d.desc[lang]+'</p><div class="meta"><span>🌍 '+(d.country==="all"?t.allcountries:$("country").selectedOptions[0].textContent)+'</span><span>◷ '+t.deadline+": "+d.deadline+'</span><span>↗ '+t.amount+": "+d.amount+'</span></div><div class="cardfoot"><span>'+t.source+'</span><span style="color:var(--muted)">'+t.apply+' ↗</span></div></article>').join(""):'<div class="empty">'+t.empty+'</div>'}
-$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render()};$("country").onchange=renderCards;$("searchBtn").onclick=renderCards;$("q").oninput=renderCards;$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();
+$("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;render()};$("country").onchange=()=>{renderCards();loadOfficialSources()};$("searchBtn").onclick=renderCards;$("q").oninput=renderCards;$("q").onkeydown=e=>{if(e.key==="Enter")renderCards()};render();loadOfficialSources();
 </script>
 
 <script id="global-country-expansion">
