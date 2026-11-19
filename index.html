@@ -623,7 +623,7 @@ async function loadLiveListings(){
   const stableId=row.id||row.identifier;
   // Prefer a stable opportunity identifier. A shared portal URL alone is not unique:
   // several different calls can legitimately point to the same programme page.
-  const key=stableId?row._country+"::id::"+String(stableId).trim().toLowerCase()
+  const key=stableId?row._country+"::id::"+String(stableId).trim().toLowerCase()+"::"+title
    :(title?row._country+"::opportunity::"+title+"::"+deadline+(urlKey?"::"+urlKey:"")
    :(urlKey?row._country+"::url::"+urlKey+"::"+deadline:"unkeyed::"+row._source+"::"+index));
   const existing=merged.get(key);
