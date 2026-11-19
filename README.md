@@ -76,6 +76,7 @@ Python 3.12 is used by the discovery workflow. The Hungarian open-data and Canad
 ```bash
 python -m pip install certifi
 python scripts/discover_eu_funding.py
+python scripts/discover_eu_national_agriculture.py
 python scripts/discover_us_grants.py
 python scripts/discover_ukri.py
 python scripts/discover_au_arc_grants.py
@@ -83,6 +84,11 @@ python scripts/discover_ca_cihr.py
 python scripts/discover_hu_open_data.py
 python scripts/discover_hu_nkfih.py
 ```
+
+
+### EU national agriculture source discovery
+
+The daily discovery workflow also checks the 27 official national EU shared-management funding portals for agriculture-related links. It writes `data/eu-national-agriculture-discovery.json` and displays country-matched results in the worldwide finder when agriculture is selected. This is link discovery only: results remain unverified leads and are never labelled as open calls until the original call page has been checked.
 
 ## Verification policy
 
