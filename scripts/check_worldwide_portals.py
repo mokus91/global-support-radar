@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data" / "worldwide-national-support-sources.json"
 OUTPUT = ROOT / "data" / "worldwide-portal-health.json"
-TIMEOUT = 15
+TIMEOUT = 25
 USER_AGENT = "GlobalSupportRadar-SourceMonitor/1.0 (+https://mokus91.github.io/global-support-radar/)"
 try:
     import certifi
@@ -50,7 +50,7 @@ def check(record: dict) -> dict:
 def main() -> None:
     directory = json.loads(INPUT.read_text(encoding="utf-8"))
     records = directory.get("records", [])
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         results = list(pool.map(check, records))
     output = {
         "schema_version": "1.0",
