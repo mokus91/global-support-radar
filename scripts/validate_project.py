@@ -102,13 +102,13 @@ def main():
     if 'url.pathname.endsWith(".json")' not in worker or 'url.pathname.includes("/data/")' not in worker:
         raise SystemExit("Service worker must never cache live JSON opportunity data")
 
-    script_blocks = re.findall(r"<script\\b([^>]*)>([\\s\\S]*?)</script>", html, re.I)
+    script_blocks = re.findall(r"<script\b([^>]*)>([\s\S]*?)</script>", html, re.I)
     javascript_index = 0
     jsonld_count = 0
     for attributes, script in script_blocks:
         if not script.strip():
             continue
-        type_match = re.search(r"""\\btype\\s*=\\s*["']([^"']+)["']""", attributes, re.I)
+        type_match = re.search(r"""\btype\s*=\s*["']([^"']+)["']""", attributes, re.I)
         script_type = type_match.group(1).strip().lower() if type_match else ""
         if script_type == "application/ld+json":
             try:
