@@ -1346,6 +1346,17 @@
       "access": "Official public search portal; source documentation states that the opportunity list is refreshed daily",
       "status": "official-manual-link",
       "notes": "Direct official portal link only. Automated import is not enabled; do not present the portal as an integrated live feed."
+    },
+    {
+      "id": "eu-step-platform",
+      "name": "Strategic Technologies for Europe Platform (STEP) — funding opportunities",
+      "publisher": "European Commission",
+      "url": "https://strategic-technologies.europa.eu/get-funding_en",
+      "coverage": "European Union; strategic technologies including clean tech, digital and biotechnology; funding across multiple EU programmes",
+      "kind": "funding-opportunity-dashboard",
+      "access": "Official European Commission interactive funding dashboard; opportunities are presented across direct, indirect and shared management",
+      "status": "discovery-source",
+      "notes": "The Commission describes the dashboard as a continuously updated overview of funding opportunities. It is a discovery dashboard, not a single grant database; verify each opportunity and eligibility on the originating programme page."
     }
   ],
   "publication_requirements": [

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-19",
-  "scope": "Country-specific official support discovery portals across 46 countries. Records link to official national catalogues, benefit finders and funding portals; they are not individual grant records and do not imply an open call or eligibility.",
+  "scope": "Country-specific official support discovery portals across 46 countries, plus European Union-wide official funding and finance discovery resources. Records link to official national catalogues, benefit finders and funding portals; they are not individual grant records and do not imply an open call or eligibility.",
   "records": [
     {
       "id": "au-benefits",
@@ -996,6 +996,48 @@
       "description_hu": "Hivatalos környezetvédelmi támogatási katalógus, amely programneveket, szervezeteket, témákat és egyes esetekben nyitott/zárt státuszt mutat. A programoldalon kell ellenőrizni a jelentkezést.",
       "description_en": "Official environmental funding catalogue with programme names, providers, topics and, for some entries, open/closed labels. Confirm application details on the programme page.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "eu-step-funding",
+      "country_code": "EU",
+      "country_en": "European Union",
+      "category": "business",
+      "name_hu": "EU – STEP stratégiai technológiák finanszírozási lehetőségei",
+      "name_en": "EU — STEP strategic technologies funding opportunities",
+      "url": "https://strategic-technologies.europa.eu/get-funding_en",
+      "publisher": "European Commission",
+      "kind": "funding-opportunity-dashboard",
+      "description_hu": "Az EU stratégiai technológiákat – többek között tiszta technológiákat, digitális és biotechnológiai fejlesztéseket – támogató finanszírozási lehetőségeinek folyamatosan frissített áttekintője. Több uniós program forrásait kapcsolja össze; a támogatás lehet közvetlen, közvetett vagy megosztott kezelésű. A konkrét kiírások és jogosultságok az eredeti programoldalon ellenőrzendők.",
+      "description_en": "Continuously updated overview of EU funding opportunities for strategic technologies, including clean technologies, digital and biotechnology. It brings together opportunities across several EU programmes; funding may be direct, indirect or shared management. Verify each call and eligibility on its original programme page.",
+      "verification_status": "official-eu-dashboard"
+    },
+    {
+      "id": "eu-access-finance",
+      "country_code": "EU",
+      "country_en": "European Union",
+      "category": "business",
+      "name_hu": "EU – Access to Finance helyi finanszírozási közvetítők",
+      "name_en": "EU — Access to Finance local financial intermediaries",
+      "url": "https://europa.eu/youreurope/business/finance-funding/getting-funding/access-finance/index_en.htm",
+      "publisher": "European Commission / Your Europe",
+      "kind": "repayable-finance-directory",
+      "description_hu": "Uniós támogatású hitelekhez, garanciákhoz és tőkefinanszírozáshoz kapcsolódó helyi pénzügyi közvetítők keresése. Ezek nem feltétlenül vissza nem térítendő támogatások.",
+      "description_en": "Find local financial intermediaries for EU-backed loans, guarantees and equity financing. These are not necessarily non-repayable grants.",
+      "verification_status": "official-eu-information"
+    },
+    {
+      "id": "eu-funding-guide",
+      "country_code": "EU",
+      "country_en": "European Union",
+      "category": "all",
+      "name_hu": "EU – finanszírozás és támogatás útmutató vállalkozásoknak",
+      "name_en": "EU — Your Europe funding and support guide",
+      "url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/index_en.htm",
+      "publisher": "European Commission / Your Europe",
+      "kind": "funding-guidance",
+      "description_hu": "Elmagyarázza a közvetlen uniós pályázatok, a tagállami és regionális alapok, valamint a visszafizetendő finanszírozások közötti különbségeket.",
+      "description_en": "Explains the difference between directly managed EU calls, national and regional funds, and repayable finance.",
+      "verification_status": "official-eu-guidance"
     }
   ],
   "records_count": 67
