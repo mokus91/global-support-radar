@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-19",
-  "scope": "Country-specific official support discovery portals across 36 countries. Records link to official national catalogues, benefit finders and EU national funding portals; they are not individual grant records and do not imply an open call or eligibility.",
+  "scope": "Country-specific official support discovery portals across 41 countries. Records link to official national catalogues, benefit finders and funding portals; they are not individual grant records and do not imply an open call or eligibility.",
   "records": [
     {
       "id": "au-benefits",
@@ -660,6 +660,118 @@
       "description_hu": "Hivatalos nemzeti belépési pont az uniós társfinanszírozású programokhoz és pályázati felhívásokhoz. A támogatási területek, jogosultság és beadási határidők programonként és régiónként eltérnek.",
       "description_en": "Official national entry point for EU-co-funded programmes and calls. Support areas, eligibility and deadlines vary by programme and region.",
       "verification_status": "official-link-listed-by-european-commission"
+    },
+    {
+      "id": "national-no-business-1",
+      "country_code": "NO",
+      "country_en": "Norway",
+      "category": "business",
+      "name_hu": "Norvégia – Innovation Norway támogatások",
+      "name_en": "Norway — Innovation Norway grants",
+      "url": "https://www.innovasjonnorge.no/en/our-services",
+      "publisher": "Innovation Norway",
+      "kind": "business-support-finder",
+      "description_hu": "Hivatalos állami finanszírozási és tanácsadási portál vállalkozásoknak, innovációs, induló vállalkozási, mezőgazdasági és növekedési támogatásokkal.",
+      "description_en": "Official public funding and advisory portal for businesses, including innovation, start-up, agriculture and growth support.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-ch-business-1",
+      "country_code": "CH",
+      "country_en": "Switzerland",
+      "category": "business",
+      "name_hu": "Svájc – Innosuisse támogatási lehetőségek",
+      "name_en": "Switzerland — Innosuisse support offers",
+      "url": "https://www.innosuisse.admin.ch/en/support-offers",
+      "publisher": "Swiss Innovation Agency — Innosuisse",
+      "kind": "business-support-finder",
+      "description_hu": "Hivatalos innovációs támogatások vállalkozásoknak, startupoknak és kutatóintézményeknek; a pályázati feltételek programonként eltérnek.",
+      "description_en": "Official innovation support for businesses, start-ups and research institutions; application conditions vary by programme.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-tr-business-1",
+      "country_code": "TR",
+      "country_en": "Türkiye",
+      "category": "business",
+      "name_hu": "Törökország – KOSGEB állami vállalkozásfejlesztési támogatások",
+      "name_en": "Türkiye — KOSGEB government business support",
+      "url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri",
+      "publisher": "KOSGEB — Republic of Türkiye",
+      "kind": "business-support-finder",
+      "description_hu": "Hivatalos kereső KKV- és vállalkozásfejlesztési támogatásokhoz, többek között beruházás, foglalkoztatás, innováció és vállalkozásindítás témában.",
+      "description_en": "Official finder for SME and business development support, including investment, employment, innovation and start-up programmes.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-tr-all-2",
+      "country_code": "TR",
+      "country_en": "Türkiye",
+      "category": "all",
+      "name_hu": "Törökország – állami támogatási és ösztönző programok keresője",
+      "name_en": "Türkiye — government support and incentives finder",
+      "url": "https://yatirimadestek.gov.tr/searchsupport",
+      "publisher": "Republic of Türkiye — Investment Support Office",
+      "kind": "government-support-finder",
+      "description_hu": "Kormányzati támogatáskereső aktív és egyéb támogatási programokhoz. A nyitottságot, határidőt és jogosultságot az eredeti programoldalon ellenőrizd.",
+      "description_en": "Government support finder for active and other support programmes. Verify status, deadlines and eligibility on the original programme page.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-mx-all-1",
+      "country_code": "MX",
+      "country_en": "Mexico",
+      "category": "all",
+      "name_hu": "Mexikó – szövetségi állami támogatások keresője",
+      "name_en": "Mexico — federal government support finder",
+      "url": "https://www.transparenciapresupuestaria.gob.mx/swb/apoyosdelgobierno/m_home",
+      "publisher": "Mexican Federal Government — Secretaría de Hacienda y Crédito Público",
+      "kind": "government-support-finder",
+      "description_hu": "Hivatalos kereső magánszemélyek, vállalkozások és helyi kormányzatok szövetségi támogatásaihoz, programfeltételekhez és működési szabályokhoz.",
+      "description_en": "Official finder for federal support to individuals, businesses and local governments, including programme benefits and operating rules.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-mx-social-2",
+      "country_code": "MX",
+      "country_en": "Mexico",
+      "category": "social",
+      "name_hu": "Mexikó – Programas para el Bienestar szociális és családi támogatások",
+      "name_en": "Mexico — Programas para el Bienestar social and family support",
+      "url": "https://www.programasparaelbienestar.gob.mx/",
+      "publisher": "Government of Mexico — Secretaría de Bienestar",
+      "kind": "social-support-directory",
+      "description_hu": "Hivatalos tájékoztató családoknak, időseknek, fiataloknak, fogyatékossággal élőknek, mezőgazdasági és oktatási támogatási programokról.",
+      "description_en": "Official information on support programmes for families, older people, young people, people with disabilities, agriculture and education.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-co-business-1",
+      "country_code": "CO",
+      "country_en": "Colombia",
+      "category": "business",
+      "name_hu": "Kolumbia – Innovamos hivatalos pályázati és innovációs portál",
+      "name_en": "Colombia — Innovamos official grants and innovation portal",
+      "url": "https://www.innovamos.gov.co/",
+      "publisher": "Government of Colombia — Ministry of Commerce, Industry and Tourism",
+      "kind": "business-support-finder",
+      "description_hu": "Kormányzati portál vállalkozások, mikro- és kisvállalkozások, innovátorok és szervezetek versenyképességi, innovációs és finanszírozási felhívásaihoz.",
+      "description_en": "Government portal for competitiveness, innovation and funding calls for businesses, SMEs, innovators and organisations.",
+      "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "national-co-social-2",
+      "country_code": "CO",
+      "country_en": "Colombia",
+      "category": "social",
+      "name_hu": "Kolumbia – Prosperidad Social gazdasági és szociális programok",
+      "name_en": "Colombia — Prosperidad Social economic and social programmes",
+      "url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/",
+      "publisher": "Government of Colombia — Prosperidad Social",
+      "kind": "social-support-directory",
+      "description_hu": "Hivatalos programoldal a sérülékeny helyzetű háztartások, mikrovállalkozások, kistermelők és közösségi kezdeményezések gazdasági támogatásához.",
+      "description_en": "Official programme information for economic support to vulnerable households, microbusinesses, small producers and community initiatives.",
+      "verification_status": "official-government-or-public-agency-source"
     }
   ]
 }
