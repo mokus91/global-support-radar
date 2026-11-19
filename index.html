@@ -488,6 +488,27 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   }catch(error){
    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"Az európai országportálok listája most nem tölthető be. Próbáld újra később.":"The European country portal list could not be loaded. Please try again later.";box.append(warning);
   }
+  try{
+   const response=await fetch("data/europe-category-directories.json");
+   if(response.ok){
+    const directory=await response.json();
+    const relevant=directory.records.filter(record=>record.categories.includes("all")||category==="all"||record.categories.includes(category));
+    if(relevant.length){
+     const heading=document.createElement("h3");heading.textContent=isHu?"További hivatalos EU-s források a kiválasztott területhez":"More official EU sources for the selected category";box.append(heading);
+     relevant.forEach(record=>{
+      const card=document.createElement("article");card.className="card";
+      const h=document.createElement("h3");h.textContent=isHu?record.name_hu:record.name_en;
+      const p=document.createElement("p");p.textContent=isHu?record.description_hu:record.description_en;
+      const meta=document.createElement("div");meta.className="meta";meta.textContent=isHu?"Lefedettség: EU-tagállamok · hivatalos tájékoztató":"Coverage: EU Member States · official information";
+      const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=isHu?"Európai uniós forrás":"Official EU source";
+      const a=document.createElement("a");a.href=record.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Megnyitás ↗":"Open ↗";
+      foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+     });
+    }
+   }
+  }catch(error){
+   const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A kategória szerinti EU-források most nem tölthetők be.":"EU category sources could not be loaded right now.";box.append(warning);
+  }
   const msg=document.createElement("p");msg.className="notice";msg.textContent=isHu?"A támogatási kategória segít a keresésben, de nem bizonyít jogosultságot. Az ENSZ-portáljegyzékből válaszd ki az ország hivatalos kormányzati oldalát, majd ott ellenőrizd a helyi programokat.":"The selected category helps guide your search but does not establish eligibility. Use the UN portal directory to find the country's official government website, then verify local programmes there.";box.append(msg);
  }
  country.addEventListener("change",()=>{mirror.value=country.value;});
