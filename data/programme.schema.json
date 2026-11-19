@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Global Support Radar programme record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "country_code",
+    "category",
+    "official_url",
+    "source_id",
+    "verification_status",
+    "last_verified_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "object",
+      "description": "Original title and optional translated display title."
+    },
+    "country_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "enum": [
+        "housing",
+        "family",
+        "agriculture",
+        "business",
+        "education",
+        "healthcare",
+        "energy",
+        "employment",
+        "social",
+        "transport",
+        "other"
+      ]
+    },
+    "beneficiary_types": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "individual",
+          "family",
+          "farmer",
+          "business",
+          "student",
+          "employer",
+          "nonprofit",
+          "local_authority",
+          "other"
+        ]
+      }
+    },
+    "support_type": {
+      "enum": [
+        "grant",
+        "benefit",
+        "tax_relief",
+        "loan",
+        "scholarship",
+        "voucher",
+        "service",
+        "other"
+      ]
+    },
+    "amount": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "opening_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "deadline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "ongoing": {
+      "type": "boolean"
+    },
+    "eligibility_summary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "official_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "licence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "unverified",
+        "official-page-checked",
+        "open-and-current",
+        "closed",
+        "expired",
+        "withdrawn"
+      ]
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
