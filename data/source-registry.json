@@ -419,23 +419,23 @@
       "id": "au-services-australia-payment-finder",
       "name": "Services Australia – Payment and Service Finder",
       "publisher": "Australian Government – Services Australia",
-      "url": "https://www.servicesaustralia.gov.au/payment-and-service-finder",
+      "url": "https://www.servicesaustralia.gov.au/paymentfinder",
       "coverage": "Australia; individuals and families, income support, family payments, carers, disability, students, job seekers and housing-related assistance",
       "kind": "benefits-finder",
       "access": "Official interactive finder; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Discovery entry point for government payments and services. Individual payments, current rates, eligibility and application status must be checked on the linked official programme page."
+      "notes": "Official interactive Payment Finder for Centrelink and other government payments. Individual payment rules, current rates and eligibility must be checked on the linked official payment page."
     },
     {
       "id": "au-dss-benefits-payments",
-      "name": "Department of Social Services – Benefits and payments",
+      "name": "Department of Social Services – Income support payments",
       "publisher": "Australian Government – Department of Social Services",
-      "url": "https://www.dss.gov.au/benefits-payments",
+      "url": "https://www.dss.gov.au/income-support-payments",
       "coverage": "Australia; families, children, carers, disability, older people, community services and social support",
       "kind": "social-support-directory",
       "access": "Official programme directory; structured feed/API not confirmed",
       "status": "discovery-source",
-      "notes": "Directory of social support programmes; do not treat every listed payment as currently open or universally available."
+      "notes": "Official overview of Australian income-support and supplementary payments. Services Australia delivers many payments; check the current individual payment page for eligibility and claims."
     },
     {
       "id": "au-qld-agribusiness-grants",
