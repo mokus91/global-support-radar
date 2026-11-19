@@ -15,5 +15,25 @@
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
+  ],
+  "id": "./",
+  "categories": [
+    "government",
+    "utilities",
+    "productivity"
+  ],
+  "shortcuts": [
+    {
+      "name": "Világszintű támogatáskereső",
+      "short_name": "Világkereső",
+      "description": "Hivatalos országos támogatási források böngészése.",
+      "url": "./#worldwideSupportFinder"
+    },
+    {
+      "name": "Magyar támogatások",
+      "short_name": "Magyarország",
+      "description": "Magyarországi hivatalos támogatási források és pályázatok.",
+      "url": "./#huLive"
+    }
   ]
 }
