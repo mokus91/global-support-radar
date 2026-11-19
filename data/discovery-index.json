@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T10:16:25.119990+00:00",
+  "generated_at": "2026-11-19T10:19:48.859401+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 179,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -320,14 +320,6 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Comparison of cities - Business 2022",
-      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1078,7 +1070,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1078,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1191,14 +1183,6 @@
     {
       "title": "Scholarship Rules",
       "url": "https://dados.gov.pt/datasets/regulamento-de-atribuicao-de-bolsas-de-estudo",
-      "query": "scholarships",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Scholarship students in health and social training (Feb. 2009)",
-      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2009/",
       "query": "scholarships",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
