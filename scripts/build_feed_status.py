@@ -35,8 +35,6 @@ FEEDS = [
 ]
 
 def count_records(data):
-    if "candidate_records" in data:
-        return data.get("candidate_records")
     for key in ("records", "results", "items", "opportunities", "grants"):
         value = data.get(key)
         if isinstance(value, list):
@@ -56,6 +54,10 @@ def main():
                 data = json.loads(path.read_text(encoding="utf-8"))
                 entry["status"] = data.get("fetch_status") or "checked"
                 entry["records_count"] = count_records(data)
+                if isinstance(data.get("candidate_records"), int):
+                    entry["candidate_records_count"] = data["candidate_records"]
+                    entry["feed_kind"] = "audit-summary"
+                    entry["note"] = "Audit summary only; candidate records are stored in eu-open-calls-discovery.json."
                 for key in ("generated_at", "fetched_at", "retrieved_at", "checked_at"):
                     if data.get(key):
                         entry["feed_generated_at"] = data[key]
@@ -89,7 +91,7 @@ def main():
                     entry["note"] = "One or more upstream queries reported errors."
                 elif data.get("note"):
                     entry["note"] = str(data["note"])[:240]
-                if entry["status"] == "checked" and entry["records_count"] == 0:
+                if entry["status"] == "checked" and entry["records_count"] == 0 and entry.get("feed_kind") != "audit-summary":
                     entry["status"] = "checked-empty"
             except Exception as exc:
                 entry["status"] = "invalid-json"
