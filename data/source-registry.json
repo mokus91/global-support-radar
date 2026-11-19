@@ -144,12 +144,12 @@
       "id": "hu-national-open-data",
       "name": "Nemzeti Közadat Portál",
       "publisher": "Hungarian Government",
-      "url": "https://t.data.gov.hu/",
+      "url": "https://opendata.gov.hu/",
       "coverage": "Hungary; national open government datasets",
       "kind": "open-data-catalogue",
-      "access": "CKAN API is linked from the portal; GET package_search endpoint to be tested by scheduled adapter",
+      "access": "Official DCAT-AP catalogue documentation is public; machine endpoint still needs confirmation",
       "status": "discovery-source",
-      "notes": "Dataset metadata discovery only. Dataset records must be checked for publisher, licence, update date and relevance before reuse."
+      "notes": "The current official portal is opendata.gov.hu and documents DCAT-AP metadata. The older t.data.gov.hu CKAN endpoint has not passed the scheduled connection test; no grant records are inferred from catalogue metadata."
     }
   ],
   "publication_requirements": [
