@@ -46,16 +46,18 @@ jobs:
         run: python scripts/discover_hu_open_data.py
       - name: Probe official Hungarian grant announcements feed
         run: python scripts/discover_hu_palyazat_feed.py
+      - name: Discover Hungarian NKFIH grant news from official RSS
+        run: python scripts/discover_hu_nkfih.py
       - name: Commit discovery indexes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/gsr-discovery
-          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json /tmp/gsr-discovery/
+          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json /tmp/gsr-discovery/
           git fetch origin main
           git reset --hard origin/main
           cp /tmp/gsr-discovery/*.json data/
-          git add data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json
+          git add data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json data/hu-nkfih-discovery.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh official source discovery index"
             pushed=false
