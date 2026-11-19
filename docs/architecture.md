@@ -1,51 +1,68 @@
-# Data pipeline and verification architecture
+# Global Support Radar — adatfolyam és ellenőrzési architektúra
 
-## Pipeline
+## 1. Adatrétegek
 
-1. **Source registry** records the publisher, jurisdiction, source type, documented access method and limitations.
-2. **Discovery adapters** query documented APIs/feeds and save candidate datasets or programme links as unverified.
-3. **Normalization** maps only supported facts into `data/programme.schema.json`.
-4. **Verification** checks the original official programme page, eligibility, dates and application destination.
-5. **Publication** exposes only records that pass the publication rules; expired/withdrawn records are removed from active search but retained for audit.
-6. **Monitoring** rechecks open records on a schedule and records the verification timestamp.
+1. **Forrásregiszter** — a hivatalos közzétevő, joghatóság, forrástípus, URL, hozzáférési mód és korlátozások.
+2. **Forrásnavigátor** — nemzeti portálok, szociális védelmi útmutatók, tematikus adatbázisok. A portálhivatkozás önmagában nem egy konkrét támogatási program.
+3. **Felfedezési adapterek** — dokumentált API-k, RSS-feedek és engedélyezett nyilvános oldalak lekérdezése. Az eredmény alapértelmezés szerint ellenőrizetlen jelölt.
+4. **Normalizálás** — csak a forrás által ténylegesen közölt adatok kerülnek a rekordba; az eredeti cím, nyelv, URL, dátum és pénznem megőrzendő.
+5. **Ellenőrzés** — az eredeti hivatalos programoldal, a jelentkezési időszak, jogosultak, összeg és benyújtási útvonal ellenőrzése.
+6. **Közzététel** — csak a bizonyítékkal alátámasztott állapot jeleníthető meg. A lejárt és visszavont rekordokat ki kell venni az aktív találatokból.
+7. **Monitoring** — időbélyegzett frissítés, URL-elérhetőség és adapterhibák naplózása.
 
-## Status meanings
+## 2. Státuszok
 
-- `unverified`: discovered, not checked against the original programme notice.
-- `official-page-checked`: official page inspected, but current availability is not confirmed.
-- `open-and-current`: official page confirms the programme is currently open or ongoing.
-- `closed`, `expired`, `withdrawn`: not available for new applications.
+- `unverified` — felfedezett rekord, az eredeti felhívás még nincs ellenőrizve.
+- `official-page-checked` — a hivatalos oldal meg lett nézve, de a jelenlegi nyitottság nem bizonyított.
+- `open-and-current` — az eredeti hivatalos oldal bizonyítja, hogy a program jelenleg fogad jelentkezést.
+- `closed`, `expired`, `withdrawn` — nem fogad új jelentkezést.
 
-## Current automation boundary
+A történeti portálhivatkozások külön `historical-directory-lead` státuszúak. Az elérhetőségi ellenőrzés csak azt jelzi, hogy egy URL válaszolt; nem bizonyítja a pályázat létezését, nyitottságát vagy a jogosultságot.
 
-The GitHub Actions workflow runs once daily and queries two official EU services: the data.europa.eu dataset catalogue and the European Commission Funding & Tenders public Search API. Outputs are saved as discovery candidates. It does **not** yet verify each individual call page, determine visitor eligibility, translate notices, or send alerts. A catalogue record is not a programme record. The distinction is deliberate to prevent false or misleading benefit claims.
+## 3. Jelenlegi automatizált források
 
-## Adapter requirements
+A `.github/workflows/source-discovery.yml` napi, 04:17 UTC-s futása az alábbiakat frissíti:
 
-Every future adapter must:
-- use a publisher-documented API, feed or permitted public page;
-- obey rate limits and reuse/licence terms;
-- preserve original source URL and language;
-- avoid guessing dates, amounts or eligibility;
-- emit errors and last-success timestamps;
-- never promote a record to `open-and-current` based only on a search result or dataset title.
+- data.europa.eu nyíltadat-katalógus.
+- Európai Bizottság Funding & Tenders kereső.
+- EU CAP Network mezőgazdasági és vidéki innovációs lehetőségek.
+- 27 EU nemzeti finanszírozási portál mezőgazdasági és egyéb ágazati linkjei.
+- Grants.gov amerikai szövetségi pályázatok.
+- UKRI brit kutatásfinanszírozási lehetőségek.
+- Japan JGrants nyilvános API: aktív jelentkezési időszakú támogatások kulcsszavas keresése.
+- Chile CORFO Start-Up Chile Growth 13: a hivatalos felhívásoldal státuszának, határidejének és maximális társfinanszírozásának napi ellenőrzése.
+- Australian ARC kutatási támogatási rekordok.
+- Canadian CIHR egészségkutatási RSS.
+- Magyar nyíltadat-katalógus, pályázati közlemény RSS-próba és NKFIH RSS.
+- UN DESA 193 tagállami történeti portáljegyzék építése és a 46 ország-specifikus forráslink URL-elérhetőségének ellenőrzése.
 
+A CORFO-adapter csak az általa ellenőrzött Start-Up Chile oldalt fedi le; nem általános chilei pályázatgyűjtő. A Sercotec-adatok jelenleg külön, rögzített hivatalos pillanatfelvételként szerepelnek, nem napi automatizált feedként. A CIHR és ARC külön panelen jelenik meg, nem a fő kereső teljes körű országos kínálataként.
 
-## Current official discovery adapters
+## 4. Globális lefedettség pontos jelentése
 
-- `scripts/discover_sources.py` calls the documented read-only data.europa.eu Search API using GET query parameters.
-- `scripts/discover_eu_funding.py` calls the European Commission Funding & Tenders public Search API. Its query is restricted to selected grant/topic types and open/forthcoming status codes documented by the portal API guide.
-- Both outputs remain explicitly `unverified`. The Funding & Tenders response is preserved as raw JSON because field mappings and each call's original detail URL must be checked before normalization.
-- The daily GitHub Actions workflow refreshes both JSON discovery files. A successful API response is not equivalent to a verified, currently available grant.
+Az országválasztó és a forrásnavigátor globális. A 193 ENSZ-tagállami portálhivatkozás történeti UN DESA jegyzékből származik; az URL-eket 2013-ban ellenőrizték. Ezek nem tekinthetők jelenleg ellenőrzött támogatáskeresőnek. A 66 ország-specifikus hivatkozás 46 országra ad dedikáltabb hivatalos forrást. Az automatikus egyedi pályázati feedek ennél is szűkebb körűek.
 
-## Hungary: official discovery sources
+A kezelőfelület jelenleg magyar és angol nyelvű. Az eredeti programcímeket és forrásnyelvet meg kell őrizni; gépi fordítás nem írhatja felül a hivatalos feltételeket.
 
-The source registry includes Hungarian official discovery portals for FAIR/Pályázatkereső, Pályázat.gov.hu, the KAP Strategic Plan, the National Cultural Fund (NKA), and the National Research, Development and Innovation Office (NKFIH). The FAIR help centre states that its call data is sourced from FAIR and refreshed daily. At present, no public machine-readable API/feed has been confirmed for these Hungarian portals in this project, so they are registered as discovery sources only; no crawler or scraper is assumed. The next integration step is to verify each portal's published access terms and any documented export/API before implementing an adapter. A portal listing is never sufficient to mark a programme open or a person eligible.
+## 5. Adapter-követelmények
 
-## Hungarian open-data catalogue adapter
+Minden új adapternek:
+- dokumentált API-t, RSS-t vagy jogszerűen elérhető hivatalos oldalt kell használnia;
+- be kell tartania a sebességkorlátokat és az újrafelhasználási feltételeket;
+- meg kell őriznie az eredeti hivatalos URL-t és nyelvet;
+- nem találgathat dátumot, összeget, pénznemet vagy jogosultságot;
+- mentenie kell a lekérés idejét, hibáját és a rekordok számát;
+- nem emelhet egy rekordot nyitott státuszba pusztán cím, keresési kivonat vagy katalógus-metaadat alapján;
+- üres vagy hibás lekérés esetén nem helyettesíthet adatot kitalált rekorddal.
 
-`scripts/discover_hu_open_data.py` queries the National Public Data Portal's CKAN `package_search` endpoint for Hungarian support-related dataset metadata. The result is written to `data/hu-open-data-discovery.json` and committed by the daily workflow. This adapter discovers datasets only; it does not extract grant calls, infer eligibility, or mark a programme active. Every record remains `unverified` until the dataset and its original publisher are reviewed. The portal itself links to its CKAN API; the general CKAN Action API supports GET requests to `package_search`.
+## 6. Biztonság, adatvédelem és üzleti szabályok
 
-## Official Hungarian grant-announcement feed probe
+- A kliensoldali eligazító nem küld és nem tárol személyes válaszokat.
+- A rendszer jelenleg nem nyújt be pályázatot és nem hoz jogosultsági döntést.
+- Érzékeny személyes adat csak szigorúan indokolt esetben gyűjthető.
+- Hirdetés vagy szponzorált találat egyértelműen jelölendő, és nem befolyásolhatja az ellenőrzési státuszt.
+- A hivatalos kiírás az irányadó; a weboldal nem garantál támogatást.
 
-`scripts/discover_hu_palyazat_feed.py` probes the Pályázat.gov.hu announcements RSS endpoint (`rssfeed.php?type=kozlemenyek`). It uses only the official host, validates RSS XML, and stores candidate announcement titles, dates and official links as `unverified`. If the feed is unavailable or invalid, the error and probe status are saved without substituting third-party copies or fabricating records. Independent feed monitoring has reported this endpoint as non-responsive since 2023-12-15, so successful delivery must be confirmed by the scheduled run before relying on it. The FAIR help centre remains the official user-facing route for current calls and documents.
+## 7. Validáció és üzemeltetés
+
+A napi workflow a JSON-adatokat, a Python adapterek szintaxisát és a beágyazott JavaScriptet ellenőrzi. A `scripts/validate_project.py` hibával leáll duplikált forrásazonosító, hibás HTTPS URL, hibás rekordlista vagy JSON/JavaScript szintaktikai hiba esetén. A GitHub Actions futás sikeressége külön ellenőrizendő; a commit önmagában nem bizonyít sikeres adatfrissítést vagy Pages-deployt.
