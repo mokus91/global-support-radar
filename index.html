@@ -261,9 +261,29 @@ async function loadOfficialSources(){
  try{
   const response=await fetch("./data/source-registry.json",{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
   const registry=await response.json(),sources=Array.isArray(registry.sources)?registry.sources:[];
-  const countryName=country==="all"?"":new Intl.DisplayNames(["en"],{type:"region"}).of(country);
-  const rows=sources.filter(x=>country==="all"||String(x.coverage||"").toLowerCase().includes(String(countryName||"").toLowerCase())||(country==="HU"&&String(x.id||"").startsWith("hu-")));
-  const chosen=rows;
+  let nationalPortals=[];
+  try{
+   const portalResponse=await fetch("./data/europe-national-portals.json",{cache:"no-store"});
+   if(portalResponse.ok){
+    const portalData=await portalResponse.json();
+    const knownUrls=new Set(sources.map(x=>{try{return new URL(x.url).href.replace(/\\/$/,"")}catch(_){return ""}}));
+    nationalPortals=(portalData.records||[]).filter(x=>{try{return !knownUrls.has(new URL(x.url).href.replace(/\\/$/,""))}catch(_){return false}}).map(x=>({
+     id:"eu-national-funds-"+String(x.country_code||"").toLowerCase(),
+     country_code:x.country_code,
+     name:hu?((x.country_hu||x.country_en)+" – hivatalos EU-alapok portál"):((x.country_en||x.country_code)+" — official EU funds portal"),
+     publisher:"European Commission directory / national managing authority",
+     url:x.url,
+     kind:"national-eu-funds-portal",
+     status:"official-national-portal",
+     coverage:(x.country_en||x.country_code)+"; national and regional EU shared-management funding programmes",
+     notes:hu?"Az Európai Bizottság nemzeti portáljegyzékében szereplő hivatalos kiindulópont a 2021–2027-es közös irányítású uniós alapokhoz. Nem teljes körű háztartási juttatáskereső; a felhívások és jogosultságok az adott portálon ellenőrzendők.":"Official national entry point listed by the European Commission for 2021–2027 EU shared-management funds. It is not a complete household-benefits finder; calls and eligibility must be checked on the national portal."
+    }));
+   }
+  }catch(portalError){}
+  const countryName=country==="all"||country==="EU"?"":new Intl.DisplayNames(["en"],{type:"region"}).of(country);
+  const registryRows=sources.filter(x=>country==="all"||(country==="EU"?/European Union|EU-wide/i.test(String(x.coverage||"")):(x.country_code===country||String(x.coverage||"").toLowerCase().includes(String(countryName||"").toLowerCase())||(country==="HU"&&String(x.id||"").startsWith("hu-")))));
+  const portalRows=nationalPortals.filter(x=>country==="all"||country==="EU"||x.country_code===country);
+  const chosen=[...registryRows,...portalRows];
   const summary=$("sourceCoverageSummary"),summaryNote=$("sourceCoverageNote");if(summary){const automated=chosen.filter(x=>String(x.status||"").startsWith("automated")).length;const historical=chosen.filter(x=>x.status==="historical-directory-lead").length;const directories=chosen.length-automated-historical;const cards=[{n:chosen.length,hu:"Forrásbejegyzés",en:"Source entries",cls:"status-good"},{n:automated,hu:"Automatizált adatkapcsolat",en:"Automated integrations",cls:"status-good"},{n:directories,hu:"Katalógus és kézi forrás",en:"Directories and manual sources",cls:"status-warn"},{n:historical,hu:"Történeti, újraellenőrzendő",en:"Historical, needs rechecking",cls:"status-bad"}];summary.replaceChildren();cards.forEach(item=>{const el=document.createElement("div");el.className="status-item "+item.cls;const strong=document.createElement("b");strong.textContent=String(item.n);const label=document.createElement("span");label.textContent=hu?item.hu:item.en;el.append(strong,label);summary.append(el);});if(summaryNote)summaryNote.textContent=hu?"A számok a "+(country==="all"?"teljes":"kiválasztott ország szűrt")+" forrásjegyzék bejegyzéseit mutatják, nem a jelenleg nyitott támogatások vagy lefedett országok számát. Az automatizált kapcsolat sem jelent automatikus jogosultság- vagy nyitottság-ellenőrzést.":"Counts describe "+(country==="all"?"the full":"selected-country filtered")+" source directory entries, not currently open grants or the number of countries covered. An automated integration does not itself verify eligibility or an open application window.";}
   box.replaceChildren();
   chosen.forEach(x=>{

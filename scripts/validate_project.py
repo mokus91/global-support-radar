@@ -109,7 +109,7 @@ def main():
     for required_file in ("robots.txt", "sitemap.xml"):
         if not (ROOT / required_file).is_file():
             raise SystemExit(f"SEO discovery file is missing: {required_file}")
-    for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants"):
+    for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants", "europe-national-portals.json", "official-national-portal", "nationalPortals", "national EU funds portal"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
     for required in ("MISSOC", "31 countries", "12 areas", "Open database", "Family benefits", "family-benefits/", "Minimum income", "Housing, rent and energy-cost support", "JRC147049", "2025 Minimum Income Report", "access-high-quality-social-services", "category===\"housing\"", "category===\"energy\"", "ASPIRE global social protection database", "140 countries", "ILO — global social protection database", "222 countries and territories", "23.9%", "222 ország és terület"):
