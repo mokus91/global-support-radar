@@ -89,7 +89,15 @@ def main():
     if manifest.get("start_url") != "./" or manifest.get("scope") != "./":
         raise SystemExit("PWA manifest must use the repository-relative GitHub Pages scope")
     if not (ROOT / "sw.js").is_file() or not (ROOT / "icon.svg").is_file():
-        raise SystemExit("PWA service worker or icon is missing")
+        raise SystemExit("PWA service worker or SVG icon is missing")
+    for icon_file in ("icon-192.png", "icon-512-maskable.png"):
+        if not (ROOT / icon_file).is_file():
+            raise SystemExit(f"PWA raster icon is missing: {icon_file}")
+    icon_entries = manifest.get("icons", [])
+    required_icons = {("./icon-192.png", "192x192", "any"), ("./icon-512-maskable.png", "512x512", "maskable")}
+    actual_icons = {(icon.get("src"), icon.get("sizes"), icon.get("purpose")) for icon in icon_entries}
+    if not required_icons.issubset(actual_icons):
+        raise SystemExit("PWA manifest must declare 192px any and 512px maskable PNG icons")
     worker = (ROOT / "sw.js").read_text(encoding="utf-8")
     if 'url.pathname.endsWith(".json")' not in worker or 'url.pathname.includes("/data/")' not in worker:
         raise SystemExit("Service worker must never cache live JSON opportunity data")
