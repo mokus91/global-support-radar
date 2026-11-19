@@ -138,6 +138,28 @@ def main():
             if age is not None and (not isinstance(age, (int, float)) or isinstance(age, bool) or age < 0):
                 raise SystemExit(f"{label}: feed_age_hours must be a non-negative number")
 
+    changes_path = DATA / "opportunity-changes.json"
+    if changes_path.exists():
+        try:
+            changes = json.loads(changes_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"opportunity-changes.json: invalid JSON at line {exc.lineno}, column {exc.colno}") from exc
+        if not isinstance(changes, dict) or not isinstance(changes.get("events"), list):
+            raise SystemExit("opportunity-changes.json: root must contain an events list")
+        parse_timestamp(changes.get("generated_at"), "opportunity-changes.json generated_at")
+        if changes.get("events_count") != len(changes["events"]):
+            raise SystemExit("opportunity-changes.json: events_count does not match events length")
+        allowed_event_types = {"new", "changed", "removed_from_feed"}
+        for index, event in enumerate(changes["events"]):
+            label = f"opportunity-changes.json event {index + 1}"
+            if not isinstance(event, dict) or event.get("type") not in allowed_event_types:
+                raise SystemExit(f"{label}: invalid event or event type")
+            if not isinstance(event.get("feed"), str) or not event["feed"].endswith(".json"):
+                raise SystemExit(f"{label}: feed must be a JSON filename")
+            if not isinstance(event.get("key"), str) or not event["key"]:
+                raise SystemExit(f"{label}: key must be a non-empty string")
+            parse_timestamp(event.get("detected_at"), f"{label} detected_at")
+
     print(f"Post-discovery validation passed: {checked_files} feeds and {checked_records} records checked.")
 
 
