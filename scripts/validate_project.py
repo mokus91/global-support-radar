@@ -87,6 +87,10 @@ def main():
     for filename in main_search_feeds:
         if not (DATA / filename).is_file() or filename not in html:
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
+    for required in ("const merged=new Map()", "normalizeUrl", "titleKey(row)", "liveListings=[...merged.values()]"):
+        if required not in html:
+            raise SystemExit(f"Cross-feed duplicate protection is missing: {required}")
+
     if "SAVED_KEY" not in html or "savedToggle" not in html:
         raise SystemExit("On-device saved opportunities feature is missing")
     for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "Date.parse(row._deadline)>=Date.now()", "loadMoreWrap", "visibleLimit", "staleAfterMs", "Check overdue", "syncSearchUrl", "restoreSearchUrl", "copySearchLink", "shareSearch", "manifest.webmanifest", "offlineNotice", "serviceWorker.register", "sw.js"):
