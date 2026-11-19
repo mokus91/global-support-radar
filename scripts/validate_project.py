@@ -75,6 +75,9 @@ def main():
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
     if "SAVED_KEY" not in html or "savedToggle" not in html:
         raise SystemExit("On-device saved opportunities feature is missing")
+    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate"):
+        if required not in html:
+            raise SystemExit(f"Main search quality feature is missing: {required}")
 
     inline_scripts = re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", html, re.I)
     for index, script in enumerate((item for item in inline_scripts if item.strip()), start=1):
