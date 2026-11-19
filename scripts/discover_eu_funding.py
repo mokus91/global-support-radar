@@ -96,7 +96,8 @@ def main():
             "source_id": "eu-funding",
             "record_type": "current-deadline-discovery-candidate",
             "verification_status": "unverified",
-            "status": first(meta, "status"),\n            "status_code": first(meta, "status"),
+            "status": first(meta, "status"),
+            "status_code": first(meta, "status"),
             "last_discovered_at": datetime.now(timezone.utc).isoformat()
         })
     candidate_output = {
