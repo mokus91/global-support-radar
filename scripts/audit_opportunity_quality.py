@@ -128,7 +128,7 @@ for feed in manifest.get("feeds", []):
             except ValueError:
                 report["feed_errors"].append(f"{filename}: invalid deadline format")
 
-report["feed_summary"].append(feed_counts)
+    report["feed_summary"].append(feed_counts)
 
 report["feed_errors"] = report["feed_errors"][:100]
 (DATA / "quality-report.json").write_text(
