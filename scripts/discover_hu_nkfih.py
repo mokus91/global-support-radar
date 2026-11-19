@@ -44,7 +44,7 @@ def main():
     now=datetime.now(timezone.utc).isoformat()
     request=urllib.request.Request(SOURCE_URL,headers={"User-Agent":"GlobalSupportRadar/1.0","Accept":"text/html"})
     try:
-        with urllib.request.urlopen(request,timeout=40) as response:
+        with urllib.request.urlopen(request,timeout=20) as response:
             page=response.read().decode(response.headers.get_content_charset() or "utf-8",errors="replace")
         parser=LinkCollector()
         parser.feed(page)
