@@ -75,6 +75,59 @@
       "kind": "open-data-catalogue",
       "access": "Catalogue/API",
       "status": "discovery-source"
+    },
+    {
+      "id": "hu-fair-palyazatkereso",
+      "name": "FAIR / Pályázatkereső",
+      "publisher": "Magyarország – Fejlesztéspolitikai Adatbázis és Információs Rendszer",
+      "url": "https://help.fair.gov.hu/article/eptk/palyazatkereso",
+      "coverage": "Hungary; EU- and selected nationally funded development calls",
+      "kind": "funding-calls",
+      "access": "Official searchable portal; no public machine-readable API confirmed",
+      "status": "discovery-source",
+      "notes": "The official help centre states that calls originate from FAIR and are refreshed daily. Use the portal for discovery; verify each call on its official call page."
+    },
+    {
+      "id": "hu-palyazat-gov",
+      "name": "Pályázat.gov.hu",
+      "publisher": "Hungarian Government",
+      "url": "https://www.palyazat.gov.hu/",
+      "coverage": "Hungary; national and EU development programmes",
+      "kind": "funding-calls",
+      "access": "Official portal; public API/feed not confirmed",
+      "status": "discovery-source",
+      "notes": "Official publication destination for Hungarian development calls. Do not scrape restricted or authenticated areas."
+    },
+    {
+      "id": "hu-kap",
+      "name": "KAP – Közös Agrárpolitika",
+      "publisher": "Hungarian Ministry / KAP Strategic Plan",
+      "url": "https://kap.gov.hu/",
+      "coverage": "Hungary; agriculture and rural development",
+      "kind": "agricultural-funding-calls",
+      "access": "Official website; public structured feed not confirmed",
+      "status": "discovery-source",
+      "notes": "Agricultural and rural-development calls; verify current status and applicant eligibility on the original call page."
+    },
+    {
+      "id": "hu-nka",
+      "name": "Nemzeti Kulturális Alap",
+      "publisher": "Nemzeti Kulturális Alap",
+      "url": "https://nka.hu/",
+      "coverage": "Hungary; cultural grants",
+      "kind": "cultural-funding-calls",
+      "access": "Official website; public API/feed not confirmed",
+      "status": "discovery-source"
+    },
+    {
+      "id": "hu-nkfih",
+      "name": "NKFIH – pályázati felhívások",
+      "publisher": "National Research, Development and Innovation Office",
+      "url": "https://nkfih.gov.hu/",
+      "coverage": "Hungary; research, development and innovation",
+      "kind": "research-innovation-funding",
+      "access": "Official website; public API/feed not confirmed",
+      "status": "discovery-source"
     }
   ],
   "publication_requirements": [
