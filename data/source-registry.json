@@ -569,6 +569,39 @@
       "access": "Official detailed information and application guidance",
       "status": "discovery-source",
       "notes": "Potentially available when the youngest child is aged three to eight; verify all statutory conditions and work restrictions."
+    },
+    {
+      "id": "un-government-portals",
+      "name": "UN National E-Government Portals",
+      "publisher": "United Nations Department of Economic and Social Affairs",
+      "url": "https://ekap.desa.un.org/Resources",
+      "coverage": "National e-government portals for 193 UN Member States",
+      "kind": "official-government-portal-directory",
+      "access": "UN country and city portals directory",
+      "status": "discovery-source",
+      "notes": "Starting point for finding a national government services portal; not a grant or benefit feed."
+    },
+    {
+      "id": "ilo-social-protection-profiles",
+      "name": "ILO Social Protection Country Profiles",
+      "publisher": "International Labour Organization",
+      "url": "https://www.social-protection.org/gimi/ShowCountryProfiles.action",
+      "coverage": "International country profiles and social protection systems; dataset coverage varies",
+      "kind": "international-social-protection-reference",
+      "access": "Public country profile portal",
+      "status": "discovery-source",
+      "notes": "International reference only; national eligibility and current application status must be verified with local authorities."
+    },
+    {
+      "id": "world-bank-aspire",
+      "name": "World Bank ASPIRE",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/data/datatopics/aspire",
+      "coverage": "Comparable social protection indicators for approximately 140 countries",
+      "kind": "international-social-protection-database",
+      "access": "Public dashboards and database",
+      "status": "discovery-source",
+      "notes": "Analytical data on social assistance, social insurance and labour-market programmes; not a direct application portal."
     }
   ],
   "publication_requirements": [
