@@ -12,8 +12,14 @@ DATA = ROOT / "data"
 
 
 def load_json(path):
-    with path.open(encoding="utf-8") as handle:
-        return json.load(handle)
+    try:
+        with path.open(encoding="utf-8") as handle:
+            return json.load(handle)
+    except json.JSONDecodeError as exc:
+        relative = path.relative_to(ROOT)
+        raise SystemExit(
+            f"Invalid JSON in {relative} at line {exc.lineno}, column {exc.colno}: {exc.msg}"
+        ) from exc
 
 
 def main():
