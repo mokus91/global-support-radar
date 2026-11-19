@@ -13,7 +13,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - 69 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
 - 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
 - Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
-- A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants és Chile CORFO.
+- A fő kereső több hivatalos adatforrásból jelenít meg felfedezett lehetőségeket: EU Funding & Tenders, Grants.gov (USA), UKRI (Egyesült Királyság), Japan JGrants, Chile CORFO és Új-Zéland Business.govt.nz Funding Explorer (programkatalógus, nem igazolt nyitott felhívások).
 - Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
 - Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.
 - Spanyolország SNPSAP/BDNS: napi nyilvános REST API-lekérdezés; az utolsó 50 regisztrált felhívás részletes jelentkezési időszakát ellenőrzi, és csak aktív vagy határozatlan jelentkezési ablakot mutat. Nem teljes katalógus. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
@@ -23,7 +23,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
 - Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
 - 118 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
-- Napi automatikus forrásfrissítés 04:17 UTC-kor GitHub Actions segítségével; kézi workflow-indítás is be van állítva.
+- Automatikus forrásfrissítés naponta négyszer (01:23, 07:23, 13:23 és 19:23 UTC) GitHub Actions segítségével; kézi workflow-indítás is be van állítva. A sikertelen külső lekérések külön hibastátuszt kapnak, és ahol biztonságos, az előző adatpillanatkép megmarad.
 - A források elérhetőségét külön napi ellenőrzés vizsgálja. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
 
 ## Fontos korlátok — mit nem állít a rendszer?
@@ -55,6 +55,7 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 | Chile CORFO | Start-Up Chile Growth 13 | Egy hivatalos felhívásoldal napi ellenőrzése |
 | Australian ARC | Kutatásfinanszírozási rekordok | Külön archív/felfedezési panel |
 | Canadian CIHR | Egészségkutatási RSS-hírek | Szűk terület, külön panel |
+| New Zealand Funding Explorer | Hivatalos üzleti támogatási katalógus | Programlistázás; nincs automatikusan igazolt nyitott státusz vagy határidő |
 | Magyar nyíltadat- és RSS-források | Adatkatalógusok és pályázati hírek | A hírek nem automatikusan nyitott kiírások |
 
 ## Adatstruktúra

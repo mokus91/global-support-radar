@@ -2,7 +2,8 @@
 """Discover featured agriculture and rural-development calls from the official EU CAP Network.
 Records are leads only: the original call page must be checked for eligibility and current status.
 """
-import json, re, ssl
+import json, re, ssl, time
+from urllib.error import HTTPError, URLError
 from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -77,8 +78,39 @@ def main():
         context = ssl.create_default_context(cafile=certifi.where())
     except Exception:
         context = ssl.create_default_context()
-    with urlopen(req, timeout=45, context=context) as response:
-        html = response.read().decode("utf-8", "replace")
+    html = None
+    last_error = None
+    for attempt in range(3):
+        try:
+            with urlopen(req, timeout=45, context=context) as response:
+                html = response.read().decode("utf-8", "replace")
+            break
+        except (HTTPError, URLError, TimeoutError, OSError) as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(3 * (attempt + 1))
+    if html is None:
+        previous = {}
+        if OUT.exists():
+            try:
+                previous = json.loads(OUT.read_text(encoding="utf-8"))
+            except Exception:
+                previous = {}
+        output = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "source_id": "eu-cap-network",
+            "source_url": SOURCE,
+            "fetch_status": "temporarily-unavailable",
+            "http_status": getattr(last_error, "code", None),
+            "records_count": len(previous.get("records", [])),
+            "records": previous.get("records", []),
+            "last_successful_fetch": previous.get("generated_at"),
+            "note": f"Upstream fetch failed after 3 attempts ({type(last_error).__name__}); previous records retained and not represented as newly refreshed."
+        }
+        OUT.parent.mkdir(parents=True, exist_ok=True)
+        OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(output["note"])
+        return
     parser = CallsParser()
     parser.feed(html)
     records = []
