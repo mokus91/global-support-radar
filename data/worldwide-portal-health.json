@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T21:44:59+00:00",
+  "checked_at": "2026-11-19T22:21:10+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
-    "http_error": 2,
-    "reachable": 56,
-    "restricted": 8
+    "http_error": 3,
+    "not_found": 1,
+    "reachable": 55,
+    "restricted": 7
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -166,7 +167,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 202,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -266,9 +267,8 @@
     },
     {
       "id": "eu-national-funds-es",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-national-funds-se",
@@ -290,8 +290,8 @@
     },
     {
       "id": "national-no-business-1",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "not_found",
+      "http_status": 404,
       "final_url": "https://www.innovasjonnorge.no/en/our-services"
     },
     {
@@ -349,8 +349,8 @@
     },
     {
       "id": "national-my-business-3",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "restricted",
+      "http_status": 403,
       "final_url": "https://www.bnm.gov.my/funds4sme"
     },
     {
@@ -395,8 +395,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://fondos.gob.cl/"
     },
     {
@@ -437,8 +437,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "http_error",
+      "http_status": 500,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",
