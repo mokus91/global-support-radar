@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install trusted certificate bundle
+        run: python -m pip install --disable-pip-version-check certifi
       - name: Discover EU public datasets
         run: python scripts/discover_sources.py
       - name: Discover EU Funding and Tenders calls
@@ -34,8 +36,6 @@ jobs:
         run: python scripts/discover_ukri.py
       - name: Discover Australian ARC research grants
         run: python scripts/discover_au_arc_grants.py
-      - name: Install trusted certificate bundle
-        run: python -m pip install --disable-pip-version-check certifi
       - name: Discover Canadian CIHR funding opportunities
         run: python scripts/discover_ca_cihr.py
       - name: Discover Hungarian open-data datasets
