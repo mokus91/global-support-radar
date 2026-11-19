@@ -118,12 +118,19 @@ def main():
             if filename in seen_files:
                 raise SystemExit(f"{label}: duplicate feed filename {filename!r}")
             seen_files.add(filename)
+            if not (DATA / filename).is_file():
+                raise SystemExit(f"{label}: referenced feed file does not exist: {filename}")
             parse_timestamp(feed.get("checked_at"), f"{label} checked_at")
-            if feed.get("status") not in allowed_statuses:
-                raise SystemExit(f"{label}: unsupported status {feed.get('status')!r}")
+            status = feed.get("status")
+            if status not in allowed_statuses:
+                raise SystemExit(f"{label}: unsupported status {status!r}")
             count = feed.get("records_count")
             if count is not None and (not isinstance(count, int) or isinstance(count, bool) or count < 0):
                 raise SystemExit(f"{label}: records_count must be a non-negative integer or null")
+            if status == "checked-empty" and count != 0:
+                raise SystemExit(f"{label}: checked-empty status requires records_count == 0")
+            if status == "checked" and count == 0:
+                raise SystemExit(f"{label}: zero-record feed must use checked-empty status")
             freshness = feed.get("freshness")
             if freshness is not None and freshness not in allowed_freshness:
                 raise SystemExit(f"{label}: unsupported freshness {freshness!r}")
