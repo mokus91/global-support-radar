@@ -24,14 +24,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate JSON data and frontend JavaScript
-        run: python scripts/validate_project.py
       - name: Compile Python discovery adapters
         run: python -m compileall -q scripts
       - name: Install trusted certificate bundle and ISO country lookup
         run: python -m pip install --disable-pip-version-check certifi pycountry
       - name: Build UN DESA national portal directory for 193 Member States
         run: python scripts/build_un_national_portals.py
+      - name: Validate JSON data and frontend JavaScript
+        run: python scripts/validate_project.py
       - name: Discover EU public datasets
         run: python scripts/discover_sources.py
       - name: Discover EU Funding and Tenders calls
