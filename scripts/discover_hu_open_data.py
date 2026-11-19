@@ -67,8 +67,8 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(records)} dataset metadata records; {len(errors)} query errors.")
-    if errors and not records:
-        raise RuntimeError("No CKAN query succeeded; see output JSON for details.")
+    # Catalogue outages or endpoint migrations must not block independent official feeds.
+    # Errors and the empty result are retained in the JSON for transparent monitoring.
 
 
 if __name__ == "__main__":
