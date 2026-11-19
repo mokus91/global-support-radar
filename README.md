@@ -33,7 +33,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Magyar hivatalos kiindulópontok családtámogatáshoz, lakhatáshoz, mezőgazdasághoz, vállalkozáshoz, civil/kulturális támogatáshoz és kutatás-fejlesztéshez.
 - Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
 - Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
-- 124 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
+- 125 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
 - Automatikus forrásfrissítés naponta négyszer (01:23, 07:23, 13:23 és 19:23 UTC) GitHub Actions segítségével; kézi workflow-indítás is be van állítva. A sikertelen külső lekérések külön hibastátuszt kapnak, és ahol biztonságos, az előző adatpillanatkép megmarad.
 - A források elérhetőségét külön napi ellenőrzés vizsgálja. A weboldalon külön adatfrissítési állapotpanel mutatja a 18 automatikusan vizsgált adatfolyam legutóbbi ellenőrzési idejét és eredményét; az ellenőrzés nem jelent támogatási jogosultságot vagy nyitott pályázatot. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
 
@@ -72,7 +72,7 @@ A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
 ## Adatstruktúra
 
 - `index.html` — felhasználói felület és keresési logika.
-- `data/source-registry.json` — hivatalos forrásregiszter (122 rekord).
+- `data/source-registry.json` — hivatalos forrásregiszter (125 rekord).
 - `data/worldwide-national-support-sources.json` — 71 ország-specifikus forrás 46 országból.
 - `data/un-national-portals.json` — 193 ENSZ-tagállam történeti nemzeti portáljegyzéke.
 - `data/global-support-directory.json` — globális hivatalos és szociális védelmi hivatkozások.
