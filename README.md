@@ -1,64 +1,81 @@
 # Global Support Radar
 
-A multilingual discovery service for official government grants, benefits and public-support programmes.
-
 **Live site:** https://mokus91.github.io/global-support-radar/
 
-## Current implementation
+A mobile-friendly Hungarian/English directory and discovery search for official public grants, benefits and support programmes.
 
-- Mobile-friendly static website with Hungarian and English interface.
-- Country selector covering ISO country codes.
-- Ten support categories.
-- Official-source registry and common programme-record JSON Schema.
-- Scheduled discovery through two official EU services: the data.europa.eu Search API and the European Commission Funding & Tenders Search API.
-- Discovery output is stored in `data/discovery-index.json`.
+## What is live now
 
-## Important distinction
+- Responsive website with Hungarian and English interface.
+- Country selector with ISO country codes. Selecting a country does **not** mean that every country's programmes are automatically indexed.
+- Ten search categories: housing, family, agriculture, business, education, healthcare, energy, employment, social support and transport.
+- Main search currently reads discovery records from four official data connections:
+  - European Commission Funding & Tenders Portal (EU)
+  - Grants.gov (United States)
+  - UKRI opportunity feed (United Kingdom)
+  - CIHR RSS feed (Canada)
+- Separate Australian Research Council research-grant archive panel. These records are historical/discovery data and are not presented as open calls.
+- Hungarian official starting points, including family support, housing support, FAIR and government administration.
+- 45 entries in the official source registry, with country/subject coverage notes.
+- Daily automated refresh scheduled for 04:17 UTC; manual GitHub Actions run is also configured.
+- Official source links are checked against allowed hostnames before being displayed.
 
-A dataset mentioning grants or subsidies is **not itself a verified grant**. The scheduled job only discovers catalogue datasets. It does not claim that a programme is open, that a visitor qualifies, or that an application is available. Discovered catalogue records must not be shown as live benefits until a separate adapter has inspected the original programme page and populated every required field.
+## Important coverage and verification limits
 
-The current demo cards are explicitly labelled as examples. The collector reports zero verified programmes until individual programme verification exists.
+This is a working MVP, **not yet a complete worldwide grants database**. The country selector is broader than the current automated data coverage. The live search is currently concentrated on EU, US and UK records; the Canadian feed may return zero items, and the Hungarian pages are official starting points rather than an automated live grant feed.
+
+Automatically discovered records are labelled **unverified candidates**. They are not a promise that an opportunity is open, that its deadline is current, or that a particular visitor is eligible. Some records have no deadline. Always open the official notice and confirm eligibility, dates, amounts and application procedure with the publisher.
+
+Historical award databases, discovery-source directories and open calls are intentionally kept distinct. A past grant award or a dataset mentioning benefits is not a currently available support programme.
+
+The site does not submit applications, make eligibility decisions, collect sensitive personal information, or guarantee funding.
 
 ## Repository layout
 
-- `index.html` — static frontend.
-- `data/source-registry.json` — official discovery sources and coverage notes.
-- `data/programme.schema.json` — normalized programme record contract.
-- `data/discovery-index.json` — generated dataset discovery results.\n- `data/eu-funding-discovery.json` — raw EU Funding & Tenders API candidates, pending verification.
-- `scripts/discover_sources.py` — EU catalogue dataset discovery client.\n- `scripts/discover_eu_funding.py` — EU Funding & Tenders call discovery client.
-- `.github/workflows/source-discovery.yml` — daily scheduled workflow and manual run.
-- `docs/architecture.md` — pipeline and verification rules.
+- `index.html` — responsive frontend and search/filter logic.
+- `data/source-registry.json` — official source directory.
+- `data/programme.schema.json` — normalized record schema and verification states.
+- `data/*-discovery.json` — generated source discovery records.
+- `scripts/` — official API/feed adapters.
+- `.github/workflows/source-discovery.yml` — daily scheduled discovery and manual run.
+- `docs/architecture.md` — architecture and verification principles.
+
+## Automated discovery sources
+
+| Source | Use | Important limitation |
+| --- | --- | --- |
+| EU Funding & Tenders | Calls and competitive opportunities | Candidate status must be checked on the official topic page |
+| Grants.gov | Posted and forecast US federal opportunities | Many are restricted to eligible organisations; forecast items are not open calls |
+| UKRI | Recent UKRI opportunity feed entries | Feed is not a complete listing and may omit deadlines |
+| CIHR | Canadian health-research RSS notices | Narrow subject coverage; feed may return no current entries |
+| Australian ARC | Research grant records | Archive/discovery records, not a general Australian benefits feed |
+| Hungarian official portals | Official application and information starting points | Not automatically imported as verified, live programme records |
 
 ## Run locally
 
-Python 3.12 is sufficient; the collector uses only the standard library.
+Python 3.12 is used by the discovery workflow. The Hungarian open-data and Canadian adapters use the `certifi` CA bundle installed by the workflow.
 
 ```bash
-python scripts/discover_sources.py
+python -m pip install certifi
+python scripts/discover_eu_funding.py
+python scripts/discover_us_grants.py
+python scripts/discover_ukri.py
+python scripts/discover_au_arc_grants.py
+python scripts/discover_ca_cihr.py
+python scripts/discover_hu_open_data.py
 ```
 
-## Verification rules before publishing a programme
+## Verification policy
 
-1. The original publisher must be a government body, public authority, or explicitly identified official programme operator.
-2. Store the original-language title and official application URL.
-3. Confirm country/region, beneficiary group, support type and eligibility from the source.
-4. Record amount/currency and opening/deadline dates only when explicitly stated.
-5. Re-check status and page availability before marking a programme `open-and-current`.
-6. Keep `last_verified_at`, source language and reuse/licence information.
-7. Translation is an aid; the original official notice remains authoritative.
+A record may only be marked `open-and-current` after its original official page has been checked for:
+1. publisher authenticity and working official URL;
+2. current application status and deadline;
+3. country/region and eligible applicant groups;
+4. support type, amount and currency where stated;
+5. application route and conditions.
 
-## Source scope
-
-The EU portal API is used for dataset discovery only. ForeignAssistance.gov and UNDP Open.undp.org describe international development assistance and project spending; they are not general household-benefit directories. They must be presented in a separate development-finance context, not mixed into citizen benefit results.
-
-## Roadmap
-
-- Add country-specific official grant and benefit adapters with documented APIs or permitted feeds.
-- Add original-page verification and expiry monitoring.
-- Add multilingual summaries while preserving original source links.
-- Add database-backed search, alerts and user accounts.
-- Add privacy-by-design controls and transparent advertising/subscription options.
+The current automated adapters perform **discovery**, not full page-by-page eligibility verification. Until that verification pipeline is implemented, records remain unverified.
 
 ## Privacy and monetization
 
-Do not collect sensitive eligibility information unless strictly necessary. Do not sell personal data. Clearly label sponsored placements, never rank a programme higher because it pays, and keep editorial verification independent from advertising or subscriptions.
+The current MVP does not require accounts or personal eligibility profiles. Do not collect sensitive eligibility information unless strictly necessary. Never sell personal data. Any future sponsored placements must be clearly labelled and must not influence verification or organic ranking.
