@@ -2,6 +2,10 @@ name: Official source discovery
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/source-discovery.yml"
+      - "scripts/**"
   schedule:
     - cron: "17 4 * * *"
 
