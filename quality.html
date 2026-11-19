@@ -11,7 +11,7 @@
   const r=await fetch('https://raw.githubusercontent.com/mokus91/global-support-radar/main/data/quality-report.json',{cache:'no-store'});
   if(!r.ok)throw Error('report unavailable');
   const d=await r.json();
-  const items=[['Vizsgált adatforrás',d.feeds_checked],['Pályázati rekord',d.records_checked],['Lejárt határidő',d.expired_deadlines],['Hiányzó hivatalos link',d.missing_urls],['Hibás hivatalos link',d.invalid_urls],['Duplikált azonosító',d.duplicate_ids],['Hiányzó cím',d.missing_titles],['Nem igazolt státusz',d.unverified_status],['Nem pályázati katalógusrekord',d.non_opportunity_records],['Országportál-állapotvizsgálat',d.diagnostic_records_checked]];
+  const items=[['Vizsgált adatforrás',d.feeds_checked],['Pályázati rekord',d.records_checked],['Lejárt határidő',d.expired_deadlines],['Hiányzó hivatalos link',d.missing_urls],['Hibás hivatalos link',d.invalid_urls],['Duplikált azonosító',d.duplicate_ids],['Hiányzó cím',d.missing_titles],['Nem igazolt státusz',d.unverified_status],['Nem pályázati katalógusrekord',d.non_opportunity_records],['Történeti támogatási rekord – nem aktív felhívás',d.historical_archive_records],['Országportál-állapotvizsgálat',d.diagnostic_records_checked]];
   stats.replaceChildren();for(const [k,v] of items){const box=add(stats,'section','','box');add(box,'span',k,'muted');add(box,'b',v??0)}
   issues.replaceChildren();
   const critical=items.slice(2,7).filter(([,v])=>Number(v)>0);
@@ -23,7 +23,7 @@
   const list=add(tierBox,'ul','');for(const [key,label] of labels)add(list,'li',label+': '+(tiers[key]??0));
   add(tierBox,'p','A jelölt státusz nem jelent jogosultság- vagy beadási feltétel-ellenőrzést. A jelentkezés előtt mindig az eredeti kiírást kell megnyitni.','muted');
   const feeds=Array.isArray(d.feed_summary)?d.feed_summary:[];
-  if(feeds.length){const section=add(document.querySelector('main'),'section','','box');add(section,'h2','Adatforrásonkénti bontás');const table=add(section,'table','');table.style.width='100%';table.style.borderCollapse='collapse';const head=add(table,'thead','');const hr=add(head,'tr','');['Fájl','Rekord','Nem igazolt','API-jelölt','Listázott jelölt'].forEach(x=>add(hr,'th',x));const body=add(table,'tbody','');for(const f of feeds){const tr=add(body,'tr','');[f.file,f.records,f.unverified,f.api_window_candidates,f.official_listing_candidates].forEach(x=>{const td=add(tr,'td',x??0);td.style.padding='7px';td.style.borderTop='1px solid var(--line)';td.style.textAlign='left';})}}
+  if(feeds.length){const section=add(document.querySelector('main'),'section','','box');add(section,'h2','Adatforrásonkénti bontás');const table=add(section,'table','');table.style.width='100%';table.style.borderCollapse='collapse';const head=add(table,'thead','');const hr=add(head,'tr','');['Fájl','Aktuális rekord','Nem igazolt','API-jelölt','Listázott jelölt','Történeti'].forEach(x=>add(hr,'th',x));const body=add(table,'tbody','');for(const f of feeds){const tr=add(body,'tr','');[f.file,f.records,f.unverified,f.api_window_candidates,f.official_listing_candidates,f.historical_archive_records].forEach(x=>{const td=add(tr,'td',x??0);td.style.padding='7px';td.style.borderTop='1px solid var(--line)';td.style.textAlign='left';})}}
   if(Number(d.diagnostic_missing_urls)>0)add(issues,'li','Portál-állapotvizsgálatnál hiányzó URL: '+d.diagnostic_missing_urls+'. Ezek nem pályázati rekordok.');
   (d.feed_errors||[]).forEach(x=>add(issues,'li',x,'warn'));
   updated.textContent='Utolsó ellenőrzés: '+new Date(d.generated_at).toLocaleString('hu-HU');
