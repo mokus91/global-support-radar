@@ -125,7 +125,7 @@ async function loadHuHouseholdSupport(){
  $("huHouseholdNote").textContent=hu?"Fontos: ez hivatalos tájékoztató-gyűjtemény, nem jogosultsági döntés és nem garantáltan elérhető támogatások listája. A helyi önkormányzati támogatások településenként eltérnek; az összeget, feltételeket és határidőt mindig a hivatalos kiírásban ellenőrizd.":"Important: this is a directory of official information, not an eligibility decision or a guarantee that a benefit is currently available. Municipal assistance varies by locality. Always verify amounts, conditions and deadlines with the official authority.";
  try{
   const response=await fetch("./data/hu-household-support.json",{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
-  const data=await response.json(),rows=Array.isArray(data.records)?data.records:[];
+  const data=await response.json(),rows=Array.isArray(data.records)?data.records:[];window.huSupportCache=data;
   status.textContent=(hu?"Hivatalos tájékoztatók: ":"Official information: ")+rows.length+" · "+(hu?"frissítve: ":"updated: ")+(data.generated_at||"—").slice(0,10);
   box.replaceChildren();
   const catNames=hu?{family:"CSALÁD",housing:"LAKHATÁS",social:"SZOCIÁLIS",energy:"ENERGIA"}:{family:"FAMILY",housing:"HOUSING",social:"SOCIAL",energy:"ENERGY"};
