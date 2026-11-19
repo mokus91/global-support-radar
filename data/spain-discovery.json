@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T16:26:46.618414+00:00",
+  "generated_at": "2026-11-19T16:32:20.024083+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
@@ -19,12 +19,15 @@
       "eligible_beneficiaries_original": [
         "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Educación",
       "start_date": "2026-11-19",
       "deadline": "2026-12-31",
       "indefinite_open": false,
-      "amount_total": 4000,
-      "currency": "EUR",
+      "total_call_budget": 4000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
       "categories": [
         "education",
         "business"
@@ -33,11 +36,11 @@
       "application_url": null,
       "legal_bases_url": "https://www.uclm.es/empresas/mecenazgo/catedrasaulasempresa/catedra_agrobank",
       "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
+      "eligibility_verified": false,
+      "amount_verified": false,
       "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
       "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
       "id": "943398",
@@ -52,12 +55,15 @@
       "eligible_beneficiaries_original": [
         "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Comercio, Turismo y Pymes",
       "start_date": "2026-11-01",
       "deadline": "2026-11-30",
       "indefinite_open": false,
-      "amount_total": 475,
-      "currency": "EUR",
+      "total_call_budget": 475,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
       "categories": [
         "business"
       ],
@@ -65,11 +71,11 @@
       "application_url": "www.sabarca.cat",
       "legal_bases_url": "http://bop.diba.cat/anunci/3926629/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-dels-premis-concursos-i-o-sortejos-promoguts-per-l-ajuntament-ajuntament-de-sant-andreu-de-la-barca",
       "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
+      "eligibility_verified": false,
+      "amount_verified": false,
       "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
       "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
       "id": "943334",
@@ -84,12 +90,15 @@
       "eligible_beneficiaries_original": [
         "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Comercio, Turismo y Pymes",
       "start_date": "2026-11-13",
       "deadline": "2026-12-11",
       "indefinite_open": false,
-      "amount_total": 3600,
-      "currency": "EUR",
+      "total_call_budget": 3600,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
       "categories": [
         "business"
       ],
@@ -97,11 +106,11 @@
       "application_url": null,
       "legal_bases_url": "https://eacat.aoc.cat/etauler/detall/592149",
       "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
+      "eligibility_verified": false,
+      "amount_verified": false,
       "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
       "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
       "id": "943290",
@@ -116,12 +125,15 @@
       "eligible_beneficiaries_original": [
         "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Educación",
       "start_date": null,
       "deadline": null,
       "indefinite_open": true,
-      "amount_total": 1024346.02,
-      "currency": "EUR",
+      "total_call_budget": 1024346.02,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
       "categories": [
         "education"
       ],
@@ -129,11 +141,11 @@
       "application_url": "www.altemporda.org",
       "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/CONVOCATORIA_MO_2026-2027.pdf",
       "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
+      "eligibility_verified": false,
+      "amount_verified": false,
       "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
       "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
       "id": "943269",
@@ -148,12 +160,15 @@
       "eligible_beneficiaries_original": [
         "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Educación",
       "start_date": "2026-05-15",
       "deadline": "2026-11-19",
       "indefinite_open": false,
-      "amount_total": 5322136.25,
-      "currency": "EUR",
+      "total_call_budget": 5322136.25,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
       "categories": [
         "education"
       ],
@@ -161,11 +176,11 @@
       "application_url": "https://www.altemporda.org/",
       "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/Bases_26-27.pdf",
       "status": "official-api-window-current",
-      "eligibility_verified": true,
-      "amount_verified": true,
+      "eligibility_verified": false,
+      "amount_verified": false,
       "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
       "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The total call budget is not an individual award. Verify full terms in the original notice."
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     }
   ],
   "coverage_note": "Only the 50 most recently registered calls are checked daily. Status is derived from official application dates and the API's indefinite-open flag; this is not exhaustive."

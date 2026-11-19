@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T16:29:39Z",
+  "generated_at": "2026-11-19T16:34:24Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 16,
-  "records_count": 39,
+  "portals_checked": 18,
+  "records_count": 50,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -274,6 +274,104 @@
       "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-ie-employment-1",
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "category": "employment",
+      "title": "https://www.eufunds.ie/bitci-employment-fair/",
+      "official_url": "https://www.eufunds.ie/bitci-employment-fair/",
+      "portal_url": "https://www.eufunds.ie/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-ie-housing-1",
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "category": "housing",
+      "title": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
+      "official_url": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
+      "portal_url": "https://www.eufunds.ie/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Housing-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-ie-education-1",
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "category": "education",
+      "title": "EU in our Schools",
+      "official_url": "https://www.eufunds.ie/eu-in-schools/",
+      "portal_url": "https://www.eufunds.ie/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-lu-housing-1",
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "category": "housing",
+      "title": "Compte rendu – Faire place aux énergies renouvelables : des stratégies territoriales à l'action locale Le 29 octobre 2026, le ministère du Logement et de l'Aménagement du territoire a accueilli la conférence annuelle du Point de contact ESPON au Luxembourg, consacrée au déploiement des énergies renouvelables. Quelque 70 participants – représentants des ministères et des...",
+      "official_url": "https://fonds-europeens.public.lu/fr/actualites/esponurbinter/confevent/esponconferenceannuelle20260.html",
+      "portal_url": "https://fonds-europeens.public.lu/fr.html",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Housing-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-lu-energy-1",
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "category": "energy",
+      "title": "Compte rendu – Faire place aux énergies renouvelables : des stratégies territoriales à l'action locale Le 29 octobre 2026, le ministère du Logement et de l'Aménagement du territoire a accueilli la conférence annuelle du Point de contact ESPON au Luxembourg, consacrée au déploiement des énergies renouvelables. Quelque 70 participants – représentants des ministères et des...",
+      "official_url": "https://fonds-europeens.public.lu/fr/actualites/esponurbinter/confevent/esponconferenceannuelle20260.html",
+      "portal_url": "https://fonds-europeens.public.lu/fr.html",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-lu-energy-2",
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "category": "energy",
+      "title": "Conférence ESPON: Faire place aux énergies renouvelables : des stratégies territoriales à l'action locale La transition énergétique en Europe n’est plus seulement une question technique ou économique — elle est aussi une question spatiale. Elle nécessite de l’espace dans nos quartiers, nos paysages et nos cadres réglementaires. Le 29 octobre 2026, le Point de...",
+      "official_url": "https://fonds-europeens.public.lu/fr/actualites/esponurbinter/confevent/esponconferenceannuelle2026.html",
+      "portal_url": "https://fonds-europeens.public.lu/fr.html",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-lu-education-1",
+      "country_code": "LU",
+      "country_en": "Luxembourg",
+      "country_hu": "Luxemburg",
+      "category": "education",
+      "title": "Skills4Job 2.0 - (OIS)",
+      "official_url": "https://fonds-europeens.public.lu/fr/projets/fse/2021-2027/2074.html",
+      "portal_url": "https://fonds-europeens.public.lu/fr.html",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-mt-education-1",
       "country_code": "MT",
       "country_en": "Malta",
@@ -484,6 +582,62 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-se-employment-1",
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "category": "employment",
+      "title": "Samarbete mellan länder",
+      "official_url": "https://eufonder.se/eufonder/hittaeufinansiering/omraden/samarbetemellanlander.6417.html",
+      "portal_url": "https://eufonder.se/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-se-transport-1",
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "category": "transport",
+      "title": "Transport och resande",
+      "official_url": "https://eufonder.se/eufonder/hittaeufinansiering/omraden/transportresande.6425.html",
+      "portal_url": "https://eufonder.se/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Transport-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-se-business-1",
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "category": "business",
+      "title": "S:t Olavsleden stärker turismen och samarbetet över gränsen",
+      "official_url": "https://eufonder.se/eufonder/finansieradeprojekt/projekt/projekt/stolavsledenstarkerturismenochsamarbetetovergransen.12816.html",
+      "portal_url": "https://eufonder.se/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-se-employment-2",
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "category": "employment",
+      "title": "S:t Olavsleden stärker turismen och samarbetet över gränsen",
+      "official_url": "https://eufonder.se/eufonder/finansieradeprojekt/projekt/projekt/stolavsledenstarkerturismenochsamarbetetovergransen.12816.html",
+      "portal_url": "https://eufonder.se/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-sk-business-1",
       "country_code": "SK",
       "country_en": "Slovakia",
@@ -588,16 +742,8 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "country_code": "LU",
-      "error": "HTTP Error 400: Bad Request"
-    },
-    {
       "country_code": "RO",
       "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "country_code": "SE",
-      "error": "The read operation timed out"
     }
   ]
 }

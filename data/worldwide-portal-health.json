@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:25:52+00:00",
+  "checked_at": "2026-11-19T16:31:24+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 12,
-    "http_error": 3,
-    "reachable": 51,
-    "restricted": 8
+    "connection_error": 7,
+    "http_error": 2,
+    "reachable": 56,
+    "restricted": 9
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -113,8 +113,9 @@
     },
     {
       "id": "za-sassa",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
     },
     {
       "id": "za-sedfa",
@@ -229,8 +230,8 @@
     },
     {
       "id": "eu-national-funds-lu",
-      "status": "http_error",
-      "http_status": 400,
+      "status": "reachable",
+      "http_status": 206,
       "final_url": "https://fonds-europeens.public.lu/fr.html"
     },
     {
@@ -271,8 +272,9 @@
     },
     {
       "id": "eu-national-funds-se",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufonder.se/"
     },
     {
       "id": "eu-national-funds-si",
@@ -300,13 +302,15 @@
     },
     {
       "id": "national-tr-business-1",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri"
     },
     {
       "id": "national-tr-all-2",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://yatirimadestek.gov.tr/searchsupport"
     },
     {
       "id": "national-mx-all-1",
@@ -433,8 +437,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "restricted",
+      "http_status": 429,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",
