@@ -87,7 +87,7 @@ def main():
     for filename in main_search_feeds:
         if not (DATA / filename).is_file() or filename not in html:
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
-    for required in ("explicitlyClosed", "notExpired&&notClosed", "Status not verified", "Source says open"):
+    for required in ("function classifyOpportunity(row)", "verified-open", "source-listed-open", "opportunityState.key!==\"closed\""):
         if required not in html:
             raise SystemExit(f"Closed/withdrawn opportunity filtering is missing: {required}")
 
