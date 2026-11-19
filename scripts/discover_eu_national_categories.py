@@ -99,8 +99,8 @@ def main():
                         "status": "unverified-directory-lead",
                         "description": f"{category.title()}-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
                     })
-    except Exception as exc:
-        failures.append({"country_code": portal.get("country_code"), "error": str(exc)[:220]})
+        except Exception as exc:
+            failures.append({"country_code": portal.get("country_code"), "error": str(exc)[:220]})
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "source_id": "eu-national-funding-portals",
