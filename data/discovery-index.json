@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T16:38:13.633549+00:00",
+  "generated_at": "2026-11-19T16:49:05.257612+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 181,
@@ -117,7 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -143,6 +143,14 @@
     {
       "title": "Agricultural use parcels LV, 2009",
       "url": "https://www.vlaanderen.be/DataCatalogRecord/87029616-A885-4091-8800-54DF893104A8",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
+      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -248,6 +256,14 @@
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -407,14 +423,6 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Energy Efficiency Action Plan (EEAP): glazing",
-      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -645,14 +653,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "HICP - housing",
-      "url": "https://ec.europa.eu/eurostat/databrowser/product/page/teicp040",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Horizon 2020 Energy Efficiency",
       "url": "https://ec.europa.eu/easme/en/horizon-2020-energy-efficiency",
       "query": "energy efficiency support",
@@ -743,6 +743,14 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1423,14 +1431,6 @@
     {
       "title": "VCA02 - Agricultural Output in Europe",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA02/JSON-stat/2.0/en",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "VCA03 - Exports of Irish Agricultural Products",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/VCA03/JSON-stat/2.0/en",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
