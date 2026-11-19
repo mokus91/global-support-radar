@@ -34,7 +34,7 @@ def main():
         raise SystemExit("Duplicate source IDs in source-registry.json")
     for source in sources:
         parsed = urlparse(source.get("url", ""))
-        if parsed.scheme != "https" or not parsed.netloc:
+        if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
             raise SystemExit(f"Invalid official source URL: {source.get('id')}")
 
     for path in sorted(DATA.glob("*discovery.json")):
@@ -49,10 +49,26 @@ def main():
             raise SystemExit(f"{path.name}: records_count does not match records length")
         for row in records:
             url = row.get("official_url")
-            if url and urlparse(url).scheme != "https":
-                raise SystemExit(f"{path.name}: non-HTTPS official_url: {url}")
+            if url:
+                parsed = urlparse(url)
+                if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
+                    raise SystemExit(f"{path.name}: invalid official_url: {url}")
+
+    feed_status = load_json(DATA / "feed-status.json")
+    feeds = feed_status.get("feeds", [])
+    if not isinstance(feeds, list) or not feeds:
+        raise SystemExit("feed-status.json must contain a non-empty feeds list")
+    filenames = [feed.get("file") for feed in feeds]
+    if len(filenames) != len(set(filenames)):
+        raise SystemExit("Duplicate feed filenames in feed-status.json")
+    for filename in filenames:
+        if not filename or Path(filename).name != filename:
+            raise SystemExit(f"Unsafe feed filename in feed-status.json: {filename}")
 
     html = (ROOT / "index.html").read_text(encoding="utf-8")
+    for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):
+        if required not in html:
+            raise SystemExit(f"Missing feed-health dashboard component: {required}")
     inline_scripts = re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", html, re.I)
     for index, script in enumerate((item for item in inline_scripts if item.strip()), start=1):
         with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
