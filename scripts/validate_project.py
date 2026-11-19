@@ -75,7 +75,7 @@ def main():
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
     if "SAVED_KEY" not in html or "savedToggle" not in html:
         raise SystemExit("On-device saved opportunities feature is missing")
-    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "loadMoreWrap", "visibleLimit"):
+    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "loadMoreWrap", "visibleLimit"):
         if required not in html:
             raise SystemExit(f"Main search quality feature is missing: {required}")
 
