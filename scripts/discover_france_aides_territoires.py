@@ -55,7 +55,7 @@ def main():
         if payload.get("_api_error"):
             output={"schema_version":"1.0","generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),"country_code":"FR","source":"Aides-territoires official public API","source_url":START,"pages_checked":pages,"records_count":len(records),"records":records,"fetch_status":"temporarily-restricted","http_status":payload["_api_error"],"error":payload.get("_api_error_reason"),"scope":"The official API did not permit this automated request. No current grant or application status is inferred; use the official catalogue directly."}
             OUT.parent.mkdir(parents=True,exist_ok=True)
-            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
             print("Aides-territoires API temporarily restricted (HTTP " + str(payload["_api_error"]) + "); saved a non-fatal status record.")
             return
         rows=payload.get("results",[])
