@@ -112,7 +112,7 @@ def main():
     for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
-    for required in ("MISSOC", "31 countries", "12 areas", "Open database", "Family benefits", "family-benefits/", "Minimum income", "Housing, rent and energy-cost support", "JRC147049"):
+    for required in ("MISSOC", "31 countries", "12 areas", "Open database", "Family benefits", "family-benefits/", "Minimum income", "Housing, rent and energy-cost support", "JRC147049", "2025 Minimum Income Report", "access-high-quality-social-services", "category==="housing"", "category==="energy""):
         if required not in html:
             raise SystemExit(f"Comparative social protection directory is missing: {required}")
     for required in ("trustPolicy", "trustPolicyTitle", "Official source", "Open status", "Eligibility & amount", "nem garantál támogatást"):
