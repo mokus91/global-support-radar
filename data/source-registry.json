@@ -755,14 +755,14 @@
     },
     {
       "id": "worldwide-national-support-finders",
-      "name": "Official national support finders — 36-country directory",
+      "name": "Official national support finders — 41-country directory",
       "publisher": "National governments and official public agencies",
       "url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html",
-      "coverage": "36 countries across North America, Europe, Asia, Africa and South America; federal grants, EU shared-management funds, business support, agriculture and selected social benefits",
+      "coverage": "41 countries across North America, Europe, Asia, Africa and South America; federal grants, EU shared-management funds, business support, agriculture and selected social benefits",
       "kind": "national-support-discovery-directories",
       "access": "Country/category-filtered static directory of official national portals; no common cross-country API",
       "status": "official-source-directory",
-      "notes": "Forty-seven country-specific official source links across 36 countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
+      "notes": "Fifty-five country-specific official source links across 41 countries are displayed in the worldwide finder. These are official directories, agencies or programme portals, not a guarantee of currently open calls. Programme status, eligibility, deadlines and regional restrictions must be checked at the original publisher."
     },
     {
       "id": "za-nrf-funding",
@@ -1049,6 +1049,94 @@
       "access": "Official national portal listed by the European Commission; no common cross-country API",
       "status": "official-source-directory",
       "notes": "The European Commission lists this as the national single portal for EU funds. It provides access to national/regional programme information; individual calls, deadlines, eligible applicants and regional restrictions must be checked at the original programme page."
+    },
+    {
+      "id": "national-no-business-1",
+      "name": "Norway — Innovation Norway grants",
+      "publisher": "Innovation Norway",
+      "url": "https://www.innovasjonnorge.no/en/our-services",
+      "coverage": "Norway; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-ch-business-1",
+      "name": "Switzerland — Innosuisse support offers",
+      "publisher": "Swiss Innovation Agency — Innosuisse",
+      "url": "https://www.innosuisse.admin.ch/en/support-offers",
+      "coverage": "Switzerland; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-tr-business-1",
+      "name": "Türkiye — KOSGEB government business support",
+      "publisher": "KOSGEB — Republic of Türkiye",
+      "url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri",
+      "coverage": "Türkiye; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-tr-all-2",
+      "name": "Türkiye — government support and incentives finder",
+      "publisher": "Republic of Türkiye — Investment Support Office",
+      "url": "https://yatirimadestek.gov.tr/searchsupport",
+      "coverage": "Türkiye; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-mx-all-1",
+      "name": "Mexico — federal government support finder",
+      "publisher": "Mexican Federal Government — Secretaría de Hacienda y Crédito Público",
+      "url": "https://www.transparenciapresupuestaria.gob.mx/swb/apoyosdelgobierno/m_home",
+      "coverage": "Mexico; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-mx-social-2",
+      "name": "Mexico — Programas para el Bienestar social and family support",
+      "publisher": "Government of Mexico — Secretaría de Bienestar",
+      "url": "https://www.programasparaelbienestar.gob.mx/",
+      "coverage": "Mexico; official national social support and benefits information",
+      "kind": "social-support-directory",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-co-business-1",
+      "name": "Colombia — Innovamos official grants and innovation portal",
+      "publisher": "Government of Colombia — Ministry of Commerce, Industry and Tourism",
+      "url": "https://www.innovamos.gov.co/",
+      "coverage": "Colombia; official national business and public support information",
+      "kind": "national-support-finder",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
+    },
+    {
+      "id": "national-co-social-2",
+      "name": "Colombia — Prosperidad Social economic and social programmes",
+      "publisher": "Government of Colombia — Prosperidad Social",
+      "url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/",
+      "coverage": "Colombia; official national social support and benefits information",
+      "kind": "social-support-directory",
+      "access": "Official government or public agency website; common cross-country API not confirmed",
+      "status": "official-source-directory",
+      "notes": "This is an official source directory or programme finder, not a normalized individual grant record. Verify current availability, eligibility, dates and regional restrictions at the original publisher."
     }
   ],
   "publication_requirements": [
