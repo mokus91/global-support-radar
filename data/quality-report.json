@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:22:48.730043+00:00",
+  "generated_at": "2026-11-19T22:25:19.366042+00:00",
   "feeds_checked": 18,
   "records_checked": 22220,
   "expired_deadlines": 0,
@@ -7,7 +7,23 @@
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 22214,
+  "unverified_status": 22000,
+  "verification_tiers": {
+    "verified_open": 0,
+    "api_window_candidate": 214,
+    "official_listing_candidate": 0,
+    "unverified": 22000,
+    "other": 6
+  },
+  "feed_summary": [
+    {
+      "file": "worldwide-portal-health.json",
+      "records": 0,
+      "unverified": 0,
+      "api_window_candidates": 0,
+      "official_listing_candidates": 0
+    }
+  ],
   "non_opportunity_records": 5,
   "diagnostic_records_checked": 74,
   "diagnostic_missing_urls": 8,
