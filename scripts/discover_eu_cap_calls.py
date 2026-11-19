@@ -125,7 +125,7 @@ def main():
         "records_count": len(records),
         "records": records
     }
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"EU CAP Network: saved {len(records)} agriculture funding leads.")
 if __name__ == "__main__":
     main()
