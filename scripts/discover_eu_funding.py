@@ -93,7 +93,7 @@ def main():
         "error": error
     }
     (ROOT / "data/eu-open-calls-discovery.json").write_text(
-        json.dumps(candidate_output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+        json.dumps(candidate_output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     # Preserve the raw official API response for audit and future field mapping.
     result = {
