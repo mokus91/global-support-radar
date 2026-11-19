@@ -687,13 +687,22 @@ async function loadOpportunityAlerts(){
   const response=await fetch("./data/opportunity-changes.json",{cache:"no-store"});
   if(!response.ok)throw new Error("change log unavailable");
   const payload=await response.json(),events=Array.isArray(payload.events)?payload.events:[];
-  const saved=getSaved(),savedTitles=new Set(liveListings.filter(row=>saved.has(savedId(row))).map(alertTitle).filter(Boolean));
+  const saved=getSaved(),savedRows=liveListings.filter(row=>saved.has(savedId(row)));
+  const savedTitles=new Set(savedRows.map(alertTitle).filter(Boolean));
   const relevant=events.filter(event=>event.type==="changed"&&savedTitles.has(String(event.title||"").trim().toLocaleLowerCase()));
   const latestNew=events.filter(event=>event.type==="new").slice(-5).reverse();
+  const today=new Date();today.setHours(0,0,0,0);
+  const deadlines=savedRows.map(row=>{
+   const raw=String(row._deadline||"").slice(0,10);
+   if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(raw))return null;
+   const due=new Date(raw+"T00:00:00");if(Number.isNaN(due.getTime()))return null;
+   const days=Math.round((due-today)/86400000);
+   return days>=0&&days<=7?{row,days,raw}:null;
+  }).filter(Boolean).sort((a,b)=>a.days-b.days);
   const visible=[...relevant.slice(-10).reverse(),...latestNew];
-  if(!visible.length){panel.style.display="none";return;}
+  if(!visible.length&&!deadlines.length){panel.style.display="none";return;}
   panel.style.display="block";
-  $("alertsTitle").textContent=lang==="hu"?"Támogatásfigyelő · "+relevant.length+" mentett változás":"Opportunity watch · "+relevant.length+" saved-item changes";
+  $("alertsTitle").textContent=lang==="hu"?"Támogatásfigyelő · "+relevant.length+" mentett változás · "+deadlines.length+" közelgő határidő":"Opportunity watch · "+relevant.length+" saved changes · "+deadlines.length+" upcoming deadlines";
   content.replaceChildren();
   const seen=new Set();try{JSON.parse(localStorage.getItem(CHANGE_LOG_KEY)||"[]").forEach(x=>seen.add(x));}catch(_){}
   const fresh=[];
@@ -704,10 +713,18 @@ async function loadOpportunityAlerts(){
    line.textContent=(event.type==="changed"?"⚠ ":"＋ ")+label+(event.title||"");
    content.append(line);
   });
+  deadlines.forEach(({row,days,raw})=>{
+   const line=document.createElement("div");line.style.margin="5px 0";
+   const title=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"");
+   line.textContent="⏳ "+(lang==="hu"?"Közelgő határidő ("+(days===0?"ma":days+" nap múlva")+"): ":"Upcoming deadline ("+(days===0?"today":days+" days")+"): ")+title+" · "+raw;
+   content.append(line);
+   const reminderId="deadline|"+savedId(row)+"|"+raw+"|"+days;
+   if(!seen.has(reminderId))fresh.push({type:"deadline",title,days,reminderId});
+  });
   if(fresh.length&&"Notification" in window&&Notification.permission==="granted"){
-   fresh.slice(0,5).forEach(event=>{try{new Notification(event.type==="changed"?(lang==="hu"?"Változott egy mentett támogatás":"A saved opportunity changed"):(lang==="hu"?"Új támogatásjelölt":"New opportunity found"),{body:event.title||"",tag:alertEventId(event)});}catch(_){}});
+   fresh.slice(0,8).forEach(event=>{try{new Notification(event.type==="changed"?(lang==="hu"?"Változott egy mentett támogatás":"A saved opportunity changed"):event.type==="deadline"?(lang==="hu"?"Közeleg egy támogatás határideje":"A saved grant deadline is approaching"):(lang==="hu"?"Új támogatásjelölt":"New opportunity candidate"),{body:event.title||"",tag:event.reminderId||alertEventId(event)});}catch(_){}});
   }
-  try{localStorage.setItem(CHANGE_LOG_KEY,JSON.stringify([...seen,...fresh.map(alertEventId)].slice(-300)));}catch(_){}
+  try{localStorage.setItem(CHANGE_LOG_KEY,JSON.stringify([...seen,...fresh.map(event=>event.reminderId||alertEventId(event))].slice(-500)));}catch(_){}
   button.textContent=("Notification" in window&&Notification.permission==="granted")?(lang==="hu"?"Böngészőértesítések engedélyezve":"Browser notifications enabled"):(lang==="hu"?"Böngészőértesítések bekapcsolása":"Enable browser notifications");
   button.disabled=!window.isSecureContext||!("Notification" in window)||Notification.permission==="denied"||Notification.permission==="granted";
   button.onclick=async()=>{
