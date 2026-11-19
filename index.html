@@ -618,6 +618,33 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
     const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A japán JGrants találatok most nem tölthetők be.":"Japanese JGrants results are temporarily unavailable.";box.append(warning);
    }
   }
+  if(code==="CL"&&(category==="all"||category==="business")){
+   try{
+    const response=await fetch("data/sercotec-discovery.json",{cache:"no-store"});
+    if(response.ok){
+     const feed=await response.json();
+     const relevant=feed.records.filter(record=>category==="all"||record.category===category);
+     if(relevant.length){
+      const heading=document.createElement("h3");heading.textContent=isHu?"Chile – aktuális Sercotec pályázati felhívások":"Chile — current Sercotec funding calls";box.append(heading);
+      const note=document.createElement("p");note.className="notice";note.textContent=isHu?"A chilei Sercotec hivatalos nyitott felhívásainak listájából átvett találatok. A határidők a közzétett listából származnak; az összeget és a részletes jogosultságot csak a pályázati alapdokumentum igazolhatja. Ellenőrizd a régiót és a beadási feltételeket.":"Candidates transcribed from Sercotec's official open-call listing. Deadlines are taken from that listing; amounts and detailed eligibility must be verified in each call's official rules. Check the region and application requirements.";box.append(note);
+      relevant.forEach(record=>{
+       const card=document.createElement("article");card.className="card";
+       const h=document.createElement("h3");h.textContent=isHu?(record.title_hu||record.title):record.title;
+       const p=document.createElement("p");p.textContent=record.eligibility_summary;
+       const meta=document.createElement("div");meta.className="meta";
+       const deadline=record.deadline?new Date(record.deadline).toLocaleString(isHu?"hu-HU":"en-GB",{dateStyle:"medium",timeStyle:"short",timeZone:"America/Santiago"}):"";
+       meta.textContent=(isHu?"Régió: ":"Region: ")+record.region+" · "+(isHu?"Határidő: ":"Deadline: ")+deadline+" · "+(isHu?"Összeg: nincs megerősítve":"Amount: not verified");
+       const foot=document.createElement("div");foot.className="cardfoot";
+       const label=document.createElement("span");label.textContent=isHu?"Sercotec · hivatalos nyitott felhívások":"Sercotec · official open calls";
+       const a=document.createElement("a");a.href=record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Hivatalos felhívás megnyitása ↗":"Open official call listing ↗";
+       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
+      });
+     }
+    }
+   }catch(error){
+    const warning=document.createElement("p");warning.className="notice";warning.textContent=isHu?"A chilei Sercotec felhívások most nem tölthetők be.":"Chile Sercotec calls are temporarily unavailable.";box.append(warning);
+   }
+  }
   try{
    const response=await fetch("data/eu-national-business-funding.json");
    if(response.ok){
