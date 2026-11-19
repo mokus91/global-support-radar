@@ -20,7 +20,7 @@ def pick(obj, *keys):
 def main():
     records, error, pages = [], None, 0
     try:
-        for page in range(1, 6):
+        for page in range(1, 21):
             url = f"{API}?page%5Bnumber%5D={page}&page%5Bsize%5D=100"
             req = Request(url, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/vnd.api+json, application/json"})
             with urlopen(req, timeout=45) as response:
