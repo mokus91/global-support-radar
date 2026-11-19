@@ -129,10 +129,16 @@ def main():
         except (TypeError, ValueError):
             raise SystemExit(f"Feed must include a valid timezone-aware checked_at timestamp: {filename}")
 
-    for adapter in ("discover_eu_national_categories.py", "discover_eu_national_agriculture.py", "discover_eu_funding.py"):
+    retry_policies = {
+        "discover_eu_national_categories.py": ("for attempt in range(2)", "time.sleep(2)", "TIMEOUT = 9"),
+        "discover_eu_national_agriculture.py": ("for attempt in range(3)", "time.sleep(3 * (attempt + 1))", "TIMEOUT = 18"),
+        "discover_eu_funding.py": ("for attempt in range(3)", "time.sleep(3 * (attempt + 1))", None),
+    }
+    for adapter, expected in retry_policies.items():
         adapter_text = (ROOT / "scripts" / adapter).read_text(encoding="utf-8")
-        if "for attempt in range(3)" not in adapter_text or "time.sleep(3 * (attempt + 1))" not in adapter_text:
-            raise SystemExit(f"Transient network retry policy is missing from {adapter}")
+        for required in expected:
+            if required and required not in adapter_text:
+                raise SystemExit(f"Expected bounded network retry policy is missing from {adapter}: {required}")
     eu_adapter = (ROOT / "scripts" / "discover_eu_funding.py").read_text(encoding="utf-8")
     if "max_pages = 100" not in eu_adapter or '"maximum_pages": max_pages' not in eu_adapter or "orderBy=ASC" not in eu_adapter:
         raise SystemExit("EU Funding & Tenders pagination cap or nearest-deadline sorting is missing")
