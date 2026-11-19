@@ -1,4 +1,4 @@
-name: Official source discovery
+name: Official source discovery and global country expansion
 
 on:
   workflow_dispatch:
