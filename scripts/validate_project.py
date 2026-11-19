@@ -47,7 +47,7 @@ def main():
                 raise SystemExit(f"{path.name}: non-HTTPS official_url: {url}")
 
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    inline_scripts = re.findall(r"<script(?:\\s[^>]*)?>([\\s\\S]*?)</script>", html, re.I)
+    inline_scripts = re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", html, re.I)
     for index, script in enumerate((item for item in inline_scripts if item.strip()), start=1):
         with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
             handle.write(script)
