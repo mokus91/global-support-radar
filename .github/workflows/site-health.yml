@@ -1,0 +1,28 @@
+name: Published site health monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: published-site-health
+  cancel-in-progress: true
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check published homepage, feed freshness and public JSON feeds
+        run: >-
+          python scripts/check_published_site.py
+          --base-url https://mokus91.github.io/global-support-radar/
+          --max-age-hours 30
