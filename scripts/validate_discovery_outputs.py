@@ -95,6 +95,42 @@ def main():
         checked_files += 1
         checked_records += len(records)
 
+    # Validate the status manifest separately: it is operational metadata, not an opportunity feed.
+    status_path = DATA / "feed-status.json"
+    if status_path.exists():
+        try:
+            manifest = json.loads(status_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"feed-status.json: invalid JSON at line {exc.lineno}, column {exc.colno}") from exc
+        if not isinstance(manifest, dict) or not isinstance(manifest.get("feeds"), list):
+            raise SystemExit("feed-status.json: root must contain a feeds list")
+        parse_timestamp(manifest.get("checked_at"), "feed-status.json checked_at")
+        seen_files = set()
+        allowed_statuses = {"checked", "checked-empty", "temporarily-unavailable", "missing", "invalid-json"}
+        allowed_freshness = {"fresh", "aging", "stale", "unknown"}
+        for index, feed in enumerate(manifest["feeds"]):
+            label = f"feed-status.json feed {index + 1}"
+            if not isinstance(feed, dict):
+                raise SystemExit(f"{label}: entry must be an object")
+            filename = feed.get("file")
+            if not isinstance(filename, str) or not filename.endswith(".json") or "/" in filename or "\\\\" in filename:
+                raise SystemExit(f"{label}: file must be a simple JSON filename")
+            if filename in seen_files:
+                raise SystemExit(f"{label}: duplicate feed filename {filename!r}")
+            seen_files.add(filename)
+            parse_timestamp(feed.get("checked_at"), f"{label} checked_at")
+            if feed.get("status") not in allowed_statuses:
+                raise SystemExit(f"{label}: unsupported status {feed.get('status')!r}")
+            count = feed.get("records_count")
+            if count is not None and (not isinstance(count, int) or isinstance(count, bool) or count < 0):
+                raise SystemExit(f"{label}: records_count must be a non-negative integer or null")
+            freshness = feed.get("freshness")
+            if freshness is not None and freshness not in allowed_freshness:
+                raise SystemExit(f"{label}: unsupported freshness {freshness!r}")
+            age = feed.get("feed_age_hours")
+            if age is not None and (not isinstance(age, (int, float)) or isinstance(age, bool) or age < 0):
+                raise SystemExit(f"{label}: feed_age_hours must be a non-negative number")
+
     print(f"Post-discovery validation passed: {checked_files} feeds and {checked_records} records checked.")
 
 
