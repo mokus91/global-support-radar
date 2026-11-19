@@ -121,13 +121,14 @@
     },
     {
       "id": "hu-nkfih",
-      "name": "NKFIH – pályázati felhívások",
-      "publisher": "National Research, Development and Innovation Office",
-      "url": "https://nkfih.gov.hu/",
-      "coverage": "Hungary; research, development and innovation",
-      "kind": "research-innovation-funding",
-      "access": "Official website; public API/feed not confirmed",
-      "status": "discovery-source"
+      "name": "NKFIH – aktuális pályázati felhívások",
+      "publisher": "Nemzeti Kutatási, Fejlesztési és Innovációs Hivatal",
+      "url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
+      "coverage": "Hungary; research, development, innovation and related business/academic support",
+      "kind": "funding-calls",
+      "access": "Official grant-news RSS: https://rss.nkfih.gov.hu/hirek-180603?rss=1",
+      "status": "automated-discovery",
+      "notes": "The adapter imports the official NKFIH Pályázati hírek RSS feed as unverified news candidates. This is not a complete list of open calls; confirm status, deadlines and eligibility on the official opportunity page."
     },
     {
       "id": "hu-kozpenzpalyazat",
@@ -491,6 +492,28 @@
       "access": "Official electronic administration portal",
       "status": "discovery-source",
       "notes": "Official portal lists online applications including family allowance, GYED, GYES, maternity support, jobseeker allowance and selected housing assistance."
+    },
+    {
+      "id": "hu-bga",
+      "name": "Bethlen Gábor Alapkezelő – támogatások",
+      "publisher": "Bethlen Gábor Alapkezelő Zrt.",
+      "url": "https://bgazrt.hu/tamogatasok/",
+      "coverage": "Hungary; civil, church, minority, village and cross-border community support",
+      "kind": "funding-calls",
+      "access": "Official programme pages and notices; no public API confirmed",
+      "status": "discovery-source",
+      "notes": "Official programme pages include the National Cooperation Fund, Magyar Falu Programme and other civil/community calls. Check each call's exact year, eligible applicants and deadline."
+    },
+    {
+      "id": "hu-emet",
+      "name": "Nemzeti Kulturális Támogatáskezelő – pályázatok",
+      "publisher": "Nemzeti Kulturális Támogatáskezelő",
+      "url": "https://emet.gov.hu/kategoria/kiemelt-kategoriak/palyazatok/",
+      "coverage": "Hungary; scholarships, youth, cultural, social, church and minority support",
+      "kind": "funding-calls",
+      "access": "Official searchable announcements; no public API confirmed",
+      "status": "discovery-source",
+      "notes": "Official calls and announcements. Some notices are not open applications; check the original call and its deadline."
     }
   ],
   "publication_requirements": [
