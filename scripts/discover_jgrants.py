@@ -72,6 +72,11 @@ def main():
                     except ValueError:
                         pass
                 item_url = item.get("front_subsidy_detail_page_url") or (PORTAL + urllib.parse.quote(sid))
+                maximum_amount = item.get("subsidy_max_limit")
+                try:
+                    maximum_amount_number = float(maximum_amount) if maximum_amount not in (None, "") else None
+                except (TypeError, ValueError):
+                    maximum_amount_number = None
                 unique[sid] = {
                     "id": sid,
                     "country_code": "JP",
@@ -83,11 +88,18 @@ def main():
                     "use_purpose_original": item.get("use_purpose", ""),
                     "industry_original": item.get("industry", ""),
                     "target_area_original": item.get("target_area_search", ""),
-                    "maximum_amount_jpy": item.get("subsidy_max_limit"),
+                    "maximum_amount_jpy": maximum_amount_number if maximum_amount_number and maximum_amount_number > 0 else None,
+                    "amount_currency": "JPY" if maximum_amount_number and maximum_amount_number > 0 else None,
+                    "amount_type": "maximum_subsidy_limit" if maximum_amount_number and maximum_amount_number > 0 else None,
+                    "amount_status": "published" if maximum_amount_number and maximum_amount_number > 0 else "not_published_or_zero_in_api",
                     "acceptance_start": item.get("acceptance_start_datetime"),
                     "acceptance_end": end,
                     "categories": categories(item),
                     "url": item_url,
+                    "official_url": item_url,
+                    "application_url": item_url,
+                    "source_language": "ja",
+                    "eligible_beneficiaries_original": item.get("target_area_search", ""),
                     "publisher": "Japan Digital Agency — JGrants",
                     "verification_status": "official_api_live_acceptance_candidate",
                     "status": "acceptance-open-api-filtered",
@@ -104,6 +116,7 @@ def main():
         "source_url": "https://developers.digital.go.jp/documents/jgrants/api/",
         "attribution": "Source: JGrants (jGrants), Government of Japan. Verify eligibility and current details on the original programme page.",
         "records_count": len(records),
+        "amount_currency": "JPY",
         "records": records,
         "query_errors": errors,
         "limitations": "The API search is keyword-based and the returned set is not a complete national inventory. Japanese source titles are retained in the original language; dates and eligibility must be checked at the publisher.",
