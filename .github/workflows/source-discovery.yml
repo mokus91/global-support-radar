@@ -34,6 +34,10 @@ jobs:
         run: python scripts/discover_ukri.py
       - name: Discover Australian ARC research grants
         run: python scripts/discover_au_arc_grants.py
+      - name: Discover Australian GrantConnect opportunities
+        run: python scripts/discover_au_grantconnect.py
+      - name: Discover Canadian CIHR funding opportunities
+        run: python scripts/discover_ca_cihr.py
       - name: Discover Hungarian open-data datasets
         run: python scripts/discover_hu_open_data.py
       - name: Probe official Hungarian grant announcements feed
@@ -43,7 +47,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/gsr-discovery
-          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json /tmp/gsr-discovery/
+          cp data/discovery-index.json data/eu-funding-discovery.json data/eu-open-calls-discovery.json data/us-grants-discovery.json data/ukri-discovery.json data/au-arc-grants-discovery.json data/au-grantconnect-discovery.json data/ca-cihr-discovery.json data/hu-open-data-discovery.json data/hu-palyazat-announcements.json /tmp/gsr-discovery/
           git fetch origin main
           git reset --hard origin/main
           cp /tmp/gsr-discovery/*.json data/
