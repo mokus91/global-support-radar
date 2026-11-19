@@ -414,6 +414,50 @@
       "access": "Official ministry information; no consolidated public API confirmed",
       "status": "discovery-source",
       "notes": "Official ministry starting point for social welfare and labour support. Detailed programme information may be available only in Japanese."
+    },
+    {
+      "id": "au-services-australia-payment-finder",
+      "name": "Services Australia – Payment and Service Finder",
+      "publisher": "Australian Government – Services Australia",
+      "url": "https://www.servicesaustralia.gov.au/payment-and-service-finder",
+      "coverage": "Australia; individuals and families, income support, family payments, carers, disability, students, job seekers and housing-related assistance",
+      "kind": "benefits-finder",
+      "access": "Official interactive finder; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Discovery entry point for government payments and services. Individual payments, current rates, eligibility and application status must be checked on the linked official programme page."
+    },
+    {
+      "id": "au-dss-benefits-payments",
+      "name": "Department of Social Services – Benefits and payments",
+      "publisher": "Australian Government – Department of Social Services",
+      "url": "https://www.dss.gov.au/benefits-payments",
+      "coverage": "Australia; families, children, carers, disability, older people, community services and social support",
+      "kind": "social-support-directory",
+      "access": "Official programme directory; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Directory of social support programmes; do not treat every listed payment as currently open or universally available."
+    },
+    {
+      "id": "au-qld-agribusiness-grants",
+      "name": "Business Queensland – Grants for agriculture businesses",
+      "publisher": "Queensland Government",
+      "url": "https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/business/finance/grants",
+      "coverage": "Australia; Queensland farmers, agribusinesses, rural production, drought and disaster assistance",
+      "kind": "agriculture-funding-directory",
+      "access": "Official programme directory; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "Queensland-specific agriculture funding directory. Confirm the current programme page, closing date, geography and applicant eligibility."
+    },
+    {
+      "id": "au-wa-industry-grants-register",
+      "name": "Western Australia – Grants Assistance and Programs Register",
+      "publisher": "Government of Western Australia",
+      "url": "https://www.wa.gov.au/organisation/department-of-energy-and-economic-diversification/grants-assistance-and-programs-register-wa-industry",
+      "coverage": "Australia; Western Australia industry, agribusiness, regional development, energy and small business",
+      "kind": "regional-funding-directory",
+      "access": "Official register; structured feed/API not confirmed",
+      "status": "discovery-source",
+      "notes": "State-level register of available and potential industry support. Individual listings require current status verification."
     }
   ],
   "publication_requirements": [
