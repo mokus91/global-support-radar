@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:20:02+00:00",
+  "checked_at": "2026-11-19T16:25:52+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 8,
-    "http_error": 2,
-    "reachable": 56,
+    "connection_error": 12,
+    "http_error": 3,
+    "reachable": 51,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -113,9 +113,8 @@
     },
     {
       "id": "za-sassa",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sedfa",
@@ -230,8 +229,8 @@
     },
     {
       "id": "eu-national-funds-lu",
-      "status": "reachable",
-      "http_status": 206,
+      "status": "http_error",
+      "http_status": 400,
       "final_url": "https://fonds-europeens.public.lu/fr.html"
     },
     {
@@ -272,9 +271,8 @@
     },
     {
       "id": "eu-national-funds-se",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufonder.se/"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-national-funds-si",
@@ -302,15 +300,13 @@
     },
     {
       "id": "national-tr-business-1",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "national-tr-all-2",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://yatirimadestek.gov.tr/searchsupport"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "national-mx-all-1",

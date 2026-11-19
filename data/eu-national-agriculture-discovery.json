@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T16:22:51Z",
+  "generated_at": "2026-11-19T16:28:31Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 18,
-  "records_count": 7,
+  "portals_checked": 16,
+  "records_count": 5,
   "records": [
     {
       "id": "national-agri-cz-1",
@@ -38,21 +38,6 @@
       "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
-      "id": "national-agri-lu-1",
-      "country_code": "LU",
-      "country_en": "Luxembourg",
-      "country_hu": "Luxemburg",
-      "title": "FEADER",
-      "official_url": "https://fonds-europeens.public.lu/fr/fonds-europeens/feader.html",
-      "portal_url": "https://fonds-europeens.public.lu/fr.html",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
       "id": "national-agri-mt-1",
       "country_code": "MT",
       "country_en": "Malta",
@@ -75,21 +60,6 @@
       "title": "Mais de 850 milhões de euros para 85 concursos até dezembro",
       "official_url": "https://portugal2030.pt/2026/09/14/portugal-2030-mais-de-850-milhoes-de-euros-para-85-concursos-ate-dezembro/",
       "portal_url": "https://portugal2030.pt/",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
-      "id": "national-agri-se-1",
-      "country_code": "SE",
-      "country_en": "Sweden",
-      "country_hu": "Svédország",
-      "title": "För första gången samordnas EU-stöd för jordbruk och förädling",
-      "official_url": "https://eufonder.se/eufonder/omeufonder/nyheter/nyheter/forforstagangensamordnaseustodforjordbrukochforadling.13270.html",
-      "portal_url": "https://eufonder.se/",
       "publisher": "Official national EU funding portal",
       "category": "agriculture",
       "record_type": "national-agriculture-link-discovery",
@@ -147,8 +117,16 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "country_code": "LU",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
       "country_code": "RO",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "country_code": "SE",
+      "error": "The read operation timed out"
     }
   ]
 }
