@@ -110,19 +110,24 @@ for feed in manifest.get("feeds", []):
 
         status = str(record.get("verification_status") or "").strip().lower()
         record_state = str(record.get("status") or "").strip().lower()
-        combined = status + " " + record_state
-        if "unverified" in status or "not-yet-verified" in status:
+        record_type = str(record.get("record_type") or "").strip().lower()
+        combined = status + " " + record_state + " " + record_type
+        is_unverified = "unverified" in status or "not-yet-verified" in status
+        if is_unverified:
             report["unverified_status"] += 1
-            report["verification_tiers"]["unverified"] += 1
             feed_counts["unverified"] += 1
-        elif "candidate" in combined and ("api" in combined or "acceptance" in combined):
+
+        # Discovery candidates remain candidates; this is not an open-status claim.
+        if "official_api_live_acceptance_candidate" in status or "official-api-window-current" in status:
             report["verification_tiers"]["api_window_candidate"] += 1
             feed_counts["api_window_candidates"] += 1
-        elif "candidate" in combined or "not-yet-verified" in combined or "listed-on-official" in combined:
+        elif any(token in combined for token in ("candidate", "official-listing", "rss-discovery")):
             report["verification_tiers"]["official_listing_candidate"] += 1
             feed_counts["official_listing_candidates"] += 1
         elif "verified" in status and "unverified" not in status:
             report["verification_tiers"]["verified_open"] += 1
+        elif is_unverified:
+            report["verification_tiers"]["unverified"] += 1
         else:
             report["verification_tiers"]["other"] += 1
 
