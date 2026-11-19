@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T16:34:24Z",
+  "generated_at": "2026-11-19T16:41:21Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 18,
-  "records_count": 50,
+  "portals_checked": 19,
+  "records_count": 47,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -272,48 +272,6 @@
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
       "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-ie-employment-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "employment",
-      "title": "https://www.eufunds.ie/bitci-employment-fair/",
-      "official_url": "https://www.eufunds.ie/bitci-employment-fair/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-ie-housing-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "housing",
-      "title": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
-      "official_url": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Housing-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-ie-education-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "education",
-      "title": "EU in our Schools",
-      "official_url": "https://www.eufunds.ie/eu-in-schools/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
       "id": "eu-lu-housing-1",
@@ -716,10 +674,6 @@
     {
       "country_code": "BE",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
-    },
-    {
-      "country_code": "CY",
-      "error": "HTTP Error 403: Forbidden"
     },
     {
       "country_code": "FR",

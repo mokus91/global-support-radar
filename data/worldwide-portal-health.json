@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-19T16:31:24+00:00",
+  "checked_at": "2026-11-19T16:38:01+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 7,
-    "http_error": 2,
-    "reachable": 56,
-    "restricted": 9
+    "http_error": 3,
+    "reachable": 57,
+    "restricted": 7
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -166,7 +166,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 202,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -395,8 +395,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://fondos.gob.cl/"
     },
     {
@@ -437,8 +437,8 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "restricted",
-      "http_status": 429,
+      "status": "http_error",
+      "http_status": 500,
       "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {

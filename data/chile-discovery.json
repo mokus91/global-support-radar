@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-19T16:31:44+00:00",
+  "updated_at": "2026-11-19T16:38:20+00:00",
   "country_code": "CL",
   "country_en": "Chile",
   "source": "CORFO official active-call page",
@@ -22,6 +22,10 @@
       "deadline": "2026-11-24T13:00:00-03:00",
       "amount_max": 75000000,
       "currency": "CLP",
+      "amount_maximum": 75000000,
+      "amount_currency": "CLP",
+      "amount_type": "maximum_co_funding_per_project",
+      "amount_status": "published",
       "funding_rate_max_percent": 50,
       "funding_rate_female_project_lead_percent": 60,
       "eligibility_summary_hu": "18 év feletti chilei vagy külföldi természetes személyek, illetve a kiírásban meghatározott chilei vagy külföldi startupvállalkozások. A Growth kategória fejlettebb, értékesítéssel rendelkező technológiai startupokat céloz; a pontos bevételi és jogi feltételeket az eredeti szabályzat tartalmazza.",
@@ -31,7 +35,7 @@
       "official_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
       "publisher": "Corporación de Fomento de la Producción (CORFO), Government of Chile",
       "verification_status": "official_page_open_status_and_amount_checked",
-      "source_checked_at": "2026-11-19T16:31:44+00:00",
+      "source_checked_at": "2026-11-19T16:38:20+00:00",
       "note_hu": "A nyitott státusz, nyitás/zárás és maximális társfinanszírozás a CORFO hivatalos oldaláról származik. A támogatás legfeljebb a projektköltség 50%-a; női projektvezető esetén a hivatalos oldal 60%-ot jelez. A teljes jogosultságot és a saját hozzájárulást a szabályzatban ellenőrizni kell.",
       "note_en": "Open status, opening/closing dates and maximum co-financing are taken from CORFO's official page. Funding covers up to 50% of project cost; the page states 60% for a female project leader. Confirm full eligibility and matching contribution in the rules."
     }
