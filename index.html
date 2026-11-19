@@ -272,11 +272,12 @@ async function loadOfficialSources(){
  try{
   const response=await fetch("./data/source-registry.json",{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
   const registry=await response.json(),sources=Array.isArray(registry.sources)?registry.sources:[];
-  let nationalPortals=[];
+  let nationalPortals=[],euPortalRows=[];
   try{
    const portalResponse=await fetch("./data/europe-national-portals.json",{cache:"no-store"});
    if(portalResponse.ok){
     const portalData=await portalResponse.json();
+    euPortalRows=Array.isArray(portalData.records)?portalData.records:[];
     const knownUrls=new Set(sources.map(x=>{try{return new URL(x.url).href.replace(/\/$/,"")}catch(_){return ""}}));
     nationalPortals=(portalData.records||[]).filter(x=>{try{return !knownUrls.has(new URL(x.url).href.replace(/\/$/,""))}catch(_){return false}}).map(x=>({
      id:"eu-national-funds-"+String(x.country_code||"").toLowerCase(),
@@ -310,7 +311,7 @@ async function loadOfficialSources(){
     const byCode=new Map();
     const add=(code,kind)=>{if(!code||code==="EU")return;const row=byCode.get(code)||{code,world:0,eu:0,historical:0,automated:0};row[kind]++;byCode.set(code,row);};
     worldRows.forEach(x=>add(x.country_code,"world"));
-    (portalData.records||[]).forEach(x=>add(x.country_code,"eu"));
+    euPortalRows.forEach(x=>add(x.country_code,"eu"));
     unRows.forEach(x=>add(x.country_code,"historical"));
     const countryNameFor=code=>{try{return new Intl.DisplayNames([hu?"hu":"en"],{type:"region"}).of(code)||code}catch(_){return code}};
     const registryByCountry=new Map();
