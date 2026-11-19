@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "country_code": "CL",
+  "country_en": "Chile",
+  "country_hu": "Chile",
+  "source": "Sercotec — official open application listings",
+  "source_url": "https://widgetsercotec.sercotec.cl/Convocatoria",
+  "scope": "Only the two calls shown in Sercotec's official open-call listing at the time checked. Amount and detailed eligibility are intentionally left unspecified until verified in each official call basis.",
+  "records_count": 2,
+  "records": [
+    {
+      "id": "sercotec-precoop-fndr-los-lagos-2026",
+      "title": "Componente 1 PRECOOP FNDR",
+      "title_hu": "PRECOOP FNDR – szövetkezeti előkészítő program",
+      "country_code": "CL",
+      "region": "Región de Los Lagos",
+      "category": "business",
+      "programme_type": "cooperative_network_development",
+      "status": "listed-open",
+      "deadline": "2026-11-30T15:00:00-03:00",
+      "amount": null,
+      "currency": "CLP",
+      "eligibility_summary": "A hivatalos listában a Los Lagos régióhoz és a szövetkezeti vállalkozási hálózatok előkészítéséhez kapcsolódó felhívásként szerepel. A részletes jogosultságot a pályázati alapdokumentumban kell ellenőrizni.",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "official_url": "https://widgetsercotec.sercotec.cl/Convocatoria",
+      "publisher": "Servicio de Cooperación Técnica (Sercotec)",
+      "verification_status": "official_open_listing_candidate",
+      "note": "A nyitott felhívások hivatalos listájában szereplő határidő; az összeg és a teljes feltételrendszer nincs megerősítve ebben az adatforrásban."
+    },
+    {
+      "id": "sercotec-crece-sostenible-restaurantes-nuble-2026",
+      "title": "CRECE SOSTENIBLE “RESTAURANTES DE ÑUBLE”, FNDR 2026",
+      "title_hu": "CRECE SOSTENIBLE – Ñuble régió éttermei, FNDR 2026",
+      "country_code": "CL",
+      "region": "Región de Ñuble",
+      "category": "business",
+      "programme_type": "sustainable_business_growth",
+      "status": "listed-open",
+      "deadline": "2026-12-07T15:00:00-03:00",
+      "amount": null,
+      "currency": "CLP",
+      "eligibility_summary": "A hivatalos listában a Ñuble régió éttermeihez és vendéglátó vállalkozásaihoz kapcsolódó fenntarthatósági fejlesztési felhívásként szerepel. A részletes jogosultságot a pályázati alapdokumentumban kell ellenőrizni.",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "official_url": "https://widgetsercotec.sercotec.cl/Convocatoria",
+      "publisher": "Servicio de Cooperación Técnica (Sercotec)",
+      "verification_status": "official_open_listing_candidate",
+      "note": "A nyitott felhívások hivatalos listájában szereplő határidő; az összeg és a teljes feltételrendszer nincs megerősítve ebben az adatforrásban."
+    }
+  ]
+}
