@@ -84,7 +84,7 @@ def main():
               "start_date":start,"deadline":end,"indefinite_open":indefinite,"total_call_budget":budget,"total_call_budget_original":budget_raw,
               "amount_currency":"EUR" if budget is not None else None,"amount_type":"total_call_budget_not_individual_award" if budget is not None else None,"amount_status":"published" if budget is not None else "source_field_untyped" if budget_raw not in (None, "") else "not_published","categories":categories(d),
               "official_url":f"{PORTAL}/convocatoria/{code}","application_url":application_url,
-              "legal_bases_url":d.get("urlBasesReguladoras"),"status":"official-api-window-current",
+              "legal_bases_url":(str(d.get("urlBasesReguladoras")).strip().replace("http://", "https://", 1) if isinstance(d.get("urlBasesReguladoras"), str) and d.get("urlBasesReguladoras").strip().lower().startswith("http://") else d.get("urlBasesReguladoras")),"status":"official-api-window-current",
               "eligibility_verified":False,"amount_verified":False,"source_api":BASE,
               "note_hu":"Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
               "note_en":"The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."})
