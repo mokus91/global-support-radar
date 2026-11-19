@@ -8,6 +8,8 @@ import json
 import os
 import re
 import ssl
+import time
+import urllib.error
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -53,10 +55,23 @@ def fetch(url):
         context.load_verify_locations(certifi.where())
     except Exception:
         pass
-    with urlopen(request, timeout=TIMEOUT, context=context) as response:
-        raw = response.read(2_500_000)
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.geturl(), raw.decode(charset, errors="replace")
+    last_error = None
+    for attempt in range(3):
+        try:
+            with urlopen(request, timeout=TIMEOUT, context=context) as response:
+                raw = response.read(2_500_000)
+                charset = response.headers.get_content_charset() or "utf-8"
+                return response.geturl(), raw.decode(charset, errors="replace")
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 and exc.code != 429 or attempt == 2:
+                raise
+            last_error = exc
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+            if attempt == 2:
+                raise
+            last_error = exc
+        time.sleep(3 * (attempt + 1))
+    raise RuntimeError(f"Official portal request failed after retries: {last_error}")
 
 def normalized_host(url):
     host = (urlparse(url).hostname or "").lower()

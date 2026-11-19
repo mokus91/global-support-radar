@@ -8,6 +8,8 @@ from __future__ import annotations
 import json
 import re
 import ssl
+import time
+import urllib.error
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -56,9 +58,22 @@ def fetch(url):
     except Exception:
         pass
     request = Request(url, headers=HEADERS)
-    with urlopen(request, timeout=TIMEOUT, context=context) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.geturl(), response.read(2_500_000).decode(charset, errors="replace")
+    last_error = None
+    for attempt in range(3):
+        try:
+            with urlopen(request, timeout=TIMEOUT, context=context) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                return response.geturl(), response.read(2_500_000).decode(charset, errors="replace")
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 and exc.code != 429 or attempt == 2:
+                raise
+            last_error = exc
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+            if attempt == 2:
+                raise
+            last_error = exc
+        time.sleep(3 * (attempt + 1))
+    raise RuntimeError(f"Official portal request failed after retries: {last_error}")
 
 def main():
     directory = json.loads(INPUT.read_text(encoding="utf-8"))

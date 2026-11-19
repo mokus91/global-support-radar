@@ -79,6 +79,11 @@ def main():
         if not filename or Path(filename).name != filename:
             raise SystemExit(f"Unsafe feed filename in feed-status.json: {filename}")
 
+    for adapter in ("discover_eu_national_categories.py", "discover_eu_national_agriculture.py"):
+        adapter_text = (ROOT / "scripts" / adapter).read_text(encoding="utf-8")
+        if "for attempt in range(3)" not in adapter_text or "time.sleep(3 * (attempt + 1))" not in adapter_text:
+            raise SystemExit(f"Transient network retry policy is missing from {adapter}")
+
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     for required in ("feedHealthSection", "loadFeedStatus", "data/feed-status.json"):
         if required not in html:
