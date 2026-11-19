@@ -23,12 +23,13 @@ report = {
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
     "feed_summary": [],
     "non_opportunity_records": 0,
+    "historical_archive_records": 0,
     "diagnostic_records_checked": 0,
     "diagnostic_missing_urls": 0,
     "feed_errors": [],
     "notes": [
         "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
-        "Portal reachability diagnostics and dataset catalogue entries are not counted as grant opportunities.",
+        "Portal reachability diagnostics, dataset catalogue entries and historical award archives are not counted as current grant opportunities.",
         "Unverified status is an information flag, not automatically a data error.",
         "No source opportunity records are modified by this audit."
     ]
@@ -60,7 +61,7 @@ for feed in manifest.get("feeds", []):
     # This file describes portal connectivity, not grant opportunities.
     is_diagnostic_feed = filename == "worldwide-portal-health.json"
     seen = set()
-    feed_counts = {"file": filename, "records": 0, "unverified": 0, "api_window_candidates": 0, "official_listing_candidates": 0}
+    feed_counts = {"file": filename, "records": 0, "unverified": 0, "api_window_candidates": 0, "official_listing_candidates": 0, "historical_archive_records": 0}
     for record in records:
         if not isinstance(record, dict):
             report["feed_errors"].append(f"{filename}: non-object record")
@@ -75,6 +76,12 @@ for feed in manifest.get("feeds", []):
                 parsed = urlparse(str(diagnostic_url))
                 if parsed.scheme not in ("https", "http") or not parsed.netloc:
                     report["feed_errors"].append(f"{filename}: malformed diagnostic URL")
+            continue
+
+        # Historical award archives are not current application opportunities.
+        if str(record.get("record_type") or "").startswith("historical-"):
+            report["historical_archive_records"] += 1
+            feed_counts["historical_archive_records"] += 1
             continue
 
         # Dataset catalogue metadata is useful discovery material but is not a grant call.
