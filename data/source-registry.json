@@ -679,6 +679,46 @@
       "access": "Official European Commission country guide directory and MISSOC network",
       "status": "discovery-source",
       "notes": "Country-specific guide URLs for all 27 EU Member States are stored in data/eu-social-protection-country-pages.json. Covers family, unemployment, healthcare, pensions and other social rights; not a live open-grant feed."
+    },
+    {
+      "id": "eu-access-to-finance",
+      "name": "Access to Finance",
+      "publisher": "European Commission",
+      "url": "https://single-market-economy.ec.europa.eu/access-finance_en",
+      "coverage": "EU-backed SME loans, venture capital and finance intermediaries",
+      "kind": "business-finance-directory",
+      "access": "Official European Commission portal",
+      "status": "discovery-source"
+    },
+    {
+      "id": "eu-sme-support-tools",
+      "name": "EU support tools for SMEs",
+      "publisher": "European Commission / Your Europe",
+      "url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/eu-support-tools-sme/index_en.htm",
+      "coverage": "SME funding, advice, training, partnerships and market access",
+      "kind": "business-support-directory",
+      "access": "Official Your Europe directory",
+      "status": "discovery-source"
+    },
+    {
+      "id": "fr-national-business-aid",
+      "name": "Aides-entreprises.fr",
+      "publisher": "French public authorities",
+      "url": "https://aides-entreprises.fr/",
+      "coverage": "France national business aid and funding programmes",
+      "kind": "national-business-aid-database",
+      "access": "Official national database referenced by European Commission guidance",
+      "status": "discovery-source"
+    },
+    {
+      "id": "de-funding-database",
+      "name": "Förderdatenbank",
+      "publisher": "German Federal Government",
+      "url": "https://www.foerderdatenbank.de/FDB/DE/Home/home.html",
+      "coverage": "Germany federal, state and EU funding programmes",
+      "kind": "national-funding-database",
+      "access": "Official German federal database referenced by European Commission guidance",
+      "status": "discovery-source"
     }
   ],
   "publication_requirements": [
