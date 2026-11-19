@@ -514,6 +514,39 @@
       "access": "Official searchable announcements; no public API confirmed",
       "status": "discovery-source",
       "notes": "Official calls and announcements. Some notices are not open applications; check the original call and its deadline."
+    },
+    {
+      "id": "hu-mak-maternity",
+      "name": "Anyasági támogatás – Magyar Államkincstár",
+      "publisher": "Magyar Államkincstár",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/gyermekvallalas-tamogatasa/anyasagi-tamogatas",
+      "coverage": "Hungary; maternity allowance, eligibility, amount and application process",
+      "kind": "citizen-benefits",
+      "access": "Official detailed information and application forms",
+      "status": "discovery-source",
+      "notes": "Check the current legal conditions and six-month application deadline on the official page."
+    },
+    {
+      "id": "hu-mak-family-allowance",
+      "name": "Családi pótlék – Magyar Államkincstár",
+      "publisher": "Magyar Államkincstár",
+      "url": "https://www.allamkincstar.gov.hu/csaladok-tamogatasa/Csalad_gyermek/csaladi-potlek",
+      "coverage": "Hungary; family allowance, child-raising and schooling benefits",
+      "kind": "citizen-benefits",
+      "access": "Official detailed information and application guidance",
+      "status": "discovery-source",
+      "notes": "Eligibility depends on applicant and child circumstances; verify current conditions on the official page."
+    },
+    {
+      "id": "hu-local-social-support",
+      "name": "Magyarország.hu – helyi és szociális ügyintézés",
+      "publisher": "Magyarország Kormánya",
+      "url": "https://www.magyarorszag.hu/",
+      "coverage": "Hungary; public administration and municipal/local support starting point",
+      "kind": "citizen-services",
+      "access": "Official government e-administration portal; municipality-specific benefits require local rules",
+      "status": "discovery-source",
+      "notes": "Municipal support varies by settlement and local decree. This is a navigation starting point, not a central nationwide benefit catalogue."
     }
   ],
   "publication_requirements": [
