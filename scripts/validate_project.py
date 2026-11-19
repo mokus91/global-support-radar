@@ -75,9 +75,18 @@ def main():
             raise SystemExit(f"Main search feed missing or not wired: {filename}")
     if "SAVED_KEY" not in html or "savedToggle" not in html:
         raise SystemExit("On-device saved opportunities feature is missing")
-    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "Date.parse(row._deadline)>=Date.now()", "loadMoreWrap", "visibleLimit", "syncSearchUrl", "restoreSearchUrl", "copySearchLink", "shareSearch"):
+    for required in ("notExpired", "updatedMeta", "official_api_live_acceptance_candidate", "exportCurrentResults", "exportCsv", "exportSavedCalendar", "exportCalendar", "Date.parse(row._deadline)>=Date.now()", "loadMoreWrap", "visibleLimit", "syncSearchUrl", "restoreSearchUrl", "copySearchLink", "shareSearch", "manifest.webmanifest", "offlineNotice", "serviceWorker.register", "sw.js"):
         if required not in html:
             raise SystemExit(f"Main search quality feature is missing: {required}")
+
+    manifest = load_json(ROOT / "manifest.webmanifest")
+    if manifest.get("start_url") != "./" or manifest.get("scope") != "./":
+        raise SystemExit("PWA manifest must use the repository-relative GitHub Pages scope")
+    if not (ROOT / "sw.js").is_file() or not (ROOT / "icon.svg").is_file():
+        raise SystemExit("PWA service worker or icon is missing")
+    worker = (ROOT / "sw.js").read_text(encoding="utf-8")
+    if 'url.pathname.endsWith(".json")' not in worker or 'url.pathname.includes("/data/")' not in worker:
+        raise SystemExit("Service worker must never cache live JSON opportunity data")
 
     inline_scripts = re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", html, re.I)
     for index, script in enumerate((item for item in inline_scripts if item.strip()), start=1):

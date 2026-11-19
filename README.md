@@ -10,6 +10,8 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Helyi könyvjelzők: a látogató elmentheti a számára érdekes lehetőségeket; a mentések kizárólag az adott böngésző eszközén, localStorage-ban maradnak.
 - A szűrt keresési találatok CSV-fájlba exportálhatók, táblázatkezelőben megnyitható formátumban.
 - A keresések megoszthatók egyedi URL-lel: a keresőszó, ország, kategória és nyelv a hivatkozásban marad; a személyes mentések nem kerülnek bele.
+- Telepíthető webalkalmazás (PWA): Androidon a böngésző „Hozzáadás a kezdőképernyőhöz / Telepítés” lehetőségével indítható.
+- Offline módban a felület gyorsítótárazott váza megnyitható, és figyelmeztetés jelzi, hogy az élő adatok nem frissülnek. A pályázati JSON-adatokat a service worker szándékosan nem tárolja, így nem tüntet fel régi adatot aktuálisként.
 - A mentett, határidővel rendelkező lehetőségek iCalendar (ICS) fájlba exportálhatók; a naptárbejegyzés 7 nappal korábbi emlékeztetőt tartalmaz. Az emlékeztető a felhasználó saját naptáralkalmazásától függ.
 - Nagy találati listáknál fokozatos betöltés működik, így mobilon sem jelenik meg egyszerre több ezer kártya.
 - Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
