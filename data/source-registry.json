@@ -45,15 +45,15 @@
       "status": "discovery-source"
     },
     {
-      "id": "us-assistance",
-      "name": "ForeignAssistance.gov",
+      "id": "us-grants-gov",
+      "name": "Grants.gov – Federal Grant Opportunities",
       "publisher": "United States Government",
-      "url": "https://foreignassistance.gov/",
-      "coverage": "US foreign assistance by country and sector",
-      "kind": "international-development-assistance",
-      "access": "Download/API options described by publisher",
-      "status": "discovery-source",
-      "notes": "Primarily foreign assistance data, not a general US household-benefits catalogue."
+      "url": "https://www.grants.gov/",
+      "coverage": "United States; federal grants for organisations and eligible entities",
+      "kind": "funding-calls",
+      "access": "Official public REST API (search2; no authentication required)",
+      "status": "automated-discovery",
+      "notes": "The adapter imports posted and forecasted federal opportunities. Grants.gov states that its federal opportunities are generally for organisations and entities, not personal financial assistance. Check eligibility on each original notice."
     },
     {
       "id": "undp-open",
@@ -150,6 +150,17 @@
       "access": "Official DCAT-AP catalogue documentation is public; machine endpoint still needs confirmation",
       "status": "discovery-source",
       "notes": "The current official portal is opendata.gov.hu and documents DCAT-AP metadata. The older t.data.gov.hu CKAN endpoint has not passed the scheduled connection test; no grant records are inferred from catalogue metadata."
+    },
+    {
+      "id": "us-sam-assistance",
+      "name": "SAM.gov Assistance Listings",
+      "publisher": "United States Government",
+      "url": "https://sam.gov/assistance-listings",
+      "coverage": "United States; descriptions of federal assistance programmes",
+      "kind": "assistance-programme-catalogue",
+      "access": "Official federal assistance listings; public API/data files described by SAM.gov",
+      "status": "discovery-source",
+      "notes": "Programme catalogue includes grants, loans, scholarships, insurance and other assistance; distinct from current open opportunity notices on Grants.gov."
     }
   ],
   "publication_requirements": [
