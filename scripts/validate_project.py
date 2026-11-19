@@ -54,6 +54,9 @@ def main():
                 if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
                     raise SystemExit(f"{path.name}: invalid official_url: {url}")
 
+    if not (DATA / "eu-funding-discovery.json").is_file():
+        raise SystemExit("EU Funding & Tenders API audit file is missing")
+
     feed_status = load_json(DATA / "feed-status.json")
     feeds = feed_status.get("feeds", [])
     if not isinstance(feeds, list) or not feeds:

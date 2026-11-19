@@ -19,7 +19,7 @@ FEEDS = [
     ("Spain — SNPSAP", "spain-discovery.json"),
     ("France — Aides-territoires", "france-aides-territoires-discovery.json"),
     ("New Zealand — Government Funding Explorer", "nz-funding-explorer-discovery.json"),
-    ("EU — Funding & Tenders", "eu-funding-discovery.json"),
+    ("EU — Funding & Tenders API audit", "eu-funding-discovery.json"),
     ("EU — open calls", "eu-open-calls-discovery.json"),
     ("EU — CAP Network", "eu-cap-network-discovery.json"),
     ("EU — national agriculture", "eu-national-agriculture-discovery.json"),
@@ -35,6 +35,8 @@ FEEDS = [
 ]
 
 def count_records(data):
+    if "candidate_records" in data:
+        return data.get("candidate_records")
     for key in ("records", "results", "items", "opportunities", "grants"):
         value = data.get(key)
         if isinstance(value, list):
@@ -61,6 +63,10 @@ def main():
                         break
                 if data.get("http_status"):
                     entry["http_status"] = data["http_status"]
+                for source_key, status_key in (("records_received", "records_received"), ("expired_deadline_records_excluded", "excluded_count"), ("pages_fetched", "pages_fetched"), ("total_results_reported", "total_results_reported")):
+                    value = data.get(source_key)
+                    if isinstance(value, (int, float)):
+                        entry[status_key] = value
                 if data.get("query_errors"):
                     entry["note"] = "One or more upstream queries reported errors."
                 elif data.get("note"):
