@@ -912,6 +912,21 @@
       "description_hu": "A gazdasági minisztérium hivatalos tájékoztatója a KUR állami támogatású mikro- és kisvállalkozási hitelprogramról; a részletes feltételek a program és a részt vevő bankok oldalain találhatók.",
       "description_en": "Official economic ministry information on the government-backed KUR micro and small business financing scheme; detailed terms are published by the programme and participating banks.",
       "verification_status": "official-government-or-public-agency-source"
+    },
+    {
+      "id": "cl-fondos-gob",
+      "country_code": "CL",
+      "country_en": "Chile",
+      "category": "all",
+      "name_hu": "Chile – fondos.gob.cl állami pályázati portál",
+      "name_en": "Chile — fondos.gob.cl government competitive funding portal",
+      "url": "https://fondos.gob.cl/",
+      "publisher": "Government of Chile",
+      "kind": "national-public-funding-portal",
+      "description_hu": "Chile központi állami pályázati portálja, ahol különböző minisztériumok és közintézmények versenyalapú támogatási felhívásai, kategóriái, nyitási és zárási dátumai kereshetők. Az egyes kiírások aktuális állapotát és feltételeit mindig a hivatalos felhívásban ellenőrizd.",
+      "description_en": "Chile's central public competitive-funding portal, with calls from ministries and public agencies, categories and opening/closing dates. Verify each call's current status and conditions on the official notice.",
+      "verification_status": "official-government-portal"
     }
-  ]
+  ],
+  "records_count": 66
 }
