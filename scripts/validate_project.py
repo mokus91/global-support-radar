@@ -102,14 +102,35 @@ def main():
     if 'url.pathname.endsWith(".json")' not in worker or 'url.pathname.includes("/data/")' not in worker:
         raise SystemExit("Service worker must never cache live JSON opportunity data")
 
-    inline_scripts = re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", html, re.I)
-    for index, script in enumerate((item for item in inline_scripts if item.strip()), start=1):
+    script_blocks = re.findall(r"<script\\b([^>]*)>([\\s\\S]*?)</script>", html, re.I)
+    javascript_index = 0
+    jsonld_count = 0
+    for attributes, script in script_blocks:
+        if not script.strip():
+            continue
+        type_match = re.search(r"""\\btype\\s*=\\s*["']([^"']+)["']""", attributes, re.I)
+        script_type = type_match.group(1).strip().lower() if type_match else ""
+        if script_type == "application/ld+json":
+            try:
+                jsonld = json.loads(script)
+            except json.JSONDecodeError as exc:
+                raise SystemExit(f"Invalid JSON-LD structured data at line {exc.lineno}, column {exc.colno}: {exc.msg}") from exc
+            if not isinstance(jsonld, (dict, list)):
+                raise SystemExit("JSON-LD structured data must be a JSON object or array")
+            jsonld_count += 1
+            continue
+        # Non-JavaScript script types are data blocks, not executable code.
+        if script_type and script_type not in ("module", "text/javascript", "application/javascript"):
+            continue
+        javascript_index += 1
         with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
             handle.write(script)
             handle.flush()
             result = subprocess.run(["node", "--check", handle.name], capture_output=True, text=True)
             if result.returncode:
-                raise SystemExit(f"Inline JavaScript {index} syntax error:\\n{result.stderr}")
+                raise SystemExit(f"Inline JavaScript {javascript_index} syntax error:\\n{result.stderr}")
+    if jsonld_count == 0:
+        raise SystemExit("JSON-LD structured website metadata is missing")
 
     print(f"Validation passed: {len(json_files)} JSON files, {len(sources)} official sources, inline JavaScript syntax OK.")
 
