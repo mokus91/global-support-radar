@@ -8,10 +8,10 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data/eu-funding-discovery.json"
-URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber=1&sortBy=deadlineDate&orderBy=ASC"
+URL = "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=*&pageSize=100&pageNumber={page}&sortBy=deadlineDate&orderBy=ASC"
 QUERY = {"bool": {"must": [
     {"terms": {"type": ["1", "2", "8"]}},
-    {"terms": {"status": ["31094501"]}}
+    {"terms": {"status": ["31094501", "31094502"]}}
 ]}}
 
 def multipart(parts):
@@ -27,14 +27,14 @@ def multipart(parts):
     chunks.append(f"--{boundary}--\r\n".encode())
     return boundary, b"".join(chunks)
 
-def collect():
+def collect(page=1):
     parts = [
         ("query", json.dumps(QUERY), "application/json"),
         ("languages", json.dumps(["en"]), "application/json"),
         ("displayLanguage", "en", "text/plain")
     ]
     boundary, body = multipart(parts)
-    req = Request(URL, data=body, method="POST", headers={
+    req = Request(URL.format(page=page), data=body, method="POST", headers={
         "Content-Type": f"multipart/form-data; boundary={boundary}",
         "Accept": "application/json",
         "User-Agent": "Mozilla/5.0 (compatible; GlobalSupportRadar/0.1)",
@@ -53,10 +53,16 @@ def main():
     error = None
     payload = {}
     try:
-        payload = collect()
+        payload = {"results": [], "totalResults": 0}
+        for page in range(1, 11):
+            part = collect(page)
+            payload["results"].extend(part.get("results", []))
+            payload["totalResults"] = part.get("totalResults", payload["totalResults"])
+            if len(part.get("results", [])) < 100 or len(payload["results"]) >= payload["totalResults"]:
+                break
     except Exception as exc:
         error = str(exc)[:500]
-    # Keep only records returned by the official API's OPEN status filter.
+    # Keep only official portal open/forthcoming status candidates.
     # They remain discovery candidates until each call page is individually checked.
     candidates = []
     seen = set()
@@ -77,7 +83,7 @@ def main():
             "budget": first(meta, "budget"),
             "source_language": item.get("language") or first(meta, "language") or "en",
             "source_id": "eu-funding",
-            "record_type": "open-call-discovery-candidate",
+            "record_type": "open-or-forthcoming-discovery-candidate",
             "verification_status": "unverified",
             "status_code": first(meta, "status"),
             "last_discovered_at": datetime.now(timezone.utc).isoformat()
@@ -86,8 +92,8 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_id": "eu-funding",
         "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-        "purpose": "Candidates returned by the official portal's OPEN status filter. Not yet individually verified; check the original call page before relying on status or eligibility.",
-        "status_filter": "31094501",
+        "purpose": "Candidates returned by the official portal OPEN/FORTHCOMING status filters. Not yet individually verified; check the original call page before relying on status or eligibility.",
+        "status_filters": ["31094501", "31094502"],
         "records_count": len(candidates),
         "records": candidates,
         "error": error
