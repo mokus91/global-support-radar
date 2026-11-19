@@ -113,8 +113,20 @@ def main():
         if "for attempt in range(3)" not in adapter_text or "time.sleep(3 * (attempt + 1))" not in adapter_text:
             raise SystemExit(f"Transient network retry policy is missing from {adapter}")
     eu_adapter = (ROOT / "scripts" / "discover_eu_funding.py").read_text(encoding="utf-8")
-    if "max_pages = 100" not in eu_adapter or '"maximum_pages": 100' not in eu_adapter:
-        raise SystemExit("EU Funding & Tenders pagination cap is missing or inconsistent")
+    if "max_pages = 100" not in eu_adapter or '"maximum_pages": max_pages' not in eu_adapter or "orderBy=ASC" not in eu_adapter:
+        raise SystemExit("EU Funding & Tenders pagination cap or nearest-deadline sorting is missing")
+    eu_feed = load_json(DATA / "eu-open-calls-discovery.json")
+    eu_audit = load_json(DATA / "eu-funding-discovery.json")
+    for eu_payload in (eu_feed, eu_audit):
+        if eu_payload.get("maximum_pages") != 100 or "pagination_complete" not in eu_payload:
+            raise SystemExit("EU funding feed must publish its pagination cap and completeness status")
+    if eu_feed.get("sort_order") != "ASC" or eu_audit.get("sort_order") != "ASC":
+        raise SystemExit("EU funding candidates must be sorted by nearest deadline first")
+    eu_ids = [row.get("id") for row in eu_feed.get("records", [])]
+    if len(eu_ids) != len(set(eu_ids)):
+        raise SystemExit("Duplicate IDs in EU open-call discovery feed")
+    if any(row.get("verification_status") != "unverified" for row in eu_feed.get("records", [])):
+        raise SystemExit("EU discovery candidates must remain explicitly unverified")
     arc_adapter = (ROOT / "scripts" / "discover_au_arc_grants.py").read_text(encoding="utf-8")
     if "max_pages = 200" not in arc_adapter or '"maximum_pages": 200' not in arc_adapter or "pagination_complete" not in arc_adapter:
         raise SystemExit("Australian ARC pagination completeness tracking is missing")
