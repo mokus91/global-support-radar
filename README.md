@@ -9,6 +9,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
 - Helyi könyvjelzők: a látogató elmentheti a számára érdekes lehetőségeket; a mentések kizárólag az adott böngésző eszközén, localStorage-ban maradnak.
 - A szűrt keresési találatok CSV-fájlba exportálhatók, táblázatkezelőben megnyitható formátumban.
+- Nagy találati listáknál fokozatos betöltés működik, így mobilon sem jelenik meg egyszerre több ezer kártya.
 - Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
 - Tíz támogatási kategória: lakhatás, család, mezőgazdaság, vállalkozás, oktatás, egészségügy, energia, foglalkoztatás, szociális támogatás és közlekedés.
 - Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
