@@ -455,9 +455,9 @@ async function loadLiveListings(){
 function exportCurrentResults(){
  if(!currentRows.length){alert(lang==="hu"?"Nincs exportálható találat.":"No results to export.");return;}
  const columns=lang==="hu"?["Cím","Ország","Forrás","Határidő","Összeg / keret","Pénznem","Státusz","Eredeti forrás URL","Ellenőrzési állapot"]:["Title","Country","Source","Deadline","Amount / budget","Currency","Status","Official source URL","Verification status"];
- const safe=value=>{let text=String(value??"");if(/^[=+@\\-\\t\\r]/.test(text))text="'"+text;return '"'+text.replace(/"/g,'""')+'"';};
+ const safe=value=>{let text=String(value??"");if(/^[=+@\-\t\r]/.test(text))text="'"+text;return '"'+text.replace(/"/g,'""')+'"';};
  const lines=[columns,...currentRows.map(row=>[row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||""),row._country,row._source,row._deadline||"",row._amount??"",row._currency||"",row.status||"",row._official||row._fallback||"",row._verification||"unverified"])];
- const csv="\\uFEFF"+lines.map(line=>line.map(safe).join(";")).join("\\r\\n");
+ const csv="\uFEFF"+lines.map(line=>line.map(safe).join(";")).join("\r\n");
  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="global-support-radar-"+new Date().toISOString().slice(0,10)+".csv";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
