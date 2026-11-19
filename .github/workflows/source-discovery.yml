@@ -54,6 +54,7 @@ jobs:
       - name: Discover agriculture links on 27 EU national funding portals
         run: python scripts/discover_eu_national_agriculture.py
       - name: Discover business, housing, energy, education, employment and transport links
+        timeout-minutes: 8
         run: python scripts/discover_eu_national_categories.py
       - name: Discover US Grants.gov opportunities
         run: python scripts/discover_us_grants.py
