@@ -562,21 +562,27 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
     }
     const relevant=directory.records.filter(record=>(code==="all"||record.country_code===code)&&(category==="all"||record.category==="all"||record.category===category));
     if(relevant.length){
-     const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos támogatáskeresők":"Country-specific official support finders";box.append(heading);
+     const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos források":"Country-specific official sources";box.append(heading);
+     if(relevant.some(record=>record.status==="historical-directory-lead")){
+      const historicalNotice=document.createElement("p");historicalNotice.className="notice";
+      historicalNotice.textContent=isHu?"Egyes országoknál az ENSZ DESA 2013-ban utoljára felmért kormányzati portáljegyzéke ad kiindulópontot. Ezek történelmi, jelenleg nem ellenőrzött hivatkozások; nem jelentenek aktuális támogatást vagy pályázatot.":"For some countries, the starting point is the UN DESA government-portal directory last assessed in 2013. These are historical, unverified links—not current benefits or grant listings.";
+      box.append(historicalNotice);
+     }
      relevant.forEach(record=>{
       const card=document.createElement("article");card.className="card";
       const h=document.createElement("h3");h.textContent=isHu?record.name_hu:record.name_en;
       const p=document.createElement("p");p.textContent=isHu?record.description_hu:record.description_en;
       const meta=document.createElement("div");meta.className="meta";
       const region=countryName(record.country_code);
-      meta.textContent=(isHu?"Ország: ":"Country: ")+region+" · "+(isHu?"Hivatalos kormányzati/ügynökségi forrás":"Official government/agency source");
+      const historical=record.verification_status==="not-currently-verified"||record.status==="historical-directory-lead";
+      meta.textContent=(isHu?"Ország: ":"Country: ")+region+" · "+(historical?(isHu?"ENSZ DESA 2013-as történelmi hivatkozás · jelenleg nem ellenőrzött":"UN DESA 2013 historical lead · not currently verified"):(isHu?"Hivatalos kormányzati/ügynökségi forrás":"Official government/agency source"));
       const health=portalHealthById[record.id];
       if(health){
        const healthText=health.status==="reachable"?(isHu?"Hivatkozás ellenőrizve":"Link checked"):health.status==="restricted"?(isHu?"A portál korlátozza az automatikus ellenőrzést":"Portal restricts automated checks"):health.status==="not_found"?(isHu?"A hivatkozás nem található":"Link not found"):(isHu?"A hivatkozás ellenőrzése hibát jelzett":"Link check reported an error");
        meta.textContent+=" · "+healthText+(health.http_status?" ("+health.http_status+")":"");
       }
       const foot=document.createElement("div");foot.className="cardfoot";
-      const label=document.createElement("span");label.textContent=isHu?"Hivatalos forrás · programonként ellenőrizendő":"Official source · verify each programme";
+      const label=document.createElement("span");label.textContent=historical?(isHu?"Történelmi hivatkozás · ellenőrizd a címet":"Historical lead · verify the URL"):(isHu?"Hivatalos forrás · programonként ellenőrizendő":"Official source · verify each programme");
       const a=document.createElement("a");a.href=record.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Megnyitás ↗":"Open ↗";
       foot.append(label,a);card.append(h,p,meta,foot);box.append(card);
      });
