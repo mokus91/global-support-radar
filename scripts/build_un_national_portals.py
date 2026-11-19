@@ -57,5 +57,5 @@ payload = {
     "records_count": len(records),
     "records": sorted(records, key=lambda r: r["country_en"].casefold())
 }
-out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Wrote {len(records)} unique country portal leads to {out}")
