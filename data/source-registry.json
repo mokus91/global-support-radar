@@ -1258,6 +1258,17 @@
       "access": "Official central portal with search, categories, opening/closing dates and online application tracking",
       "status": "discovery-source",
       "notes": "Official national catalogue; individual programme status, applicant eligibility, amount and deadline must be checked on the current call notice. The portal itself is a source directory, not an automated feed."
+    },
+    {
+      "id": "cl-corfo-open-calls",
+      "name": "CORFO — Start-Up Chile and official funding calls",
+      "publisher": "Corporación de Fomento de la Producción (CORFO), Government of Chile",
+      "url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
+      "coverage": "Chile; national startup and innovation funding calls",
+      "kind": "automated-open-call-discovery",
+      "access": "Daily adapter reads the original CORFO call page and extracts application status, opening/closing dates and maximum co-financing only when the official page exposes those fields",
+      "status": "automated-discovery",
+      "notes": "The adapter refuses to publish the record as open if the official page no longer says applications are open or if the deadline has passed. Detailed applicant eligibility must still be checked in the official legal rules."
     }
   ],
   "publication_requirements": [
