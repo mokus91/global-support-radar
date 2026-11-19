@@ -541,6 +541,14 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
    const response=await fetch("data/worldwide-national-support-sources.json",{cache:"no-store"});
    if(response.ok){
     const directory=await response.json();
+    let portalHealthById={};
+    try{
+     const healthResponse=await fetch("data/worldwide-portal-health.json",{cache:"no-store"});
+     if(healthResponse.ok){
+      const healthData=await healthResponse.json();
+      portalHealthById=Object.fromEntries((healthData.records||[]).map(item=>[item.id,item]));
+     }
+    }catch(healthError){}
     const relevant=directory.records.filter(record=>(code==="all"||record.country_code===code)&&(category==="all"||record.category==="all"||record.category===category));
     if(relevant.length){
      const heading=document.createElement("h3");heading.textContent=isHu?"Országspecifikus hivatalos támogatáskeresők":"Country-specific official support finders";box.append(heading);
@@ -551,6 +559,11 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
       const meta=document.createElement("div");meta.className="meta";
       const region=countryName(record.country_code);
       meta.textContent=(isHu?"Ország: ":"Country: ")+region+" · "+(isHu?"Hivatalos kormányzati/ügynökségi forrás":"Official government/agency source");
+      const health=portalHealthById[record.id];
+      if(health){
+       const healthText=health.status==="reachable"?(isHu?"Hivatkozás ellenőrizve":"Link checked"):health.status==="restricted"?(isHu?"A portál korlátozza az automatikus ellenőrzést":"Portal restricts automated checks"):health.status==="not_found"?(isHu?"A hivatkozás nem található":"Link not found"):(isHu?"A hivatkozás ellenőrzése hibát jelzett":"Link check reported an error");
+       meta.textContent+=" · "+healthText+(health.http_status?" ("+health.http_status+")":"");
+      }
       const foot=document.createElement("div");foot.className="cardfoot";
       const label=document.createElement("span");label.textContent=isHu?"Hivatalos forrás · programonként ellenőrizendő":"Official source · verify each programme";
       const a=document.createElement("a");a.href=record.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=isHu?"Megnyitás ↗":"Open ↗";
