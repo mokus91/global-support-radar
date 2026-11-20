@@ -499,6 +499,195 @@
       "fit_score": 3,
       "crm_status": "kutatott",
       "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-at-wko",
+      "name": "Austrian Federal Economic Chamber (WKO)",
+      "country_code": "AT",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "export",
+        "finanszírozás"
+      ],
+      "official_website": "https://www.wko.at/",
+      "contact_page": "https://www.wko.at/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres országos taglistáján szereplő osztrák kamarai ernyőszervezet; országos terjesztési és KKV-riportpilot tesztelési jelölt.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "at:wko:federal-economic-chamber",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-be-feb",
+      "name": "Federation of Belgian Chambers of Commerce",
+      "country_code": "BE",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "kereskedelem",
+        "vállalkozásfejlesztés",
+        "export"
+      ],
+      "official_website": "https://belgianchambers.be/",
+      "contact_page": "https://belgianchambers.be/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres hivatalos taglistáján szereplő belga kamarai ernyőszervezet; a belga helyi kamarai hálózat elérésének lehetséges kapuja.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "be:federation-belgian-chambers",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-bg-bcci",
+      "name": "Bulgarian Chamber of Commerce and Industry",
+      "country_code": "BG",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "kereskedelem",
+        "vállalkozásfejlesztés",
+        "finanszírozás"
+      ],
+      "official_website": "https://www.bcci.bg/en.html",
+      "contact_page": "https://www.bcci.bg/en.html",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres országos taglistáján szereplő bolgár kamarai szervezet; délkelet-európai partnerkutatási és terjesztési jelölt.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "bg:bcci:national-chamber",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-cz-ccr",
+      "name": "The Czech Chamber of Commerce",
+      "country_code": "CZ",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "export",
+        "üzleti támogatások"
+      ],
+      "official_website": "https://www.komora.cz/",
+      "contact_page": "https://www.komora.cz/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres országos taglistáján szereplő cseh kamarai szervezet; közép-európai országos terjesztési és tesztelési jelölt.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "cz:czech-chamber-of-commerce",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-fi-fcc",
+      "name": "Finland Chamber of Commerce and Industry",
+      "country_code": "FI",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "innováció",
+        "export"
+      ],
+      "official_website": "https://www.kauppakamari.fi/",
+      "contact_page": "https://www.kauppakamari.fi/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres országos taglistáján szereplő finn kamarai szervezet; északi országokra irányuló támogatásfigyelési teszt jelöltje.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "fi:finland-chamber-of-commerce",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-fr-cci-france",
+      "name": "CCI France",
+      "country_code": "FR",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "export",
+        "finanszírozás"
+      ],
+      "official_website": "https://www.cci.fr/",
+      "contact_page": "https://www.cci.fr/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Az Eurochambres országos taglistáján szereplő francia kamarai hálózat; nagy országos és regionális vállalkozásfejlesztési elérési pont.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "fr:cci-france:national-network",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-grant-professionals-association",
+      "name": "Grant Professionals Association",
+      "country_code": "US",
+      "region": "global_with_north_american_base",
+      "organisation_level": "international_professional_association",
+      "category": [
+        "üzleti tesztpartner",
+        "szakmai terjesztési partner"
+      ],
+      "topics": [
+        "pályázatkutatás",
+        "pályázatmenedzsment",
+        "grant consulting",
+        "nonprofit finanszírozás"
+      ],
+      "official_website": "https://grantprofessionals.org/",
+      "contact_page": "https://grantprofessionals.org/page/whoweare",
+      "evidence_url": "https://grantprofessionals.org/page/about",
+      "relevance": "Nemzetközi szakmai szervezet pályázati szakembereknek az Egyesült Államokból, Kanadából és más országokból. Különösen alkalmas lehet a szervezeti támogatásfigyelő riport igényének és használhatóságának szakmai validálására; nem tekintjük közvetlen fizető ügyfélnek.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_about_page_reviewed",
+      "deduplication_key": "global:grant-professionals-association",
+      "fit_score": 5,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
     }
   ]
 }
