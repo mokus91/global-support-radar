@@ -3,7 +3,8 @@ name: Continuous improvement loop
 on:
   workflow_dispatch:
   schedule:
-    - cron: "13 5 * * 1"
+    # Daily, away from the top of the hour to reduce queue delays.
+    - cron: "13 5 * * *"
   push:
     paths:
       - "scripts/generate_improvement_backlog.py"
