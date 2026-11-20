@@ -22,6 +22,10 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
 - [Szervezeti riportgenerátor – használat és szűrés](docs/organization-report-generator.md)
 
+## Első fizetős riportpilot – belső előkészítés
+
+- [Első fizetős riportpilot ajánlati kerete és sikerfeltételei](docs/first-paid-report-pilot.md)
+
 ## Mi működik jelenleg?
 
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
