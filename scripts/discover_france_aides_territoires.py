@@ -37,6 +37,14 @@ def first(row,*keys):
         if row.get(k) not in (None,"",[],{}): return row[k]
     return None
 
+def eligibility_flags(row):
+    """Presence of eligibility text is not proof that eligibility was verified."""
+    return {
+        "eligibility_verified": False,
+        "eligibility_text_available": bool(first(row, "eligibility", "eligibility_description")),
+    }
+
+
 def categories(row):
     text=" ".join(str(x) for x in [row.get("name"),row.get("description"),row.get("perimeter"),*(row.get("tags") or []),*(row.get("aid_types") or [])] if x).lower()
     rules=[
@@ -86,7 +94,7 @@ def main():
               "application_url":first(row,"application_url","mobilization_url"),
               "deadline":first(row,"application_deadline","end_date","deadline"),
               "status":"listed-active-in-official-catalogue","deadline_verified":False,
-              "eligibility_verified":False,\n              "eligibility_text_available":bool(first(row,"eligibility","eligibility_description")),
+              **eligibility_flags(row),
               "source_api":START,
               "note_hu":"Az Aides-territoires aktív katalógusában szereplő támogatás. Ez nem bizonyítja, hogy a jelentkezés jelenleg nyitott. A határidőt és jogosultságot az eredeti kiírásban ellenőrizd.",
               "note_en":"Listed in the Aides-territoires active catalogue. This does not prove applications are currently open or that an applicant is eligible. Eligibility text presence is informational only; verify the actual criteria and deadlines on the original notice."
