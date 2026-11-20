@@ -43,19 +43,34 @@ def summarize_pipeline(root=ROOT):
                 errors.append(f"Ismeretlen státusz: {item.get('id', 'ismeretlen')}")
                 continue
             counts[status] += 1
-            if item.get("contacted") and not item.get("outreach_approved"):
-                errors.append(f"Jóváhagyás nélküli kapcsolatfelvétel jelölve: {item['id']}")
-            if item.get("reply_received") and not item.get("contacted"):
-                errors.append(f"Kapcsolatfelvétel nélküli válasz jelölve: {item['id']}")
-            if item.get("paid_customer") and not item.get("pilot"):
-                errors.append(f"Pilot nélküli fizető ügyfél jelölve: {item['id']}")
+            flags = {
+                "outreach_approved": bool(item.get("outreach_approved")),
+                "contacted": bool(item.get("contacted")),
+                "replied": bool(item.get("reply_received")),
+                "pilot": bool(item.get("pilot")),
+                "paid_customer": bool(item.get("paid_customer")),
+            }
+            expected = {
+                "researched": (False, False, False, False, False),
+                "outreach_approved": (True, False, False, False, False),
+                "contacted": (True, True, False, False, False),
+                "replied": (True, True, True, False, False),
+                "pilot": (True, True, True, True, False),
+                "paid_customer": (True, True, True, True, True),
+            }[status]
+            actual = tuple(flags[key] for key in ("outreach_approved", "contacted", "replied", "pilot", "paid_customer"))
+            if actual != expected:
+                errors.append(f"Státusz és eseményjelölők ellentmondanak: {item['id']} ({status})")
             amount = item.get("revenue_huf", 0)
-            if not isinstance(amount, int) or amount < 0:
+            if not isinstance(amount, int) or isinstance(amount, bool) or amount < 0:
                 errors.append(f"Hibás bevételi összeg: {item['id']}")
-            elif item.get("paid_customer"):
-                revenue += amount
+            elif status == "paid_customer":
+                if amount <= 0:
+                    errors.append(f"Fizető ügyfélhez pozitív, igazolt bevétel szükséges: {item['id']}")
+                else:
+                    revenue += amount
             elif amount:
-                errors.append(f"Nem ügyfélhez rögzített bevétel: {item['id']}")
+                errors.append(f"Nem fizető ügyfélhez rögzített bevétel: {item['id']}")
         return {"state": "ERROR" if errors else "OK", "counts": counts, "revenue_huf": revenue, "errors": errors}
     except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
         return {"state": "ERROR", "counts": {}, "revenue_huf": 0, "errors": [f"Nem feldolgozható pipeline: {exc}"]}
