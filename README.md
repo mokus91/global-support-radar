@@ -174,3 +174,9 @@ Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fej
 - Profilbeállítások: `config/report-profiles.json`
 - Többprofilos riportgenerátor: `scripts/build_report_portfolio.py`
 - Automatizált gyártás és tesztek: `docs/automated-organization-report-production.md`
+
+
+### Támogatási lehetőségek változásfigyelése
+
+- Változásnapló olvasható összefoglalója: `scripts/build_opportunity_change_digest.py`
+- Szabályok és korlátok: `docs/opportunity-change-digest.md`
