@@ -151,3 +151,12 @@ Ez belső termékterv, nem értékesítési ajánlat. Külső megkeresés, fizet
 Elkészült az [első öt szervezethez készített kérdésvázlat](prospect-interview-guides.md). A vázlatok a szervezetek nyilvános profiljához igazított, rövid igényfelmérést segítik; tartalmaznak 15 perces beszélgetési menetrendet, érdeklődő-minősítési szabályokat és kapcsolatfelvétel előtti ellenőrzőlistát.
 
 Ez belső előkészítés. Nem történt megkeresés, válasz, pilotmegállapodás vagy értékesítés. A státuszok csak tényleges események után változtathatók. Külső megkeresés kizárólag külön tulajdonosi jóváhagyással történhet. A 0 Ft-os indulási elv változatlan.
+
+
+## 12. Szervezeti demó és visszajelzési lap (2026-11-20)
+
+Elkészült az [ötperces szervezeti bemutató menete és pontozólapja](organizational-demo-walkthrough.md). A dokumentum a minta riport bemutatását, a termék korlátainak világos ismertetését, a szervezeti munkafolyamatot feltáró kérdéseket és a visszajelzés értékelését rögzíti.
+
+A pontozás nem vásárlási szándékot mér: csak azt segíti, hogy eldöntsük, érdemes-e a riportot továbbfejleszteni vagy kézi pilotot tervezni. A státusznapló változatlanul 20 kutatott célpontot, 0 megkeresést, 0 bemutatót, 0 visszajelzést, 0 pilotot, 0 ügyfelet és 0 Ft bevételt rögzít.
+
+Ez belső felkészítő anyag. Külső kapcsolatfelvételhez továbbra is külön tulajdonosi jóváhagyás kell. Fizetős pilot előtt a kereskedelmi tárhely-, adatvédelmi, szerződési, számlázási és adózási kapukat rendezni kell. A 0 Ft-os indulási elv változatlan.
