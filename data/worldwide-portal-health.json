@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T16:39:30+00:00",
+  "checked_at": "2026-11-20T17:50:43+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 7,
     "http_error": 2,
-    "reachable": 56,
-    "restricted": 9
+    "reachable": 57,
+    "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -166,7 +166,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 202,
+      "http_status": 200,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -395,8 +395,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://fondos.gob.cl/"
     },
     {

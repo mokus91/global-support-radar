@@ -1,120 +1,31 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T16:44:55+00:00",
-  "events_count": 14,
+  "generated_at": "2026-11-20T17:55:22+00:00",
+  "events_count": 3,
   "events": [
     {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943787",
-      "title": "BASES Y CONVOCATORIA REHABILITACIÓN DE VIVIENDAS VACÍAS PARA ALQUILER SOCIAL 2026 (RHVV26)",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943745",
-      "title": "Convocatoria de becas de colaboración en las actividades promovidas o patrocinadas por el Centro de Estudios Europeos “Luis Ortega Álvarez”, Centro de Excelencia Jean Monnet, de la Universidad de Castilla la Mancha. Curso 2026/2027",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943742",
-      "title": "CONVOCATÒRIA AJUTS TRANSPORT A CENTRE DE DIA, HOSPITAL DE DIA PER A GENT GRAN",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943730",
-      "title": "Expedient 2311/2026 - APROVACIÓ CONVOCATÒRIA AJUTS MENJADOR BRESSOL 2026/2027",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943718",
-      "title": "XIX CONCURSO DE BELENES \"CIUTAT DE MANISES\"",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943685",
-      "title": "Convocatoria de los V Premios Alumni. Universidad de Castilla-La Mancha. 2026",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943636",
-      "title": "Convocatoria Premis Tarragonès 2026",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:943592",
-      "title": "Concurso de decoración de balcones, fachadas y calles de Montmeló con motivo de las Fiestas de Navidad 2026",
-      "detected_at": "2026-11-20T16:44:55+00:00"
-    },
-    {
       "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:943462",
-      "title": "III Convocatoria de Premios a Trabajos de fin de Máster de la Cátedra AgroBank “Mujer, Empresa y Mundo Rural” de la Universidad de Castilla-La Mancha. Curso académico 2025-2026",
-      "detected_at": "2026-11-20T16:44:55+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:943405",
-      "title": "Orden IND/55/2026, de 18 de noviembre, por la que se convoca la fase autonómica del concurso escolar Consumópolis para el curso académico 2026-2027.",
-      "detected_at": "2026-11-20T16:44:55+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:943398",
-      "title": "Decreto 2026DECL003683, de 16 de noviembre de 2026 por la que se aprueba la convocatoria  del concurso de escaparates y paradas de mercado de la campaña de Navidad 2026",
-      "detected_at": "2026-11-20T16:44:55+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:943334",
-      "title": "Convocatoria 2026 del Concurso de Escaparates de Navidad",
-      "detected_at": "2026-11-20T16:44:55+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:943290",
-      "title": "Convocatoria para la concesión de ayudas de comedor obligatorio escolar para el curso 2026-2027.",
-      "detected_at": "2026-11-20T16:44:55+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "changed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:187639prospectsen",
-      "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US",
-      "before": {
-        "status": "31094502",
-        "deadline": "2026-12-02T22:59:26.000+0000",
-        "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2026-12-02T22:59:31.000+0000",
-        "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US"
-      },
-      "detected_at": "2026-11-20T16:44:55+00:00"
+      "key": "id:52968501topicsen",
+      "title": "Not-for-profit European sport events",
+      "detected_at": "2026-11-20T17:55:22+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53050046topicsen",
+      "title": "Large scale not-for-profit European sport event",
+      "detected_at": "2026-11-20T17:55:22+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53294913topicsen",
+      "title": "Capacity Building in the Field of Sport",
+      "detected_at": "2026-11-20T17:55:22+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
