@@ -1546,7 +1546,7 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   if(!raw.trim())return {status:"unknown",source:""};
   const patterns={
    individual:/individual|household|natural person|private person|personas físicas|persona física|personas fisicas|persona fisica|mag[aá]nszem[eé]ly|csal[aá]d/,
-   business:/business|businesses|company|companies|enterprise|sme|micro.?enterprise|self.?employed|entrepreneur|pyme|empresa|actividad econ[oó]mica|v[aá]llalkoz|kkv|gazd[aá]lkod[oó]/,
+   business:/business|businesses|company|companies|enterprise|sme|micro.?enterprise|self.?employed|entrepreneur|pyme|empresa|v[aá]llalkoz|kkv|gazd[aá]lkod[oó]/,
    student:/student|students|scholar|pupil|doctoral candidate|hallgat[oó]|di[aá]k|tanul[oó]/,
    farmer:/farmer|agricult|farm|rural|agricultor|agricultora|agricultura|gazd[aá]lkod|mez[oő]gazd/,
    nonprofit:/non.?profit|ngo|charity|foundation|association|civil society|nonprofit|fundaci[oó]n|asociaci[oó]n|egyes[uü]let|alap[ií]tv[aá]ny|civil szervezet/,
@@ -1554,6 +1554,8 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   };
   const target=patterns[applicant];
   if(!target)return {status:"unknown",source:raw};
+  const SpanishIndividualWithBusinessActivity=/personas fisicas? que desarrollan actividad economica/.test(v)&&!/personas fisicas? que no desarrollan actividad economica/.test(v);
+  if(applicant==="individual"&&SpanishIndividualWithBusinessActivity&&!/personas fisicas? que no desarrollan actividad economica/.test(v))return {status:"mismatch",source:raw};
   if(target.test(v))return {status:"match",source:raw};
   const hasOther=Object.entries(patterns).some(([key,re])=>key!==applicant&&re.test(v));
   return {status:hasOther?"mismatch":"unknown",source:raw};
