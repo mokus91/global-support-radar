@@ -8,6 +8,8 @@ on:
   push:
     paths:
       - "scripts/build_revenue_readiness_report.py"
+      - "scripts/test_build_revenue_readiness_report.py"
+      - "data/revenue-pipeline.json"
       - ".github/workflows/revenue-readiness.yml"
       - "docs/organizational-pilot-spec.md"
       - "docs/sample-organization-report-2026-11-20.md"
