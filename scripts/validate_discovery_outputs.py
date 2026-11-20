@@ -106,7 +106,7 @@ def main():
             raise SystemExit("feed-status.json: root must contain a feeds list")
         parse_timestamp(manifest.get("checked_at"), "feed-status.json checked_at")
         seen_files = set()
-        allowed_statuses = {"checked", "checked-empty", "temporarily-unavailable", "missing", "invalid-json"}
+        allowed_statuses = {"checked", "checked-empty", "audit-summary", "temporarily-unavailable", "missing", "invalid-json"}
         allowed_freshness = {"fresh", "aging", "stale", "unknown"}
         for index, feed in enumerate(manifest["feeds"]):
             label = f"feed-status.json feed {index + 1}"
@@ -131,6 +131,8 @@ def main():
                 raise SystemExit(f"{label}: checked-empty status requires records_count == 0")
             if status == "checked" and count == 0:
                 raise SystemExit(f"{label}: zero-record feed must use checked-empty status")
+            if status == "audit-summary" and feed.get("feed_kind") != "audit-summary":
+                raise SystemExit(f"{label}: audit-summary status requires feed_kind=audit-summary")
             freshness = feed.get("freshness")
             if freshness is not None and freshness not in allowed_freshness:
                 raise SystemExit(f"{label}: unsupported freshness {freshness!r}")
