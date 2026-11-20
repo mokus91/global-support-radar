@@ -1,142 +1,21 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T10:43:32+00:00",
-  "events_count": 9,
+  "generated_at": "2026-11-20T11:03:38+00:00",
+  "events_count": 2,
   "events": [
     {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128974topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129018topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129041topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129079topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129170topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129614topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129635topicsen",
-      "title": "CLIMATE",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-03-04T00:00:00.000+0000",
-        "title": "CLIMATE"
-      },
-      "detected_at": "2026-11-20T10:43:32+00:00"
-    },
-    {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52519656topicsen",
       "title": "TV and online content",
-      "detected_at": "2026-11-20T10:43:32+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-20T11:03:38+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52519691topicsen",
       "title": "TV and online content",
-      "detected_at": "2026-11-20T10:43:32+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-20T11:03:38+00:00"
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."

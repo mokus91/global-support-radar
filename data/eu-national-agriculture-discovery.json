@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T10:39:59Z",
+  "generated_at": "2026-11-20T10:59:57Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 18,
+  "portals_checked": 19,
   "records_count": 7,
   "records": [
     {
@@ -121,10 +121,6 @@
     {
       "country_code": "BE",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
-    },
-    {
-      "country_code": "CY",
-      "error": "HTTP Error 403: Forbidden"
     },
     {
       "country_code": "FR",
