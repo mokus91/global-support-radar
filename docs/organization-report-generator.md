@@ -30,3 +30,13 @@ python scripts/generate_organization_report.py --data-dir data --output reports/
 ## Fontos működési korlátok
 
 Ez jelenleg kézzel futtatható riportgenerátor. Nem tölt le új adatot, nem küld e-mailt, nem fogad megrendelést és nem kezel fizetést. Automatikus ütemezést vagy kereskedelmi szolgáltatást csak külön adatminőségi, tárhely-, jogi és tulajdonosi jóváhagyás után szabad bekapcsolni. A projekt 0 Ft indulási elve változatlan.
+
+## Automatizált regressziós tesztek
+
+A riportgenerátorhoz külön, külső csomag nélküli tesztek is készültek:
+
+```bash
+python -m unittest scripts/test_generate_organization_report.py -v
+```
+
+A meglévő Continuous improvement workflow a `scripts/test_*.py` mintára illeszkedő teszteket automatikusan futtatja push és ütemezett ellenőrzés során. A tesztfeladat ellenőrzi a nyitott/jelölt/lejárt/nem ellenőrzött státuszok szétválasztását, a riport tartalmát és a hibás JSON fájl kezelését. A GitHub Actions futásának eredményét külön kell ellenőrizni; a commit önmagában nem bizonyít sikeres CI-t.
