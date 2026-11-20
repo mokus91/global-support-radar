@@ -17,6 +17,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Személyre szabott érdeklődői kérdésvázlatok](docs/prospect-interview-guides.md)
 - [Második 10 szervezeti célpont kutatása](docs/next-10-organizational-prospects.md)
 - [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
+- [Szervezeti riportgenerátor – használat és szűrés](docs/organization-report-generator.md)
 
 ## Mi működik jelenleg?
 
