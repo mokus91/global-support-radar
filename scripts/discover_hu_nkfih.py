@@ -55,8 +55,23 @@ def main():
             href=urljoin(SOURCE_URL,item["href"])
             parsed=urlparse(href)
             if parsed.scheme!="https" or parsed.hostname not in ALLOWED_HOSTS or not text:continue
-            candidate=bool(re.search(r"20\d{2}\.\s*(?:"+"|".join(MONTHS)+r")",text,re.I) or re.search(r"GINOP|EUREKA|WIDERA|TÉT|NETWORKING|IPARJOG|KFI",text,re.I) or re.search(r"\bM(?:F|Ft)|\bEUR\b",text))
-            if not candidate or href in seen:continue
+            # The listing page contains navigation links with generic "KFI"
+            # wording. Keep only individual call-detail pages, not policy,
+            # institutional, archive or filter links.
+            is_call_detail = (
+                "/palyazati-felhivas" in parsed.path
+                or "technologiaspecifik" in parsed.path
+            )
+            candidate = bool(
+                is_call_detail
+                and (
+                    re.search(r"20\\d{2}\\.\\s*(?:"+"|".join(MONTHS)+r")", text, re.I)
+                    or re.search(r"GINOP|EUREKA|WIDERA|TÉT|NETWORKING|IPARJOG|támogatás", text, re.I)
+                    or re.search(r"\\bM(?:F|Ft)|\\bEUR\\b", text)
+                )
+            )
+            if not candidate or href in seen:
+                continue
             seen.add(href)
             deadline=parse_deadline(text)
             title=re.split(r"\s+20\d{2}\.\s*(?:"+"|".join(MONTHS)+r")",text,maxsplit=1,flags=re.I)[0].strip() or text
