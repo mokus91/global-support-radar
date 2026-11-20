@@ -74,6 +74,24 @@ class ReportTests(unittest.TestCase):
         self.assertIn("Összeg/keret:** 0", output)
         self.assertNotIn("Unverified", output)
 
+    def test_duplicate_official_urls_are_removed(self):
+        records = [
+            {"title": "First title", "official_url": "https://example.org/grant"},
+            {"title": "Second title", "official_url": "https://example.org/grant/"},
+            {"title": "No URL", "country_code": "HU", "deadline": "2026-12-01"},
+            {"title": "No URL", "country_code": "HU", "deadline": "2026-12-01"},
+        ]
+        self.assertEqual(len(MODULE.deduplicate_records(records)), 2)
+
+    def test_report_shows_selected_filters(self):
+        output = MODULE.render(
+            [{"title": "Example", "status": "open", "country_code": "HU", "category": "business"}],
+            date(2026, 11, 20), country="HU", category="business"
+        )
+        self.assertIn("**Országszűrő:** HU", output)
+        self.assertIn("**Témaszűrő:** business", output)
+        self.assertIn("**Egyedi rekordok száma:** 1", output)
+
     def test_non_https_source_is_not_rendered_as_official_link(self):
         output = MODULE.render([
             {"title": "Example", "status": "open", "url": "http://example.org"}
