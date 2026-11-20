@@ -9,9 +9,17 @@ A repository gyökérkönyvtárából, Python 3-mal:
 ```bash
 python scripts/generate_organization_report.py --self-test
 python scripts/generate_organization_report.py
+# Csak Magyarország (országkód vagy ország név)
+python scripts/generate_organization_report.py --country HU --output reports/pilot-hu.md
+# Pontos kategória szerinti szűrés (kis- és nagybetű nem számít)
+python scripts/generate_organization_report.py --category business --output reports/pilot-business.md
+# Ország + kategória együtt
+python scripts/generate_organization_report.py --country HU --category business --output reports/pilot-hu-business.md
 ```
 
 Alapértelmezett kimenet: `reports/organization-report-latest.md`.
+
+A `--country` pontos országkódot vagy országnevet fogad el (például `HU`, `Magyarország`, `Chile`). A `--category` pontos kategória-/témacímkét fogad el (például `business`, `education`). Mindkettő kis- és nagybetűtől független; részleges egyezést nem használ. A szűrők elhagyásakor a korábbi, teljes adatállományos működés marad érvényben. Csak azok a rekordok jelennek meg, amelyekben az adott mező ténylegesen szerepel; hiányzó kategóriát nem következtet ki.
 
 Egyedi útvonalak:
 
