@@ -5,6 +5,7 @@ import html, json, re, urllib.error, urllib.request
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
+import time
 from urllib.parse import urljoin, urlparse
 
 SOURCE_URL = "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok"
@@ -35,6 +36,31 @@ def parse_deadline(text):
     if not match:return None
     return f"{match.group(1)}-{MONTHS[match.group(2).lower()]}-{int(match.group(3)):02d}"
 
+def fetch_page(request, timeout=20, attempts=3):
+    """Retry temporary network/server failures; never hide permanent HTTP errors."""
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read().decode(
+                    response.headers.get_content_charset() or "utf-8",
+                    errors="replace"
+                )
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (408, 425, 429, 500, 502, 503, 504) or attempt == attempts - 1:
+                raise
+            retry_after = exc.headers.get("Retry-After") if exc.headers else None
+            try:
+                delay = min(30, max(1, int(retry_after))) if retry_after else 2 ** attempt
+            except (TypeError, ValueError):
+                delay = 2 ** attempt
+            time.sleep(delay)
+        except (urllib.error.URLError, TimeoutError, OSError):
+            if attempt == attempts - 1:
+                raise
+            time.sleep(2 ** attempt)
+    raise RuntimeError("NKFIH page fetch failed after retries")
+
+
 def main():
     OUT.parent.mkdir(parents=True,exist_ok=True)
     previous={}
@@ -44,8 +70,7 @@ def main():
     now=datetime.now(timezone.utc).isoformat()
     request=urllib.request.Request(SOURCE_URL,headers={"User-Agent":"GlobalSupportRadar/1.0","Accept":"text/html"})
     try:
-        with urllib.request.urlopen(request,timeout=20) as response:
-            page=response.read().decode(response.headers.get_content_charset() or "utf-8",errors="replace")
+        page=fetch_page(request,timeout=20,attempts=3)
         parser=LinkCollector()
         parser.feed(page)
         records=[]
