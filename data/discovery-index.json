@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T04:08:48.335774+00:00",
+  "generated_at": "2026-11-20T04:54:42.206215+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 182,
+  "discovered_datasets_count": 183,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -213,6 +213,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
+      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "BPI ALAPÍTÓ JOG - ORGANOGRAM - MÓDOSÍTÁSOK - FELELŐSSÉG",
       "url": "https://data.gov.gr/dataset/idrytikos-nomos-mfi-organogramma-tropopoihseis-armodiothtesn",
       "query": "business funding",
@@ -320,14 +328,6 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Comparison of cities - Business 2022",
-      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1319,6 +1319,14 @@
     {
       "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes at 30. 11. 2023",
       "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (calls) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-vyzvy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
       "query": "public support programmes",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
