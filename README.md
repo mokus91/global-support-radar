@@ -141,3 +141,5 @@ Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fej
 - Tulajdonosi és üzemeltetési kontrollterv: `docs/owner-control-and-deployment-plan.md` (technikai terv, nem jogi igazolás).
 
 - [Szervezeti bemutató és visszajelzési lap](docs/organizational-demo-walkthrough.md)
+
+- [Szervezeti pilot végrehajtási és minőségellenőrzési munkalap](docs/organizational-pilot-execution-checklist.md)
