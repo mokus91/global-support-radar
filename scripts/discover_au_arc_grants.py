@@ -21,15 +21,21 @@ def pick(obj, *keys):
 
 def main():
     records, error, pages = [], None, 0
+    max_pages = 200
+    time_budget_seconds = 360
+    started = time.monotonic()
+    budget_exhausted = False
     try:
-        max_pages = 200
         seen_ids = set()
         for page in range(1, max_pages + 1):
+            if time.monotonic() - started >= time_budget_seconds:
+                budget_exhausted = True
+                break
             url = f"{API}?page%5Bnumber%5D={page}&page%5Bsize%5D=100"
             req = Request(url, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/vnd.api+json, application/json"})
             for attempt in range(3):
                 try:
-                    with urlopen(req, timeout=45) as response:
+                    with urlopen(req, timeout=20) as response:
                         payload = json.loads(response.read().decode("utf-8"))
                     break
                 except HTTPError as exc:
@@ -80,8 +86,11 @@ def main():
         "api_url": API,
         "purpose": "Australian Research Council grant records. This dataset covers ARC research funding and is not a complete national register of household benefits or all government grants. Records are not live open calls unless verified separately.",
         "pages_fetched": pages,
-        "maximum_pages": 200,
-        "pagination_complete": pages < 200 and not error,
+        "maximum_pages": max_pages,
+        "time_budget_seconds": time_budget_seconds,
+        "collection_time_seconds": round(time.monotonic() - started, 2),
+        "collection_truncated": budget_exhausted or pages >= max_pages,
+        "pagination_complete": pages < max_pages and not error and not budget_exhausted,
         "records_count": len(records),
         "records": records,
         "error": error
