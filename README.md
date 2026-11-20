@@ -38,6 +38,10 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 - [Fizetési elszámolás és tulajdonosi kifizetés előkészítési terve](docs/payment-and-owner-payout-readiness.md)
 
+## Nyilvános bétaindítás – 0 Ft-os terv
+
+- [0 Ft-os nyilvános bétaindítás és ingyenes tárhely-migrációs ellenőrzőlista](docs/free-launch-readiness.md)
+
 ## Mi működik jelenleg?
 
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
