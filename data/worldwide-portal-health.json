@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T09:12:44+00:00",
+  "checked_at": "2026-11-20T09:33:15+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 11,
+    "connection_error": 8,
     "http_error": 2,
-    "reachable": 53,
+    "reachable": 56,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -107,8 +107,9 @@
     },
     {
       "id": "za-incentives",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
     },
     {
       "id": "za-sassa",
@@ -194,8 +195,9 @@
     },
     {
       "id": "eu-national-funds-fr",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europe-en-france.gouv.fr/fr"
     },
     {
       "id": "eu-national-funds-de",
@@ -411,8 +413,9 @@
     },
     {
       "id": "fr-aides-territoires",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://aides-territoires.beta.gouv.fr/"
     },
     {
       "id": "nz-business-funding-explorer",
