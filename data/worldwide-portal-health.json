@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T17:50:43+00:00",
+  "checked_at": "2026-11-20T19:23:41+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 7,
+    "connection_error": 10,
     "http_error": 2,
-    "reachable": 57,
+    "reachable": 54,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -23,15 +23,13 @@
     },
     {
       "id": "br-fomento-rural",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-fomento-rural"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "br-social-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ca-benefits",
@@ -395,8 +393,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "restricted",
+      "http_status": 403,
       "final_url": "https://fondos.gob.cl/"
     },
     {
@@ -437,9 +435,8 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "restricted",
-      "http_status": 429,
-      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-funding-guide",
