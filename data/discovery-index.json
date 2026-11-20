@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T11:20:43.238469+00:00",
+  "generated_at": "2026-11-20T12:32:44.693135+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 182,
+  "discovered_datasets_count": 181,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -56,14 +56,6 @@
       "title": "[Challenge 4] Energy Efficiency & Public Buildings",
       "url": "https://www.data.gouv.fr/datasets/defi-4-efficacite-energetique-batiments-publics",
       "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "[F1] ÜZLETI KERESÉS",
-      "url": "https://data.gov.gr/dataset/st1-anazhthsh-epixeirhsewn",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -133,7 +125,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -253,9 +245,25 @@
       "verification_status": "unverified"
     },
     {
+      "title": "business R&D; sources of funding for own R&D activities; Every two years in 2007",
+      "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/FtgForskFinansSUM",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -320,6 +328,14 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -423,14 +439,6 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Energy Efficiency Action Plan (EEAP): glazing",
-      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -573,14 +581,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Government Consolidated Fund (Annual)",
-      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
-      "query": "government grants",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -709,6 +709,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "HOUSING - Number_pieces",
+      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Housing assistance for HEPA seniors by Canton CD76 2023",
       "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-canton-cd76-2023",
       "query": "housing assistance",
@@ -759,14 +767,6 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1077,14 +1077,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "PACA4JOB Business Events",
-      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "PoliS - Lombardy Grants subsidies economic advantages - Grants Scholarships -",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/polis-lombardia-sovvenzioni-sussidi-vantaggi-economici-contributi-borse-di-studio#",
       "query": "scholarships",
@@ -1094,7 +1086,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1102,7 +1094,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

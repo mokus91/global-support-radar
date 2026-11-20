@@ -1,49 +1,44 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T11:25:57+00:00",
-  "events_count": 6,
+  "generated_at": "2026-11-20T12:36:48+00:00",
+  "events_count": 5,
   "events": [
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498805topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
+      "key": "id:187909prospectsen",
+      "title": "Une société civile engagée pour des villes résilientes et inclusives, des droits fondamentaux protégés et une faune préservée.",
+      "detected_at": "2026-11-20T12:36:48+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498831topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
+      "key": "id:53488661topicsen",
+      "title": "Centres of Vocational Excellence",
+      "detected_at": "2026-11-20T12:36:48+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498857topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
+      "key": "id:53488696topicsen",
+      "title": "Centres of Vocational Excellence",
+      "detected_at": "2026-11-20T12:36:48+00:00"
     },
     {
-      "type": "new",
+      "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498882topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
+      "key": "id:52519656topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T12:36:48+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
-      "type": "new",
+      "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498908topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53498933topicsen",
-      "title": "Capacity building in the field of Vocational Education and Training (VET)",
-      "detected_at": "2026-11-20T11:25:57+00:00"
+      "key": "id:52519691topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T12:36:48+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
