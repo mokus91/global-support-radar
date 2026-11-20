@@ -16,6 +16,14 @@
   issues.replaceChildren();
   const critical=items.slice(2,7).filter(([,v])=>Number(v)>0);
   if(critical.length)critical.forEach(([k,v])=>add(issues,'li',k+': '+v,'warn'));else add(issues,'li','Nem talált magas bizonyosságú szerkezeti hibát a pályázati rekordokban.');
+  const dimensions=d.verification_dimensions||{};
+  const dimensionBox=add(document.querySelector('main'),'section','','box');
+  add(dimensionBox,'h2','Ellenőrzött részletek külön mérve');
+  const dimensionList=add(dimensionBox,'ul','');
+  add(dimensionList,'li','Hivatalos oldalon nyitott státusz ellenőrizve: '+(dimensions.open_status_verified??0));
+  add(dimensionList,'li','Jogosultsági feltételek ellenőrizve: '+(dimensions.eligibility_verified??0));
+  add(dimensionList,'li','Támogatási összeg ellenőrizve: '+(dimensions.amount_verified??0));
+  add(dimensionBox,'p','A három mutató különálló. A nyitott státusz ellenőrzése önmagában nem igazolja a pályázó jogosultságát.','muted');
   const tiers=d.verification_tiers||{};
   const tierBox=add(document.querySelector('main'),'section','','box');
   add(tierBox,'h2','Státusz-ellenőrzési bontás');
