@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "description": "Szervezeti riportprofilok. A szűrők pontos egyezést használnak; üres találat esetén a riport ezt egyértelműen jelzi.",
+  "profiles": [
+    {
+      "id": "hungary-all",
+      "title": "Magyarországi – általános támogatásfigyelő",
+      "country": "HU",
+      "category": null
+    },
+    {
+      "id": "hungary-business",
+      "title": "Magyarországi – vállalkozásfejlesztés",
+      "country": "HU",
+      "category": "business"
+    },
+    {
+      "id": "hungary-agriculture",
+      "title": "Magyarországi – mezőgazdaság",
+      "country": "HU",
+      "category": "agriculture"
+    },
+    {
+      "id": "global-all",
+      "title": "Nemzetközi – összes elérhető ország és témakör",
+      "country": null,
+      "category": null
+    }
+  ]
+}
