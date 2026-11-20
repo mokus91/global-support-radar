@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-11-20T12:51:04.980281+00:00",
+  "generated_at": "2026-11-20T13:02:24.074667+00:00",
   "source_id": "eu-cap-network",
   "source_url": "https://eu-cap-network.ec.europa.eu/eip-agri-innovation-cooperation-funding/funding-opportunities_en",
-  "purpose": "Featured agriculture and rural innovation funding leads from the official EU CAP Network. Expired dated calls are excluded; all records require manual verification on the original call page.",
+  "fetch_status": "temporarily-unavailable",
+  "http_status": 503,
   "records_count": 4,
   "records": [
     {
@@ -73,5 +74,7 @@
       "status": "unverified-directory-lead",
       "last_discovered_at": "2026-11-20T12:51:04.980279+00:00"
     }
-  ]
+  ],
+  "last_successful_fetch": "2026-11-20T12:51:04.980281+00:00",
+  "note": "Upstream fetch failed after 3 attempts (HTTPError); previous records retained and not represented as newly refreshed."
 }

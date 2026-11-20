@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T12:54:00.396236+00:00",
+  "generated_at": "2026-11-20T13:05:27.642123+00:00",
   "feeds_checked": 18,
   "records_checked": 2211,
   "expired_deadlines": 0,
@@ -257,11 +257,11 @@
     {
       "name": "EU — CAP Network",
       "file": "eu-cap-network-discovery.json",
-      "status": "checked",
+      "status": "temporarily-unavailable",
       "records_count": 4,
-      "http_status": null,
+      "http_status": 503,
       "freshness": "fresh",
-      "note": ""
+      "note": "Upstream fetch failed after 3 attempts (HTTPError); previous records retained and not represented as newly refreshed."
     },
     {
       "name": "EU — national agriculture",

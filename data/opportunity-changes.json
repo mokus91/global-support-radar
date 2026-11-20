@@ -1,22 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T12:54:00+00:00",
-  "events_count": 2,
-  "events": [
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519656topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T12:54:00+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519691topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T12:54:00+00:00"
-    }
-  ],
+  "generated_at": "2026-11-20T13:05:27+00:00",
+  "events_count": 0,
+  "events": [],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }
