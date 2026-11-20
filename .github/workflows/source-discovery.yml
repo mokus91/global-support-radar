@@ -29,7 +29,7 @@ jobs:
       - name: Compile Python discovery adapters
         run: python -m compileall -q scripts
       - name: Install trusted certificate bundle and ISO country lookup
-        run: python -m pip install --disable-pip-version-check certifi pycountry
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements-ci.txt
       - name: Test CIHR official-notice parsing and status safeguards
         run: python -m unittest discover -s scripts -p 'test_discover_ca_cihr.py' -v
       - name: Test French eligibility verification safeguards
