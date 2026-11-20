@@ -124,7 +124,35 @@ def filter_records(
     return result
 
 
-def render(records: list[dict[str, Any]], today: date) -> str:
+def deduplicate_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove repeated records using official URL, or a conservative fallback key."""
+    unique: list[dict[str, Any]] = []
+    seen: set[tuple[str, ...]] = set()
+    for record in records:
+        url = official_url_of(record).rstrip("/").casefold()
+        if url:
+            key = ("url", url)
+        else:
+            key = (
+                "fallback",
+                str(record.get("country_code") or record.get("country") or "").strip().casefold(),
+                title_of(record).strip().casefold(),
+                str(record.get("deadline") or "").strip(),
+            )
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(record)
+    return unique
+
+
+def render(
+    records: list[dict[str, Any]],
+    today: date,
+    country: str | None = None,
+    category: str | None = None,
+) -> str:
+    records = deduplicate_records(records)
     verified, candidates = [], []
     for record in records:
         bucket = classify(record, today)
@@ -137,6 +165,9 @@ def render(records: list[dict[str, Any]], today: date) -> str:
         "# Szervezeti támogatásfigyelő riport",
         "",
         f"**Generálás dátuma:** {today.isoformat()}",
+        f"**Országszűrő:** {country or 'nincs'}",
+        f"**Témaszűrő:** {category or 'nincs'}",
+        f"**Egyedi rekordok száma:** {len(records)}",
         "**Adatforrás:** a repository data/*-discovery.json fájljai",
         "**Módszer:** automatikus státuszszűrés; nem teljes körű piaci vagy jogosultsági vizsgálat.",
         "",
@@ -216,7 +247,14 @@ def self_test() -> None:
     assert len(filter_records(sample, category="BUSINESS")) == 1
     assert len(filter_records(sample, category="business-growth")) == 1
     assert len(filter_records(sample)) == 3
-    print("Self-test: 12 checks passed.")
+    duplicate_records = [
+        {"title": "Same", "official_url": "https://example.org/grant"},
+        {"title": "Renamed duplicate", "official_url": "https://example.org/grant/"},
+        {"title": "Fallback", "country_code": "HU", "deadline": "2026-12-01"},
+        {"title": "Fallback", "country_code": "HU", "deadline": "2026-12-01"},
+    ]
+    assert len(deduplicate_records(duplicate_records)) == 2
+    print("Self-test: 13 checks passed.")
 
 
 def main() -> None:
@@ -232,7 +270,7 @@ def main() -> None:
         return
     today = datetime.now(timezone.utc).date()
     records = filter_records(load_records(args.data_dir), country=args.country, category=args.category)
-    report = render(records, today)
+    report = render(records, today, country=args.country, category=args.category)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(report, encoding="utf-8")
     print(f"Report written: {args.output}")
