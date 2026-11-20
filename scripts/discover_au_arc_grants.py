@@ -21,8 +21,8 @@ def pick(obj, *keys):
 
 def main():
     records, error, pages = [], None, 0
-    max_pages = 200
-    time_budget_seconds = 360
+    max_pages = 40
+    time_budget_seconds = 180
     started = time.monotonic()
     budget_exhausted = False
     try:
@@ -33,18 +33,18 @@ def main():
                 break
             url = f"{API}?page%5Bnumber%5D={page}&page%5Bsize%5D=100"
             req = Request(url, headers={"User-Agent": "GlobalSupportRadar/0.1", "Accept": "application/vnd.api+json, application/json"})
-            for attempt in range(3):
+            for attempt in range(2):
                 try:
-                    with urlopen(req, timeout=20) as response:
+                    with urlopen(req, timeout=12) as response:
                         payload = json.loads(response.read().decode("utf-8"))
                     break
                 except HTTPError as exc:
-                    if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                    if exc.code not in (429, 500, 502, 503, 504) or attempt == 1:
                         raise
                 except (URLError, TimeoutError):
                     if attempt == 2:
                         raise
-                time.sleep(3 * (attempt + 1))
+                time.sleep(2 * (attempt + 1))
             items = payload.get("data", [])
             if not isinstance(items, list):
                 raise ValueError("Unexpected ARC API response: data is not a list")
