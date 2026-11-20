@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101a2d">
+<meta name="description" content="A Global Support Radar adatforrásaiban észlelt új és módosult támogatási lehetőségek naplója.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mokus91.github.io/global-support-radar/updates.html">
+<title>Adatváltozások | Global Support Radar</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#9aabc4;--line:#293b56;--mint:#53e0b2;--gold:#ffd27a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Arial}.wrap{max-width:980px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding:12px 0 22px}.brand{font-weight:800;letter-spacing:.5px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1px}.controls{display:flex;gap:8px;align-items:center}a{color:var(--mint)}select,button{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px;font:inherit}h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:34px 0 12px}.muted{color:var(--muted)}.notice{border:1px solid #6a5431;background:#2c271c;color:#f5dfb2;border-radius:12px;padding:14px;margin:18px 0}.summary{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.pill{border:1px solid var(--line);border-radius:20px;padding:5px 10px;color:var(--muted);font-size:13px}.event{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}.event h2{font-size:18px;margin:8px 0}.event p{margin:6px 0;color:var(--muted);font-size:14px}.type{display:inline-block;border-radius:20px;padding:4px 9px;background:#17382f;color:var(--mint);font-size:11px;font-weight:700}.type.changed{background:#332817;color:var(--gold)}.type.removed{background:#382323;color:#ffaaaa}.empty{padding:28px;border:1px dashed var(--line);border-radius:12px;text-align:center;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:32px;padding:20px 0;color:var(--muted);font-size:13px}
+@media(max-width:600px){.wrap{padding:16px}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div class="brand">GLOBAL SUPPORT RADAR<small>DATA CHANGE LOG · ADATVÁLTOZÁSOK</small></div><div class="controls"><a href="./">← <span id="back">Vissza a keresőhöz</span></a><select id="lang" aria-label="Language"><option value="hu">Magyar</option><option value="en">English</option></select></div></header>
+<h1 id="title">Új és módosult adatforrás-találatok</h1>
+<p class="muted" id="intro">A napló azt mutatja, ha egy támogatási adatfolyamban új rekordot vagy módosulást észleltünk.</p>
+<div class="notice" id="caution"><strong>Fontos:</strong> A változásészlelés nem jelent hivatalos ellenőrzést. Az új rekord nem feltétlenül nyitott pályázat; a módosulás nem feltétlenül jelent határidő-változást; az eltűnt rekord nem tekinthető automatikusan lezártnak. Mindig nyisd meg az eredeti hivatalos forrást.</div>
+<div class="summary"><span class="pill" id="checked">Napló betöltése…</span><span class="pill" id="counts"></span></div>
+<section id="events" aria-live="polite"><div class="empty">Változások betöltése…</div></section>
+<footer><a href="./">Global Support Radar</a> · <span id="foot">Független tájékoztató projekt. A rekordok státuszát és jogosultságát az eredeti kiírásban kell ellenőrizni.</span></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let language="hu";
+const copy={
+hu:{back:"Vissza a keresőhöz",title:"Új és módosult adatforrás-találatok",intro:"A napló azt mutatja, ha egy támogatási adatfolyamban új rekordot vagy módosulást észleltünk.",caution:"Fontos: A változásészlelés nem jelent hivatalos ellenőrzést. Az új rekord nem feltétlenül nyitott pályázat; a módosulás nem feltétlenül jelent határidő-változást; az eltűnt rekord nem tekinthető automatikusan lezártnak. Mindig nyisd meg az eredeti hivatalos forrást.",loading:"Napló betöltése…",error:"A változásnapló most nem tölthető be.",empty:"A jelenlegi naplóban nincs rögzített változás.",generated:"Napló készült: ",events:"észlelt változás",new:"Új rekord a forrásban",changed:"Módosult rekord",removed:"Eltűnt az adatfolyamból – nem bizonyított lezárás",feed:"Adatfolyam: ",date:"Észlelve: ",before:"Korábbi adatok",after:"Új adatok",foot:"Független tájékoztató projekt. A rekordok státuszát és jogosultságát az eredeti kiírásban kell ellenőrizni."},
+en:{back:"Back to search",title:"New and changed source records",intro:"This log shows when a monitored funding feed contains a newly detected or modified record.",caution:"Important: change detection is not official verification. A new record is not necessarily an open call; a change is not necessarily a deadline change; a record missing from a feed is not automatically closed. Always check the original official source.",loading:"Loading change log…",error:"The change log is currently unavailable.",empty:"No changes are recorded in the current log.",generated:"Log generated: ",events:"detected changes",new:"New record in source",changed:"Record changed",removed:"Missing from feed – closure not confirmed",feed:"Feed: ",date:"Detected: ",before:"Previous values",after:"New values",foot:"Independent information project. Always verify status and eligibility in the original call."}
+};
+function safeValue(value){if(value===null||value===undefined||value==="")return "—";if(typeof value==="object")return JSON.stringify(value);return String(value)}
+function render(){
+ const t=copy[language];["back","title","intro","caution","foot"].forEach(id=>$(id).textContent=t[id]);
+}
+function eventCard(row){
+ const t=copy[language],card=document.createElement("article");card.className="event";
+ const badge=document.createElement("span");badge.className="type "+(row.type==="changed"?"changed":row.type==="removed_from_feed"?"removed":"");badge.textContent=row.type==="new"?t.new:row.type==="changed"?t.changed:t.removed;
+ const title=document.createElement("h2");title.textContent=row.title||row.key||"Untitled record";
+ const feed=document.createElement("p");feed.textContent=t.feed+(row.feed||"—");
+ const date=document.createElement("p");date.textContent=t.date+(row.detected_at||"—");
+ card.append(badge,title,feed,date);
+ if(row.type==="changed"){
+  for(const [label,obj] of [[t.before,row.before],[t.after,row.after]]){
+   const p=document.createElement("p");p.textContent=label+": "+Object.entries(obj||{}).map(([k,v])=>k+"="+safeValue(v)).join(" · ");card.append(p);
+  }
+ }
+ if(row.note){const note=document.createElement("p");note.textContent=row.note;card.append(note)}
+ return card;
+}
+async function load(){
+ const t=copy[language],box=$("events");box.replaceChildren();
+ try{
+  const response=await fetch("./data/opportunity-changes.json",{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
+  const data=await response.json(),rows=Array.isArray(data.events)?data.events:[];
+  $("checked").textContent=t.generated+(data.generated_at||"—");
+  $("counts").textContent=rows.length+" "+t.events;
+  if(!rows.length){const empty=document.createElement("div");empty.className="empty";empty.textContent=t.empty;box.append(empty);return}
+  [...rows].reverse().forEach(row=>box.append(eventCard(row)));
+ }catch(error){$("checked").textContent=t.error;$("counts").textContent="";const empty=document.createElement("div");empty.className="empty";empty.textContent=t.error;box.append(empty)}
+}
+$("lang").addEventListener("change",()=>{language=$("lang").value;render();load()});
+render();load();
+</script></body></html>
