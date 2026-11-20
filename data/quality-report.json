@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:49:30.210995+00:00",
+  "generated_at": "2026-11-20T04:52:14.232693+00:00",
   "feeds_checked": 18,
   "records_checked": 2216,
   "expired_deadlines": 8,
@@ -164,6 +164,170 @@
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
+    }
+  ],
+  "feed_health_summary": [
+    {
+      "name": "Japan — JGrants",
+      "file": "jgrants-discovery.json",
+      "status": "checked",
+      "records_count": 214,
+      "http_status": null,
+      "freshness": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Chile — CORFO / Sercotec",
+      "file": "chile-discovery.json",
+      "status": "checked",
+      "records_count": 1,
+      "http_status": null,
+      "freshness": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Spain — SNPSAP",
+      "file": "spain-discovery.json",
+      "status": "checked",
+      "records_count": 5,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "France — Aides-territoires",
+      "file": "france-aides-territoires-discovery.json",
+      "status": "temporarily-unavailable",
+      "records_count": 0,
+      "http_status": 401,
+      "freshness": "fresh",
+      "note": "Unauthorized"
+    },
+    {
+      "name": "New Zealand — Government Funding Explorer",
+      "file": "nz-funding-explorer-discovery.json",
+      "status": "checked-empty",
+      "records_count": 0,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": "The official page currently reports zero listed funding options."
+    },
+    {
+      "name": "EU — Funding & Tenders API audit",
+      "file": "eu-funding-discovery.json",
+      "status": "audit-summary",
+      "records_count": 0,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": "Audit summary only; candidate records are stored in eu-open-calls-discovery.json."
+    },
+    {
+      "name": "EU — open calls",
+      "file": "eu-open-calls-discovery.json",
+      "status": "checked",
+      "records_count": 495,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "EU — CAP Network",
+      "file": "eu-cap-network-discovery.json",
+      "status": "checked",
+      "records_count": 4,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "EU — national agriculture",
+      "file": "eu-national-agriculture-discovery.json",
+      "status": "checked",
+      "records_count": 7,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "EU — national categories",
+      "file": "eu-national-category-discovery.json",
+      "status": "checked",
+      "records_count": 48,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "USA — Grants.gov",
+      "file": "us-grants-discovery.json",
+      "status": "checked",
+      "records_count": 1389,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "UK — UKRI",
+      "file": "ukri-discovery.json",
+      "status": "checked",
+      "records_count": 20,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "Australia — ARC",
+      "file": "au-arc-grants-discovery.json",
+      "status": "checked",
+      "records_count": 20000,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "Canada — CIHR",
+      "file": "ca-cihr-discovery.json",
+      "status": "temporarily-unavailable",
+      "records_count": 0,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certific"
+    },
+    {
+      "name": "Hungary — open data",
+      "file": "hu-open-data-discovery.json",
+      "status": "checked",
+      "records_count": 5,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "Hungary — grant announcements",
+      "file": "hu-palyazat-announcements.json",
+      "status": "checked-empty",
+      "records_count": 0,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": ""
+    },
+    {
+      "name": "Hungary — NKFIH current calls",
+      "file": "hu-nkfih-discovery.json",
+      "status": "checked",
+      "records_count": 33,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
+    },
+    {
+      "name": "Worldwide — portal reachability",
+      "file": "worldwide-portal-health.json",
+      "status": "checked",
+      "records_count": 74,
+      "http_status": null,
+      "freshness": "fresh",
+      "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline."
     }
   ],
   "source_status_summary": [
