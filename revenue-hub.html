@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hu"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A Global Support Radar bevételi lehetőségeinek és költségmentes működésének nyilvántartása.">
+<meta name="robots" content="noindex,nofollow">
+<title>Bevételi lehetőségek és költségfigyelés – Global Support Radar</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#aab8cc;--line:#293b56;--mint:#53e0b2;--gold:#ffd27a;--red:#ff9c9c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,Arial}.wrap{max-width:1000px;margin:auto;padding:22px 16px 55px}a{color:var(--mint)}header,footer{border-bottom:1px solid var(--line);padding:12px 0 18px}footer{border:0;border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--muted);font-size:13px}h1{font-size:clamp(30px,6vw,46px);line-height:1.12;margin:28px 0 8px}.muted{color:var(--muted)}.alert{padding:15px;border-radius:12px;background:#302819;border:1px solid #70592e;color:#f5dfb2;margin:18px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px}.card h2{font-size:19px;margin:0 0 7px}.card p{color:var(--muted);margin:8px 0}.tag{display:inline-block;font-size:12px;padding:3px 9px;border:1px solid var(--line);border-radius:20px;color:var(--gold)}.card a{display:inline-block;margin-top:8px}.status{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.status select{background:#0b1628;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px;max-width:100%}.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.kpi span{display:block;color:var(--muted);font-size:13px}.kpi strong{font-size:23px}.panel{margin:18px 0}.panel li{margin:7px 0;color:var(--muted)}button{font:inherit;border:0;border-radius:9px;padding:10px 14px;background:var(--mint);color:#092017;font-weight:700;cursor:pointer}.secondary{background:#263a54;color:var(--text)}.small{font-size:13px;color:var(--muted)}@media(max-width:680px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr}}
+</style></head><body><main class="wrap">
+<header><a href="./">← Global Support Radar főoldal</a></header>
+<h1>Bevételi lehetőségek és költségfigyelés</h1>
+<p class="muted">A cél: először ingyenes működés, majd kizárólag igazolt bevételből finanszírozott fejlődés.</p>
+<div class="alert"><strong>Fontos tárhelykorlát:</strong> a GitHub Pages szabályzata nem engedi, hogy az ingyenes Pages tárhely elsődlegesen online üzletet vagy kereskedelmi SaaS-t szolgáljon ki. Ezért fizetős szolgáltatás vagy hirdetés élesítése előtt megfelelő tárhelyre kell migrálni. A migráció még nem történt meg, és semmilyen költséget nem vállalunk előre. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits" target="_blank" rel="noopener">Hivatalos GitHub-szabályzat ↗</a></div>
+<section class="kpis">
+<div class="kpi"><span>Igazolt bevétel</span><strong>0 Ft</strong></div>
+<div class="kpi"><span>Jóváhagyott költési keret</span><strong>0 Ft</strong></div>
+<div class="kpi"><span>Fizetős automatizmus</span><strong>Nincs</strong></div>
+</section>
+<h2>Lehetséges bevételi utak</h2>
+<p class="small">A státuszokat ezen a böngészőn tárolja a rendszer. Ez nem partnerregisztráció és nem bizonyíték elfogadásra.</p>
+<div class="grid" id="opportunities"><p class="muted">A lehetőségek betöltése…</p></div>
+<section class="panel"><h2>Automatikus heti ellenőrzés</h2>
+<p>A GitHub Actions munkafolyamat hetente ellenőrzi az itt felsorolt hivatalos forrásoldalak elérhetőségét, és jelentést készít. A 403 vagy 429 válasz korlátozás is lehet, nem feltétlenül hibás link. A jelentés a GitHub Actions futás eredményei között, 30 napig érhető el.</p>
+<p><strong>Mit nem csinál?</strong> Nem regisztrál, nem küld megkeresést, nem fogad el szerződést, nem indít hirdetést, nem költ és nem utal.</p>
+<p class="small" id="watchStatus">A heti ellenőrző folyamat GitHub Actions ütemezés szerint fut.</p>
+</section>
+<section class="panel"><h2>0 Ft-os költségvédelmi szabályok</h2><ul>
+<li>Fizetős API, előfizetés, domainvásárlás vagy reklámkampány nem indul automatikusan.</li>
+<li>Csak ténylegesen beérkezett, bizonylattal igazolt pénz lehet fedezet.</li>
+<li>Minden kiadáshoz külön tulajdonosi jóváhagyás szükséges.</li>
+<li>A tartalék és a kötelező adóterhek elkülönítése megelőzi a tulajdonosi kifizetést.</li>
+<li>A támogatási találatok sorrendjét soha nem befolyásolhatja hirdető vagy partner.</li>
+</ul><p><a href="./finance.html">Pénzügyi nyilvántartás megnyitása ↗</a> · <a href="./sustainability.html">Önfenntartási szabályzat ↗</a></p></section>
+<section class="panel"><h2>Ingyenes infrastruktúra vizsgálata</h2><p>Lehetséges alternatíva a Cloudflare Pages, amelynek hivatalos dokumentációja ingyenes csomagkorlátokat is ismertet. Ez nem automatikus jóváhagyás és nem bizonyítja, hogy minden üzleti felhasználás megengedett. A konkrét feltételeket migráció előtt ellenőrizni kell.</p><a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noopener">Cloudflare Pages korlátok ↗</a></section>
+<div class="actions"><button class="secondary" id="reset">Helyi státuszok visszaállítása</button></div>
+<footer><a href="./">Főoldal</a> · <a href="./finance.html">Pénzügyek</a> · <a href="./revenue.html">Hirdetési tájékoztató</a></footer>
+</main>
+<script>
+(async()=>{
+const KEY="gsr_revenue_opportunity_status_v1",labels={research:"Kutatás alatt",blocked:"Blokkolva",applied:"Jelentkezés elküldve",approved:"Jóváhagyva",active:"Aktív",rejected:"Elutasítva",paused:"Szüneteltetve"};
+let list=[];try{const r=await fetch("./data/revenue-opportunities.json",{cache:"no-store"});if(!r.ok)throw Error("A lehetőségek listája nem tölthető be.");list=(await r.json()).opportunities||[];}catch(e){document.getElementById("opportunities").textContent=e.message;return;}
+let states={};try{states=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){}
+const root=document.getElementById("opportunities");
+list.sort((a,b)=>(a.priority||99)-(b.priority||99)).forEach(item=>{
+const card=document.createElement("article");card.className="card";
+const tag=document.createElement("span");tag.className="tag";tag.textContent=item.type.replaceAll("_"," ");
+const h=document.createElement("h2");h.textContent=item.name;
+const p=document.createElement("p");p.textContent=item.description_hu;
+const req=document.createElement("p");req.className="small";req.textContent="Feltétel: "+item.requirements;
+const link=document.createElement("a");link.href=item.url;link.target="_blank";link.rel="noopener";link.textContent="Hivatalos oldal / projekt ↗";
+const row=document.createElement("div");row.className="status";
+const lab=document.createElement("label");lab.textContent="Saját státusz: ";
+const sel=document.createElement("select");Object.entries(labels).forEach(([v,t])=>{const o=document.createElement("option");o.value=v;o.textContent=t;sel.append(o);});
+sel.value=states[item.id]||item.status||"research";
+sel.addEventListener("change",()=>{states[item.id]=sel.value;localStorage.setItem(KEY,JSON.stringify(states));});
+lab.append(sel);row.append(lab);
+card.append(tag,h,p,req,link,row);root.append(card);
+});
+document.getElementById("reset").addEventListener("click",()=>{if(confirm("Visszaállítod az összes saját státuszt?")){localStorage.removeItem(KEY);location.reload();}});
+})();
+</script></body></html>
