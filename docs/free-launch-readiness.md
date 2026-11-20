@@ -60,6 +60,14 @@ Az első bétaindítás ingyenes tájékoztató termék. Fizetős szervezeti rip
 
 ## Jelenlegi állapot
 
+**Ellenőrzési frissítés: 2026-11-20**
+
+- A GitHub Pages bemutatóoldal a jelenlegi nyilvános változat; a Cloudflare-migráció nincs elvégezve.
+- A GitHub-repository és a meglévő staging-validációs workflow rendelkezésre áll.
+- A bétaindítás nem tekinthető lezártnak, amíg a tulajdonos nem kapcsolja össze a saját Cloudflare-fiókját, és a `pages.dev` címen a teljes ellenőrzőlista nem teljesül.
+- A felhasználó jelenlegi döntése: minden induló szolgáltatás és fejlesztési lépés maradjon 0 Ft-os; fizetési módot vagy fizetős csomagot nem adunk meg.
+
+
 - A weboldal jelenleg GitHub Pages címen érhető el.
 - Cloudflare-fiók nincs összekötve, Pages-projekt nincs létrehozva, migráció nem történt.
 - A dokumentum előkészíti a díjmentes bétaindítást, de nem állítja, hogy a Cloudflare-telepítés már megtörtént.
