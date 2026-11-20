@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-20T19:40:12.119740+00:00",
+  "generated_at": "2026-11-20T20:19:30.164698+00:00",
   "feeds_checked": 18,
-  "records_checked": 2210,
+  "records_checked": 2205,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1990,
+  "unverified_status": 1985,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 211,
     "official_listing_candidate": 1916,
-    "unverified": 74,
+    "unverified": 69,
     "other": 8
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 211,
-    "needs_verification": 1998,
+    "needs_verification": 1993,
     "expired_or_closed": 0
   },
   "verification_dimensions": {
@@ -101,18 +101,18 @@
     },
     {
       "file": "eu-national-agriculture-discovery.json",
-      "records": 7,
+      "records": 6,
       "procurement_candidates": 0,
-      "unverified": 7,
+      "unverified": 6,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 50,
+      "records": 46,
       "procurement_candidates": 0,
-      "unverified": 50,
+      "unverified": 46,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -267,7 +267,7 @@
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
       "status": "checked",
-      "records_count": 7,
+      "records_count": 6,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 50,
+      "records_count": 46,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "temporarily-unavailable",
+      "status": "checked",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "<urlopen error timed out>"
+      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
     },
     {
       "name": "Worldwide — portal reachability",
@@ -378,12 +378,12 @@
     {
       "source_file": "eu-national-agriculture-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 7
+      "records": 6
     },
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 50
+      "records": 46
     },
     {
       "source_file": "eu-open-calls-discovery.json",

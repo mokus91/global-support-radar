@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-20T19:25:06.534451+00:00",
+  "generated_at": "2026-11-20T20:16:32.967212+00:00",
   "source_id": "eu-funding",
   "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
   "purpose": "Candidates returned by the official portal status filters, sorted by nearest upcoming deadline first; past closing dates are excluded where parseable. Records remain unverified; check the original call page before relying on status or eligibility.",
-  "expired_deadline_records_excluded": 594,
+  "expired_deadline_records_excluded": 639,
   "status_filters": [
     "31094501",
     "31094502"
@@ -33,7 +33,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529922+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961541+00:00"
     },
     {
       "id": "17045COMPETITIVE_CALLen",
@@ -53,7 +53,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532447+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964697+00:00"
     },
     {
       "id": "15681COMPETITIVE_CALLen",
@@ -73,7 +73,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532950+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965340+00:00"
     },
     {
       "id": "50220812TOPICSen",
@@ -93,7 +93,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531035+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962901+00:00"
     },
     {
       "id": "50220831TOPICSen",
@@ -113,7 +113,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531329+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963277+00:00"
     },
     {
       "id": "51426227TOPICSen",
@@ -133,7 +133,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530525+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962266+00:00"
     },
     {
       "id": "50127691TOPICSen",
@@ -153,7 +153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530464+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962188+00:00"
     },
     {
       "id": "16242COMPETITIVE_CALLen",
@@ -173,7 +173,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530058+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961682+00:00"
     },
     {
       "id": "15882COMPETITIVE_CALLen",
@@ -193,7 +193,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530026+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961642+00:00"
     },
     {
       "id": "16041COMPETITIVE_CALLen",
@@ -213,7 +213,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529952+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961574+00:00"
     },
     {
       "id": "16101COMPETITIVE_CALLen",
@@ -233,7 +233,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529941+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961564+00:00"
     },
     {
       "id": "15386COMPETITIVE_CALLen",
@@ -253,7 +253,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530036+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961654+00:00"
     },
     {
       "id": "50129401TOPICSen",
@@ -273,7 +273,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531228+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963146+00:00"
     },
     {
       "id": "50129441TOPICSen",
@@ -293,7 +293,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530393+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962096+00:00"
     },
     {
       "id": "50129654TOPICSen",
@@ -313,7 +313,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530324+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962010+00:00"
     },
     {
       "id": "50129721TOPICSen",
@@ -333,7 +333,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530359+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962054+00:00"
     },
     {
       "id": "50129993TOPICSen",
@@ -353,7 +353,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531161+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963060+00:00"
     },
     {
       "id": "50217944TOPICSen",
@@ -373,7 +373,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532285+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964490+00:00"
     },
     {
       "id": "50217990TOPICSen",
@@ -393,7 +393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532292+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964499+00:00"
     },
     {
       "id": "50218038TOPICSen",
@@ -413,7 +413,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532279+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964482+00:00"
     },
     {
       "id": "50218088TOPICSen",
@@ -433,7 +433,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532502+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964766+00:00"
     },
     {
       "id": "50218126TOPICSen",
@@ -453,7 +453,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532272+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964473+00:00"
     },
     {
       "id": "50218159TOPICSen",
@@ -473,7 +473,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532313+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964524+00:00"
     },
     {
       "id": "50218200TOPICSen",
@@ -493,7 +493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532265+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964462+00:00"
     },
     {
       "id": "50218237TOPICSen",
@@ -513,7 +513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532306+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964516+00:00"
     },
     {
       "id": "50218290TOPICSen",
@@ -533,7 +533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532299+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964507+00:00"
     },
     {
       "id": "51665634TOPICSen",
@@ -553,7 +553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531020+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962885+00:00"
     },
     {
       "id": "51665660TOPICSen",
@@ -573,7 +573,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531002+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962877+00:00"
     },
     {
       "id": "52395682TOPICSen",
@@ -593,7 +593,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531043+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962910+00:00"
     },
     {
       "id": "52395722TOPICSen",
@@ -613,7 +613,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530493+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962225+00:00"
     },
     {
       "id": "52503133TOPICSen",
@@ -633,7 +633,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531617+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963654+00:00"
     },
     {
       "id": "52519120TOPICSen",
@@ -653,7 +653,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533289+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965776+00:00"
     },
     {
       "id": "15323COMPETITIVE_CALLen",
@@ -673,7 +673,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530207+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961867+00:00"
     },
     {
       "id": "14881COMPETITIVE_CALLen",
@@ -693,7 +693,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533096+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965528+00:00"
     },
     {
       "id": "16221COMPETITIVE_CALLen",
@@ -713,7 +713,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530050+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961672+00:00"
     },
     {
       "id": "16501COMPETITIVE_CALLen",
@@ -733,7 +733,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529985+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961605+00:00"
     },
     {
       "id": "12843COMPETITIVE_CALLen",
@@ -753,7 +753,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529811+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961374+00:00"
     },
     {
       "id": "15661COMPETITIVE_CALLen",
@@ -773,7 +773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529933+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961554+00:00"
     },
     {
       "id": "16241COMPETITIVE_CALLen",
@@ -793,7 +793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529966+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961584+00:00"
     },
     {
       "id": "187639PROSPECTSEN",
@@ -813,7 +813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533471+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966008+00:00"
     },
     {
       "id": "15482COMPETITIVE_CALLen",
@@ -833,7 +833,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530198+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961856+00:00"
     },
     {
       "id": "16301COMPETITIVE_CALLen",
@@ -853,7 +853,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530044+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961663+00:00"
     },
     {
       "id": "51665394TOPICSen",
@@ -873,7 +873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530500+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962233+00:00"
     },
     {
       "id": "52641807TOPICSen",
@@ -893,7 +893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531336+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963288+00:00"
     },
     {
       "id": "187862PROSPECTSEN",
@@ -913,7 +913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532249+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964444+00:00"
     },
     {
       "id": "187975PROSPECTSEN",
@@ -933,7 +933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532760+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965099+00:00"
     },
     {
       "id": "52617886TOPICSen",
@@ -953,7 +953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533028+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965441+00:00"
     },
     {
       "id": "16181COMPETITIVE_CALLen",
@@ -973,7 +973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530110+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961746+00:00"
     },
     {
       "id": "16202COMPETITIVE_CALLen",
@@ -993,7 +993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529978+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961596+00:00"
     },
     {
       "id": "15803COMPETITIVE_CALLen",
@@ -1013,7 +1013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530186+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961843+00:00"
     },
     {
       "id": "15985COMPETITIVE_CALLen",
@@ -1033,7 +1033,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530015+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961627+00:00"
     },
     {
       "id": "16201COMPETITIVE_CALLen",
@@ -1053,7 +1053,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530118+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961757+00:00"
     },
     {
       "id": "187757PROSPECTSEN",
@@ -1073,7 +1073,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533332+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965829+00:00"
     },
     {
       "id": "16481COMPETITIVE_CALLen",
@@ -1093,7 +1093,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530067+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961691+00:00"
     },
     {
       "id": "16281COMPETITIVE_CALLen",
@@ -1113,7 +1113,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530077+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961703+00:00"
     },
     {
       "id": "16721COMPETITIVE_CALLen",
@@ -1133,7 +1133,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532524+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964795+00:00"
     },
     {
       "id": "16482COMPETITIVE_CALLen",
@@ -1153,7 +1153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530126+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961767+00:00"
     },
     {
       "id": "16601COMPETITIVE_CALLen",
@@ -1173,7 +1173,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530100+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961732+00:00"
     },
     {
       "id": "16121COMPETITIVE_CALLen",
@@ -1193,7 +1193,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529995+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961616+00:00"
     },
     {
       "id": "52252019TOPICSen",
@@ -1213,7 +1213,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531322+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963268+00:00"
     },
     {
       "id": "52252040TOPICSen",
@@ -1233,7 +1233,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530507+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962242+00:00"
     },
     {
       "id": "52891293TOPICSen",
@@ -1253,7 +1253,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532233+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964425+00:00"
     },
     {
       "id": "16381COMPETITIVE_CALLen",
@@ -1273,7 +1273,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530086+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961714+00:00"
     },
     {
       "id": "13903COMPETITIVE_CALLen",
@@ -1293,7 +1293,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530180+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961835+00:00"
     },
     {
       "id": "17239COMPETITIVE_CALLen",
@@ -1313,7 +1313,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532935+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965320+00:00"
     },
     {
       "id": "187897PROSPECTSEN",
@@ -1333,7 +1333,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532590+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964879+00:00"
     },
     {
       "id": "16821COMPETITIVE_CALLen",
@@ -1353,7 +1353,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532495+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964757+00:00"
     },
     {
       "id": "16801COMPETITIVE_CALLen",
@@ -1373,7 +1373,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532320+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964533+00:00"
     },
     {
       "id": "16842COMPETITIVE_CALLen",
@@ -1393,7 +1393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532486+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964743+00:00"
     },
     {
       "id": "17001COMPETITIVE_CALLen",
@@ -1413,7 +1413,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532328+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964544+00:00"
     },
     {
       "id": "16861COMPETITIVE_CALLen",
@@ -1433,7 +1433,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532568+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964853+00:00"
     },
     {
       "id": "13326COMPETITIVE_CALLen",
@@ -1453,7 +1453,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529858+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961464+00:00"
     },
     {
       "id": "13328COMPETITIVE_CALLen",
@@ -1473,7 +1473,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529798+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961353+00:00"
     },
     {
       "id": "13327COMPETITIVE_CALLen",
@@ -1493,7 +1493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529826+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961392+00:00"
     },
     {
       "id": "17043COMPETITIVE_CALLen",
@@ -1513,7 +1513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532582+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964870+00:00"
     },
     {
       "id": "52805487TOPICSen",
@@ -1533,7 +1533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531343+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963297+00:00"
     },
     {
       "id": "17237COMPETITIVE_CALLen",
@@ -1553,7 +1553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532856+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965214+00:00"
     },
     {
       "id": "17121COMPETITIVE_CALLen",
@@ -1573,7 +1573,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532702+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965023+00:00"
     },
     {
       "id": "16761COMPETITIVE_CALLen",
@@ -1593,7 +1593,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532480+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964735+00:00"
     },
     {
       "id": "52438216TOPICSen",
@@ -1613,7 +1613,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532965+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965358+00:00"
     },
     {
       "id": "52929270TOPICSen",
@@ -1633,7 +1633,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532972+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965367+00:00"
     },
     {
       "id": "17243COMPETITIVE_CALLen",
@@ -1653,7 +1653,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532958+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965349+00:00"
     },
     {
       "id": "16621COMPETITIVE_CALLen",
@@ -1673,7 +1673,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532913+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965290+00:00"
     },
     {
       "id": "17241COMPETITIVE_CALLen",
@@ -1693,7 +1693,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533035+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965450+00:00"
     },
     {
       "id": "187909PROSPECTSEN",
@@ -1713,7 +1713,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533450+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965980+00:00"
     },
     {
       "id": "17181COMPETITIVE_CALLen",
@@ -1733,7 +1733,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532680+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964994+00:00"
     },
     {
       "id": "187968PROSPECTSEN",
@@ -1753,7 +1753,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532533+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964805+00:00"
     },
     {
       "id": "52256519TOPICSen",
@@ -1773,7 +1773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532432+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964682+00:00"
     },
     {
       "id": "52664793TOPICSen",
@@ -1793,7 +1793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531780+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963864+00:00"
     },
     {
       "id": "52676172TOPICSen",
@@ -1813,7 +1813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532575+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964862+00:00"
     },
     {
       "id": "16641COMPETITIVE_CALLen",
@@ -1833,7 +1833,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530092+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961723+00:00"
     },
     {
       "id": "16741COMPETITIVE_CALLen",
@@ -1853,7 +1853,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532180+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964350+00:00"
     },
     {
       "id": "16841COMPETITIVE_CALLen",
@@ -1873,7 +1873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532597+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964888+00:00"
     },
     {
       "id": "17061COMPETITIVE_CALLen",
@@ -1893,7 +1893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533068+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965488+00:00"
     },
     {
       "id": "52303908TOPICSen",
@@ -1913,7 +1913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531803+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963892+00:00"
     },
     {
       "id": "52303917TOPICSen",
@@ -1933,7 +1933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531817+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963909+00:00"
     },
     {
       "id": "52303926TOPICSen",
@@ -1953,7 +1953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531854+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963958+00:00"
     },
     {
       "id": "52303934TOPICSen",
@@ -1973,7 +1973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531871+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963975+00:00"
     },
     {
       "id": "52303942TOPICSen",
@@ -1993,7 +1993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531833+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963932+00:00"
     },
     {
       "id": "52303950TOPICSen",
@@ -2013,7 +2013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531823+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963920+00:00"
     },
     {
       "id": "52303958TOPICSen",
@@ -2033,7 +2033,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531933+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964056+00:00"
     },
     {
       "id": "52546784TOPICSen",
@@ -2053,7 +2053,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532922+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965299+00:00"
     },
     {
       "id": "52664185TOPICSen",
@@ -2073,7 +2073,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531840+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963942+00:00"
     },
     {
       "id": "52664238TOPICSen",
@@ -2093,7 +2093,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531847+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963950+00:00"
     },
     {
       "id": "52664269TOPICSen",
@@ -2113,7 +2113,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531940+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964064+00:00"
     },
     {
       "id": "52664320TOPICSen",
@@ -2133,7 +2133,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531877+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963984+00:00"
     },
     {
       "id": "52664370TOPICSen",
@@ -2153,7 +2153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531863+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963967+00:00"
     },
     {
       "id": "52664453TOPICSen",
@@ -2173,7 +2173,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531810+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963901+00:00"
     },
     {
       "id": "52664522TOPICSen",
@@ -2193,7 +2193,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531890+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964000+00:00"
     },
     {
       "id": "52664569TOPICSen",
@@ -2213,7 +2213,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531790+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963874+00:00"
     },
     {
       "id": "16261COMPETITIVE_CALLen",
@@ -2233,7 +2233,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532614+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964908+00:00"
     },
     {
       "id": "15741COMPETITIVE_CALLen",
@@ -2253,7 +2253,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533074+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965496+00:00"
     },
     {
       "id": "187670PROSPECTSEN",
@@ -2273,7 +2273,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532906+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965280+00:00"
     },
     {
       "id": "17238COMPETITIVE_CALLen",
@@ -2293,7 +2293,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532863+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965224+00:00"
     },
     {
       "id": "17281COMPETITIVE_CALLen",
@@ -2313,7 +2313,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533081+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965506+00:00"
     },
     {
       "id": "52570328TOPICSen",
@@ -2333,7 +2333,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532641+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964947+00:00"
     },
     {
       "id": "17261COMPETITIVE_CALLen",
@@ -2353,7 +2353,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533218+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965685+00:00"
     },
     {
       "id": "52304288TOPICSen",
@@ -2373,7 +2373,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532876+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965246+00:00"
     },
     {
       "id": "187805PROSPECTSEN",
@@ -2393,7 +2393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532671+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964984+00:00"
     },
     {
       "id": "17044COMPETITIVE_CALLen",
@@ -2413,7 +2413,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532717+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965047+00:00"
     },
     {
       "id": "17021COMPETITIVE_CALLen",
@@ -2433,7 +2433,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532649+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964957+00:00"
     },
     {
       "id": "52657951TOPICSen",
@@ -2453,7 +2453,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530487+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962216+00:00"
     },
     {
       "id": "52766713TOPICSen",
@@ -2473,7 +2473,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532466+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964717+00:00"
     },
     {
       "id": "17481COMPETITIVE_CALLen",
@@ -2493,7 +2493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533252+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965732+00:00"
     },
     {
       "id": "51104692TOPICSen",
@@ -2513,7 +2513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532870+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965237+00:00"
     },
     {
       "id": "51426107TOPICSen",
@@ -2533,7 +2533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532223+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964415+00:00"
     },
     {
       "id": "16881COMPETITIVE_CALLen",
@@ -2553,7 +2553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532694+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965012+00:00"
     },
     {
       "id": "17463COMPETITIVE_CALLen",
@@ -2573,7 +2573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533180+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965638+00:00"
     },
     {
       "id": "51348921TOPICSen",
@@ -2593,7 +2593,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532656+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964966+00:00"
     },
     {
       "id": "52641786TOPICSen",
@@ -2613,7 +2613,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532509+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964775+00:00"
     },
     {
       "id": "52663814TOPICSen",
@@ -2633,7 +2633,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532257+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964453+00:00"
     },
     {
       "id": "16061COMPETITIVE_CALLen",
@@ -2653,7 +2653,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529904+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961518+00:00"
     },
     {
       "id": "187607PROSPECTSEN",
@@ -2673,7 +2673,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532928+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965310+00:00"
     },
     {
       "id": "16941COMPETITIVE_CALLen",
@@ -2693,7 +2693,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532883+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965255+00:00"
     },
     {
       "id": "17461COMPETITIVE_CALLen",
@@ -2713,7 +2713,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533225+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965694+00:00"
     },
     {
       "id": "12743COMPETITIVE_CALLen",
@@ -2733,7 +2733,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529869+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961475+00:00"
     },
     {
       "id": "17002COMPETITIVE_CALLen",
@@ -2753,7 +2753,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533088+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965515+00:00"
     },
     {
       "id": "50127953TOPICSen",
@@ -2773,7 +2773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531209+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963120+00:00"
     },
     {
       "id": "50127970TOPICSen",
@@ -2793,7 +2793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530288+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961967+00:00"
     },
     {
       "id": "50127991TOPICSen",
@@ -2813,7 +2813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530281+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961959+00:00"
     },
     {
       "id": "50128010TOPICSen",
@@ -2833,7 +2833,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531222+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963136+00:00"
     },
     {
       "id": "50128031TOPICSen",
@@ -2853,7 +2853,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531254+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963181+00:00"
     },
     {
       "id": "50128050TOPICSen",
@@ -2873,7 +2873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531196+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963101+00:00"
     },
     {
       "id": "50128065TOPICSen",
@@ -2893,7 +2893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531203+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963111+00:00"
     },
     {
       "id": "50128083TOPICSen",
@@ -2913,7 +2913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531248+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963172+00:00"
     },
     {
       "id": "50128100TOPICSen",
@@ -2933,7 +2933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530420+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962134+00:00"
     },
     {
       "id": "50128116TOPICSen",
@@ -2953,7 +2953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530980+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962849+00:00"
     },
     {
       "id": "50128131TOPICSen",
@@ -2973,7 +2973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530995+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962868+00:00"
     },
     {
       "id": "50128150TOPICSen",
@@ -2993,7 +2993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530426+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962142+00:00"
     },
     {
       "id": "50131259TOPICSen",
@@ -3013,7 +3013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531287+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963224+00:00"
     },
     {
       "id": "50131280TOPICSen",
@@ -3033,7 +3033,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530449+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962169+00:00"
     },
     {
       "id": "50131715TOPICSen",
@@ -3053,7 +3053,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531267+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963199+00:00"
     },
     {
       "id": "50131748TOPICSen",
@@ -3073,7 +3073,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531302+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963242+00:00"
     },
     {
       "id": "52519580TOPICSen",
@@ -3093,7 +3093,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533102+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965537+00:00"
     },
     {
       "id": "52616142TOPICSen",
@@ -3113,7 +3113,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532686+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965003+00:00"
     },
     {
       "id": "52663232TOPICSen",
@@ -3133,7 +3133,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531376+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963334+00:00"
     },
     {
       "id": "52769227TOPICSen",
@@ -3153,7 +3153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530599+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962358+00:00"
     },
     {
       "id": "17041COMPETITIVE_CALLen",
@@ -3173,7 +3173,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532561+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964838+00:00"
     },
     {
       "id": "12902COMPETITIVE_CALLen",
@@ -3193,7 +3193,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529773+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961329+00:00"
     },
     {
       "id": "12904COMPETITIVE_CALLen",
@@ -3213,7 +3213,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529876+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961484+00:00"
     },
     {
       "id": "12905COMPETITIVE_CALLen",
@@ -3233,7 +3233,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529884+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961494+00:00"
     },
     {
       "id": "51066276TOPICSen",
@@ -3253,7 +3253,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532890+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965263+00:00"
     },
     {
       "id": "51066294TOPICSen",
@@ -3273,7 +3273,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532898+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965271+00:00"
     },
     {
       "id": "187959PROSPECTSEN",
@@ -3293,7 +3293,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532841+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965195+00:00"
     },
     {
       "id": "188136PROSPECTSEN",
@@ -3313,7 +3313,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533239+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965715+00:00"
     },
     {
       "id": "52519621TOPICSen",
@@ -3333,7 +3333,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532832+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965185+00:00"
     },
     {
       "id": "52519656TOPICSen",
@@ -3353,7 +3353,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532817+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965168+00:00"
     },
     {
       "id": "52519691TOPICSen",
@@ -3373,7 +3373,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532825+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965176+00:00"
     },
     {
       "id": "16542COMPETITIVE_CALLen",
@@ -3393,7 +3393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533051+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965469+00:00"
     },
     {
       "id": "188041PROSPECTSEN",
@@ -3413,7 +3413,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533232+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965703+00:00"
     },
     {
       "id": "51188642TOPICSen",
@@ -3433,7 +3433,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531744+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963818+00:00"
     },
     {
       "id": "51188650TOPICSen",
@@ -3453,7 +3453,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531758+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963837+00:00"
     },
     {
       "id": "51188658TOPICSen",
@@ -3473,7 +3473,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532084+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964237+00:00"
     },
     {
       "id": "51188707TOPICSen",
@@ -3493,7 +3493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532849+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965204+00:00"
     },
     {
       "id": "51196315TOPICSen",
@@ -3513,7 +3513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530901+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962753+00:00"
     },
     {
       "id": "51196323TOPICSen",
@@ -3533,7 +3533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530563+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962314+00:00"
     },
     {
       "id": "52663407TOPICSen",
@@ -3553,7 +3553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531751+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963828+00:00"
     },
     {
       "id": "52663508TOPICSen",
@@ -3573,7 +3573,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533310+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965803+00:00"
     },
     {
       "id": "52663544TOPICSen",
@@ -3593,7 +3593,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533317+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965812+00:00"
     },
     {
       "id": "52663569TOPICSen",
@@ -3613,7 +3613,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533324+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965820+00:00"
     },
     {
       "id": "52663611TOPICSen",
@@ -3633,7 +3633,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533303+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965793+00:00"
     },
     {
       "id": "52663666TOPICSen",
@@ -3653,7 +3653,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532473+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964726+00:00"
     },
     {
       "id": "52664946TOPICSen",
@@ -3673,7 +3673,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533000+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965412+00:00"
     },
     {
       "id": "52664966TOPICSen",
@@ -3693,7 +3693,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533013+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965420+00:00"
     },
     {
       "id": "52664986TOPICSen",
@@ -3713,7 +3713,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532994+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965393+00:00"
     },
     {
       "id": "52740251TOPICSen",
@@ -3733,7 +3733,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533339+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965838+00:00"
     },
     {
       "id": "52740317TOPICSen",
@@ -3753,7 +3753,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533258+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965741+00:00"
     },
     {
       "id": "50139878TOPICSen",
@@ -3773,7 +3773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532392+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964627+00:00"
     },
     {
       "id": "50139932TOPICSen",
@@ -3793,7 +3793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532343+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964563+00:00"
     },
     {
       "id": "50139985TOPICSen",
@@ -3813,7 +3813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532412+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964655+00:00"
     },
     {
       "id": "50140031TOPICSen",
@@ -3833,7 +3833,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532398+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964636+00:00"
     },
     {
       "id": "50140083TOPICSen",
@@ -3853,7 +3853,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532378+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964608+00:00"
     },
     {
       "id": "50140135TOPICSen",
@@ -3873,7 +3873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532385+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964617+00:00"
     },
     {
       "id": "50140171TOPICSen",
@@ -3893,7 +3893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532356+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964581+00:00"
     },
     {
       "id": "50140201TOPICSen",
@@ -3913,7 +3913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532350+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964572+00:00"
     },
     {
       "id": "50140224TOPICSen",
@@ -3933,7 +3933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532363+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964589+00:00"
     },
     {
       "id": "50140252TOPICSen",
@@ -3953,7 +3953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532334+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964553+00:00"
     },
     {
       "id": "50140426TOPICSen",
@@ -3973,7 +3973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532370+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964599+00:00"
     },
     {
       "id": "50140474TOPICSen",
@@ -3993,7 +3993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532426+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964673+00:00"
     },
     {
       "id": "50140498TOPICSen",
@@ -4013,7 +4013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532405+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964645+00:00"
     },
     {
       "id": "50140523TOPICSen",
@@ -4033,7 +4033,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532418+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964664+00:00"
     },
     {
       "id": "52739895TOPICSen",
@@ -4053,7 +4053,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532606+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964897+00:00"
     },
     {
       "id": "52929366TOPICSen",
@@ -4073,7 +4073,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533043+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965459+00:00"
     },
     {
       "id": "53295353TOPICSen",
@@ -4093,7 +4093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533348+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965846+00:00"
     },
     {
       "id": "51474244TOPICSen",
@@ -4113,7 +4113,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532209+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964387+00:00"
     },
     {
       "id": "51474264TOPICSen",
@@ -4133,7 +4133,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532194+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964369+00:00"
     },
     {
       "id": "51474284TOPICSen",
@@ -4153,7 +4153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532201+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964378+00:00"
     },
     {
       "id": "52171134TOPICSen",
@@ -4173,7 +4173,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532187+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964359+00:00"
     },
     {
       "id": "52171217TOPICSen",
@@ -4193,7 +4193,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532216+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964405+00:00"
     },
     {
       "id": "52252519TOPICSen",
@@ -4213,7 +4213,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532710+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965037+00:00"
     },
     {
       "id": "52948028TOPICSen",
@@ -4233,7 +4233,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533187+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965646+00:00"
     },
     {
       "id": "52951142TOPICSen",
@@ -4253,7 +4253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533422+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965943+00:00"
     },
     {
       "id": "16781COMPETITIVE_CALLen",
@@ -4273,7 +4273,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532240+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964434+00:00"
     },
     {
       "id": "52359060TOPICSen",
@@ -4293,7 +4293,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531069+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962949+00:00"
     },
     {
       "id": "52503519TOPICSen",
@@ -4313,7 +4313,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533295+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965784+00:00"
     },
     {
       "id": "51659859TOPICSen",
@@ -4333,7 +4333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531350+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963306+00:00"
     },
     {
       "id": "50127765TOPICSen",
@@ -4353,7 +4353,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530480+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962205+00:00"
     },
     {
       "id": "50128974TOPICSen",
@@ -4373,7 +4373,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533381+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965889+00:00"
     },
     {
       "id": "50129018TOPICSen",
@@ -4393,7 +4393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533368+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965871+00:00"
     },
     {
       "id": "50129041TOPICSen",
@@ -4413,7 +4413,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533374+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965879+00:00"
     },
     {
       "id": "50129079TOPICSen",
@@ -4433,7 +4433,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533393+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965906+00:00"
     },
     {
       "id": "50129170TOPICSen",
@@ -4453,7 +4453,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533354+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965854+00:00"
     },
     {
       "id": "50129614TOPICSen",
@@ -4473,7 +4473,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533387+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965898+00:00"
     },
     {
       "id": "50129635TOPICSen",
@@ -4493,7 +4493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533361+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965863+00:00"
     },
     {
       "id": "51121982TOPICSen",
@@ -4513,7 +4513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532070+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964220+00:00"
     },
     {
       "id": "52617992TOPICSen",
@@ -4533,7 +4533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532516+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964785+00:00"
     },
     {
       "id": "52762960TOPICSen",
@@ -4553,7 +4553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532458+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964707+00:00"
     },
     {
       "id": "15342COMPETITIVE_CALLen",
@@ -4573,7 +4573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530146+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961794+00:00"
     },
     {
       "id": "53346112TOPICSen",
@@ -4593,7 +4593,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533267+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965751+00:00"
     },
     {
       "id": "53346144TOPICSen",
@@ -4613,7 +4613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533275+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965759+00:00"
     },
     {
       "id": "52456240TOPICSen",
@@ -4633,7 +4633,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533060+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965478+00:00"
     },
     {
       "id": "50133030TOPICSen",
@@ -4653,7 +4653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531100+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962982+00:00"
     },
     {
       "id": "50133046TOPICSen",
@@ -4673,7 +4673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531106+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962990+00:00"
     },
     {
       "id": "50133060TOPICSen",
@@ -4693,7 +4693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531113+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962999+00:00"
     },
     {
       "id": "50133076TOPICSen",
@@ -4713,7 +4713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531092+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962974+00:00"
     },
     {
       "id": "50133091TOPICSen",
@@ -4733,7 +4733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530331+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962019+00:00"
     },
     {
       "id": "52617926TOPICSen",
@@ -4753,7 +4753,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530457+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962179+00:00"
     },
     {
       "id": "52617949TOPICSen",
@@ -4773,7 +4773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530473+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962197+00:00"
     },
     {
       "id": "50131779TOPICSen",
@@ -4793,7 +4793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533115+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965554+00:00"
     },
     {
       "id": "50131803TOPICSen",
@@ -4813,7 +4813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533136+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965578+00:00"
     },
     {
       "id": "50131822TOPICSen",
@@ -4833,7 +4833,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533148+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965595+00:00"
     },
     {
       "id": "50131847TOPICSen",
@@ -4853,7 +4853,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533142+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965586+00:00"
     },
     {
       "id": "50131870TOPICSen",
@@ -4873,7 +4873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533122+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965562+00:00"
     },
     {
       "id": "50131894TOPICSen",
@@ -4893,7 +4893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533155+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965603+00:00"
     },
     {
       "id": "50131925TOPICSen",
@@ -4913,7 +4913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533129+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965570+00:00"
     },
     {
       "id": "50131963TOPICSen",
@@ -4933,7 +4933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533109+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965545+00:00"
     },
     {
       "id": "50131996TOPICSen",
@@ -4953,7 +4953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533174+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965629+00:00"
     },
     {
       "id": "50132021TOPICSen",
@@ -4973,7 +4973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533162+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965613+00:00"
     },
     {
       "id": "50132047TOPICSen",
@@ -4993,7 +4993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533167+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965621+00:00"
     },
     {
       "id": "50132158TOPICSen",
@@ -5013,7 +5013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533282+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965767+00:00"
     },
     {
       "id": "50129191TOPICSen",
@@ -5033,7 +5033,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530345+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962037+00:00"
     },
     {
       "id": "50129216TOPICSen",
@@ -5053,7 +5053,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530386+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962088+00:00"
     },
     {
       "id": "50129422TOPICSen",
@@ -5073,7 +5073,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531241+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963164+00:00"
     },
     {
       "id": "50129484TOPICSen",
@@ -5093,7 +5093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530380+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962079+00:00"
     },
     {
       "id": "50129528TOPICSen",
@@ -5113,7 +5113,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531235+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963156+00:00"
     },
     {
       "id": "50129572TOPICSen",
@@ -5133,7 +5133,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531049+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962918+00:00"
     },
     {
       "id": "50129746TOPICSen",
@@ -5153,7 +5153,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530406+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962113+00:00"
     },
     {
       "id": "50129970TOPICSen",
@@ -5173,7 +5173,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530246+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961909+00:00"
     },
     {
       "id": "50130058TOPICSen",
@@ -5193,7 +5193,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530229+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961893+00:00"
     },
     {
       "id": "52696102TOPICSen",
@@ -5213,7 +5213,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531368+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963326+00:00"
     },
     {
       "id": "50132976TOPICSen",
@@ -5233,7 +5233,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531154+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963052+00:00"
     },
     {
       "id": "50132993TOPICSen",
@@ -5253,7 +5253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531084+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962965+00:00"
     },
     {
       "id": "50138178TOPICSen",
@@ -5273,7 +5273,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531397+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963360+00:00"
     },
     {
       "id": "50138274TOPICSen",
@@ -5293,7 +5293,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531412+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963379+00:00"
     },
     {
       "id": "50138343TOPICSen",
@@ -5313,7 +5313,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531432+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963415+00:00"
     },
     {
       "id": "50138380TOPICSen",
@@ -5333,7 +5333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531404+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963368+00:00"
     },
     {
       "id": "50138428TOPICSen",
@@ -5353,7 +5353,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531441+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963424+00:00"
     },
     {
       "id": "50138880TOPICSen",
@@ -5373,7 +5373,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532044+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964184+00:00"
     },
     {
       "id": "50138913TOPICSen",
@@ -5393,7 +5393,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532016+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964148+00:00"
     },
     {
       "id": "50138952TOPICSen",
@@ -5413,7 +5413,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532142+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964307+00:00"
     },
     {
       "id": "50138999TOPICSen",
@@ -5433,7 +5433,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532114+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964270+00:00"
     },
     {
       "id": "50139030TOPICSen",
@@ -5453,7 +5453,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532057+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964203+00:00"
     },
     {
       "id": "50139062TOPICSen",
@@ -5473,7 +5473,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532091+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964245+00:00"
     },
     {
       "id": "52692782TOPICSen",
@@ -5493,7 +5493,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532167+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964334+00:00"
     },
     {
       "id": "50134367TOPICSen",
@@ -5513,7 +5513,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532662+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964975+00:00"
     },
     {
       "id": "50136868TOPICSen",
@@ -5533,7 +5533,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532173+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964342+00:00"
     },
     {
       "id": "50128912TOPICSen",
@@ -5553,7 +5553,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531260+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963189+00:00"
     },
     {
       "id": "50128935TOPICSen",
@@ -5573,7 +5573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531273+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963207+00:00"
     },
     {
       "id": "50129307TOPICSen",
@@ -5593,7 +5593,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530338+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962027+00:00"
     },
     {
       "id": "50130325TOPICSen",
@@ -5613,7 +5613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530366+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962062+00:00"
     },
     {
       "id": "50130350TOPICSen",
@@ -5633,7 +5633,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530253+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961923+00:00"
     },
     {
       "id": "50130372TOPICSen",
@@ -5653,7 +5653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531183+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963084+00:00"
     },
     {
       "id": "50130465TOPICSen",
@@ -5673,7 +5673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530303+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961985+00:00"
     },
     {
       "id": "50130488TOPICSen",
@@ -5693,7 +5693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531168+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963068+00:00"
     },
     {
       "id": "50130511TOPICSen",
@@ -5713,7 +5713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531215+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963128+00:00"
     },
     {
       "id": "50130557TOPICSen",
@@ -5733,7 +5733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531077+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962957+00:00"
     },
     {
       "id": "50130852TOPICSen",
@@ -5753,7 +5753,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531062+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962939+00:00"
     },
     {
       "id": "50130896TOPICSen",
@@ -5773,7 +5773,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531056+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962926+00:00"
     },
     {
       "id": "50130943TOPICSen",
@@ -5793,7 +5793,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531141+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963036+00:00"
     },
     {
       "id": "52693007TOPICSen",
@@ -5813,7 +5813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532987+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965385+00:00"
     },
     {
       "id": "50140817TOPICSen",
@@ -5833,7 +5833,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531897+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964011+00:00"
     },
     {
       "id": "50140854TOPICSen",
@@ -5853,7 +5853,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531765+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963845+00:00"
     },
     {
       "id": "50140890TOPICSen",
@@ -5873,7 +5873,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531925+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964047+00:00"
     },
     {
       "id": "50138580TOPICSen",
@@ -5893,7 +5893,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532158+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964325+00:00"
     },
     {
       "id": "50138610TOPICSen",
@@ -5913,7 +5913,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532076+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964228+00:00"
     },
     {
       "id": "50138654TOPICSen",
@@ -5933,7 +5933,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532149+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964315+00:00"
     },
     {
       "id": "50138679TOPICSen",
@@ -5953,7 +5953,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531996+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964138+00:00"
     },
     {
       "id": "50138713TOPICSen",
@@ -5973,7 +5973,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532063+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964211+00:00"
     },
     {
       "id": "50138745TOPICSen",
@@ -5993,7 +5993,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531390+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963351+00:00"
     },
     {
       "id": "50138782TOPICSen",
@@ -6013,7 +6013,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531990+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964130+00:00"
     },
     {
       "id": "53498805TOPICSen",
@@ -6033,7 +6033,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533435+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965959+00:00"
     },
     {
       "id": "53498831TOPICSen",
@@ -6053,7 +6053,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533415+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965934+00:00"
     },
     {
       "id": "53498857TOPICSen",
@@ -6073,7 +6073,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533441+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965967+00:00"
     },
     {
       "id": "53498882TOPICSen",
@@ -6093,7 +6093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533407+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965926+00:00"
     },
     {
       "id": "53498908TOPICSen",
@@ -6113,7 +6113,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533400+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965917+00:00"
     },
     {
       "id": "53498933TOPICSen",
@@ -6133,7 +6133,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533428+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965951+00:00"
     },
     {
       "id": "13301COMPETITIVE_CALLen",
@@ -6153,7 +6153,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529914+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961531+00:00"
     },
     {
       "id": "52547845TOPICSen",
@@ -6173,7 +6173,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532980+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965376+00:00"
     },
     {
       "id": "50143142TOPICSen",
@@ -6193,7 +6193,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531477+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963469+00:00"
     },
     {
       "id": "50142819TOPICSen",
@@ -6213,7 +6213,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531637+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963679+00:00"
     },
     {
       "id": "50142844TOPICSen",
@@ -6233,7 +6233,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531717+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963783+00:00"
     },
     {
       "id": "50142868TOPICSen",
@@ -6253,7 +6253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531710+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963774+00:00"
     },
     {
       "id": "50142889TOPICSen",
@@ -6273,7 +6273,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531703+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963766+00:00"
     },
     {
       "id": "50142911TOPICSen",
@@ -6293,7 +6293,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531610+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963643+00:00"
     },
     {
       "id": "50142930TOPICSen",
@@ -6313,7 +6313,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531666+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963713+00:00"
     },
     {
       "id": "50142949TOPICSen",
@@ -6333,7 +6333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531672+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963721+00:00"
     },
     {
       "id": "50142968TOPICSen",
@@ -6353,7 +6353,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531652+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963695+00:00"
     },
     {
       "id": "50142995TOPICSen",
@@ -6373,7 +6373,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531679+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963730+00:00"
     },
     {
       "id": "50143015TOPICSen",
@@ -6393,7 +6393,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531723+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963792+00:00"
     },
     {
       "id": "52664675TOPICSen",
@@ -6413,7 +6413,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531883+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963992+00:00"
     },
     {
       "id": "52664744TOPICSen",
@@ -6433,7 +6433,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531797+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963883+00:00"
     },
     {
       "id": "52664775TOPICSen",
@@ -6453,7 +6453,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531773+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963855+00:00"
     },
     {
       "id": "52642893TOPICSen",
@@ -6473,7 +6473,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530915+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962773+00:00"
     },
     {
       "id": "14943COMPETITIVE_CALLen",
@@ -6493,7 +6493,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530159+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961809+00:00"
     },
     {
       "id": "16961COMPETITIVE_CALLen",
@@ -6513,7 +6513,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532554+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964830+00:00"
     },
     {
       "id": "16962COMPETITIVE_CALLen",
@@ -6533,7 +6533,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532547+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964822+00:00"
     },
     {
       "id": "16981COMPETITIVE_CALLen",
@@ -6553,7 +6553,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532540+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964814+00:00"
     },
     {
       "id": "10941COMPETITIVE_CALLen",
@@ -6573,7 +6573,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529896+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961507+00:00"
     },
     {
       "id": "17236COMPETITIVE_CALLen",
@@ -6593,7 +6593,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533211+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965676+00:00"
     },
     {
       "id": "50312599TOPICSen",
@@ -6613,7 +6613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530711+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962510+00:00"
     },
     {
       "id": "50312640TOPICSen",
@@ -6633,7 +6633,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530847+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962683+00:00"
     },
     {
       "id": "50312687TOPICSen",
@@ -6653,7 +6653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530782+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962599+00:00"
     },
     {
       "id": "50312746TOPICSen",
@@ -6673,7 +6673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530841+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962675+00:00"
     },
     {
       "id": "50312783TOPICSen",
@@ -6693,7 +6693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530789+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962607+00:00"
     },
     {
       "id": "50143245TOPICSen",
@@ -6713,7 +6713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531590+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963617+00:00"
     },
     {
       "id": "50222141TOPICSen",
@@ -6733,7 +6733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531028+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962893+00:00"
     },
     {
       "id": "50143165TOPICSen",
@@ -6753,7 +6753,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531503+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963505+00:00"
     },
     {
       "id": "50143180TOPICSen",
@@ -6773,7 +6773,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531570+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963589+00:00"
     },
     {
       "id": "50129330TOPICSen",
@@ -6793,7 +6793,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530352+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962046+00:00"
     },
     {
       "id": "50130105TOPICSen",
@@ -6813,7 +6813,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530260+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961933+00:00"
     },
     {
       "id": "50130167TOPICSen",
@@ -6833,7 +6833,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531189+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963093+00:00"
     },
     {
       "id": "50130209TOPICSen",
@@ -6853,7 +6853,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530311+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961994+00:00"
     },
     {
       "id": "50130230TOPICSen",
@@ -6873,7 +6873,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531175+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963076+00:00"
     },
     {
       "id": "50130277TOPICSen",
@@ -6893,7 +6893,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530373+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962071+00:00"
     },
     {
       "id": "50138041TOPICSen",
@@ -6913,7 +6913,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531426+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963405+00:00"
     },
     {
       "id": "50138063TOPICSen",
@@ -6933,7 +6933,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531419+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963387+00:00"
     },
     {
       "id": "50142710TOPICSen",
@@ -6953,7 +6953,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531603+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963634+00:00"
     },
     {
       "id": "50142731TOPICSen",
@@ -6973,7 +6973,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531659+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963704+00:00"
     },
     {
       "id": "50142752TOPICSen",
@@ -6993,7 +6993,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531685+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963742+00:00"
     },
     {
       "id": "50142773TOPICSen",
@@ -7013,7 +7013,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531644+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963687+00:00"
     },
     {
       "id": "50148703TOPICSen",
@@ -7033,7 +7033,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530515+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962254+00:00"
     },
     {
       "id": "50161057TOPICSen",
@@ -7053,7 +7053,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530433+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962151+00:00"
     },
     {
       "id": "50161078TOPICSen",
@@ -7073,7 +7073,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530440+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962160+00:00"
     },
     {
       "id": "50161094TOPICSen",
@@ -7093,7 +7093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530988+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962860+00:00"
     },
     {
       "id": "50140616TOPICSen",
@@ -7113,7 +7113,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531918+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964038+00:00"
     },
     {
       "id": "50140647TOPICSen",
@@ -7133,7 +7133,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531905+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964020+00:00"
     },
     {
       "id": "50140670TOPICSen",
@@ -7153,7 +7153,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531911+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964028+00:00"
     },
     {
       "id": "50140685TOPICSen",
@@ -7173,7 +7173,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531948+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964073+00:00"
     },
     {
       "id": "50140712TOPICSen",
@@ -7193,7 +7193,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531737+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963808+00:00"
     },
     {
       "id": "50140738TOPICSen",
@@ -7213,7 +7213,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531730+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963800+00:00"
     },
     {
       "id": "50161195TOPICSen",
@@ -7233,7 +7233,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531315+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963258+00:00"
     },
     {
       "id": "50161234TOPICSen",
@@ -7253,7 +7253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531280+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963216+00:00"
     },
     {
       "id": "50161257TOPICSen",
@@ -7273,7 +7273,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530413+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962124+00:00"
     },
     {
       "id": "52676497TOPICSen",
@@ -7293,7 +7293,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530908+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962764+00:00"
     },
     {
       "id": "53488661TOPICSen",
@@ -7313,7 +7313,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533457+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965988+00:00"
     },
     {
       "id": "53488696TOPICSen",
@@ -7333,7 +7333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533464+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965999+00:00"
     },
     {
       "id": "50139152TOPICSen",
@@ -7353,7 +7353,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532121+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964281+00:00"
     },
     {
       "id": "50139206TOPICSen",
@@ -7373,7 +7373,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532099+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964253+00:00"
     },
     {
       "id": "50139229TOPICSen",
@@ -7393,7 +7393,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532107+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964262+00:00"
     },
     {
       "id": "50139277TOPICSen",
@@ -7413,7 +7413,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532050+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964194+00:00"
     },
     {
       "id": "50139318TOPICSen",
@@ -7433,7 +7433,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531361+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963318+00:00"
     },
     {
       "id": "50139355TOPICSen",
@@ -7453,7 +7453,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532136+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964298+00:00"
     },
     {
       "id": "50139386TOPICSen",
@@ -7473,7 +7473,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531976+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964112+00:00"
     },
     {
       "id": "50139433TOPICSen",
@@ -7493,7 +7493,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531962+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964093+00:00"
     },
     {
       "id": "50139729TOPICSen",
@@ -7513,7 +7513,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532024+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964158+00:00"
     },
     {
       "id": "50139777TOPICSen",
@@ -7533,7 +7533,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532129+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964290+00:00"
     },
     {
       "id": "50143265TOPICSen",
@@ -7553,7 +7553,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531596+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963625+00:00"
     },
     {
       "id": "50143298TOPICSen",
@@ -7573,7 +7573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531469+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963461+00:00"
     },
     {
       "id": "50143353TOPICSen",
@@ -7593,7 +7593,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531509+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963512+00:00"
     },
     {
       "id": "50143388TOPICSen",
@@ -7613,7 +7613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531563+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963580+00:00"
     },
     {
       "id": "50143442TOPICSen",
@@ -7633,7 +7633,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531496+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963496+00:00"
     },
     {
       "id": "50143487TOPICSen",
@@ -7653,7 +7653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531551+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963563+00:00"
     },
     {
       "id": "50143526TOPICSen",
@@ -7673,7 +7673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531543+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963553+00:00"
     },
     {
       "id": "50143569TOPICSen",
@@ -7693,7 +7693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531537+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963545+00:00"
     },
     {
       "id": "50143646TOPICSen",
@@ -7713,7 +7713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531576+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963598+00:00"
     },
     {
       "id": "50143688TOPICSen",
@@ -7733,7 +7733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531525+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963529+00:00"
     },
     {
       "id": "50143730TOPICSen",
@@ -7753,7 +7753,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531518+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963520+00:00"
     },
     {
       "id": "50143773TOPICSen",
@@ -7773,7 +7773,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531583+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963606+00:00"
     },
     {
       "id": "50143814TOPICSen",
@@ -7793,7 +7793,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531623+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963662+00:00"
     },
     {
       "id": "50143860TOPICSen",
@@ -7813,7 +7813,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531531+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963537+00:00"
     },
     {
       "id": "50143905TOPICSen",
@@ -7833,7 +7833,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531557+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963572+00:00"
     },
     {
       "id": "50143935TOPICSen",
@@ -7853,7 +7853,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531455+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963441+00:00"
     },
     {
       "id": "50143989TOPICSen",
@@ -7873,7 +7873,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531697+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963758+00:00"
     },
     {
       "id": "50144033TOPICSen",
@@ -7893,7 +7893,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531691+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963750+00:00"
     },
     {
       "id": "50144225TOPICSen",
@@ -7913,7 +7913,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531631+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963670+00:00"
     },
     {
       "id": "50144278TOPICSen",
@@ -7933,7 +7933,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531490+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963488+00:00"
     },
     {
       "id": "50144312TOPICSen",
@@ -7953,7 +7953,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531483+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963480+00:00"
     },
     {
       "id": "50144359TOPICSen",
@@ -7973,7 +7973,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531462+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963452+00:00"
     },
     {
       "id": "50144403TOPICSen",
@@ -7993,7 +7993,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531449+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963432+00:00"
     },
     {
       "id": "50145282TOPICSen",
@@ -8013,7 +8013,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532634+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964937+00:00"
     },
     {
       "id": "50145692TOPICSen",
@@ -8033,7 +8033,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532736+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965073+00:00"
     },
     {
       "id": "50146083TOPICSen",
@@ -8053,7 +8053,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532802+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965151+00:00"
     },
     {
       "id": "50146116TOPICSen",
@@ -8073,7 +8073,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532795+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965142+00:00"
     },
     {
       "id": "50146154TOPICSen",
@@ -8093,7 +8093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532809+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965160+00:00"
     },
     {
       "id": "50146287TOPICSen",
@@ -8113,7 +8113,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532627+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964927+00:00"
     },
     {
       "id": "50146494TOPICSen",
@@ -8133,7 +8133,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532730+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965064+00:00"
     },
     {
       "id": "50146556TOPICSen",
@@ -8153,7 +8153,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532621+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964917+00:00"
     },
     {
       "id": "50146584TOPICSen",
@@ -8173,7 +8173,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532773+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965115+00:00"
     },
     {
       "id": "50146610TOPICSen",
@@ -8193,7 +8193,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532767+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965107+00:00"
     },
     {
       "id": "50146633TOPICSen",
@@ -8213,7 +8213,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532723+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965056+00:00"
     },
     {
       "id": "50146803TOPICSen",
@@ -8233,7 +8233,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532788+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965134+00:00"
     },
     {
       "id": "50146852TOPICSen",
@@ -8253,7 +8253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532781+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965123+00:00"
     },
     {
       "id": "50146905TOPICSen",
@@ -8273,7 +8273,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532743+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965081+00:00"
     },
     {
       "id": "50146996TOPICSen",
@@ -8293,7 +8293,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532751+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965090+00:00"
     },
     {
       "id": "50148919TOPICSen",
@@ -8313,7 +8313,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530822+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962648+00:00"
     },
     {
       "id": "50149001TOPICSen",
@@ -8333,7 +8333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530829+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962657+00:00"
     },
     {
       "id": "50149025TOPICSen",
@@ -8353,7 +8353,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530768+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962581+00:00"
     },
     {
       "id": "50149059TOPICSen",
@@ -8373,7 +8373,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530775+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962590+00:00"
     },
     {
       "id": "50149084TOPICSen",
@@ -8393,7 +8393,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530648+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962432+00:00"
     },
     {
       "id": "50149121TOPICSen",
@@ -8413,7 +8413,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530802+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962624+00:00"
     },
     {
       "id": "50149169TOPICSen",
@@ -8433,7 +8433,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530974+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962839+00:00"
     },
     {
       "id": "50149211TOPICSen",
@@ -8453,7 +8453,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530620+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962383+00:00"
     },
     {
       "id": "50149248TOPICSen",
@@ -8473,7 +8473,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530655+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962441+00:00"
     },
     {
       "id": "50149265TOPICSen",
@@ -8493,7 +8493,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530809+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962632+00:00"
     },
     {
       "id": "50149284TOPICSen",
@@ -8513,7 +8513,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530795+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962615+00:00"
     },
     {
       "id": "50149329TOPICSen",
@@ -8533,7 +8533,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530627+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962391+00:00"
     },
     {
       "id": "50149419TOPICSen",
@@ -8553,7 +8553,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530967+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962831+00:00"
     },
     {
       "id": "50149486TOPICSen",
@@ -8573,7 +8573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530669+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962457+00:00"
     },
     {
       "id": "50149561TOPICSen",
@@ -8593,7 +8593,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530614+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962375+00:00"
     },
     {
       "id": "50149595TOPICSen",
@@ -8613,7 +8613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530953+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962814+00:00"
     },
     {
       "id": "50149633TOPICSen",
@@ -8633,7 +8633,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530960+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962822+00:00"
     },
     {
       "id": "50149659TOPICSen",
@@ -8653,7 +8653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530923+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962781+00:00"
     },
     {
       "id": "50149693TOPICSen",
@@ -8673,7 +8673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530675+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962465+00:00"
     },
     {
       "id": "50149727TOPICSen",
@@ -8693,7 +8693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530947+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962806+00:00"
     },
     {
       "id": "50149768TOPICSen",
@@ -8713,7 +8713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530937+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962798+00:00"
     },
     {
       "id": "50149799TOPICSen",
@@ -8733,7 +8733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530930+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962790+00:00"
     },
     {
       "id": "50149852TOPICSen",
@@ -8753,7 +8753,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530633+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962414+00:00"
     },
     {
       "id": "50149891TOPICSen",
@@ -8773,7 +8773,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530661+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962449+00:00"
     },
     {
       "id": "50128894TOPICSen",
@@ -8793,7 +8793,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531308+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963250+00:00"
     },
     {
       "id": "50130643TOPICSen",
@@ -8813,7 +8813,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531129+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963017+00:00"
     },
     {
       "id": "50130689TOPICSen",
@@ -8833,7 +8833,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531135+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963027+00:00"
     },
     {
       "id": "50130730TOPICSen",
@@ -8853,7 +8853,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531147+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963043+00:00"
     },
     {
       "id": "50130810TOPICSen",
@@ -8873,7 +8873,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531120+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963007+00:00"
     },
     {
       "id": "50139513TOPICSen",
@@ -8893,7 +8893,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531955+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964084+00:00"
     },
     {
       "id": "50139548TOPICSen",
@@ -8913,7 +8913,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532031+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964166+00:00"
     },
     {
       "id": "50139571TOPICSen",
@@ -8933,7 +8933,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531384+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963343+00:00"
     },
     {
       "id": "50139607TOPICSen",
@@ -8953,7 +8953,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531970+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964104+00:00"
     },
     {
       "id": "50139644TOPICSen",
@@ -8973,7 +8973,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.532037+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964176+00:00"
     },
     {
       "id": "50147519TOPICSen",
@@ -8993,7 +8993,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530688+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962482+00:00"
     },
     {
       "id": "50147543TOPICSen",
@@ -9013,7 +9013,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530606+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962366+00:00"
     },
     {
       "id": "50147567TOPICSen",
@@ -9033,7 +9033,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530695+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962491+00:00"
     },
     {
       "id": "50147590TOPICSen",
@@ -9053,7 +9053,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530703+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962501+00:00"
     },
     {
       "id": "50147617TOPICSen",
@@ -9073,7 +9073,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530875+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962719+00:00"
     },
     {
       "id": "50147640TOPICSen",
@@ -9093,7 +9093,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530882+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962728+00:00"
     },
     {
       "id": "50147665TOPICSen",
@@ -9113,7 +9113,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530895+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962744+00:00"
     },
     {
       "id": "50147687TOPICSen",
@@ -9133,7 +9133,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530549+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962294+00:00"
     },
     {
       "id": "50147711TOPICSen",
@@ -9153,7 +9153,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530591+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962349+00:00"
     },
     {
       "id": "50147734TOPICSen",
@@ -9173,7 +9173,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530888+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962736+00:00"
     },
     {
       "id": "50147756TOPICSen",
@@ -9193,7 +9193,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530860+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962700+00:00"
     },
     {
       "id": "50147778TOPICSen",
@@ -9213,7 +9213,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530578+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962332+00:00"
     },
     {
       "id": "50147803TOPICSen",
@@ -9233,7 +9233,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530570+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962323+00:00"
     },
     {
       "id": "50147829TOPICSen",
@@ -9253,7 +9253,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530854+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962692+00:00"
     },
     {
       "id": "50147853TOPICSen",
@@ -9273,7 +9273,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530867+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962710+00:00"
     },
     {
       "id": "50147875TOPICSen",
@@ -9293,7 +9293,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530585+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962340+00:00"
     },
     {
       "id": "50147893TOPICSen",
@@ -9313,7 +9313,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530555+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962303+00:00"
     },
     {
       "id": "51121953TOPICSen",
@@ -9333,7 +9333,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531984+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.964122+00:00"
     },
     {
       "id": "50148757TOPICSen",
@@ -9353,7 +9353,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530725+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962527+00:00"
     },
     {
       "id": "50150122TOPICSen",
@@ -9373,7 +9373,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530641+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962423+00:00"
     },
     {
       "id": "52592866TOPICSen",
@@ -9393,7 +9393,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533245+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965723+00:00"
     },
     {
       "id": "50129464TOPICSen",
@@ -9413,7 +9413,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530400+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962105+00:00"
     },
     {
       "id": "50129698TOPICSen",
@@ -9433,7 +9433,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530296+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961977+00:00"
     },
     {
       "id": "50129793TOPICSen",
@@ -9453,7 +9453,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530318+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962002+00:00"
     },
     {
       "id": "50129841TOPICSen",
@@ -9473,7 +9473,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530274+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961951+00:00"
     },
     {
       "id": "50129862TOPICSen",
@@ -9493,7 +9493,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530238+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961901+00:00"
     },
     {
       "id": "50129926TOPICSen",
@@ -9513,7 +9513,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530222+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961884+00:00"
     },
     {
       "id": "50129948TOPICSen",
@@ -9533,7 +9533,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530267+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961941+00:00"
     },
     {
       "id": "50130080TOPICSen",
@@ -9553,7 +9553,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530216+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961876+00:00"
     },
     {
       "id": "50148180TOPICSen",
@@ -9573,7 +9573,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530748+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962553+00:00"
     },
     {
       "id": "50148234TOPICSen",
@@ -9593,7 +9593,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530541+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962286+00:00"
     },
     {
       "id": "50148280TOPICSen",
@@ -9613,7 +9613,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530733+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962536+00:00"
     },
     {
       "id": "50148317TOPICSen",
@@ -9633,7 +9633,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530755+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962563+00:00"
     },
     {
       "id": "50148353TOPICSen",
@@ -9653,7 +9653,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530761+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962572+00:00"
     },
     {
       "id": "50148390TOPICSen",
@@ -9673,7 +9673,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530532+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962275+00:00"
     },
     {
       "id": "50148438TOPICSen",
@@ -9693,7 +9693,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530742+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962545+00:00"
     },
     {
       "id": "50148490TOPICSen",
@@ -9713,7 +9713,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530719+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962519+00:00"
     },
     {
       "id": "50148548TOPICSen",
@@ -9733,7 +9733,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530682+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962474+00:00"
     },
     {
       "id": "52689240TOPICSen",
@@ -9753,7 +9753,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.531294+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.963233+00:00"
     },
     {
       "id": "52867543TOPICSen",
@@ -9773,7 +9773,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533020+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965431+00:00"
     },
     {
       "id": "15082COMPETITIVE_CALLen",
@@ -9793,7 +9793,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530132+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961776+00:00"
     },
     {
       "id": "11674COMPETITIVE_CALLen",
@@ -9813,7 +9813,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529849+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961451+00:00"
     },
     {
       "id": "50312660TOPICSen",
@@ -9833,7 +9833,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530835+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962665+00:00"
     },
     {
       "id": "50312892TOPICSen",
@@ -9853,7 +9853,7 @@
       "status": "31094501",
       "status_code": "31094501",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530816+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.962640+00:00"
     },
     {
       "id": "11702COMPETITIVE_CALLen",
@@ -9873,7 +9873,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.529836+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961431+00:00"
     },
     {
       "id": "15083COMPETITIVE_CALLen",
@@ -9893,7 +9893,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530140+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961785+00:00"
     },
     {
       "id": "15569COMPETITIVE_CALLen",
@@ -9913,7 +9913,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.530168+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.961820+00:00"
     },
     {
       "id": "52968829TOPICSen",
@@ -9933,7 +9933,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533196+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.965656+00:00"
     },
     {
       "id": "167264PROSPECTSEN",
@@ -9953,7 +9953,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533654+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966208+00:00"
     },
     {
       "id": "170893PROSPECTSEN",
@@ -9973,7 +9973,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533647+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966198+00:00"
     },
     {
       "id": "172802PROSPECTSEN",
@@ -9993,7 +9993,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533488+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966028+00:00"
     },
     {
       "id": "173638PROSPECTSEN",
@@ -10013,7 +10013,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533660+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966217+00:00"
     },
     {
       "id": "173682PROSPECTSEN",
@@ -10033,7 +10033,7 @@
       "status": "31094502",
       "status_code": "31094502",
       "portal_status_interpretation": "open-or-forthcoming-filter-result; not individually verified",
-      "last_discovered_at": "2026-11-20T19:25:06.533667+00:00"
+      "last_discovered_at": "2026-11-20T20:16:32.966225+00:00"
     }
   ],
   "error": null
