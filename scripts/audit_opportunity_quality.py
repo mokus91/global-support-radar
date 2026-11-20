@@ -21,6 +21,7 @@ report = {
     "missing_titles": 0,
     "unverified_status": 0,
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
+    "application_state_tiers": {"verified_open": 0, "likely_available": 0, "needs_verification": 0, "expired_or_closed": 0},
     "verification_dimensions": {"open_status_verified": 0, "eligibility_verified": 0, "amount_verified": 0},
     "feed_summary": [],
     "feed_health_summary": [],
@@ -49,6 +50,27 @@ AMOUNT_FIELDS = ("amount_maximum", "amount_max", "budget", "total_call_budget", 
 ELIGIBILITY_FIELDS = ("eligibility", "eligible_applicants", "beneficiary", "target_group", "applicant_type")
 
 status_observations = {}
+
+def parse_deadline(value):
+    if not value:
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(str(value).strip().replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=dt.timezone.utc)
+        return parsed.astimezone(dt.timezone.utc)
+    except (TypeError, ValueError):
+        try:
+            return dt.datetime.combine(dt.date.fromisoformat(str(value)[:10]), dt.time.min, tzinfo=dt.timezone.utc)
+        except ValueError:
+            return None
+
+def is_explicitly_closed(value):
+    text = str(value or "").strip().lower().replace("_", "-")
+    return any(token in text for token in (
+        "closed", "withdrawn", "expired", "cancelled", "canceled",
+        "not-accepting", "application-ended", "call-ended"
+    ))
 
 for feed in manifest.get("feeds", []):
     report["feed_health_summary"].append({
@@ -179,6 +201,27 @@ for feed in manifest.get("feeds", []):
                 deadline_state = "expired" if deadline_day < today else "upcoming"
             except ValueError:
                 deadline_state = "unparsed"
+        # Conservative application-state classification. A candidate/API filter
+        # never becomes verified-open; eligibility is always a separate check.
+        deadline_dt = parse_deadline(deadline_value)
+        explicit_closed = is_explicitly_closed(source_status_value) or is_explicitly_closed(record.get("status"))
+        if explicit_closed or (deadline_dt is not None and deadline_dt < dt.datetime.now(dt.timezone.utc)):
+            application_state = "expired_or_closed"
+        elif (
+            record.get("status") in {"open-and-current", "verified-open"}
+            and ("verified" in str(record.get("verification_status") or "").lower())
+            and "unverified" not in str(record.get("verification_status") or "").lower()
+        ):
+            application_state = "verified_open"
+        elif (
+            "official_api_live_acceptance_candidate" in str(record.get("verification_status") or "")
+            or str(record.get("status") or "").lower() in {"acceptance-open-api-filtered", "open-and-current"}
+        ):
+            application_state = "likely_available"
+        else:
+            application_state = "needs_verification"
+        report["application_state_tiers"][application_state] += 1
+
         if title or url:
             report["review_queue"].append({
                 "source_file": filename,
@@ -188,6 +231,7 @@ for feed in manifest.get("feeds", []):
                 "deadline": str(deadline_value or ""),
                 "deadline_state": deadline_state,
                 "source_status": str(source_status_value or "")[:100],
+                "application_state": application_state,
                 "opportunity_type": str(record.get("opportunity_type") or "unclassified"),
                 "score": score,
                 "missing_details": missing_details
