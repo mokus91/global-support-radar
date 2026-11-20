@@ -1,6 +1,15 @@
 name: Automated organization report production
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/report-profiles.json'
+      - 'scripts/build_report_portfolio.py'
+      - 'scripts/generate_organization_report.py'
+      - 'scripts/test_build_report_portfolio.py'
+      - 'scripts/test_generate_organization_report.py'
+      - '.github/workflows/organization-report-production.yml'
   workflow_dispatch:
   schedule:
     # Daily report build, outside the busy hour boundary.
