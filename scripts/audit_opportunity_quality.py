@@ -209,8 +209,14 @@ for feed in manifest.get("feeds", []):
             application_state = "expired_or_closed"
         elif (
             record.get("status") in {"open-and-current", "verified-open"}
-            and ("verified" in str(record.get("verification_status") or "").lower())
-            and "unverified" not in str(record.get("verification_status") or "").lower()
+            and (
+                str(record.get("verification_status") or "").strip().lower()
+                in {"official_page_open_status_and_amount_checked", "official-page-open-status-and-amount-checked"}
+                or (
+                    "verified" in str(record.get("verification_status") or "").lower()
+                    and "unverified" not in str(record.get("verification_status") or "").lower()
+                )
+            )
         ):
             application_state = "verified_open"
         elif (
