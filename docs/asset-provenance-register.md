@@ -9,9 +9,10 @@
 
 | Asset | Current observation | Origin evidence | Reuse status | Required action |
 |---|---|---|---|---|
-| `icon.svg` | Simple geometric magnifying-glass / plus motif; SVG source is present in the repository | Owner confirms they did not personally create the project icons; original creator/source is not established | Unverified; commercial reuse permission not established | Identify the original source and permission, or replace with a newly documented project asset |
-| `icon-192.png` | PNG application icon | Owner confirms they did not personally create the project icons; source artwork/export history not established | Unverified; commercial reuse permission not established | Identify creator and source file, or replace if origin or permission cannot be established |
-| `icon-512-maskable.png` | PNG maskable application icon | Owner confirms they did not personally create the project icons; source artwork/export history not established | Unverified; commercial reuse permission not established | Identify creator and source file, or replace if origin or permission cannot be established |
+| `icon.svg` | Newly written 512×512 vector app icon; magnifier plus motif, project colour palette | Created as AI-assisted code output for this project on 2026-11-20; prior unverified SVG was replaced | Current asset source is documented; legal copyright status is not guaranteed solely by AI generation | Retain this source file and this dated record; review legal status before granting exclusive rights |
+| `icon-maskable.svg` | Newly written 512×512 vector maskable PWA icon; central artwork stays within a conservative safe area | Created as AI-assisted code output for this project on 2026-11-20 | Current asset source is documented; legal copyright status is not guaranteed solely by AI generation | Retain this source file and this dated record; review legal status before granting exclusive rights |
+| `icon-192.png` | Former PNG app icon | Owner confirms they did not personally create it; origin and licence unknown | Removed from active project on 2026-11-20 | Excluded from the current application and licence delivery |
+| `icon-512-maskable.png` | Former PNG maskable app icon | Owner confirms they did not personally create it; origin and licence unknown | Removed from active project on 2026-11-20 | Excluded from the current application and licence delivery |
 
 ## Required record for each future asset
 
@@ -34,4 +35,11 @@ Record all of the following before adding an asset:
 
 ## Current conclusion
 
-The owner has confirmed that they did not personally create the three listed icons. Their original creator/source and commercial reuse permissions remain unverified. No claim of exclusive rights over these three assets should be made until the missing evidence is collected or the assets are replaced.
+The owner confirmed that they did not personally create the previous icons. The two PNG files were removed from the active application and replaced by documented SVG source files written for this project with AI assistance. The prior SVG content was replaced. This records the current files' provenance but does not guarantee copyright protection or exclusivity under applicable law.
+
+
+## 2026-11-20 replacement implementation
+
+The current app uses `icon.svg` and `icon-maskable.svg`. Both are self-contained vector files written directly for this project as AI-assisted development output. The PWA manifest and service-worker shell cache now reference these SVG files. The old PNG files were deleted from the current branch, and the homepage no longer advertises them as Apple-touch or social-preview images.
+
+The ten translated landing pages were checked and contained no references to the removed PNG files. The homepage, manifest and service worker were updated. Browser installation, iOS home-screen appearance, maskable cropping and social-preview rendering still require device/browser testing. No claim is made that SVG icons provide a raster social preview; a separately documented raster export can be added later if needed.
