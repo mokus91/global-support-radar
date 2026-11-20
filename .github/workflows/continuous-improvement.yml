@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - "scripts/generate_improvement_backlog.py"
+      - "scripts/generate_organization_report.py"
       - "scripts/validate_project.py"
       - "scripts/audit_opportunity_quality.py"
       - "scripts/test_*.py"
