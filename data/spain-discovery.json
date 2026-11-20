@@ -1,15 +1,54 @@
 {
-  "generated_at": "2026-11-20T15:26:12.752487+00:00",
+  "generated_at": "2026-11-20T16:40:38.732622+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
-  "records_count": 5,
+  "records_count": 8,
   "query_errors": [],
   "records": [
     {
-      "id": "943462",
+      "id": "943787",
       "country_code": "ES",
-      "title_original": "III Convocatoria de Premios a Trabajos de fin de Máster de la Cátedra AgroBank “Mujer, Empresa y Mundo Rural” de la Universidad de Castilla-La Mancha. Curso académico 2025-2026",
+      "title_original": "BASES Y CONVOCATORIA REHABILITACIÓN DE VIVIENDAS VACÍAS PARA ALQUILER SOCIAL 2026 (RHVV26)",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "AUTONOMICA · COMUNITAT VALENCIANA · SECRETARÍA AUTONÓMICA DE VIVIENDA",
+      "regions": [
+        "ES52 - COMUNIDAD VALENCIANA"
+      ],
+      "eligible_beneficiaries_original": [
+        "GRAN EMPRESA",
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Acceso a la vivienda y fomento de la edificación",
+      "start_date": "2026-11-16",
+      "deadline": "2027-02-16",
+      "indefinite_open": false,
+      "total_call_budget": 3574000,
+      "total_call_budget_original": 3574000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "housing"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943787",
+      "application_url": null,
+      "legal_bases_url": "https://dogv.gva.es/es/",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943745",
+      "country_code": "ES",
+      "title_original": "Convocatoria de becas de colaboración en las actividades promovidas o patrocinadas por el Centro de Estudios Europeos “Luis Ortega Álvarez”, Centro de Excelencia Jean Monnet, de la Universidad de Castilla la Mancha. Curso 2026/2027",
       "coofficial_title": null,
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
       "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
@@ -21,21 +60,95 @@
       ],
       "eligibility_status": "beneficiary_types_listed_in_official_api",
       "purpose_original": "Educación",
-      "start_date": "2026-11-19",
+      "start_date": "2026-11-20",
+      "deadline": "2026-11-30",
+      "indefinite_open": false,
+      "total_call_budget": 3062.57,
+      "total_call_budget_original": 3062.57,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943745",
+      "application_url": null,
+      "legal_bases_url": "https://www.uclm.es/global/promotores/otros/cee/convocatorias-cee/becacolabjm",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943742",
+      "country_code": "ES",
+      "title_original": "CONVOCATÒRIA AJUTS TRANSPORT A CENTRE DE DIA, HOSPITAL DE DIA PER A GENT GRAN",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · SANT PERE DE RIUDEBITLLES · AYUNTAMIENTO DE SANT PERE DE RIUDEBITLLES",
+      "regions": [
+        "ES511 - Barcelona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Servicios Sociales y Promoción Social",
+      "start_date": "2026-01-01",
       "deadline": "2026-12-31",
       "indefinite_open": false,
-      "total_call_budget": 4000,
-      "total_call_budget_original": 4000,
+      "total_call_budget": 1500,
+      "total_call_budget_original": 1500,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "healthcare",
+        "social_support"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943742",
+      "application_url": null,
+      "legal_bases_url": "https://bop.diba.cat/scripts/ftpisa.aspx?fnew?bop2019&04/022019005635.pdf&1",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943730",
+      "country_code": "ES",
+      "title_original": "Expedient 2311/2026 - APROVACIÓ CONVOCATÒRIA AJUTS MENJADOR BRESSOL 2026/2027",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · BADIA DEL VALLÈS · AYUNTAMIENTO DE BADIA DEL VALLÈS",
+      "regions": [
+        "ES511 - Barcelona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Servicios Sociales y Promoción Social",
+      "start_date": "2025-05-14",
+      "deadline": "2027-08-14",
+      "indefinite_open": false,
+      "total_call_budget": 22880,
+      "total_call_budget_original": 22880,
       "amount_currency": "EUR",
       "amount_type": "total_call_budget_not_individual_award",
       "amount_status": "published",
       "categories": [
         "education",
-        "business"
+        "social_support"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943462",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943730",
       "application_url": null,
-      "legal_bases_url": "https://www.uclm.es/empresas/mecenazgo/catedrasaulasempresa/catedra_agrobank",
+      "legal_bases_url": "https://bop.diba.cat/temp/06_022020007119.pdf",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
@@ -44,142 +157,143 @@
       "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
-      "id": "943405",
+      "id": "943718",
       "country_code": "ES",
-      "title_original": "Orden IND/55/2026, de 18 de noviembre, por la que se convoca la fase autonómica del concurso escolar Consumópolis para el curso académico 2026-2027.",
-      "coofficial_title": null,
+      "title_original": "XIX CONCURSO DE BELENES \"CIUTAT DE MANISES\"",
+      "coofficial_title": "XIX CONCURS DE BETLEMS \"CIUTAT DE MANISES\"",
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "AUTONOMICA · CANTABRIA · CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO",
+      "granting_authority": "LOCAL · MANISES · AYUNTAMIENTO DE MANISES",
       "regions": [
-        "ES130 - Cantabria"
+        "ES52 - COMUNIDAD VALENCIANA"
       ],
       "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
       "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Educación",
-      "start_date": "2026-10-05",
-      "deadline": "2027-03-01",
-      "indefinite_open": false,
-      "total_call_budget": 4000,
-      "total_call_budget_original": 4000,
-      "amount_currency": "EUR",
-      "amount_type": "total_call_budget_not_individual_award",
-      "amount_status": "published",
-      "categories": [
-        "education"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943405",
-      "application_url": null,
-      "legal_bases_url": "https://www.boe.es/eli/es/o/2021/09/20/csm1008",
-      "status": "official-api-window-current",
-      "eligibility_verified": false,
-      "amount_verified": false,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
-    },
-    {
-      "id": "943398",
-      "country_code": "ES",
-      "title_original": "Decreto 2026DECL003683, de 16 de noviembre de 2026 por la que se aprueba la convocatoria  del concurso de escaparates y paradas de mercado de la campaña de Navidad 2026",
-      "coofficial_title": "Decret 2026DECL003683, de 16 de novembre  de 2026 pel que s'aprova la convocatoria del concurs d'aparadors i parades de mercat de la campanya de Nadal 2026",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SANT ANDREU DE LA BARCA · AYUNTAMIENTO DE SANT ANDREU DE LA BARCA",
-      "regions": [
-        "ES511 - Barcelona"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Comercio, Turismo y Pymes",
-      "start_date": "2026-11-01",
-      "deadline": "2026-11-30",
-      "indefinite_open": false,
-      "total_call_budget": 475,
-      "total_call_budget_original": 475,
-      "amount_currency": "EUR",
-      "amount_type": "total_call_budget_not_individual_award",
-      "amount_status": "published",
-      "categories": [
-        "business"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943398",
-      "application_url": "https://www.sabarca.cat",
-      "legal_bases_url": "https://bop.diba.cat/anunci/3926629/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-dels-premis-concursos-i-o-sortejos-promoguts-per-l-ajuntament-ajuntament-de-sant-andreu-de-la-barca",
-      "status": "official-api-window-current",
-      "eligibility_verified": false,
-      "amount_verified": false,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
-    },
-    {
-      "id": "943334",
-      "country_code": "ES",
-      "title_original": "Convocatoria 2026 del Concurso de Escaparates de Navidad",
-      "coofficial_title": "Convocatòria 2026 del Concurs Aparadors de Nadal",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SANT QUIRZE DEL VALLÈS · AYUNTAMIENTO DE SANT QUIRZE DEL VALLÈS",
-      "regions": [
-        "ES511 - Barcelona"
-      ],
-      "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Comercio, Turismo y Pymes",
-      "start_date": "2026-11-13",
-      "deadline": "2026-12-11",
-      "indefinite_open": false,
-      "total_call_budget": 3600,
-      "total_call_budget_original": 3600,
-      "amount_currency": "EUR",
-      "amount_type": "total_call_budget_not_individual_award",
-      "amount_status": "published",
-      "categories": [
-        "business"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943334",
-      "application_url": null,
-      "legal_bases_url": "https://eacat.aoc.cat/etauler/detall/592149",
-      "status": "official-api-window-current",
-      "eligibility_verified": false,
-      "amount_verified": false,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
-    },
-    {
-      "id": "943290",
-      "country_code": "ES",
-      "title_original": "Convocatoria para la concesión de ayudas de comedor obligatorio escolar para el curso 2026-2027.",
-      "coofficial_title": "Convocatòria per a la concessió dels ajuts de menjador obligatori escolar pel curs 2026-2027",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CONSELL COMARCAL DE ALT EMPORDÀ · CONSELL COMARCAL DE ALT EMPORDÀ",
-      "regions": [
-        "ES512 - Girona"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Educación",
+      "purpose_original": "Cultura",
       "start_date": null,
       "deadline": null,
       "indefinite_open": true,
-      "total_call_budget": 1024346.02,
-      "total_call_budget_original": 1024346.02,
+      "total_call_budget": 1900,
+      "total_call_budget_original": 1900,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "all"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943718",
+      "application_url": "https://www.manises.es",
+      "legal_bases_url": "https://www.manises.es/es/gestion-presupuestaria/pagina/ordenanzas-subvenciones",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943685",
+      "country_code": "ES",
+      "title_original": "Convocatoria de los V Premios Alumni. Universidad de Castilla-La Mancha. 2026",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
+      "regions": [
+        "ES42 - CASTILLA LA MANCHA"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Educación",
+      "start_date": "2026-11-20",
+      "deadline": "2026-12-09",
+      "indefinite_open": false,
+      "total_call_budget": 2500,
+      "total_call_budget_original": 2500,
       "amount_currency": "EUR",
       "amount_type": "total_call_budget_not_individual_award",
       "amount_status": "published",
       "categories": [
         "education"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943290",
-      "application_url": "https://www.altemporda.org",
-      "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/CONVOCATORIA_MO_2026-2027.pdf",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943685",
+      "application_url": null,
+      "legal_bases_url": "https://www.uclm.es/misiones/lauclm/consejodedireccion/vpu/convocatorias",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943636",
+      "country_code": "ES",
+      "title_original": "Convocatoria Premis Tarragonès 2026",
+      "coofficial_title": "Convocatòria Premis Tarragonès 2026",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · CONSELL COMARCAL DE TARRAGONÈS · CONSELL COMARCAL DE TARRAGONÈS",
+      "regions": [
+        "ES51 - CATALUÑA"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Cultura",
+      "start_date": "2026-11-20",
+      "deadline": "2027-05-28",
+      "indefinite_open": false,
+      "total_call_budget": 2450,
+      "total_call_budget_original": 2450,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943636",
+      "application_url": null,
+      "legal_bases_url": "https://www.tarragones.cat/cultura/premis-tarragones-1/bases-premis-tarragones-beca-dinvestigacio/view",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943592",
+      "country_code": "ES",
+      "title_original": "Concurso de decoración de balcones, fachadas y calles de Montmeló con motivo de las Fiestas de Navidad 2026",
+      "coofficial_title": "Concurs de guarniment de balcons, façanes i carrers de Montmeló amb motiu de les Festes de Nadal 2026",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · MONTMELÓ · AYUNTAMIENTO DE MONTMELÓ",
+      "regions": [
+        "ES511 - Barcelona"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Otras Prestaciones económicas",
+      "start_date": "2026-11-16",
+      "deadline": "2026-12-07",
+      "indefinite_open": false,
+      "total_call_budget": 900,
+      "total_call_budget_original": 900,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "all"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943592",
+      "application_url": null,
+      "legal_bases_url": "https://www.montmelo.cat",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
