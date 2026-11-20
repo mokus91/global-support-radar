@@ -15,6 +15,18 @@
     option.textContent = nativeName;
     select.appendChild(option);
   });
+  // Suggest the visitor's likely country from their browser locale; they can always change it.
+  const countrySelect = document.getElementById("country");
+  const hasCountryInLink = new URLSearchParams(window.location.search).has("country");
+  if (countrySelect && !hasCountryInLink) {
+    try {
+      const region = new Intl.Locale(navigator.language || "en").region;
+      if (region && Array.from(countrySelect.options).some(option => option.value === region)) {
+        countrySelect.value = region;
+        countrySelect.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    } catch (_) {}
+  }
   const supported = new Set(Array.from(select.options).map(option => option.value).filter(Boolean));
   const browserLanguage = (navigator.languages && navigator.languages[0] || navigator.language || "en").toLowerCase();
   const preferred = browserLanguage.startsWith("zh-tw") || browserLanguage.startsWith("zh-hk") ? "zh-TW" : browserLanguage.split("-")[0];
