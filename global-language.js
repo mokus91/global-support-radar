@@ -2,9 +2,29 @@
    Google Translate is user-initiated; no visitor content is sent for translation until they choose a language. */
 (() => {
   "use strict";
-  const select = document.getElementById("globalLanguage");
-  const button = document.getElementById("translateWebsite");
-  if (!select || !button) return;
+  let select = document.getElementById("globalLanguage");
+  let button = document.getElementById("translateWebsite");
+  if (!select || !button) {
+    const panel = document.createElement("div");
+    panel.id = "global-language-widget";
+    panel.setAttribute("aria-label", "Website language");
+    panel.style.cssText = "position:fixed;right:12px;bottom:12px;z-index:99999;display:flex;gap:6px;align-items:center;max-width:calc(100vw - 24px);padding:8px;background:#101d31;color:#fff;border:1px solid #53e0b2;border-radius:12px;box-shadow:0 4px 18px #0008;font:14px system-ui";
+    select = document.createElement("select");
+    select.id = "globalLanguage";
+    select.setAttribute("aria-label", "Choose language");
+    select.style.cssText = "max-width:170px;min-width:0;padding:8px;background:#17263d;color:#fff;border:1px solid #52627a;border-radius:8px;font:inherit";
+    const placeholder = document.createElement("option");
+    placeholder.value = "";
+    placeholder.textContent = "🌐 Language";
+    select.appendChild(placeholder);
+    button = document.createElement("button");
+    button.id = "translateWebsite";
+    button.type = "button";
+    button.textContent = "Translate ↗";
+    button.style.cssText = "padding:9px 11px;background:#53e0b2;color:#071925;border:0;border-radius:8px;font-weight:700;cursor:pointer";
+    panel.append(select, button);
+    document.body.appendChild(panel);
+  }
   const extraLanguages = ("af sq am hy az eu be bs ceb ny co fy gl ka gu ht ha haw is ig ga jv kn kk km rw ku ky lo la lb mk mg mi mr mn my ne or pa sm gd st sn sd si so su tg tt te tk ug uz cy xh yi yo zu").split(" ");
   extraLanguages.forEach(code => {
     if (Array.from(select.options).some(option => option.value === code)) return;
