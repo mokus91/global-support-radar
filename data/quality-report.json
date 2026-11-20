@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-20T09:37:31.507706+00:00",
+  "generated_at": "2026-11-20T09:44:28.059720+00:00",
   "feeds_checked": 18,
-  "records_checked": 2201,
+  "records_checked": 2199,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1983,
+  "unverified_status": 1981,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 212,
-    "official_listing_candidate": 1909,
+    "official_listing_candidate": 1907,
     "unverified": 74,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1988,
+    "needs_verification": 1986,
     "expired_or_closed": 0
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 495,
+      "records": 493,
       "procurement_candidates": 1,
-      "unverified": 495,
+      "unverified": 493,
       "api_window_candidates": 0,
-      "official_listing_candidates": 495,
+      "official_listing_candidates": 493,
       "historical_archive_records": 0
     },
     {
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 496,
+      "records_count": 494,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -393,7 +393,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 251
+      "records": 249
     },
     {
       "source_file": "hu-nkfih-discovery.json",
