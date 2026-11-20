@@ -1518,7 +1518,8 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   noCountry:"Válassz ki egy országot a kereséshez.",loading:"Hivatalos források keresése…",none:"Ehhez az országhoz és témához jelenleg nem található megfelelő országos rekord a Radar adatbázisában. Az általános hivatalos kiindulópontokat lentebb találod.",
   matches:"Talált hivatalos források",matched:"A kiválasztott profilhoz kapcsolódó források:",official:"Hivatalos forrás",guide:"Hivatalos országismertető",directory:"Nemzetközi adatbázis / kiindulópont",notCall:"Ez adatbázis vagy tájékoztató oldal, nem feltétlenül nyitott pályázat.",unverified:"Előzetes találat – ellenőrizd az eredeti oldalon.",verified:"Hivatalos program- vagy információs oldal; az aktuális feltételeket ellenőrizd.",
   why:{individual:"Magánszemélyek és háztartások számára releváns támogatási terület.",business:"Vállalkozási, innovációs vagy gazdaságfejlesztési forrás.",student:"Oktatási, ösztöndíj- vagy kutatási forrás.",farmer:"Mezőgazdasági és vidéki fejlesztési forrás.",nonprofit:"Civil, közösségi vagy nonprofit szervezetek számára is releváns lehet.",public:"Önkormányzati és közintézményi programokhoz kapcsolódó forrás."},
-  global:"Nemzetközi kiindulópontok",privacy:"Adatvédelem: a választásaidat a böngésző dolgozza fel; nem küldjük el és nem mentjük el őket.",open:"Hivatalos oldal megnyitása ↗",world:"További országos források megnyitása"
+  global:"Nemzetközi kiindulópontok",privacy:"Adatvédelem: a választásaidat a böngésző dolgozza fel; nem küldjük el és nem mentjük el őket.",open:"Hivatalos oldal megnyitása ↗",world:"További országos források megnyitása",
+  eligibility:{match:"✓ A hivatalos forrásban szerepel a kiválasztott pályázótípus",mismatch:"! A forrásban más kedvezményezetti kör szerepel",unknown:"? A jogosulti kör nincs elég részletesen megadva",source:"Forrásban megadott kedvezményezettek:"}
  },
  en:{
   title:"Find support programmes you may qualify for",intro:"Choose a country, applicant type and support area. The assistant searches official national databases and guidance.",
@@ -1530,11 +1531,33 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   noCountry:"Please choose a country.",loading:"Searching official sources…",none:"No matching national record is currently available in the Radar database for this country and topic. General official starting points are listed below.",
   matches:"Official sources found",matched:"Sources related to your selected profile:",official:"Official source",guide:"Official country guide",directory:"International database / starting point",notCall:"This is a directory or information page, not necessarily an open grant call.",unverified:"Preliminary lead — verify on the original website.",verified:"Official programme or information page; check current conditions.",
   why:{individual:"A support area relevant to individuals and households.",business:"A source for business, innovation or economic development.",student:"An education, scholarship or research source.",farmer:"An agriculture or rural development source.",nonprofit:"May be relevant to civil society, community or non-profit organisations.",public:"A source related to local authorities and public institutions."},
-  global:"International starting points",privacy:"Privacy: your choices are processed in your browser; they are not sent to a server or saved.",open:"Open official source ↗",world:"Open more national sources"
+  global:"International starting points",privacy:"Privacy: your choices are processed in your browser; they are not sent to a server or saved.",open:"Open official source ↗",world:"Open more national sources",
+  eligibility:{match:"✓ The official source lists the selected applicant type",mismatch:"! The source lists a different beneficiary group",unknown:"? Beneficiary eligibility is not specified clearly enough",source:"Beneficiaries listed by the source:"}
  }
  };
  const norm=v=>String(v||"").toLowerCase().replace(/[^a-z]/g,"");
  const categoryAliases={healthcare:"healthcare",health:"healthcare",research:"education",other:"all"};
+ const eligibilityText=record=>{
+  const fields=["eligible_beneficiaries_original","eligible_beneficiaries","beneficiaries","eligible_applicants","beneficiary_types","eligibility_summary_hu","eligibility_summary_en","eligibility_status"];
+  return fields.flatMap(key=>Array.isArray(record[key])?record[key]:record[key]?[record[key]]:[]).map(String).join(" · ");
+ };
+ function assessEligibility(record,applicant){
+  const raw=eligibilityText(record),v=raw.toLowerCase();
+  if(!raw.trim())return {status:"unknown",source:""};
+  const patterns={
+   individual:/individual|household|natural person|private person|personas físicas|persona física|personas fisicas|persona fisica|mag[aá]nszem[eé]ly|csal[aá]d/,
+   business:/business|businesses|company|companies|enterprise|sme|micro.?enterprise|self.?employed|entrepreneur|pyme|empresa|actividad econ[oó]mica|v[aá]llalkoz|kkv|gazd[aá]lkod[oó]/,
+   student:/student|students|scholar|pupil|doctoral candidate|hallgat[oó]|di[aá]k|tanul[oó]/,
+   farmer:/farmer|agricult|farm|rural|agricultor|agricultora|agricultura|gazd[aá]lkod|mez[oő]gazd/,
+   nonprofit:/non.?profit|ngo|charity|foundation|association|civil society|nonprofit|fundaci[oó]n|asociaci[oó]n|egyes[uü]let|alap[ií]tv[aá]ny|civil szervezet/,
+   public:/public body|public authority|local authority|municipalit|government agenc|public institution|administraci[oó]n p[uú]blica|ayuntamiento|[oö]nkorm[aá]nyzat|k[oö]zint[eé]zm[eé]ny/
+  };
+  const target=patterns[applicant];
+  if(!target)return {status:"unknown",source:raw};
+  if(target.test(v))return {status:"match",source:raw};
+  const hasOther=Object.entries(patterns).some(([key,re])=>key!==applicant&&re.test(v));
+  return {status:hasOther?"mismatch":"unknown",source:raw};
+ }
  function selectedCountryName(){return $("geaCountry")?.selectedOptions[0]?.textContent||$("geaCountry")?.value||""}
  function populate(){
   const source=$("worldCountryMirror"),target=$("geaCountry");if(!source||!target)return;
@@ -1569,11 +1592,17 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   const h=document.createElement("h3");h.textContent=record.title||record.name||record.name_hu||record.name_en||"Official support source";
   const p=document.createElement("p");p.textContent=record.description||record.description_hu||record.description_en||record.summary_hu||record.summary_en||"";
   const why=document.createElement("p");why.style.color="var(--muted)";why.textContent=reason||"";
+  const eligibility=record._eligibility||{status:"unknown",source:""};
+  const status=document.createElement("p");status.style.fontSize="12px";status.style.margin="8px 0";
+  status.style.color=eligibility.status==="match"?"var(--mint)":eligibility.status==="mismatch"?"var(--gold)":"var(--muted)";
+  status.textContent=t.eligibility[eligibility.status]||t.eligibility.unknown;
   const meta=document.createElement("div");meta.className="meta";meta.textContent=[record.publisher||"Official publisher",record.country_en||record.country_code||"International",record.meta].filter(Boolean).join(" · ");
   const foot=document.createElement("div");foot.className="cardfoot";
   const a=document.createElement("a");a.href=record.url||record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=t.open;
   if(a.href&&/^https:\/\//i.test(a.href))foot.append(a);
-  card.append(tag,h,p,why,meta,foot);return card;
+  card.append(tag,h,p,why,status);
+  if(eligibility.source){const source=document.createElement("p");source.style.fontSize="11px";source.style.color="var(--muted)";source.textContent=t.eligibility.source+" "+eligibility.source;card.append(source)}
+  card.append(meta,foot);return card;
  }
  async function run(){
   const t=copy[lang()],box=$("geaResults"),code=$("geaCountry").value,applicant=$("geaApplicant").value,rawCategory=$("geaCategory").value;
@@ -1582,7 +1611,10 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   const loading=document.createElement("p");loading.className="empty";loading.textContent=t.loading;box.append(loading);
   const category=categoryAliases[rawCategory]||rawCategory;
   const results=[],globalResults=[];
-  const push=(record,kind,score,reason)=>results.push({record,kind,score,reason});
+  const push=(record,kind,score,reason)=>{
+   const eligibility=assessEligibility(record,applicant);
+   results.push({record:{...record,_eligibility:eligibility},kind,score,reason,eligibility});
+  };
   try{
    const [national,social,household,global,euBusiness,euCategory,euAgriculture,euCap,spain]=await Promise.all([
     readJson("worldwide-national-support-sources.json").catch(()=>({records:[]})),
@@ -1641,13 +1673,15 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
      title:r.title_original||r.coofficial_title||"Public grant opportunity",
      description:[r.purpose_original,beneficiary].filter(Boolean).join(" · "),
      url:r.official_url,publisher:r.publisher,country_en:"Spain",country_code:"ES",
+     eligible_beneficiaries_original:r.eligible_beneficiaries_original||[],
      meta:[date,amount].filter(Boolean).join(" · ")
     },"opportunity",20,t.unverified);
    });
    const globals=(global.records||[]).filter(r=>["un-national-portals","ilo-country-profiles","world-bank-aspire"].includes(r.id));
    globals.forEach(r=>globalResults.push({title:lang()==="hu"?r.name_hu:r.name_en,description:lang()==="hu"?r.description_hu:r.description_en,url:r.url,publisher:r.publisher,country_en:"International"}));
   }catch(e){console.warn("Global Eligibility Assistant",e)}
-  results.sort((a,b)=>b.score-a.score);
+  const eligibilityRank={match:3,unknown:2,mismatch:1};
+  results.sort((a,b)=>(eligibilityRank[b.eligibility.status]-eligibilityRank[a.eligibility.status])||(b.score-a.score));
   box.replaceChildren();
   const heading=document.createElement("h3");heading.textContent=t.matches+" ("+results.length+")";box.append(heading);
   const sub=document.createElement("p");sub.textContent=t.matched+" "+selectedCountryName()+" · "+$("geaApplicant").selectedOptions[0].textContent+" · "+$("geaCategory").selectedOptions[0].textContent;box.append(sub);
