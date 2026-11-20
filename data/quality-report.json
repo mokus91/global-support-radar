@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-20T04:52:14.232693+00:00",
+  "generated_at": "2026-11-20T05:05:28.446325+00:00",
   "feeds_checked": 18,
-  "records_checked": 2216,
+  "records_checked": 2213,
   "expired_deadlines": 8,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1996,
+  "unverified_status": 1993,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 214,
-    "official_listing_candidate": 1941,
-    "unverified": 55,
+    "official_listing_candidate": 1935,
+    "unverified": 58,
     "other": 5
   },
   "verification_dimensions": {
@@ -24,6 +24,7 @@
     {
       "file": "jgrants-discovery.json",
       "records": 214,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 214,
       "official_listing_candidates": 0,
@@ -32,6 +33,7 @@
     {
       "file": "chile-discovery.json",
       "records": 1,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -40,6 +42,7 @@
     {
       "file": "spain-discovery.json",
       "records": 5,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -48,6 +51,7 @@
     {
       "file": "france-aides-territoires-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -56,6 +60,7 @@
     {
       "file": "nz-funding-explorer-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -64,6 +69,7 @@
     {
       "file": "eu-funding-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -71,15 +77,17 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 495,
-      "unverified": 495,
+      "records": 489,
+      "procurement_candidates": 4,
+      "unverified": 489,
       "api_window_candidates": 0,
-      "official_listing_candidates": 495,
+      "official_listing_candidates": 489,
       "historical_archive_records": 0
     },
     {
       "file": "eu-cap-network-discovery.json",
       "records": 4,
+      "procurement_candidates": 0,
       "unverified": 4,
       "api_window_candidates": 0,
       "official_listing_candidates": 4,
@@ -88,6 +96,7 @@
     {
       "file": "eu-national-agriculture-discovery.json",
       "records": 7,
+      "procurement_candidates": 0,
       "unverified": 7,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -95,8 +104,9 @@
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 48,
-      "unverified": 48,
+      "records": 51,
+      "procurement_candidates": 0,
+      "unverified": 51,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -104,6 +114,7 @@
     {
       "file": "us-grants-discovery.json",
       "records": 1389,
+      "procurement_candidates": 0,
       "unverified": 1389,
       "api_window_candidates": 0,
       "official_listing_candidates": 1389,
@@ -112,6 +123,7 @@
     {
       "file": "ukri-discovery.json",
       "records": 20,
+      "procurement_candidates": 0,
       "unverified": 20,
       "api_window_candidates": 0,
       "official_listing_candidates": 20,
@@ -120,14 +132,16 @@
     {
       "file": "au-arc-grants-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
-      "historical_archive_records": 20000
+      "historical_archive_records": 18700
     },
     {
       "file": "ca-cihr-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -136,6 +150,7 @@
     {
       "file": "hu-open-data-discovery.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -144,6 +159,7 @@
     {
       "file": "hu-palyazat-announcements.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -152,6 +168,7 @@
     {
       "file": "hu-nkfih-discovery.json",
       "records": 33,
+      "procurement_candidates": 0,
       "unverified": 33,
       "api_window_candidates": 0,
       "official_listing_candidates": 33,
@@ -160,6 +177,7 @@
     {
       "file": "worldwide-portal-health.json",
       "records": 0,
+      "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
@@ -225,7 +243,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 495,
+      "records_count": 493,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -252,7 +270,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 48,
+      "records_count": 51,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -279,7 +297,7 @@
       "name": "Australia — ARC",
       "file": "au-arc-grants-discovery.json",
       "status": "checked",
-      "records_count": 20000,
+      "records_count": 18700,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -359,7 +377,7 @@
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 48
+      "records": 51
     },
     {
       "source_file": "eu-open-calls-discovery.json",
@@ -369,7 +387,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 252
+      "records": 246
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -407,7 +425,7 @@
       "deadline": "2026-11-20T14:30:55.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -421,21 +439,7 @@
       "deadline": "2026-11-23T15:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
-      "id": "17045COMPETITIVE_CALLen",
-      "title": "Service request: 𝘏𝘰𝘸 𝘮𝘪𝘨𝘩𝘵 𝘸𝘦 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘢𝘤𝘤𝘦𝘴𝘴 𝘵𝘰 𝘤𝘳𝘪𝘵𝘪𝘤𝘢𝘭 𝘤𝘪𝘷𝘪𝘭 𝘱𝘳𝘰𝘵𝘦𝘤𝘵𝘪𝘰𝘯 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘧𝘰𝘳 𝘳𝘦𝘴𝘪𝘥𝘦𝘯𝘵𝘴 - 𝘦𝘴𝘱𝘦𝘤𝘪𝘢𝘭𝘭𝘺 𝘵𝘩𝘰𝘴𝘦 𝘸𝘩𝘰 𝘥𝘰 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘮𝘰𝘣𝘪𝘭𝘦 𝘢𝘱𝘱𝘴 - 𝘴𝘰 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦𝘺 𝘤𝘢𝘯 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘤𝘭𝘦𝘢𝘳, 𝘵𝘪𝘮𝘦𝘭𝘺 𝘨𝘶𝘪𝘥𝘢𝘯𝘤𝘦 𝘣𝘺 𝘱𝘩𝘰𝘯𝘦 𝘥𝘶𝘳𝘪𝘯𝘨 𝘦𝘮𝘦𝘳𝘨𝘦𝘯𝘤𝘪𝘦𝘴? ",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46807003",
-      "deadline": "2026-11-23T17:00:00.000+0000",
-      "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -449,7 +453,7 @@
       "deadline": "2026-11-23T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -533,7 +537,7 @@
       "deadline": "2026-11-28T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -547,7 +551,7 @@
       "deadline": "2026-11-28T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -799,7 +803,7 @@
       "deadline": "2026-11-30T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -813,7 +817,7 @@
       "deadline": "2026-11-30T19:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -827,7 +831,7 @@
       "deadline": "2026-11-30T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -841,7 +845,7 @@
       "deadline": "2026-12-01T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -869,7 +873,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -883,7 +887,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -897,7 +901,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -911,7 +915,7 @@
       "deadline": "2026-12-02T04:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -925,7 +929,7 @@
       "deadline": "2026-12-02T11:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -939,7 +943,7 @@
       "deadline": "2026-12-02T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -953,7 +957,7 @@
       "deadline": "2026-12-02T22:59:26.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -967,7 +971,7 @@
       "deadline": "2026-12-03T12:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -981,7 +985,7 @@
       "deadline": "2026-12-04T22:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -995,7 +999,7 @@
       "deadline": "2026-12-08T11:00:38.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1009,7 +1013,7 @@
       "deadline": "2026-12-08T17:00:41.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1023,7 +1027,7 @@
       "deadline": "2026-12-10T01:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1037,7 +1041,7 @@
       "deadline": "2026-12-10T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1051,7 +1055,7 @@
       "deadline": "2026-12-10T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1065,7 +1069,7 @@
       "deadline": "2026-12-10T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1093,6 +1097,20 @@
       "deadline": "2026-12-11T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WfQ0000049swXUAQ",
+      "title": "令和７年度補正「次世代革新炉の開発・建設に向けた技術開発・サプライチェーン構築支援事業補助金」【三次公募】",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ0000049swXUAQ",
+      "deadline": "2026-12-11T03:00:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -1101,10 +1119,49 @@
     }
   ],
   "non_opportunity_records": 5,
-  "procurement_candidate_records": 0,
-  "historical_archive_records": 20000,
+  "procurement_candidate_records": 4,
+  "procurement_review_queue_count": 4,
+  "procurement_review_queue": [
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "17045COMPETITIVE_CALLen",
+      "title": "Service request: 𝘏𝘰𝘸 𝘮𝘪𝘨𝘩𝘵 𝘸𝘦 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘢𝘤𝘤𝘦𝘴𝘴 𝘵𝘰 𝘤𝘳𝘪𝘵𝘪𝘤𝘢𝘭 𝘤𝘪𝘷𝘪𝘭 𝘱𝘳𝘰𝘵𝘦𝘤𝘵𝘪𝘰𝘯 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘧𝘰𝘳 𝘳𝘦𝘴𝘪𝘥𝘦𝘯𝘵𝘴 - 𝘦𝘴𝘱𝘦𝘤𝘪𝘢𝘭𝘭𝘺 𝘵𝘩𝘰𝘴𝘦 𝘸𝘩𝘰 𝘥𝘰 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘮𝘰𝘣𝘪𝘭𝘦 𝘢𝘱𝘱𝘴 - 𝘴𝘰 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦𝘺 𝘤𝘢𝘯 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘤𝘭𝘦𝘢𝘳, 𝘵𝘪𝘮𝘦𝘭𝘺 𝘨𝘶𝘪𝘥𝘢𝘯𝘤𝘦 𝘣𝘺 𝘱𝘩𝘰𝘯𝘦 𝘥𝘶𝘳𝘪𝘯𝘨 𝘦𝘮𝘦𝘳𝘨𝘦𝘯𝘤𝘪𝘦𝘴? ",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46807003",
+      "deadline": "2026-11-23T17:00:00.000+0000",
+      "opportunity_type": "procurement_candidate",
+      "classification_basis": "title_identifier_keyword_heuristic; verify original notice"
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "51188642TOPICSen",
+      "title": "2nd call for proposals for common procurement actions under the Programme",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2027-FNLC-CPA-AMDS",
+      "deadline": "2027-02-16T00:00:00.000+0000",
+      "opportunity_type": "procurement_candidate",
+      "classification_basis": "title_identifier_keyword_heuristic; verify original notice"
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "51188650TOPICSen",
+      "title": "2nd call for proposals for common procurement actions under the Programme",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2027-FNLC-CPA-C5ISRS",
+      "deadline": "2027-02-16T00:00:00.000+0000",
+      "opportunity_type": "procurement_candidate",
+      "classification_basis": "title_identifier_keyword_heuristic; verify original notice"
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "51188658TOPICSen",
+      "title": "2nd call for proposals for common procurement actions under the Programme",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2027-FNLC-CPA-GNPS",
+      "deadline": "2027-02-16T00:00:00.000+0000",
+      "opportunity_type": "procurement_candidate",
+      "classification_basis": "title_identifier_keyword_heuristic; verify original notice"
+    }
+  ],
+  "historical_archive_records": 18700,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 9,
+  "diagnostic_missing_urls": 8,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
