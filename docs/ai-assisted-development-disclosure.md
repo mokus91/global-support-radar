@@ -18,7 +18,7 @@ This note records the development arrangement described by the project owner in 
 ## Rights and licensing limitations
 
 1. An idea, product concept, business model, or feature list is not automatically protected by copyright. Copyright protection, where available, generally concerns original expression.
-2. AI-assisted or AI-generated output does not automatically establish that the human user owns exclusive copyright in every output. The legal position depends on applicable law, the degree and nature of human creative contribution, the specific output, and the terms applicable to the AI service.
+2. OpenAI's Terms of Use effective 2026-01-01 state that, as between the user and OpenAI and to the extent permitted by applicable law, the user owns Output and OpenAI assigns any rights it may have in that Output. The terms also warn that outputs may not be unique and other users may receive similar outputs. This contractual allocation does not itself establish that every output qualifies for copyright protection under Hungarian or EU law, nor does it grant rights in third-party content.
 3. This record does not claim that the human owner personally wrote every source-code line or that every AI-generated output is exclusively copyrightable.
 4. The owner may control the project repository, accounts, product direction, and contractual licensing decisions, but account control or project conception alone does not prove exclusive copyright in every component.
 5. Third-party packages, icons, images, datasets, APIs, government information, trademarks, and other external materials remain subject to their own licences and terms.
