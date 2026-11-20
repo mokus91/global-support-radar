@@ -150,6 +150,8 @@ A weboldal magyar nyelvű alapértelmezett címet és leírást, Open Graph mego
 
 ## Bevételi modell és termékfejlesztési irány
 
+- [Bevételi pipeline és státuszszabályok](docs/revenue-pipeline-operations.md)
+
 A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorált felületek, opcionális prémium értesítések, mentett keresések és szervezeti/partneri csomagok tervezhetők. A jelenlegi GitHub Pages kiadás statikus frontend: önmagában nem biztosít biztonságos felhasználói fiókot, előfizetés-kezelést, fizetést vagy szerveroldali jogosultság-ellenőrzést. Ezeket csak külön backenddel, adatvédelmi és fizetési folyamatokkal szabad élesíteni. A fizetős funkciók nem befolyásolhatják a hivatalos források minősítését vagy a természetes találati sorrendet.
 
 
