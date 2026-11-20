@@ -44,7 +44,25 @@ def load_records(data_dir: Path) -> list[dict[str, Any]]:
     return records
 
 
+def record_quality_ok(record: dict[str, Any]) -> bool:
+    """Require country, HTTPS primary source, and a dated source check."""
+    country = any(str(record.get(key) or "").strip() for key in
+                  ("country_code", "country", "country_hu", "country_en",
+                   "country_name", "country_name_hu"))
+    checked = record.get("source_checked_at") or record.get("_dataset_checked_at")
+    if isinstance(checked, str):
+        try:
+            datetime.fromisoformat(checked.replace("Z", "+00:00"))
+        except ValueError:
+            checked = ""
+    else:
+        checked = ""
+    return bool(country and official_url_of(record) and checked)
+
+
 def classify(record: dict[str, Any], today: date) -> str:
+    if not record_quality_ok(record):
+        return "exclude"
     # Consider both fields: a closed signal must override an open signal.
     statuses = {
         str(record.get(key) or "").strip().lower()
@@ -230,13 +248,16 @@ def render(
 
 def self_test() -> None:
     today = date(2026, 11, 20)
-    assert classify({"status": "open-and-current", "deadline": "2026-11-24"}, today) == "verified"
-    assert classify({"status": "official-api-window-current", "deadline": "2026-12-01"}, today) == "candidate"
-    assert classify({"status": "official-api-window-current", "deadline": "2026-11-19"}, today) == "exclude"
-    assert classify({"verification_status": "unverified"}, today) == "exclude"
-    assert classify({"status": "closed"}, today) == "exclude"
-    assert classify({"status": "open", "verification_status": "withdrawn"}, today) == "exclude"
-    assert classify({"status": "open", "deadline": "not-a-date"}, today) == "exclude"
+    base = {"country_code": "HU", "official_url": "https://example.org/grant", "source_checked_at": "2026-11-20T09:00:00Z"}
+    assert classify({**base, "status": "open-and-current", "deadline": "2026-11-24"}, today) == "verified"
+    assert classify({**base, "status": "official-api-window-current", "deadline": "2026-12-01"}, today) == "candidate"
+    assert classify({**base, "status": "official-api-window-current", "deadline": "2026-11-19"}, today) == "exclude"
+    assert classify({**base, "verification_status": "unverified"}, today) == "exclude"
+    assert classify({**base, "status": "closed"}, today) == "exclude"
+    assert classify({**base, "status": "open", "verification_status": "withdrawn"}, today) == "exclude"
+    assert classify({**base, "status": "open", "deadline": "not-a-date"}, today) == "exclude"
+    assert classify({"status": "open-and-current", "deadline": "2026-11-24"}, today) == "exclude"
+    assert classify({**base, "status": "open", "source_checked_at": "invalid"}, today) == "exclude"
     sample = [
         {"country_code": "HU", "categories": ["business", "energy"]},
         {"country_hu": "Magyarország", "category": "Agriculture"},
