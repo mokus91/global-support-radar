@@ -38,4 +38,5 @@ en:{eyebrow:"PARTNERSHIPS",title:"Help more people find the right public support
 };
 function setLang(lang){const t=copy[lang];document.documentElement.lang=lang;for(const id of ["eyebrow","title","intro","h1","h2","h3","state","h4","zero","disclosure","privacy","back","contact"]){const key=id==="contact"?"contact":id;document.getElementById(id).textContent=t[key]}for(const [id,key] of [["list1","l1"],["list2","l2"]]){const ul=document.getElementById(id);ul.replaceChildren(...t[key].map(v=>{const li=document.createElement("li");li.textContent=v;return li}))}}
 document.getElementById("hu").addEventListener("click",()=>setLang("hu"));document.getElementById("en").addEventListener("click",()=>setLang("en"));setLang("hu");
-</script></body></html>
+</script><script src="./global-language.js" defer></script>
+</body></html>
