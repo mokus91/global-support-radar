@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Validate that the project's sitemap contains valid, existing local pages."""
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
+from pathlib import PurePosixPath
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,13 +28,23 @@ def validate_sitemap(xml_text, root=ROOT, base_url=BASE_URL):
             errors.append(f"Duplicate URL: {url}")
             continue
         seen.add(url)
-        relative = url[len(base_url):]
+        parsed_url = urlparse(url)
+        base_path = urlparse(base_url).path
+        relative = unquote(parsed_url.path[len(base_path):]).lstrip("/")
         if not relative:
             relative = "index.html"
-        if "/" in relative or relative.startswith("."):
-            errors.append(f"Unexpected path: {relative}")
+        elif relative.endswith("/"):
+            relative += "index.html"
+        parts = PurePosixPath(relative).parts
+        if not parts or any(part in ("", ".", "..") for part in parts) or "\\" in relative:
+            errors.append(f"Unsafe sitemap path: {relative}")
             continue
-        if not (root / relative).is_file():
+        candidate = (root / Path(*parts)).resolve()
+        root_resolved = root.resolve()
+        if not candidate.is_relative_to(root_resolved):
+            errors.append(f"Unsafe sitemap path: {relative}")
+            continue
+        if not candidate.is_file():
             errors.append(f"Missing local page: {relative}")
     if not seen:
         errors.append("Sitemap contains no valid URLs.")

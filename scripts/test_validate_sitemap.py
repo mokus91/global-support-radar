@@ -27,6 +27,19 @@ class SitemapValidationTests(unittest.TestCase):
         xml = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://other.test/</loc></url></urlset>'
         self.assertTrue(any("outside expected site" in e for e in validate_sitemap(xml, Path("."), BASE)))
 
+
+    def test_nested_language_directory_index_is_valid(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "en").mkdir()
+            Path(tmp, "en", "index.html").write_text("ok", encoding="utf-8")
+            xml = f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{BASE}en/</loc></url></urlset>'
+            self.assertEqual(validate_sitemap(xml, Path(tmp), BASE), [])
+
+    def test_parent_traversal_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            xml = f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{BASE}../outside.html</loc></url></urlset>'
+            self.assertTrue(any("Unsafe sitemap path" in e for e in validate_sitemap(xml, Path(tmp), BASE)))
+
     def test_malformed_xml_is_reported(self):
         self.assertTrue(validate_sitemap("<urlset>"))
 
