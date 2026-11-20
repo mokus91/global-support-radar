@@ -21,3 +21,9 @@ A `.github/workflows/organization-report-production.yml` workflow napi ütemezé
 ## Ellenőrzés
 
 A futások a GitHub repository Actions lapján követhetők. A GitHub ütemezett workflow-jai nagy terhelés esetén késhetnek; ezért a tényleges futási naplót kell ellenőrizni.
+
+## Többprofilos riportcsomag
+
+A `config/report-profiles.json` négy mintaprofilt tartalmaz: magyar általános, magyar vállalkozásfejlesztési, magyar mezőgazdasági és globális összesített nézetet. A `scripts/build_report_portfolio.py` minden profilhoz külön Markdown-riportot készít, ugyanazzal a szigorú státusz- és adatminőségi szűréssel. A szűrők pontos egyezést használnak; ha egy profilhoz nincs megfelelő rekord, a riport ezt jelzi, nem talál ki lehetőséget. A profilok szerkeszthetők, új ország/témakör csak akkor adható hozzá, ha az adatállomány ténylegesen tartalmaz ilyen címkéket.
+
+A CI külön regressziós tesztet futtat a profilgenerátorra. Az alapriport és a profilriportok egyaránt belső, 14 napos Actions artifactként kerülnek megőrzésre; nem publikáljuk és nem küldjük ki ügyfeleknek.
