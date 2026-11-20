@@ -43,6 +43,8 @@ A fiók létrehozását, OAuth-jóváhagyást, hozzáférési engedélyt és vé
 ## Bétaindítási minőségi kapuk
 
 - [ ] Staging validáció sikeres.
+
+- [ ] Az offline béta adatminőségi audit lefut; a figyelmeztetéseket át kell nézni, de az audit nem módosít és nem töröl támogatási rekordot.
 - [ ] Minden Python regressziós teszt sikeres.
 - [ ] Frontend JavaScript szintaktikai ellenőrzése sikeres.
 - [ ] Főoldal és összes belső navigáció működik.
