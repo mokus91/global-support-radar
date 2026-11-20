@@ -100,9 +100,16 @@ def main():
                     continue
             except ValueError:
                 pass
+        title = first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call"
+        identifier = first(meta, "identifier") or ""
+        classification_text = (str(title) + " " + str(identifier) + " " + str(ref)).lower()
+        procurement_markers = ("service request", "procurement", "contract notice", "tender", "works contract", "supplies contract")
+        opportunity_type = "procurement_candidate" if any(marker in classification_text for marker in procurement_markers) else "funding_candidate"
         candidates.append({
             "id": ref,
-            "title": first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call",
+            "title": title,
+            "opportunity_type": opportunity_type,
+            "classification_basis": "title_identifier_keyword_heuristic; verify original notice",
             "official_url": item.get("url") or first(meta, "url") or ("https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/" + str(ref)),
             "identifier": first(meta, "identifier"),
             "programme": first(meta, "frameworkProgramme"),
