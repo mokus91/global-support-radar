@@ -17,6 +17,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 - [Tulajdonosi és szellemi tulajdon nyilvántartása](docs/ownership-and-ip.md)
 - [AI-közreműködéssel készült fejlesztés átláthatósági nyilatkozata](docs/ai-assisted-development-disclosure.md)
+- [Előzetes jogi és licencelési audit – 2026-11-20](docs/preliminary-rights-and-licensing-audit-2026-11-20.md)
 - [Jogosultsági bizonyítékok naplója](docs/rights-evidence-log.md)
 - [Külső anyagok és licencek](THIRD_PARTY_NOTICES.md)
 - [Ikonok és grafikai elemek eredetnyilvántartása](docs/asset-provenance-register.md)
