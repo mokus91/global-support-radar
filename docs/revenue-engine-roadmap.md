@@ -187,3 +187,10 @@ Elkészült a [Partner Growth Engine](partner-growth-engine.md): a partnerkeres�
 A következő kutatási hullám a korábbi 20 célponton túl további 20 szervezetet céloz, különösen kamarák, EEN-csomópontok, egyetemek, civil hálózatok, agrár- és energiaügyi tanácsadók, inkubátorok és hivatalos adatgazdák körében. A célpontok csak kutatott jelöltek; nem partnernek vagy érdeklődőnek nevezzük őket.
 
 Jelenlegi státusz: 20 kutatott célpont, 0 jóváhagyott/elküldött megkeresés, 0 válasz, 0 érdeklődő, 0 pilot, 0 partner, 0 ügyfél, 0 Ft bevétel. Külső megkeresés továbbra is külön tulajdonosi jóváhagyással történhet. A 0 Ft-os indulási elv változatlan.
+
+
+## 16. Partnerhálózati térkép és kereshető partnerjelölt-oldal (2026-11-20)
+
+A hivatalos Enterprise Europe Network Hungary és Danube Chambers of Commerce Federation nyilvános hálózati oldalai alapján elkészült a második kutatási hullám 16 új szervezeti jelölttel. A kutatási jegyzet megadja a partnerkategóriát, relevancia-indoklást és a hivatalos weboldalt. A kereshető [partnerjelölt-adatbázis](../partner-network.html) szűrhető név és kategória szerint.
+
+A hálózati tagság csak a forrásoldal szerinti külső hálózati kapcsolatot jelenti, nem Global Support Radar-partnerséget. A teljes kutatott célpontszám 36; 0 megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 pilot, 0 aktív GSR-partner és 0 Ft bevétel. Megkeresés csak külön tulajdonosi jóváhagyással történhet.
