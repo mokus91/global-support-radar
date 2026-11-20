@@ -237,6 +237,19 @@ def main():
     for required_file in ("robots.txt", "sitemap.xml"):
         if not (ROOT / required_file).is_file():
             raise SystemExit(f"SEO discovery file is missing: {required_file}")
+
+    updates_page = ROOT / "updates.html"
+    if not updates_page.is_file():
+        raise SystemExit("Public opportunity change-log page is missing")
+    updates_text = updates_page.read_text(encoding="utf-8")
+    for required in ("opportunity-changes.json", "closure not confirmed", "verification", "aria-live"):
+        if required not in updates_text:
+            raise SystemExit(f"Public change-log transparency safeguard is missing: {required}")
+    if 'href="./updates.html"' not in html:
+        raise SystemExit("Homepage link to the public opportunity change log is missing")
+    sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+    if "https://mokus91.github.io/global-support-radar/updates.html" not in sitemap_text:
+        raise SystemExit("Public opportunity change-log page is missing from sitemap.xml")
     for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants", "europe-national-portals.json", "official-national-portal", "nationalPortals", "27 national portals", "euFundingGuide", "eu-funding-guide-i18n", "shared-management", "implementing partners"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
