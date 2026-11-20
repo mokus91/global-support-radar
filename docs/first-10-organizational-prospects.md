@@ -11,7 +11,7 @@ Ezek a szervezetek pályázati, projekt- vagy vállalkozásfejlesztési szolgál
 | # | Szervezet | Miért került a listára? | Nyilvános kapcsolat / hivatalos oldal | Prioritás |
 |---|---|---|---|---|
 | 1 | Független Nemzetközi Tanácsadó Iroda Kft. | Nemzetközi pályázati tanácsadás, többnyelvű csapatot jelez | fnti@fnti.hu · https://www.fnti.hu/ | Magas |
-| 2 | Pályázatcenter Kft. | EU-s és több szakterületű pályázatírás, figyelési szolgáltatást is jelez | https://www.palyazatcenter.hu/ (az elérhetőséget a saját oldalon ellenőrizni kell) | Magas |
+| 2 | Pályázatcenter Kft. | EU-s és több szakterületű pályázatírás, figyelési szolgáltatást is jelez | az elérhetőséget a nyilvános cégprofilon vagy saját hivatalos oldalon kell ellenőrizni | Magas |
 | 3 | Som-Tan Kft. | Hazai és EU-s pályázatok, projektmenedzsment, hosszabb szakmai tapasztalatot jelez | https://somtan.hu/ | Közepes |
 | 4 | Arbortalent | EU-s és hazai pályázatok figyelése, előkészítése és projektmonitoring | https://arbortalent.hu/vallalkozas/ | Magas |
 | 5 | EU Pályázati Iroda | Több száz forrás figyelését és pályázati értesítést kínál; potenciális szakmai visszajelző vagy versenytárs | https://eupi.hu/szolgaltatasok | Közepes |
