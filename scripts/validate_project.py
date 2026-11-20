@@ -4,6 +4,7 @@ import datetime as dt
 import json
 import re
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 from urllib.parse import urlparse
@@ -260,6 +261,13 @@ def main():
     sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     if "https://mokus91.github.io/global-support-radar/updates.html" not in sitemap_text:
         raise SystemExit("Public opportunity change-log page is missing from sitemap.xml")
+    sitemap_result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "validate_sitemap.py")],
+        capture_output=True,
+        text=True,
+    )
+    if sitemap_result.returncode:
+        raise SystemExit("Sitemap validation failed:\n" + sitemap_result.stdout + sitemap_result.stderr)
     for required in ("sourceCoverageSummary", "Automated integrations", "sourceCoverageNote", "not currently open grants", "europe-national-portals.json", "official-national-portal", "nationalPortals", "27 national portals", "euFundingGuide", "eu-funding-guide-i18n", "shared-management", "implementing partners"):
         if required not in html:
             raise SystemExit(f"Source coverage transparency panel is missing: {required}")
