@@ -12,6 +12,7 @@ import json
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 OPEN_STATUSES = {"open-and-current", "open", "official-page-checked-open"}
 CANDIDATE_STATUSES = {"official-api-window-current", "official-registry-window-current"}
@@ -26,34 +27,45 @@ def load_records(data_dir: Path) -> list[dict[str, Any]]:
         except (OSError, json.JSONDecodeError) as exc:
             print(f"WARNING: skipped {path.name}: {exc}")
             continue
+        if not isinstance(payload, dict):
+            print(f"WARNING: skipped {path.name}: top-level JSON must be an object")
+            continue
         items = payload.get("records", [])
         if not isinstance(items, list):
+            print(f"WARNING: skipped records in {path.name}: expected a list")
             continue
+        checked_at = payload.get("updated_at") or payload.get("generated_at") or ""
         for item in items:
             if isinstance(item, dict):
                 record = dict(item)
                 record["_dataset"] = path.name
-                record["_dataset_checked_at"] = (
-                    payload.get("updated_at") or payload.get("generated_at") or ""
-                )
+                record["_dataset_checked_at"] = checked_at
                 records.append(record)
     return records
 
 
 def classify(record: dict[str, Any], today: date) -> str:
-    status = str(record.get("status") or record.get("verification_status") or "").lower()
-    if status in CLOSED_STATUSES:
+    # Consider both fields: a closed signal must override an open signal.
+    statuses = {
+        str(record.get(key) or "").strip().lower()
+        for key in ("status", "verification_status")
+    }
+    statuses.discard("")
+    if statuses & CLOSED_STATUSES:
         return "exclude"
+
     deadline = record.get("deadline")
-    if deadline:
+    if deadline not in (None, ""):
         try:
-            if date.fromisoformat(str(deadline)[:10]) < today:
-                return "exclude"
-        except ValueError:
-            pass
-    if status in OPEN_STATUSES:
+            parsed_deadline = date.fromisoformat(str(deadline)[:10])
+        except (TypeError, ValueError):
+            return "exclude"
+        if parsed_deadline < today:
+            return "exclude"
+
+    if statuses & OPEN_STATUSES:
         return "verified"
-    if status in CANDIDATE_STATUSES:
+    if statuses & CANDIDATE_STATUSES:
         return "candidate"
     return "exclude"
 
@@ -61,6 +73,26 @@ def classify(record: dict[str, Any], today: date) -> str:
 def title_of(record: dict[str, Any]) -> str:
     return str(record.get("title_hu") or record.get("title") or
                record.get("title_original") or record.get("name") or "Cím nélkül")
+
+
+def official_url_of(record: dict[str, Any]) -> str:
+    candidate = record.get("official_url") or record.get("url") or ""
+    if not isinstance(candidate, str):
+        return ""
+    parsed = urlparse(candidate.strip())
+    if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
+        return ""
+    return candidate.strip()
+
+
+def amount_of(record: dict[str, Any]) -> str:
+    amount = record.get("amount_max")
+    if amount in (None, ""):
+        amount = record.get("total_call_budget")
+    if amount in (None, ""):
+        return "nincs megadva"
+    currency = record.get("currency") or record.get("amount_currency") or ""
+    return f"{amount} {currency}".strip()
 
 
 def render(records: list[dict[str, Any]], today: date) -> str:
@@ -97,22 +129,26 @@ def render(records: list[dict[str, Any]], today: date) -> str:
             return
         for item in sorted(items, key=lambda x: (str(x.get("country_code", "")), title_of(x))):
             country = item.get("country_hu") or item.get("country_en") or item.get("country_code") or "Ismeretlen ország"
-            url = item.get("official_url") or item.get("url") or ""
+            url = official_url_of(item)
             status_text = (
                 "Nyitottként jelzett a forrásadapterben; az egyéni jogosultság nincs igazolva."
                 if not candidate else
                 "Nyilvántartási időablak-jelölt; a tényleges nyitottságot és feltételeket ellenőrizni kell."
             )
+            categories = item.get("categories")
+            if not isinstance(categories, list):
+                categories = []
+            category = item.get("category") or ", ".join(str(x) for x in categories) or "nincs megadva"
             lines.extend([
                 f"### {country} – {title_of(item)}",
                 "",
                 f"- **Státusz:** {status_text}",
-                f"- **Kategória:** {item.get('category') or ', '.join(item.get('categories', [])) or 'nincs megadva'}",
+                f"- **Kategória:** {category}",
                 f"- **Határidő:** {item.get('deadline') or 'nincs megadva'}",
-                f"- **Összeg/keret:** {item.get('amount_max') or item.get('total_call_budget') or 'nincs megadva'} {item.get('currency') or item.get('amount_currency') or ''}".rstrip(),
+                f"- **Összeg/keret:** {amount_of(item)}",
                 f"- **Forrásellenőrzés:** {item.get('source_checked_at') or item.get('_dataset_checked_at') or 'nincs időbélyeg'}",
-                f"- **Adatfájl:** {item.get('_dataset')}",
-                f"- **Hivatalos forrás:** {url if url else 'nincs megadva'}",
+                f"- **Adatfájl:** {item.get('_dataset', 'nincs megadva')}",
+                f"- **Hivatalos forrás:** {url if url else 'nincs megadva vagy nem biztonságos URL'}",
                 "",
             ])
 
@@ -124,6 +160,7 @@ def render(records: list[dict[str, Any]], today: date) -> str:
         "- A rekord státusza nem bizonyítja a szervezet vagy személy jogosultságát.",
         "- A teljes pályázati keret nem azonos az egy pályázónak járó összeggel.",
         "- A lejárt, lezárt és visszavont rekordok nem jelennek meg nyitott lehetőségként.",
+        "- A hibás határidővel vagy nem HTTPS forráslinkkel rendelkező rekord nem minősül ellenőrzöttnek.",
         "- Az ismeretlen vagy discovery-only státuszú adatok nem kerülnek be a találati listákba.",
         "- A riport tájékoztató jellegű; nem jogi, adózási vagy pályázatírási tanács.",
         "",
@@ -138,7 +175,9 @@ def self_test() -> None:
     assert classify({"status": "official-api-window-current", "deadline": "2026-11-19"}, today) == "exclude"
     assert classify({"verification_status": "unverified"}, today) == "exclude"
     assert classify({"status": "closed"}, today) == "exclude"
-    print("Self-test: 5 checks passed.")
+    assert classify({"status": "open", "verification_status": "withdrawn"}, today) == "exclude"
+    assert classify({"status": "open", "deadline": "not-a-date"}, today) == "exclude"
+    print("Self-test: 7 checks passed.")
 
 
 def main() -> None:
