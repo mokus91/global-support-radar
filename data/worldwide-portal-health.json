@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T07:48:28+00:00",
+  "checked_at": "2026-11-20T07:58:19+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
     "http_error": 2,
-    "reachable": 56,
-    "restricted": 8
+    "reachable": 57,
+    "restricted": 7
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -166,7 +166,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 202,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -219,7 +219,7 @@
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.esfondi.lv/"
     },
     {
@@ -361,8 +361,9 @@
     },
     {
       "id": "national-ph-agriculture-2",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
     },
     {
       "id": "national-ph-business-3",
@@ -436,9 +437,8 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "restricted",
-      "http_status": 429,
-      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-funding-guide",
