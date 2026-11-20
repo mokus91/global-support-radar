@@ -33,12 +33,18 @@ jobs:
         run: python scripts/validate_project.py
       - name: Run report generator regression tests
         run: python -m unittest discover -s scripts -p 'test_generate_organization_report.py' -v
+      - name: Test report portfolio generator
+        run: python -m unittest discover -s scripts -p 'test_build_report_portfolio.py' -v
       - name: Generate latest organization monitoring report
         run: python scripts/generate_organization_report.py --output reports/organization-report-latest.md
-      - name: Preserve generated report
+      - name: Generate configured profile reports
+        run: python scripts/build_report_portfolio.py --config config/report-profiles.json --output-dir reports/profiles
+      - name: Preserve generated reports
         uses: actions/upload-artifact@v4
         with:
           name: organization-monitoring-report-${{ github.run_number }}
-          path: reports/organization-report-latest.md
+          path: |
+            reports/organization-report-latest.md
+            reports/profiles/*.md
           if-no-files-found: error
           retention-days: 14
