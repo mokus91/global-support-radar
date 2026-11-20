@@ -1,0 +1,6 @@
+# Direct CI dependencies for the official source-discovery workflow.
+# Exact PyPI releases and wheel SHA-256 hashes; update deliberately and review licences.
+certifi==2026.10.23 \
+    --hash=sha256:e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1
+pycountry==26.2.16 \
+    --hash=sha256:115c4baf7cceaa30f59a4694d79483c9167dbce7a9de4d3d571c5f3ea77c305a
