@@ -160,3 +160,12 @@ Elkészült az [ötperces szervezeti bemutató menete és pontozólapja](organiz
 A pontozás nem vásárlási szándékot mér: csak azt segíti, hogy eldöntsük, érdemes-e a riportot továbbfejleszteni vagy kézi pilotot tervezni. A státusznapló változatlanul 20 kutatott célpontot, 0 megkeresést, 0 bemutatót, 0 visszajelzést, 0 pilotot, 0 ügyfelet és 0 Ft bevételt rögzít.
 
 Ez belső felkészítő anyag. Külső kapcsolatfelvételhez továbbra is külön tulajdonosi jóváhagyás kell. Fizetős pilot előtt a kereskedelmi tárhely-, adatvédelmi, szerződési, számlázási és adózási kapukat rendezni kell. A 0 Ft-os indulási elv változatlan.
+
+
+## 13. Szervezeti pilot végrehajtási munkalap (2026-11-20)
+
+Elkészült a [szervezeti pilot végrehajtási és minőségellenőrzési munkalap](organizational-pilot-execution-checklist.md). A dokumentum meghatározza a szűk pilot hatókörét, a rekordok kötelező hivatalos forrásellenőrzését, a riportkészítés lépéseit, a mérőlapot és a folytatás/javítás/leállítás döntési kapuit.
+
+A munkalap célja, hogy a riport ne jelenítsen meg nyitottként olyan támogatást, amelynek státuszát az eredeti kiírás nem támasztja alá. A nyilvántartási API időablaka önmagában nem bizonyít nyitott jelentkezést.
+
+Ez előkészítő dokumentum, nem végrehajtott pilot. Külső megkeresés továbbra sem történt; nincs pilot, ügyfél vagy bevétel. A 0 Ft-os indulási elv, a tulajdonosi jóváhagyási és a kereskedelmi tárhelykapuk változatlanok.
