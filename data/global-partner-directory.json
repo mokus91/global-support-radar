@@ -339,6 +339,166 @@
       "fit_score": 4,
       "crm_status": "kutatott",
       "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-hu-mkik",
+      "name": "Hungarian Chamber of Commerce and Industry",
+      "country_code": "HU",
+      "region": "europe",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "finanszírozás",
+        "export"
+      ],
+      "official_website": "https://mkik.hu/en",
+      "contact_page": "https://mkik.hu/en",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF hivatalos taglistáján szereplő országos kamarai szervezet; hazai szervezeti pilot és magyarországi terjesztési lehetőség vizsgálatához releváns.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "hu:mkik:national-chamber",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-np-fncci",
+      "name": "Federation of Nepalese Chambers of Commerce & Industry",
+      "country_code": "NP",
+      "region": "asia",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "agrár",
+        "kereskedelem"
+      ],
+      "official_website": "https://www.fncci.org/",
+      "contact_page": "https://www.fncci.org/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF taglistáján szereplő országos nepáli kamarai szövetség; dél-ázsiai országos elérés és vállalkozásfejlesztési támogatások témájában releváns.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "np:fncci:national-federation",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-zw-zncc",
+      "name": "Zimbabwe National Chamber of Commerce",
+      "country_code": "ZW",
+      "region": "africa",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "kereskedelem"
+      ],
+      "official_website": "https://zncc.co.zw/",
+      "contact_page": "https://zncc.co.zw/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF hivatalos taglistáján szereplő zimbabwei országos kamarai szervezet; afrikai országos partnerkutatás egyik ellenőrizhető kiindulópontja.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "zw:zncc:national-chamber",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-lk-nccsl",
+      "name": "National Chamber of Commerce of Sri Lanka",
+      "country_code": "LK",
+      "region": "asia",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "export",
+        "kereskedelem"
+      ],
+      "official_website": "https://nationalchamber.lk/",
+      "contact_page": "https://nationalchamber.lk/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF taglistáján szereplő országos Srí Lanka-i kamarai szervezet; dél-ázsiai KKV-támogatási információk terjesztési tesztjéhez releváns.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "lk:nccsl:national-chamber",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-au-business-sa",
+      "name": "Business SA",
+      "country_code": "AU",
+      "region": "oceania",
+      "organisation_level": "national_or_state_business_chamber",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "üzleti támogatások"
+      ],
+      "official_website": "https://www.business-sa.com/",
+      "contact_page": "https://www.business-sa.com/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF taglistáján szereplő ausztrál üzleti szervezet; ausztrál vállalkozásfejlesztési és támogatási információk teszteléséhez lehet releváns. A szervezeti és területi hatókört kapcsolatfelvétel előtt külön pontosítani kell.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "au:business-sa:chamber",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "chamber-us-uschamber",
+      "name": "U.S. Chamber of Commerce",
+      "country_code": "US",
+      "region": "north_america",
+      "organisation_level": "national",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "üzleti környezet",
+        "finanszírozás"
+      ],
+      "official_website": "https://www.uschamber.com/",
+      "contact_page": "https://www.uschamber.com/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC WCF taglistáján szereplő országos amerikai üzleti szervezet; nagy piacra irányuló szervezeti pilot és terjesztési csatorna vizsgálatához releváns.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "us:uschamber:national-chamber",
+      "fit_score": 3,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
     }
   ]
 }
