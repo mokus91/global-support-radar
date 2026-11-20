@@ -15,29 +15,39 @@ SPEC.loader.exec_module(MODULE)
 class ClassificationTests(unittest.TestCase):
     def setUp(self):
         self.today = date(2026, 11, 20)
+        self.base = {"country_code": "HU", "official_url": "https://example.org/grant", "source_checked_at": "2026-11-20T09:00:00Z"}
 
     def test_explicit_open_record_is_verified_bucket(self):
-        self.assertEqual(MODULE.classify({"status": "open-and-current", "deadline": "2026-11-24"}, self.today), "verified")
+        self.assertEqual(MODULE.classify({**self.base, "status": "open-and-current", "deadline": "2026-11-24"}, self.today), "verified")
 
     def test_registry_window_is_candidate_not_verified(self):
-        self.assertEqual(MODULE.classify({"status": "official-api-window-current", "deadline": "2026-12-01"}, self.today), "candidate")
+        self.assertEqual(MODULE.classify({**self.base, "status": "official-api-window-current", "deadline": "2026-12-01"}, self.today), "candidate")
 
     def test_expired_deadline_is_excluded(self):
-        self.assertEqual(MODULE.classify({"status": "open-and-current", "deadline": "2026-11-19"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "status": "open-and-current", "deadline": "2026-11-19"}, self.today), "exclude")
 
     def test_unverified_and_closed_are_excluded(self):
-        self.assertEqual(MODULE.classify({"verification_status": "unverified"}, self.today), "exclude")
-        self.assertEqual(MODULE.classify({"status": "closed"}, self.today), "exclude")
-        self.assertEqual(MODULE.classify({"status": "withdrawn"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "verification_status": "unverified"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "status": "closed"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "status": "withdrawn"}, self.today), "exclude")
 
     def test_closed_secondary_status_overrides_open(self):
-        self.assertEqual(MODULE.classify({"status": "open", "verification_status": "withdrawn"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "status": "open", "verification_status": "withdrawn"}, self.today), "exclude")
 
     def test_invalid_deadline_is_excluded(self):
-        self.assertEqual(MODULE.classify({"status": "open", "deadline": "not-a-date"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "status": "open", "deadline": "not-a-date"}, self.today), "exclude")
 
     def test_missing_status_is_excluded(self):
-        self.assertEqual(MODULE.classify({"title": "Unknown"}, self.today), "exclude")
+        self.assertEqual(MODULE.classify({**self.base, "title": "Unknown"}, self.today), "exclude")
+
+    def test_missing_country_source_or_timestamp_is_excluded(self):
+        valid = {**self.base, "status": "open"}
+        for broken in (
+            {**valid, "country_code": ""},
+            {**valid, "official_url": "http://example.org"},
+            {**valid, "source_checked_at": "not-a-date"},
+        ):
+            self.assertEqual(MODULE.classify(broken, self.today), "exclude")
 
 
 class FilterTests(unittest.TestCase):
