@@ -32,6 +32,8 @@ jobs:
         run: python -m pip install --disable-pip-version-check certifi pycountry
       - name: Test CIHR official-notice parsing and status safeguards
         run: python -m unittest discover -s scripts -p 'test_discover_ca_cihr.py' -v
+      - name: Test French eligibility verification safeguards
+        run: python -m unittest discover -s scripts -p 'test_discover_france_aides_territoires.py' -v
       - name: Build UN DESA national portal directory for 193 Member States
         run: python scripts/build_un_national_portals.py
       - name: Expand country navigator with historical UN portal leads
