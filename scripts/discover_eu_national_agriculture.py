@@ -9,6 +9,7 @@ import os
 import re
 import ssl
 import time
+from concurrent.futures import ThreadPoolExecutor
 import urllib.error
 from datetime import datetime, timezone
 from html.parser import HTMLParser
@@ -27,7 +28,7 @@ KEYWORDS = (
     "agro", "rural development", "vidékfejleszt"
 )
 MAX_LINKS_PER_PORTAL = 20
-TIMEOUT = 18
+TIMEOUT = 12
 HEADERS = {"User-Agent": "GlobalSupportRadar/1.0 (+official public funding link discovery)"}
 
 class LinkParser(HTMLParser):
@@ -56,21 +57,21 @@ def fetch(url):
     except Exception:
         pass
     last_error = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             with urlopen(request, timeout=TIMEOUT, context=context) as response:
                 raw = response.read(2_500_000)
                 charset = response.headers.get_content_charset() or "utf-8"
                 return response.geturl(), raw.decode(charset, errors="replace")
         except urllib.error.HTTPError as exc:
-            if exc.code < 500 and exc.code != 429 or attempt == 2:
+            if exc.code < 500 and exc.code != 429 or attempt == 1:
                 raise
             last_error = exc
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
             if attempt == 1:
                 raise
             last_error = exc
-        time.sleep(3 * (attempt + 1))
+        time.sleep(1 * (attempt + 1))
     raise RuntimeError(f"Official portal request failed after retries: {last_error}")
 
 def normalized_host(url):
@@ -80,10 +81,10 @@ def normalized_host(url):
 def main():
     directory = json.loads(INPUT.read_text(encoding="utf-8"))
     records, checked, failures = [], 0, []
-    for portal in directory.get("records", []):
+    def scan_portal(portal):
+        local_records = []
         try:
             final_url, html = fetch(portal["url"])
-            checked += 1
             parser = LinkParser()
             parser.feed(html)
             source_host = normalized_host(final_url)
@@ -98,12 +99,10 @@ def main():
                 if parsed.scheme != "https" or normalized_host(target) != source_host:
                     continue
                 haystack = (label + " " + target).casefold()
-                if not any(word in haystack for word in KEYWORDS):
-                    continue
-                if target in found:
+                if not any(word in haystack for word in KEYWORDS) or target in found:
                     continue
                 found.add(target)
-                records.append({
+                local_records.append({
                     "id": f"national-agri-{portal['country_code'].lower()}-{len(found)}",
                     "country_code": portal["country_code"],
                     "country_en": portal["country_en"],
@@ -116,12 +115,23 @@ def main():
                     "record_type": "national-agriculture-link-discovery",
                     "verification_status": "unverified",
                     "status": "unverified-directory-lead",
-                    "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+                    "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
                 })
                 if len(found) >= MAX_LINKS_PER_PORTAL:
                     break
+            return portal, True, local_records, None
         except Exception as exc:
-            failures.append({"country_code": portal.get("country_code"), "error": str(exc)[:220]})
+            return portal, False, local_records, str(exc)[:220]
+
+    portals = directory.get("records", [])
+    with ThreadPoolExecutor(max_workers=6) as executor:
+        results = list(executor.map(scan_portal, portals))
+    for portal, ok, found_records, error in results:
+        if ok:
+            checked += 1
+            records.extend(found_records)
+        else:
+            failures.append({"country_code": portal.get("country_code"), "error": error})
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "source_id": "eu-national-funding-portals",
