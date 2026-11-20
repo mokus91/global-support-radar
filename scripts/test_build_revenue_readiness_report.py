@@ -68,5 +68,21 @@ class RevenueReadinessTests(unittest.TestCase):
             result = MODULE.summarize_pipeline(root)
         self.assertEqual(result["state"], "ERROR")
 
+    def test_owner_queue_prioritizes_replies_and_never_claims_outreach(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            data = {"records": [
+                {"id":"a","organization":"Alpha","status":"researched","next_action":"Kézi ellenőrzés"},
+                {"id":"b","organization":"Beta","status":"replied","next_action":"Igény pontosítása"},
+                {"id":"c","organization":"Gamma","status":"outreach_approved","next_action":"Előkészített levél ellenőrzése"}
+            ]}
+            (root / MODULE.PIPELINE_PATH).write_text(json.dumps(data), encoding="utf-8")
+            queue = MODULE.build_owner_action_queue(root)
+        self.assertIn("Beta", queue[0])
+        self.assertIn("IGÉNYVALIDÁLÁS", queue[0])
+        self.assertTrue(any("Alpha" in row and "nem engedélyezett" in row for row in queue))
+        self.assertTrue(any("nem küld e-mailt" in row for row in queue))
+
 if __name__ == "__main__":
     unittest.main()
