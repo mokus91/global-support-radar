@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-20T07:55:55.646792+00:00",
+  "generated_at": "2026-11-20T08:10:52.327711+00:00",
   "feeds_checked": 18,
-  "records_checked": 2224,
+  "records_checked": 2200,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 2004,
+  "unverified_status": 1980,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 214,
-    "official_listing_candidate": 1930,
+    "official_listing_candidate": 1906,
     "unverified": 74,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
-    "likely_available": 214,
-    "needs_verification": 1999,
-    "expired_or_closed": 10
+    "likely_available": 212,
+    "needs_verification": 1975,
+    "expired_or_closed": 12
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -173,11 +173,11 @@
     },
     {
       "file": "hu-nkfih-discovery.json",
-      "records": 33,
+      "records": 9,
       "procurement_candidates": 0,
-      "unverified": 33,
+      "unverified": 9,
       "api_window_candidates": 0,
-      "official_listing_candidates": 33,
+      "official_listing_candidates": 9,
       "historical_archive_records": 0
     },
     {
@@ -339,7 +339,7 @@
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
       "status": "checked",
-      "records_count": 33,
+      "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
       "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
@@ -398,7 +398,7 @@
     {
       "source_file": "hu-nkfih-discovery.json",
       "source_status": "listed-on-official-current-calls-page",
-      "records": 33
+      "records": 9
     },
     {
       "source_file": "jgrants-discovery.json",
