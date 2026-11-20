@@ -28,6 +28,8 @@ jobs:
           python-version: "3.12"
       - name: Compile Python discovery adapters
         run: python -m compileall -q scripts
+      - name: Test CIHR official-notice parsing and status safeguards
+        run: python -m unittest discover -s scripts -p 'test_discover_ca_cihr.py' -v
       - name: Install trusted certificate bundle and ISO country lookup
         run: python -m pip install --disable-pip-version-check certifi pycountry
       - name: Build UN DESA national portal directory for 193 Member States
@@ -67,7 +69,7 @@ jobs:
         run: python scripts/discover_au_arc_grants.py
       - name: Discover New Zealand Government Funding Explorer listings
         run: python scripts/discover_nz_funding_explorer.py
-      - name: Discover Canadian CIHR funding opportunities
+      - name: Discover Canadian CIHR RSS and official upcoming-opportunity notices
         timeout-minutes: 5
         run: python scripts/discover_ca_cihr.py
       - name: Discover Hungarian open-data datasets
