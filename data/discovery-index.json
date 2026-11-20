@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T13:39:57.245745+00:00",
+  "generated_at": "2026-11-20T14:27:10.219991+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -111,14 +111,6 @@
     {
       "title": "A KÖRFORGALMI MEZŐGAZDASÁGI GYÓGYSZERKEZETI KERESKEDELMI TÁROLÁS TÁBLÁZATA",
       "url": "https://data.gov.gr/dataset/http-www-pnai-gov-gr",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
-      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -256,14 +248,6 @@
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
-      "url": "https://dati.agcm.it/dataset/p28329#",
-      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -431,6 +415,14 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): glazing",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -701,6 +693,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "HOUSING - Number_pieces",
+      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Housing assistance for HEPA seniors by Canton CD76 2023",
       "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-canton-cd76-2023",
       "query": "housing assistance",
@@ -751,14 +751,6 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1078,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1094,7 +1086,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

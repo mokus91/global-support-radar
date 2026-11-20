@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-20T13:53:58.648692+00:00",
+  "generated_at": "2026-11-20T14:32:13.653664+00:00",
   "feeds_checked": 18,
-  "records_checked": 2209,
+  "records_checked": 2211,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1991,
+  "unverified_status": 1993,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 212,
-    "official_listing_candidate": 1916,
+    "official_listing_candidate": 1918,
     "unverified": 75,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1996,
-    "expired_or_closed": 0
+    "needs_verification": 1997,
+    "expired_or_closed": 1
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 502,
+      "records": 504,
       "procurement_candidates": 1,
-      "unverified": 502,
+      "unverified": 504,
       "api_window_candidates": 0,
-      "official_listing_candidates": 502,
+      "official_listing_candidates": 504,
       "historical_archive_records": 0
     },
     {
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 503,
+      "records_count": 505,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -393,7 +393,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 257
+      "records": 259
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -413,12 +413,12 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "forecasted",
-      "records": 588
+      "records": 587
     },
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 793
+      "records": 794
     }
   ],
   "review_queue_count": 50,
@@ -878,26 +878,6 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
-      "id": "187801PROSPECTSEN",
-      "title": "Enhancing Economic Transformation in Conflict- and Migration-Prone Regions and Strengthening IDP Policy and Programming",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187801",
-      "deadline": "2026-11-20T14:30:55.000+0000",
-      "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "application_state": "needs_verification",
-      "priority_score": 40,
-      "priority_reasons": [
-        "needs_verification",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1422,6 +1402,25 @@
       "missing_details": [
         "eligibility"
       ]
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "187801PROSPECTSEN",
+      "title": "Enhancing Economic Transformation in Conflict- and Migration-Prone Regions and Strengthening IDP Policy and Programming",
+      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187801",
+      "deadline": "2026-11-20T14:30:55.000+0000",
+      "deadline_state": "upcoming",
+      "source_status": "31094502",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
+      ],
+      "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
     }
   ],
   "non_opportunity_records": 5,
@@ -1440,7 +1439,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 9,
+  "diagnostic_missing_urls": 8,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
