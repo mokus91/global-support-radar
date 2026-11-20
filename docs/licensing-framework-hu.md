@@ -99,3 +99,20 @@ Folyamatos frissítés, SLA, hibajavítás, ügyféltámogatás, egyedi fejleszt
 A rendszer és az előkészítő dokumentumok nem adhatnak ki automatikusan licencet, nem publikálhatnak hirdetést, nem fogadhatnak el szerződést, nem módosíthatnak bankszámlát, és nem indíthatnak kifizetést. Minden ilyen lépéshez a tulajdonos külön jóváhagyása kell.
 
 **Jogi figyelmeztetés:** ez működési és értékesítési előkészítő dokumentum. A tényleges licencszerződést magyar szerzői jogban és adózásban jártas ügyvéd/könyvelő ellenőrizze.
+
+
+## 10. AI-közreműködés és a licenc tárgyának korlátozása
+
+A projekt emberi irányítással, AI-közreműködéssel készült. A projektgazda adta az ötletet, a termékirányt, a követelményeket és a fejlesztési döntéseket; a ChatGPT a beszélgetések alapján kódot, dokumentációt és más megvalósítási anyagokat készített.
+
+Az OpenAI 2026. január 1-jétől hatályos Felhasználási feltételei szerint a felhasználó és az OpenAI viszonyában – az alkalmazandó jog által megengedett mértékben – a felhasználóé a kimenet, és az OpenAI átruházza az esetlegesen fennálló jogait. A feltételek azt is rögzítik, hogy a kimenetek nem feltétlenül egyediek, és más felhasználók hasonló kimenetet kaphatnak. Ez a szerződéses rendelkezés önmagában nem bizonyítja, hogy minden AI-kimenet a magyar vagy uniós szerzői jog szerint védett, egyéni-eredeti mű, és nem ad jogot harmadik fél anyagaira.
+
+Ezért:
+- a projektet „emberi irányítással, AI-közreműködéssel készült szoftverként” kell bemutatni;
+- nem állítható, hogy a projektgazda személyesen írta a teljes forráskódot;
+- nem garantálható minden AI-val előállított kódrészlet kizárólagos szerzői jogi védelme;
+- a licenc csak a jogszerűen továbbengedélyezhető elemekre terjedhet ki;
+- az ötlet, általános működés, módszer, tényadat és funkció nem válik automatikusan szerzői jogi védelem tárgyává;
+- a végleges szerződést magyar szerzői jogi szakértőnek ellenőriznie kell.
+
+Az előzetes audit részletei: [docs/preliminary-rights-and-licensing-audit-2026-11-20.md](preliminary-rights-and-licensing-audit-2026-11-20.md).
