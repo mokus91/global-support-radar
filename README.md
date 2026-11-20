@@ -123,3 +123,5 @@ A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorál
 - [Third-party materials and source obligations](THIRD_PARTY_NOTICES.md)
 
 Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fejlesztési nyomvonalat rögzítik. Nem helyettesítik az aláírt jogátruházási megállapodásokat, és nem teszik a külső adatokat vagy szoftvereket a projekt tulajdonává. A nyilvános GitHub-tárhely továbbra is nyilvános, a GitHub feltételei szerint megtekinthető és fork-olható.
+
+- Tulajdonosi és üzemeltetési kontrollterv: `docs/owner-control-and-deployment-plan.md` (technikai terv, nem jogi igazolás).
