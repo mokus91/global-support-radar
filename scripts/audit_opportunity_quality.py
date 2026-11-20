@@ -21,6 +21,7 @@ report = {
     "missing_titles": 0,
     "unverified_status": 0,
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
+    "verification_dimensions": {"open_status_verified": 0, "eligibility_verified": 0, "amount_verified": 0},
     "feed_summary": [],
     "source_status_summary": [],
     "review_queue_count": 0,
@@ -172,6 +173,18 @@ for feed in manifest.get("feeds", []):
             parsed = urlparse(str(url))
             if parsed.scheme != "https" or not parsed.netloc:
                 report["invalid_urls"] += 1
+
+        # Track distinct verification dimensions; one checked field must not imply all others are verified.
+        if record.get("status") in {"open-and-current", "verified-open"} and (
+            record.get("verification_status") in {"official_page_open_status_and_amount_checked", "official-page-open-status-and-amount-checked"}
+            or ("verified" in str(record.get("verification_status") or "").lower()
+                and "unverified" not in str(record.get("verification_status") or "").lower())
+        ):
+            report["verification_dimensions"]["open_status_verified"] += 1
+        if record.get("eligibility_verified") is True:
+            report["verification_dimensions"]["eligibility_verified"] += 1
+        if record.get("amount_verified") is True:
+            report["verification_dimensions"]["amount_verified"] += 1
 
         status = str(record.get("verification_status") or "").strip().lower()
         record_state = str(record.get("status") or "").strip().lower()
