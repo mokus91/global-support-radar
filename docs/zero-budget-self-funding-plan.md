@@ -27,6 +27,10 @@ A beérkező pénz útja:
 
 **Automatikus banki utalás nincs beállítva.** A projekt nem fér hozzá a tulajdonos bankszámlájához, és nem indíthat önálló pénzmozgást. Kifizetést csak a tulajdonos által kiválasztott, szerződött fizetési/partneri szolgáltató, a tulajdonos által megadott bankszámlára és az ő jóváhagyásával teljesíthet. Banki adatot, jelszót vagy kártyaadatot nem tárolunk a weboldal kódjában.
 
+## Részletes kiadásfigyelés
+
+A részletes költségkategóriákat és a költési kaput a `data/financial-ledger.json`, `scripts/build_expense_guard_report.py` és `docs/expense-control-and-self-funding.md` tartalmazza. A napi bevételi készenléti workflow a pénzügyi ellenőrzést és annak tesztjeit is lefuttatja. A rendszer csak igazolt bevételt számít fedezetnek, és a tulajdonosi jóváhagyás nélküli kiadást blokkolja. Ha nincs fedezet, a fizetős szolgáltatások nem indulnak el; a már működő ingyenes tájékoztató oldal ettől nem áll le automatikusan.
+
 ## Kiadási szabályok
 
 - Induláskor: 0 Ft fizetett hirdetés, 0 Ft fizetős API, 0 Ft fizetős tárhely, 0 Ft fizetős bővítmény.
