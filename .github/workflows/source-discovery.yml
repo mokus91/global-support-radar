@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: official-source-discovery-v2
@@ -115,3 +116,28 @@ jobs:
           else
             echo "No discovery changes."
           fi
+
+      - name: Open or update a discovery failure alert
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Global Support Radar adatgyűjtési hiba';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              'A Global Support Radar hivatalos adatforrásokat feldolgozó automatikus futása hibával leállt.',
+              '',
+              `- Workflow-futás: ${runUrl}`,
+              `- Commit: ${context.sha}`,
+              `- Időpont (UTC): ${new Date().toISOString()}`,
+              '',
+              'A részletes hiba a futás naplójában található. A következő ütemezett futás újra megpróbálja az adatgyűjtést.'
+            ].join('\\n');
+            const { owner, repo } = context.repo;
+            const existing = await github.rest.issues.listForRepo({ owner, repo, state: 'open', per_page: 100 });
+            const alert = existing.data.find(issue => issue.title === title);
+            if (alert) {
+              await github.rest.issues.update({ owner, repo, issue_number: alert.number, body });
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body });
+            }
