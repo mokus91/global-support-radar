@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:06:23.998472+00:00",
+  "generated_at": "2026-11-20T04:06:45.751995+00:00",
   "feeds_checked": 18,
   "records_checked": 2215,
   "expired_deadlines": 10,
@@ -164,35 +164,12 @@
   "review_queue_count": 50,
   "review_queue": [
     {
-      "source_file": "spain-discovery.json",
-      "id": "943269",
-      "title": "Convocatoria para la concesión de ayudas individuales de comedor escolar para el curso 2026-2027",
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943269",
-      "deadline": "2026-11-19",
-      "source_status": "official-api-window-current",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
-      "id": "14981COMPETITIVE_CALLen",
-      "title": "GroundWork Open Call",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46597762",
-      "deadline": "2026-11-19T15:00:00.000+0000",
-      "source_status": "31094502",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
       "source_file": "eu-open-calls-discovery.json",
       "id": "187801PROSPECTSEN",
       "title": "Enhancing Economic Transformation in Conflict- and Migration-Prone Regions and Strengthening IDP Policy and Programming",
       "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187801",
       "deadline": "2026-11-20T14:30:55.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -205,6 +182,7 @@
       "title": "Comprehensive and inclusive support for women and girls' victims of GBV",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47589185",
       "deadline": "2026-11-23T15:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -217,6 +195,7 @@
       "title": "Service request: 𝘏𝘰𝘸 𝘮𝘪𝘨𝘩𝘵 𝘸𝘦 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘢𝘤𝘤𝘦𝘴𝘴 𝘵𝘰 𝘤𝘳𝘪𝘵𝘪𝘤𝘢𝘭 𝘤𝘪𝘷𝘪𝘭 𝘱𝘳𝘰𝘵𝘦𝘤𝘵𝘪𝘰𝘯 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘧𝘰𝘳 𝘳𝘦𝘴𝘪𝘥𝘦𝘯𝘵𝘴 - 𝘦𝘴𝘱𝘦𝘤𝘪𝘢𝘭𝘭𝘺 𝘵𝘩𝘰𝘴𝘦 𝘸𝘩𝘰 𝘥𝘰 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘮𝘰𝘣𝘪𝘭𝘦 𝘢𝘱𝘱𝘴 - 𝘴𝘰 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦𝘺 𝘤𝘢𝘯 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘤𝘭𝘦𝘢𝘳, 𝘵𝘪𝘮𝘦𝘭𝘺 𝘨𝘶𝘪𝘥𝘢𝘯𝘤𝘦 𝘣𝘺 𝘱𝘩𝘰𝘯𝘦 𝘥𝘶𝘳𝘪𝘯𝘨 𝘦𝘮𝘦𝘳𝘨𝘦𝘯𝘤𝘪𝘦𝘴? ",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46807003",
       "deadline": "2026-11-23T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -229,6 +208,7 @@
       "title": "SYSTEMEU - Financial Support to Third Parties (FSTP) \n\nWhat is the aim?\nTo support digital innovations in healthcare, energy and mobility as they progress from the prototype stage (TRL 6) to a market-ready system (TRL 8).\n\nWho can take part",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45659376",
       "deadline": "2026-11-23T23:59:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -241,6 +221,7 @@
       "title": "第１４回（令和８年度第３回）躍進的な事業推進のための設備投資支援事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003rLvpUAE",
       "deadline": "2026-11-24T04:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -253,6 +234,7 @@
       "title": "Start-Up Chile — Growth 13",
       "official_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
       "deadline": "2026-11-24T13:00:00-03:00",
+      "deadline_state": "upcoming",
       "source_status": "open-and-current",
       "score": 8,
       "missing_details": [
@@ -265,6 +247,7 @@
       "title": "【農林水産省】中山間地域所得確保推進事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYDCMA5",
       "deadline": "2026-11-25T08:15:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -277,6 +260,7 @@
       "title": "令和７年度補正 ディマンドリスポンスの拡大に向けたIoT化推進事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDY5GMAX",
       "deadline": "2026-11-27T15:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -289,6 +273,7 @@
       "title": "【令和８年度】二酸化炭素排出抑制対策事業費等補助金（地域再エネ水素ステーション保守点検等支援事業）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDZzQMAX",
       "deadline": "2026-11-28T09:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -301,6 +286,7 @@
       "title": "LLM-BRIDGE – Venture Incubation Programme - Open Call for Incubators – 2nd Call",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47038289",
       "deadline": "2026-11-28T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -313,6 +299,7 @@
       "title": "Mission ocean in Slovenian seas — Call for proposals for the provision of financial support to third parties for the implementation of small-scale projects under the RISTANC project",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46945037",
       "deadline": "2026-11-28T23:59:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -325,6 +312,7 @@
       "title": "Decreto 2026DECL003683, de 16 de noviembre de 2026 por la que se aprueba la convocatoria  del concurso de escaparates y paradas de mercado de la campaña de Navidad 2026",
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943398",
       "deadline": "2026-11-30",
+      "deadline_state": "upcoming",
       "source_status": "official-api-window-current",
       "score": 8,
       "missing_details": [
@@ -337,6 +325,7 @@
       "title": "令和８年度二酸化炭素排出抑制対策事業費等補助金（運輸部門等の脱炭素化に向けた先進的システム社会実装促進事業のうち、農業機械の電動化促進事業）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDa1gMAD",
       "deadline": "2026-11-30T03:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -349,6 +338,7 @@
       "title": "【第３回】中東情勢による原材料価格高騰に伴う経営基盤安定化緊急対策事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003ohEXUAY",
       "deadline": "2026-11-30T07:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -361,6 +351,7 @@
       "title": "古賀市中小企業等向け太陽光発電設備導入補助金",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYfxMAH",
       "deadline": "2026-11-30T08:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -373,6 +364,7 @@
       "title": "【島根県】令和8年度_中小企業等海外展開支援事業費補助金（海外出願支援事業）（第７回公募）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ0000046qPpUAI",
       "deadline": "2026-11-30T08:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -385,6 +377,7 @@
       "title": "令和8年度　資源循環分野の脱炭素化促進事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDXyuMAH",
       "deadline": "2026-11-30T08:30:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -397,6 +390,7 @@
       "title": "産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業① 空港における再エネ活用型GPU等導入支援（二酸化炭素排出抑制対策事業費等補助金）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYzVMAX",
       "deadline": "2026-11-30T09:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -409,6 +403,7 @@
       "title": "産業車両等の脱炭素化促進事業のうち、港湾における脱炭素化促進事業（二酸化炭素排出抑制対策事業費等補助金）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDZ04MAH",
       "deadline": "2026-11-30T09:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -421,6 +416,7 @@
       "title": "森・川・海ごみ削減実践活動支援事業補助金",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYsRMAX",
       "deadline": "2026-11-30T14:45:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -433,6 +429,7 @@
       "title": "令和８年度東京都医療ＤＸ人材育成支援事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDXvUMAX",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -445,6 +442,7 @@
       "title": "令和８年度課題解決型製品・サービス等の販路拡大助成",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDY36MAH",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -457,6 +455,7 @@
       "title": "令和８年度多様な体験型観光推進事業補助金",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYUmMAP",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -469,6 +468,7 @@
       "title": "令和8年度SDS電子化補助金",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDderMAD",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -481,6 +481,7 @@
       "title": "【岩手】令和８年度中小企業最低賃金引上げ支援対策費補助金（業務改善助成金）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDdueMAD",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -493,6 +494,7 @@
       "title": "【熊本】令和８年度中小企業最低賃金引上げ支援対策費補助金（業務改善助成金）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDe6YMAT",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -505,6 +507,7 @@
       "title": "【沖縄】令和８年度中小企業最低賃金引上げ支援対策費補助金（業務改善助成金）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDe6cMAD",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -517,6 +520,7 @@
       "title": "観光関連事業者のDX・経営力強化支援事業補助金（令和８年度第２回募集）",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDeYeMAL",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -529,6 +533,7 @@
       "title": "東京都商店街防災力向上緊急支援事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003ot1BUAQ",
       "deadline": "2026-11-30T14:59:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -541,6 +546,7 @@
       "title": "RENEW-BOOSTER EUROCLUSTER CALL N°2 FOR FINANCIAL SUPPORT TO THIRD PARTIES",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47108154",
       "deadline": "2026-11-30T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -553,6 +559,7 @@
       "title": "Cyber Security Boost: Support for the development, pilot testing and wider adoption of solutions for cyber resilience.",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46786367",
       "deadline": "2026-11-30T19:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -565,6 +572,7 @@
       "title": "Financial support for participation in AI SECRETT master programme’s extracurricular educational activities (First edition). Call identifier: AI SECRETT-FSTP-CALL-01-2026. ",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46813062",
       "deadline": "2026-11-30T23:59:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -577,6 +585,7 @@
       "title": "European Partnership on Innovative SMEs/Innowwide CALL 5",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/44087099",
       "deadline": "2026-12-01T02:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -589,6 +598,7 @@
       "title": "令和８年度海外商標対策支援助成事業",
       "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYR2MAP",
       "deadline": "2026-12-01T08:00:00.000Z",
+      "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "score": 8,
       "missing_details": [
@@ -601,6 +611,7 @@
       "title": "The NCC-IS Cybersecurity Grant (FSTP)",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46786367",
       "deadline": "2026-12-01T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -613,6 +624,7 @@
       "title": "AI4CI - Fee waivers for Ulm University",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45114064",
       "deadline": "2026-12-01T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -625,6 +637,7 @@
       "title": "SME Market Expansion Open Call 2027 ",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48939761",
       "deadline": "2026-12-01T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -637,6 +650,7 @@
       "title": "Innovation Funding for Estonian Cybersecurity Companies for developing innovative, high value-added products and services",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46786367",
       "deadline": "2026-12-02T04:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -649,6 +663,7 @@
       "title": "ForestPathways – Building Knowledge and Solutions for Resilient Forests and Sustainable Forest-Based Futures",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48213468",
       "deadline": "2026-12-02T11:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -661,6 +676,7 @@
       "title": "NOSTRADAMUS - Open Call #1: Funding Digital Applications for Sustainable and Efficient Agriculture",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45657640",
       "deadline": "2026-12-02T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -673,6 +689,7 @@
       "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US",
       "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187639",
       "deadline": "2026-12-02T22:59:26.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -685,6 +702,7 @@
       "title": "NetZeroCities ECT2: Enabling City Transformation 2",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48400288",
       "deadline": "2026-12-03T12:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -697,6 +715,7 @@
       "title": "ZMINA:Resilience. Second call for co-creation funding of international cooperation projects",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47365856",
       "deadline": "2026-12-04T22:59:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -709,6 +728,7 @@
       "title": "Estamos Juntos: joining forces for civic engagement\nStrengthening civil society organizations and not-for-profit media to promote civic education and media pluralism in Angola",
       "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187862",
       "deadline": "2026-12-08T11:00:38.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -721,6 +741,7 @@
       "title": "ROOTS Zambia - Rights, oversight and transparency for Zambia's sustainable development",
       "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187975",
       "deadline": "2026-12-08T17:00:41.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -733,6 +754,7 @@
       "title": "UPRAISE: Financial Support to Third Parties (FSTP) call for International Mobility, Type of financial support: Students Incoming, Cycle 1 – Academic Year 2026/2027",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46813062",
       "deadline": "2026-12-10T01:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -745,6 +767,7 @@
       "title": "UPRAISE: Financial Support to Third Parties (FSTP) call for International Mobility, Type of financial support: Students Outgoing, Cycle 1 – Academic Year 2026/2027 – Universidad Rey Juan Carlos (URJC)",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46813062",
       "deadline": "2026-12-10T02:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
       "score": 8,
       "missing_details": [
@@ -757,7 +780,34 @@
       "title": "UNITE Open Call 2 for Joint Interregional Projects",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45659376",
       "deadline": "2026-12-10T17:00:00.000+0000",
+      "deadline_state": "upcoming",
       "source_status": "31094502",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "15985COMPETITIVE_CALLen",
+      "title": "European Joint Master’s Programme in Digital Society, Social Innovation and Global Citizenship (DIGISOC)\nDIGISOC Scholarship Programme Academic Year 2026/2027 Call for Application",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45114064",
+      "deadline": "2026-12-10T23:59:00.000+0000",
+      "deadline_state": "upcoming",
+      "source_status": "31094502",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "spain-discovery.json",
+      "id": "943334",
+      "title": "Convocatoria 2026 del Concurso de Escaparates de Navidad",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943334",
+      "deadline": "2026-12-11",
+      "deadline_state": "upcoming",
+      "source_status": "official-api-window-current",
       "score": 8,
       "missing_details": [
         "eligibility"
