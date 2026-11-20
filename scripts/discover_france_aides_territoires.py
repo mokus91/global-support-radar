@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import current catalogue entries from the official Aides-territoires API."""
 from __future__ import annotations
-import json, ssl, urllib.request, urllib.error
+import json, ssl, time, socket, urllib.request, urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -18,13 +18,19 @@ def get_json(url):
         import certifi
         ctx=ssl.create_default_context(cafile=certifi.where())
     except ImportError: pass
-    try:
-        with urllib.request.urlopen(req,timeout=35,context=ctx) as r:
-            return json.loads(r.read(8_000_000).decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        if exc.code in (401, 403, 429, 500, 502, 503, 504):
-            return {"_api_error": exc.code, "_api_error_reason": str(exc.reason)}
-        raise
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req,timeout=25,context=ctx) as r:
+                return json.loads(r.read(8_000_000).decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code in (401, 403, 429, 500, 502, 503, 504):
+                return {"_api_error": exc.code, "_api_error_reason": str(exc.reason), "_api_error_kind": "http"}
+            raise
+        except (urllib.error.URLError, TimeoutError, socket.timeout, ssl.SSLError, ConnectionError) as exc:
+            if attempt == 2:
+                return {"_api_error": None, "_api_error_reason": str(exc), "_api_error_kind": "network"}
+            time.sleep(2 ** attempt)
+    return {"_api_error": None, "_api_error_reason": "Unknown network failure", "_api_error_kind": "network"}
 
 def first(row,*keys):
     for k in keys:
@@ -52,11 +58,12 @@ def main():
     url=START; records=[]; seen=set(); pages=0
     while url and pages<MAX_PAGES:
         payload=get_json(url)
-        if payload.get("_api_error"):
-            output={"schema_version":"1.0","generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),"country_code":"FR","source":"Aides-territoires official public API","source_url":START,"pages_checked":pages,"records_count":len(records),"records":records,"fetch_status":"temporarily-restricted","http_status":payload["_api_error"],"error":payload.get("_api_error_reason"),"scope":"The official API did not permit this automated request. No current grant or application status is inferred; use the official catalogue directly."}
+        if payload.get("_api_error") is not None or payload.get("_api_error_kind"):
+            restricted = payload.get("_api_error_kind") == "http"
+            output={"schema_version":"1.0","generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),"country_code":"FR","source":"Aides-territoires official public API","source_url":START,"pages_checked":pages,"records_count":len(records),"records":records,"fetch_status":"temporarily-restricted" if restricted else "temporarily-unavailable","http_status":payload.get("_api_error"),"error":payload.get("_api_error_reason"),"scope":"The official API could not be queried successfully. No current grant or application status is inferred; use the official catalogue directly."}
             OUT.parent.mkdir(parents=True,exist_ok=True)
             OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-            print("Aides-territoires API temporarily restricted (HTTP " + str(payload["_api_error"]) + "); saved a non-fatal status record.")
+            print("Aides-territoires API " + ("temporarily restricted" if restricted else "temporarily unavailable") + "; saved a non-fatal status record.")
             return
         rows=payload.get("results",[])
         if not isinstance(rows,list): raise RuntimeError("Unexpected API response: results is not a list")
