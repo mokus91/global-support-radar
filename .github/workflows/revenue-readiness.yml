@@ -1,0 +1,43 @@
+name: Revenue readiness monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily at 06:47 UTC, away from the top of the hour.
+    - cron: "47 6 * * *"
+  push:
+    paths:
+      - "scripts/build_revenue_readiness_report.py"
+      - ".github/workflows/revenue-readiness.yml"
+      - "docs/organizational-pilot-spec.md"
+      - "docs/sample-organization-report-2026-11-20.md"
+      - "docs/organizational-pilot-execution-checklist.md"
+      - "docs/prospect-interview-guides.md"
+      - "docs/payment-and-owner-payout-readiness.md"
+      - "docs/first-paid-report-pilot.md"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: global-support-radar-revenue-readiness
+  cancel-in-progress: false
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate conservative readiness report
+        run: python scripts/build_revenue_readiness_report.py > revenue-readiness-report.md
+      - name: Preserve report as a private-to-run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: revenue-readiness-${{ github.run_number }}
+          path: revenue-readiness-report.md
+          if-no-files-found: error
+          retention-days: 14
