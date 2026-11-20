@@ -216,6 +216,24 @@ for feed in manifest.get("feeds", []):
             application_state = "needs_verification"
         report["application_state_tiers"][application_state] += 1
 
+        # Ranking is for review order only; it never upgrades an unverified record.
+        priority_base = {
+            "verified_open": 100,
+            "likely_available": 60,
+            "needs_verification": 20,
+            "expired_or_closed": 0,
+        }[application_state]
+        priority_reasons = [application_state]
+        if deadline_dt is not None and deadline_dt >= dt.datetime.now(dt.timezone.utc):
+            days_left = (deadline_dt.date() - today).days
+            if days_left <= 7:
+                priority_base += 12
+                priority_reasons.append("deadline_within_7_days")
+            elif days_left <= 30:
+                priority_base += 6
+                priority_reasons.append("deadline_within_30_days")
+        priority_score = priority_base + score
+
         if title or url:
             report["review_queue"].append({
                 "source_file": filename,
@@ -226,6 +244,8 @@ for feed in manifest.get("feeds", []):
                 "deadline_state": deadline_state,
                 "source_status": str(source_status_value or "")[:100],
                 "application_state": application_state,
+                "priority_score": priority_score,
+                "priority_reasons": priority_reasons,
                 "opportunity_type": str(record.get("opportunity_type") or "unclassified"),
                 "score": score,
                 "missing_details": missing_details
@@ -304,6 +324,7 @@ report["source_status_summary"] = [
 report["feed_errors"] = report["feed_errors"][:100]
 report["review_queue"].sort(key=lambda item: ({"upcoming": 0, "unknown": 1, "unparsed": 2, "expired": 3}.get(item["deadline_state"], 4), -item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
 report["review_queue"] = report["review_queue"][:50]
+report["review_queue"].sort(key=lambda item: (item.get("priority_score", 0), item.get("score", 0)), reverse=True)
 report["review_queue_count"] = len(report["review_queue"])
 report["procurement_review_queue"].sort(key=lambda item: (item["deadline"] or "9999", item["source_file"], item["id"]))
 report["procurement_review_queue"] = report["procurement_review_queue"][:50]
