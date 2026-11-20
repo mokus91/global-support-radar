@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A Global Support Radar helyi, böngészőben tárolt pénzügyi nyilvántartása.">
+<meta name="robots" content="noindex,nofollow">
+<title>Pénzügyi nyilvántartás – Global Support Radar</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#aab8cc;--line:#293b56;--mint:#53e0b2;--gold:#ffd27a;--red:#ff9c9c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Arial}.wrap{max-width:980px;margin:auto;padding:22px 16px 55px}a{color:var(--mint)}header,footer{padding:12px 0 18px;border-bottom:1px solid var(--line)}footer{border:0;border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--muted);font-size:13px}h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:28px 0 8px}.muted{color:var(--muted)}.notice{background:#302819;border:1px solid #70592e;color:#f5dfb2;border-radius:12px;padding:14px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.card span{display:block;color:var(--muted);font-size:13px}.card strong{display:block;font-size:clamp(19px,3vw,27px);margin-top:5px;overflow-wrap:anywhere}.income strong{color:var(--mint)}.out strong{color:var(--gold)}.balance strong{color:var(--mint)}form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}label{display:block;font-size:14px;color:var(--muted)}input,select,button{font:inherit}input,select{display:block;width:100%;margin-top:5px;padding:11px;border-radius:9px;border:1px solid var(--line);background:#0b1628;color:var(--text)}.wide{grid-column:1/-1}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}button,.button{border:0;border-radius:9px;padding:10px 15px;background:var(--mint);color:#092017;font-weight:700;cursor:pointer;text-decoration:none}.secondary{background:#263a54;color:var(--text)}.danger{background:#512c36;color:#ffe3e3}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:600px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-size:13px}.type-in{color:var(--mint)}.type-out{color:var(--gold)}.empty{padding:20px;text-align:center;color:var(--muted)}@media(max-width:720px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){form{grid-template-columns:1fr}.wide{grid-column:auto}}
+</style>
+</head>
+<body><main class="wrap">
+<header><a href="./sustainability.html">← Vissza az önfenntartási szabályzathoz</a></header>
+<h1>Pénzügyi nyilvántartás</h1>
+<p class="muted">A Global Support Radar bevételeinek és kiadásainak egyszerű, kézi nyilvántartása.</p>
+<div class="notice"><strong>Fontos adatvédelmi tudnivaló:</strong> az adatokat ez az oldal kizárólag a jelenlegi böngészőben, ezen az eszközön tárolja. Nem kerülnek fel a GitHubra és nem szinkronizálódnak más eszközre. Böngészőadatok törlésekor elveszhetnek. Készíts rendszeresen CSV-mentést. Ez nem könyvelési rendszer, és nem kapcsolódik bankszámlához.</div>
+<section class="grid" aria-live="polite">
+<div class="card income"><span>Összes bevétel</span><strong id="incomeTotal">0 Ft</strong></div>
+<div class="card out"><span>Levonások és működési kiadások</span><strong id="costTotal">0 Ft</strong></div>
+<div class="card"><span>Félretett tartalék</span><strong id="reserveTotal">0 Ft</strong></div>
+<div class="card balance"><span>Szabadon maradó egyenleg</span><strong id="balanceTotal">0 Ft</strong></div>
+</section>
+<section class="panel">
+<h2>Új tétel rögzítése</h2>
+<form id="entryForm">
+<label>Dátum<input id="date" type="date" required></label>
+<label>Tétel típusa<select id="type"><option value="income">Bevétel</option><option value="deduction">Adó / szolgáltatói levonás</option><option value="expense">Működési kiadás</option><option value="reserve">Tartalékba félretett összeg</option><option value="payout">Üzemeltetőnek kifizetett összeg</option></select></label>
+<label>Összeg (Ft)<input id="amount" type="number" min="1" step="1" required placeholder="Például: 5000"></label>
+<label>Megjegyzés<input id="note" maxlength="120" placeholder="Például: hirdetési bevétel"></label>
+<div class="wide actions"><button type="submit">Tétel mentése ezen az eszközön</button></div>
+</form>
+</section>
+<section class="panel" style="margin-top:16px">
+<h2>Rögzített tételek</h2>
+<div class="tablewrap"><table><thead><tr><th>Dátum</th><th>Típus</th><th>Megjegyzés</th><th>Összeg</th><th></th></tr></thead><tbody id="entries"></tbody></table></div>
+<p id="empty" class="empty">Még nincs rögzített tétel. A jelenlegi igazolt egyenleg 0 Ft.</p>
+<div class="actions"><button type="button" id="export" class="secondary">CSV exportálása</button><button type="button" id="clear" class="danger">Minden tétel törlése</button></div>
+</section>
+<footer><a href="./">Főoldal</a> · <a href="./sustainability.html">Önfenntartás</a> · <a href="./revenue.html">Hirdetési tájékoztató</a></footer>
+</main>
+<script>
+(()=>{
+const KEY="gsr_finance_ledger_v1",labels={income:"Bevétel",deduction:"Adó / levonás",expense:"Működési kiadás",reserve:"Tartalék",payout:"Üzemeltetői kifizetés"};
+const $=id=>document.getElementById(id),money=n=>new Intl.NumberFormat("hu-HU",{maximumFractionDigits:0}).format(n)+" Ft";
+let entries=[];try{entries=JSON.parse(localStorage.getItem(KEY)||"[]");if(!Array.isArray(entries))entries=[];}catch(e){entries=[];}
+$("date").value=new Date().toISOString().slice(0,10);
+function save(){localStorage.setItem(KEY,JSON.stringify(entries));render();}
+function render(){
+const sum=t=>entries.filter(x=>x.type===t).reduce((a,x)=>a+Number(x.amount||0),0);
+const income=sum("income"),deductions=sum("deduction"),expenses=sum("expense"),reserve=sum("reserve"),payout=sum("payout");
+$("incomeTotal").textContent=money(income);$("costTotal").textContent=money(deductions+expenses);$("reserveTotal").textContent=money(reserve);$("balanceTotal").textContent=money(income-deductions-expenses-reserve-payout);
+$("entries").replaceChildren();$("empty").hidden=entries.length>0;
+[...entries].sort((a,b)=>b.date.localeCompare(a.date)||b.id-a.id).forEach(x=>{
+const tr=document.createElement("tr");[x.date,labels[x.type]||x.type,x.note||"—",money(Number(x.amount))].forEach((v,i)=>{const td=document.createElement("td");td.textContent=v;if(i===1)td.className=x.type==="income"?"type-in":"type-out";tr.append(td);});
+const td=document.createElement("td"),btn=document.createElement("button");btn.textContent="Törlés";btn.className="danger";btn.type="button";btn.addEventListener("click",()=>{if(confirm("Biztosan törlöd ezt a tételt?")){entries=entries.filter(y=>y.id!==x.id);save();}});td.append(btn);tr.append(td);$("entries").append(tr);
+});
+}
+$("entryForm").addEventListener("submit",e=>{e.preventDefault();const amount=Number($("amount").value);if(!Number.isSafeInteger(amount)||amount<=0){alert("Adj meg érvényes, pozitív egész összeget forintban.");return;}entries.push({id:Date.now()+Math.floor(Math.random()*1000),date:$("date").value,type:$("type").value,amount,note:$("note").value.trim()});save();$("amount").value="";$("note").value="";});
+$("clear").addEventListener("click",()=>{if(confirm("Biztosan törlöd az összes helyben tárolt pénzügyi tételt? Ez nem vonható vissza.")){entries=[];save();}});
+$("export").addEventListener("click",()=>{const rows=[["Dátum","Típus","Megjegyzés","Összeg (Ft)"],...entries.map(x=>[x.date,labels[x.type]||x.type,x.note||"",x.amount])];const csv="\uFEFF"+rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(";")).join("\r\n");const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="global-support-radar-penzugyek.csv";a.click();URL.revokeObjectURL(url);});
+render();
+})();
+</script></body></html>
