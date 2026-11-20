@@ -25,3 +25,10 @@ A `data/revenue-pipeline.json` belső, konzervatív állapotnyilvántartás. A k
 7 kutatott szervezeti célpont, 0 jóváhagyott megkeresés, 0 elküldött megkeresés, 0 válasz, 0 pilot, 0 fizető ügyfél, 0 Ft igazolt bevétel.
 
 A pipeline nem indít külső kapcsolatfelvételt.
+
+
+## Automatikus tulajdonosi teendősor
+
+A `scripts/build_revenue_readiness_report.py` a pipeline státuszaiból legfeljebb tíz következő lépést állít elő. A sorrend a tényleges előrehaladást követi: válasz érkezett, kapcsolatfelvétel megtörtént, jóváhagyott megkeresés, kutatott célpont, pilot, fizető ügyfél. A sor minden rekordnál feltünteti a következő kézi feladatot és a szükséges jóváhagyási kaput.
+
+A teendősor kizárólag belső döntéstámogató kimenet. Nem küld üzenetet, nem módosítja a CRM-státuszt, nem indít hirdetést, nem foglal időpontot és nem vállal költséget. A kutatott célpontnál a kapcsolatfelvétel továbbra is tiltott tulajdonosi jóváhagyás nélkül.
