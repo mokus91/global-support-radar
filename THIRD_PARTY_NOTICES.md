@@ -9,7 +9,7 @@ This register records an initial repository-level audit. It is not a legal certi
 
 - `index.html`: the page uses inline HTML, CSS, and JavaScript. The reviewed markup did not show a remotely hosted JavaScript framework, CSS framework, web-font stylesheet, or third-party image URL. Recheck when the frontend changes.
 - Fonts: the CSS uses a system font stack (Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial). No bundled font file was found in the repository tree. Installed system fonts remain subject to the operating system's own terms.
-- `icon.svg`, `icon-192.png`, `icon-512-maskable.png`: project icon assets are present. The owner confirms they did not personally create these icons. Their original creator/source and commercial reuse permissions are unverified. Do not represent them as owner-created or include them as owner-owned assets in a paid delivery unless the source and permission are established; otherwise replace them with documented assets.
+- `icon.svg` and `icon-maskable.svg`: current self-contained vector app icons, written for this project with AI assistance on 2026-11-20 and recorded in `docs/asset-provenance-register.md`. AI assistance alone does not guarantee copyright protection or exclusivity. The previous unknown-origin PNG icons were removed from the active repository.
 - `manifest.webmanifest`, `sw.js`, `robots.txt`, `sitemap.xml`: project configuration files; review any external URLs or copied material before reuse.
 
 ## 2. Build and automation dependencies
@@ -47,7 +47,7 @@ A publicly accessible government webpage or dataset is not automatically free of
 
 ## 4. Required follow-up
 
-1. Establish and document the original creator/source and licence for both PNG icons.
+1. Current icon replacement is recorded; test installation and rendering on supported browsers/devices, and add a separately documented raster social-preview image only if required.
 2. Retain the licence texts for pinned `certifi` and `pycountry` versions, and review any transitive dependencies.
 3. The current GitHub Action references have been pinned to immutable commit SHAs. Still review each action's licence, transitive dependencies, security advisories and compatibility before production; update pins deliberately when adopting newer releases.
 4. Maintain a source-by-source register for every API, dataset, RSS feed, and linked portal, including the date its commercial reuse terms were checked.
