@@ -168,7 +168,8 @@ async function loadHungarianAnnouncements(){
   rows.slice(0,20).forEach(x=>{
    const card=document.createElement("article");card.className="card";const top=document.createElement("div");top.className="cardtop";
    const tag=document.createElement("span");tag.className="tag";tag.textContent=hu?"HIVATALOS KÖZLEMÉNY":"OFFICIAL ANNOUNCEMENT";
-   const badge=document.createElement("span");badge.className="demo";badge.textContent=hu?"ELLENŐRIZETLEN":"UNVERIFIED";top.append(tag,badge);
+   const isForecasted=String(row.status||"").toLowerCase()==="forecasted";
+   const badge=document.createElement("span");badge.className="demo";badge.textContent=isForecasted?(hu?"ELŐREJELZETT – MÉG NEM NYITOTT":"FORECAST – NOT YET OPEN"):(hu?"KÖZZÉTETT – ELLENŐRIZENDŐ":"POSTED – VERIFY DETAILS");top.append(tag,badge);
    const h=document.createElement("h3");h.textContent=x.title||"—";const p=document.createElement("p");p.textContent=x.summary||(hu?"A részletek az eredeti hivatalos oldalon olvashatók.":"Open the original official page for details.");
    const meta=document.createElement("div");meta.className="meta";const date=document.createElement("span");date.textContent=(hu?"Közzétéve: ":"Published: ")+(x.published_at||"—");meta.append(date);
    const foot=document.createElement("div");foot.className="cardfoot";const label=document.createElement("span");label.textContent=hu?"Eredeti hivatalos forrás":"Original official source";
@@ -448,7 +449,7 @@ async function loadUsGrants(){
    const state=document.createElement("span");state.textContent=(hu?"Portál státuszkód: ":"Portal status code: ")+(row.status||"—");
    meta.append(deadline,programme,state);
    const foot=document.createElement("div");foot.className="cardfoot";
-   const note=document.createElement("span");note.textContent=hu?"Eredeti kiírás ellenőrzése szükséges":"Original call verification required";
+   const note=document.createElement("span");note.textContent=isForecasted?(hu?"Előrejelzett lehetőség; a jelentkezési időszak még nem tekinthető nyitottnak.":"Forecast opportunity; the application window must not be treated as open."):(hu?"A közzétett státusz mellett a határidőt és jogosultságot is ellenőrizd az eredeti kiírásban.":"Verify deadline and eligibility on the original notice; posted status alone is not confirmation.");
    const link=document.createElement("a");let href="https://www.grants.gov/";
    try{const candidate=new URL(row.official_url);if(candidate.protocol==="https:"&&candidate.hostname==="www.grants.gov")href=candidate.href;}catch(e){}
    link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=hu?"Hivatalos kiírás ↗":"Official call ↗";
