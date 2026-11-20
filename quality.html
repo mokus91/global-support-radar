@@ -2,7 +2,7 @@
 <html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Global Support Radar – adatminőség</title>
 <style>
 :root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--line:#293b56;--text:#eef4ff;--muted:#9aabc4;--mint:#53e0b2;--gold:#ffd27a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Arial}.wrap{max-width:950px;margin:auto;padding:28px 18px}a{color:var(--mint)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.box b{display:block;font-size:28px}.muted{color:var(--muted)}li{margin:8px 0}.warn{color:var(--gold)}
-</style></head><body><main class="wrap"><p><a href="./">← Global Support Radar</a></p><h1>Automatikus adatminőségi ellenőrzés</h1><p class="muted">A rendszer a nyilvános adatállományok szerkezetét, hivatkozásait és határidő-formátumait vizsgálja. Ez nem helyettesíti a hivatalos pályázati feltételek ellenőrzését.</p><div class="grid" id="stats"><div class="box">Ellenőrzés betöltése…</div></div><h2>Figyelmeztetések</h2><div class="box"><ul id="issues"><li>Adatok betöltése…</li></ul></div><p class="muted" id="updated"></p><p class="muted">A vizsgálat nem módosítja a forrásrekordokat. A lejárt határidő önmagában nem bizonyítja a program lezárását.</p></main>
+</style></head><body><main class="wrap"><p><a href="./">← Global Support Radar</a></p><h1>Automatikus adatminőségi ellenőrzés</h1><p class="muted">A rendszer a nyilvános adatállományok szerkezetét, hivatkozásait és határidő-formátumait vizsgálja. Ez nem helyettesíti a hivatalos pályázati feltételek ellenőrzését.</p><section class="box warn" id="reliability" role="status">Az ellenőrzött státuszok betöltése…</section><div class="grid" id="stats"><div class="box">Ellenőrzés betöltése…</div></div><h2>Figyelmeztetések</h2><div class="box"><ul id="issues"><li>Adatok betöltése…</li></ul></div><p class="muted" id="updated"></p><p class="muted">A vizsgálat nem módosítja a forrásrekordokat. A lejárt határidő önmagában nem bizonyítja a program lezárását.</p></main>
 <script>
 (async()=>{
  const stats=document.getElementById('stats'),issues=document.getElementById('issues'),updated=document.getElementById('updated');
@@ -11,6 +11,11 @@
   const r=await fetch('https://raw.githubusercontent.com/mokus91/global-support-radar/main/data/quality-report.json',{cache:'no-store'});
   if(!r.ok)throw Error('report unavailable');
   const d=await r.json();
+  const verified=Number(d.application_state_tiers?.verified_open??0);
+  const reliability=document.getElementById("reliability");
+  reliability.textContent=verified>0
+   ? `Jelenlegi bizonyítottság: ${verified} rekord igazoltan nyitott. A többi rekord jelölt vagy további ellenőrzést igényel; a teljes adatbázis nem tekinthető minden országra kiterjedő, teljes körű támogatási jegyzéknek.`
+   : "Jelenleg nincs igazoltan nyitott rekord. A megjelenő találatok jelöltek, és jelentkezés előtt minden esetben a hivatalos kiírást kell ellenőrizni.";
   const items=[['Vizsgált adatforrás',d.feeds_checked],['Pályázati rekord',d.records_checked],['Lejárt határidő',d.expired_deadlines],['Hiányzó hivatalos link',d.missing_urls],['Hibás hivatalos link',d.invalid_urls],['Duplikált azonosító',d.duplicate_ids],['Hiányzó cím',d.missing_titles],['Nem igazolt státusz',d.unverified_status],['Nem pályázati katalógusrekord',d.non_opportunity_records],['Közbeszerzés / szolgáltatási jelölt (külön besorolva)',d.procurement_candidate_records],['Történeti támogatási rekord – nem aktív felhívás',d.historical_archive_records],['Országportál-állapotvizsgálat',d.diagnostic_records_checked]];
   stats.replaceChildren();for(const [k,v] of items){const box=add(stats,'section','','box');add(box,'span',k,'muted');add(box,'b',v??0)}
   issues.replaceChildren();
