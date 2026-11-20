@@ -161,6 +161,19 @@ def main():
     for row in eu_feed.get("records", []):
         if row.get("opportunity_type") not in (None, "funding_candidate", "procurement_candidate"):
             raise SystemExit("EU feed contains an unsupported opportunity_type")
+    if "def classify_opportunity_type(" not in eu_adapter:
+        raise SystemExit("EU opportunity classifier function is missing")
+    # Guard against false positives: procurement as a grant topic is not a contract.
+    from importlib.util import spec_from_file_location, module_from_spec
+    spec = spec_from_file_location("discover_eu_funding", ROOT / "scripts" / "discover_eu_funding.py")
+    eu_module = module_from_spec(spec)
+    spec.loader.exec_module(eu_module)
+    if eu_module.classify_opportunity_type("Service request: improve access to information") != "procurement_candidate":
+        raise SystemExit("Explicit EU service requests must be procurement candidates")
+    if eu_module.classify_opportunity_type("Call for proposals for common procurement actions") != "funding_candidate":
+        raise SystemExit("A grant call about procurement must remain a funding candidate")
+    if eu_module.classify_opportunity_type("Open tender for equipment") != "funding_candidate":
+        raise SystemExit("Ambiguous generic tender wording must not be auto-classified")
 
     audit_script = (ROOT / "scripts" / "audit_opportunity_quality.py").read_text(encoding="utf-8")
     for required in ('"procurement_review_queue_count"', '"procurement_candidates"', 'opportunity_type") == "procurement_candidate":', 'continue'):
