@@ -48,3 +48,8 @@ python -m unittest scripts/test_generate_organization_report.py -v
 ```
 
 A meglévő Continuous improvement workflow a `scripts/test_*.py` mintára illeszkedő teszteket automatikusan futtatja push és ütemezett ellenőrzés során. A tesztfeladat ellenőrzi a nyitott/jelölt/lejárt/nem ellenőrzött státuszok szétválasztását, a riport tartalmát és a hibás JSON fájl kezelését. A GitHub Actions futásának eredményét külön kell ellenőrizni; a commit önmagában nem bizonyít sikeres CI-t.
+
+
+## Riport pontosságának további védelme
+
+A generátor az azonos hivatalos HTTPS URL-re mutató rekordokat egyetlen bejegyzésre vonja össze. Ha nincs biztonságos hivatalos URL, csak azonos ország, cím és határidő esetén alkalmaz konzervatív duplikációszűrést. A riport fejlécében feltünteti a kiválasztott országot, témakört és az egyedi rekordok számát. A szűrők továbbra is pontos, kis- és nagybetűtől független egyezést használnak.
