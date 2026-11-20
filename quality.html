@@ -83,7 +83,7 @@
    const list=add(section,'ol','');
    for(const item of queue){
     const li=add(list,'li','');
-    const title=add(li,'span',(item.title||'Cím nélkül')+' — '+(item.score??0)+'/10 pont');
+    const title=add(li,'span',(item.title||'Cím nélkül')+' — prioritás: '+(item.priority_score??0)+' · adatmezők: '+(item.score??0)+'/10');
     if(item.official_url){
      const parsed=(()=>{try{return new URL(item.official_url)}catch(_){return null}})();
      if(parsed&&parsed.protocol==='https:'){
