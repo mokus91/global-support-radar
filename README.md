@@ -38,6 +38,9 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 ## Önálló bevételi működés
 
+- [Bevételi lehetőségek és költségfigyelés – kezelőfelület](https://mokus91.github.io/global-support-radar/revenue-hub.html)
+- [Heti, csak olvasási forrásfigyelő munkafolyamat](.github/workflows/zero-cost-opportunity-watch.yml)
+
 - [Önálló bevételi működés és élesítési kapuk](docs/autonomous-revenue-operations.md)
 
 ## Bevételfogadás és tulajdonosi kifizetés
