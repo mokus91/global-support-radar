@@ -189,7 +189,10 @@ for feed in manifest.get("feeds", []):
         elif any(token in combined for token in ("candidate", "official-listing", "rss-discovery")):
             report["verification_tiers"]["official_listing_candidate"] += 1
             feed_counts["official_listing_candidates"] += 1
-        elif "verified" in status and "unverified" not in status:
+        elif (
+            status in {"official_page_open_status_and_amount_checked", "official-page-open-status-and-amount-checked"}
+            and record_state in {"open-and-current", "verified-open"}
+        ) or ("verified" in status and "unverified" not in status and record_state not in {"closed", "withdrawn", "expired"}):
             report["verification_tiers"]["verified_open"] += 1
         elif is_unverified:
             report["verification_tiers"]["unverified"] += 1
