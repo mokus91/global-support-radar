@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T08:01:40Z",
+  "generated_at": "2026-11-20T08:38:54Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 19,
-  "records_count": 7,
+  "portals_checked": 18,
+  "records_count": 6,
   "records": [
     {
       "id": "national-agri-cz-1",
@@ -60,21 +60,6 @@
       "title": "2014-2022 Rural Development Programme",
       "official_url": "https://fondi.eu/european-agricultural-fund-for-rural-development/",
       "portal_url": "https://fondi.eu/",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
-      "id": "national-agri-pt-1",
-      "country_code": "PT",
-      "country_en": "Portugal",
-      "country_hu": "Portugália",
-      "title": "Mais de 850 milhões de euros para 85 concursos até dezembro",
-      "official_url": "https://portugal2030.pt/2026/09/14/portugal-2030-mais-de-850-milhoes-de-euros-para-85-concursos-ate-dezembro/",
-      "portal_url": "https://portugal2030.pt/",
       "publisher": "Official national EU funding portal",
       "category": "agriculture",
       "record_type": "national-agriculture-link-discovery",
@@ -141,6 +126,10 @@
     {
       "country_code": "LT",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "country_code": "PT",
+      "error": "The read operation timed out"
     },
     {
       "country_code": "RO",
