@@ -1,0 +1,44 @@
+name: Automated organization report production
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily report build, outside the busy hour boundary.
+    - cron: "37 3 * * *"
+  workflow_run:
+    workflows:
+      - Official source discovery and global country expansion
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: global-support-radar-organization-report
+  cancel-in-progress: false
+
+jobs:
+  build-report:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned CI dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements-ci.txt
+      - name: Validate current data and frontend
+        run: python scripts/validate_project.py
+      - name: Run report generator regression tests
+        run: python -m unittest discover -s scripts -p 'test_generate_organization_report.py' -v
+      - name: Generate latest organization monitoring report
+        run: python scripts/generate_organization_report.py --output reports/organization-report-latest.md
+      - name: Preserve generated report
+        uses: actions/upload-artifact@v4
+        with:
+          name: organization-monitoring-report-${{ github.run_number }}
+          path: reports/organization-report-latest.md
+          if-no-files-found: error
+          retention-days: 14
