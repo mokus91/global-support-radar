@@ -9,6 +9,7 @@ on:
       - "scripts/generate_improvement_backlog.py"
       - "scripts/validate_project.py"
       - "scripts/audit_opportunity_quality.py"
+      - "scripts/test_*.py"
       - ".github/workflows/continuous-improvement.yml"
 
 permissions:
