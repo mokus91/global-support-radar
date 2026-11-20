@@ -1505,83 +1505,139 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
 <script id="global-eligibility-assistant">
 (()=>{
  const $=id=>document.getElementById(id);
- const hu=()=>!($("lang")?.value||"hu").startsWith("en");
+ const lang=()=>($("lang")?.value||"hu").startsWith("en")?"en":"hu";
  const copy={
-  hu:{
-   title:"Találd meg, milyen támogatások jöhetnek szóba",
-   intro:"Válaszd ki az országot, a pályázó típusát és a támogatás célját. Ezután megnyitjuk a kapcsolódó hivatalos forrásokat.",
-   country:"Ország",applicant:"Ki igényelné a támogatást?",category:"Milyen segítséget keresel?",
-   applicants:[["individual","Magánszemély / család"],["business","Vállalkozás / vállalkozó"],["student","Diák / kutató"],["farmer","Gazdálkodó / mezőgazdasági szereplő"],["nonprofit","Civil szervezet / nonprofit"],["public","Önkormányzat / közintézmény"]],
-   categories:[["all","Minden támogatás"],["family","Család és gyermekek"],["housing","Lakhatás"],["social","Szociális segítség / alacsony jövedelem"],["employment","Munka / munkanélküliség"],["education","Oktatás / ösztöndíj"],["agriculture","Mezőgazdaság"],["business","Vállalkozás"],["energy","Energia / rezsi"],["health","Egészségügyi segítség"],["research","Kutatás / innováció"],["other","Egyéb"]],
-   run:"Mutasd a lehetséges támogatási forrásokat →",hint:"A válaszokat a böngésződ dolgozza fel. Nem kérünk nevet, címet, jövedelmet vagy egészségügyi adatot.",
-   disclaimer:"Fontos: ez előszűrés és forráskeresés, nem jogosultsági döntés. A feltételeket, határidőt és az esetleges támogatási összeget mindig az eredeti, hivatalos kiírásban ellenőrizd.",
-   noCountry:"Válassz ki egy országot a folytatáshoz.",result:"A keresés beállítva",
-   details:"A kiválasztott ország és támogatási terület hivatalos forrásait most megnyitjuk. A pályázó típusa segít a keresési irány meghatározásában, de önmagában nem bizonyít jogosultságot.",
-   next:"A kapcsolódó hivatalos források a lenti globális keresőben jelennek meg.",
-   applicantsLabel:"Pályázó típusa",categoryLabel:"Keresett támogatás",countryLabel:"Kiválasztott ország",
-   privacy:"Adatvédelem: a választásaid csak a böngésződben kerülnek feldolgozásra; nem küldjük el és nem mentjük el őket."
-  },
-  en:{
-   title:"Find support programmes you may qualify for",
-   intro:"Choose a country, applicant type and support area. We’ll then open the relevant official sources.",
-   country:"Country",applicant:"Who would apply?",category:"What kind of support do you need?",
-   applicants:[["individual","Individual / household"],["business","Business / entrepreneur"],["student","Student / researcher"],["farmer","Farmer / agricultural organisation"],["nonprofit","Non-profit / civil society"],["public","Local authority / public institution"]],
-   categories:[["all","All support"],["family","Family and children"],["housing","Housing"],["social","Social assistance / low income"],["employment","Employment / unemployment"],["education","Education / scholarships"],["agriculture","Agriculture"],["business","Business"],["energy","Energy / utilities"],["health","Health-related support"],["research","Research / innovation"],["other","Other"]],
-   run:"Show relevant official support sources →",hint:"Your answers are processed in your browser. We do not ask for your name, address, income or health information.",
-   disclaimer:"Important: this is an initial screening and source finder, not an eligibility decision. Always verify rules, deadlines and any funding amounts in the original official call.",
-   noCountry:"Please choose a country to continue.",result:"Search preferences set",
-   details:"We’ll open official sources for the selected country and support area. Applicant type helps guide the search but does not establish eligibility.",
-   next:"Relevant official sources will appear in the worldwide finder below.",
-   applicantsLabel:"Applicant type",categoryLabel:"Support area",countryLabel:"Selected country",
-   privacy:"Privacy: your choices are processed only in your browser; they are not sent to a server or saved."
-  }
+ hu:{
+  title:"Találd meg, milyen támogatások jöhetnek szóba",
+  intro:"Válaszd ki az országot, a pályázó típusát és a támogatás célját. Az asszisztens hivatalos országos adatbázisokat és útmutatókat keres.",
+  country:"Ország",applicant:"Ki igényelné a támogatást?",category:"Milyen segítséget keresel?",
+  applicants:[["individual","Magánszemély / család"],["business","Vállalkozás / vállalkozó"],["student","Diák / kutató"],["farmer","Gazdálkodó / mezőgazdasági szereplő"],["nonprofit","Civil szervezet / nonprofit"],["public","Önkormányzat / közintézmény"]],
+  categories:[["all","Minden támogatás"],["family","Család és gyermekek"],["housing","Lakhatás"],["social","Szociális segítség / alacsony jövedelem"],["employment","Munka / munkanélküliség"],["education","Oktatás / ösztöndíj"],["agriculture","Mezőgazdaság"],["business","Vállalkozás"],["energy","Energia / rezsi"],["healthcare","Egészségügy"],["transport","Közlekedés"],["research","Kutatás / innováció"],["other","Egyéb"]],
+  run:"Keress nekem támogatásokat →",hint:"A válaszokat a böngésződ dolgozza fel. Nem kérünk nevet, címet, jövedelmet vagy egészségügyi adatot.",
+  disclaimer:"Fontos: ez tájékoztató előszűrés, nem jogosultsági döntés. A feltételeket, határidőt és a támogatási összeget mindig az eredeti hivatalos kiírásban ellenőrizd.",
+  noCountry:"Válassz ki egy országot a kereséshez.",loading:"Hivatalos források keresése…",none:"Ehhez az országhoz és témához jelenleg nem található megfelelő országos rekord a Radar adatbázisában. Az általános hivatalos kiindulópontokat lentebb találod.",
+  matches:"Talált hivatalos források",matched:"A kiválasztott profilhoz kapcsolódó források:",official:"Hivatalos forrás",guide:"Hivatalos országismertető",directory:"Nemzetközi adatbázis / kiindulópont",notCall:"Ez adatbázis vagy tájékoztató oldal, nem feltétlenül nyitott pályázat.",unverified:"Előzetes találat – ellenőrizd az eredeti oldalon.",verified:"Hivatalos program- vagy információs oldal; az aktuális feltételeket ellenőrizd.",
+  why:{individual:"Magánszemélyek és háztartások számára releváns támogatási terület.",business:"Vállalkozási, innovációs vagy gazdaságfejlesztési forrás.",student:"Oktatási, ösztöndíj- vagy kutatási forrás.",farmer:"Mezőgazdasági és vidéki fejlesztési forrás.",nonprofit:"Civil, közösségi vagy nonprofit szervezetek számára is releváns lehet.",public:"Önkormányzati és közintézményi programokhoz kapcsolódó forrás."},
+  global:"Nemzetközi kiindulópontok",privacy:"Adatvédelem: a választásaidat a böngésző dolgozza fel; nem küldjük el és nem mentjük el őket.",open:"Hivatalos oldal megnyitása ↗",world:"További országos források megnyitása"
+ },
+ en:{
+  title:"Find support programmes you may qualify for",intro:"Choose a country, applicant type and support area. The assistant searches official national databases and guidance.",
+  country:"Country",applicant:"Who would apply?",category:"What kind of support do you need?",
+  applicants:[["individual","Individual / household"],["business","Business / entrepreneur"],["student","Student / researcher"],["farmer","Farmer / agricultural organisation"],["nonprofit","Non-profit / civil society"],["public","Local authority / public institution"]],
+  categories:[["all","All support"],["family","Family and children"],["housing","Housing"],["social","Social assistance / low income"],["employment","Employment / unemployment"],["education","Education / scholarships"],["agriculture","Agriculture"],["business","Business"],["energy","Energy / utilities"],["healthcare","Healthcare"],["transport","Transport"],["research","Research / innovation"],["other","Other"]],
+  run:"Find support for me →",hint:"Your answers are processed in your browser. We do not ask for your name, address, income or health information.",
+  disclaimer:"Important: this is an initial information screen, not an eligibility decision. Always verify conditions, deadlines and amounts in the original official call.",
+  noCountry:"Please choose a country.",loading:"Searching official sources…",none:"No matching national record is currently available in the Radar database for this country and topic. General official starting points are listed below.",
+  matches:"Official sources found",matched:"Sources related to your selected profile:",official:"Official source",guide:"Official country guide",directory:"International database / starting point",notCall:"This is a directory or information page, not necessarily an open grant call.",unverified:"Preliminary lead — verify on the original website.",verified:"Official programme or information page; check current conditions.",
+  why:{individual:"A support area relevant to individuals and households.",business:"A source for business, innovation or economic development.",student:"An education, scholarship or research source.",farmer:"An agriculture or rural development source.",nonprofit:"May be relevant to civil society, community or non-profit organisations.",public:"A source related to local authorities and public institutions."},
+  global:"International starting points",privacy:"Privacy: your choices are processed in your browser; they are not sent to a server or saved.",open:"Open official source ↗",world:"Open more national sources"
+ }
  };
+ const norm=v=>String(v||"").toLowerCase().replace(/[^a-z]/g,"");
+ const categoryAliases={healthcare:"healthcare",health:"healthcare",research:"education",other:"all"};
+ function selectedCountryName(){return $("geaCountry")?.selectedOptions[0]?.textContent||$("geaCountry")?.value||""}
  function populate(){
-  const source=$("worldCountryMirror"),target=$("geaCountry");
-  if(!source||!target)return;
+  const source=$("worldCountryMirror"),target=$("geaCountry");if(!source||!target)return;
   const current=target.value;target.replaceChildren();
   [...source.options].forEach(o=>{const n=document.createElement("option");n.value=o.value;n.textContent=o.textContent;target.append(n)});
   if(current&&[...target.options].some(o=>o.value===current))target.value=current;
-  if(!target.value)target.value=$("country")?.value||"HU";
+  if(!target.value||target.value==="all")target.value=$("country")?.value||"HU";
  }
- function setOptions(id,items,value){const el=$(id);if(!el)return;const old=value||el.value;el.replaceChildren();items.forEach(([v,label])=>{const o=document.createElement("option");o.value=v;o.textContent=label;el.append(o)});if([...el.options].some(o=>o.value===old))el.value=old}
- function render(){
-  const t=copy[hu()?"hu":"en"];
+ function setOptions(id,items){
+  const el=$(id);if(!el)return;const old=el.value;el.replaceChildren();
+  items.forEach(([v,label])=>{const o=document.createElement("option");o.value=v;o.textContent=label;el.append(o)});
+  if([...el.options].some(o=>o.value===old))el.value=old;
+ }
+ function renderText(){
+  const t=copy[lang()];
   $("geaTitle").textContent=t.title;$("geaIntro").textContent=t.intro;
-  $("geaCountryLabel").childNodes[0].textContent=t.country;
-  $("geaApplicantLabel").childNodes[0].textContent=t.applicant;
-  $("geaCategoryLabel").childNodes[0].textContent=t.category;
-  setOptions("geaApplicant",t.applicants,"individual");setOptions("geaCategory",t.categories,"all");
+  $("geaCountryLabel").firstChild.textContent=t.country;
+  $("geaApplicantLabel").firstChild.textContent=t.applicant;
+  $("geaCategoryLabel").firstChild.textContent=t.category;
+  setOptions("geaApplicant",t.applicants);setOptions("geaCategory",t.categories);
   $("geaRun").textContent=t.run;$("geaDisclaimer").textContent=t.disclaimer;
   const hint=$("geaHint");if(hint)hint.textContent=t.hint;
-  $("geaCountry").setAttribute("aria-label",t.country);
  }
- function run(){
-  const t=copy[hu()?"hu":"en"],country=$("geaCountry").value,category=$("geaCategory").value,applicant=$("geaApplicant").value;
-  const box=$("geaResults");box.replaceChildren();
-  if(!country){const p=document.createElement("p");p.className="notice";p.textContent=t.noCountry;box.append(p);return}
-  const countryMirror=$("worldCountryMirror"),worldCategory=$("worldCategory"),find=$("worldwideFind");
-  if(countryMirror)countryMirror.value=country;
-  if(worldCategory)worldCategory.value=category;
-  const summary=document.createElement("article");summary.className="card";summary.style.marginBottom="10px";
-  const h=document.createElement("h3");h.textContent=t.result;
-  const p=document.createElement("p");p.textContent=t.details;
-  const meta=document.createElement("div");meta.className="meta";
-  const countryName=$("geaCountry").selectedOptions[0]?.textContent||country;
-  const applicantName=$("geaApplicant").selectedOptions[0]?.textContent||applicant;
-  const categoryName=$("geaCategory").selectedOptions[0]?.textContent||category;
-  meta.textContent=t.countryLabel+": "+countryName+" · "+t.applicantsLabel+": "+applicantName+" · "+t.categoryLabel+": "+categoryName;
-  const note=document.createElement("p");note.style.color="var(--muted)";note.textContent=t.next;
-  summary.append(h,p,meta,note);box.append(summary);
-  const privacy=document.createElement("p");privacy.style.color="var(--muted)";privacy.style.fontSize="12px";privacy.textContent=t.privacy;box.append(privacy);
-  if(find){find.click();setTimeout(()=>$("worldwideSupportFinder")?.scrollIntoView({behavior:"smooth",block:"start"}),250)}
+ async function readJson(path){
+  const r=await fetch("./data/"+path,{cache:"no-store"});
+  if(!r.ok)throw new Error("HTTP "+r.status+" for "+path);
+  return r.json();
+ }
+ function makeCard(record,t,kind,reason){
+  const card=document.createElement("article");card.className="card";card.style.marginBottom="10px";
+  const tag=document.createElement("span");tag.className="tag";tag.textContent=kind==="guide"?t.guide:kind==="global"?t.directory:t.official;
+  const h=document.createElement("h3");h.textContent=record.title||record.name||record.name_hu||record.name_en||"Official support source";
+  const p=document.createElement("p");p.textContent=record.description||record.description_hu||record.description_en||record.summary_hu||record.summary_en||"";
+  const why=document.createElement("p");why.style.color="var(--muted)";why.textContent=reason||"";
+  const meta=document.createElement("div");meta.className="meta";meta.textContent=(record.publisher||"Official publisher")+" · "+(record.country_en||record.country_code||"International");
+  const foot=document.createElement("div");foot.className="cardfoot";
+  const a=document.createElement("a");a.href=record.url||record.official_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=t.open;
+  if(a.href&&/^https:\/\//i.test(a.href))foot.append(a);
+  card.append(tag,h,p,why,meta,foot);return card;
+ }
+ async function run(){
+  const t=copy[lang()],box=$("geaResults"),code=$("geaCountry").value,applicant=$("geaApplicant").value,rawCategory=$("geaCategory").value;
+  box.replaceChildren();
+  if(!code){const p=document.createElement("p");p.className="notice";p.textContent=t.noCountry;box.append(p);return}
+  const loading=document.createElement("p");loading.className="empty";loading.textContent=t.loading;box.append(loading);
+  const category=categoryAliases[rawCategory]||rawCategory;
+  const results=[],globalResults=[];
+  const push=(record,kind,score,reason)=>results.push({record,kind,score,reason});
+  try{
+   const [national,social,household,global]=await Promise.all([
+    readJson("worldwide-national-support-sources.json").catch(()=>({records:[]})),
+    readJson("eu-social-protection-country-pages.json").catch(()=>({records:[]})),
+    code==="HU"?readJson("hu-household-support.json").catch(()=>({records:[]})):Promise.resolve({records:[]}),
+    readJson("global-support-directory.json").catch(()=>({records:[]}))
+   ]);
+   (national.records||[]).filter(r=>r.country_code===code).forEach(r=>{
+    const cat=String(r.category||"all").toLowerCase();
+    if(category!=="all"&&cat!=="all"&&cat!==category)return;
+    let score=10+(cat===category?5:0);
+    const textBlob=norm([r.kind,r.name_en,r.description_en,r.description_hu].join(" "));
+    const keys={business:["business","enterprise","startup","innovation","company"],student:["student","scholarship","education","research","university"],farmer:["agriculture","farmer","rural","farm"],nonprofit:["nonprofit","civil","community","ngo","charity"],public:["municipal","local authority","public institution","government"]};
+    if(keys[applicant]?.some(k=>textBlob.includes(norm(k))))score+=3;
+    if(applicant==="individual"&&["social","family","housing","employment","healthcare"].includes(cat))score+=3;
+    push(r,"national",score,t.why[applicant]);
+   });
+   (social.records||[]).filter(r=>r.country_code===code&&(category==="all"||r.categories?.includes(category))).forEach(r=>push({
+    title:lang()==="hu"?r.country_hu+" – szociális és társadalombiztosítási útmutató":r.country_en+" — social security and benefits guide",
+    description:lang()==="hu"?r.description_hu:r.description_en,url:r.url,publisher:r.publisher,country_en:r.country_en,country_code:r.country_code
+   },"guide",8,t.why[applicant]));
+   (household.records||[]).filter(r=>category==="all"||r.category===category).forEach(r=>push({
+    title:lang()==="hu"?r.title_hu:r.title_en,description:lang()==="hu"?r.summary_hu:r.summary_en,url:r.url,publisher:r.publisher,country_code:"HU"
+   },"national",30,t.why[applicant]));
+   const globals=(global.records||[]).filter(r=>["un-national-portals","ilo-country-profiles","world-bank-aspire"].includes(r.id));
+   globals.forEach(r=>globalResults.push({title:lang()==="hu"?r.name_hu:r.name_en,description:lang()==="hu"?r.description_hu:r.description_en,url:r.url,publisher:r.publisher,country_en:"International"}));
+  }catch(e){console.warn("Global Eligibility Assistant",e)}
+  results.sort((a,b)=>b.score-a.score);
+  box.replaceChildren();
+  const heading=document.createElement("h3");heading.textContent=t.matches+" ("+results.length+")";box.append(heading);
+  const sub=document.createElement("p");sub.textContent=t.matched+" "+selectedCountryName()+" · "+$("geaApplicant").selectedOptions[0].textContent+" · "+$("geaCategory").selectedOptions[0].textContent;box.append(sub);
+  if(results.length){
+   results.slice(0,12).forEach(item=>box.append(makeCard(item.record,t,item.kind,item.reason)));
+  }else{
+   const p=document.createElement("p");p.className="notice";p.textContent=t.none;box.append(p);
+  }
+  const caution=document.createElement("p");caution.className="notice";caution.textContent=t.notCall+" "+t.unverified;box.append(caution);
+  const gh=document.createElement("h3");gh.textContent=t.global;box.append(gh);
+  globalResults.forEach(r=>box.append(makeCard(r,t,"global",t.notCall)));
+  const worldBtn=document.createElement("button");worldBtn.className="btn";worldBtn.type="button";worldBtn.textContent=t.world;
+  worldBtn.addEventListener("click",()=>{
+   const mirror=$("worldCountryMirror"),cat=$("worldCategory");
+   if(mirror)mirror.value=code;
+   if(cat)cat.value=rawCategory==="healthcare"?"healthcare":rawCategory;
+   $("worldwideFind")?.click();
+   $("worldwideSupportFinder")?.scrollIntoView({behavior:"smooth",block:"start"});
+  });
+  box.append(worldBtn);
+  const privacy=document.createElement("p");privacy.style.fontSize="12px";privacy.style.color="var(--muted)";privacy.textContent=t.privacy;box.append(privacy);
  }
  $("geaRun")?.addEventListener("click",run);
- $("lang")?.addEventListener("change",render);
+ $("lang")?.addEventListener("change",renderText);
  $("worldCountryMirror")?.addEventListener("change",populate);
  $("country")?.addEventListener("change",()=>{if($("geaCountry"))$("geaCountry").value=$("country").value;});
- populate();render();
- setTimeout(populate,500);
+ populate();renderText();setTimeout(populate,600);
 })();
 </script>
 
