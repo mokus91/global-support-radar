@@ -22,6 +22,8 @@ report = {
     "unverified_status": 0,
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
     "feed_summary": [],
+    "review_queue_count": 0,
+    "review_queue": [],
     "non_opportunity_records": 0,
     "historical_archive_records": 0,
     "diagnostic_records_checked": 0,
@@ -37,6 +39,8 @@ report = {
 
 TITLE_FIELDS = ("title", "title_hu", "title_original", "coofficial_title")
 URL_FIELDS = ("official_url", "url", "source_url", "final_url")
+AMOUNT_FIELDS = ("amount_maximum", "amount_max", "budget", "total_call_budget", "award_ceiling", "estimated_funding")
+ELIGIBILITY_FIELDS = ("eligibility", "eligible_applicants", "beneficiary", "target_group", "applicant_type")
 
 for feed in manifest.get("feeds", []):
     filename = feed.get("file", "")
@@ -91,6 +95,53 @@ for feed in manifest.get("feeds", []):
 
         report["records_checked"] += 1
         feed_counts["records"] += 1
+
+        # Build a human-readable review queue from the best-documented candidates.
+        # A score indicates available information, not confirmation that a call is open.
+        title = next((record.get(k) for k in TITLE_FIELDS if record.get(k)), None)
+        url = next((record.get(k) for k in URL_FIELDS if record.get(k)), None)
+        deadline_value = next((record.get(k) for k in ("deadline", "acceptance_end", "application_deadline", "close_date", "closeDate") if record.get(k)), None)
+        amount_value = next((record.get(k) for k in AMOUNT_FIELDS if record.get(k) not in (None, "", [], {})), None)
+        eligibility_value = next((record.get(k) for k in ELIGIBILITY_FIELDS if record.get(k) not in (None, "", [], {})), None)
+        source_status_value = record.get("status") or record.get("status_code") or record.get("application_window_status")
+        missing_details = []
+        score = 0
+        if title:
+            score += 2
+        else:
+            missing_details.append("title")
+        if url:
+            score += 2
+        else:
+            missing_details.append("official_url")
+        if deadline_value:
+            score += 2
+        else:
+            missing_details.append("deadline")
+        if amount_value is not None:
+            score += 1
+        else:
+            missing_details.append("funding_amount")
+        if eligibility_value is not None:
+            score += 2
+        else:
+            missing_details.append("eligibility")
+        if source_status_value not in (None, "", [], {}):
+            score += 1
+        else:
+            missing_details.append("source_status")
+        if title or url:
+            report["review_queue"].append({
+                "source_file": filename,
+                "id": str(record.get("id") or ""),
+                "title": str(title or "Untitled")[:240],
+                "official_url": str(url or ""),
+                "deadline": str(deadline_value or ""),
+                "source_status": str(source_status_value or "")[:100],
+                "score": score,
+                "missing_details": missing_details
+            })
+
         rid = record.get("id")
         if rid:
             if rid in seen:
@@ -143,6 +194,9 @@ for feed in manifest.get("feeds", []):
     report["feed_summary"].append(feed_counts)
 
 report["feed_errors"] = report["feed_errors"][:100]
+report["review_queue"].sort(key=lambda item: (-item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
+report["review_queue"] = report["review_queue"][:50]
+report["review_queue_count"] = len(report["review_queue"])
 (DATA / "quality-report.json").write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
 )
