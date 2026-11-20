@@ -61,6 +61,20 @@ def first(meta, key, default=None):
         return value[0] if value else default
     return value if value is not None else default
 
+def classify_opportunity_type(title, identifier="", record_type=""):
+    """Conservative heuristic: separate clear service/contract notices, not grant calls mentioning procurement."""
+    text = " ".join(str(value or "") for value in (title, identifier, record_type)).lower()
+    explicit_contract_markers = (
+        "service request", "contract notice", "contract award",
+        "procurement procedure", "tender notice", "invitation to tender",
+        "works contract", "supplies contract"
+    )
+    if any(marker in text for marker in explicit_contract_markers):
+        return "procurement_candidate"
+    # 'Procurement' can describe the subject of a grant. A call for proposals
+    # remains a funding candidate unless an explicit contract marker exists.
+    return "funding_candidate"
+
 def main():
     error = None
     payload = {}
@@ -102,9 +116,7 @@ def main():
                 pass
         title = first(meta, "callTitle") or item.get("summary") or first(meta, "title") or "Untitled call"
         identifier = first(meta, "identifier") or ""
-        classification_text = (str(title) + " " + str(identifier) + " " + str(ref)).lower()
-        procurement_markers = ("service request", "procurement", "contract notice", "tender", "works contract", "supplies contract")
-        opportunity_type = "procurement_candidate" if any(marker in classification_text for marker in procurement_markers) else "funding_candidate"
+        opportunity_type = classify_opportunity_type(title, identifier, first(meta, "type"))
         candidates.append({
             "id": ref,
             "title": title,
