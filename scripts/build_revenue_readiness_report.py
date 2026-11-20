@@ -19,7 +19,7 @@ BLOCKERS = [
     "Ügyfél- és partnermegkeresés csak tulajdonosi jóváhagyás után küldhető.",
 ]
 
-def build_report(now=None):
+def build_report(now=None, root=ROOT):
     now = now or datetime.now(timezone.utc)
     lines = [
         "# Bevételi készenléti ellenőrzés",
@@ -31,7 +31,7 @@ def build_report(now=None):
         "## Termékeszközök ellenőrzése",
     ]
     for label, relative in REQUIRED.items():
-        state = "RENDELKEZÉSRE ÁLL" if (ROOT / relative).is_file() else "HIÁNYZIK"
+        state = "RENDELKEZÉSRE ÁLL" if (root / relative).is_file() else "HIÁNYZIK"
         lines.append(f"- [{state}] {label}: `{relative}`")
     lines += ["", "## Nyitott üzleti és jogi kapuk"]
     lines += [f"- [NYITOTT] {item}" for item in BLOCKERS]
