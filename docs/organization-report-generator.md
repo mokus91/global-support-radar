@@ -53,3 +53,8 @@ A meglévő Continuous improvement workflow a `scripts/test_*.py` mintára illes
 ## Riport pontosságának további védelme
 
 A generátor az azonos hivatalos HTTPS URL-re mutató rekordokat egyetlen bejegyzésre vonja össze. Ha nincs biztonságos hivatalos URL, csak azonos ország, cím és határidő esetén alkalmaz konzervatív duplikációszűrést. A riport fejlécében feltünteti a kiválasztott országot, témakört és az egyedi rekordok számát. A szűrők továbbra is pontos, kis- és nagybetűtől független egyezést használnak.
+
+
+## Kötelező adatminőségi kapu
+
+A riportba csak olyan nyitott vagy ellenőrzendő jelölt kerülhet, amelynél rendelkezésre áll országazonosító, érvényes HTTPS hivatalos forráslink és értelmezhető ISO-időbélyeg a forrás ellenőrzéséről (`source_checked_at` vagy az adatcsomag dátuma). Ha ezek bármelyike hiányzik vagy hibás, a rekord kizárásra kerül. A hiányzó státusz nem tekinthető nyitottnak; a hibás vagy lejárt határidő kizáró ok. Az összeg hiánya esetén a riport „nincs megadva” értéket mutat, és nem becsül. Az egyéni maximális támogatás és a teljes pályázati keret külön adatként kezelendő.
