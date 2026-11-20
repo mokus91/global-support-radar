@@ -11,6 +11,8 @@ on:
       - "*.html"
       - "*.js"
       - "requirements-ci.txt"
+      - "README.md"
+      - "docs/free-launch-readiness.md"
       - ".github/workflows/staging-validation.yml"
 
 permissions:
