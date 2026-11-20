@@ -688,6 +688,91 @@
       "fit_score": 5,
       "crm_status": "kutatott",
       "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-africa-chambers-commerce",
+      "name": "Africa Chambers of Commerce",
+      "country_code": null,
+      "region": "africa",
+      "organisation_level": "regional_international",
+      "category": [
+        "terjesztési partner",
+        "szakmai hálózat",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "kamarák",
+        "kereskedelem",
+        "vállalkozásfejlesztés"
+      ],
+      "official_website": "https://africanchambersofcommerce.org/",
+      "contact_page": "https://africanchambersofcommerce.org/our-members/",
+      "evidence_url": "https://africanchambersofcommerce.org/our-members/",
+      "relevance": "Afrikai országos kamarai és üzleti szervezetek hivatalos taglistájából több országban további partnerjelöltek kutathatók. A tagságot és az egyes szervezetek aktivitását külön kell ellenőrizni.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "africa:african-chambers-of-commerce:members",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted",
+      "caution": "A taglista nem jelent együttműködést; több taghoz elavult vagy hiányzó webcím tartozik."
+    },
+    {
+      "id": "network-cacci-asia-pacific",
+      "name": "Confederation of Asia-Pacific Chambers of Commerce and Industry (CACCI)",
+      "country_code": null,
+      "region": "asia_pacific",
+      "organisation_level": "regional_international",
+      "category": [
+        "terjesztési partner",
+        "szakmai hálózat",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "kamarák",
+        "kereskedelem",
+        "export",
+        "Ázsia és Csendes-óceán"
+      ],
+      "official_website": "https://www.cacci.biz/",
+      "contact_page": "https://www.cacci.biz/members-list/",
+      "evidence_url": "https://www.cacci.biz/members-list/",
+      "relevance": "Ázsiai és csendes-óceáni országok kamarai tagszervezeteit sorolja fel; országonkénti partnerkutatás és későbbi regionális terjesztés kiindulópontja.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "asia-pacific:cacci:members",
+      "fit_score": 5,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-aico-ibero-america",
+      "name": "Asociación Iberoamericana de Cámaras de Comercio (AICO) – regional member directory",
+      "country_code": null,
+      "region": "latin_america_and_iberia",
+      "organisation_level": "regional_international_directory",
+      "category": [
+        "terjesztési partner",
+        "szakmai hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "kamarák",
+        "ibero-amerikai üzleti együttműködés",
+        "vállalkozásfejlesztés"
+      ],
+      "official_website": "https://aico.org/",
+      "contact_page": "https://aico.org/socios-por-paises/",
+      "evidence_url": "https://aico.org/socios-por-regiones/",
+      "relevance": "Országonkénti és régiónkénti taglistája több latin-amerikai és ibériai kamarai szervezetet sorol fel; helyi jelöltek azonosításához használható.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "latin-america:aico:regional-members",
+      "fit_score": 5,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
     }
   ]
 }
