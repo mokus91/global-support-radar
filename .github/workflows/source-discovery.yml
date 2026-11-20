@@ -132,7 +132,7 @@ jobs:
               `- Időpont (UTC): ${new Date().toISOString()}`,
               '',
               'A részletes hiba a futás naplójában található. A következő ütemezett futás újra megpróbálja az adatgyűjtést.'
-            ].join('\\n');
+            ].join('\n');
             const { owner, repo } = context.repo;
             const existing = await github.rest.issues.listForRepo({ owner, repo, state: 'open', per_page: 100 });
             const alert = existing.data.find(issue => issue.title === title);
