@@ -1,37 +1,37 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T14:32:13+00:00",
-  "events_count": 3,
+  "generated_at": "2026-11-20T15:31:24+00:00",
+  "events_count": 4,
   "events": [
     {
-      "type": "new",
+      "type": "removed_from_feed",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wfq000003ensfuag",
+      "title": "【三次公募】令和８年度　天然ガス利用設備による強靱性向上対策事業費補助金",
+      "detected_at": "2026-11-20T15:31:24+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519656topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T14:32:13+00:00"
+      "key": "id:187801prospectsen",
+      "title": "Enhancing Economic Transformation in Conflict- and Migration-Prone Regions and Strengthening IDP Policy and Programming",
+      "detected_at": "2026-11-20T15:31:24+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519691topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T14:32:13+00:00"
-    },
-    {
-      "type": "changed",
       "feed": "us-grants-discovery.json",
-      "key": "id:361821",
-      "title": "HIV/AIDS Clinical Trials Network Clinical Trials Units (UM1 Clinical Trial Required)",
-      "before": {
-        "status": "forecasted",
-        "title": "HIV/AIDS Clinical Trials Network Clinical Trials Units"
-      },
-      "after": {
-        "status": "posted",
-        "deadline": "2027-03-09",
-        "title": "HIV/AIDS Clinical Trials Network Clinical Trials Units (UM1 Clinical Trial Required)"
-      },
-      "detected_at": "2026-11-20T14:32:13+00:00"
+      "key": "id:364297",
+      "title": "OJP FY 2026 Special Attorneys Program Round 12",
+      "detected_at": "2026-11-20T15:31:24+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "us-grants-discovery.json",
+      "key": "id:364206",
+      "title": "FY 2027 Build to Scale Notice of Funding Opportunity",
+      "detected_at": "2026-11-20T15:31:24+00:00"
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."

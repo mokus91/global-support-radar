@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:27:10.219991+00:00",
+  "generated_at": "2026-11-20T15:25:23.056821+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 180,
@@ -117,7 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -253,6 +253,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "C12502 - NEXI/BPER BANK BUSINESS RANGE",
       "url": "https://dati.agcm.it/dataset/p30415#",
       "query": "business funding",
@@ -312,6 +320,14 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -415,14 +431,6 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Energy Efficiency Action Plan (EEAP): glazing",
-      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -565,6 +573,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -607,14 +623,6 @@
     {
       "title": "Grants Commune de Fronton",
       "url": "https://data.haute-garonne.fr/explore/dataset/subventions-commune-de-fronton/",
-      "query": "government grants",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Grants Commune of Ramonville-Sainte-Agne",
-      "url": "https://data.haute-garonne.fr/explore/dataset/subventions-commune-de-ramonville-sainte-agne/",
       "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1056,14 +1064,6 @@
       "title": "Otwarte Dane - Programy Wsparcia - Automatyczny - Dane z iPFRON+",
       "url": "https://dane.gov.pl/pl/dataset/2873,otwarte-dane-programy-wsparcia-dane-z-ipfron",
       "query": "public support programmes",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "PACA4JOB Business Events",
-      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"

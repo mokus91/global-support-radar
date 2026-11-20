@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:32:13.653664+00:00",
+  "generated_at": "2026-11-20T15:31:24.773457+00:00",
   "feeds_checked": 18,
   "records_checked": 2211,
   "expired_deadlines": 0,
@@ -7,19 +7,19 @@
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1993,
+  "unverified_status": 1994,
   "verification_tiers": {
     "verified_open": 1,
-    "api_window_candidate": 212,
-    "official_listing_candidate": 1918,
+    "api_window_candidate": 211,
+    "official_listing_candidate": 1919,
     "unverified": 75,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
-    "likely_available": 212,
-    "needs_verification": 1997,
-    "expired_or_closed": 1
+    "likely_available": 211,
+    "needs_verification": 1999,
+    "expired_or_closed": 0
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -29,10 +29,10 @@
   "feed_summary": [
     {
       "file": "jgrants-discovery.json",
-      "records": 212,
+      "records": 211,
       "procurement_candidates": 0,
       "unverified": 0,
-      "api_window_candidates": 212,
+      "api_window_candidates": 211,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 504,
+      "records": 503,
       "procurement_candidates": 1,
-      "unverified": 504,
+      "unverified": 503,
       "api_window_candidates": 0,
-      "official_listing_candidates": 504,
+      "official_listing_candidates": 503,
       "historical_archive_records": 0
     },
     {
@@ -119,11 +119,11 @@
     },
     {
       "file": "us-grants-discovery.json",
-      "records": 1381,
+      "records": 1383,
       "procurement_candidates": 0,
-      "unverified": 1381,
+      "unverified": 1383,
       "api_window_candidates": 0,
-      "official_listing_candidates": 1381,
+      "official_listing_candidates": 1383,
       "historical_archive_records": 0
     },
     {
@@ -195,7 +195,7 @@
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
       "status": "checked",
-      "records_count": 212,
+      "records_count": 211,
       "http_status": null,
       "freshness": "unknown",
       "note": ""
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 505,
+      "records_count": 504,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -285,7 +285,7 @@
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
       "status": "checked",
-      "records_count": 1381,
+      "records_count": 1383,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "temporarily-unavailable",
+      "status": "checked",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "<urlopen error timed out>"
+      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
     },
     {
       "name": "Worldwide — portal reachability",
@@ -393,7 +393,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 259
+      "records": 258
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -403,7 +403,7 @@
     {
       "source_file": "jgrants-discovery.json",
       "source_status": "acceptance-open-api-filtered",
-      "records": 212
+      "records": 211
     },
     {
       "source_file": "spain-discovery.json",
@@ -418,7 +418,7 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 794
+      "records": 796
     }
   ],
   "review_queue_count": 50,
@@ -1405,16 +1405,17 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "187801PROSPECTSEN",
-      "title": "Enhancing Economic Transformation in Conflict- and Migration-Prone Regions and Strengthening IDP Policy and Programming",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187801",
-      "deadline": "2026-11-20T14:30:55.000+0000",
+      "id": "187757PROSPECTSEN",
+      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
+      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187757",
+      "deadline": "2026-12-11T10:00:02.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "application_state": "expired_or_closed",
-      "priority_score": 8,
+      "application_state": "needs_verification",
+      "priority_score": 34,
       "priority_reasons": [
-        "expired_or_closed"
+        "needs_verification",
+        "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,

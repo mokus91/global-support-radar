@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-20T14:27:18+00:00",
+  "updated_at": "2026-11-20T15:25:31+00:00",
   "country_code": "CL",
   "country_en": "Chile",
   "source": "CORFO official active-call page",
@@ -35,7 +35,7 @@
       "official_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
       "publisher": "Corporación de Fomento de la Producción (CORFO), Government of Chile",
       "verification_status": "official_page_open_status_and_amount_checked",
-      "source_checked_at": "2026-11-20T14:27:18+00:00",
+      "source_checked_at": "2026-11-20T15:25:31+00:00",
       "note_hu": "A nyitott státusz, nyitás/zárás és maximális társfinanszírozás a CORFO hivatalos oldaláról származik. A támogatás legfeljebb a projektköltség 50%-a; női projektvezető esetén a hivatalos oldal 60%-ot jelez. A teljes jogosultságot és a saját hozzájárulást a szabályzatban ellenőrizni kell.",
       "note_en": "Open status, opening/closing dates and maximum co-financing are taken from CORFO's official page. Funding covers up to 50% of project cost; the page states 60% for a female project leader. Confirm full eligibility and matching contribution in the rules."
     }
