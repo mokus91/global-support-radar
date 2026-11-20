@@ -83,7 +83,7 @@ def main() -> int:
             errors.append(f"{filename}: manifest status is {status}")
         elif status == "temporarily-unavailable":
             warnings.append(f"{filename}: upstream source temporarily unavailable")
-        elif status not in {"checked", "checked-empty"}:
+        elif status not in {"checked", "checked-empty", "audit-summary"}:
             errors.append(f"{filename}: unsupported status {status!r}")
 
         try:
