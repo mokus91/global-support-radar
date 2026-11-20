@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T12:32:27+00:00",
+  "checked_at": "2026-11-20T12:49:22+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
     "http_error": 2,
-    "reachable": 56,
-    "restricted": 8
+    "reachable": 57,
+    "restricted": 7
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -395,8 +395,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://fondos.gob.cl/"
     },
     {

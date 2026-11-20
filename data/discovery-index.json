@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T12:32:44.693135+00:00",
+  "generated_at": "2026-11-20T12:49:38.063755+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 183,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,15 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
-      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Advertising medium Punkt Wien",
+      "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -216,6 +208,14 @@
       "title": "Beneficiaries of housing assistance — Sailly-Lez-Lannoy",
       "url": "https://www.data.gouv.fr/datasets/beneficiaires-dune-aide-au-logement-sailly-lez-lannoy",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
+      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
+      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -581,6 +581,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -709,14 +717,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "HOUSING - Number_pieces",
-      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Housing assistance for HEPA seniors by Canton CD76 2023",
       "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-canton-cd76-2023",
       "query": "housing assistance",
@@ -767,6 +767,14 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1085,9 +1093,9 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
-      "query": "housing assistance",
+      "title": "Political funding",
+      "url": "https://politikfinanzierung.efk.admin.ch/",
+      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1095,6 +1103,14 @@
     {
       "title": "Population covered by housing assistance — Gironde",
       "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Population covered by housing assistance — Gironde",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
