@@ -161,6 +161,14 @@ def main():
     for row in eu_feed.get("records", []):
         if row.get("opportunity_type") not in (None, "funding_candidate", "procurement_candidate"):
             raise SystemExit("EU feed contains an unsupported opportunity_type")
+
+    audit_script = (ROOT / "scripts" / "audit_opportunity_quality.py").read_text(encoding="utf-8")
+    for required in ('"procurement_review_queue_count"', '"procurement_candidates"', 'opportunity_type") == "procurement_candidate":', 'continue'):
+        if required not in audit_script:
+            raise SystemExit(f"Procurement candidates are not separated from grant quality metrics: {required}")
+    quality_dashboard = (ROOT / "quality.html").read_text(encoding="utf-8")
+    if "Közbeszerzési / szolgáltatási jelöltek – nem támogatások" not in quality_dashboard:
+        raise SystemExit("Separate procurement review panel is missing from quality dashboard")
     arc_adapter = (ROOT / "scripts" / "discover_au_arc_grants.py").read_text(encoding="utf-8")
     if "max_pages = 200" not in arc_adapter or '"maximum_pages": max_pages' not in arc_adapter or "pagination_complete" not in arc_adapter:
         raise SystemExit("Australian ARC pagination completeness tracking is missing")
