@@ -19,7 +19,7 @@ OpenAI's Terms of Use effective 2026-01-01 state that, as between the user and O
 | Other human contributors | No additional contributor is identified in the owner's statement in this conversation | Not independently verified | Confirm privately whether any designer, developer, translator, contractor or other person contributed |
 | SVG icon | Owner confirms they did not personally create the project icons; the SVG's original creator/source is not established | Unverified provenance; not cleared for resale/licensing | Identify the original source and permission, or replace it with a newly documented project asset before including it in a paid delivery |
 | PNG icons | Owner confirms they did not personally create the project icons; the source artwork/export history for `icon-192.png` and `icon-512-maskable.png` is not established | Unverified provenance; not cleared for resale/licensing | Identify source and permission or replace both; do not represent as exclusively owned meanwhile |
-| Python dependencies | `certifi` and `pycountry` are pinned in `requirements-ci.txt`; register records MPL-2.0 and LGPL-2.1-only respectively | Third-party components identified, not fully cleared | Include applicable licence texts/notices, review package and transitive dependency obligations |
+| Python dependencies | `certifi==2026.10.23` (MPL-2.0) and `pycountry==26.2.16` (LGPL-2.1-only) are version- and wheel-hash-pinned in `requirements-ci.txt`; PyPI metadata confirms the stated licence expressions | Direct packages identified; licence texts/notices and transitive dependency review remain incomplete | Retain the exact licence texts/notices and review package contents, data licensing and transitive dependencies before commercial delivery |
 | GitHub Actions | Workflow uses `actions/checkout@v4`, `actions/setup-python@v5`, `actions/github-script@v7` tags | Version tags identified; immutable provenance not pinned | Review action licences/security and pin immutable commit SHAs before hardened commercial delivery |
 | External data and APIs | Government, EU, UN and other sources are linked to or queried | Source-specific terms not comprehensively checked | Maintain per-source commercial reuse, attribution, database-right, API and caching review |
 | Public repository | Repository is public and may be viewed/forked under GitHub terms | Known commercial limitation | Do not promise secrecy or exclusive source access; plan private source delivery and separate hosting only after owner approval |
@@ -58,3 +58,18 @@ A non-exclusive licence can preserve the owner's ability to license the same ver
 - OpenAI Terms of Use, effective 2026-01-01: https://openai.com/policies/terms-of-use/
 
 **Conclusion:** continue preparing the project for non-exclusive licensing, but do not publish a claim of exclusive ownership over every file or sell the current repository as a fully cleared, private, production-ready software package.
+
+
+## 2026-11-20 follow-up: automation and dependency review
+
+The ten workflow files under `.github/workflows/` were inspected for third-party `uses:` references. The detected actions were pinned to immutable commit SHAs:
+- checkout v4.4.0 — `11d5960a326750d5838078e36cf38b85af677262`
+- setup-python v5.5.0 — `a26af69be951a213d495a4c3e4e4022e16d87065`
+- github-script v7.1.0 — `f28e40c7f34bde8b3046d885e986cb6290c5673b`
+- upload-artifact v4 release line — `ea165f8d65b6e75b540449e92b4886f43607fa02`
+
+The pinning changes only the action reference format and preserves the corresponding release commits. The workflows have not been executed as part of this documentation/code review; a successful live run must still be confirmed in GitHub Actions.
+
+The direct Python dependency versions and SHA-256 hashes were checked against the repository lock file and public package metadata. This confirms the declared direct-package versions and licence expressions, not the full transitive dependency graph or all licence obligations. Licence texts/notices and a transitive dependency inventory remain outstanding.
+
+The `source-discovery.yml` workflow has write permissions because it commits refreshed discovery indexes and may open an issue on failure. The beta feedback statistics workflow has contents-write permission to update an aggregate JSON file. These permissions appear consistent with their stated jobs, but should be revisited if either workflow is expanded. The `organization-report-production.yml` workflow uses `workflow_run` but checks out the default repository revision rather than executing an untrusted pull-request checkout; continue to avoid introducing untrusted PR code into privileged workflows.
