@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T06:46:35Z",
+  "generated_at": "2026-11-20T07:38:06Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 19,
+  "portals_checked": 18,
   "records_count": 7,
   "records": [
     {
@@ -20,7 +20,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-dk-1",
@@ -35,7 +35,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-lu-1",
@@ -50,7 +50,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-mt-1",
@@ -65,7 +65,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-pt-1",
@@ -80,7 +80,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-se-1",
@@ -95,7 +95,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
       "id": "national-agri-sk-1",
@@ -110,7 +110,7 @@
       "record_type": "national-agriculture-link-discovery",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country's official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     }
   ],
   "fetch_failures": [
@@ -121,6 +121,10 @@
     {
       "country_code": "BE",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+    },
+    {
+      "country_code": "CY",
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "country_code": "FR",

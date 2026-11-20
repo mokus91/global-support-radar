@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T06:42:50+00:00",
+  "checked_at": "2026-11-20T07:36:06+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
@@ -166,7 +166,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 202,
+      "http_status": 200,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -219,7 +219,7 @@
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.esfondi.lv/"
     },
     {

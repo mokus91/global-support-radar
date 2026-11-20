@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:52:48.933758+00:00",
+  "generated_at": "2026-11-20T07:40:28.961865+00:00",
   "source_id": "ca-cihr",
   "source_url": "https://cihr-irsc.gc.ca/e/51605.html",
   "feed_url": "https://www.researchnet-recherchenet.ca/rnr16/fodRss.do?type=ALL&chanTyp=ALL&lang=E",
@@ -227,7 +227,9 @@
       "open_status_verified": false
     }
   ],
-  "source_errors": {},
+  "source_errors": {
+    "researchnet_rss": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>; URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+  },
   "error": null,
   "note": "CIHR notices are discovery candidates only. Upcoming announcements are not open calls; verify the linked official notice and ResearchNet before applying."
 }

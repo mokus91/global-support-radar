@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T06:43:07.232178+00:00",
+  "generated_at": "2026-11-20T07:36:20.853649+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 183,
+  "discovered_datasets_count": 182,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,14 +117,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
-      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
@@ -143,6 +135,14 @@
     {
       "title": "AGRICULTURAL PR",
       "url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-ea56a9e6-f60f-4a84-bbd4-01b2f39ca536",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
+      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -213,14 +213,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
-      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "BPI ALAPÍTÓ JOG - ORGANOGRAM - MÓDOSÍTÁSOK - FELELŐSSÉG",
       "url": "https://data.gov.gr/dataset/idrytikos-nomos-mfi-organogramma-tropopoihseis-armodiothtesn",
       "query": "business funding",
@@ -256,6 +248,14 @@
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -576,14 +576,6 @@
       "title": "goult-housing",
       "url": "https://opendata.ozwillo.com/dataset/goult-logement",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Government Consolidated Fund (Annual)",
-      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
-      "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -997,14 +989,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -1039,6 +1023,14 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1101,9 +1093,9 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
-      "query": "housing assistance",
+      "title": "Political funding",
+      "url": "https://politikfinanzierung.efk.admin.ch/",
+      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1111,6 +1103,14 @@
     {
       "title": "Population covered by housing assistance — Gironde",
       "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Population covered by housing assistance — Gironde",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1264,14 +1264,6 @@
       "title": "Scholarships for university students of Lazio",
       "url": "http://dati.lazio.it/catalog/dataset/d3a64343-4f62-4052-8924-fd0dadb3f961#",
       "query": "scholarships",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Service “Building Information Desk” efficiency",
-      "url": "https://dati.toscana.it/dataset/servizio-sportello-informativo-edilizia-efficienza#",
-      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
