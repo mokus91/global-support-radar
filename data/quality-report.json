@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T07:55:31.936294+00:00",
+  "generated_at": "2026-11-20T07:55:55.646792+00:00",
   "feeds_checked": 18,
   "records_checked": 2224,
   "expired_deadlines": 0,
@@ -16,8 +16,8 @@
     "other": 5
   },
   "application_state_tiers": {
-    "verified_open": 0,
-    "likely_available": 215,
+    "verified_open": 1,
+    "likely_available": 214,
     "needs_verification": 1999,
     "expired_or_closed": 10
   },
@@ -491,7 +491,7 @@
       "deadline": "2026-11-24T13:00:00-03:00",
       "deadline_state": "upcoming",
       "source_status": "open-and-current",
-      "application_state": "likely_available",
+      "application_state": "verified_open",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
