@@ -4,6 +4,8 @@
 
 A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatalos forrásgyűjtemény állami támogatásokhoz, pályázatokhoz és szociális ellátásokhoz.
 
+> **Bétaállapot:** a projekt jelenleg információs MVP. A díjmentes indulás előkészítése folyamatban van; a Cloudflare-fiók összekapcsolása és az új tárhelyen végzett ellenőrzés még nem történt meg. Fizetés, előfizetés és bevétel jelenleg nincs bekapcsolva.
+
 ## Tulajdonosi, jogi és biztonsági dokumentáció
 
 - [Tulajdonosi és szellemi tulajdon nyilvántartása](docs/ownership-and-ip.md)
@@ -34,7 +36,11 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 - [Automatikus szervezeti riportgyártás](docs/automated-organization-report-production.md)
 
-## Önálló bevételi működés\n\n- [Önálló bevételi működés és élesítési kapuk](docs/autonomous-revenue-operations.md)\n\n## Bevételfogadás és tulajdonosi kifizetés
+## Önálló bevételi működés
+
+- [Önálló bevételi működés és élesítési kapuk](docs/autonomous-revenue-operations.md)
+
+## Bevételfogadás és tulajdonosi kifizetés
 
 - [Fizetési elszámolás és tulajdonosi kifizetés előkészítési terve](docs/payment-and-owner-payout-readiness.md)
 
