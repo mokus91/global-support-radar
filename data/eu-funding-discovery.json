@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T08:38:22.820311+00:00",
+  "generated_at": "2026-11-20T08:50:38.999348+00:00",
   "source_id": "eu-funding",
   "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
   "purpose": "Compact audit summary of the official API discovery run. The curated candidate feed is stored separately in eu-open-calls-discovery.json. Raw API payloads are intentionally not committed.",
@@ -12,7 +12,7 @@
   "page_size": 100,
   "records_received": 1189,
   "total_results_reported": 1189,
-  "candidate_records": 494,
-  "expired_deadline_records_excluded": 594,
+  "candidate_records": 496,
+  "expired_deadline_records_excluded": 591,
   "error": null
 }

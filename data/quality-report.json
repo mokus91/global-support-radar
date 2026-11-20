@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-20T08:35:48.079482+00:00",
+  "generated_at": "2026-11-20T08:54:02.901751+00:00",
   "feeds_checked": 18,
-  "records_checked": 2200,
+  "records_checked": 2201,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1980,
+  "unverified_status": 1983,
   "verification_tiers": {
     "verified_open": 1,
-    "api_window_candidate": 214,
-    "official_listing_candidate": 1906,
+    "api_window_candidate": 212,
+    "official_listing_candidate": 1909,
     "unverified": 74,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1985,
-    "expired_or_closed": 2
+    "needs_verification": 1988,
+    "expired_or_closed": 0
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -29,10 +29,10 @@
   "feed_summary": [
     {
       "file": "jgrants-discovery.json",
-      "records": 214,
+      "records": 212,
       "procurement_candidates": 0,
       "unverified": 0,
-      "api_window_candidates": 214,
+      "api_window_candidates": 212,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 492,
+      "records": 495,
       "procurement_candidates": 1,
-      "unverified": 492,
+      "unverified": 495,
       "api_window_candidates": 0,
-      "official_listing_candidates": 492,
+      "official_listing_candidates": 495,
       "historical_archive_records": 0
     },
     {
@@ -195,7 +195,7 @@
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
       "status": "checked",
-      "records_count": 214,
+      "records_count": 212,
       "http_status": null,
       "freshness": "unknown",
       "note": ""
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 493,
+      "records_count": 496,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "checked",
+      "status": "temporarily-unavailable",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
+      "note": "<urlopen error timed out>"
     },
     {
       "name": "Worldwide — portal reachability",
@@ -388,12 +388,12 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 243
+      "records": 244
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 249
+      "records": 251
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -403,7 +403,7 @@
     {
       "source_file": "jgrants-discovery.json",
       "source_status": "acceptance-open-api-filtered",
-      "records": 214
+      "records": 212
     },
     {
       "source_file": "spain-discovery.json",
@@ -1440,7 +1440,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 8,
+  "diagnostic_missing_urls": 9,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

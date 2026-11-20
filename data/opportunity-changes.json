@@ -1,30 +1,21 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T08:41:46+00:00",
-  "events_count": 3,
+  "generated_at": "2026-11-20T08:54:02+00:00",
+  "events_count": 2,
   "events": [
     {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wj200000cdd3omat",
-      "title": "令和７年度（補正予算）地域脱炭素実現に向けた具体的施策実装支援事業（四次公募）",
-      "detected_at": "2026-11-20T08:41:46+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wj200000cdd3ymat",
-      "title": "令和８年度地域脱炭素実現に向けた具体的施策実装支援事業",
-      "detected_at": "2026-11-20T08:41:46+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52519656topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T08:54:02+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:53295353topicsen",
-      "title": "Erasmus+ Teacher Academies",
-      "detected_at": "2026-11-20T08:41:46+00:00"
+      "key": "id:52519691topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T08:54:02+00:00"
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
