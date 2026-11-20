@@ -47,6 +47,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 ## Nyilvános bétaindítás – 0 Ft-os terv
 
 - [0 Ft-os nyilvános bétaindítás és ingyenes tárhely-migrációs ellenőrzőlista](docs/free-launch-readiness.md)
+- [Cloudflare Pages beállítása Android telefonról – 0 Ft-os útmutató](docs/cloudflare-pages-android-setup-hu.md)
 
 ## Mi működik jelenleg?
 
