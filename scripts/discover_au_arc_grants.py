@@ -42,7 +42,7 @@ def main():
                     if exc.code not in (429, 500, 502, 503, 504) or attempt == 1:
                         raise
                 except (URLError, TimeoutError):
-                    if attempt == 2:
+                    if attempt == 1:
                         raise
                 time.sleep(2 * (attempt + 1))
             items = payload.get("data", [])
