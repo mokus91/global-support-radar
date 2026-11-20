@@ -144,3 +144,10 @@ A generátor továbbra is helyi fájlokból dolgozik; önálló adatletöltés, 
 Elkészült a [szervezeti monitoring pilot specifikációja](organizational-pilot-spec.md). Rögzíti a pilot bemeneteit, a leszállítandó riportot, az elfogadási kritériumokat, a mérőszámokat, az árazási hipotézis és az aktív ajánlat közötti különbséget, valamint a fizetős indulás kötelező kapuit.
 
 Ez belső termékterv, nem értékesítési ajánlat. Külső megkeresés, fizetési folyamat, szerződés és költségvállalás nem történt. A GitHub Pages jelenlegi MVP-je nem minősül kész kereskedelmi szolgáltatásnak.
+
+
+## 11. Személyre szabott érdeklődői kérdésvázlatok (2026-11-20)
+
+Elkészült az [első öt szervezethez készített kérdésvázlat](prospect-interview-guides.md). A vázlatok a szervezetek nyilvános profiljához igazított, rövid igényfelmérést segítik; tartalmaznak 15 perces beszélgetési menetrendet, érdeklődő-minősítési szabályokat és kapcsolatfelvétel előtti ellenőrzőlistát.
+
+Ez belső előkészítés. Nem történt megkeresés, válasz, pilotmegállapodás vagy értékesítés. A státuszok csak tényleges események után változtathatók. Külső megkeresés kizárólag külön tulajdonosi jóváhagyással történhet. A 0 Ft-os indulási elv változatlan.
