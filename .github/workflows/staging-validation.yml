@@ -1,0 +1,59 @@
+name: Staging validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "data/**"
+      - "*.html"
+      - "*.js"
+      - "requirements-ci.txt"
+      - ".github/workflows/staging-validation.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: global-support-radar-staging-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-in-isolated-runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned test dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements-ci.txt
+      - name: Compile project scripts
+        run: python -m compileall -q scripts
+      - name: Validate project and frontend
+        run: python scripts/validate_project.py
+      - name: Run regression tests
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Create validation summary
+        if: always()
+        run: |
+          {
+            echo "# Staging validation"
+            echo
+            echo "- Commit: \`${GITHUB_SHA}\`"
+            echo "- Event: \`${GITHUB_EVENT_NAME}\`"
+            echo "- Runner: isolated GitHub-hosted runner"
+            echo "- Permissions: contents: read"
+            echo "- Result: inspect the job steps above"
+          } > staging-validation-summary.md
+      - name: Preserve validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-validation-${{ github.run_number }}
+          path: staging-validation-summary.md
+          if-no-files-found: error
+          retention-days: 30
