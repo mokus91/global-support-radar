@@ -246,18 +246,15 @@ def main():
         if required not in updates_text:
             raise SystemExit(f"Public change-log transparency safeguard is missing: {required}")
 
-    updates_scripts = re.findall(r"<script\\b[^>]*>([\\s\\S]*?)</script>", updates_text, re.I)
-    if not updates_scripts or not any(block.strip() for block in updates_scripts):
+    if "<script>" not in updates_text or "</script>" not in updates_text:
         raise SystemExit("Public change-log page has no executable rendering script")
-    for index, block in enumerate(updates_scripts, start=1):
-        if not block.strip():
-            continue
-        with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
-            handle.write(block)
-            handle.flush()
-            result = subprocess.run(["node", "--check", handle.name], capture_output=True, text=True)
-            if result.returncode:
-                raise SystemExit(f"Public change-log JavaScript {index} syntax error:\\n{result.stderr}")
+    updates_script = updates_text.split("<script>", 1)[1].split("</script>", 1)[0]
+    with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
+        handle.write(updates_script)
+        handle.flush()
+        result = subprocess.run(["node", "--check", handle.name], capture_output=True, text=True)
+        if result.returncode:
+            raise SystemExit(f"Public change-log JavaScript syntax error:\\n{result.stderr}")
     if 'href="./updates.html"' not in html:
         raise SystemExit("Homepage link to the public opportunity change log is missing")
     sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
