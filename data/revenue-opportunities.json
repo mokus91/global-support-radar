@@ -47,9 +47,9 @@
       "status": "blocked",
       "url": "https://support.google.com/adsense/answer/9724",
       "check_url": "https://support.google.com/adsense/answer/9724",
-      "description_hu": "A Google eredeti, hasznos tartalmat, szabályzatnak megfelelő webhelyet és tulajdonosi HTML-hozzáférést vár el. A jóváhagyás nem garantált. A jelenlegi GitHub Pages tárhely kereskedelmi korlátozása miatt a hirdetés élesítése előtt tárhelyváltás szükséges.",
+      "description_hu": "A Google eredeti, hasznos tartalmat, szabályzatnak megfelelő webhelyet és tulajdonosi HTML-hozzáférést vár el. A jóváhagyás nem garantált. A GitHub Pages korlátozása nem jelent automatikus tiltást minden hirdetésre: azt kell ellenőrizni, hogy a webhely fő célja kereskedelmi tranzakció vagy kereskedelmi SaaS-e. Fizetős riport/SaaS indítása előtt tárhelyváltás szükséges.",
       "cost_huf": 0,
-      "requirements": "Eredeti szerkesztett tartalom, jó navigáció, AdSense-jóváhagyás, adatvédelmi/süti megfelelés és kereskedelmi célra alkalmas tárhely."
+      "requirements": "Eredeti szerkesztett tartalom, jó navigáció, AdSense-jóváhagyás, adatvédelmi/süti megfelelés és a konkrét üzleti modellhez megfelelő tárhely."
     },
     {
       "id": "cloudflare-migration",
