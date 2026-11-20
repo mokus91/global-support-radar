@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T05:39:00+00:00",
+  "checked_at": "2026-11-20T05:53:30+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 9,
+    "connection_error": 8,
     "http_error": 2,
     "reachable": 55,
-    "restricted": 8
+    "restricted": 9
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -320,7 +320,7 @@
     {
       "id": "national-mx-social-2",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.programasparaelbienestar.gob.mx/"
     },
     {
@@ -436,8 +436,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "restricted",
+      "http_status": 429,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",

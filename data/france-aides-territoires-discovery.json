@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T05:41:17+00:00",
+  "generated_at": "2026-11-20T05:54:31+00:00",
   "country_code": "FR",
   "source": "Aides-territoires official public API",
   "source_url": "https://aides-territoires.beta.gouv.fr/api/aids/",
   "pages_checked": 0,
   "records_count": 0,
   "records": [],
-  "fetch_status": "temporarily-unavailable",
-  "http_status": null,
-  "error": "The read operation timed out",
+  "fetch_status": "temporarily-restricted",
+  "http_status": 401,
+  "error": "Unauthorized",
   "scope": "The official API could not be queried successfully. No current grant or application status is inferred; use the official catalogue directly."
 }
