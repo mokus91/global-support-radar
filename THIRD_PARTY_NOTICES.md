@@ -14,7 +14,7 @@ This register records an initial repository-level audit. It is not a legal certi
 
 ## 2. Build and automation dependencies
 
-The GitHub Actions workflows reference these third-party actions by version tag:
+The GitHub Actions workflows use these third-party actions, pinned to immutable commit SHAs:
 - `actions/checkout` pinned to commit `11d5960a326750d5838078e36cf38b85af677262` (v4.4.0)
 - `actions/setup-python` pinned to commit `a26af69be951a213d495a4c3e4e4022e16d87065` (v5.5.0)
 - `actions/github-script` pinned to commit `f28e40c7f34bde8b3046d885e986cb6290c5673b` (v7.1.0)
