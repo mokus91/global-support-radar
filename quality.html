@@ -11,7 +11,7 @@
   const r=await fetch('https://raw.githubusercontent.com/mokus91/global-support-radar/main/data/quality-report.json',{cache:'no-store'});
   if(!r.ok)throw Error('report unavailable');
   const d=await r.json();
-  const items=[['Vizsgált adatforrás',d.feeds_checked],['Pályázati rekord',d.records_checked],['Lejárt határidő',d.expired_deadlines],['Hiányzó hivatalos link',d.missing_urls],['Hibás hivatalos link',d.invalid_urls],['Duplikált azonosító',d.duplicate_ids],['Hiányzó cím',d.missing_titles],['Nem igazolt státusz',d.unverified_status],['Nem pályázati katalógusrekord',d.non_opportunity_records],['Történeti támogatási rekord – nem aktív felhívás',d.historical_archive_records],['Országportál-állapotvizsgálat',d.diagnostic_records_checked]];
+  const items=[['Vizsgált adatforrás',d.feeds_checked],['Pályázati rekord',d.records_checked],['Lejárt határidő',d.expired_deadlines],['Hiányzó hivatalos link',d.missing_urls],['Hibás hivatalos link',d.invalid_urls],['Duplikált azonosító',d.duplicate_ids],['Hiányzó cím',d.missing_titles],['Nem igazolt státusz',d.unverified_status],['Nem pályázati katalógusrekord',d.non_opportunity_records],['Közbeszerzés / szolgáltatási jelölt (külön besorolva)',d.procurement_candidate_records],['Történeti támogatási rekord – nem aktív felhívás',d.historical_archive_records],['Országportál-állapotvizsgálat',d.diagnostic_records_checked]];
   stats.replaceChildren();for(const [k,v] of items){const box=add(stats,'section','','box');add(box,'span',k,'muted');add(box,'b',v??0)}
   issues.replaceChildren();
   const critical=items.slice(2,7).filter(([,v])=>Number(v)>0);
@@ -58,7 +58,7 @@
       link.href=parsed.href;link.target='_blank';link.rel='noopener noreferrer';
      }
     }
-    const detail=[item.source_file,item.deadline?'Határidő: '+item.deadline+' ('+(item.deadline_state||'ellenőrizendő')+')':'Határidő nincs megadva',item.missing_details?.length?'Hiányzó adatok: '+item.missing_details.join(', '):'A vizsgált adatmezők teljesek'].filter(Boolean).join(' · ');
+    const detail=[item.source_file,item.opportunity_type&&item.opportunity_type!=='unclassified'?'Típus: '+(item.opportunity_type==='procurement_candidate'?'közbeszerzési / szolgáltatási jelölt':'támogatási jelölt'):'Típus: nincs besorolva',item.deadline?'Határidő: '+item.deadline+' ('+(item.deadline_state||'ellenőrizendő')+')':'Határidő nincs megadva',item.missing_details?.length?'Hiányzó adatok: '+item.missing_details.join(', '):'A vizsgált adatmezők teljesek'].filter(Boolean).join(' · ');
     add(li,'small',detail,'muted');
    }
   }
