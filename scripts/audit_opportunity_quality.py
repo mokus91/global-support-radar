@@ -51,19 +51,7 @@ ELIGIBILITY_FIELDS = ("eligibility", "eligible_applicants", "beneficiary", "targ
 
 status_observations = {}
 
-def parse_deadline(value):
-    if not value:
-        return None
-    try:
-        parsed = dt.datetime.fromisoformat(str(value).strip().replace("Z", "+00:00"))
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=dt.timezone.utc)
-        return parsed.astimezone(dt.timezone.utc)
-    except (TypeError, ValueError):
-        try:
-            return dt.datetime.combine(dt.date.fromisoformat(str(value)[:10]), dt.time.min, tzinfo=dt.timezone.utc)
-        except ValueError:
-            return None
+from deadline_utils import parse_deadline
 
 def is_explicitly_closed(value):
     text = str(value or "").strip().lower().replace("_", "-")
