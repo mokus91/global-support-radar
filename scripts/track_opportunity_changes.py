@@ -50,9 +50,29 @@ def key_for(row):
 def signature(row):
     return {field: row.get(field) for field in FIELDS if row.get(field) not in (None, "", [], {})}
 
+def load_feed_status():
+    try:
+        manifest = json.loads((DATA / "feed-status.json").read_text(encoding="utf-8"))
+        return {item.get("file"): item for item in manifest.get("feeds", [])
+                if isinstance(item, dict) and item.get("file")}
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return {}
+
+def allow_removal_events(filename, status_by_file):
+    """Avoid treating missing records as removals from incomplete feeds."""
+    status = status_by_file.get(filename, {})
+    if status.get("status") == "temporarily-unavailable":
+        return False
+    # ARC is deliberately capped at 40 pages. Reaching the cap means this
+    # snapshot is partial and cannot support reliable removal detection.
+    if filename == "au-arc-grants-discovery.json" and status.get("pages_fetched", 0) >= 40:
+        return False
+    return True
+
 def main():
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     events = []
+    status_by_file = load_feed_status()
     for filename in TRACKED:
         path = DATA / filename
         if not path.exists():
@@ -75,17 +95,18 @@ def main():
                 events.append({"type": "changed", "feed": filename, "key": key,
                                "title": row.get("title") or row.get("title_original") or row.get("title_en") or key,
                                "before": signature(before), "after": signature(row), "detected_at": now})
-        for key, row in old.items():
-            if key not in new:
-                events.append({"type": "removed_from_feed", "feed": filename, "key": key,
-                               "title": row.get("title") or row.get("title_original") or row.get("title_en") or key,
-                               "detected_at": now,
-                               "note": "No longer present in this feed; this does not prove the opportunity is closed."})
+        if allow_removal_events(filename, status_by_file):
+            for key, row in old.items():
+                if key not in new:
+                    events.append({"type": "removed_from_feed", "feed": filename, "key": key,
+                                   "title": row.get("title") or row.get("title_original") or row.get("title_en") or key,
+                                   "detected_at": now,
+                                   "note": "No longer present in this feed; this does not prove the opportunity is closed."})
     # Keep the newest events only; absence is never labelled as confirmed closure.
     events = events[-500:]
     OUTPUT.write_text(json.dumps({"schema_version": "1.0", "generated_at": now,
         "events_count": len(events), "events": events,
-        "note": "Changes are detected by comparing repository snapshots. Removed records are not assumed closed; always confirm status at the official source."},
+        "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."},
         ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Opportunity change log created: {len(events)} events")
 
