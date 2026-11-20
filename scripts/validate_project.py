@@ -111,7 +111,7 @@ def main():
     filenames = [feed.get("file") for feed in feeds]
     if len(filenames) != len(set(filenames)):
         raise SystemExit("Duplicate feed filenames in feed-status.json")
-    allowed_feed_statuses = {"checked", "checked-empty", "temporarily-unavailable", "missing", "invalid-json"}
+    allowed_feed_statuses = {"checked", "checked-empty", "audit-summary", "temporarily-unavailable", "missing", "invalid-json"}
     for feed in feeds:
         filename = feed.get("file")
         if not filename or Path(filename).name != filename:
