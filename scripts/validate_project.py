@@ -131,7 +131,7 @@ def main():
 
     retry_policies = {
         "discover_eu_national_categories.py": ("for attempt in range(2)", "time.sleep(2)", "TIMEOUT = 9"),
-        "discover_eu_national_agriculture.py": ("for attempt in range(3)", "time.sleep(3 * (attempt + 1))", "TIMEOUT = 18"),
+        "discover_eu_national_agriculture.py": ("for attempt in range(2)", "time.sleep(1 * (attempt + 1))", "TIMEOUT = 12", "ThreadPoolExecutor(max_workers=6)"),
         "discover_eu_funding.py": ("for attempt in range(3)", "time.sleep(3 * (attempt + 1))", None),
     }
     for adapter, expected in retry_policies.items():
