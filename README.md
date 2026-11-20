@@ -19,6 +19,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Fizetőképes ügyféljelöltek – harmadik kutatási hullám](docs/revenue-prospects-wave-3.md)
 - [Három személyre szabott üzleti bemutatóvázlat](docs/three-prospect-demo-briefs.md)
 - [Magyarország / innováció és K+F – ellenőrzött szervezeti riportminta](docs/sample-organization-report-2026-11-20.md)
+- [Magyarország / innováció és K+F – ellenőrzött szervezeti riportminta](docs/sample-organization-report-2026-11-20.md)
 - [Partnerhálózat-építési rendszer és megkeresési folyamat](docs/partner-growth-engine.md)
 - [Második hullámos partnerhálózati térkép](docs/partner-network-map-wave-2.md)
 - [Kereshető partnerjelölt-adatbázis](partner-network.html)
