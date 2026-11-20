@@ -191,6 +191,6 @@ Jelenlegi státusz: 20 kutatott célpont, 0 jóváhagyott/elküldött megkeresé
 
 ## 16. Partnerhálózati térkép és kereshető partnerjelölt-oldal (2026-11-20)
 
-A hivatalos Enterprise Europe Network Hungary és Danube Chambers of Commerce Federation nyilvános hálózati oldalai alapján elkészült a második kutatási hullám 16 új szervezeti jelölttel. A kutatási jegyzet megadja a partnerkategóriát, relevancia-indoklást és a hivatalos weboldalt. A kereshető [partnerjelölt-adatbázis](../partner-network.html) szűrhető név és kategória szerint.
+A hivatalos Enterprise Europe Network Hungary és Danube Chambers of Commerce Federation nyilvános hálózati oldalai alapján elkészült a második kutatási hullám. A kutatási jegyzet 16 sorszámozott bejegyzést tartalmaz, amelyek közül a két hálózati lista közötti átfedés miatt 14 egyedi szervezet. A dokumentum megadja a partnerkategóriát, relevancia-indoklást és a hivatalos weboldalt. A kereshető [partnerjelölt-adatbázis](../partner-network.html) szűrhető név és kategória szerint.
 
-A hálózati tagság csak a forrásoldal szerinti külső hálózati kapcsolatot jelenti, nem Global Support Radar-partnerséget. A teljes kutatott célpontszám 36; 0 megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 pilot, 0 aktív GSR-partner és 0 Ft bevétel. Megkeresés csak külön tulajdonosi jóváhagyással történhet.
+A hálózati tagság csak a forrásoldal szerinti külső hálózati kapcsolatot jelenti, nem Global Support Radar-partnerséget. A korábbi kutatási hullámokkal összevont, teljesen deduplikált célpontszámot külön ellenőrzés nélkül nem közöljük. A jelenlegi státusz: 0 megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 pilot, 0 aktív GSR-partner és 0 Ft bevétel. Megkeresés csak külön tulajdonosi jóváhagyással történhet.
