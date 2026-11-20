@@ -1,0 +1,43 @@
+name: Partneri megkeresés
+description: Együttműködési vagy szakmai partneri javaslat a Global Support Radar számára
+title: "[Partneri megkeresés] "
+labels: ["partnership"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kérjük, ne adj meg személyes, pénzügyi, egészségügyi vagy bizalmas adatot. A hibajegyek nyilvánosak.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Megkeresés típusa
+      options:
+        - Hivatalos adatforrás / adatkapcsolat
+        - Szakmai együttműködés
+        - Partnerprogram / ajánlói jutalék
+        - Szponzoráció / hirdetés
+        - Szervezeti szolgáltatás
+        - Egyéb
+    validations:
+      required: true
+  - type: textarea
+    id: organisation
+    attributes:
+      label: Szervezet vagy projekt neve
+      description: Nyilvánosan megosztható szervezetnév vagy weboldal.
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Röviden az együttműködési javaslat
+      description: Mit ajánlasz, és milyen értéket adna a látogatóknak?
+    validations:
+      required: true
+  - type: textarea
+    id: public_link
+    attributes:
+      label: Nyilvános információs hivatkozás
+      description: Opcionális, nyilvánosan elérhető weboldal.
+    validations:
+      required: false
