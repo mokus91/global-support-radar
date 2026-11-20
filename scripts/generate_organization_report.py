@@ -95,6 +95,35 @@ def amount_of(record: dict[str, Any]) -> str:
     return f"{amount} {currency}".strip()
 
 
+def _values(record: dict[str, Any], keys: tuple[str, ...]) -> set[str]:
+    values: set[str] = set()
+    for key in keys:
+        value = record.get(key)
+        if isinstance(value, list):
+            values.update(str(part).strip().casefold() for part in value if part not in (None, ""))
+        elif value not in (None, ""):
+            values.add(str(value).strip().casefold())
+    return values
+
+
+def filter_records(
+    records: list[dict[str, Any]],
+    country: str | None = None,
+    category: str | None = None,
+) -> list[dict[str, Any]]:
+    """Filter by exact country/category aliases; matching is case-insensitive."""
+    result = records
+    if country:
+        wanted = country.strip().casefold()
+        country_keys = ("country_code", "country", "country_hu", "country_en", "country_name", "country_name_hu")
+        result = [r for r in result if wanted in _values(r, country_keys)]
+    if category:
+        wanted = category.strip().casefold()
+        category_keys = ("category", "categories", "category_hu", "category_en", "topic", "topics")
+        result = [r for r in result if wanted in _values(r, category_keys)]
+    return result
+
+
 def render(records: list[dict[str, Any]], today: date) -> str:
     verified, candidates = [], []
     for record in records:
@@ -177,7 +206,17 @@ def self_test() -> None:
     assert classify({"status": "closed"}, today) == "exclude"
     assert classify({"status": "open", "verification_status": "withdrawn"}, today) == "exclude"
     assert classify({"status": "open", "deadline": "not-a-date"}, today) == "exclude"
-    print("Self-test: 7 checks passed.")
+    sample = [
+        {"country_code": "HU", "categories": ["business", "energy"]},
+        {"country_hu": "Magyarország", "category": "Agriculture"},
+        {"country_code": "ES", "category": "business-growth"},
+    ]
+    assert len(filter_records(sample, country="hu")) == 1
+    assert len(filter_records(sample, country="MAGYARORSZÁG")) == 1
+    assert len(filter_records(sample, category="BUSINESS")) == 1
+    assert len(filter_records(sample, category="business-growth")) == 1
+    assert len(filter_records(sample)) == 3
+    print("Self-test: 12 checks passed.")
 
 
 def main() -> None:
@@ -185,12 +224,15 @@ def main() -> None:
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--output", type=Path, default=Path("reports/organization-report-latest.md"))
     parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--country", help="Exact country code or country name (case-insensitive)")
+    parser.add_argument("--category", help="Exact category/topic label (case-insensitive)")
     args = parser.parse_args()
     if args.self_test:
         self_test()
         return
     today = datetime.now(timezone.utc).date()
-    report = render(load_records(args.data_dir), today)
+    records = filter_records(load_records(args.data_dir), country=args.country, category=args.category)
+    report = render(records, today)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(report, encoding="utf-8")
     print(f"Report written: {args.output}")
