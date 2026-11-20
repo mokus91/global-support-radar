@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T05:24:45.398534+00:00",
+  "generated_at": "2026-11-20T05:39:11.534067+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 185,
+  "discovered_datasets_count": 182,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -141,14 +141,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "AKVAKULTÚRA-EGYSÉGEK – N. AEGEAN MEZŐGAZDASÁGI ÜGYEKÉRT FELELŐS IGAZGATÓSÁG – RÉSZLETEK 2026",
-      "url": "https://data.gov.gr/dataset/monades-ydatokalliergeion-dieythynsi-agrotikon-ypotheseon-v-aigaioy-stoicheia-2026",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Animal Assistance Foundation",
       "url": "https://www.data.gouv.fr/datasets/fondation-assistance-aux-animaux",
       "query": "housing assistance",
@@ -261,14 +253,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
-      "url": "https://dati.agcm.it/dataset/p28329#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "C12502 - NEXI/BPER BANK BUSINESS RANGE",
       "url": "https://dati.agcm.it/dataset/p30415#",
       "query": "business funding",
@@ -328,14 +312,6 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Comparison of cities - Business 2022",
-      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -439,6 +415,14 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): glazing",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -576,14 +560,6 @@
       "title": "goult-housing",
       "url": "https://opendata.ozwillo.com/dataset/goult-logement",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Government Consolidated Fund (Annual)",
-      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
-      "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -941,14 +917,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "IPA03 - Structural business statistics",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "IPA04 - Structural Business Statistics",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA04/JSON-stat/2.0/en",
       "query": "business funding",
@@ -997,6 +965,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -1031,14 +1007,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1088,6 +1056,14 @@
       "title": "Otwarte Dane - Programy Wsparcia - Automatyczny - Dane z iPFRON+",
       "url": "https://dane.gov.pl/pl/dataset/2873,otwarte-dane-programy-wsparcia-dane-z-ipfron",
       "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "PACA4JOB Business Events",
+      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
