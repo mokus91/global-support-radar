@@ -19,7 +19,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -57,14 +57,17 @@ jobs:
         timeout-minutes: 8
         run: python scripts/discover_eu_national_categories.py
       - name: Discover US Grants.gov opportunities
+        timeout-minutes: 8
         run: python scripts/discover_us_grants.py
       - name: Discover UKRI funding opportunities
         run: python scripts/discover_ukri.py
       - name: Discover Australian ARC research grants
+        timeout-minutes: 8
         run: python scripts/discover_au_arc_grants.py
       - name: Discover New Zealand Government Funding Explorer listings
         run: python scripts/discover_nz_funding_explorer.py
       - name: Discover Canadian CIHR funding opportunities
+        timeout-minutes: 5
         run: python scripts/discover_ca_cihr.py
       - name: Discover Hungarian open-data datasets
         run: python scripts/discover_hu_open_data.py
