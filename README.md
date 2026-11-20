@@ -182,3 +182,6 @@ Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fej
 
 - Változásnapló olvasható összefoglalója: `scripts/build_opportunity_change_digest.py`
 - Szabályok és korlátok: `docs/opportunity-change-digest.md`
+
+
+- [Nyilvános adatváltozási napló](updates.html)
