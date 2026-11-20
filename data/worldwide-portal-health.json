@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T10:57:54+00:00",
+  "checked_at": "2026-11-20T11:20:32+00:00",
   "records_count": 74,
   "summary": {
     "connection_error": 8,
@@ -166,7 +166,7 @@
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 202,
+      "http_status": 200,
       "final_url": "https://eufunds.com.cy/"
     },
     {

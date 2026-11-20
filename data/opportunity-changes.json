@@ -1,21 +1,49 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T11:03:38+00:00",
-  "events_count": 2,
+  "generated_at": "2026-11-20T11:25:57+00:00",
+  "events_count": 6,
   "events": [
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519656topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T11:03:38+00:00"
+      "key": "id:53498805topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519691topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-20T11:03:38+00:00"
+      "key": "id:53498831topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53498857topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53498882topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53498908topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53498933topicsen",
+      "title": "Capacity building in the field of Vocational Education and Training (VET)",
+      "detected_at": "2026-11-20T11:25:57+00:00"
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
