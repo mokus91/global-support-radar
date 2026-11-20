@@ -30,6 +30,13 @@
   const labels=[['verified_open','Igazoltan nyitott'],['api_window_candidate','API szerinti jelentkezési jelölt'],['official_listing_candidate','Hivatalos listán szereplő jelölt'],['unverified','Nem igazolt'],['other','Egyéb / nincs besorolás']];
   const list=add(tierBox,'ul','');for(const [key,label] of labels)add(list,'li',label+': '+(tiers[key]??0));
   add(tierBox,'p','A jelölt státusz nem jelent jogosultság- vagy beadási feltétel-ellenőrzést. A jelentkezés előtt mindig az eredeti kiírást kell megnyitni.','muted');
+  const appStates=d.application_state_tiers||{};
+  const stateBox=add(document.querySelector('main'),'section','','box');
+  add(stateBox,'h2','Jelentkezési állapot – óvatos besorolás');
+  const stateList=add(stateBox,'ul','');
+  const stateLabels=[['verified_open','Igazoltan nyitott'],['likely_available','Valószínűleg elérhető – hivatalos API-jelzés'],['needs_verification','Ellenőrzés szükséges'],['expired_or_closed','Lejárt határidő vagy lezárt státusz']];
+  for(const [key,label] of stateLabels)add(stateList,'li',label+': '+(appStates[key]??0));
+  add(stateBox,'p','A lejárt határidő nem feltétlenül jelenti a program megszűnését. Az API-jelzés sem igazolja a pályázó jogosultságát. Minden esetben a hivatalos kiírás az irányadó.','muted');
   const health=Array.isArray(d.feed_health_summary)?d.feed_health_summary:[];
   if(health.length){
    const section=add(document.querySelector('main'),'section','','box');
