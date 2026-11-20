@@ -40,7 +40,7 @@
       link.href=parsed.href;link.target='_blank';link.rel='noopener noreferrer';
      }
     }
-    const detail=[item.source_file,item.deadline?'Határidő: '+item.deadline:'Határidő nincs megadva',item.missing_details?.length?'Hiányzó adatok: '+item.missing_details.join(', '):'A vizsgált adatmezők teljesek'].filter(Boolean).join(' · ');
+    const detail=[item.source_file,item.deadline?'Határidő: '+item.deadline+' ('+(item.deadline_state||'ellenőrizendő')+')':'Határidő nincs megadva',item.missing_details?.length?'Hiányzó adatok: '+item.missing_details.join(', '):'A vizsgált adatmezők teljesek'].filter(Boolean).join(' · ');
     add(li,'small',detail,'muted');
    }
   }
