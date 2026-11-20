@@ -27,6 +27,7 @@ report = {
     "review_queue_count": 0,
     "review_queue": [],
     "non_opportunity_records": 0,
+    "procurement_candidate_records": 0,
     "historical_archive_records": 0,
     "diagnostic_records_checked": 0,
     "diagnostic_missing_urls": 0,
@@ -99,6 +100,8 @@ for feed in manifest.get("feeds", []):
 
         report["records_checked"] += 1
         feed_counts["records"] += 1
+        if record.get("opportunity_type") == "procurement_candidate":
+            report["procurement_candidate_records"] += 1
 
         # Build a human-readable review queue from the best-documented candidates.
         # A score indicates available information, not confirmation that a call is open.
@@ -153,6 +156,7 @@ for feed in manifest.get("feeds", []):
                 "deadline": str(deadline_value or ""),
                 "deadline_state": deadline_state,
                 "source_status": str(source_status_value or "")[:100],
+                "opportunity_type": str(record.get("opportunity_type") or "unclassified"),
                 "score": score,
                 "missing_details": missing_details
             })
