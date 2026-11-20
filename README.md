@@ -1,6 +1,6 @@
 # Global Support Radar
 
-**Élő oldal:** https://mokus91.github.io/global-support-radar/
+**Élő oldal:** https://mokus91.github.io/
 
 A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatalos forrásgyűjtemény állami támogatásokhoz, pályázatokhoz és szociális ellátásokhoz.
 
