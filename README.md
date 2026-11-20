@@ -26,6 +26,10 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 - [Első fizetős riportpilot ajánlati kerete és sikerfeltételei](docs/first-paid-report-pilot.md)
 
+## Bevételfogadás és tulajdonosi kifizetés
+
+- [Fizetési elszámolás és tulajdonosi kifizetés előkészítési terve](docs/payment-and-owner-payout-readiness.md)
+
 ## Mi működik jelenleg?
 
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
