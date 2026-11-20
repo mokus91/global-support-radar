@@ -126,3 +126,24 @@ A „kutatott célpont” nem partner, a megtekintés nem érdeklődés, a katti
 A korábban kutatott 20 szervezeti célpont belső kutatási lista. A jelenlegi ismert állapot: **20 kutatott célpont, 0 jóváhagyott megkeresés, 0 elküldött megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 pilot, 0 partner, 0 fizető ügyfél, 0 Ft bevétel.**
 
 A következő mérhető feladat: a fenti csatornákból további 20 szervezet kutatása és pontozása, majd a legjobb 5 megkeresésének külön tulajdonosi jóváhagyásra előkészítése.
+
+
+## 8. Országos magyar partnerkutatás – vármegyei lefedettség
+
+A partnerépítés földrajzi alapja Magyarország teljes területe, nem kizárólag Budapest vagy a Dél-Alföld. A VOSZ hivatalos vármegyei szervezeti oldala 19 vármegyei, illetve Budapest/Pest térségi szervezeti egységet sorol fel. Ezeket külön helyi kapcsolódási pontként kell nyilvántartani, de azonos országos ernyőszervezethez tartozásukat jelezni kell; nem szabad 19 független országos szervezetként összeadni.
+
+Első országos hullám célcsoportjai:
+- mind a 19 vármegyei VOSZ-szervezet és Budapest/Pest térségi egység;
+- az EEN Hungary 8 partnerintézménye és a regionális lefedettségük;
+- a 19 vármegyei kereskedelmi és iparkamara, valamint az MKIK;
+- vármegyei vállalkozásfejlesztési alapítványok, inkubátorok és ipari parkok;
+- egyetemek, Területi Innovációs Platformok, kutatóhelyek és innovációs klaszterek;
+- agrárkamara és agrár/vidékfejlesztési tanácsadó hálózatok;
+- országos civil ernyőszervezetek, szociális, lakhatási, oktatási és energiahatékonysági szereplők;
+- pályázati tanácsadók és projektfejlesztők, külön a fizetős riportpilot lehetséges tesztelőiként.
+
+**Forrásalap:** a VOSZ országos és vármegyei szervezeti oldala; az EEN Hungary hivatalos konzorciumi oldala; az NKFIH Területi Innovációs Platform tájékoztatója. A VOSZ vármegyei oldal jelenleg egy országos listázó oldal, ezért a konkrét helyi kapcsolattartót és közvetlen aloldalt minden megkeresés előtt külön kell ellenőrizni.
+
+**Bevételi fókusz:** a szakmai/terjesztési partnerektől elválasztva kell azonosítani azokat a tanácsadókat és szervezeteket, amelyeknek rendszeres ország- és témaköralapú monitoring riport időt takaríthat meg. A legnagyobb reális bevételi lehetőség elsőként a fizetős szervezeti riportpilot validálása; a partnerhálózat terjesztési értéket és bizalmat adhat, de önmagában nem bevétel.
+
+A partnerjelöltek kutatása nem jelent megkeresést, érdeklődést vagy partnerséget. Minden kapcsolatfelvétel külön tulajdonosi jóváhagyást igényel. A 0 Ft-os indulási elv változatlan.
