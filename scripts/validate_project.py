@@ -259,7 +259,7 @@ def main():
     if 'href="./updates.html"' not in html:
         raise SystemExit("Homepage link to the public opportunity change log is missing")
     sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
-    if "https://mokus91.github.io/global-support-radar/updates.html" not in sitemap_text:
+    if "https://mokus91.github.io/updates.html" not in sitemap_text:
         raise SystemExit("Public opportunity change-log page is missing from sitemap.xml")
     sitemap_result = subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "validate_sitemap.py")],
