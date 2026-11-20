@@ -1,0 +1,34 @@
+name: Zero-cost revenue opportunity watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 7 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gsr-zero-cost-opportunity-watch
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check curated official opportunity and cost pages
+        run: python scripts/check_revenue_opportunities.py
+      - name: Save weekly report
+        uses: actions/upload-artifact@v4
+        with:
+          name: revenue-opportunity-watch-${{ github.run_number }}
+          path: revenue-opportunity-watch.md
+          if-no-files-found: error
+          retention-days: 30
