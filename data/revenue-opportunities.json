@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "checked_at": null,
+  "notice": "A link elérhetőségének ellenőrzése nem jelenti a partnerprogram jóváhagyását, a szolgáltatás díjmentességét vagy a bevétel garantálását.",
+  "opportunities": [
+    {
+      "id": "organization-pilot",
+      "name": "Szervezeti próbareport",
+      "type": "direct_service",
+      "priority": 1,
+      "status": "research",
+      "url": "https://mokus91.github.io/global-support-radar/",
+      "check_url": "https://mokus91.github.io/global-support-radar/",
+      "description_hu": "Egy ország és egy támogatási témakör hivatalos forrásainak kézzel ellenőrzött, szervezetnek készített riportja. Előbb ingyenes igényfelmérés és mintariport; fizetős ajánlat csak jogi, számlázási és tárhelyfeltételek tisztázása után.",
+      "cost_huf": 0,
+      "requirements": "Valós szervezeti igény, emberi ellenőrzés, tulajdonosi jóváhagyás, jogszerű számlázás és kereskedelmi célra megfelelő tárhely."
+    },
+    {
+      "id": "sponsorship",
+      "name": "Közvetlen szponzoráció",
+      "type": "sponsorship",
+      "priority": 2,
+      "status": "research",
+      "url": "https://mokus91.github.io/global-support-radar/revenue.html",
+      "check_url": "https://mokus91.github.io/global-support-radar/revenue.html",
+      "description_hu": "Jól elkülönített, egyértelműen szponzorált bemutatkozás releváns szervezeteknek. A szponzor nem befolyásolhatja a támogatási találatok sorrendjét vagy jogosultsági besorolását.",
+      "cost_huf": 0,
+      "requirements": "Írásos megállapodás, reklámjelölés, adatvédelmi és tárhelyfeltételek ellenőrzése."
+    },
+    {
+      "id": "awin",
+      "name": "Awin partnerhálózat",
+      "type": "affiliate",
+      "priority": 3,
+      "status": "research",
+      "url": "https://www.awin.com/gb/faqs",
+      "check_url": "https://www.awin.com/gb/faqs",
+      "description_hu": "Az Awin hivatalos tájékoztatója szerint a kiadói regisztráció ingyenes, de a jelentkezést ellenőrzik, és az egyes hirdetői programokra külön jóváhagyás kell. Csak a Global Support Radar közönségéhez valóban illő partner jöhet szóba.",
+      "cost_huf": 0,
+      "requirements": "Kiadói jelentkezés, elfogadás, egyedi partnerprogram-jóváhagyás, reklámjelölés és adózási megfelelés."
+    },
+    {
+      "id": "adsense",
+      "name": "Google AdSense",
+      "type": "advertising",
+      "priority": 4,
+      "status": "blocked",
+      "url": "https://support.google.com/adsense/answer/9724",
+      "check_url": "https://support.google.com/adsense/answer/9724",
+      "description_hu": "A Google eredeti, hasznos tartalmat, szabályzatnak megfelelő webhelyet és tulajdonosi HTML-hozzáférést vár el. A jóváhagyás nem garantált. A jelenlegi GitHub Pages tárhely kereskedelmi korlátozása miatt a hirdetés élesítése előtt tárhelyváltás szükséges.",
+      "cost_huf": 0,
+      "requirements": "Eredeti szerkesztett tartalom, jó navigáció, AdSense-jóváhagyás, adatvédelmi/süti megfelelés és kereskedelmi célra alkalmas tárhely."
+    },
+    {
+      "id": "cloudflare-migration",
+      "name": "Kereskedelmi célra alkalmas tárhely vizsgálata",
+      "type": "infrastructure",
+      "priority": 1,
+      "status": "research",
+      "url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "check_url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "description_hu": "A Cloudflare Pages dokumentációja ingyenes csomagkorlátokat ismertet, például havi buildkeretet. Ez csak vizsgálandó alternatíva: a projekt konkrét üzleti modelljére vonatkozó aktuális feltételeket külön ellenőrizni kell. Nem történt migráció vagy fiókbeállítás.",
+      "cost_huf": 0,
+      "requirements": "Tulajdonosi fiók, aktuális szerződési feltételek ellenőrzése, biztonsági mentés, próba-közzététel és visszaállítási terv."
+    },
+    {
+      "id": "search-console",
+      "name": "Google Search Console",
+      "type": "visibility",
+      "priority": 5,
+      "status": "research",
+      "url": "https://search.google.com/search-console/about",
+      "check_url": "https://search.google.com/search-console/about",
+      "description_hu": "Ingyenes keresési megjelenési és indexelési eszköz. A tulajdonjog igazolását és a sitemap beküldését a tulajdonosnak kell elvégeznie; ez nem garantál látogatottságot.",
+      "cost_huf": 0,
+      "requirements": "Tulajdonjog igazolása és sitemap beküldése."
+    }
+  ]
+}
