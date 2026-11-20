@@ -17,37 +17,34 @@ class ClassificationTests(unittest.TestCase):
         self.today = date(2026, 11, 20)
 
     def test_explicit_open_record_is_verified_bucket(self):
-        self.assertEqual(
-            MODULE.classify({"status": "open-and-current", "deadline": "2026-11-24"}, self.today),
-            "verified",
-        )
+        self.assertEqual(MODULE.classify({"status": "open-and-current", "deadline": "2026-11-24"}, self.today), "verified")
 
     def test_registry_window_is_candidate_not_verified(self):
-        self.assertEqual(
-            MODULE.classify({"status": "official-api-window-current", "deadline": "2026-12-01"}, self.today),
-            "candidate",
-        )
+        self.assertEqual(MODULE.classify({"status": "official-api-window-current", "deadline": "2026-12-01"}, self.today), "candidate")
 
     def test_expired_deadline_is_excluded(self):
-        self.assertEqual(
-            MODULE.classify({"status": "open-and-current", "deadline": "2026-11-19"}, self.today),
-            "exclude",
-        )
+        self.assertEqual(MODULE.classify({"status": "open-and-current", "deadline": "2026-11-19"}, self.today), "exclude")
 
     def test_unverified_and_closed_are_excluded(self):
         self.assertEqual(MODULE.classify({"verification_status": "unverified"}, self.today), "exclude")
         self.assertEqual(MODULE.classify({"status": "closed"}, self.today), "exclude")
         self.assertEqual(MODULE.classify({"status": "withdrawn"}, self.today), "exclude")
 
+    def test_closed_secondary_status_overrides_open(self):
+        self.assertEqual(MODULE.classify({"status": "open", "verification_status": "withdrawn"}, self.today), "exclude")
+
+    def test_invalid_deadline_is_excluded(self):
+        self.assertEqual(MODULE.classify({"status": "open", "deadline": "not-a-date"}, self.today), "exclude")
+
     def test_missing_status_is_excluded(self):
         self.assertEqual(MODULE.classify({"title": "Unknown"}, self.today), "exclude")
 
 
 class ReportTests(unittest.TestCase):
-    def test_report_keeps_candidate_distinct(self):
+    def test_report_keeps_candidate_distinct_and_preserves_zero_amount(self):
         records = [
             {"country_code": "CL", "title_hu": "Nyitott program", "status": "open-and-current",
-             "deadline": "2026-11-24", "official_url": "https://example.org/open"},
+             "deadline": "2026-11-24", "official_url": "https://example.org/open", "amount_max": 0},
             {"country_code": "ES", "title_original": "Registry candidate",
              "status": "official-api-window-current", "deadline": "2026-12-01",
              "official_url": "https://example.org/candidate"},
@@ -58,17 +55,25 @@ class ReportTests(unittest.TestCase):
         self.assertIn("Ellenőrzendő nyilvántartási jelöltek", output)
         self.assertIn("Nyitott program", output)
         self.assertIn("Registry candidate", output)
+        self.assertIn("Összeg/keret:** 0", output)
         self.assertNotIn("Unverified", output)
 
-    def test_loader_reads_only_record_objects_from_discovery_files(self):
+    def test_non_https_source_is_not_rendered_as_official_link(self):
+        output = MODULE.render([
+            {"title": "Example", "status": "open", "url": "http://example.org"}
+        ], date(2026, 11, 20))
+        self.assertIn("nincs megadva vagy nem biztonságos URL", output)
+        self.assertNotIn("http://example.org", output)
+
+    def test_loader_skips_invalid_json_and_non_object_payloads(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)
             (folder / "demo-discovery.json").write_text(
                 json.dumps({"generated_at": "2026-11-20T00:00:00Z",
-                            "records": [{"id": "a"}, "not-a-record"]}),
-                encoding="utf-8",
-            )
+                            "records": [{"id": "a"}, "not-a-record"]}), encoding="utf-8")
             (folder / "bad-discovery.json").write_text("{invalid", encoding="utf-8")
+            (folder / "list-discovery.json").write_text("[]", encoding="utf-8")
+            (folder / "null-discovery.json").write_text("null", encoding="utf-8")
             records = MODULE.load_records(folder)
             self.assertEqual(len(records), 1)
             self.assertEqual(records[0]["id"], "a")
