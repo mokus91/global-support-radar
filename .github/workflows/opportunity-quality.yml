@@ -8,6 +8,13 @@ on:
       - "scripts/track_opportunity_changes.py"
       - "data/feed-status.json"
       - "data/opportunity-changes.json"
+      - "data/hu-nkfih-discovery.json"
+      - "data/hu-open-data-discovery.json"
+      - "data/hu-palyazat-announcements.json"
+      - "data/jgrants-discovery.json"
+      - "data/eu-open-calls-discovery.json"
+      - "data/us-grants-discovery.json"
+      - "data/ukri-discovery.json"
       - ".github/workflows/opportunity-quality.yml"
   schedule:
     - cron: "41 */6 * * *"
