@@ -1,6 +1,6 @@
 "use strict";
-const CACHE_NAME = "global-support-radar-shell-v2";
-const SHELL = ["./", "./manifest.webmanifest", "./icon.svg", "./icon-192.png", "./icon-512-maskable.png"];
+const CACHE_NAME = "global-support-radar-shell-v3";
+const SHELL = ["./", "./manifest.webmanifest", "./icon.svg", "./icon-maskable.svg"];
 
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -36,7 +36,7 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  if (url.pathname.endsWith("manifest.webmanifest") || url.pathname.endsWith("icon.svg") || url.pathname.endsWith(".png")) {
+  if (url.pathname.endsWith("manifest.webmanifest") || url.pathname.endsWith("icon.svg") || url.pathname.endsWith("icon-maskable.svg")) {
     event.respondWith(caches.match(request).then(cached => cached || fetch(request)));
   }
 });
