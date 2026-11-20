@@ -106,7 +106,7 @@ class ReportTests(unittest.TestCase):
         output = MODULE.render([
             {"title": "Example", "status": "open", "url": "http://example.org"}
         ], date(2026, 11, 20))
-        self.assertIn("nincs megadva vagy nem biztonságos URL", output)
+        self.assertIn("Kifejezetten nyitottként jelölt rekord: **0**", output)
         self.assertNotIn("http://example.org", output)
 
     def test_loader_skips_invalid_json_and_non_object_payloads(self):
