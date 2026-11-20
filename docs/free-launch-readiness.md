@@ -34,6 +34,12 @@ Első vizsgálandó, díjmentes statikus tárhely a Cloudflare Pages. A hivatalo
 
 A fiók létrehozását, OAuth-jóváhagyást, hozzáférési engedélyt és végső élesítést a tulajdonosnak kell elvégeznie. Jelszót, API-tokent, recovery kódot vagy banki adatot nem szabad chatben megadni.
 
+## Androidos tulajdonosi telepítési útmutató
+
+- [Cloudflare Pages beállítása Android telefonról – 0 Ft-os útmutató](cloudflare-pages-android-setup-hu.md)
+- A tulajdonosi lépéseket a külön útmutató sorrendjében kell elvégezni.
+- Fizetési adat megadása, fizetős csomag kiválasztása vagy a jelenlegi GitHub Pages lekapcsolása nem része a teszttelepítésnek.
+
 ## Bétaindítási minőségi kapuk
 
 - [ ] Staging validáció sikeres.
