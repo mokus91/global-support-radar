@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:41:23.016014+00:00",
+  "generated_at": "2026-11-20T04:42:35.132599+00:00",
   "feeds_checked": 18,
   "records_checked": 2216,
   "expired_deadlines": 8,
@@ -9,11 +9,11 @@
   "missing_titles": 0,
   "unverified_status": 1996,
   "verification_tiers": {
-    "verified_open": 0,
+    "verified_open": 1,
     "api_window_candidate": 214,
     "official_listing_candidate": 1941,
     "unverified": 55,
-    "other": 6
+    "other": 5
   },
   "feed_summary": [
     {
