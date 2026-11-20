@@ -68,6 +68,30 @@
     }
    }
   }
+  const healthRows=Array.isArray(d.feed_health_summary)?d.feed_health_summary:[];
+  const repairItems=[];
+  for(const item of healthRows){
+   if(item.status==='temporarily-unavailable'){
+    repairItems.push({level:0,title:item.name+': adatkapcsolat nem érhető el',detail:(item.note||'A lekérés sikertelen.')+(item.http_status?' HTTP '+item.http_status:''),action:item.http_status===401?'Ellenőrizni kell, hogy az API kulcs vagy hozzáférési jogosultság szükséges-e; addig a forrásrekordokat nem szabad frissnek tekinteni.':'Ellenőrizni kell a hivatalos végpontot és a hálózati hibát; az utolsó ismert adatot külön kell jelölni.'});
+   }else if(item.freshness==='unknown'){
+    repairItems.push({level:1,title:item.name+': a frissesség nem igazolt',detail:'A jelentés nem tud megbízható frissítési időpontot megadni.',action:'A következő adatlekérésnél rögzíteni kell a lekérés időpontját és – ha elérhető – a forrás utolsó módosítási dátumát.'});
+   }else if(item.status==='checked-empty'){
+    repairItems.push({level:2,title:item.name+': jelenleg nincs találat',detail:item.note||'A forrás ellenőrzése nem adott rekordot.',action:'Ez önmagában nem hiba. A következő ütemezett futásnál újra kell ellenőrizni; üres eredményből nem szabad támogatást vagy nyitott felhívást állítani.'});
+   }
+  }
+  if(repairItems.length){
+   repairItems.sort((a,b)=>a.level-b.level);
+   const section=add(document.querySelector('main'),'section','','box');
+   add(section,'h2','Automatikus javítási javaslatlista');
+   add(section,'p','A rendszer az ellenőrzési jelentésből állítja össze a teendőket. Ezek javaslatok: a forrásadatokat nem módosítja automatikusan, és nem rejti el a hibás vagy üres kapcsolatokat.','muted');
+   const list=add(section,'ol','');
+   for(const item of repairItems){
+    const li=add(list,'li','');
+    add(li,'strong',item.title,item.level===0?'warn':'');
+    add(li,'p',item.detail,'muted');
+    add(li,'p','Javasolt következő lépés: '+item.action);
+   }
+  }
   const feeds=Array.isArray(d.feed_summary)?d.feed_summary:[];
   if(feeds.length){const section=add(document.querySelector('main'),'section','','box');add(section,'h2','Adatforrásonkénti bontás');const table=add(section,'table','');table.style.width='100%';table.style.borderCollapse='collapse';const head=add(table,'thead','');const hr=add(head,'tr','');['Fájl','Aktuális rekord','Nem igazolt','API-jelölt','Listázott jelölt','Történeti'].forEach(x=>add(hr,'th',x));const body=add(table,'tbody','');for(const f of feeds){const tr=add(body,'tr','');[f.file,f.records,f.unverified,f.api_window_candidates,f.official_listing_candidates,f.historical_archive_records].forEach(x=>{const td=add(tr,'td',x??0);td.style.padding='7px';td.style.borderTop='1px solid var(--line)';td.style.textAlign='left';})}}
   const statuses=Array.isArray(d.source_status_summary)?d.source_status_summary:[];
