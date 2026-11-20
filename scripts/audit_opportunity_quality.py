@@ -130,6 +130,13 @@ for feed in manifest.get("feeds", []):
             score += 1
         else:
             missing_details.append("source_status")
+        deadline_state = "unknown"
+        if deadline_value:
+            try:
+                deadline_day = dt.date.fromisoformat(str(deadline_value)[:10])
+                deadline_state = "expired" if deadline_day < today else "upcoming"
+            except ValueError:
+                deadline_state = "unparsed"
         if title or url:
             report["review_queue"].append({
                 "source_file": filename,
@@ -137,6 +144,7 @@ for feed in manifest.get("feeds", []):
                 "title": str(title or "Untitled")[:240],
                 "official_url": str(url or ""),
                 "deadline": str(deadline_value or ""),
+                "deadline_state": deadline_state,
                 "source_status": str(source_status_value or "")[:100],
                 "score": score,
                 "missing_details": missing_details
@@ -194,7 +202,7 @@ for feed in manifest.get("feeds", []):
     report["feed_summary"].append(feed_counts)
 
 report["feed_errors"] = report["feed_errors"][:100]
-report["review_queue"].sort(key=lambda item: (-item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
+report["review_queue"].sort(key=lambda item: ({"upcoming": 0, "unknown": 1, "unparsed": 2, "expired": 3}.get(item["deadline_state"], 4), -item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
 report["review_queue"] = report["review_queue"][:50]
 report["review_queue_count"] = len(report["review_queue"])
 (DATA / "quality-report.json").write_text(
