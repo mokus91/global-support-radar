@@ -24,6 +24,26 @@
   add(tierBox,'p','A jelölt státusz nem jelent jogosultság- vagy beadási feltétel-ellenőrzést. A jelentkezés előtt mindig az eredeti kiírást kell megnyitni.','muted');
   const feeds=Array.isArray(d.feed_summary)?d.feed_summary:[];
   if(feeds.length){const section=add(document.querySelector('main'),'section','','box');add(section,'h2','Adatforrásonkénti bontás');const table=add(section,'table','');table.style.width='100%';table.style.borderCollapse='collapse';const head=add(table,'thead','');const hr=add(head,'tr','');['Fájl','Aktuális rekord','Nem igazolt','API-jelölt','Listázott jelölt','Történeti'].forEach(x=>add(hr,'th',x));const body=add(table,'tbody','');for(const f of feeds){const tr=add(body,'tr','');[f.file,f.records,f.unverified,f.api_window_candidates,f.official_listing_candidates,f.historical_archive_records].forEach(x=>{const td=add(tr,'td',x??0);td.style.padding='7px';td.style.borderTop='1px solid var(--line)';td.style.textAlign='left';})}}
+  const queue=Array.isArray(d.review_queue)?d.review_queue:[];
+  if(queue.length){
+   const section=add(document.querySelector('main'),'section','','box');
+   add(section,'h2','Részletes ellenőrzésre javasolt pályázatok');
+   add(section,'p','A lista az adatmezők teljessége alapján rangsorol. A pontszám nem jelenti azt, hogy a pályázat nyitott vagy az olvasó jogosult.','muted');
+   const list=add(section,'ol','');
+   for(const item of queue){
+    const li=add(list,'li','');
+    const title=add(li,'span',(item.title||'Cím nélkül')+' — '+(item.score??0)+'/10 pont');
+    if(item.official_url){
+     const parsed=(()=>{try{return new URL(item.official_url)}catch(_){return null}})();
+     if(parsed&&parsed.protocol==='https:'){
+      const link=add(li,'a','  Hivatalos oldal megnyitása');
+      link.href=parsed.href;link.target='_blank';link.rel='noopener noreferrer';
+     }
+    }
+    const detail=[item.source_file,item.deadline?'Határidő: '+item.deadline:'Határidő nincs megadva',item.missing_details?.length?'Hiányzó adatok: '+item.missing_details.join(', '):'A vizsgált adatmezők teljesek'].filter(Boolean).join(' · ');
+    add(li,'small',detail,'muted');
+   }
+  }
   if(Number(d.diagnostic_missing_urls)>0)add(issues,'li','Portál-állapotvizsgálatnál hiányzó URL: '+d.diagnostic_missing_urls+'. Ezek nem pályázati rekordok.');
   (d.feed_errors||[]).forEach(x=>add(issues,'li',x,'warn'));
   updated.textContent='Utolsó ellenőrzés: '+new Date(d.generated_at).toLocaleString('hu-HU');
