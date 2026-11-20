@@ -178,3 +178,12 @@ A riportgenerátor újabb minőségvédelmet kapott: azonos hivatalos HTTPS URL-
 Új regressziós tesztek ellenőrzik a duplikátumok eltávolítását és a szűrési metaadatok megjelenítését. A Continuous Improvement workflow push-feltételei közé bekerült maga a riportgenerátor is, így annak módosítása automatikusan tesztelést indít.
 
 Ez továbbra is helyi adatfájlokból készülő riport: nem tölt le új adatot, nem küld e-mailt, nem fogad fizetést és nem végez banki műveletet. A generátor módosítása még nem jelenti a teljes pilot automatikus vagy kereskedelmi működését.
+
+
+## 15. Partner Growth Engine – partnerhálózat-építés (2026-11-20)
+
+Elkészült a [Partner Growth Engine](partner-growth-engine.md): a partnerkeresést négy csatornára bontja (szakmai/adat, ajánló/terjesztési, üzleti teszt, későbbi bevételi partner), egységes partner-fit pontozást, költségmentes belépési szinteket, CRM-státuszokat, személyre szabható megkeresési mintákat és heti mérőszámokat ad.
+
+A következő kutatási hullám a korábbi 20 célponton túl további 20 szervezetet céloz, különösen kamarák, EEN-csomópontok, egyetemek, civil hálózatok, agrár- és energiaügyi tanácsadók, inkubátorok és hivatalos adatgazdák körében. A célpontok csak kutatott jelöltek; nem partnernek vagy érdeklődőnek nevezzük őket.
+
+Jelenlegi státusz: 20 kutatott célpont, 0 jóváhagyott/elküldött megkeresés, 0 válasz, 0 érdeklődő, 0 pilot, 0 partner, 0 ügyfél, 0 Ft bevétel. Külső megkeresés továbbra is külön tulajdonosi jóváhagyással történhet. A 0 Ft-os indulási elv változatlan.
