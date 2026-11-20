@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T07:54:29.496646+00:00",
+  "generated_at": "2026-11-20T07:55:31.936294+00:00",
   "feeds_checked": 18,
   "records_checked": 2224,
   "expired_deadlines": 0,
@@ -14,6 +14,12 @@
     "official_listing_candidate": 1930,
     "unverified": 74,
     "other": 5
+  },
+  "application_state_tiers": {
+    "verified_open": 0,
+    "likely_available": 215,
+    "needs_verification": 1999,
+    "expired_or_closed": 10
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -425,6 +431,7 @@
       "deadline": "2026-11-20T14:30:55.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -439,6 +446,7 @@
       "deadline": "2026-11-23T15:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -453,6 +461,7 @@
       "deadline": "2026-11-23T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -467,6 +476,7 @@
       "deadline": "2026-11-24T04:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -481,6 +491,7 @@
       "deadline": "2026-11-24T13:00:00-03:00",
       "deadline_state": "upcoming",
       "source_status": "open-and-current",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -495,6 +506,7 @@
       "deadline": "2026-11-25T08:15:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -509,6 +521,7 @@
       "deadline": "2026-11-27T15:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -523,6 +536,7 @@
       "deadline": "2026-11-28T09:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -537,6 +551,7 @@
       "deadline": "2026-11-28T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -551,6 +566,7 @@
       "deadline": "2026-11-28T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -565,6 +581,7 @@
       "deadline": "2026-11-30",
       "deadline_state": "upcoming",
       "source_status": "official-api-window-current",
+      "application_state": "needs_verification",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -579,6 +596,7 @@
       "deadline": "2026-11-30T03:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -593,6 +611,7 @@
       "deadline": "2026-11-30T07:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -607,6 +626,7 @@
       "deadline": "2026-11-30T08:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -621,6 +641,7 @@
       "deadline": "2026-11-30T08:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -635,6 +656,7 @@
       "deadline": "2026-11-30T08:30:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -649,6 +671,7 @@
       "deadline": "2026-11-30T09:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -663,6 +686,7 @@
       "deadline": "2026-11-30T09:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -677,6 +701,7 @@
       "deadline": "2026-11-30T14:45:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -691,6 +716,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -705,6 +731,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -719,6 +746,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -733,6 +761,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -747,6 +776,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -761,6 +791,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -775,6 +806,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -789,6 +821,7 @@
       "deadline": "2026-11-30T14:59:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -803,6 +836,7 @@
       "deadline": "2026-11-30T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -817,6 +851,7 @@
       "deadline": "2026-11-30T19:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -831,6 +866,7 @@
       "deadline": "2026-11-30T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -845,6 +881,7 @@
       "deadline": "2026-12-01T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -859,6 +896,7 @@
       "deadline": "2026-12-01T08:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -873,6 +911,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -887,6 +926,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -901,6 +941,7 @@
       "deadline": "2026-12-01T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -915,6 +956,7 @@
       "deadline": "2026-12-02T04:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -929,6 +971,7 @@
       "deadline": "2026-12-02T11:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -943,6 +986,7 @@
       "deadline": "2026-12-02T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -957,6 +1001,7 @@
       "deadline": "2026-12-02T22:59:26.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -971,6 +1016,7 @@
       "deadline": "2026-12-03T12:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -985,6 +1031,7 @@
       "deadline": "2026-12-04T22:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -999,6 +1046,7 @@
       "deadline": "2026-12-08T11:00:38.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1013,6 +1061,7 @@
       "deadline": "2026-12-08T17:00:41.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1027,6 +1076,7 @@
       "deadline": "2026-12-10T01:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1041,6 +1091,7 @@
       "deadline": "2026-12-10T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1055,6 +1106,7 @@
       "deadline": "2026-12-10T17:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1069,6 +1121,7 @@
       "deadline": "2026-12-10T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1083,6 +1136,7 @@
       "deadline": "2026-12-11",
       "deadline_state": "upcoming",
       "source_status": "official-api-window-current",
+      "application_state": "needs_verification",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
@@ -1097,6 +1151,7 @@
       "deadline": "2026-12-11T02:00:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
+      "application_state": "needs_verification",
       "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
@@ -1111,6 +1166,7 @@
       "deadline": "2026-12-11T03:00:00.000Z",
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
       "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
