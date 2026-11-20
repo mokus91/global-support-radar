@@ -9,9 +9,9 @@
 
 | Asset | Current observation | Origin evidence | Reuse status | Required action |
 |---|---|---|---|---|
-| `icon.svg` | Simple geometric magnifying-glass / plus motif; SVG source is present in the repository | No separate dated design source or creator declaration recorded in this audit | Origin not independently evidenced | Preserve the original editable file and dated commit; have the actual creator record how it was made |
-| `icon-192.png` | PNG application icon | Source artwork / export history not established | Unverified | Identify creator and source file; replace if origin or permission cannot be established |
-| `icon-512-maskable.png` | PNG maskable application icon | Source artwork / export history not established | Unverified | Identify creator and source file; replace if origin or permission cannot be established |
+| `icon.svg` | Simple geometric magnifying-glass / plus motif; SVG source is present in the repository | Owner confirms they did not personally create the project icons; original creator/source is not established | Unverified; commercial reuse permission not established | Identify the original source and permission, or replace with a newly documented project asset |
+| `icon-192.png` | PNG application icon | Owner confirms they did not personally create the project icons; source artwork/export history not established | Unverified; commercial reuse permission not established | Identify creator and source file, or replace if origin or permission cannot be established |
+| `icon-512-maskable.png` | PNG maskable application icon | Owner confirms they did not personally create the project icons; source artwork/export history not established | Unverified; commercial reuse permission not established | Identify creator and source file, or replace if origin or permission cannot be established |
 
 ## Required record for each future asset
 
@@ -34,4 +34,4 @@ Record all of the following before adding an asset:
 
 ## Current conclusion
 
-The SVG's visible markup is simple and self-contained, but the creator/origin evidence has not yet been recorded. The PNG files remain unverified. No claim of exclusive rights over these three assets should be made until the missing evidence is collected.
+The owner has confirmed that they did not personally create the three listed icons. Their original creator/source and commercial reuse permissions remain unverified. No claim of exclusive rights over these three assets should be made until the missing evidence is collected or the assets are replaced.
