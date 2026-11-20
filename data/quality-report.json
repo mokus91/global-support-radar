@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-20T13:05:27.642123+00:00",
+  "generated_at": "2026-11-20T13:45:17.190456+00:00",
   "feeds_checked": 18,
-  "records_checked": 2211,
+  "records_checked": 2209,
   "expired_deadlines": 0,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1993,
+  "unverified_status": 1991,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 212,
-    "official_listing_candidate": 1918,
+    "official_listing_candidate": 1916,
     "unverified": 75,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1998,
+    "needs_verification": 1996,
     "expired_or_closed": 0
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 504,
+      "records": 502,
       "procurement_candidates": 1,
-      "unverified": 504,
+      "unverified": 502,
       "api_window_candidates": 0,
-      "official_listing_candidates": 504,
+      "official_listing_candidates": 502,
       "historical_archive_records": 0
     },
     {
@@ -101,18 +101,18 @@
     },
     {
       "file": "eu-national-agriculture-discovery.json",
-      "records": 7,
+      "records": 8,
       "procurement_candidates": 0,
-      "unverified": 7,
+      "unverified": 8,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 51,
+      "records": 50,
       "procurement_candidates": 0,
-      "unverified": 51,
+      "unverified": 50,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 505,
+      "records_count": 503,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -257,17 +257,17 @@
     {
       "name": "EU — CAP Network",
       "file": "eu-cap-network-discovery.json",
-      "status": "temporarily-unavailable",
+      "status": "checked",
       "records_count": 4,
-      "http_status": 503,
+      "http_status": null,
       "freshness": "fresh",
-      "note": "Upstream fetch failed after 3 attempts (HTTPError); previous records retained and not represented as newly refreshed."
+      "note": ""
     },
     {
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
       "status": "checked",
-      "records_count": 7,
+      "records_count": 8,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 51,
+      "records_count": 50,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "checked",
+      "status": "temporarily-unavailable",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
+      "note": "<urlopen error timed out>"
     },
     {
       "name": "Worldwide — portal reachability",
@@ -378,12 +378,12 @@
     {
       "source_file": "eu-national-agriculture-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 7
+      "records": 8
     },
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 51
+      "records": 50
     },
     {
       "source_file": "eu-open-calls-discovery.json",
@@ -393,7 +393,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 259
+      "records": 257
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -413,12 +413,12 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "forecasted",
-      "records": 591
+      "records": 588
     },
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 790
+      "records": 793
     }
   ],
   "review_queue_count": 50,
@@ -1440,7 +1440,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 8,
+  "diagnostic_missing_urls": 9,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

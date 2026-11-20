@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-20T12:59:57+00:00",
+  "checked_at": "2026-11-20T13:39:46+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 8,
+    "connection_error": 9,
     "http_error": 2,
-    "reachable": 56,
+    "reachable": 55,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -107,9 +107,8 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sassa",
