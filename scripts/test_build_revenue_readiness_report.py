@@ -46,5 +46,27 @@ class RevenueReadinessTests(unittest.TestCase):
         self.assertEqual(result["state"], "OK")
         self.assertEqual(result["revenue_huf"], 12500)
 
+
+    def test_pipeline_rejects_status_flag_mismatch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            data = {"records":[{"id":"x","status":"researched","outreach_approved":True,
+                "contacted":False,"reply_received":False,"pilot":False,"paid_customer":False,"revenue_huf":0}]}
+            (root / MODULE.PIPELINE_PATH).write_text(json.dumps(data), encoding="utf-8")
+            result = MODULE.summarize_pipeline(root)
+        self.assertEqual(result["state"], "ERROR")
+        self.assertTrue(any("Státusz és eseményjelölők" in e for e in result["errors"]))
+
+    def test_paid_customer_requires_positive_verified_amount(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            data = {"records":[{"id":"x","status":"paid_customer","contacted":True,"outreach_approved":True,
+                "reply_received":True,"pilot":True,"paid_customer":True,"revenue_huf":0}]}
+            (root / MODULE.PIPELINE_PATH).write_text(json.dumps(data), encoding="utf-8")
+            result = MODULE.summarize_pipeline(root)
+        self.assertEqual(result["state"], "ERROR")
+
 if __name__ == "__main__":
     unittest.main()
