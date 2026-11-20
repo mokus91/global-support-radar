@@ -67,7 +67,7 @@ def fetch(url):
                 raise
             last_error = exc
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
-            if attempt == 2:
+            if attempt == 1:
                 raise
             last_error = exc
         time.sleep(3 * (attempt + 1))
