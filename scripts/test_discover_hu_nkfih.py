@@ -34,7 +34,7 @@ class NKFIHRetryTests(unittest.TestCase):
     @patch("scripts.discover_hu_nkfih.urllib.request.urlopen")
     def test_retries_temporary_server_error(self, urlopen, sleep):
         class Response:
-            headers = {}
+            headers = Message()
             def __enter__(self): return self
             def __exit__(self, *args): return False
             def read(self): return b"ok"
