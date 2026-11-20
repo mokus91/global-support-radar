@@ -29,6 +29,8 @@ report = {
     "review_queue": [],
     "non_opportunity_records": 0,
     "procurement_candidate_records": 0,
+    "procurement_review_queue_count": 0,
+    "procurement_review_queue": [],
     "historical_archive_records": 0,
     "diagnostic_records_checked": 0,
     "diagnostic_missing_urls": 0,
@@ -82,7 +84,7 @@ for feed in manifest.get("feeds", []):
     # This file describes portal connectivity, not grant opportunities.
     is_diagnostic_feed = filename == "worldwide-portal-health.json"
     seen = set()
-    feed_counts = {"file": filename, "records": 0, "unverified": 0, "api_window_candidates": 0, "official_listing_candidates": 0, "historical_archive_records": 0}
+    feed_counts = {"file": filename, "records": 0, "procurement_candidates": 0, "unverified": 0, "api_window_candidates": 0, "official_listing_candidates": 0, "historical_archive_records": 0}
     for record in records:
         if not isinstance(record, dict):
             report["feed_errors"].append(f"{filename}: non-object record")
@@ -110,10 +112,28 @@ for feed in manifest.get("feeds", []):
             report["non_opportunity_records"] += 1
             continue
 
-        report["records_checked"] += 1
-        feed_counts["records"] += 1
+        # Procurement/service notices are not grants: keep them in a separate
+        # counter and review queue, and exclude them from every grant-quality metric.
         if record.get("opportunity_type") == "procurement_candidate":
             report["procurement_candidate_records"] += 1
+            feed_counts["procurement_candidates"] += 1
+            procurement_title = next((record.get(k) for k in TITLE_FIELDS if record.get(k)), None)
+            procurement_url = next((record.get(k) for k in URL_FIELDS if record.get(k)), None)
+            procurement_deadline = next((record.get(k) for k in ("deadline", "acceptance_end", "application_deadline", "close_date", "closeDate") if record.get(k)), None)
+            if procurement_title or procurement_url:
+                report["procurement_review_queue"].append({
+                    "source_file": filename,
+                    "id": str(record.get("id") or ""),
+                    "title": str(procurement_title or "Untitled")[:240],
+                    "official_url": str(procurement_url or ""),
+                    "deadline": str(procurement_deadline or ""),
+                    "opportunity_type": "procurement_candidate",
+                    "classification_basis": str(record.get("classification_basis") or "")[:200]
+                })
+            continue
+
+        report["records_checked"] += 1
+        feed_counts["records"] += 1
 
         # Build a human-readable review queue from the best-documented candidates.
         # A score indicates available information, not confirmation that a call is open.
@@ -247,6 +267,9 @@ report["feed_errors"] = report["feed_errors"][:100]
 report["review_queue"].sort(key=lambda item: ({"upcoming": 0, "unknown": 1, "unparsed": 2, "expired": 3}.get(item["deadline_state"], 4), -item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
 report["review_queue"] = report["review_queue"][:50]
 report["review_queue_count"] = len(report["review_queue"])
+report["procurement_review_queue"].sort(key=lambda item: (item["deadline"] or "9999", item["source_file"], item["id"]))
+report["procurement_review_queue"] = report["procurement_review_queue"][:50]
+report["procurement_review_queue_count"] = len(report["procurement_review_queue"])
 (DATA / "quality-report.json").write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
 )
