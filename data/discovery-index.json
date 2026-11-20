@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T09:40:33.487632+00:00",
+  "generated_at": "2026-11-20T09:56:31.898947+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 182,
@@ -333,6 +333,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Conservatories – CD92 Grants",
       "url": "https://data.seineouest.fr/explore/dataset/conservatoires-subventions-du-conseil-departemental-des-hauts-de-seine/",
       "query": "government grants",
@@ -573,6 +581,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -695,14 +711,6 @@
     {
       "title": "HOUSING - Evolution_number",
       "url": "https://www.data.gouv.fr/datasets/logement-evolution-nombre",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "HOUSING - Number_pieces",
-      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1077,14 +1085,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "PACA4JOB Business Events",
-      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "PoliS - Lombardy Grants subsidies economic advantages - Grants Scholarships -",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/polis-lombardia-sovvenzioni-sussidi-vantaggi-economici-contributi-borse-di-studio#",
       "query": "scholarships",
@@ -1094,7 +1094,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1102,7 +1102,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
