@@ -28,7 +28,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
 - [Szervezeti riportgenerátor – használat és szűrés](docs/organization-report-generator.md)
 
-## Első fizetős riportpilot – belső előkészítés
+## Szervezeti riportpilot – nyilvános bemutató és igényfelmérés\n\n- [Szervezeti riportpilot bemutatása](https://mokus91.github.io/global-support-radar/organization-pilot.html)\n- [Nyilvános mintariport](https://mokus91.github.io/global-support-radar/sample-organization-report.html)\n- [Első bevételi megkeresések – tulajdonosi jóváhagyásra váró sablonok](docs/first-revenue-outreach-drafts.md)\n\n## Első fizetős riportpilot – belső előkészítés
 
 - [Első fizetős riportpilot ajánlati kerete és sikerfeltételei](docs/first-paid-report-pilot.md)
 
