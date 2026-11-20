@@ -43,6 +43,12 @@ def summarize_pipeline(root=ROOT):
                 errors.append(f"Ismeretlen státusz: {item.get('id', 'ismeretlen')}")
                 continue
             counts[status] += 1
+            if item.get("contacted") and not item.get("outreach_approved"):
+                errors.append(f"Jóváhagyás nélküli kapcsolatfelvétel jelölve: {item['id']}")
+            if item.get("reply_received") and not item.get("contacted"):
+                errors.append(f"Kapcsolatfelvétel nélküli válasz jelölve: {item['id']}")
+            if item.get("paid_customer") and not item.get("pilot"):
+                errors.append(f"Pilot nélküli fizető ügyfél jelölve: {item['id']}")
             flags = {
                 "outreach_approved": bool(item.get("outreach_approved")),
                 "contacted": bool(item.get("contacted")),
