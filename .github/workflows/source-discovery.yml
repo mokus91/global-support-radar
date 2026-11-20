@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/source-discovery.yml"
       - "scripts/**"
+      - "requirements-ci.txt"
   schedule:
     - cron: "23 1,7,13,19 * * *"
 
