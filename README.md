@@ -6,6 +6,13 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 > **Bétaállapot:** a projekt jelenleg információs MVP. A díjmentes indulás előkészítése folyamatban van; a Cloudflare-fiók összekapcsolása és az új tárhelyen végzett ellenőrzés még nem történt meg. Fizetés, előfizetés és bevétel jelenleg nincs bekapcsolva.
 
+## Szoftverlicencelés
+
+- [Licencelési tájékoztató oldal](https://mokus91.github.io/global-support-radar/licensing.html)
+- [Licencelési keretrendszer](docs/licensing-framework-hu.md)
+- [Nemzetközi piactéri hirdetéstervezet](docs/licensing-marketplace-listing-draft-en.md)
+- [Licencelt csomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
+
 ## Tulajdonosi, jogi és biztonsági dokumentáció
 
 - [Tulajdonosi és szellemi tulajdon nyilvántartása](docs/ownership-and-ip.md)
