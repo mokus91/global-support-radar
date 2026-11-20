@@ -404,8 +404,9 @@ async function loadEuOpenCalls(){
   rows.slice(0,50).forEach(row=>{
    const card=document.createElement("article");card.className="card";
    const top=document.createElement("div");top.className="cardtop";
-   const tag=document.createElement("span");tag.className="tag";tag.textContent=hu?"EU TÁMOGATÁSI FELHÍVÁS":"EU FUNDING CALL";
-   const badge=document.createElement("span");badge.className="demo";badge.textContent=hu?"ELLENŐRIZETLEN":"UNVERIFIED";top.append(tag,badge);
+   const isProcurement=row.opportunity_type==="procurement_candidate";
+   const tag=document.createElement("span");tag.className="tag";tag.textContent=isProcurement?(hu?"EU KÖZBESZERZÉSI / SZOLGÁLTATÁSI JELÖLT":"EU PROCUREMENT / SERVICE CANDIDATE"):(hu?"EU TÁMOGATÁSI FELHÍVÁS":"EU FUNDING CALL");
+   const badge=document.createElement("span");badge.className="demo";badge.textContent=isProcurement?(hu?"NEM TÁMOGATÁSKÉNT BESOROLVA":"NOT CLASSIFIED AS GRANT"):(hu?"ELLENŐRIZETLEN":"UNVERIFIED");top.append(tag,badge);
    const title=document.createElement("h3");title.textContent=row.title||row.identifier||"—";
    const desc=document.createElement("p");desc.textContent=row.identifier||"";
    const meta=document.createElement("div");meta.className="meta";
@@ -414,7 +415,7 @@ async function loadEuOpenCalls(){
    const state=document.createElement("span");state.textContent=(hu?"Portál státuszkód: ":"Portal status code: ")+(row.status||row.status_code||"—");
    meta.append(deadline,programme,state);
    const foot=document.createElement("div");foot.className="cardfoot";
-   const note=document.createElement("span");note.textContent=hu?"Eredeti kiírás ellenőrzése szükséges":"Original call verification required";
+   const note=document.createElement("span");note.textContent=isProcurement?(hu?"Ez valószínűleg szolgáltatási / beszerzési felhívás, nem támogatás. Ellenőrizd az eredeti oldalon.":"Likely a service/procurement notice, not a grant. Verify on the original page."):(hu?"Eredeti kiírás ellenőrzése szükséges":"Original call verification required");
    const link=document.createElement("a");let href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/";
    try{const candidate=new URL(row.official_url);if(candidate.protocol==="https:"&&candidate.hostname==="ec.europa.eu")href=candidate.href;}catch(e){}
    link.href=href;link.target="_blank";link.rel="noopener noreferrer";link.textContent=hu?"Hivatalos kiírás ↗":"Official call ↗";
