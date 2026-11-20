@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T04:54:42.206215+00:00",
+  "generated_at": "2026-11-20T05:24:45.398534+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 183,
+  "discovered_datasets_count": 185,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -333,6 +333,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Conservatories – CD92 Grants",
       "url": "https://data.seineouest.fr/explore/dataset/conservatoires-subventions-du-conseil-departemental-des-hauts-de-seine/",
       "query": "government grants",
@@ -568,6 +576,14 @@
       "title": "goult-housing",
       "url": "https://opendata.ozwillo.com/dataset/goult-logement",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -981,14 +997,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -1023,6 +1031,14 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
