@@ -172,8 +172,10 @@ def main():
         raise SystemExit("Explicit EU service requests must be procurement candidates")
     if eu_module.classify_opportunity_type("Call for proposals for common procurement actions") != "funding_candidate":
         raise SystemExit("A grant call about procurement must remain a funding candidate")
-    if eu_module.classify_opportunity_type("Open tender for equipment") != "funding_candidate":
-        raise SystemExit("Ambiguous generic tender wording must not be auto-classified")
+    if eu_module.classify_opportunity_type("Open tender for equipment") != "procurement_candidate":
+        raise SystemExit("Explicit open tender notices must be separated as procurement candidates")
+    if eu_module.classify_opportunity_type("Procurement innovation grant for small businesses") != "funding_candidate":
+        raise SystemExit("Procurement as a grant topic must remain a funding candidate")
 
     audit_script = (ROOT / "scripts" / "audit_opportunity_quality.py").read_text(encoding="utf-8")
     for required in ('"procurement_review_queue_count"', '"procurement_candidates"', 'opportunity_type") == "procurement_candidate":', 'continue'):
