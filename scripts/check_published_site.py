@@ -9,16 +9,33 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import time
 
 
-def fetch_json(url: str):
+def open_with_retry(url: str):
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "GlobalSupportRadar-HealthCheck/1.0"},
     )
-    with urllib.request.urlopen(request, timeout=20) as response:
-        if response.status < 200 or response.status >= 300:
-            raise RuntimeError(f"HTTP {response.status}: {url}")
+    delays = (0, 2, 5, 10)
+    last_error = None
+    for attempt, delay in enumerate(delays, start=1):
+        if delay:
+            time.sleep(delay)
+        try:
+            response = urllib.request.urlopen(request, timeout=20)
+            if response.status < 200 or response.status >= 300:
+                response.close()
+                raise RuntimeError(f"HTTP {response.status}: {url}")
+            return response
+        except Exception as exc:
+            last_error = exc
+            print(f"Retry {attempt}/{len(delays)} failed for {url}: {exc}")
+    raise RuntimeError(f"Request failed after {len(delays)} attempts: {url}: {last_error}")
+
+
+def fetch_json(url: str):
+    with open_with_retry(url) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -33,12 +50,8 @@ def main() -> int:
     warnings: list[str] = []
 
     try:
-        request = urllib.request.Request(
-            base, headers={"User-Agent": "GlobalSupportRadar-HealthCheck/1.0"}
-        )
-        with urllib.request.urlopen(request, timeout=20) as response:
-            if response.status < 200 or response.status >= 300:
-                raise RuntimeError(f"HTTP {response.status}")
+        with open_with_retry(base):
+            pass
         print("OK: published homepage responds")
     except Exception as exc:
         print(f"ERROR: published homepage is unavailable: {exc}")
