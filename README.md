@@ -13,6 +13,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Üzemeltetési biztonság és tulajdonosi ellenőrzőlista](docs/production-security-checklist.md)
 - [Privát forráskód és telepítés célarchitektúrája](docs/owner-control-and-deployment-plan.md)
 - [0 Ft-os indulás, önfinanszírozás és tulajdonosi nyereség terve](docs/zero-budget-self-funding-plan.md)
+- [Bevételi motor, szervezeti pilot és értékesítési terv](docs/revenue-engine-roadmap.md)
 
 ## Mi működik jelenleg?
 
