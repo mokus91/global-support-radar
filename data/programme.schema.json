@@ -130,7 +130,54 @@
     },
     "last_verified_at": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "description": "Az utolsó tényleges ellenőrzés időpontja, ISO 8601 időzónával."
+    },
+    "record_type": {
+      "type": "string",
+      "description": "A rekord természete; a katalógus vagy portál nem azonos egy konkrét támogatási felhívással.",
+      "enum": [
+        "programme",
+        "call",
+        "benefit",
+        "portal",
+        "announcement",
+        "dataset-discovery",
+        "directory-entry"
+      ]
+    },
+    "application_status": {
+      "type": "string",
+      "description": "Jelentkezési állapot. Ismeretlen állapotot tilos nyitottként megjeleníteni.",
+      "enum": [
+        "open",
+        "upcoming",
+        "closed",
+        "unknown",
+        "not-applicable"
+      ]
+    },
+    "verification_dimensions": {
+      "type": "object",
+      "description": "Ellenőrzési dimenziók külön-külön; egy ellenőrzött URL nem jelenti a jogosultság vagy összeg ellenőrzését.",
+      "properties": {
+        "official_source_checked": {
+          "type": "boolean"
+        },
+        "application_window_checked": {
+          "type": "boolean"
+        },
+        "eligibility_checked": {
+          "type": "boolean"
+        },
+        "amount_checked": {
+          "type": "boolean"
+        },
+        "latest_amendments_checked": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
     }
   }
 }
