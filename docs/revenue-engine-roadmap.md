@@ -111,3 +111,16 @@ További kapuk:
 5. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
 
 **Állapot ma:** bevételi modell, értékesítési terv és első riportminta elkészült. Aktív ügyfél, elfogadott partnerprogram, fizetési szolgáltató és tényleges bevétel még nincs.
+
+
+## 8. Riportgenerátor – első működő fejlesztési lépés (2026-11-20)
+
+Elkészült a kézzel futtatható, Python standard könyvtárra épülő szervezeti riportgenerátor: [organization-report-generator.md](organization-report-generator.md), kód: [generate_organization_report.py](../scripts/generate_organization_report.py).
+
+A generátor:
+- a helyi discovery JSON állományokat dolgozza fel;
+- az explicit nyitott státuszú rekordokat elkülöníti a hivatalos nyilvántartási időablak alapján ellenőrzendő jelöltektől;
+- kihagyja a lejárt, lezárt, visszavont és nem ellenőrzött rekordokat;
+- dátumozott Markdown riportot készít, és jelzi a forrásadat pillanatképének korlátait.
+
+Ez még nem automatikus adatletöltés vagy ütemezett szolgáltatás. A generátor első verziója a repositoryba került; a hozzá tartozó GitHub Actions ellenőrzések futása még folyamatban van. Fizetés, ügyfélmegkeresés vagy költségvállalás nem történt.
