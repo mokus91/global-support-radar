@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/audit_opportunity_quality.py"
+      - "scripts/track_opportunity_changes.py"
       - ".github/workflows/opportunity-quality.yml"
   schedule:
     - cron: "41 */6 * * *"
