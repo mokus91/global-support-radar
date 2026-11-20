@@ -19,7 +19,7 @@ The GitHub Actions workflows reference these third-party actions by version tag:
 - `actions/setup-python@v5`
 - `actions/github-script@v7`
 
-The source-discovery workflow installs Python packages `certifi` and `pycountry` using pip without a repository lockfile or pinned package versions. Their code and licences are not owned by this project. Before production/commercial operation, pin reviewed versions (and preferably hashes), retain the corresponding licence texts, and review transitive dependencies.
+The source-discovery workflow installs direct Python dependencies from `requirements-ci.txt` with exact versions and SHA-256 wheel hashes: `certifi==2026.10.23` (MPL-2.0) and `pycountry==26.2.16` (LGPL-2.1-only). These packages and their licences are not owned by this project. The lock file covers these direct wheels only; it is not a complete transitive dependency lock or a legal licence clearance. Retain the corresponding licence texts and review transitive dependencies before production/commercial operation.
 
 No `package.json`, npm/yarn/pnpm lockfile, `requirements*.txt`, or `pyproject.toml` was present in the reviewed repository tree. This does not prove that the runtime has no transitive or platform-provided dependencies.
 
@@ -45,7 +45,7 @@ A publicly accessible government webpage or dataset is not automatically free of
 ## 4. Required follow-up
 
 1. Establish and document the original creator/source and licence for both PNG icons.
-2. Record exact versions and licence texts for `certifi`, `pycountry`, and their transitive dependencies.
+2. Retain the licence texts for pinned `certifi` and `pycountry` versions, and review any transitive dependencies.
 3. Review the licence and security provenance of each GitHub Action; pin actions to immutable commit SHAs for a hardened production workflow.
 4. Maintain a source-by-source register for every API, dataset, RSS feed, and linked portal, including the date its commercial reuse terms were checked.
 5. Add notices or attribution where the applicable licence requires them.
