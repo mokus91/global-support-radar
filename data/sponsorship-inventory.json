@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-20",
+  "currency": "HUF",
+  "policy": "Üres induló hirdetői nyilvántartás. Kutatott szervezet nem hirdető és nem partner. Kapcsolatfelvétel, ajánlat, szerződés vagy megjelenés csak tulajdonosi jóváhagyással. Bevétel csak bizonylattal igazolt, ténylegesen beérkezett összeg lehet.",
+  "summary": {
+    "prospects": 0,
+    "approved_outreach": 0,
+    "contacted": 0,
+    "active_sponsors": 0,
+    "received_revenue_huf": 0
+  },
+  "allowed_categories": [
+    {
+      "id": "relevant-professional-services",
+      "label": "Releváns szakmai szolgáltatók",
+      "examples": [
+        "pályázati tanácsadás",
+        "könyvelés",
+        "KKV-fejlesztés"
+      ]
+    },
+    {
+      "id": "nonprofit-support",
+      "label": "Civil és közösségi támogatók",
+      "examples": [
+        "alapítványi programok",
+        "nonprofit szolgáltatások"
+      ]
+    },
+    {
+      "id": "research-education",
+      "label": "Oktatási és kutatási partnerek",
+      "examples": [
+        "egyetemi továbbképzés",
+        "kutatási együttműködés"
+      ]
+    }
+  ],
+  "records": []
+}
