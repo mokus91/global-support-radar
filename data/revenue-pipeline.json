@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-20",
+  "currency": "HUF",
+  "policy": "Kutatott szervezeti célpontok, nem érdeklődők vagy ügyfelek. Külső kapcsolatfelvétel külön tulajdonosi jóváhagyás nélkül tilos.",
+  "records": [
+    {
+      "id": "ibsh",
+      "organization": "Investment & Business Services Hungary (IBSH)",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "mm-bp",
+      "organization": "MM-BP Partners Kft.",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "asesor",
+      "organization": "Asesor Consulting Kft.",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "proap",
+      "organization": "PROAP – Proactive Business Zrt.",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "right-direction",
+      "organization": "Right Direction Advising",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "wolven",
+      "organization": "Wolven Group",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    },
+    {
+      "id": "blyxa",
+      "organization": "Blyxa Consulting",
+      "status": "researched",
+      "next_action": "Igényfelmérési szempontok és nyilvános szervezeti profil kézi ellenőrzése",
+      "outreach_approved": false,
+      "contacted": false,
+      "reply_received": false,
+      "pilot": false,
+      "paid_customer": false,
+      "revenue_huf": 0
+    }
+  ]
+}
