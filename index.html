@@ -97,6 +97,11 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 </section>
 <section><div class="sectionhead"><div><h2 id="howTitle">Hogyan működik?</h2><p id="howSub">A cél egy megbízható, országokon átívelő támogatáskereső.</p></div></div><div class="how"><div><b>01 · <span id="h1">Keresés</span></b><span id="hd1">Ország és támogatási kategória kiválasztása.</span></div><div><b>02 · <span id="h2">Ellenőrzés</span></b><span id="hd2">Hivatalos kormányzati vagy önkormányzati forrás megnyitása.</span></div><div><b>03 · <span id="h3">Jelentkezés</span></b><span id="hd3">A feltételek és határidők ellenőrzése után jelentkezés a kiíró oldalán.</span></div></div></section>
 
+<section id="shareProject" class="card" style="margin:26px 0" aria-labelledby="shareTitle">
+ <div class="sectionhead"><div><h2 id="shareTitle">Segíts, hogy mások is megtalálják!</h2><p id="shareIntro">Oszd meg ingyen a Global Support Radart olyanokkal, akiknek hasznos lehet támogatásokat vagy pályázatokat keresni.</p></div><span class="tag">INGYENES MEGOSZTÁS</span></div>
+ <div class="filters"><button id="shareButton" class="btn" type="button">Oldal megosztása ↗</button><button id="copyLinkButton" class="filter" type="button">Hivatkozás másolása</button></div>
+ <p id="shareStatus" class="notice" role="status" aria-live="polite">A megosztás nem gyűjt látogatói adatot. A támogatási feltételeket mindig az eredeti hivatalos forrásban ellenőrizd.</p>
+</section>
 <section id="betaFeedback" class="card" style="margin:26px 0" aria-labelledby="betaFeedbackTitle">
  <div class="sectionhead"><div><h2 id="betaFeedbackTitle">Segíts tesztelni a Global Support Radart!</h2><p id="betaFeedbackIntro">Béta tesztelőként jelezd, mi működik jól, mit nem találtál, vagy hol hibázott az oldal.</p></div><span class="tag">BÉTA TESZT</span></div>
  <p class="notice"><a href="./quality.html">Automatikus adatminőségi jelentés / Automated data quality report ↗</a></p>
@@ -1447,4 +1452,19 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
 })();
 </script>
 
+<script id="organic-sharing">
+(()=>{
+ const $=id=>document.getElementById(id);
+ const isEn=()=>($("lang")?.value||"hu").startsWith("en");
+ const text={
+  hu:{title:"Segíts, hogy mások is megtalálják!",intro:"Oszd meg ingyen a Global Support Radart olyanokkal, akiknek hasznos lehet támogatásokat vagy pályázatokat keresni.",share:"Oldal megosztása ↗",copy:"Hivatkozás másolása",ok:"A hivatkozás a vágólapra került.",fallback:"Másold ki a böngésző címsorából az oldal címét.",privacy:"A megosztás nem gyűjt látogatói adatot. A támogatási feltételeket mindig az eredeti hivatalos forrásban ellenőrizd."},
+  en:{title:"Help others discover the Radar!",intro:"Share Global Support Radar for free with people who may find public grants, benefits or support programmes useful.",share:"Share this website ↗",copy:"Copy link",ok:"The link has been copied.",fallback:"Copy the website address from your browser's address bar.",privacy:"Sharing does not collect visitor data. Always verify eligibility and deadlines with the original official source."}
+ };
+ function render(){const t=text[isEn()?"en":"hu"];$("shareTitle").textContent=t.title;$("shareIntro").textContent=t.intro;$("shareButton").textContent=t.share;$("copyLinkButton").textContent=t.copy;$("shareStatus").textContent=t.privacy}
+ async function copy(){const t=text[isEn()?"en":"hu"];try{await navigator.clipboard.writeText(location.href);$("shareStatus").textContent=t.ok}catch(e){$("shareStatus").textContent=t.fallback}}
+ $("copyLinkButton").addEventListener("click",copy);
+ $("shareButton").addEventListener("click",async()=>{const t=text[isEn()?"en":"hu"];if(navigator.share){try{await navigator.share({title:"Global Support Radar",text:t.intro,url:location.href})}catch(e){if(e.name!=="AbortError")await copy()}}else await copy()});
+ $("lang")?.addEventListener("change",render);render();
+})();
+</script>
 </body></html>
