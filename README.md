@@ -16,6 +16,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Bevételi motor, szervezeti pilot és értékesítési terv](docs/revenue-engine-roadmap.md)
 - [Személyre szabott érdeklődői kérdésvázlatok](docs/prospect-interview-guides.md)
 - [Második 10 szervezeti célpont kutatása](docs/next-10-organizational-prospects.md)
+- [Partnerhálózat-építési rendszer és megkeresési folyamat](docs/partner-growth-engine.md)
 - [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
 - [Szervezeti riportgenerátor – használat és szűrés](docs/organization-report-generator.md)
 
