@@ -1,7 +1,7 @@
 # Partnerhálózati térkép – 2. kutatási hullám
 
 **Ellenőrzés dátuma:** 2026-11-20  
-**Státusz:** nyilvános források alapján azonosított partnerjelöltek; nem fennálló partnerkapcsolatok.
+**Státusz:** 16 táblázatsorban nyilvántartott partnerjelölt, ezek közül 14 egyedi szervezet; nem fennálló partnerkapcsolatok.
 
 ## Miért ezek a célpontok?
 
@@ -37,7 +37,7 @@ A Danube Chambers of Commerce Federation nyilvános hálózati oldala tagként v
 | 35 | Chamber of Commerce and Industry of Serbia | nemzetközi / terjesztési | https://pks.rs/ |
 | 36 | Chamber of Commerce, Industry and Agriculture Timiș | nemzetközi / terjesztési | https://www.cciat.ro/ |
 
-Forrás a hálózati tagságokhoz és partneri kapcsolatokhoz: https://danubechambers.com/network/
+A két táblázat között a Pécs-Baranyai és a Győr-Moson-Sopron kamara kétszer szerepel, ezért a 16 sorszámozott sor 14 egyedi szervezetet jelent. A duplikált sorok a két külön hálózati forrásban való megjelenést dokumentálják, nem két külön célpontot.\n\nForrás a hálózati tagságokhoz és partneri kapcsolatokhoz: https://danubechambers.com/network/
 
 ## C. Prioritás
 
@@ -52,4 +52,4 @@ Indok: földrajzi vagy országos relevancia, illetve a hivatalos EEN/DCCF háló
 4. Külön tulajdonosi jóváhagyás kérése.
 5. Csak engedély után lehet üzenetet küldeni.
 
-**Nyilvántartási állapot:** a 21–36. célpont kutatott jelölt; 0 megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 GSR-partner, 0 pilot, 0 bevétel.
+**Nyilvántartási állapot:** 16 sorszámozott bejegyzés, 14 egyedi szervezet a második hullámban; 0 megkeresés, 0 válasz, 0 igazolt érdeklődő, 0 GSR-partner, 0 pilot, 0 bevétel. A korábbi hullámokkal összevont, teljesen deduplikált célpontszámot külön ellenőrzés nélkül nem közöljük.
