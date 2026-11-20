@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:42:35.132599+00:00",
+  "generated_at": "2026-11-20T04:44:44.920051+00:00",
   "feeds_checked": 18,
   "records_checked": 2216,
   "expired_deadlines": 8,
@@ -14,6 +14,11 @@
     "official_listing_candidate": 1941,
     "unverified": 55,
     "other": 5
+  },
+  "verification_dimensions": {
+    "open_status_verified": 1,
+    "eligibility_verified": 0,
+    "amount_verified": 1
   },
   "feed_summary": [
     {
