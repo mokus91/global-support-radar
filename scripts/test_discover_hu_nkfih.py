@@ -1,6 +1,7 @@
 import unittest
 from unittest.mock import patch
 import urllib.error
+from email.message import Message
 
 from scripts.discover_hu_nkfih import fetch_page
 
@@ -10,7 +11,7 @@ class NKFIHRetryTests(unittest.TestCase):
     @patch("scripts.discover_hu_nkfih.urllib.request.urlopen")
     def test_retries_temporary_network_failure_then_succeeds(self, urlopen, sleep):
         class Response:
-            headers = {}
+            headers = Message()
             def __enter__(self): return self
             def __exit__(self, *args): return False
             def read(self): return b"<html>ok</html>"
