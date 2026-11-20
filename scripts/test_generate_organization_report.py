@@ -40,6 +40,22 @@ class ClassificationTests(unittest.TestCase):
         self.assertEqual(MODULE.classify({"title": "Unknown"}, self.today), "exclude")
 
 
+class FilterTests(unittest.TestCase):
+    def test_country_and_category_filters_are_exact_and_case_insensitive(self):
+        records = [
+            {"country_code": "HU", "categories": ["business", "energy"]},
+            {"country_hu": "Magyarország", "category": "Agriculture"},
+            {"country_code": "ES", "category": "business-growth"},
+        ]
+        self.assertEqual(len(MODULE.filter_records(records, country="hu")), 1)
+        self.assertEqual(len(MODULE.filter_records(records, country="MAGYARORSZÁG")), 1)
+        self.assertEqual(len(MODULE.filter_records(records, category="BUSINESS")), 1)
+        self.assertEqual(len(MODULE.filter_records(records, category="business-growth")), 1)
+        self.assertEqual(len(MODULE.filter_records(records)), 3)
+        self.assertEqual(MODULE.filter_records(records, country="HU", category="energy"), [records[0]])
+        self.assertEqual(MODULE.filter_records(records, category="business-gro"), [])
+
+
 class ReportTests(unittest.TestCase):
     def test_report_keeps_candidate_distinct_and_preserves_zero_amount(self):
         records = [
