@@ -8,6 +8,10 @@ on:
       - 'scripts/build_report_portfolio.py'
       - 'scripts/generate_organization_report.py'
       - 'scripts/test_build_report_portfolio.py'
+      - 'scripts/validate_sitemap.py'
+      - 'scripts/test_validate_sitemap.py'
+      - 'scripts/validate_project.py'
+      - 'sitemap.xml'
       - 'scripts/test_generate_organization_report.py'
       - '.github/workflows/organization-report-production.yml'
   workflow_dispatch:
@@ -38,7 +42,9 @@ jobs:
           python-version: "3.12"
       - name: Install pinned CI dependencies
         run: python -m pip install --disable-pip-version-check --require-hashes -r requirements-ci.txt
-      - name: Validate current data and frontend
+      - name: Test sitemap validator
+        run: python -m unittest discover -s scripts -p 'test_validate_sitemap.py' -v
+      - name: Validate current data, frontend, and sitemap
         run: python scripts/validate_project.py
       - name: Run report generator regression tests
         run: python -m unittest discover -s scripts -p 'test_generate_organization_report.py' -v
