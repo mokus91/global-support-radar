@@ -169,3 +169,12 @@ Elkészült a [szervezeti pilot végrehajtási és minőségellenőrzési munkal
 A munkalap célja, hogy a riport ne jelenítsen meg nyitottként olyan támogatást, amelynek státuszát az eredeti kiírás nem támasztja alá. A nyilvántartási API időablaka önmagában nem bizonyít nyitott jelentkezést.
 
 Ez előkészítő dokumentum, nem végrehajtott pilot. Külső megkeresés továbbra sem történt; nincs pilot, ügyfél vagy bevétel. A 0 Ft-os indulási elv, a tulajdonosi jóváhagyási és a kereskedelmi tárhelykapuk változatlanok.
+
+
+## 14. Riportgenerátor – duplikációszűrés és egyértelmű riportfejléc (2026-11-20)
+
+A riportgenerátor újabb minőségvédelmet kapott: azonos hivatalos HTTPS URL-re mutató rekordokat összevon, biztonságos URL hiányában pedig csak azonos ország, cím és határidő alapján alkalmaz konzervatív duplikációszűrést. A riport fejlécében látható az ország- és témaszűrő, valamint az egyedi rekordok száma.
+
+Új regressziós tesztek ellenőrzik a duplikátumok eltávolítását és a szűrési metaadatok megjelenítését. A Continuous Improvement workflow push-feltételei közé bekerült maga a riportgenerátor is, így annak módosítása automatikusan tesztelést indít.
+
+Ez továbbra is helyi adatfájlokból készülő riport: nem tölt le új adatot, nem küld e-mailt, nem fogad fizetést és nem végez banki műveletet. A generátor módosítása még nem jelenti a teljes pilot automatikus vagy kereskedelmi működését.
