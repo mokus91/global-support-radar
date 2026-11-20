@@ -44,7 +44,7 @@ A non-exclusive licence can preserve the owner's ability to license the same ver
 ## Next steps in order
 
 1. Owner privately confirms the contributor history and preserves dated project instructions and review evidence.
-2. Replace or document the PNG icons and SVG source.
+2. Icon replacement is complete at source level; verify PWA installation and rendering on real devices.
 3. Complete a source-by-source data/API reuse register and dependency notice bundle.
 4. GitHub Actions SHA pinning is complete; keep pins updated only through deliberate security and compatibility review.
 5. Prepare a clean, versioned delivery bundle with a file manifest and SHA-256 hashes.
