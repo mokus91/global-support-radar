@@ -67,7 +67,7 @@ def classify_opportunity_type(title, identifier="", record_type=""):
     explicit_contract_markers = (
         "service request", "contract notice", "contract award",
         "procurement procedure", "tender notice", "invitation to tender",
-        "works contract", "supplies contract"
+        "works contract", "supplies contract", "open tender for", "open tender:"
     )
     if any(marker in text for marker in explicit_contract_markers):
         return "procurement_candidate"
