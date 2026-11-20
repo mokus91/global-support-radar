@@ -23,6 +23,7 @@ report = {
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
     "verification_dimensions": {"open_status_verified": 0, "eligibility_verified": 0, "amount_verified": 0},
     "feed_summary": [],
+    "feed_health_summary": [],
     "source_status_summary": [],
     "review_queue_count": 0,
     "review_queue": [],
@@ -46,6 +47,17 @@ AMOUNT_FIELDS = ("amount_maximum", "amount_max", "budget", "total_call_budget", 
 ELIGIBILITY_FIELDS = ("eligibility", "eligible_applicants", "beneficiary", "target_group", "applicant_type")
 
 status_observations = {}
+
+for feed in manifest.get("feeds", []):
+    report["feed_health_summary"].append({
+        "name": str(feed.get("name") or feed.get("file") or "Unknown")[:120],
+        "file": str(feed.get("file") or "")[:120],
+        "status": str(feed.get("status") or "unknown")[:80],
+        "records_count": int(feed.get("records_count") or 0),
+        "http_status": feed.get("http_status"),
+        "freshness": str(feed.get("freshness") or "unknown")[:40],
+        "note": str(feed.get("note") or "")[:300]
+    })
 
 for feed in manifest.get("feeds", []):
     filename = feed.get("file", "")
