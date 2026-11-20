@@ -167,3 +167,10 @@ Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fej
 - [Szervezeti bemutató és visszajelzési lap](docs/organizational-demo-walkthrough.md)
 
 - [Szervezeti pilot végrehajtási és minőségellenőrzési munkalap](docs/organizational-pilot-execution-checklist.md)
+
+
+### Többprofilos szervezeti riportok
+
+- Profilbeállítások: `config/report-profiles.json`
+- Többprofilos riportgenerátor: `scripts/build_report_portfolio.py`
+- Automatizált gyártás és tesztek: `docs/automated-organization-report-production.md`
