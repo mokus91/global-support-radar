@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "currency": "HUF",
+  "policy": "Költség csak igazoltan beérkezett bevételből, elkülönített kötelező tartalékok után, a tulajdonos előzetes írásos jóváhagyásával fizethető. Jóváhagyás hiányában a költési keret 0 Ft.",
+  "opening_balance_huf": 0,
+  "owner_approved_spend_limit_huf": 0,
+  "tax_and_refund_reserve_huf": 0,
+  "income": [],
+  "expenses": [],
+  "planned_expenses": [
+    {"id":"hosting","category":"Tárhely és forgalom","description":"Netlify/Cloudflare vagy más tárhely esetleges díja, túllépés, extra forgalom","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"domain","category":"Domain és DNS","description":"Domainregisztráció, megújítás, DNS-kiegészítő szolgáltatás","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"email","category":"E-mail és értesítések","description":"Tranzakciós e-mail, hírlevél, SMS, push szolgáltatás","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"apis","category":"API és adatforrások","description":"Fizetős API, adatlicenc, fordítás, térkép vagy külső adat-hozzáférés","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"automation","category":"Automatizálás és futtatás","description":"CI/CD, ütemezett futtatás, szerver, worker, adatbázis és tárhelykvóta","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"payments","category":"Fizetés és bank","description":"Fizetési szolgáltató, tranzakció, visszaterhelés, banki és devizaváltási díj","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"accounting","category":"Könyvelés és adminisztráció","description":"Könyvelő, számlázó, vállalkozási és adminisztratív szolgáltatások","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"tax","category":"Adó és kötelező terhek","description":"Adók, járulékok, illetékek és egyéb kötelező befizetések","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"legal","category":"Jogi és adatvédelmi megfelelés","description":"ÁSZF, adatkezelési tájékoztató, jogi konzultáció, megfelelőségi felülvizsgálat","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"security","category":"Biztonság és mentés","description":"Biztonsági szolgáltatás, biztonsági mentés, monitorozás, incidenskezelés","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"marketing","category":"Marketing és ügyfélszerzés","description":"Hirdetés, kreatív, kampány, PR és fizetett megkereső eszköz","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"support","category":"Ügyfélszolgálat és működés","description":"Ügyfélszolgálati eszközök, telefon, tárhely, külső munka és alvállalkozó","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"refunds","category":"Visszatérítések és viták","description":"Ügyfél-visszatérítés, reklamáció, chargeback és kapcsolódó díj","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"equipment","category":"Eszközök és szoftverek","description":"Hardver, licenc, fejlesztői szoftver és egyéb beszerzés","amount_huf":0,"status":"blocked","owner_approved":false},
+    {"id":"other","category":"Egyéb és váratlan kiadás","description":"Bármely előre nem sorolt költség; külön indoklás és jóváhagyás kötelező","amount_huf":0,"status":"blocked","owner_approved":false}
+  ]
+}
