@@ -20,7 +20,7 @@ OpenAI's Terms of Use effective 2026-01-01 state that, as between the user and O
 | SVG icon | Owner confirms they did not personally create the project icons; the SVG's original creator/source is not established | Unverified provenance; not cleared for resale/licensing | Identify the original source and permission, or replace it with a newly documented project asset before including it in a paid delivery |
 | PNG icons | Owner confirms they did not personally create the project icons; the source artwork/export history for `icon-192.png` and `icon-512-maskable.png` is not established | Unverified provenance; not cleared for resale/licensing | Identify source and permission or replace both; do not represent as exclusively owned meanwhile |
 | Python dependencies | `certifi==2026.10.23` (MPL-2.0) and `pycountry==26.2.16` (LGPL-2.1-only) are version- and wheel-hash-pinned in `requirements-ci.txt`; PyPI metadata confirms the stated licence expressions | Direct packages identified; licence texts/notices and transitive dependency review remain incomplete | Retain the exact licence texts/notices and review package contents, data licensing and transitive dependencies before commercial delivery |
-| GitHub Actions | Workflow uses `actions/checkout@v4`, `actions/setup-python@v5`, `actions/github-script@v7` tags | Version tags identified; immutable provenance not pinned | Review action licences/security and pin immutable commit SHAs before hardened commercial delivery |
+| GitHub Actions | Detected checkout, setup-python, github-script and upload-artifact workflow references are now pinned to immutable commit SHAs | SHA pinning completed on 2026-11-20; action licence/security review remains ongoing | Preserve the pins and update only after reviewing target releases, compatibility and security notes |
 | External data and APIs | Government, EU, UN and other sources are linked to or queried | Source-specific terms not comprehensively checked | Maintain per-source commercial reuse, attribution, database-right, API and caching review |
 | Public repository | Repository is public and may be viewed/forked under GitHub terms | Known commercial limitation | Do not promise secrecy or exclusive source access; plan private source delivery and separate hosting only after owner approval |
 | Product readiness | README describes an MVP with incomplete geographic coverage and unverified opportunity leads | Beta/MVP | Describe limits clearly; no guarantees of completeness, eligibility, accuracy, revenue or uptime |
@@ -46,7 +46,7 @@ A non-exclusive licence can preserve the owner's ability to license the same ver
 1. Owner privately confirms the contributor history and preserves dated project instructions and review evidence.
 2. Replace or document the PNG icons and SVG source.
 3. Complete a source-by-source data/API reuse register and dependency notice bundle.
-4. Review and pin GitHub Actions to immutable commit SHAs.
+4. GitHub Actions SHA pinning is complete; keep pins updated only through deliberate security and compatibility review.
 5. Prepare a clean, versioned delivery bundle with a file manifest and SHA-256 hashes.
 6. Ask a Hungarian copyright lawyer to review the AI-assisted development disclosure, rights chain and customer licence before taking payment.
 7. Only after these gates: approve the marketplace listing, price, payment setup and publication separately.
