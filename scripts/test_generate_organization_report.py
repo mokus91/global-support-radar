@@ -70,10 +70,10 @@ class ReportTests(unittest.TestCase):
     def test_report_keeps_candidate_distinct_and_preserves_zero_amount(self):
         records = [
             {"country_code": "CL", "title_hu": "Nyitott program", "status": "open-and-current",
-             "deadline": "2026-11-24", "official_url": "https://example.org/open", "amount_max": 0},
+             "deadline": "2026-11-24", "official_url": "https://example.org/open", "source_checked_at": "2026-11-20T09:00:00Z", "amount_max": 0},
             {"country_code": "ES", "title_original": "Registry candidate",
              "status": "official-api-window-current", "deadline": "2026-12-01",
-             "official_url": "https://example.org/candidate"},
+             "official_url": "https://example.org/candidate", "source_checked_at": "2026-11-20T09:00:00Z"},
             {"country_code": "FR", "title": "Unverified", "verification_status": "unverified"},
         ]
         output = MODULE.render(records, date(2026, 11, 20))
@@ -95,7 +95,7 @@ class ReportTests(unittest.TestCase):
 
     def test_report_shows_selected_filters(self):
         output = MODULE.render(
-            [{"title": "Example", "status": "open", "country_code": "HU", "category": "business"}],
+            [{"title": "Example", "status": "open", "country_code": "HU", "category": "business", "official_url": "https://example.org/x", "source_checked_at": "2026-11-20T09:00:00Z"}],
             date(2026, 11, 20), country="HU", category="business"
         )
         self.assertIn("**Országszűrő:** HU", output)
