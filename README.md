@@ -4,6 +4,15 @@
 
 A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatalos forrásgyűjtemény állami támogatásokhoz, pályázatokhoz és szociális ellátásokhoz.
 
+## Tulajdonosi, jogi és biztonsági dokumentáció
+
+- [Tulajdonosi és szellemi tulajdon nyilvántartása](docs/ownership-and-ip.md)
+- [Jogosultsági bizonyítékok naplója](docs/rights-evidence-log.md)
+- [Külső anyagok és licencek](THIRD_PARTY_NOTICES.md)
+- [Ikonok és grafikai elemek eredetnyilvántartása](docs/asset-provenance-register.md)
+- [Üzemeltetési biztonság és tulajdonosi ellenőrzőlista](docs/production-security-checklist.md)
+- [Privát forráskód és telepítés célarchitektúrája](docs/owner-control-and-deployment-plan.md)
+
 ## Mi működik jelenleg?
 
 - Reszponzív weboldal magyar és angol kezelőfelülettel.
