@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install pinned CI dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements-ci.txt
       - name: Compile all project scripts
         run: python -m compileall -q scripts
       - name: Validate project data and frontend
@@ -53,5 +55,5 @@ jobs:
             if (issue) {
               await github.rest.issues.update({ owner, repo, issue_number: issue.number, body });
             } else {
-              await github.rest.issues.create({ owner, repo, title, body, labels: ['enhancement'] });
+              await github.rest.issues.create({ owner, repo, title, body });
             }
