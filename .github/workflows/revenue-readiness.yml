@@ -50,6 +50,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: revenue-readiness-${{ github.run_number }}
-          path: |\n            revenue-readiness-report.md\n            expense-guard-report.md
+          path: |
+            revenue-readiness-report.md
+            expense-guard-report.md
           if-no-files-found: error
           retention-days: 14
