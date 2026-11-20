@@ -58,6 +58,7 @@ jobs:
       - name: Discover EU CAP Network agriculture funding calls
         run: python scripts/discover_eu_cap_calls.py
       - name: Discover agriculture links on 27 EU national funding portals
+        timeout-minutes: 8
         run: python scripts/discover_eu_national_agriculture.py
       - name: Discover business, housing, energy, education, employment and transport links
         timeout-minutes: 8
