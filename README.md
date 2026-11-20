@@ -30,7 +30,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 
 - [Első fizetős riportpilot ajánlati kerete és sikerfeltételei](docs/first-paid-report-pilot.md)
 
-## Bevételfogadás és tulajdonosi kifizetés
+## Önálló bevételi működés\n\n- [Önálló bevételi működés és élesítési kapuk](docs/autonomous-revenue-operations.md)\n\n## Bevételfogadás és tulajdonosi kifizetés
 
 - [Fizetési elszámolás és tulajdonosi kifizetés előkészítési terve](docs/payment-and-owner-payout-readiness.md)
 
