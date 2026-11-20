@@ -6,7 +6,7 @@ from pathlib import PurePosixPath
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE_URL = "https://mokus91.github.io/global-support-radar/"
+BASE_URL = "https://mokus91.github.io/"
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 
