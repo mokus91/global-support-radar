@@ -14,6 +14,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Privát forráskód és telepítés célarchitektúrája](docs/owner-control-and-deployment-plan.md)
 - [0 Ft-os indulás, önfinanszírozás és tulajdonosi nyereség terve](docs/zero-budget-self-funding-plan.md)
 - [Bevételi motor, szervezeti pilot és értékesítési terv](docs/revenue-engine-roadmap.md)
+- [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
 
 ## Mi működik jelenleg?
 
