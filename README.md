@@ -23,6 +23,7 @@ A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatal
 - [Licencelési keretrendszer – tulajdonjog megtartásával](docs/licensing-framework-hu.md)
 - [Nemzetközi piactéri hirdetés – angol tervezet](docs/licensing-marketplace-listing-draft-en.md)
 - [Licencelt forráscsomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
+- [Nem kizárólagos licencszerződés – kitöltendő minta](docs/software-license-agreement-template-hu.md)
 - [Privát forráskód és telepítés célarchitektúrája](docs/owner-control-and-deployment-plan.md)
 - [0 Ft-os indulás, önfinanszírozás és tulajdonosi nyereség terve](docs/zero-budget-self-funding-plan.md)
 - [Bevételi motor, szervezeti pilot és értékesítési terv](docs/revenue-engine-roadmap.md)
