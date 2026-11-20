@@ -113,3 +113,13 @@ A weboldal magyar nyelvű alapértelmezett címet és leírást, Open Graph mego
 ## Bevételi modell és termékfejlesztési irány
 
 A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorált felületek, opcionális prémium értesítések, mentett keresések és szervezeti/partneri csomagok tervezhetők. A jelenlegi GitHub Pages kiadás statikus frontend: önmagában nem biztosít biztonságos felhasználói fiókot, előfizetés-kezelést, fizetést vagy szerveroldali jogosultság-ellenőrzést. Ezeket csak külön backenddel, adatvédelmi és fizetési folyamatokkal szabad élesíteni. A fizetős funkciók nem befolyásolhatják a hivatalos források minősítését vagy a természetes találati sorrendet.
+
+
+## Tulajdonosi és jogi dokumentáció
+
+- [Proprietary rights notice](LICENSE)
+- [Ownership and intellectual-property record](docs/ownership-and-ip.md)
+- [Rights and development evidence log](docs/rights-evidence-log.md)
+- [Third-party materials and source obligations](THIRD_PARTY_NOTICES.md)
+
+Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fejlesztési nyomvonalat rögzítik. Nem helyettesítik az aláírt jogátruházási megállapodásokat, és nem teszik a külső adatokat vagy szoftvereket a projekt tulajdonává. A nyilvános GitHub-tárhely továbbra is nyilvános, a GitHub feltételei szerint megtekinthető és fork-olható.
