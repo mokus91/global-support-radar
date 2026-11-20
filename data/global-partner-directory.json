@@ -2,8 +2,20 @@
   "schema_version": "1.0",
   "dataset": "global_partner_directory",
   "last_reviewed": "2026-11-20",
-  "scope_note": "Kutatási kiindulópontok és partnerjelölt-források. Nem jelentenek fennálló partnerséget vagy érdeklődést.",
-  "crm_status_legend": ["kutatott", "ellenőrzésre vár", "jóváhagyásra vár", "megkeresés elküldve", "válasz érkezett", "érdeklődő", "pilot egyeztetés", "pilot lezárva", "partner", "fizető ügyfél", "nem releváns"],
+  "scope_note": "Kutatási kiindulópontok és partnerjelölt-források. Nem jelentenek fennálló partnerséget vagy érdeklődést. A címtárakból kibontott tagokat külön rekordként, saját hivatalos forrással kell ellenőrizni.",
+  "crm_status_legend": [
+    "kutatott",
+    "ellenőrzésre vár",
+    "jóváhagyásra vár",
+    "megkeresés elküldve",
+    "válasz érkezett",
+    "érdeklődő",
+    "pilot egyeztetés",
+    "pilot lezárva",
+    "partner",
+    "fizető ügyfél",
+    "nem releváns"
+  ],
   "records": [
     {
       "id": "network-icc-wcf",
@@ -11,8 +23,16 @@
       "country_code": null,
       "region": "global",
       "organisation_level": "international",
-      "category": ["terjesztési partner", "üzleti hálózat"],
-      "topics": ["KKV", "kereskedelem", "export", "vállalkozásfejlesztés"],
+      "category": [
+        "terjesztési partner",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "kereskedelem",
+        "export",
+        "vállalkozásfejlesztés"
+      ],
       "official_website": "https://iccwbo.org/world-chambers-federation/",
       "contact_page": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
       "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
@@ -30,8 +50,19 @@
       "country_code": null,
       "region": "europe_and_global_partner_countries",
       "organisation_level": "international",
-      "category": ["szakmai és adatpartner", "terjesztési partner", "üzleti tesztpartner"],
-      "topics": ["KKV", "innováció", "agrár-élelmiszer", "energia", "nemzetköziesítés", "finanszírozás"],
+      "category": [
+        "szakmai és adatpartner",
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "innováció",
+        "agrár-élelmiszer",
+        "energia",
+        "nemzetköziesítés",
+        "finanszírozás"
+      ],
       "official_website": "https://een.ec.europa.eu/",
       "contact_page": "https://een.ec.europa.eu/local-contact-points",
       "evidence_url": "https://een.ec.europa.eu/about-enterprise-europe-network",
@@ -49,8 +80,15 @@
       "country_code": null,
       "region": "europe_and_selected_non_eu_countries",
       "organisation_level": "international_directory",
-      "category": ["terjesztési partner", "üzleti tesztpartner"],
-      "topics": ["KKV", "innováció", "nemzetközi partnerség"],
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner"
+      ],
+      "topics": [
+        "KKV",
+        "innováció",
+        "nemzetközi partnerség"
+      ],
       "official_website": "https://een.ec.europa.eu/local-contact-points",
       "contact_page": "https://een.ec.europa.eu/local-contact-points",
       "evidence_url": "https://een.ec.europa.eu/local-contact-points",
@@ -68,8 +106,16 @@
       "country_code": null,
       "region": "non_eu_and_non_single_market_countries",
       "organisation_level": "international_programme",
-      "category": ["szakmai és adatpartner", "terjesztési partner"],
-      "topics": ["KKV", "export", "innováció", "nemzetközi üzleti együttműködés"],
+      "category": [
+        "szakmai és adatpartner",
+        "terjesztési partner"
+      ],
+      "topics": [
+        "KKV",
+        "export",
+        "innováció",
+        "nemzetközi üzleti együttműködés"
+      ],
       "official_website": "https://een.ec.europa.eu/news/open-invitation-join-enterprise-europe-network-international-network-partner",
       "contact_page": "https://een.ec.europa.eu/news/open-invitation-join-enterprise-europe-network-international-network-partner",
       "evidence_url": "https://een.ec.europa.eu/news/open-invitation-join-enterprise-europe-network-international-network-partner",
@@ -88,8 +134,16 @@
       "country_code": null,
       "region": "global",
       "organisation_level": "international_network",
-      "category": ["szakmai partner", "terjesztési partner"],
-      "topics": ["fenntarthatóság", "energia", "társadalmi felelősség", "vállalkozás"],
+      "category": [
+        "szakmai partner",
+        "terjesztési partner"
+      ],
+      "topics": [
+        "fenntarthatóság",
+        "energia",
+        "társadalmi felelősség",
+        "vállalkozás"
+      ],
       "official_website": "https://unglobalcompact.org/",
       "contact_page": "https://unglobalcompact.org/engage-locally/about-local-networks",
       "evidence_url": "https://unglobalcompact.org/engage-locally/about-local-networks",
@@ -107,8 +161,15 @@
       "country_code": null,
       "region": "oecd_member_countries",
       "organisation_level": "international_network",
-      "category": ["terjesztési partner", "üzleti hálózat"],
-      "topics": ["KKV", "vállalkozásfejlesztés", "gazdaságpolitika"],
+      "category": [
+        "terjesztési partner",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "gazdaságpolitika"
+      ],
       "official_website": "https://www.businessatoecd.org/",
       "contact_page": "https://www.businessatoecd.org/global-network",
       "evidence_url": "https://www.businessatoecd.org/global-network",
@@ -126,8 +187,15 @@
       "country_code": null,
       "region": "european_union",
       "organisation_level": "eu_network",
-      "category": ["szakmai és adatpartner", "terjesztési partner"],
-      "topics": ["KKV", "vállalkozásfejlesztés", "nemzeti szakpolitika"],
+      "category": [
+        "szakmai és adatpartner",
+        "terjesztési partner"
+      ],
+      "topics": [
+        "KKV",
+        "vállalkozásfejlesztés",
+        "nemzeti szakpolitika"
+      ],
       "official_website": "https://single-market-economy.ec.europa.eu/smes/learn-and-plan-entrepreneurship/promoting-enterprise/sme-envoys-network_en",
       "contact_page": "https://single-market-economy.ec.europa.eu/smes/learn-and-plan-entrepreneurship/promoting-enterprise/sme-envoys-network_en",
       "evidence_url": "https://single-market-economy.ec.europa.eu/smes/learn-and-plan-entrepreneurship/promoting-enterprise/sme-envoys-network_en",
@@ -135,6 +203,139 @@
       "verified_on": "2026-11-20",
       "verification_status": "official_source_reviewed",
       "deduplication_key": "eu:commission:sme-envoys-network",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-world-chambers-network",
+      "name": "World Chambers Network",
+      "country_code": null,
+      "region": "global",
+      "organisation_level": "international_directory",
+      "category": [
+        "terjesztési partner",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "kamarák",
+        "KKV",
+        "nemzetközi kereskedelem"
+      ],
+      "official_website": "https://www.worldchambers.com/",
+      "contact_page": "https://www.worldchambers.com/",
+      "evidence_url": "https://www.worldchambers.com/",
+      "relevance": "Nemzetközi kamarai címtárként további országos és helyi kamarai jelöltek feltérképezésére használható; a címtáradatok és az egyes szervezetek aktivitása külön ellenőrzendő.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_source_reviewed",
+      "deduplication_key": "global:world-chambers-network:directory",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-eurochambres",
+      "name": "Eurochambres – Association of European Chambers of Commerce and Industry",
+      "country_code": null,
+      "region": "europe",
+      "organisation_level": "regional_international",
+      "category": [
+        "terjesztési partner",
+        "szakmai hálózat"
+      ],
+      "topics": [
+        "KKV",
+        "kamarák",
+        "vállalkozásfejlesztés",
+        "európai támogatások"
+      ],
+      "official_website": "https://www.eurochambres.eu/",
+      "contact_page": "https://www.eurochambres.eu/about/members/",
+      "evidence_url": "https://www.eurochambres.eu/about/members/",
+      "relevance": "Országos kamarai tagszervezeteket sorol fel, ezért európai országonkénti partnerkutatáshoz erős kiindulópont; nem jelent automatikus együttműködést.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "europe:eurochambres:members",
+      "fit_score": 5,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-wtca",
+      "name": "World Trade Centers Association",
+      "country_code": null,
+      "region": "global",
+      "organisation_level": "international_network",
+      "category": [
+        "terjesztési partner",
+        "üzleti tesztpartner",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "nemzetközi kereskedelem",
+        "befektetés",
+        "KKV",
+        "üzletfejlesztés"
+      ],
+      "official_website": "https://www.wtca.org/",
+      "contact_page": "https://www.wtca.org/locations",
+      "evidence_url": "https://www.wtca.org/locations",
+      "relevance": "Több mint 300 városban és 90-nél több országban jelen lévő hálózat; potenciális üzleti teszt- és terjesztési kapcsolódási pont, külön szervezeti alkalmassági ellenőrzéssel.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_directory_reviewed",
+      "deduplication_key": "global:wtca:locations",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-aico",
+      "name": "Asociación Iberoamericana de Cámaras de Comercio (AICO)",
+      "country_code": null,
+      "region": "latin_america_and_iberia",
+      "organisation_level": "regional_international",
+      "category": [
+        "terjesztési partner",
+        "szakmai hálózat"
+      ],
+      "topics": [
+        "kamarák",
+        "KKV",
+        "ibero-amerikai üzleti együttműködés"
+      ],
+      "official_website": "https://www.aico.org/",
+      "contact_page": "https://www.aico.org/",
+      "evidence_url": "https://iccwbo.org/world-chambers-federation/our-chamber-network/",
+      "relevance": "Az ICC World Chambers Federation taglistáján szereplő ibero-amerikai kamarai hálózat; spanyol és portugál nyelvű országok partnerkutatásához releváns.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_network_listing_reviewed",
+      "deduplication_key": "latin-america:aico:chambers",
+      "fit_score": 4,
+      "crm_status": "kutatott",
+      "outreach_status": "not_contacted"
+    },
+    {
+      "id": "network-ebo-worldwide",
+      "name": "European Business Organisation Worldwide Network",
+      "country_code": null,
+      "region": "global",
+      "organisation_level": "international_network",
+      "category": [
+        "terjesztési partner",
+        "üzleti hálózat"
+      ],
+      "topics": [
+        "nemzetközi vállalkozásfejlesztés",
+        "kereskedelem",
+        "országos üzleti szervezetek"
+      ],
+      "official_website": "https://eboworldwide.eu/",
+      "contact_page": "https://eboworldwide.eu/membership/our-network/",
+      "evidence_url": "https://eboworldwide.eu/membership/our-network/",
+      "relevance": "Európai üzleti szervezetek harmadik országokban működő hálózata; földrajzi terjesztési és országonkénti kapcsolatkutatási kiindulópont.",
+      "verified_on": "2026-11-20",
+      "verification_status": "official_members_directory_reviewed",
+      "deduplication_key": "global:ebo-worldwide:members",
       "fit_score": 4,
       "crm_status": "kutatott",
       "outreach_status": "not_contacted"
