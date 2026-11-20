@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T08:54:02.901751+00:00",
+  "generated_at": "2026-11-20T09:18:32.724005+00:00",
   "feeds_checked": 18,
   "records_checked": 2201,
   "expired_deadlines": 0,
@@ -1440,7 +1440,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 9,
+  "diagnostic_missing_urls": 11,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
