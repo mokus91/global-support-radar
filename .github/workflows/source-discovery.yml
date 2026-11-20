@@ -80,6 +80,8 @@ jobs:
         run: python scripts/discover_hu_open_data.py
       - name: Probe official Hungarian grant announcements feed
         run: python scripts/discover_hu_palyazat_feed.py
+      - name: Test NKFIH retry and snapshot safeguards
+        run: python -m unittest discover -s scripts -p 'test_discover_hu_nkfih.py' -v
       - name: Discover Hungarian NKFIH grant news from official RSS
         run: python scripts/discover_hu_nkfih.py
       - name: Validate refreshed discovery outputs
