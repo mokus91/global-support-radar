@@ -68,6 +68,19 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <label id="huYoungestLabel">A legfiatalabb gyermek életkora<select id="huYoungestAge" class="search" style="width:100%;margin-top:6px"><option value="none">Nincs gyermek / nem releváns</option><option value="under1">1 év alatti</option><option value="1to2">1–2 éves</option><option value="3to7">3–7 éves</option><option value="8to17">8–17 éves</option></select></label>
 <label id="huNeedLabel">Milyen segítséget keresel?<select id="huNeedType" class="search" style="width:100%;margin-top:6px"><option value="all">Minden releváns lehetőség</option><option value="housing">Lakhatási támogatás</option><option value="local">Helyi szociális / rezsitámogatás</option><option value="family">Családtámogatás</option></select></label>
 </div><button id="huEligibilityRun" class="btn" style="margin-top:16px">Mutasd a lehetséges támogatásokat →</button><div id="huEligibilityResults" aria-live="polite" style="margin-top:18px"><p class="empty" id="huEligibilityHint">A válaszaid alapján tájékoztató jellegű találatokat készítünk. Nem kérünk nevet, címet, jövedelmet vagy egészségügyi adatot.</p></div><p id="huEligibilityPrivacy" style="font-size:12px;color:var(--muted);margin-top:12px">Adatvédelem: a válaszokat a böngésző dolgozza fel; nem küldi el a szerverre és nem menti el.</p></section>
+
+<section id="globalEligibilityAssistant" class="card" style="margin:24px 0;border:1px solid var(--mint);">
+ <div class="sectionhead"><div><span class="eyebrow">GLOBAL ELIGIBILITY ASSISTANT · BÉTA</span><h2 id="geaTitle">Találd meg, milyen támogatások jöhetnek szóba</h2><p id="geaIntro">Válaszd ki az országot, a pályázó típusát és a támogatás célját. Ezután megnyitjuk a kapcsolódó hivatalos forrásokat.</p></div><span class="tag">🌍 193 országra tervezve</span></div>
+ <div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px">
+  <label id="geaCountryLabel">Ország<select id="geaCountry" class="search" style="width:100%;margin-top:6px"><option value="">Országok betöltése…</option></select></label>
+  <label id="geaApplicantLabel">Ki igényelné a támogatást?<select id="geaApplicant" class="search" style="width:100%;margin-top:6px"><option value="individual">Magánszemély / család</option><option value="business">Vállalkozás / vállalkozó</option><option value="student">Diák / kutató</option><option value="farmer">Gazdálkodó / mezőgazdasági szereplő</option><option value="nonprofit">Civil szervezet / nonprofit</option><option value="public">Önkormányzat / közintézmény</option></select></label>
+  <label id="geaCategoryLabel">Milyen segítséget keresel?<select id="geaCategory" class="search" style="width:100%;margin-top:6px"><option value="all">Minden támogatás</option><option value="family">Család és gyermekek</option><option value="housing">Lakhatás</option><option value="social">Szociális segítség / alacsony jövedelem</option><option value="employment">Munka / munkanélküliség</option><option value="education">Oktatás / ösztöndíj</option><option value="agriculture">Mezőgazdaság</option><option value="business">Vállalkozás</option><option value="energy">Energia / rezsi</option><option value="health">Egészségügyi segítség</option><option value="research">Kutatás / innováció</option><option value="other">Egyéb</option></select></label>
+ </div>
+ <button id="geaRun" class="btn" type="button" style="margin-top:16px">Mutasd a lehetséges támogatási forrásokat →</button>
+ <div id="geaResults" aria-live="polite" style="margin-top:16px"><p class="empty" id="geaHint">A válaszokat a böngésződ dolgozza fel. Nem kérünk nevet, címet, jövedelmet vagy egészségügyi adatot.</p></div>
+ <p id="geaDisclaimer" class="notice" style="margin-bottom:0">Fontos: ez előszűrés és forráskeresés, nem jogosultsági döntés. A feltételeket, határidőt és az esetleges támogatási összeget mindig az eredeti, hivatalos kiírásban ellenőrizd.</p>
+</section>
+
 <section id="worldwideSupportFinder" style="margin:28px 0"><div class="sectionhead"><div><h2 id="worldwideTitle">Világszintű támogatáskereső – minden országhoz</h2><p id="worldwideSub">Válassz országot és támogatási területet. A rendszer hivatalos nemzeti portálokhoz és nemzetközi adatbázisokhoz vezet.</p></div><span class="tag" id="worldwideCoverage">193 ENSZ-tagállam + nemzetközi források</span></div><div class="card"><div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px"><label id="worldCountryLabel">Kiválasztott ország<select id="worldCountryMirror" class="search" style="width:100%;margin-top:6px"><option value="all">Minden ország</option></select></label><label id="worldCategoryLabel">Milyen támogatást keresel?<select id="worldCategory" class="search" style="width:100%;margin-top:6px"><option value="all">Minden támogatási terület</option><option value="family">Család és gyermekek</option><option value="housing">Lakhatás</option><option value="social">Szociális segítség / alacsony jövedelem</option><option value="employment">Munkanélküliség / munka</option><option value="education">Oktatás / ösztöndíj</option><option value="agriculture">Mezőgazdaság</option><option value="business">Vállalkozás</option><option value="energy">Energia / rezsi</option><option value="healthcare">Egészségügy</option><option value="transport">Közlekedés</option></select></label></div><button id="worldwideFind" class="btn" type="button">Mutasd a hivatalos forrásokat →</button><div id="worldwideResults" class="cards" style="margin-top:18px"><div class="empty">Válassz országot a fenti listából, majd nyisd meg az adott ország hivatalos portáljait.</div></div><p id="worldwideDisclaimer" style="font-size:12px;color:var(--muted);margin-top:14px">Fontos: ez a világ minden országára használható forráskereső. Nem állítja, hogy minden ország támogatásai már automatikusan be vannak gyűjtve. A konkrét támogatás, összeg, határidő és jogosultság ellenőrzése a nemzeti hatóság feladata.</p></div></section>
 <section id="huLive" style="display:none"><div class="sectionhead"><div><h2 id="huLiveTitle">Magyarország – élő hivatalos pályázatkeresés</h2><p id="huLiveSub">A hivatalos portálon ellenőrizheted az aktuális felhívásokat és a beadási határidőket.</p></div></div><div class="cards"><article class="card"><div class="cardtop"><span class="tag">AKTUÁLIS FELHÍVÁSOK</span><span class="demo">HIVATALOS PORTÁL</span></div><h3 id="huFairName">FAIR / Pályázatkereső</h3><p id="huFairDesc">A FAIR adatai naponta frissülnek. A keresőben státusz, kedvezményezetti kör, program, régió és határidő szerint szűrhetsz. Az oldal nem ad át automatikusan ellenőrzött pályázati rekordokat.</p><div class="meta"><span>✓ Napi frissítés a FAIR szerint</span><span>✓ Aktív / lezárt / felfüggesztett</span></div><div class="cardfoot"><span>Hivatalos pályázatkereső</span><a href="https://www.palyazat.gov.hu/" target="_blank" rel="noopener noreferrer" id="huFairLink">Pályázatkereső megnyitása ↗</a></div></article><article class="card"><div class="cardtop"><span class="tag">KORÁBBI TÁMOGATÁSOK</span><span class="demo">ÁTLÁTHATÓSÁGI ADATBÁZIS</span></div><h3 id="huPublicName">Közpénzportál</h3><p id="huPublicDesc">Korábbi támogatási kérelmekről, döntésekről, kedvezményezettekről és odaítélt közpénzekről ad tájékoztatást. Ez nem aktuális pályázati felhíváslista.</p><div class="meta"><span>✓ Közpénzfelhasználási adatok</span><span>! Nem aktív pályázati feed</span></div><div class="cardfoot"><span>Hivatalos adatbázis</span><a href="https://www.kozpenzpalyazat.gov.hu/srv/" target="_blank" rel="noopener noreferrer" id="huPublicLink">Közpénzportál megnyitása ↗</a></div></article></div><div class="sectionhead" style="margin-top:26px"><div><h2 id="huQuickTitle">Magyarországi támogatások – gyors elérés</h2><p id="huQuickSub">Lakossági ellátások, lakhatás, mezőgazdaság és aktuális pályázati felhívások hivatalos oldalai.</p></div></div><div class="cards" id="huQuickLinks">
 <article class="card"><div class="cardtop"><span class="tag">CSALÁD</span><span class="demo">HIVATALOS TÁJÉKOZTATÓ</span></div><h3 id="huFamilyName">Családtámogatások</h3><p id="huFamilyDesc">Anyasági támogatás, családi pótlék, GYES, GYET és további családtámogatási ellátások feltételei és ügyintézése.</p><div class="cardfoot"><span>Kormányhivatalok</span><a href="https://kormanyhivatalok.hu/csaladtamogatasok" target="_blank" rel="noopener noreferrer" id="huFamilyLink">Részletek ↗</a></div></article>
@@ -1488,4 +1501,88 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
 <script src="./analytics-config.js"></script>
 <script src="./analytics.js" defer></script>
 <script src="./global-language.js" defer></script>
+
+<script id="global-eligibility-assistant">
+(()=>{
+ const $=id=>document.getElementById(id);
+ const hu=()=>!($("lang")?.value||"hu").startsWith("en");
+ const copy={
+  hu:{
+   title:"Találd meg, milyen támogatások jöhetnek szóba",
+   intro:"Válaszd ki az országot, a pályázó típusát és a támogatás célját. Ezután megnyitjuk a kapcsolódó hivatalos forrásokat.",
+   country:"Ország",applicant:"Ki igényelné a támogatást?",category:"Milyen segítséget keresel?",
+   applicants:[["individual","Magánszemély / család"],["business","Vállalkozás / vállalkozó"],["student","Diák / kutató"],["farmer","Gazdálkodó / mezőgazdasági szereplő"],["nonprofit","Civil szervezet / nonprofit"],["public","Önkormányzat / közintézmény"]],
+   categories:[["all","Minden támogatás"],["family","Család és gyermekek"],["housing","Lakhatás"],["social","Szociális segítség / alacsony jövedelem"],["employment","Munka / munkanélküliség"],["education","Oktatás / ösztöndíj"],["agriculture","Mezőgazdaság"],["business","Vállalkozás"],["energy","Energia / rezsi"],["health","Egészségügyi segítség"],["research","Kutatás / innováció"],["other","Egyéb"]],
+   run:"Mutasd a lehetséges támogatási forrásokat →",hint:"A válaszokat a böngésződ dolgozza fel. Nem kérünk nevet, címet, jövedelmet vagy egészségügyi adatot.",
+   disclaimer:"Fontos: ez előszűrés és forráskeresés, nem jogosultsági döntés. A feltételeket, határidőt és az esetleges támogatási összeget mindig az eredeti, hivatalos kiírásban ellenőrizd.",
+   noCountry:"Válassz ki egy országot a folytatáshoz.",result:"A keresés beállítva",
+   details:"A kiválasztott ország és támogatási terület hivatalos forrásait most megnyitjuk. A pályázó típusa segít a keresési irány meghatározásában, de önmagában nem bizonyít jogosultságot.",
+   next:"A kapcsolódó hivatalos források a lenti globális keresőben jelennek meg.",
+   applicantsLabel:"Pályázó típusa",categoryLabel:"Keresett támogatás",countryLabel:"Kiválasztott ország",
+   privacy:"Adatvédelem: a választásaid csak a böngésződben kerülnek feldolgozásra; nem küldjük el és nem mentjük el őket."
+  },
+  en:{
+   title:"Find support programmes you may qualify for",
+   intro:"Choose a country, applicant type and support area. We’ll then open the relevant official sources.",
+   country:"Country",applicant:"Who would apply?",category:"What kind of support do you need?",
+   applicants:[["individual","Individual / household"],["business","Business / entrepreneur"],["student","Student / researcher"],["farmer","Farmer / agricultural organisation"],["nonprofit","Non-profit / civil society"],["public","Local authority / public institution"]],
+   categories:[["all","All support"],["family","Family and children"],["housing","Housing"],["social","Social assistance / low income"],["employment","Employment / unemployment"],["education","Education / scholarships"],["agriculture","Agriculture"],["business","Business"],["energy","Energy / utilities"],["health","Health-related support"],["research","Research / innovation"],["other","Other"]],
+   run:"Show relevant official support sources →",hint:"Your answers are processed in your browser. We do not ask for your name, address, income or health information.",
+   disclaimer:"Important: this is an initial screening and source finder, not an eligibility decision. Always verify rules, deadlines and any funding amounts in the original official call.",
+   noCountry:"Please choose a country to continue.",result:"Search preferences set",
+   details:"We’ll open official sources for the selected country and support area. Applicant type helps guide the search but does not establish eligibility.",
+   next:"Relevant official sources will appear in the worldwide finder below.",
+   applicantsLabel:"Applicant type",categoryLabel:"Support area",countryLabel:"Selected country",
+   privacy:"Privacy: your choices are processed only in your browser; they are not sent to a server or saved."
+  }
+ };
+ function populate(){
+  const source=$("worldCountryMirror"),target=$("geaCountry");
+  if(!source||!target)return;
+  const current=target.value;target.replaceChildren();
+  [...source.options].forEach(o=>{const n=document.createElement("option");n.value=o.value;n.textContent=o.textContent;target.append(n)});
+  if(current&&[...target.options].some(o=>o.value===current))target.value=current;
+  if(!target.value)target.value=$("country")?.value||"HU";
+ }
+ function setOptions(id,items,value){const el=$(id);if(!el)return;const old=value||el.value;el.replaceChildren();items.forEach(([v,label])=>{const o=document.createElement("option");o.value=v;o.textContent=label;el.append(o)});if([...el.options].some(o=>o.value===old))el.value=old}
+ function render(){
+  const t=copy[hu()?"hu":"en"];
+  $("geaTitle").textContent=t.title;$("geaIntro").textContent=t.intro;
+  $("geaCountryLabel").childNodes[0].textContent=t.country;
+  $("geaApplicantLabel").childNodes[0].textContent=t.applicant;
+  $("geaCategoryLabel").childNodes[0].textContent=t.category;
+  setOptions("geaApplicant",t.applicants,"individual");setOptions("geaCategory",t.categories,"all");
+  $("geaRun").textContent=t.run;$("geaDisclaimer").textContent=t.disclaimer;
+  const hint=$("geaHint");if(hint)hint.textContent=t.hint;
+  $("geaCountry").setAttribute("aria-label",t.country);
+ }
+ function run(){
+  const t=copy[hu()?"hu":"en"],country=$("geaCountry").value,category=$("geaCategory").value,applicant=$("geaApplicant").value;
+  const box=$("geaResults");box.replaceChildren();
+  if(!country){const p=document.createElement("p");p.className="notice";p.textContent=t.noCountry;box.append(p);return}
+  const countryMirror=$("worldCountryMirror"),worldCategory=$("worldCategory"),find=$("worldwideFind");
+  if(countryMirror)countryMirror.value=country;
+  if(worldCategory)worldCategory.value=category;
+  const summary=document.createElement("article");summary.className="card";summary.style.marginBottom="10px";
+  const h=document.createElement("h3");h.textContent=t.result;
+  const p=document.createElement("p");p.textContent=t.details;
+  const meta=document.createElement("div");meta.className="meta";
+  const countryName=$("geaCountry").selectedOptions[0]?.textContent||country;
+  const applicantName=$("geaApplicant").selectedOptions[0]?.textContent||applicant;
+  const categoryName=$("geaCategory").selectedOptions[0]?.textContent||category;
+  meta.textContent=t.countryLabel+": "+countryName+" · "+t.applicantsLabel+": "+applicantName+" · "+t.categoryLabel+": "+categoryName;
+  const note=document.createElement("p");note.style.color="var(--muted)";note.textContent=t.next;
+  summary.append(h,p,meta,note);box.append(summary);
+  const privacy=document.createElement("p");privacy.style.color="var(--muted)";privacy.style.fontSize="12px";privacy.textContent=t.privacy;box.append(privacy);
+  if(find){find.click();setTimeout(()=>$("worldwideSupportFinder")?.scrollIntoView({behavior:"smooth",block:"start"}),250)}
+ }
+ $("geaRun")?.addEventListener("click",run);
+ $("lang")?.addEventListener("change",render);
+ $("worldCountryMirror")?.addEventListener("change",populate);
+ $("country")?.addEventListener("change",()=>{if($("geaCountry"))$("geaCountry").value=$("country").value;});
+ populate();render();
+ setTimeout(populate,500);
+})();
+</script>
+
 </body></html>
