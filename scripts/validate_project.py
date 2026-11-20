@@ -185,9 +185,9 @@ def main():
     if "Közbeszerzési / szolgáltatási jelöltek – nem támogatások" not in quality_dashboard:
         raise SystemExit("Separate procurement review panel is missing from quality dashboard")
     arc_adapter = (ROOT / "scripts" / "discover_au_arc_grants.py").read_text(encoding="utf-8")
-    if "max_pages = 200" not in arc_adapter or '"maximum_pages": max_pages' not in arc_adapter or "pagination_complete" not in arc_adapter:
+    if "max_pages = 40" not in arc_adapter or '"maximum_pages": max_pages' not in arc_adapter or "pagination_complete" not in arc_adapter:
         raise SystemExit("Australian ARC pagination completeness tracking is missing")
-    for required in ("time_budget_seconds = 360", '"collection_truncated": budget_exhausted or pages >= max_pages', "urlopen(req, timeout=20)"):
+    for required in ("time_budget_seconds = 180", '"collection_truncated": budget_exhausted or pages >= max_pages', "urlopen(req, timeout=12)"):
         if required not in arc_adapter:
             raise SystemExit(f"Australian ARC bounded runtime protection is missing: {required}")
     arc_feed = load_json(DATA / "au-arc-grants-discovery.json")
