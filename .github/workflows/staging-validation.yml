@@ -13,6 +13,7 @@ on:
       - "requirements-ci.txt"
       - "README.md"
       - "docs/free-launch-readiness.md"
+      - "docs/cloudflare-pages-android-setup-hu.md"
       - ".github/workflows/staging-validation.yml"
 
 permissions:
