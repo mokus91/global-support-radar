@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:53:43.645597+00:00",
+  "generated_at": "2026-11-20T06:11:07.050925+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 183,
@@ -200,6 +200,14 @@
       "title": "Beneficiaries of housing assistance — Sailly-Lez-Lannoy",
       "url": "https://www.data.gouv.fr/datasets/beneficiaires-dune-aide-au-logement-sailly-lez-lannoy",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
+      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
+      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -429,6 +437,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Energy Efficiency Action Plan (EEAP): glazing",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Energy Efficiency Action Plan (EEAP): other",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=18#",
       "query": "energy efficiency support",
@@ -560,14 +576,6 @@
       "title": "goult-housing",
       "url": "https://opendata.ozwillo.com/dataset/goult-logement",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Government Consolidated Fund (Annual)",
-      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
-      "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -981,6 +989,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -1015,14 +1031,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1094,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1094,7 +1102,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1248,14 +1256,6 @@
       "title": "Scholarships for university students of Lazio",
       "url": "http://dati.lazio.it/catalog/dataset/d3a64343-4f62-4052-8924-fd0dadb3f961#",
       "query": "scholarships",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Service “Building Information Desk” efficiency",
-      "url": "https://dati.toscana.it/dataset/servizio-sportello-informativo-edilizia-efficienza#",
-      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
