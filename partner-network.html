@@ -60,4 +60,5 @@ const data=[
 const cards=document.getElementById("cards"),q=document.getElementById("q"),kind=document.getElementById("kind"),count=document.getElementById("count");
 function render(){const term=q.value.toLocaleLowerCase("hu");const rows=data.filter(d=>(!kind.value||d[1]===kind.value)&&d.join(" ").toLocaleLowerCase("hu").includes(term));cards.replaceChildren(...rows.map(d=>{const a=document.createElement("article");a.className="card";const h=document.createElement("h2");h.textContent=d[0];const tag=document.createElement("span");tag.className="tag";tag.textContent=d[1];const p=document.createElement("p");p.textContent=d[2];const link=document.createElement("a");link.href=d[3];link.target="_blank";link.rel="noopener noreferrer";link.textContent="Hivatalos weboldal ↗";a.append(h,tag,p,link);return a}));count.textContent=rows.length+" / "+data.length+" kutatott jelölt megjelenítve"}
 q.addEventListener("input",render);kind.addEventListener("change",render);render();
-</script></body></html>
+</script><script src="./global-language.js" defer></script>
+</body></html>
