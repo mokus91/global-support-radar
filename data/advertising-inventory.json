@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-20",
+  "currency": "HUF",
+  "policy": "A nyilvántartás előkészítő eszköz. Nem jelent hirdetői kapcsolatot, szerződést, megjelenést vagy bevételt. Külső kapcsolatfelvételhez és minden fizetős szolgáltatáshoz külön tulajdonosi jóváhagyás szükséges.",
+  "inventory": [
+    {
+      "id": "site-display",
+      "name": "Weboldali hirdetési hely",
+      "type": "display",
+      "status": "disabled",
+      "enabled": false,
+      "external_code_present": false,
+      "sponsor_id": null,
+      "owner_approved": false,
+      "requires": [
+        "commercial_hosting_review",
+        "advertiser_approval",
+        "privacy_and_consent_review",
+        "clear_ad_label"
+      ]
+    },
+    {
+      "id": "sponsored-guide",
+      "name": "Szponzorált szakmai útmutató",
+      "type": "sponsored_content",
+      "status": "disabled",
+      "enabled": false,
+      "external_code_present": false,
+      "sponsor_id": null,
+      "owner_approved": false,
+      "requires": [
+        "written_agreement",
+        "commercial_hosting_review",
+        "editorial_independence",
+        "clear_sponsor_label"
+      ]
+    },
+    {
+      "id": "partner-referral",
+      "name": "Partneri ajánlás",
+      "type": "referral",
+      "status": "disabled",
+      "enabled": false,
+      "external_code_present": false,
+      "sponsor_id": null,
+      "owner_approved": false,
+      "requires": [
+        "partner_program_approval",
+        "terms_review",
+        "clear_affiliate_disclosure"
+      ]
+    }
+  ],
+  "advertisers": [],
+  "revenue_events": [],
+  "guardrails": {
+    "allow_outreach_without_owner_approval": false,
+    "allow_external_ad_code": false,
+    "allow_paid_services_without_funding": false,
+    "require_receipt_for_revenue": true,
+    "require_owner_approval_for_spend": true
+  }
+}
