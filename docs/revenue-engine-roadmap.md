@@ -137,3 +137,10 @@ A második fejlesztési kör szigorította a riportkészítést:
 - bővültek a regressziós tesztek a fenti esetekkel.
 
 A generátor továbbra is helyi fájlokból dolgozik; önálló adatletöltés, automatikus email, fizetés vagy banki művelet nincs.
+
+
+## 10. Szervezeti pilot termékspecifikáció (2026-11-20)
+
+Elkészült a [szervezeti monitoring pilot specifikációja](organizational-pilot-spec.md). Rögzíti a pilot bemeneteit, a leszállítandó riportot, az elfogadási kritériumokat, a mérőszámokat, az árazási hipotézis és az aktív ajánlat közötti különbséget, valamint a fizetős indulás kötelező kapuit.
+
+Ez belső termékterv, nem értékesítési ajánlat. Külső megkeresés, fizetési folyamat, szerződés és költségvállalás nem történt. A GitHub Pages jelenlegi MVP-je nem minősül kész kereskedelmi szolgáltatásnak.
