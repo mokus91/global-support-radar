@@ -103,10 +103,9 @@ További kapuk:
 ## 7. Következő végrehajtási sorrend
 
 1. A hivatalos források megbízhatóságának javítása – különösen a magyar és EU-adatoknál.
-2. A szervezeti pilot kézi mintájának előállítása 1-2 témában, ellenőrizhető forráslinkekkel.
-3. 20 szervezetből álló célcsoportlista összeállítása nyilvános szervezeti adatok alapján.
-4. Igényfelmérő megkeresés, majd visszajelzések rögzítése.
-5. Kereskedelmi tárhely és jogi/számlázási feltételek rendezése.
-6. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
+2. **Elkészült az első szervezeti riportminta:** [sample-organization-report-2026-11-20.md](sample-organization-report-2026-11-20.md). Két, vállalkozás/startup témájú rekordot mutat be Chiléből és Spanyolországból, külön jelölt ellenőrzési korlátokkal.
+3. Következő értékesítési előkészítés: 20 szervezetből álló célcsoportlista nyilvános szervezeti adatokból, majd igényfelmérő megkeresés. Személyes adatot csak szükséges jogalappal kezeljünk.
+4. Kereskedelmi tárhely és jogi/számlázási feltételek rendezése.
+5. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
 
-**Állapot ma:** bevételi modell és értékesítési előkészítés dokumentálva; aktív ügyfél, elfogadott partnerprogram, fizetési szolgáltató és tényleges bevétel még nincs.
+**Állapot ma:** bevételi modell, értékesítési terv és első riportminta elkészült. Aktív ügyfél, elfogadott partnerprogram, fizetési szolgáltató és tényleges bevétel még nincs.
