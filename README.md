@@ -128,6 +128,10 @@ A jelenlegi MVP nem igényel felhasználói fiókot, és nem tárol személyes j
 
 A weboldal magyar nyelvű alapértelmezett címet és leírást, Open Graph megosztási metaadatokat, Schema.org WebSite/SearchAction strukturált adatot, robots.txt fájlt és XML oldaltérképet használ. Az oldaltérkép kizárólag a stabil kezdőoldalt tartalmazza; az automatikusan felfedezett támogatásjelöltek nem kapnak külön indexelhető URL-t, amíg nincs hozzájuk ellenőrzött, önálló részletes oldal. Ez segít elkerülni a vékony vagy félrevezető keresőtalálatokat.
 
+## Globális méretezhetőség és terhelhetőség
+
+- [Globális skálázási és terhelhetőségi terv](docs/global-scale-architecture.md)
+
 ## Bevételi modell és termékfejlesztési irány
 
 A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorált felületek, opcionális prémium értesítések, mentett keresések és szervezeti/partneri csomagok tervezhetők. A jelenlegi GitHub Pages kiadás statikus frontend: önmagában nem biztosít biztonságos felhasználói fiókot, előfizetés-kezelést, fizetést vagy szerveroldali jogosultság-ellenőrzést. Ezeket csak külön backenddel, adatvédelmi és fizetési folyamatokkal szabad élesíteni. A fizetős funkciók nem befolyásolhatják a hivatalos források minősítését vagy a természetes találati sorrendet.
