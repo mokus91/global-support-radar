@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19T22:27:58.783609+00:00",
+  "generated_at": "2026-11-20T01:51:35.661111+00:00",
   "feeds_checked": 18,
-  "records_checked": 2220,
-  "expired_deadlines": 0,
+  "records_checked": 2215,
+  "expired_deadlines": 10,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 2000,
+  "unverified_status": 1995,
   "verification_tiers": {
     "verified_open": 0,
     "api_window_candidate": 214,
-    "official_listing_candidate": 1942,
-    "unverified": 58,
+    "official_listing_candidate": 1940,
+    "unverified": 55,
     "other": 6
   },
   "feed_summary": [
@@ -66,10 +66,10 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 496,
-      "unverified": 496,
+      "records": 494,
+      "unverified": 494,
       "api_window_candidates": 0,
-      "official_listing_candidates": 496,
+      "official_listing_candidates": 494,
       "historical_archive_records": 0
     },
     {
@@ -90,8 +90,8 @@
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 51,
-      "unverified": 51,
+      "records": 48,
+      "unverified": 48,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
