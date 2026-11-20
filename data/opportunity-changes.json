@@ -1,7 +1,38 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T07:46:58+00:00",
-  "events_count": 0,
-  "events": [],
-  "note": "Changes are detected by comparing repository snapshots. Removed records are not assumed closed; always confirm status at the official source."
+  "generated_at": "2026-11-20T07:53:07+00:00",
+  "events_count": 4,
+  "events": [
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52519656topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T07:53:07+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52519691topicsen",
+      "title": "TV and online content",
+      "detected_at": "2026-11-20T07:53:07+00:00"
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:17236competitive_callen",
+      "title": "Call for Applications – InnoNext Financial Support to Third Parties (FSTP) for ERC and EIC Pathfinder Talents and Alumni. \n\nInnoNext connects European academic research with innovative start-ups and SMEs through Innovation Internships, enabling knowledge exchange and collaboration on real-world challenges. \n\nTwo forms of support are available: \n\nERC internship reimbursement of EUR 4,300/month for PhD Talents (max EUR 12,900) or EUR 5,300/month for Postdoctoral Talents (max EUR 15,900);  \n\nEIC Pathfinder mobility allowance of EUR 2,300/month (max EUR 6,900). \n\nEligible applicants include researchers currently involved in, and Alumni who previously participated in, projects funded by the European Research Council (ERC) or the European Innovation Council (EIC) Pathfinder programme. \n\nFinancial support is subject to eligibility verification and a signed Financial Agreement. Applications and matchmaking take place through the InnoNext platform.",
+      "detected_at": "2026-11-20T07:53:07+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52968829topicsen",
+      "title": "EU Humanitarian Partnership Certificate 2028-2034",
+      "detected_at": "2026-11-20T07:53:07+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    }
+  ],
+  "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }
