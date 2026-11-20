@@ -5,6 +5,16 @@
   const select = document.getElementById("globalLanguage");
   const button = document.getElementById("translateWebsite");
   if (!select || !button) return;
+  const extraLanguages = ("af sq am hy az eu be bs ceb ny co fy gl ka gu ht ha haw is ig ga jv kn kk km rw ku ky lo la lb mk mg mi mr mn my ne or pa sm gd st sn sd si so su tg tt te tk ug uz cy xh yi yo zu").split(" ");
+  extraLanguages.forEach(code => {
+    if (Array.from(select.options).some(option => option.value === code)) return;
+    let nativeName = code;
+    try { nativeName = new Intl.DisplayNames([code], { type: "language" }).of(code) || code; } catch (_) {}
+    const option = document.createElement("option");
+    option.value = code;
+    option.textContent = nativeName;
+    select.appendChild(option);
+  });
   const supported = new Set(Array.from(select.options).map(option => option.value).filter(Boolean));
   const browserLanguage = (navigator.languages && navigator.languages[0] || navigator.language || "en").toLowerCase();
   const preferred = browserLanguage.startsWith("zh-tw") || browserLanguage.startsWith("zh-hk") ? "zh-TW" : browserLanguage.split("-")[0];
