@@ -38,6 +38,8 @@ jobs:
         run: python -m compileall -q scripts
       - name: Validate project and frontend
         run: python scripts/validate_project.py
+      - name: Run offline beta data-quality audit
+        run: python scripts/check_beta_data_quality.py
       - name: Run regression tests
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Create validation summary
