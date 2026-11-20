@@ -1,22 +1,126 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T22:32:35+00:00",
-  "events_count": 2,
+  "generated_at": "2026-11-20T04:19:52+00:00",
+  "events_count": 13,
   "events": [
     {
+      "type": "new",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wj200000cdwqumap",
+      "title": "令和６年度病院勤務者勤務環境改善事業・救急医療体制強化事業【仕入控除税額報告】",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wfq0000047v4ouae",
+      "title": "「ナトリウムイオン電池に関する技術（特許）動向調査」の公募",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wfq0000043od4uae",
+      "title": "「ポスト5G情報通信システム基盤強化研究開発事業（社会課題解決に向けた量子コンピュータ次世代機開発・実証の加速）」（b-2：人材育成）の追加公募",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "changed",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wj200000cddermad",
+      "title": "令和8年度SDS電子化補助金",
+      "before": {
+        "status": "acceptance-open-api-filtered",
+        "acceptance_end": "2026-11-30T14:59:00.000Z",
+        "amount_maximum": 1000000.0,
+        "amount_currency": "JPY",
+        "title_original": "令和8年度SDS電子化補助金"
+      },
+      "after": {
+        "status": "acceptance-open-api-filtered",
+        "acceptance_end": "2026-12-25T14:59:00.000Z",
+        "amount_maximum": 1000000.0,
+        "amount_currency": "JPY",
+        "title_original": "令和8年度SDS電子化補助金"
+      },
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
       "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52948028topicsen",
-      "title": "Selection of hosting sites and fellows for EFSA's European Food Risk Assessment Fellowship (EU-FORA) Programme",
-      "detected_at": "2026-11-19T22:32:35+00:00",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wj200000cdxkjmax",
+      "title": "「グリーンイノベーション基金事業／次世代型地熱技術の開発」の公募",
+      "detected_at": "2026-11-20T04:19:52+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wfq000003poqruai",
+      "title": "令和８年度　地域医療勤務環境改善体制整備事業",
+      "detected_at": "2026-11-20T04:19:52+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "jgrants-discovery.json",
+      "key": "id:a0wfq000003qeuouae",
+      "title": "令和８年度　地域医療勤務環境改善体制整備特別事業",
+      "detected_at": "2026-11-20T04:19:52+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "new",
+      "feed": "spain-discovery.json",
+      "key": "id:943405",
+      "title": "Orden IND/55/2026, de 18 de noviembre, por la que se convoca la fase autonómica del concurso escolar Consumópolis para el curso académico 2026-2027.",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "spain-discovery.json",
+      "key": "id:943269",
+      "title": "Convocatoria para la concesión de ayudas individuales de comedor escolar para el curso 2026-2027",
+      "detected_at": "2026-11-20T04:19:52+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "changed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:187757prospectsen",
+      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
+      "before": {
+        "status": "31094502",
+        "deadline": "2026-12-11T10:00:36.000+0000",
+        "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)"
+      },
+      "after": {
+        "status": "31094502",
+        "deadline": "2026-12-11T10:00:02.000+0000",
+        "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)"
+      },
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52948028topicsen",
+      "title": "Selection of hosting sites and fellows for EFSA's European Food Risk Assessment Fellowship (EU-FORA) Programme",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52968829topicsen",
       "title": "EU Humanitarian Partnership Certificate 2028-2034",
-      "detected_at": "2026-11-19T22:32:35+00:00",
+      "detected_at": "2026-11-20T04:19:52+00:00"
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:14981competitive_callen",
+      "title": "GroundWork Open Call",
+      "detected_at": "2026-11-20T04:19:52+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     }
   ],

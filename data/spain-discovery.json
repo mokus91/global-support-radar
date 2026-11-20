@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:21:55.317749+00:00",
+  "generated_at": "2026-11-20T04:09:19.905749+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
@@ -36,6 +36,42 @@
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943462",
       "application_url": null,
       "legal_bases_url": "https://www.uclm.es/empresas/mecenazgo/catedrasaulasempresa/catedra_agrobank",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "943405",
+      "country_code": "ES",
+      "title_original": "Orden IND/55/2026, de 18 de noviembre, por la que se convoca la fase autonómica del concurso escolar Consumópolis para el curso académico 2026-2027.",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "AUTONOMICA · CANTABRIA · CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO",
+      "regions": [
+        "ES130 - Cantabria"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Educación",
+      "start_date": "2026-10-05",
+      "deadline": "2027-03-01",
+      "indefinite_open": false,
+      "total_call_budget": 4000,
+      "total_call_budget_original": 4000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943405",
+      "application_url": null,
+      "legal_bases_url": "https://www.boe.es/eli/es/o/2021/09/20/csm1008",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
@@ -144,42 +180,6 @@
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943290",
       "application_url": "https://www.altemporda.org",
       "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/CONVOCATORIA_MO_2026-2027.pdf",
-      "status": "official-api-window-current",
-      "eligibility_verified": false,
-      "amount_verified": false,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
-    },
-    {
-      "id": "943269",
-      "country_code": "ES",
-      "title_original": "Convocatoria para la concesión de ayudas individuales de comedor escolar para el curso 2026-2027",
-      "coofficial_title": "Convocatòria per a la concessió dels ajuts individuals de menjador escolar per al curs 2026-2027",
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · CONSELL COMARCAL DE ALT EMPORDÀ · CONSELL COMARCAL DE ALT EMPORDÀ",
-      "regions": [
-        "ES512 - Girona"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Educación",
-      "start_date": "2026-05-15",
-      "deadline": "2026-11-19",
-      "indefinite_open": false,
-      "total_call_budget": 5322136.25,
-      "total_call_budget_original": 5322136.25,
-      "amount_currency": "EUR",
-      "amount_type": "total_call_budget_not_individual_award",
-      "amount_status": "published",
-      "categories": [
-        "education"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943269",
-      "application_url": "https://www.altemporda.org/",
-      "legal_bases_url": "https://www.altemporda.org/portal/attachments/article/634/Bases_26-27.pdf",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
