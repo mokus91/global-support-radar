@@ -107,8 +107,8 @@ További kapuk:
 3. **Elkészült az első piaci pozicionálási jegyzet:** [revenue-market-positioning.md](revenue-market-positioning.md). A hazai általános pályázatlisták helyett a több országos, többnyelvű, forrásellenőrzött szervezeti riportot jelöli ki tesztelendő különbségként.
 4. **Elkészült az első 10 szervezeti célpont kutatott listája:** [first-10-organizational-prospects.md](first-10-organizational-prospects.md). A lista különválasztja a lehetséges üzleti tesztpartnereket és a szakmai visszajelző csatornákat; megkeresés nem történt.
 5. Következő értékesítési előkészítés: 20 szervezetből álló célcsoportlista nyilvános szervezeti adatokból, majd igényfelmérő megkeresés. Személyes adatot csak szükséges jogalappal kezeljünk.
-4. Kereskedelmi tárhely és jogi/számlázási feltételek rendezése.
-5. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
+6. Kereskedelmi tárhely és jogi/számlázási feltételek rendezése.
+7. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
 
 **Állapot ma:** bevételi modell, értékesítési terv és első riportminta elkészült. Aktív ügyfél, elfogadott partnerprogram, fizetési szolgáltató és tényleges bevétel még nincs.
 
@@ -123,4 +123,17 @@ A generátor:
 - kihagyja a lejárt, lezárt, visszavont és nem ellenőrzött rekordokat;
 - dátumozott Markdown riportot készít, és jelzi a forrásadat pillanatképének korlátait.
 
-Ez még nem automatikus adatletöltés vagy ütemezett szolgáltatás. A generátor első verziója a repositoryba került; a hozzá tartozó GitHub Actions ellenőrzések futása még folyamatban van. Fizetés, ügyfélmegkeresés vagy költségvállalás nem történt.
+Ez még nem automatikus adatletöltés vagy ütemezett szolgáltatás. A generátor első verziója és regressziós tesztjei bekerültek a repositoryba. A 2026-11-20-i staging ellenőrzés és Pages telepítés sikeres volt. Fizetés, ügyfélmegkeresés vagy költségvállalás nem történt.
+
+
+## 9. Riportgenerátor – biztonságosabb adatkezelés (2026-11-20)
+
+A második fejlesztési kör szigorította a riportkészítést:
+- ha a két státuszmező közül bármelyik lezárt/visszavont állapotot jelez, a rekord kizárásra kerül;
+- hibás határidő nem minősül nyitottnak;
+- hibás JSON és nem objektum típusú legfelső JSON-adat biztonságosan kimarad;
+- a riport csak HTTPS forráslinket jelenít meg hivatalos linkként;
+- a nulla összeg nem tűnik el az „nincs megadva” helyettesítés miatt;
+- bővültek a regressziós tesztek a fenti esetekkel.
+
+A generátor továbbra is helyi fájlokból dolgozik; önálló adatletöltés, automatikus email, fizetés vagy banki művelet nincs.
