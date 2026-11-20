@@ -106,7 +106,7 @@ További kapuk:
 2. **Elkészült az első szervezeti riportminta:** [sample-organization-report-2026-11-20.md](sample-organization-report-2026-11-20.md). Két, vállalkozás/startup témájú rekordot mutat be Chiléből és Spanyolországból, külön jelölt ellenőrzési korlátokkal.
 3. **Elkészült az első piaci pozicionálási jegyzet:** [revenue-market-positioning.md](revenue-market-positioning.md). A hazai általános pályázatlisták helyett a több országos, többnyelvű, forrásellenőrzött szervezeti riportot jelöli ki tesztelendő különbségként.
 4. **Elkészült az első 10 szervezeti célpont kutatott listája:** [first-10-organizational-prospects.md](first-10-organizational-prospects.md). A lista különválasztja a lehetséges üzleti tesztpartnereket és a szakmai visszajelző csatornákat; megkeresés nem történt.
-5. Következő értékesítési előkészítés: 20 szervezetből álló célcsoportlista nyilvános szervezeti adatokból, majd igényfelmérő megkeresés. Személyes adatot csak szükséges jogalappal kezeljünk.
+5. **Elkészült a második 10 szervezeti célpont kutatása is:** [next-10-organizational-prospects.md](next-10-organizational-prospects.md). Az első és második listában összesen 20 célpont szerepel; ez kutatási lista, nem igazolt érdeklődői vagy ügyféllista. Jelenleg 0 megkeresés, 0 válasz, 0 igazolt érdeklődő és 0 bevétel. A következő lépés az első 5 célpontra szabott kérdésvázlat előkészítése; külső megkeresés csak külön tulajdonosi jóváhagyással történhet. Személyes adatot csak szükséges jogalappal kezeljünk.
 6. Kereskedelmi tárhely és jogi/számlázási feltételek rendezése.
 7. Csak ezután fizetős pilot, partnerlink vagy szponzoráció bekapcsolása.
 
