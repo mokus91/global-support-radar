@@ -81,6 +81,32 @@ def summarize_pipeline(root=ROOT):
     except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
         return {"state": "ERROR", "counts": {}, "revenue_huf": 0, "errors": [f"Nem feldolgozható pipeline: {exc}"]}
 
+def build_owner_action_queue(root=ROOT):
+    """Return a deterministic, owner-only next-action queue; never contacts prospects."""
+    path = root / PIPELINE_PATH
+    if not path.is_file():
+        return ["- [BLOKKOLT] A bevételi pipeline hiányzik; előbb helyre kell állítani."]
+    try:
+        records = json.loads(path.read_text(encoding="utf-8")).get("records", [])
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return ["- [BLOKKOLT] A bevételi pipeline nem olvasható; kézi ellenőrzés szükséges."]
+    if not isinstance(records, list):
+        return ["- [BLOKKOLT] A bevételi pipeline records mezője nem lista."]
+    priority = {"replied": 0, "contacted": 1, "outreach_approved": 2, "researched": 3, "pilot": 4, "paid_customer": 5}
+    eligible = [item for item in records if isinstance(item, dict) and item.get("status") in priority]
+    eligible.sort(key=lambda item: (priority[item["status"]], str(item.get("organization", "")).casefold(), str(item.get("id", ""))))
+    if not eligible:
+        return ["- Nincs jelenleg rögzített célpont; új célpontkutatás szükséges."]
+    lines = []
+    for item in eligible[:10]:
+        status = item["status"]
+        organization = item.get("organization") or item.get("id") or "Névtelen célpont"
+        next_action = item.get("next_action") or "Következő lépés kézi meghatározása"
+        gates = {"researched": "KUTATÁS / kézi minősítés; kapcsolatfelvétel még nem engedélyezett", "outreach_approved": "TULAJDONOSI JÓVÁHAGYÁS MÁR MEGVAN; küldés csak külön, tényleges végrehajtással", "contacted": "VÁLASZ FIGYELÉSE; újabb üzenet csak külön jóváhagyással", "replied": "IGÉNYVALIDÁLÁS; válasz rögzítése és kézi következő lépés", "pilot": "PILOT TELJESÍTÉS ÉS MINŐSÉGELLENŐRZÉS", "paid_customer": "FIZETÉS ÉS SZÁMLÁZÁS BIZONYLATÁNAK KÉZI EGYEZTETÉSE"}
+        lines.append(f"- **{organization}** ({status}): {next_action}. {gates[status]}.")
+    lines.append("- A lista nem küld e-mailt, nem indít hirdetést, nem foglal időpontot és nem vállal költséget.")
+    return lines
+
 def build_report(now=None, root=ROOT):
     now = now or datetime.now(timezone.utc)
     lines = [
@@ -105,6 +131,7 @@ def build_report(now=None, root=ROOT):
         f"- Pipeline-ban nyilvántartott bevétel: {pipe['revenue_huf']} Ft"]
     lines += [f"- [ELLENŐRZÉSI HIBA] {e}" for e in pipe["errors"]]
     lines += ["", "## Nyitott üzleti és jogi kapuk"] + [f"- [NYITOTT] {x}" for x in BLOCKERS]
+    lines += ["", "## Tulajdonosi teendősor – prioritás szerint"] + build_owner_action_queue(root)
     lines += ["", "## Automatizálható következő lépések",
         "- Friss hivatalos forrásadatokból szervezeti riport előállítása.",
         "- Riportminőség és forrásfrissesség automatikus ellenőrzése.",
