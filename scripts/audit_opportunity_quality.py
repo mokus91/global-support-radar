@@ -22,6 +22,7 @@ report = {
     "unverified_status": 0,
     "verification_tiers": {"verified_open": 0, "api_window_candidate": 0, "official_listing_candidate": 0, "unverified": 0, "other": 0},
     "feed_summary": [],
+    "source_status_summary": [],
     "review_queue_count": 0,
     "review_queue": [],
     "non_opportunity_records": 0,
@@ -41,6 +42,8 @@ TITLE_FIELDS = ("title", "title_hu", "title_original", "coofficial_title")
 URL_FIELDS = ("official_url", "url", "source_url", "final_url")
 AMOUNT_FIELDS = ("amount_maximum", "amount_max", "budget", "total_call_budget", "award_ceiling", "estimated_funding")
 ELIGIBILITY_FIELDS = ("eligibility", "eligible_applicants", "beneficiary", "target_group", "applicant_type")
+
+status_observations = {}
 
 for feed in manifest.get("feeds", []):
     filename = feed.get("file", "")
@@ -103,7 +106,10 @@ for feed in manifest.get("feeds", []):
         deadline_value = next((record.get(k) for k in ("deadline", "acceptance_end", "application_deadline", "close_date", "closeDate") if record.get(k)), None)
         amount_value = next((record.get(k) for k in AMOUNT_FIELDS if record.get(k) not in (None, "", [], {})), None)
         eligibility_value = next((record.get(k) for k in ELIGIBILITY_FIELDS if record.get(k) not in (None, "", [], {})), None)
-        source_status_value = record.get("status") or record.get("status_code") or record.get("application_window_status")
+        source_status_value = record.get("status") or record.get("status_code") or record.get("application_window_status") or record.get("opportunityStatus")
+        if source_status_value not in (None, "", [], {}):
+            status_key = str(source_status_value).strip()[:120]
+            status_observations[(filename, status_key)] = status_observations.get((filename, status_key), 0) + 1
         missing_details = []
         score = 0
         if title:
@@ -201,6 +207,10 @@ for feed in manifest.get("feeds", []):
 
     report["feed_summary"].append(feed_counts)
 
+report["source_status_summary"] = [
+    {"source_file": source_file, "source_status": source_status, "records": count}
+    for (source_file, source_status), count in sorted(status_observations.items(), key=lambda item: (item[0][0], item[0][1].lower()))
+]
 report["feed_errors"] = report["feed_errors"][:100]
 report["review_queue"].sort(key=lambda item: ({"upcoming": 0, "unknown": 1, "unparsed": 2, "expired": 3}.get(item["deadline_state"], 4), -item["score"], item["deadline"] or "9999", item["source_file"], item["id"]))
 report["review_queue"] = report["review_queue"][:50]
