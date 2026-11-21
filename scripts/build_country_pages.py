@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 COUNTRIES = ROOT / "countries"
-BASE_URL = "https://mokus91.github.io/"
+BASE_URL = "https://mokus91.github.io/global-support-radar/"
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ET.register_namespace("", NS)
 
