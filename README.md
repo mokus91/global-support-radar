@@ -1,224 +1,80 @@
 # Global Support Radar
 
-**Élő oldal:** https://mokus91.github.io/
+**Élő szolgáltatás:** https://mokus91.github.io/global-support-radar/  
+**Rendeltetés:** nemzetközi, többnyelvű hivatalos támogatási és pályázati forráskereső  
+**Üzemeltetés:** GitHub Pages és automatizált GitHub Actions munkafolyamatok  
+**Költségkeret:** 0 Ft; fizetős szolgáltatás vagy költés nincs engedélyezve.
 
-A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatalos forrásgyűjtemény állami támogatásokhoz, pályázatokhoz és szociális ellátásokhoz.
+## A rendszer célja
 
-> **Aktuális tulajdonosi irányelv – 2026-11-21:** a Global Support Radar minden látogató számára ingyenes információs szolgáltatás. Nincs hirdetés, fizetős funkció, előfizetés, fizetett rangsor vagy jutalékos ajánlat. A keresés, szűrés és nyilvános hivatalos forráslinkek ingyenesen használhatók. A projekt később külön tulajdonosi döntéssel eladható vagy licencelhető, de a harmadik féltől származó adatok és licencek jogai nem ruházhatók át automatikusan.
+A Global Support Radar állami támogatásokhoz, pályázatokhoz, juttatásokhoz és közszolgáltatásokhoz kapcsolódó hivatalos információforrásokat gyűjt és tesz kereshetővé ország és témakör szerint. Nem hatóság és nem pályázatkezelő: tájékoztató és forrásnavigációs szolgáltatás.
 
-> **Bétaállapot:** a szolgáltatás információs MVP. A források lefedettsége országonként eltérő, a találatok nem jelentenek jogosultsági döntést, és a feltételeket mindig az eredeti hivatalos kiírásban kell ellenőrizni. Az éles weboldal frissülését és a tárhely beállításait külön ellenőrizni kell.
+A szolgáltatás minden látogató számára ingyenes. Nincs fizetős keresés, előfizetés, hirdetési rangsor vagy kötelező regisztráció. A projekt később külön tulajdonosi döntéssel licencelhető vagy értékesíthető; a külső adatforrások és licencek jogai ettől nem szállnak át automatikusan.
 
-## Ingyenes nyilvános működés
+## Nyilvánosan elérhető funkciók
 
-- [Ingyenes használat és átláthatósági alapelvek](https://mokus91.github.io/free-policy.html)
-- A korábbi bevételi, hirdetési és fizetős riportpilot tervek archivált fejlesztési dokumentumok; jelenleg nem aktív szolgáltatások és nem ajánlatok.
+- **Országkereső:** 194 országot tartalmazó országjegyzék.
+- **Témakörök:** család, lakhatás, energia, mezőgazdaság, vállalkozás, oktatás, foglalkoztatás, egészségügy, szociális ellátások, közlekedés és egyéb támogatások.
+- **Többnyelvű felület:** magyar, angol, spanyol, francia, német, olasz, portugál, arab, hindi, orosz és egyszerűsített kínai.
+- **Országoldalak:** hivatalos forrásgyűjtemények és közvetlen hivatkozások.
+- **Keresés és szűrés:** a rendelkezésre álló rekordok ország, kategória és keresőkifejezés szerint szűrhetők.
+- **Mentés:** könyvjelzők helyi böngészőtárolóban.
+- **Export és megosztás:** CSV-export és megosztható keresési hivatkozások.
+- **Határidőnaptár:** a mentett határidők naptárba exportálhatók, ha a rekord dátumot tartalmaz.
+- **Telepíthető webalkalmazás:** PWA-támogatás és korlátozott offline felület.
+- **Automatizált adatfeldolgozás:** ütemezett munkafolyamatok vizsgálják és dolgozzák fel a csatlakoztatott forrásokat.
 
-## Szoftverlicencelés
+## Adatminőség és megbízhatóság
 
-- [Licencelési tájékoztató oldal](https://mokus91.github.io/global-support-radar/licensing.html)
-- [Licencelési keretrendszer](docs/licensing-framework-hu.md)
-- [Nemzetközi piactéri hirdetéstervezet](docs/licensing-marketplace-listing-draft-en.md)
-- [Licencelt csomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
+A rendszer megkülönbözteti a konkrét támogatási programot, pályázati felhívást, ellátást, hivatalos portált, hírt, adatbázis-találatot és történeti címtárbejegyzést. Egy hivatalos portálra mutató link önmagában nem bizonyítja, hogy ott jelenleg nyitott pályázat érhető el.
+
+A rekordok állapota és ellenőrzöttsége forrásonként eltér. Ahol az aktuális beadási időszak, jogosultság, összeg vagy határidő nincs ellenőrizve, a rendszer nem tekintheti automatikusan nyitott támogatásnak. A történeti nemzetközi portáljegyzékek kiindulópontként, nem aktuális támogatási katalógusként vannak megjelölve.
+
+A Global Support Radar nem hoz jogosultsági döntést, nem garantál támogatást, és nem nyújt be kérelmet a látogató helyett. A feltételeket és határidőket mindig az eredeti hivatalos kiírásban kell ellenőrizni.
+
+## Automatizált működés
+
+A nyilvános tárhely GitHub Pages. A GitHub Actions ellenőrzéseket, adatforrás-feldolgozást, országoldal-építést és telepítést végez. Az automatizmusok csak a beállított forrásokból és a rendelkezésre álló hozzáférésekkel tudnak dolgozni. Külső API-hiba, hozzáférés-változás vagy forrásoldali módosítás esetén emberi felülvizsgálat válhat szükségessé.
+
+Az automatizált ellenőrzés nem azonos az összes ország és minden támogatási program folyamatos, teljes körű ellenőrzésével. A frissesség és a részletesség országonként, forrásonként változik.
+
+## Minőségbiztosítás
+
+- JSON-adatok, forrásazonosítók, országkódok és HTTPS-hivatkozások automatikus ellenőrzése.
+- A történeti, nem ellenőrzött portálhivatkozások elkülönítése az aktuális hivatalos forrásoktól.
+- Bizonytalan rekord nem jelenhet meg ellenőrzötten nyitottként.
+- A frissítési és telepítési munkafolyamatok eredményének ellenőrzése.
+- Új külső szolgáltatás, adatlicenc, hirdetés, fizetés vagy költség csak külön tulajdonosi jóváhagyással kapcsolható be.
 
 ## Tulajdonosi, jogi és biztonsági dokumentáció
 
+- [Ingyenes használat és átláthatósági alapelvek](https://mokus91.github.io/global-support-radar/free-policy.html)
+- [Adatminőségi módszertan](https://mokus91.github.io/global-support-radar/methodology.html)
+- [Minőség és ellenőrzési állapot](https://mokus91.github.io/global-support-radar/quality.html)
+- [Frissítések és változásnapló](https://mokus91.github.io/global-support-radar/updates.html)
 - [Tulajdonosi és szellemi tulajdon nyilvántartása](docs/ownership-and-ip.md)
-- [AI-közreműködéssel készült fejlesztés átláthatósági nyilatkozata](docs/ai-assisted-development-disclosure.md)
-- [Előzetes jogi és licencelési audit – 2026-11-20](docs/preliminary-rights-and-licensing-audit-2026-11-20.md)
-- [Adatforrások és API-k kereskedelmi újrafelhasználási előaudit – 2026-11-20](docs/source-data-commercial-reuse-audit-2026-11-20.md)
+- [AI-közreműködéssel készült fejlesztés átláthatósága](docs/ai-assisted-development-disclosure.md)
+- [Előzetes jogi és licencelési audit](docs/preliminary-rights-and-licensing-audit-2026-11-20.md)
+- [Adatforrások kereskedelmi újrafelhasználási előauditja](docs/source-data-commercial-reuse-audit-2026-11-20.md)
 - [Jogosultsági bizonyítékok naplója](docs/rights-evidence-log.md)
 - [Külső anyagok és licencek](THIRD_PARTY_NOTICES.md)
-- [Ikonok és grafikai elemek eredetnyilvántartása](docs/asset-provenance-register.md)
-- [Üzemeltetési biztonság és tulajdonosi ellenőrzőlista](docs/production-security-checklist.md)
-- [Licencelési keretrendszer – tulajdonjog megtartásával](docs/licensing-framework-hu.md)
-- [Nemzetközi piactéri hirdetés – angol tervezet](docs/licensing-marketplace-listing-draft-en.md)
-- [Licencelt forráscsomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
-- [Nem kizárólagos licencszerződés – kitöltendő minta](docs/software-license-agreement-template-hu.md)
-- [Tulajdonosi és alkotói nyilatkozat – privát kitöltésre szánt sablon](docs/owner-authorship-declaration-template-private-use.md)
-- [Privát forráskód és telepítés célarchitektúrája](docs/owner-control-and-deployment-plan.md)
-- [0 Ft-os indulás, önfinanszírozás és tulajdonosi nyereség terve](docs/zero-budget-self-funding-plan.md)
-- [Bevételi motor, szervezeti pilot és értékesítési terv](docs/revenue-engine-roadmap.md)
-- [Személyre szabott érdeklődői kérdésvázlatok](docs/prospect-interview-guides.md)
-- [Második 10 szervezeti célpont kutatása](docs/next-10-organizational-prospects.md)
-- [Fizetőképes ügyféljelöltek – harmadik kutatási hullám](docs/revenue-prospects-wave-3.md)
-- [Három személyre szabott üzleti bemutatóvázlat](docs/three-prospect-demo-briefs.md)
-- [Magyarország / innováció és K+F – ellenőrzött szervezeti riportminta](docs/sample-organization-report-2026-11-20.md)
-- [Partnerhálózat-építési rendszer és megkeresési folyamat](docs/partner-growth-engine.md)
-- [Nemzetközi partnerkutatás – 6. hullám (Afrika, Ázsia, Latin-Amerika)](docs/global-partner-collection-wave-6.md)
-- [Második hullámos partnerhálózati térkép](docs/partner-network-map-wave-2.md)
-- [Kereshető partnerjelölt-adatbázis](partner-network.html)
+- [Üzemeltetési biztonsági ellenőrzőlista](docs/production-security-checklist.md)
 - [Adatbesorolási és ellenőrzési szabvány](docs/data-classification-standard.md)
-- [Szervezeti riportgenerátor – használat és szűrés](docs/organization-report-generator.md)
 
-## Szervezeti riportpilot – nyilvános bemutató és igényfelmérés\n\n- [Szervezeti riportpilot bemutatása](https://mokus91.github.io/global-support-radar/organization-pilot.html)\n- [Nyilvános mintariport](https://mokus91.github.io/global-support-radar/sample-organization-report.html)\n- [Első bevételi megkeresések – tulajdonosi jóváhagyásra váró sablonok](docs/first-revenue-outreach-drafts.md)\n\n## Első fizetős riportpilot – belső előkészítés
+## Licencelhetőség
 
-- [Első fizetős riportpilot ajánlati kerete és sikerfeltételei](docs/first-paid-report-pilot.md)
+A szoftver licencelési és átadási dokumentációja előkészítés alatt áll. Ez nem jelenti azt, hogy minden beépített adat, külső szolgáltatás, grafikai elem vagy harmadik féltől származó tartalom szabadon továbbértékesíthető. Minden ilyen elemre külön jog- és licencellenőrzés szükséges.
 
-## Automatikus riportgyártás
+- [Licencelési tájékoztató](https://mokus91.github.io/global-support-radar/licensing.html)
+- [Licencelési keretrendszer](docs/licensing-framework-hu.md)
+- [Licencelt csomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
 
-- [Automatikus szervezeti riportgyártás](docs/automated-organization-report-production.md)
+## Következő szakmai fejlesztési szakasz
 
-## Önálló bevételi működés
+1. Az országoldalak hivatalos forrásainak egyenkénti ellenőrzése és bővítése.
+2. Egységes forrásdátum, ellenőrzési státusz, jogosultsági feltétel és beadási időszak rögzítése.
+3. Hibás vagy elérhetetlen adatforrások jelzése és javítási folyamata.
+4. Automatizált tesztek bővítése a keresésre, szűrésre, exportokra és adatfrissítésre.
+5. Üzemeltetési mentés, visszaállítás és biztonsági felülvizsgálat dokumentált ellenőrzése.
 
-- [Bevételi lehetőségek és költségfigyelés – kezelőfelület](https://mokus91.github.io/global-support-radar/revenue-hub.html)
-- [Heti, csak olvasási forrásfigyelő munkafolyamat](.github/workflows/zero-cost-opportunity-watch.yml)
-
-- [Önálló bevételi működés és élesítési kapuk](docs/autonomous-revenue-operations.md)
-
-## Bevételfogadás és tulajdonosi kifizetés
-
-- [Fizetési elszámolás és tulajdonosi kifizetés előkészítési terve](docs/payment-and-owner-payout-readiness.md)
-
-## Nyilvános bétaindítás – 0 Ft-os terv
-
-- [0 Ft-os nyilvános bétaindítás és ingyenes tárhely-migrációs ellenőrzőlista](docs/free-launch-readiness.md)
-- [0 Ft-os láthatósági és első bevételi terv](docs/free-visibility-and-first-revenue-plan.md)
-- [Cloudflare Pages beállítása Android telefonról – 0 Ft-os útmutató](docs/cloudflare-pages-android-setup-hu.md)
-
-## Mi működik jelenleg?
-
-- Reszponzív weboldal magyar és angol kezelőfelülettel.
-- Helyi könyvjelzők: a látogató elmentheti a számára érdekes lehetőségeket; a mentések kizárólag az adott böngésző eszközén, localStorage-ban maradnak.
-- A szűrt keresési találatok CSV-fájlba exportálhatók, táblázatkezelőben megnyitható formátumban.
-- A keresések megoszthatók egyedi URL-lel: a keresőszó, ország, kategória és nyelv a hivatkozásban marad; a személyes mentések nem kerülnek bele.
-- Telepíthető webalkalmazás (PWA): Androidon a böngésző „Hozzáadás a kezdőképernyőhöz / Telepítés” lehetőségével indítható.
-- A telepített alkalmazás gyorsműveleteket kínál a világszintű forráskeresőhöz és a magyar támogatási portálokhoz; a PWA stabil alkalmazásazonosítót és kategóriákat is deklarál.
-- A telepíthetőséghez két dokumentált, 512×512 pixeles SVG-ikon tartozik: általános alkalmazásikon és maskable PWA-ikon. A korábbi, ismeretlen eredetű PNG-ikonokat eltávolítottuk; a böngészős és készülékes telepítési megjelenést még külön tesztelni kell.
-- Offline módban a felület gyorsítótárazott váza megnyitható, és figyelmeztetés jelzi, hogy az élő adatok nem frissülnek. A pályázati JSON-adatokat a service worker szándékosan nem tárolja, így nem tüntet fel régi adatot aktuálisként.
-- A mentett, határidővel rendelkező lehetőségek iCalendar (ICS) fájlba exportálhatók; a naptárbejegyzés 7 nappal korábbi emlékeztetőt tartalmaz. Az emlékeztető a felhasználó saját naptáralkalmazásától függ.
-- Nagy találati listáknál fokozatos betöltés működik, így mobilon sem jelenik meg egyszerre több ezer kártya.
-- Országválasztó az ISO országkód-lista alapján, lokalizált országnevekkel.
-- Tíz támogatási kategória: lakhatás, család, mezőgazdaság, vállalkozás, oktatás, egészségügy, energia, foglalkoztatás, szociális támogatás és közlekedés.
-- Világszintű forrásnavigátor: az ENSZ 193 tagállamának nemzeti e-kormányzati portáljegyzéke, az ILO szociális védelmi országprofiljai és a Világbank ASPIRE adatbázisa.
-- 71 ország-specifikus hivatalos forráslink 46 országra, köztük a francia Aides-territoires helyi támogatáskereső és a brit Find a Grant hivatalos portálja. A többi ENSZ-tagállamnál külön megjelölt, történeti UN DESA portálhivatkozás jelenik meg; ezek URL-jeit 2013-ban ellenőrizték, ezért nem tekinthetők friss vagy ellenőrzött támogatáskeresőnek.
-- 27 EU-tagállam nemzeti EU-finanszírozási portálja és 27 országra vonatkozó Európai Bizottság/MISSOC szociális védelmi tájékoztató.
-- A 27 nemzeti EU-finanszírozási portál mezőgazdasági és hat további kategóriájú linkfelderítése átmeneti hálózati hibák esetén legfeljebb két, 9 másodperces időkorlátú próbálkozással fut; a találatok továbbra is ellenőrizendő forráslinkek, nem automatikusan nyitott támogatások.
-- Hat uniós kategória- és finanszírozási gyűjtőoldal, valamint hivatalos francia és német vállalkozásfinanszírozási adatbázisok. A francia Aides-territoires API-ból napi katalógusimport készül; a katalógusrekord nem igazolja a beadási határidőt vagy a nyitott jelentkezést.
-- Egységes nemzetközi támogatási adatstandard: az egyéni maximális támogatási összeg és a teljes pályázati keret külön mezőben szerepel; a pénznem és az összeg jelentése is megőrződik. A kereső ezeket a közös mezőket használja, és a teljes keretet nem nevezi egyéni támogatásnak.
-- A fő kereső hét automatikus hivatalos adatkapcsolatból jelenít meg jelölteket: Japan JGrants (Japán), CORFO (Chile), SNPSAP/BDNS (Spanyolország), Grants.gov (USA), UKRI (Egyesült Királyság), NKFIH (Magyarország) és EU Funding & Tenders (Európai Unió). A rekordok státusza és ellenőrzöttsége forrásonként eltér; a kereső nem állítja, hogy minden jelölt nyitott pályázat.
-- Japán JGrants: napi lekérdezés a japán Digitális Ügynökség nyilvános API-jából, aktív jelentkezési időszakra szűrve. A címek japánul maradnak; a lekérdezés nem teljes körű.
-- Chile CORFO: napi ellenőrzés a Start-Up Chile Growth 13 hivatalos felhívásoldalán.
-- Spanyolország SNPSAP/BDNS: napi nyilvános REST API-lekérdezés; az utolsó 50 regisztrált felhívás részletes jelentkezési időszakát ellenőrzi, és csak aktív vagy határozatlan jelentkezési ablakot mutat. Nem teljes katalógus. A nyitott státusz, határidő és maximális társfinanszírozás csak a hivatalos oldal alapján kerül be; a részletes jogosultságot továbbra is a jogszabályi feltételek határozzák meg.
-- Chile Sercotec: hivatalos felhívásoldalról rögzített, külön jelölt pillanatfelvétel; jelenleg nem automatikus napi adatkapcsolat.
-- Külön ausztrál ARC kutatási támogatási panel (archív/felfedezési adatok, nem általános nyitott pályázati lista) és kanadai CIHR RSS-panel (szűk, egészségkutatási terület; üres lekérés nem jelenti azt, hogy Kanadában nincs támogatás).
-- Magyar hivatalos kiindulópontok családtámogatáshoz, lakhatáshoz, mezőgazdasághoz, vállalkozáshoz, civil/kulturális támogatáshoz és kutatás-fejlesztéshez.
-- Nyolc hivatalos magyar háztartástámogatási tájékoztató és böngészőben futó, előzetes eligazító. Az eligazító válaszai helyben maradnak, nem kerülnek szerverre és nem tárolódnak.
-- Automatikus NKFIH RSS-hírgyűjtés; a hírek ellenőrizetlen pályázati jelöltek, nem garantáltan nyitott felhívások.
-- 125 bejegyzés az ellenőrzött hivatalos forrásregiszterben.
-- Automatikus forrásfrissítés naponta négyszer (01:23, 07:23, 13:23 és 19:23 UTC) GitHub Actions segítségével; kézi workflow-indítás is be van állítva. A sikertelen külső lekérések külön hibastátuszt kapnak, és ahol biztonságos, az előző adatpillanatkép megmarad.
-- A források elérhetőségét külön napi ellenőrzés vizsgálja. A weboldalon külön adatfrissítési állapotpanel mutatja a 18 automatikusan vizsgált adatfolyam legutóbbi ellenőrzési idejét és eredményét; az ellenőrzés nem jelent támogatási jogosultságot vagy nyitott pályázatot. A 401/403/429 vagy hálózati hiba nem feltétlenül jelent megszűnt oldalt.
-
-## Fontos korlátok — mit nem állít a rendszer?
-
-Ez egy működő MVP, nem teljes világméretű támogatási adatbázis. Az országválasztó globális, de az automatikus pályázati adatkapcsolatok jelenleg csak néhány országra és programcsoportra terjednek ki. Sok ország esetében a rendszer hivatalos portálra irányít, nem pedig egyenként feldolgozott aktuális támogatásokat mutat.
-
-A felismert pályázati rekordok többsége **ellenőrizetlen jelölt**. A keresőtalálat vagy adatbázis-bejegyzés önmagában nem bizonyítja, hogy a felhívás még nyitott, az összeg igényelhető, vagy a látogató jogosult. A felhasználónak mindig meg kell nyitnia az eredeti hivatalos kiírást, és ellenőriznie kell a határidőt, a jogosultságot, az összeget és a benyújtás módját.
-
-A kezelőfelület jelenleg magyar és angol nyelvű; a programok eredeti címeit és forrásnyelvét megőrizzük. Nem állítjuk, hogy minden ország saját nyelvén teljes fordítás érhető el.
-
-A történeti támogatási adatbázisok, odaítélt támogatások nyilvántartásai, forrásjegyzékek és aktuális pályázati felhívások külön vannak kezelve. A korábbi támogatás vagy egy általános adatbázis-bejegyzés nem jelent most igényelhető támogatást.
-
-A weboldal nem nyújt be kérelmet, nem hoz jogosultsági döntést, nem kér érzékeny személyes adatot, és nem garantál támogatást.
-
-## Adatforrások és automatizálás
-
-A napi GitHub Actions folyamat a következő fő adaptereket futtatja:
-
-| Forrás | Mit gyűjt? | Korlát |
-| --- | --- | --- |
-| data.europa.eu | EU-s közadatkatalógus-metaadatok | Nem egyedi pályázati jogosultság |
-| EU Funding & Tenders | EU-s felhívásjelöltek | A hivatalos témalapon ellenőrizendő |
-| EU CAP Network | Mezőgazdasági és vidéki innovációs felhívásjelöltek | A forrásoldalon ellenőrizendő |
-| 27 EU nemzeti portál | Mezőgazdasági és több ágazati hivatkozás | Linkfelderítés, nem nyitott pályázat-ellenőrzés |
-| Grants.gov | Amerikai szövetségi pályázatok | Előre jelzett vagy szervezeteknek szóló lehetőségek is lehetnek |
-| UKRI | Brit kutatásfinanszírozási lehetőségek | Nem teljes brit támogatási katalógus |
-| Japan JGrants | Aktív jelentkezési időszakú japán támogatások | Kulcsszavas API-lekérdezés, nem teljes leltár |
-| Spain SNPSAP/BDNS | Legutóbbi 50 regisztrált felhívás jelentkezési időszakának ellenőrzése | Nem teljes katalógus; csak API szerinti aktív időszakok |
-| Chile CORFO | Start-Up Chile Growth 13 | Egy hivatalos felhívásoldal napi ellenőrzése |
-| Australian ARC | Kutatásfinanszírozási rekordok | Külön archív/felfedezési panel |
-| Canadian CIHR | Egészségkutatási RSS-hírek | Szűk terület, külön panel |
-| New Zealand Funding Explorer | Hivatalos üzleti támogatási katalógus | Programlistázás; nincs automatikusan igazolt nyitott státusz vagy határidő |
-| Magyar nyíltadat- és RSS-források | Adatkatalógusok és pályázati hírek | A hírek nem automatikusan nyitott kiírások |
-
-## Adatstruktúra
-
-- `index.html` — felhasználói felület és keresési logika.
-- `data/source-registry.json` — hivatalos forrásregiszter (125 rekord).
-- `data/worldwide-national-support-sources.json` — 71 ország-specifikus forrás 46 országból.
-- `data/un-national-portals.json` — 193 ENSZ-tagállam történeti nemzeti portáljegyzéke.
-- `data/global-support-directory.json` — globális hivatalos és szociális védelmi hivatkozások.
-- `data/europe-national-portals.json` — EU-tagállami finanszírozási portálok.
-- `data/eu-social-protection-country-pages.json` — 27 EU-tagállam MISSOC tájékoztatója.
-- `data/hu-household-support.json` — magyar háztartástámogatási tájékoztatók.
-- `data/*-discovery.json` — automatikusan vagy kézzel frissített felfedezési rekordok.
-- `scripts/` — adatforrás-adapterek, országportál-építők és ellenőrzések.
-- `.github/workflows/source-discovery.yml` — napi adatfrissítő folyamat.
-- `docs/architecture.md` — adatfolyam és ellenőrzési szabályok.
-- `docs/data-standard.md` — országokon átívelő közös rekord-, pénzügyi és jogosultsági adatstandard.
-
-## Helyi futtatás
-
-A napi workflow Python 3.12-t használ. A fő ellenőrzés:
-
-```bash
-python -m pip install certifi pycountry
-python -m compileall -q scripts
-python scripts/validate_project.py
-```
-
-Az egyes adapterek külön is futtathatók a `scripts/` mappából.
-
-## Ellenőrzési szabály
-
-Egy rekord csak akkor kaphat „open-and-current” státuszt, ha az eredeti hivatalos felhívásoldal igazolja a nyitott állapotot, a határidőt, a jogosultak körét, a támogatás feltételeit és a jelentkezési útvonalat. A jelenlegi automatikus adapterek többsége felfedezést végez, nem teljes körű jogosultsági ellenőrzést; ezért az eredmények ellenőrizetlen jelöltként jelennek meg.
-
-## Adatvédelem és későbbi bevételszerzés
-
-A jelenlegi MVP nem igényel felhasználói fiókot, és nem tárol személyes jogosultsági profilokat. Érzékeny adatot nem szabad gyűjteni, ha az nem feltétlenül szükséges. A személyes adatokat nem szabad értékesíteni. A későbbi hirdetések vagy szponzorált megjelenések egyértelműen jelölendők, és nem befolyásolhatják a források ellenőrzését vagy az organikus találati sorrendet.
-
-
-## Keresőoptimalizálás és felfedezhetőség
-
-A weboldal magyar nyelvű alapértelmezett címet és leírást, Open Graph megosztási metaadatokat, Schema.org WebSite/SearchAction strukturált adatot, robots.txt fájlt és XML oldaltérképet használ. Az oldaltérkép kizárólag a stabil kezdőoldalt tartalmazza; az automatikusan felfedezett támogatásjelöltek nem kapnak külön indexelhető URL-t, amíg nincs hozzájuk ellenőrzött, önálló részletes oldal. Ez segít elkerülni a vékony vagy félrevezető keresőtalálatokat.
-
-## Globális méretezhetőség és terhelhetőség
-
-- [Globális skálázási és terhelhetőségi terv](docs/global-scale-architecture.md)
-
-## Bevételi modell és termékfejlesztési irány
-
-- [Bevételi pipeline és státuszszabályok](docs/revenue-pipeline-operations.md)
-
-A bevételszerzéshez külön, egyértelműen jelölt hirdetési és szponzorált felületek, opcionális prémium értesítések, mentett keresések és szervezeti/partneri csomagok tervezhetők. A jelenlegi GitHub Pages kiadás statikus frontend: önmagában nem biztosít biztonságos felhasználói fiókot, előfizetés-kezelést, fizetést vagy szerveroldali jogosultság-ellenőrzést. Ezeket csak külön backenddel, adatvédelmi és fizetési folyamatokkal szabad élesíteni. A fizetős funkciók nem befolyásolhatják a hivatalos források minősítését vagy a természetes találati sorrendet.
-
-
-## Tulajdonosi és jogi dokumentáció
-
-- [Proprietary rights notice](LICENSE)
-- [Ownership and intellectual-property record](docs/ownership-and-ip.md)
-- [Rights and development evidence log](docs/rights-evidence-log.md)
-- [Third-party materials and source obligations](THIRD_PARTY_NOTICES.md)
-
-Ezek a dokumentumok a projekt eredeti anyagainak védelmi szándékát és a fejlesztési nyomvonalat rögzítik. Nem helyettesítik az aláírt jogátruházási megállapodásokat, és nem teszik a külső adatokat vagy szoftvereket a projekt tulajdonává. A nyilvános GitHub-tárhely továbbra is nyilvános, a GitHub feltételei szerint megtekinthető és fork-olható.
-
-- Tulajdonosi és üzemeltetési kontrollterv: `docs/owner-control-and-deployment-plan.md` (technikai terv, nem jogi igazolás).
-
-- [Szervezeti bemutató és visszajelzési lap](docs/organizational-demo-walkthrough.md)
-
-- [Szervezeti pilot végrehajtási és minőségellenőrzési munkalap](docs/organizational-pilot-execution-checklist.md)
-
-
-### Többprofilos szervezeti riportok
-
-- Profilbeállítások: `config/report-profiles.json`
-- Többprofilos riportgenerátor: `scripts/build_report_portfolio.py`
-- Automatizált gyártás és tesztek: `docs/automated-organization-report-production.md`
-
-
-### Támogatási lehetőségek változásfigyelése
-
-- Változásnapló olvasható összefoglalója: `scripts/build_opportunity_change_digest.py`
-- Szabályok és korlátok: `docs/opportunity-change-digest.md`
-
-
-- [Nyilvános adatváltozási napló](updates.html)
+A cél egy megbízható, hosszú távon fenntartható nemzetközi információs szolgáltatás. A rendszer nem állít teljes körű ország- vagy programlefedettséget; a nyilvános funkciók és az ellenőrzött adatlefedettség fokozatosan bővül.
