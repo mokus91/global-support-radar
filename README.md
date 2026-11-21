@@ -4,7 +4,14 @@
 
 A Global Support Radar mobilbarát, magyar és angol nyelvű kereső és hivatalos forrásgyűjtemény állami támogatásokhoz, pályázatokhoz és szociális ellátásokhoz.
 
-> **Bétaállapot:** a projekt jelenleg információs MVP. A díjmentes indulás előkészítése folyamatban van; a Cloudflare-fiók összekapcsolása és az új tárhelyen végzett ellenőrzés még nem történt meg. Fizetés, előfizetés és bevétel jelenleg nincs bekapcsolva.
+> **Aktuális tulajdonosi irányelv – 2026-11-21:** a Global Support Radar minden látogató számára ingyenes információs szolgáltatás. Nincs hirdetés, fizetős funkció, előfizetés, fizetett rangsor vagy jutalékos ajánlat. A keresés, szűrés és nyilvános hivatalos forráslinkek ingyenesen használhatók. A projekt később külön tulajdonosi döntéssel eladható vagy licencelhető, de a harmadik féltől származó adatok és licencek jogai nem ruházhatók át automatikusan.
+
+> **Bétaállapot:** a szolgáltatás információs MVP. A források lefedettsége országonként eltérő, a találatok nem jelentenek jogosultsági döntést, és a feltételeket mindig az eredeti hivatalos kiírásban kell ellenőrizni. Az éles weboldal frissülését és a tárhely beállításait külön ellenőrizni kell.
+
+## Ingyenes nyilvános működés
+
+- [Ingyenes használat és átláthatósági alapelvek](https://mokus91.github.io/free-policy.html)
+- A korábbi bevételi, hirdetési és fizetős riportpilot tervek archivált fejlesztési dokumentumok; jelenleg nem aktív szolgáltatások és nem ajánlatok.
 
 ## Szoftverlicencelés
 
