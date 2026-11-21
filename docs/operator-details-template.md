@@ -2,11 +2,11 @@
 
 Project: Global Support Radar
 Chosen operating intention: natural person / private individual
-Status: NOT READY TO PUBLISH — operator name supplied; remaining legal/contact details and processing disclosures are not yet complete or verified.
+Status: NOT READY TO PUBLISH — operator identity was supplied in chat but is intentionally not reproduced in this public repository; remaining legal/contact details and processing disclosures are not complete or verified.
 Last updated: 2026-11-21
 
 ## Public legal notice fields (do not publish until completed)
-- Operator's full legal name: Tóth Csaba Mihály [supplied by the operator; spelling not independently verified]
+- Operator's full legal name: [SUPPLIED PRIVATELY; confirm separately before any public publication]
 - Address / residence address required for the applicable service: [TO BE PROVIDED AND CONFIRMED PRIVATELY; assess lawful public disclosure options]
 - Regularly monitored contact email: [TO BE PROVIDED AND TESTED]
 - Tax number / VAT status, if applicable: [VERIFY WITH NAV / ACCOUNTANT BEFORE PUBLICATION]
