@@ -7,7 +7,7 @@
 ## 1. Adatkezelő
 - Adatkezelő neve: a teljes jogi név az üzemeltető által privát csatornán megadva; nem kerül ebbe a nyilvános munkafájlba.
 - Közzéteendő cím: cím privát csatornán megadva; nyilvános közzétételének szükségessége és jogszerűsége még vizsgálandó.
-- Adatvédelmi megkeresések e-mail-címe: e-mail privát csatornán megadva; működése és rendszeres figyelése még ellenőrizendő.
+- Adatvédelmi megkeresések e-mail-címe: csabikatoth25@gmail.com (az üzemeltető kifejezetten engedélyezte a nyilvános közzétételt); a cím működését és rendszeres figyelését még ellenőrizni kell.
 - Adatvédelmi tisztviselő: [KIJELÖLÉS SZÜKSÉGESSÉGÉNEK JOGI ELEMZÉSE SZÜKSÉGES]
 
 ## 2. A szolgáltatás jellege
@@ -38,7 +38,8 @@ A végleges tájékoztatóban ismertetni kell a GDPR szerinti hozzáférés, hel
 ## 8. Közzététel előtti ellenőrzőlista
 - [x] Üzemeltető teljes jogi neve privát csatornán megadva.
 - [ ] Közzéteendő cím jogszerűsége és szükségessége tisztázva.
-- [ ] Megadott kapcsolattartási e-mail működése és rendszeres figyelése ellenőrizve.
+- [x] Kapcsolattartási e-mail nyilvános közzétételét az üzemeltető engedélyezte.
+- [ ] Kapcsolattartási e-mail működése és rendszeres figyelése ellenőrizve.
 - [ ] Teljes localStorage-kulcslista és pontos tartalom dokumentálva.
 - [ ] Böngészőértesítések működésének vizsgálata.
 - [ ] Tiszta böngészőprofilban sütik, localStorage, sessionStorage, IndexedDB és külső hálózati kérések vizsgálata.
