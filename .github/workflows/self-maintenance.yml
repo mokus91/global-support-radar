@@ -1,0 +1,74 @@
+name: Global Support Radar self-maintenance
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "53 5 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: global-support-radar-self-maintenance
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out project
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.5.0
+        with:
+          python-version: "3.12"
+      - name: Validate project data and frontend
+        run: python scripts/validate_project.py
+      - name: Validate public sitemap
+        run: python scripts/validate_sitemap.py
+      - name: Run automated regression tests
+        run: |
+          python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Audit opportunity data quality
+        run: python scripts/audit_opportunity_quality.py > reports/self-maintenance-quality-audit.json
+      - name: Build maintenance summary
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          report = json.loads(Path("reports/self-maintenance-quality-audit.json").read_text(encoding="utf-8"))
+          lines = [
+              "# Global Support Radar – automatikus állapotellenőrzés",
+              "",
+              f"**Ellenőrzés ideje:** {datetime.now(timezone.utc).isoformat()}",
+              "",
+              "## Ellenőrzött adatok",
+              f"- Adatfolyamok: {report.get('feeds_checked', 0)}",
+              f"- Vizsgált rekordok: {report.get('records_checked', 0)}",
+              f"- Lejárt határidők: {report.get('expired_deadlines', 0)}",
+              f"- Hiányzó hivatalos URL-ek: {report.get('missing_urls', 0)}",
+              f"- Hibás URL-ek: {report.get('invalid_urls', 0)}",
+              f"- Duplikált azonosítók: {report.get('duplicate_ids', 0)}",
+              f"- Bizonytalan státuszú rekordok: {report.get('unverified_status', 0)}",
+              f"- Adatfolyam-hibák: {len(report.get('feed_errors', []))}",
+              "",
+              "## Fontos értelmezés",
+              "- A minőségellenőrzés nem igazolja automatikusan, hogy egy támogatás nyitott vagy hogy a látogató jogosult rá.",
+              "- A rendszer nem írja át és nem törli automatikusan a forrásrekordokat.",
+              "- Ez az ellenőrzés nem módosítja a nyilvános weboldalt, nem küld üzenetet, és nem végez pénzügyi műveletet.",
+              "- A részletes gépi audit a csomagban található JSON-fájl.",
+              ""
+          ]
+          Path("reports/self-maintenance-summary.md").write_text("\n".join(lines), encoding="utf-8")
+          PY
+      - name: Preserve maintenance report
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: global-support-radar-maintenance-${{ github.run_number }}
+          path: |
+            reports/self-maintenance-summary.md
+            reports/self-maintenance-quality-audit.json
+          if-no-files-found: error
+          retention-days: 30
