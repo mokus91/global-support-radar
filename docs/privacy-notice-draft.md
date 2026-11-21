@@ -5,7 +5,7 @@
 **Állapot: NEM KÖZZÉTEHETŐ.** Belső munkavázlat. A hiányzó adatokat ki kell tölteni, az adatfolyamokat és külső szolgáltatók aktuális feltételeit ellenőrizni kell, majd a végleges szöveget szakértővel felül kell vizsgáltatni.
 
 ## 1. Adatkezelő
-- Adatkezelő neve: a teljes jogi név az üzemeltető által privát csatornán megadva; nem kerül ebbe a nyilvános munkafájlba.
+- Adatkezelő neve: Tóth Csaba Mihály (az üzemeltető kifejezetten engedélyezte a nyilvános feltüntetést).
 - Közzéteendő cím: cím privát csatornán megadva; nyilvános közzétételének szükségessége és jogszerűsége még vizsgálandó.
 - Adatvédelmi megkeresések e-mail-címe: csabikatoth25@gmail.com (az üzemeltető kifejezetten engedélyezte a nyilvános közzétételt); a cím működését és rendszeres figyelését még ellenőrizni kell.
 - Adatvédelmi tisztviselő: [KIJELÖLÉS SZÜKSÉGESSÉGÉNEK JOGI ELEMZÉSE SZÜKSÉGES]
@@ -36,8 +36,8 @@ Előzetesen azonosított szolgáltatók: GitHub Pages / GitHub (tárhely és vis
 A végleges tájékoztatóban ismertetni kell a GDPR szerinti hozzáférés, helyesbítés, törlés, korlátozás, tiltakozás, adathordozhatóság és hozzájárulás-visszavonás feltételeit, továbbá a NAIH-hoz fordulás lehetőségét. A joggyakorlásra szolgáló kapcsolattartó e-mail-cím még hiányzik.
 
 ## 8. Közzététel előtti ellenőrzőlista
-- [x] Üzemeltető teljes jogi neve privát csatornán megadva.
-- [ ] Közzéteendő cím jogszerűsége és szükségessége tisztázva.
+- [x] Üzemeltető teljes jogi neve és nyilvános feltüntetésének engedélye rögzítve.
+- [ ] Közzéteendő cím jogszerűsége és szükségessége tisztázva; a lakcím nincs engedélyezve nyilvános közzétételre.
 - [x] Kapcsolattartási e-mail nyilvános közzétételét az üzemeltető engedélyezte.
 - [ ] Kapcsolattartási e-mail működése és rendszeres figyelése ellenőrizve.
 - [ ] Teljes localStorage-kulcslista és pontos tartalom dokumentálva.
