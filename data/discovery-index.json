@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T08:23:27.034050+00:00",
+  "generated_at": "2026-11-21T10:28:08.997498+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 182,
+  "discovered_datasets_count": 181,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -904,14 +904,6 @@
       "title": "Inventory of subventions - Etterbeek",
       "url": "https://datastore.brussels/web/data/dataset/f5a2ea96-88e2-4ec7-82ae-ade6e47ee930",
       "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IPA03 - Structural business statistics",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
