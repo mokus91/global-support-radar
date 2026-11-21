@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T16:14:14.328493+00:00",
+  "generated_at": "2026-11-21T19:59:56.071244+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 179,
+  "discovered_datasets_count": 181,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,15 +117,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
-      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Advertising medium Punkt Wien",
+      "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -216,14 +208,6 @@
       "title": "Beneficiaries of housing assistance — Sailly-Lez-Lannoy",
       "url": "https://www.data.gouv.fr/datasets/beneficiaires-dune-aide-au-logement-sailly-lez-lannoy",
       "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
-      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
-      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -565,6 +549,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -749,14 +741,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "IEWA13 - Households (with and without disability) on Housing Assistance Payment (HAP) Scheme",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA13/JSON-stat/2.0/en",
       "query": "housing assistance",
@@ -917,6 +901,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "IPA03 - Structural business statistics",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "IPA04 - Structural Business Statistics",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA04/JSON-stat/2.0/en",
       "query": "business funding",
@@ -965,6 +957,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -999,14 +999,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1072,6 +1064,14 @@
       "title": "PoliS - Lombardy Grants subsidies economic advantages - Grants Scholarships -",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/polis-lombardia-sovvenzioni-sussidi-vantaggi-economici-contributi-borse-di-studio#",
       "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Political funding",
+      "url": "https://politikfinanzierung.efk.admin.ch/",
+      "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1197,6 +1197,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Scholarship students in health and social training (Feb. 2009)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2009/",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Scholarship students in health and social training (Feb. 2012)",
       "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_fev_2012/",
       "query": "scholarships",
@@ -1303,6 +1311,14 @@
     {
       "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes at 30. 11. 2023",
       "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (calls) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-vyzvy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
       "query": "public support programmes",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

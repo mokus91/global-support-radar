@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-21T16:14:01+00:00",
+  "checked_at": "2026-11-21T19:59:41+00:00",
   "records_count": 74,
   "summary": {
-    "connection_error": 12,
+    "connection_error": 9,
     "http_error": 2,
-    "reachable": 52,
-    "restricted": 8
+    "reachable": 54,
+    "restricted": 9
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -359,8 +359,9 @@
     },
     {
       "id": "national-ph-agriculture-2",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
     },
     {
       "id": "national-ph-business-3",
@@ -410,8 +411,9 @@
     },
     {
       "id": "fr-aides-territoires",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://aides-territoires.beta.gouv.fr/"
     },
     {
       "id": "nz-business-funding-explorer",
@@ -433,8 +435,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "restricted",
+      "http_status": 429,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",

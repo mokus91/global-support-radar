@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:28:23.162155+00:00",
+  "generated_at": "2026-11-21T20:06:10.935450+00:00",
   "feeds_checked": 18,
   "records_checked": 2207,
   "expired_deadlines": 1,
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "checked",
+      "status": "temporarily-unavailable",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
+      "note": "<urlopen error timed out>"
     },
     {
       "name": "Worldwide — portal reachability",
@@ -1440,7 +1440,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 12,
+  "diagnostic_missing_urls": 9,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

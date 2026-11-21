@@ -1,32 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-21T16:19:52+00:00",
-  "events_count": 3,
-  "events": [
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519656topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-21T16:19:52+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52519691topicsen",
-      "title": "TV and online content",
-      "detected_at": "2026-11-21T16:19:52+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52740317topicsen",
-      "title": "Erasmus Mundus Design Measures",
-      "detected_at": "2026-11-21T16:19:52+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    }
-  ],
+  "generated_at": "2026-11-21T20:06:10+00:00",
+  "events_count": 0,
+  "events": [],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }
