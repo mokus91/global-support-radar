@@ -1,9 +1,9 @@
 /* Global Support Radar analytics configuration.
- * Free, privacy-friendly GoatCounter integration.
- * Set siteCode only after creating/claiming the site's free GoatCounter account.
- * Until then, tracking remains OFF and no visitor data is sent anywhere.
+ * GoatCounter site code configured for the Global Support Radar website.
+ * Tracking starts after the updated site is deployed; verify the email address
+ * in GoatCounter to complete account verification.
  */
 window.GSR_ANALYTICS = Object.freeze({
   provider: "goatcounter",
-  siteCode: ""
+  siteCode: "global-support-radar-mokus91"
 });
