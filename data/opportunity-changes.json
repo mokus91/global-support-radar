@@ -1,7 +1,39 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T20:19:29+00:00",
-  "events_count": 0,
-  "events": [],
+  "generated_at": "2026-11-21T02:25:38+00:00",
+  "events_count": 3,
+  "events": [
+    {
+      "type": "new",
+      "feed": "us-grants-discovery.json",
+      "key": "id:364299",
+      "title": "Fiscal Year (FY) 2027 Service Area Competition (SAC)",
+      "detected_at": "2026-11-21T02:25:38+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "us-grants-discovery.json",
+      "key": "id:364298",
+      "title": "Facilitating Behavior Change Training for Trainers",
+      "detected_at": "2026-11-21T02:25:38+00:00"
+    },
+    {
+      "type": "changed",
+      "feed": "us-grants-discovery.json",
+      "key": "id:358100",
+      "title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "before": {
+        "status": "posted",
+        "deadline": "2026-11-30",
+        "title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program"
+      },
+      "after": {
+        "status": "posted",
+        "deadline": "2027-01-31",
+        "title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program"
+      },
+      "detected_at": "2026-11-21T02:25:38+00:00"
+    }
+  ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }

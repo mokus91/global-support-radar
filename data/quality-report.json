@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-21T01:53:04.755276+00:00",
+  "generated_at": "2026-11-21T02:25:39.092202+00:00",
   "feeds_checked": 18,
-  "records_checked": 2205,
+  "records_checked": 2207,
   "expired_deadlines": 10,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1985,
+  "unverified_status": 1987,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 211,
-    "official_listing_candidate": 1916,
+    "official_listing_candidate": 1918,
     "unverified": 69,
     "other": 8
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 211,
-    "needs_verification": 1983,
+    "needs_verification": 1985,
     "expired_or_closed": 10
   },
   "verification_dimensions": {
@@ -119,11 +119,11 @@
     },
     {
       "file": "us-grants-discovery.json",
-      "records": 1383,
+      "records": 1385,
       "procurement_candidates": 0,
-      "unverified": 1383,
+      "unverified": 1385,
       "api_window_candidates": 0,
-      "official_listing_candidates": 1383,
+      "official_listing_candidates": 1385,
       "historical_archive_records": 0
     },
     {
@@ -285,7 +285,7 @@
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
       "status": "checked",
-      "records_count": 1383,
+      "records_count": 1385,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -413,12 +413,12 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "forecasted",
-      "records": 587
+      "records": 588
     },
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 796
+      "records": 797
     }
   ],
   "review_queue_count": 50,
