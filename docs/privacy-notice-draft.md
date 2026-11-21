@@ -5,9 +5,9 @@
 **Állapot: NEM KÖZZÉTEHETŐ.** Belső munkavázlat. A hiányzó adatokat ki kell tölteni, az adatfolyamokat és külső szolgáltatók aktuális feltételeit ellenőrizni kell, majd a végleges szöveget szakértővel felül kell vizsgáltatni.
 
 ## 1. Adatkezelő
-- Adatkezelő neve: [TELJES JOGI NÉV — HIÁNYZIK]
-- Közzéteendő cím: [JOGSZERŰEN KÖZZÉTEENDŐ CÍM — HIÁNYZIK]
-- Adatvédelmi megkeresések e-mail-címe: [MŰKÖDŐ E-MAIL — HIÁNYZIK]
+- Adatkezelő neve: a teljes jogi név az üzemeltető által privát csatornán megadva; nem kerül ebbe a nyilvános munkafájlba.
+- Közzéteendő cím: cím privát csatornán megadva; nyilvános közzétételének szükségessége és jogszerűsége még vizsgálandó.
+- Adatvédelmi megkeresések e-mail-címe: e-mail privát csatornán megadva; működése és rendszeres figyelése még ellenőrizendő.
 - Adatvédelmi tisztviselő: [KIJELÖLÉS SZÜKSÉGESSÉGÉNEK JOGI ELEMZÉSE SZÜKSÉGES]
 
 ## 2. A szolgáltatás jellege
@@ -36,8 +36,9 @@ Előzetesen azonosított szolgáltatók: GitHub Pages / GitHub (tárhely és vis
 A végleges tájékoztatóban ismertetni kell a GDPR szerinti hozzáférés, helyesbítés, törlés, korlátozás, tiltakozás, adathordozhatóság és hozzájárulás-visszavonás feltételeit, továbbá a NAIH-hoz fordulás lehetőségét. A joggyakorlásra szolgáló kapcsolattartó e-mail-cím még hiányzik.
 
 ## 8. Közzététel előtti ellenőrzőlista
-- [ ] Üzemeltető teljes jogi neve és közzéteendő címe megerősítve.
-- [ ] Működő adatvédelmi kapcsolattartó e-mail ellenőrizve.
+- [x] Üzemeltető teljes jogi neve privát csatornán megadva.
+- [ ] Közzéteendő cím jogszerűsége és szükségessége tisztázva.
+- [ ] Megadott kapcsolattartási e-mail működése és rendszeres figyelése ellenőrizve.
 - [ ] Teljes localStorage-kulcslista és pontos tartalom dokumentálva.
 - [ ] Böngészőértesítések működésének vizsgálata.
 - [ ] Tiszta böngészőprofilban sütik, localStorage, sessionStorage, IndexedDB és külső hálózati kérések vizsgálata.
