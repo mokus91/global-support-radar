@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setDatabaseEnabled(true);
         webView.getSettings().setLoadsImagesAutomatically(true);
-        webView.getSettings().set supportZoom(false);
+        webView.getSettings().setSupportZoom(false);
         CookieManager.getInstance().setAcceptCookie(true);
         webView.setWebChromeClient(new WebChromeClient());
         webView.setWebViewClient(new WebViewClient() {
