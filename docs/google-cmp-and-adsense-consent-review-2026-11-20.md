@@ -47,3 +47,16 @@ A Google AdSense-kód jelenléte önmagában nem igazolja sem a hirdetésmegjele
 ## 6. Korlátozások
 
 Ez a dokumentum a Google közzétett hirdetési követelményeit foglalja össze. Nem minősül jogi szakvéleménynek, nem helyettesíti a GDPR/ePrivacy megfelelőség teljes vizsgálatát, és nem igazolja az AdSense-fiók aktuális beállításait.
+
+
+## 7. Frissítés – 2026-11-21: TCF v2.4
+
+A Google aktuális, „About European regulations messages” súgóoldala már azt jelzi, hogy a Privacy & Messaging európai szabályozási üzenetei támogatják az IAB TCF v2.4 specifikációt. Ugyanez az oldal azt közli, hogy a TCF v2.4 teljes körű implementálásának kötelező IAB-határnapja 2026. október 23. volt. A Google Ad Manager súgóoldala szintén a v2.4 támogatást és az október 23-i határidőt említi.
+
+Következmény: az ellenőrzési listában a „TCF-integráció” mellett külön ellenőrizni kell, hogy az aktuális CMP ténylegesen v2.4 kompatibilis-e, a hozzájárulási karakterlánc érvényes-e, és a Google hirdetési partnerek felé megfelelő jeleket ad-e át. A korábbi TCF v2.3-ra utaló megjegyzés nem tekinthető naprakész konfigurációs igazolásnak.
+
+Források:
+- Google – About European regulations messages: https://support.google.com/admanager/answer/10076805
+- Google – Troubleshooting IAB EU TCF v2.3 implementation / TCF version support: https://support.google.com/admanager/answer/9999955
+
+Ez továbbra is belső munkadokumentum; a tényleges fiókbeállítások és a webhely böngészős tesztje nélkül a megfelelőség nem igazolt.
