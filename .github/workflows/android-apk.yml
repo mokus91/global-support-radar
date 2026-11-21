@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android app packages
 
 on:
   workflow_dispatch:
@@ -23,13 +23,15 @@ jobs:
           java-version: '17'
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: Build debug APK
+      - name: Build Android APK and Play bundle
         working-directory: android
-        run: gradle assembleDebug
-      - name: Upload APK
+        run: gradle assembleDebug bundleRelease
+      - name: Upload Android packages
         uses: actions/upload-artifact@v4
         with:
-          name: Global-Support-Radar-Android-APK
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: Global-Support-Radar-Android-Packages
+          path: |
+            android/app/build/outputs/apk/debug/app-debug.apk
+            android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
           retention-days: 30
