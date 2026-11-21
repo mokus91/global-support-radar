@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-21T02:23:00Z",
+  "generated_at": "2026-11-21T08:24:54Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 17,
-  "records_count": 6,
+  "portals_checked": 18,
+  "records_count": 7,
   "records": [
     {
       "id": "national-agri-cz-1",
@@ -83,6 +83,21 @@
       "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
+      "id": "national-agri-se-1",
+      "country_code": "SE",
+      "country_en": "Sweden",
+      "country_hu": "Svédország",
+      "title": "För första gången samordnas EU-stöd för jordbruk och förädling",
+      "official_url": "https://eufonder.se/eufonder/omeufonder/nyheter/nyheter/forforstagangensamordnaseustodforjordbrukochforadling.13270.html",
+      "portal_url": "https://eufonder.se/",
+      "publisher": "Official national EU funding portal",
+      "category": "agriculture",
+      "record_type": "national-agriculture-link-discovery",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
+    },
+    {
       "id": "national-agri-sk-1",
       "country_code": "SK",
       "country_en": "Slovakia",
@@ -134,10 +149,6 @@
     {
       "country_code": "RO",
       "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "country_code": "SE",
-      "error": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
     }
   ]
 }

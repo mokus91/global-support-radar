@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-21T07:51:27.729152+00:00",
+  "generated_at": "2026-11-21T08:27:28.602475+00:00",
   "feeds_checked": 18,
-  "records_checked": 2207,
-  "expired_deadlines": 10,
+  "records_checked": 2208,
+  "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1987,
+  "unverified_status": 1986,
   "verification_tiers": {
     "verified_open": 1,
-    "api_window_candidate": 211,
-    "official_listing_candidate": 1918,
-    "unverified": 69,
-    "other": 8
+    "api_window_candidate": 212,
+    "official_listing_candidate": 1912,
+    "unverified": 74,
+    "other": 9
   },
   "application_state_tiers": {
     "verified_open": 1,
-    "likely_available": 211,
-    "needs_verification": 1985,
-    "expired_or_closed": 10
+    "likely_available": 212,
+    "needs_verification": 1994,
+    "expired_or_closed": 1
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -29,10 +29,10 @@
   "feed_summary": [
     {
       "file": "jgrants-discovery.json",
-      "records": 211,
+      "records": 212,
       "procurement_candidates": 0,
       "unverified": 0,
-      "api_window_candidates": 211,
+      "api_window_candidates": 212,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
@@ -47,7 +47,7 @@
     },
     {
       "file": "spain-discovery.json",
-      "records": 8,
+      "records": 9,
       "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 500,
+      "records": 503,
       "procurement_candidates": 1,
-      "unverified": 500,
+      "unverified": 503,
       "api_window_candidates": 0,
-      "official_listing_candidates": 500,
+      "official_listing_candidates": 503,
       "historical_archive_records": 0
     },
     {
@@ -101,29 +101,29 @@
     },
     {
       "file": "eu-national-agriculture-discovery.json",
-      "records": 6,
+      "records": 7,
       "procurement_candidates": 0,
-      "unverified": 6,
+      "unverified": 7,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 46,
+      "records": 50,
       "procurement_candidates": 0,
-      "unverified": 46,
+      "unverified": 50,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "us-grants-discovery.json",
-      "records": 1385,
+      "records": 1376,
       "procurement_candidates": 0,
-      "unverified": 1385,
+      "unverified": 1376,
       "api_window_candidates": 0,
-      "official_listing_candidates": 1385,
+      "official_listing_candidates": 1376,
       "historical_archive_records": 0
     },
     {
@@ -195,7 +195,7 @@
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
       "status": "checked",
-      "records_count": 211,
+      "records_count": 212,
       "http_status": null,
       "freshness": "unknown",
       "note": ""
@@ -213,7 +213,7 @@
       "name": "Spain — SNPSAP",
       "file": "spain-discovery.json",
       "status": "checked",
-      "records_count": 8,
+      "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 501,
+      "records_count": 504,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -267,7 +267,7 @@
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
       "status": "checked",
-      "records_count": 6,
+      "records_count": 7,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 46,
+      "records_count": 50,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -285,7 +285,7 @@
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
       "status": "checked",
-      "records_count": 1385,
+      "records_count": 1376,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -378,17 +378,17 @@
     {
       "source_file": "eu-national-agriculture-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 6
+      "records": 7
     },
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 46
+      "records": 50
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 242
+      "records": 245
     },
     {
       "source_file": "eu-open-calls-discovery.json",
@@ -403,12 +403,12 @@
     {
       "source_file": "jgrants-discovery.json",
       "source_status": "acceptance-open-api-filtered",
-      "records": 211
+      "records": 212
     },
     {
       "source_file": "spain-discovery.json",
       "source_status": "official-api-window-current",
-      "records": 8
+      "records": 9
     },
     {
       "source_file": "us-grants-discovery.json",
@@ -418,7 +418,7 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 797
+      "records": 788
     }
   ],
   "review_queue_count": 50,
@@ -864,26 +864,6 @@
       ]
     },
     {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WfQ0000049swXUAQ",
-      "title": "令和７年度補正「次世代革新炉の開発・建設に向けた技術開発・サプライチェーン構築支援事業補助金」【三次公募】",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ0000049swXUAQ",
-      "deadline": "2026-12-11T03:00:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "likely_available",
-      "priority_score": 74,
-      "priority_reasons": [
-        "likely_available",
-        "deadline_within_30_days"
-      ],
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
       "source_file": "eu-open-calls-discovery.json",
       "id": "15982COMPETITIVE_CALLen",
       "title": "Comprehensive and inclusive support for women and girls' victims of GBV",
@@ -1118,6 +1098,26 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "spain-discovery.json",
+      "id": "943839",
+      "title": "CURSOS DE EUSKERA EN CENTROS VASCOS (26/27)",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943839",
+      "deadline": "2026-12-02",
+      "deadline_state": "upcoming",
+      "source_status": "official-api-window-current",
+      "application_state": "needs_verification",
+      "priority_score": 34,
+      "priority_reasons": [
+        "needs_verification",
+        "deadline_within_30_days"
+      ],
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"

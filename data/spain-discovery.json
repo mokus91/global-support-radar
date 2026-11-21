@@ -1,11 +1,48 @@
 {
-  "generated_at": "2026-11-21T02:21:54.369834+00:00",
+  "generated_at": "2026-11-21T08:24:04.621416+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
-  "records_count": 8,
+  "records_count": 9,
   "query_errors": [],
   "records": [
+    {
+      "id": "943839",
+      "country_code": "ES",
+      "title_original": "CURSOS DE EUSKERA EN CENTROS VASCOS (26/27)",
+      "coofficial_title": "EUSKAL ETXEETAN EUSKARA IKASTAROAK (26/27)",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "AUTONOMICA · PAÍS VASCO · INSTITUTO VASCO ETXEPARE EUSKAL INSTITUTUA / BASQUE INSTITUTE",
+      "regions": [
+        "ES21 - PAIS VASCO"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Cultura",
+      "start_date": "2026-11-03",
+      "deadline": "2026-12-02",
+      "indefinite_open": false,
+      "total_call_budget": 320000,
+      "total_call_budget_original": 320000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943839",
+      "application_url": "https://www.etxepare.eus/es/euskara-munduan-2026",
+      "legal_bases_url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026004613",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
     {
       "id": "943787",
       "country_code": "ES",
