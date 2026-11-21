@@ -6,9 +6,9 @@ Status: NOT READY TO PUBLISH — operator identity was supplied in chat but is i
 Last updated: 2026-11-21
 
 ## Public legal notice fields (do not publish until completed)
-- Operator's full legal name: supplied privately; intentionally not stored in this public repository
+- Operator's full legal name: Tóth Csaba Mihály; operator explicitly approved public display
 - Address / residence address: supplied privately; not reproduced here; assess whether a separate service/contact address is legally sufficient before publication
-- Regularly monitored contact email: supplied privately; not reproduced here; ownership and monitoring still need verification
+- Public privacy/contact email: csabikatoth25@gmail.com; operator explicitly approved public display; regular monitoring and deliverability still need verification
 - Tax number / VAT status, if applicable: [VERIFY WITH NAV / ACCOUNTANT BEFORE PUBLICATION]
 - Any registration or licence details, if applicable: [VERIFY; do not invent]
 
@@ -21,6 +21,11 @@ Choosing the natural-person route does not automatically settle the tax status o
 NAV references to review:
 - https://nav.gov.hu/Elethelyzetek-adozasa/kezdetek/Adoszam
 - https://nav.gov.hu/ado/szja/Tartalomszolgaltato-platformon-szerzett-jovedelem-adozasa
+
+## Address publication — legal review required
+- The Hungarian Act CVIII of 2001 (Ektv.) Section 4 generally requires an information-society service provider to publish its name, registered office/place of business or, failing those, home address, and a regularly used contact email in an easily accessible manner. Whether and how this applies to this specific free, ad-funded information site must be confirmed by Hungarian counsel.
+- The operator has NOT authorized public display of their private home address. Do not publish it without explicit confirmation and legal review. Assess whether a lawful business/service address can be used instead.
+- Official text: https://njt.jog.gov.hu/jogszabaly/2001-108-00-00
 
 ## Privacy and publication safeguards
 - Do not put a private home address, personal phone number, tax ID, or other sensitive identifier into a public GitHub issue.
