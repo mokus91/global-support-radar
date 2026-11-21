@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-21T14:17:57Z",
+  "generated_at": "2026-11-21T16:17:57Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 50,
+  "records_count": 51,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -274,6 +274,20 @@
       "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-ie-education-1",
+      "country_code": "IE",
+      "country_en": "Ireland",
+      "country_hu": "Írország",
+      "category": "education",
+      "title": "From Training to Trades",
+      "official_url": "https://www.eufunds.ie/story/from-training-to-trades/",
+      "portal_url": "https://www.eufunds.ie/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-ie-employment-1",
       "country_code": "IE",
       "country_en": "Ireland",
@@ -302,7 +316,7 @@
       "description": "Housing-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-ie-education-1",
+      "id": "eu-ie-education-2",
       "country_code": "IE",
       "country_en": "Ireland",
       "country_hu": "Írország",
