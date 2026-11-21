@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-21T10:33:15+00:00",
+  "generated_at": "2026-11-21T14:20:36+00:00",
   "events_count": 0,
   "events": [],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
