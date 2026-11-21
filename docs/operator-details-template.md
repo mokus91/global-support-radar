@@ -1,14 +1,14 @@
 # Operator details — private individual route
 
 Project: Global Support Radar
-Chosen operating intention: natural person / private individual
+Chosen operating intention: natural person / private individual (confirmed by operator)
 Status: NOT READY TO PUBLISH — operator identity was supplied in chat but is intentionally not reproduced in this public repository; remaining legal/contact details and processing disclosures are not complete or verified.
 Last updated: 2026-11-21
 
 ## Public legal notice fields (do not publish until completed)
-- Operator's full legal name: [SUPPLIED PRIVATELY; confirm separately before any public publication]
-- Address / residence address required for the applicable service: [TO BE PROVIDED AND CONFIRMED PRIVATELY; assess lawful public disclosure options]
-- Regularly monitored contact email: [TO BE PROVIDED AND TESTED]
+- Operator's full legal name: supplied privately; intentionally not stored in this public repository
+- Address / residence address: supplied privately; not reproduced here; assess whether a separate service/contact address is legally sufficient before publication
+- Regularly monitored contact email: supplied privately; not reproduced here; ownership and monitoring still need verification
 - Tax number / VAT status, if applicable: [VERIFY WITH NAV / ACCOUNTANT BEFORE PUBLICATION]
 - Any registration or licence details, if applicable: [VERIFY; do not invent]
 
