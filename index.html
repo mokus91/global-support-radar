@@ -133,7 +133,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
  <p id="shareStatus" class="notice" role="status" aria-live="polite">A megosztás nem gyűjt látogatói adatot. A támogatási feltételeket mindig az eredeti hivatalos forrásban ellenőrizd.</p>
 </section>
 <section id="betaFeedback" class="card" style="margin:26px 0" aria-labelledby="betaFeedbackTitle">
- <div class="sectionhead"><div><h2 id="betaFeedbackTitle">Segíts tesztelni a Global Support Radart!</h2><p id="betaFeedbackIntro">Béta tesztelőként jelezd, mi működik jól, mit nem találtál, vagy hol hibázott az oldal.</p></div><span class="tag">BÉTA TESZT</span></div>
+ <div class="sectionhead"><div><h2 id="betaFeedbackTitle">Hibabejelentés és fejlesztési javaslat</h2><p id="betaFeedbackIntro">Jelezd, ha hibát találtál, hiányzó adatot észleltél, vagy fejlesztési javaslatod van.</p></div><span class="tag">FELHASZNÁLÓI VISSZAJELZÉS</span></div>
  <p class="notice"><a href="./quality.html">Automatikus adatminőségi jelentés / Automated data quality report ↗</a></p>
  <div class="filters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px">
   <label id="betaTypeLabel" for="betaType" style="color:var(--muted);font-size:13px">Visszajelzés típusa
@@ -147,7 +147,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
   <textarea id="betaDetails" class="search" rows="4" maxlength="4000" style="display:block;width:100%;margin-top:6px;resize:vertical" placeholder="Például: kiválasztottam Magyarországot, majd mezőgazdasági támogatásokat kerestem..."></textarea>
  </label>
  <div class="filters" style="align-items:center"><button id="betaSubmit" class="btn" type="button">Visszajelzés elküldése ↗</button><span id="betaStatus" role="status" aria-live="polite" style="color:var(--muted);font-size:12px"></span></div>
- <p style="font-size:12px;color:var(--muted);margin:10px 0 0">📊 <a href="./beta-stats.html">Béta teszt visszajelzési statisztika / Beta feedback statistics</a> – csak összesített darabszámok.</p>
+ <p style="font-size:12px;color:var(--muted);margin:10px 0 0">📊 <a href="./beta-stats.html">Visszajelzési statisztika / Feedback statistics</a> – csak összesített darabszámok.</p>
  <p id="betaPrivacy" style="font-size:12px;color:var(--muted);margin:8px 0 0">A küldés a GitHub visszajelzési oldalára visz, ahol bejelentkezés után véglegesítheted a beküldést. A szöveg nyilvános hibajegyként jelenhet meg. Ne írj be nevet, címet, jövedelmi, egészségügyi vagy más személyes adatot.</p>
 </section>
 </main>
@@ -1461,7 +1461,7 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
  const $=id=>document.getElementById(id);
  const lang=()=>($("lang")?.value||"hu").startsWith("en")?"en":"hu";
  const copy={
-  hu:{intro:"Béta tesztelőként jelezd, mi működik jól, mit nem találtál, vagy hol hibázott az oldal.",type:"Visszajelzés típusa",rating:"Összértékelés",details:"Mit próbáltál ki? Mi tetszett, mi nem működött, min változtatnál?",placeholder:"Például: kiválasztottam Magyarországot, majd mezőgazdasági támogatásokat kerestem...",submit:"Visszajelzés elküldése ↗",empty:"Kérjük, írd le röviden a tapasztalatodat.",status:"Megnyílik a GitHub beküldőoldala. Bejelentkezés és a beküldés jóváhagyása szükséges.",privacy:"A küldés a GitHub visszajelzési oldalára visz, ahol bejelentkezés után véglegesítheted a beküldést. A szöveg nyilvános hibajegyként jelenhet meg. Ne írj be nevet, címet, jövedelmi, egészségügyi vagy más személyes adatot.",title:"Global Support Radar – béta visszajelzés"},
+  hu:{intro:"Jelezd, ha hibát találtál, hiányzó adatot észleltél, vagy fejlesztési javaslatod van.",type:"Visszajelzés típusa",rating:"Összértékelés",details:"Mit próbáltál ki? Mi tetszett, mi nem működött, min változtatnál?",placeholder:"Például: kiválasztottam Magyarországot, majd mezőgazdasági támogatásokat kerestem...",submit:"Visszajelzés elküldése ↗",empty:"Kérjük, írd le röviden a tapasztalatodat.",status:"Megnyílik a GitHub beküldőoldala. Bejelentkezés és a beküldés jóváhagyása szükséges.",privacy:"A küldés a GitHub visszajelzési oldalára visz, ahol bejelentkezés után véglegesítheted a beküldést. A szöveg nyilvános hibajegyként jelenhet meg. Ne írj be nevet, címet, jövedelmi, egészségügyi vagy más személyes adatot.",title:"Global Support Radar – béta visszajelzés"},
   en:{intro:"As a beta tester, tell us what works, what you could not find, or where the website failed.",type:"Feedback type",rating:"Overall rating",details:"What did you try? What worked, what failed, and what would you change?",placeholder:"For example: I selected my country and searched for agricultural support...",submit:"Send feedback ↗",empty:"Please briefly describe your experience.",status:"The GitHub submission page will open. Sign-in and confirmation are required.",privacy:"You will be taken to GitHub to submit your feedback after signing in. Your text may appear as a public issue. Do not include your name, address, income, health information, or other personal data.",title:"Global Support Radar – beta feedback"}
  };
  function render(){
