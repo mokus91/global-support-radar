@@ -25,6 +25,8 @@ jobs:
           python-version: "3.x"
       - name: Validate catalogue JSON
         run: python -m json.tool data/worldwide-national-support-sources.json > /dev/null
+      - name: Validate catalogue structure and source links
+        run: python scripts/validate_catalogue.py
       - name: Check official source URLs and content review dates
         run: python scripts/check_sources.py
       - name: Collect official announcement candidates
