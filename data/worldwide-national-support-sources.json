@@ -2213,6 +2213,36 @@
       "description_hu": "Karnali tartomány hivatalos online rendszere a mezőgazdasági támogatási programok meghirdetésére, kérelmek feldolgozására, kedvezményezettek kiválasztására és végrehajtásuk nyomon követésére. Tartományi hatókörű, nem országos program; az aktuális felhívásokat a portálon kell ellenőrizni.",
       "description_en": "Official online system of Karnali Province for announcing agricultural subsidy programmes, processing applications, selecting beneficiaries and monitoring implementation. It is provincial, not nationwide; check the portal for current calls.",
       "verification_status": "official-provincial-government-portal"
+    },
+    {
+      "id": "my-manfaat-national-aid-finder",
+      "country_code": "MY",
+      "country_en": "Malaysia",
+      "category": "all",
+      "name_hu": "Malajzia – Portal Manfaat állami támogatáskereső",
+      "name_en": "Malaysia — Portal Manfaat government assistance finder",
+      "url": "https://manfaat.mof.gov.my/",
+      "publisher": "Ministry of Finance, Malaysia — GovTech Malaysia",
+      "kind": "national-government-assistance-finder",
+      "description_hu": "A Pénzügyminisztérium hivatalos, több minisztérium és ügynökség támogatásait összegyűjtő keresője. Egyéni és családi, vállalkozási és munkáltatói támogatások, jogosultsági előszűrés, valamint a programok jelentkezési státusza kereshető. A profilillesztés nem jelent jóváhagyást vagy biztos jogosultságot; a végső feltételeket az illetékes szerv határozza meg.",
+      "description_en": "The Ministry of Finance's official finder aggregating assistance from multiple ministries and agencies. It covers individual and family, business and employer support, with preliminary eligibility matching and application-status information. A profile match is not approval or confirmation of eligibility; final rules are determined by the responsible agency.",
+      "verification_status": "official-government-platform",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "my-sara-2026-basic-needs-assistance",
+      "country_code": "MY",
+      "country_en": "Malaysia",
+      "category": "social",
+      "name_hu": "Malajzia – Sumbangan Asas Rahmah (SARA) 2026 alapvető szükségleti támogatás",
+      "name_en": "Malaysia — Sumbangan Asas Rahmah (SARA) 2026 basic-needs assistance",
+      "url": "https://www.sara.gov.my/en/home.html",
+      "publisher": "Government of Malaysia",
+      "kind": "targeted-basic-needs-assistance",
+      "description_hu": "2026-os célzott, készpénzmentes alapvető szükségleti támogatás: a jogosultak MyKad-kártyájára jóváírt keretből vásárolhatnak kijelölt üzletekben. A hivatalos tájékoztató szerint a havi SARA 2026 januárjától decemberéig működik, a jogosultsági csoporttól függő havi összeggel; a SARA Untuk Semua egyszeri RM100 támogatását 2026. február 9-től tették elérhetővé a 18 év feletti malajziai állampolgároknak. A havi SARA-hoz STR 2026 jogosultság szükséges; a feltételeket és egyéni jogosultságot a hivatalos ellenőrző oldalon kell megerősíteni.",
+      "description_en": "Targeted, cashless basic-needs assistance for 2026: eligible recipients use credits added to their MyKad at participating stores. The official information states that monthly SARA runs from January through December 2026, with monthly amounts varying by eligibility group; the one-off RM100 SARA Untuk Semua was made available from 9 February 2026 to Malaysian citizens aged 18 and above. Monthly SARA requires STR 2026 eligibility; confirm individual eligibility and current rules through the official checker.",
+      "verification_status": "official-government-programme-2026",
+      "last_checked": "2026-11-22"
     }
   ],
   "records_count": 147,
