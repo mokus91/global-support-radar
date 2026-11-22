@@ -27,11 +27,15 @@ jobs:
         run: python -m json.tool data/worldwide-national-support-sources.json > /dev/null
       - name: Check official source URLs and content review dates
         run: python scripts/check_sources.py
-      - name: Publish monitoring report
+      - name: Collect official announcement candidates
+        run: python scripts/discover_announcements.py
+      - name: Validate announcement queue JSON
+        run: python -m json.tool data/announcement-review-queue.json > /dev/null
+      - name: Publish monitoring report and review queue
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source-health-report.json
+          git add data/source-health-report.json data/announcement-review-queue.json
           if git diff --cached --quiet; then
             echo "Monitoring report unchanged."
           else
