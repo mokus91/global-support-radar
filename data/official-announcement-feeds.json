@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-22",
+  "description": "Verified official government announcement feeds. Candidates are collected for human review; they are never published as confirmed benefits automatically.",
+  "feeds": [
+    {
+      "id": "uk-government-updates",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/government/feed",
+      "format": "auto",
+      "enabled": true
+    },
+    {
+      "id": "new-zealand-government-updates",
+      "country_code": "NZ",
+      "country_name": "New Zealand",
+      "publisher": "Beehive.govt.nz",
+      "url": "https://www.beehive.govt.nz/rss.xml",
+      "format": "auto",
+      "enabled": true
+    }
+  ],
+  "keywords": [
+    "benefit",
+    "benefits",
+    "grant",
+    "grants",
+    "support",
+    "funding",
+    "allowance",
+    "subsidy",
+    "payment",
+    "welfare",
+    "housing",
+    "childcare",
+    "family",
+    "pension",
+    "disability",
+    "energy bill",
+    "cost of living",
+    "agriculture",
+    "business support",
+    "student finance",
+    "social security",
+    "public assistance",
+    "scheme",
+    "programme",
+    "program"
+  ]
+}
