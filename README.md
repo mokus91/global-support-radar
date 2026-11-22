@@ -9,7 +9,7 @@
 
 A Global Support Radar állami támogatásokhoz, pályázatokhoz, juttatásokhoz és közszolgáltatásokhoz kapcsolódó hivatalos információforrásokat gyűjt és tesz kereshetővé ország és témakör szerint. Nem hatóság és nem pályázatkezelő: tájékoztató és forrásnavigációs szolgáltatás.
 
-A szolgáltatás minden látogató számára ingyenes. Nincs fizetős keresés, előfizetés, hirdetési rangsor vagy kötelező regisztráció. A projekt később külön tulajdonosi döntéssel licencelhető vagy értékesíthető; a külső adatforrások és licencek jogai ettől nem szállnak át automatikusan.
+A támogatáskeresés és az alapvető tájékoztatás ingyenes marad; nincs kötelező regisztráció vagy fizetős hozzáférési fal. A bevételszerzés előkészítése folyamatban van: az AdSense-kód a főoldalba be van illesztve, a webhely Google-felülvizsgálata folyamatban van, ezért tényleges hirdetésmegjelenítés vagy bevétel még nem tekinthető igazoltnak. A szponzorált megjelenések, partnerjutalékok és prémium kiegészítő szolgáltatások csak külön fejlesztés, egyértelmű jelölés és tulajdonosi jóváhagyás után indulhatnak el. A projekt később külön tulajdonosi döntéssel licencelhető vagy értékesíthető; a külső adatforrások és licencek jogai ettől nem szállnak át automatikusan.
 
 ## Nyilvánosan elérhető funkciók
 
@@ -44,7 +44,9 @@ Az automatizált ellenőrzés nem azonos az összes ország és minden támogat�
 - A történeti, nem ellenőrzött portálhivatkozások elkülönítése az aktuális hivatalos forrásoktól.
 - Bizonytalan rekord nem jelenhet meg ellenőrzötten nyitottként.
 - A frissítési és telepítési munkafolyamatok eredményének ellenőrzése.
-- Új külső szolgáltatás, adatlicenc, hirdetés, fizetés vagy költség csak külön tulajdonosi jóváhagyással kapcsolható be.
+- Új külső szolgáltatás, adatlicenc, fizetési rendszer vagy költség csak külön tulajdonosi jóváhagyással kapcsolható be.
+- A hirdetések és partneri tartalmak jól láthatóan szponzoráltként jelölendők; nem befolyásolhatják a támogatások szakmai sorrendjét.
+- A látogatók személyes vagy pályázati adatait nem értékesítjük, és nem kérünk be hivatalos belépési adatokat.
 
 ## Tulajdonosi, jogi és biztonsági dokumentáció
 
@@ -68,6 +70,10 @@ A szoftver licencelési és átadási dokumentációja előkészítés alatt ál
 - [Licencelési tájékoztató](https://mokus91.github.io/global-support-radar/licensing.html)
 - [Licencelési keretrendszer](docs/licensing-framework-hu.md)
 - [Licencelt csomag átadási ellenőrzőlista](docs/licensing-delivery-checklist.md)
+
+## Bevételszerzés – jelenlegi állapot
+
+A bevételszerzés fokozatosan, az ingyenes alapfunkciók megőrzésével készül. Az AdSense webhely-ellenőrzése még folyamatban van. Partnerprogram, fizetős kiemelés, előfizetés és online fizetés jelenleg nem tekinthető éles, működő szolgáltatásnak. Ezeket csak megfelelő szerződési, adatvédelmi, fogyasztóvédelmi és technikai feltételek mellett szabad elindítani.
 
 ## Következő szakmai fejlesztési szakasz
 
