@@ -12,7 +12,7 @@
 <p class="note"><strong>Fontos:</strong> A működő webcím nem bizonyítja, hogy a támogatás még nyitott, az összeg aktuális, vagy a jogosultsági feltételek változatlanok. A „tartalmi felülvizsgálat” jelzés csak emlékeztető: a program adatait embernek kell ellenőriznie hivatalos közlemények alapján.</p>
 <label for="q">Keresés ország, program vagy státusz szerint</label><p><input id="q" placeholder="Például: Brazil, Bolsa Família, http_error"></p>
 <p id="updated" class="muted"></p><section id="results"></section>
-<footer>Az ellenőrzés GitHub Actions segítségével fut naponta. A jelentés automatikusan frissül, amikor az eredmény megváltozik.</footer>
+<footer>Az ellenőrzés naponta fut. A rendszer a hivatalos oldal legfeljebb 64 KB-os mintáját hasonlítja össze az előző napi mintával. A változás ellenőrzési jelzés, nem bizonyíték arra, hogy a támogatás összege vagy feltétele megváltozott. A támogatási adatokat embernek kell ellenőriznie.</footer>
 </main>
 <script>
 let report=null;
@@ -22,10 +22,10 @@ function render(){
  const q=document.getElementById("q").value.toLowerCase();
  const items=report.results.filter(x=>[x.name_en,x.country_code,x.id,x.status,x.content_freshness,x.url].join(" ").toLowerCase().includes(q));
  document.getElementById("stats").innerHTML=[
- ["Ellenőrzött forrás",report.checked_records],["Elérhető",report.reachable],["HTTP-hiba",report.http_errors],["Ellenőrzési hiba",report.check_failed],["Tartalmi felülvizsgálat",report.content_review_due??"—"]
+ ["Ellenőrzött forrás",report.checked_records],["Elérhető",report.reachable],["HTTP-hiba",report.http_errors],["Ellenőrzési hiba",report.check_failed],["Tartalmi felülvizsgálat",report.content_review_due??"—"],["Megváltozott oldalminta",report.page_changed??"—"]
  ].map(([k,v])=>'<div class="card"><span class="muted">'+k+'</span><strong>'+v+'</strong></div>').join("");
  document.getElementById("updated").textContent="Utolsó ellenőrzés: "+new Date(report.generated_at).toLocaleString("hu-HU")+" · "+items.length+" találat";
- document.getElementById("results").innerHTML=items.map(x=>'<div class="row"><div><strong>'+esc(x.name_en||x.id)+'</strong><div class="muted">'+esc(x.country_code||"")+' · HTTP '+esc(x.http_status??"—")+'</div><a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.url)+'</a></div><span class="pill '+(x.status==="reachable"?"ok":"bad")+'">'+esc(x.status)+'</span></div>').join("")||'<p class="muted">Nincs találat.</p>';
+ document.getElementById("results").innerHTML=items.map(x=>'<div class="row"><div><strong>'+esc(x.name_en||x.id)+'</strong><div class="muted">'+esc(x.country_code||"")+' · HTTP '+esc(x.http_status??"—")+' · Napi minta: '+esc(x.page_change||"—")+'</div><a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.url)+'</a></div><span class="pill '+(x.status==="reachable"?"ok":"bad")+'">'+esc(x.status)+'</span></div>').join("")||'<p class="muted">Nincs találat.</p>';
 }
 fetch("./data/source-health-report.json").then(r=>{if(!r.ok)throw Error("A napi jelentés még nem készült el.");return r.json()}).then(x=>{report=x;render()}).catch(e=>document.getElementById("results").textContent=e.message+" A GitHub Actions első futtatása után jelenik meg.");
 document.getElementById("q").addEventListener("input",render);
