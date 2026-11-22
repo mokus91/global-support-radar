@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals across 46 countries, plus European Union-wide official funding and finance discovery resources. New records include the EU Funding & Tenders Portal, the European Commission directory of national portals for shared-management funds, and the US SAM.gov Assistance Listings catalogue. Records link to official catalogues and portals; they are not all individual grant records and do not imply an open call or eligibility. Coverage remains partial and must not be described as a complete global register.",
+  "scope": "Country-specific official support discovery portals across 51 countries, plus European Union-wide official funding and finance discovery resources. Records link to official catalogues, benefits finders and programme portals; they are not all individual grant records and do not imply an open call or eligibility. Coverage remains partial and must not be described as a complete global register.",
   "records": [
     {
       "id": "au-benefits",
@@ -1080,6 +1080,90 @@
       "description_hu": "A Grants.gov által hivatkozott hivatalos szövetségi programjegyzék, amely támogatásokat, kölcsönöket, ösztöndíjakat, biztosítási és más szövetségi segítségformákat sorol fel. Ez programkatalógus, nem minden esetben nyitott pályázati felhívás; a beadási lehetőséget a felelős ügynökségnél kell ellenőrizni.",
       "description_en": "The authoritative federal programme catalogue referenced by Grants.gov, covering grants, loans, scholarships, insurance and other forms of federal assistance. It is a programme catalogue, not necessarily an open-call list; verify application opportunities with the responsible agency.",
       "verification_status": "official-federal-catalogue"
+    },
+    {
+      "id": "fr-mesdroits-sociaux",
+      "country_code": "FR",
+      "country_en": "France",
+      "category": "social",
+      "name_hu": "Franciaország – Mes droits sociaux jogosultság-ellenőrző",
+      "name_en": "France — Mes droits sociaux benefits eligibility checker",
+      "url": "https://www.mesdroitssociaux.gouv.fr/",
+      "publisher": "French Government",
+      "kind": "benefits-eligibility-finder",
+      "description_hu": "Hivatalos állami felület, amely több mint ötven országos és helyi szociális támogatásnál segít felmérni a lehetséges jogosultságot, a becsült összeget és a feltételeket. A végső jogosultságot az illetékes szerv állapítja meg.",
+      "description_en": "Official government service to estimate eligibility, potential amounts and conditions for more than fifty national and local social benefits. Final entitlement is determined by the responsible authority.",
+      "verification_status": "official-government-service"
+    },
+    {
+      "id": "mx-apoyos-gobierno",
+      "country_code": "MX",
+      "country_en": "Mexico",
+      "category": "all",
+      "name_hu": "Mexikó – szövetségi kormányzati támogatások keresője",
+      "name_en": "Mexico — federal government support finder",
+      "url": "https://www.transparenciapresupuestaria.gob.mx/es/apoyosdelgobierno",
+      "publisher": "Mexican Federal Government — Secretaría de Hacienda y Crédito Público",
+      "kind": "government-support-finder",
+      "description_hu": "Hivatalos kereső magánszemélyeknek, vállalkozásoknak és helyi önkormányzatoknak szóló szövetségi programokhoz. A portál programleírásokat, célcsoportokat és működési szabályokat mutat; a konkrét programév és a beadási időszak ellenőrzendő.",
+      "description_en": "Official finder for federal programmes for individuals, businesses and local governments. It presents programme descriptions, target groups and operating rules; check the relevant programme year and application window.",
+      "verification_status": "official-government-portal"
+    },
+    {
+      "id": "kr-gov24-benefits",
+      "country_code": "KR",
+      "country_en": "South Korea",
+      "category": "all",
+      "name_hu": "Dél-Korea – Government24 혜택알리미 támogatáskereső",
+      "name_en": "South Korea — Government24 Benefit Alert",
+      "url": "https://plus.gov.kr/portal/benefitV2/",
+      "publisher": "Government of the Republic of Korea",
+      "kind": "personalised-benefit-finder",
+      "description_hu": "Hivatalos kormányzati felület a személyes helyzethez kapcsolódó állami juttatások és támogatások felfedezésére, szűrésére. A szolgáltatás egyes funkciói a Government24 mobilalkalmazásban érhetők el.",
+      "description_en": "Official government service for discovering and filtering benefits relevant to a person's circumstances. Some functions are available through the Government24 mobile app.",
+      "verification_status": "official-government-service"
+    },
+    {
+      "id": "ng-government-services",
+      "country_code": "NG",
+      "country_en": "Nigeria",
+      "category": "all",
+      "name_hu": "Nigéria – szövetségi kormányzati szolgáltatások és támogatási ügyintézés",
+      "name_en": "Nigeria — federal government services portal",
+      "url": "https://services.gov.ng/",
+      "publisher": "Federal Government of Nigeria",
+      "kind": "government-services-and-subsidies-portal",
+      "description_hu": "Hivatalos központi portál a szövetségi kormányzati szolgáltatásokhoz; külön támogatási szolgáltatások is szerepelnek. Nem teljes pályázati adatbázis, az egyes programok aktuális státuszát a felelős minisztériumnál kell ellenőrizni.",
+      "description_en": "Official central portal for federal government services, including subsidy-related services. It is not a complete grants database; verify current programme status with the responsible ministry.",
+      "verification_status": "official-government-portal"
+    },
+    {
+      "id": "za-social-grants",
+      "country_code": "ZA",
+      "country_en": "South Africa",
+      "category": "social",
+      "name_hu": "Dél-Afrika – állami szociális támogatások",
+      "name_en": "South Africa — social grants",
+      "url": "https://www.gov.za/services/services-residents/grants",
+      "publisher": "South African Government",
+      "kind": "social-grants-directory",
+      "description_hu": "Hivatalos kormányzati tájékoztató az időskori, gyermek-, fogyatékossági, nevelőszülői és más szociális támogatásokról. Az igénylést a SASSA kezeli; az összegek és feltételek változhatnak.",
+      "description_en": "Official government information on old-age, child, disability, foster-child and other social grants. Applications are administered by SASSA; amounts and conditions may change.",
+      "verification_status": "official-government-directory"
+    },
+    {
+      "id": "ae-social-welfare",
+      "country_code": "AE",
+      "country_en": "United Arab Emirates",
+      "category": "social",
+      "name_hu": "Egyesült Arab Emírségek – szociális jóléti programok",
+      "name_en": "United Arab Emirates — social welfare programmes",
+      "url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes",
+      "publisher": "UAE Government",
+      "kind": "social-welfare-programme-directory",
+      "description_hu": "Hivatalos tájékoztató a szociális jóléti juttatásokról, többek között alap-, kiegészítő, lakhatási, tanulmányi és inflációs támogatásokról. A jogosultság egyes programoknál az állampolgárságtól és a helyi hatóságtól függ.",
+      "description_en": "Official information on social welfare allowances, including basic, supplementary, housing, academic excellence and inflation allowances. Eligibility can depend on citizenship and the relevant local authority.",
+      "verification_status": "official-government-portal"
     }
   ],
   "records_count": 67
