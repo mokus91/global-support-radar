@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:25:36.898099+00:00",
+  "generated_at": "2026-11-22T17:20:30.359532+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 181,
@@ -125,7 +125,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium Punkt Wien",
+      "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -264,6 +264,14 @@
       "title": "C11667 - UNIPOL GRUPPO FINANZIARIO-INTER MUTUELLES ASSISTANCE/IMA ITALIA ASSISTANCE",
       "url": "https://dati.agcm.it/dataset/p24994#",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
+      "url": "https://dati.agcm.it/dataset/p28329#",
+      "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -415,14 +423,6 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Energy Efficiency Action Plan (EEAP): glazing",
-      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -917,14 +917,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "IPA03 - Structural business statistics",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "IPA04 - Structural Business Statistics",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA04/JSON-stat/2.0/en",
       "query": "business funding",
@@ -973,6 +965,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -1007,14 +1007,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1319,6 +1311,14 @@
     {
       "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes at 30. 11. 2023",
       "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
+      "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Subsidies (calls) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
+      "url": "https://data.gov.sk/dataset/dotacie-vyzvy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
       "query": "public support programmes",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

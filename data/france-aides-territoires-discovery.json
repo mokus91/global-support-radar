@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-11-22T14:26:15+00:00",
+  "checked_at": "2026-11-22T17:21:19+00:00",
   "country_code": "FR",
   "source": "Aides-territoires official public API",
   "source_url": "https://aides-territoires.beta.gouv.fr/api/aids/",
@@ -10,5 +11,6 @@
   "fetch_status": "temporarily-restricted",
   "http_status": 401,
   "error": "Unauthorized",
-  "scope": "The official API could not be queried successfully. No current grant or application status is inferred; use the official catalogue directly."
+  "stale_snapshot_preserved": false,
+  "scope": "The official API could not be queried successfully. Previously collected records are retained as a stale snapshot, not treated as newly verified. No current grant or application status is inferred; use the official catalogue directly."
 }

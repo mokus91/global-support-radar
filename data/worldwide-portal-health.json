@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-22T14:25:23+00:00",
-  "records_count": 106,
+  "checked_at": "2026-11-22T17:20:18+00:00",
+  "records_count": 155,
   "summary": {
-    "connection_error": 18,
-    "http_error": 2,
-    "reachable": 78,
-    "restricted": 8
+    "connection_error": 28,
+    "http_error": 4,
+    "reachable": 109,
+    "restricted": 14
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -217,7 +217,7 @@
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.esfondi.lv/"
     },
     {
@@ -452,9 +452,9 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "status": "restricted",
+      "http_status": 429,
+      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "us-sam-assistance-listings",
@@ -544,9 +544,8 @@
     },
     {
       "id": "ke-inua-jamii",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://socialprotection.go.ke/frequently-asked-questions"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ke-social-protection-ecitizen",
@@ -568,9 +567,8 @@
     },
     {
       "id": "gh-leap",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ug-sage-senior-citizens-grant",
@@ -602,7 +600,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -627,6 +625,292 @@
       "id": "br-bolsa-familia-2026",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "ae-dubai-sme-funding-startups",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.dubai.ae/investing/expanding-your-business/funding-smes-and-startups"
+    },
+    {
+      "id": "ae-dubai-business-incentives-2026",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.investindubai.gov.ae/en/dubai-government-support-for-business-2026"
+    },
+    {
+      "id": "ae-uae-sme-national-programme",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ae-national-industrial-resilience-fund-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ae-sme-in-a-box",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.dubaidet.gov.ae/en/newsroom/press-releases/sme-in-a-box"
+    },
+    {
+      "id": "sa-monshaat-support-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "sa-sme-bank-funding-gate",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://smebank.gov.sa/en/services/funding-gate"
+    },
+    {
+      "id": "sa-sme-bank-programmes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://smebank.gov.sa/en/services/programs"
+    },
+    {
+      "id": "sa-social-development-bank-business",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sdb.gov.sa/en/facilities-financing/"
+    },
+    {
+      "id": "sa-kafalah-guarantees",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.smebank.gov.sa/ar"
+    },
+    {
+      "id": "qa-startup-qatar-investment",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/en/Financing-And-Funding/Equity-And-Investment/Startup-Qatar-Investment-Program"
+    },
+    {
+      "id": "qa-startup-qatar-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.startupqatar.qa/en"
+    },
+    {
+      "id": "qa-qdb-credit-guarantee",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/financing-and-funding/credit-guarantees"
+    },
+    {
+      "id": "qa-qdb-situation-room-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/en/national-initiatives/situationroom2026"
+    },
+    {
+      "id": "om-sme-authority-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "om-sme-financing-incentives",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sme.gov.om/en/financing-related-programs-for-private-companies/"
+    },
+    {
+      "id": "kw-national-fund-sme",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://nationalfund.gov.kw/en/"
+    },
+    {
+      "id": "kw-national-fund-support-centre",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://nationalfund.gov.kw/en/about-us/our-services/support-services-center/"
+    },
+    {
+      "id": "bh-tamkeen-programmes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/"
+    },
+    {
+      "id": "bh-tamkeen-enterprise-financing",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/tamweel-2/"
+    },
+    {
+      "id": "bh-tamkeen-isteshara-advisory",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/advisory/"
+    },
+    {
+      "id": "sg-edge-grant-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.enterprisesg.gov.sg/financial-support/edge-grant"
+    },
+    {
+      "id": "sg-enterprise-financing-scheme",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.enterprisesg.gov.sg/financial-support/enterprise-financing-scheme"
+    },
+    {
+      "id": "sg-sme-cash-grant-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.sg/budget2026/"
+    },
+    {
+      "id": "kr-global-startup-commercialization-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://mss.go.kr/site/eng/ex/bbs/View.do?bcIdx=1066324&cbIdx=244"
+    },
+    {
+      "id": "kr-bizinfo-sme-support-database",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null"
+    },
+    {
+      "id": "jp-cabinet-startup-support-portal",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.cas.go.jp/jp/seisaku/su-portal/support.html"
+    },
+    {
+      "id": "jp-mirasapo-subsidy-schedule-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://mirasapo-plus.go.jp/"
+    },
+    {
+      "id": "in-pmegp",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "in-startup-india-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.startupindia.gov.in/"
+    },
+    {
+      "id": "hk-sme-funding-schemes",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.smelink.gov.hk/en/web/sme-portal/government-funding-schemes.html"
+    },
+    {
+      "id": "hk-bud-fund",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.bud.hkpc.org/"
+    },
+    {
+      "id": "tw-startup-funding-finder",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://startup.sme.gov.tw/en/incentive"
+    },
+    {
+      "id": "tw-siir-grant",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://startup.sme.gov.tw/en/incentive"
+    },
+    {
+      "id": "cn-shanghai-suishendui-business-policy-hub",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://english.shanghai.gov.cn/en-Business-BusinessFinancing/20260818/e878714f83c340bb93654b03ae299246.html"
+    },
+    {
+      "id": "id-bizhub-self-employment-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://bizhub.kemnaker.go.id/"
+    },
+    {
+      "id": "id-pip-ultra-micro-financing",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "my-mida-i-incentives-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
+    },
+    {
+      "id": "th-nia-mandatory-innovation-business-platform-2027-round1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fininno.nia.or.th/manage_news_event/mandatory70r1/"
+    },
+    {
+      "id": "ph-dost-cradle-rd-commercialization-grant",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://startup.gov.ph/programs/view/?id=3"
+    },
+    {
+      "id": "ph-startup-venture-fund",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ndc.gov.ph/svf/"
+    },
+    {
+      "id": "pk-pakistan-startup-fund",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://ignite.org.pk/pakistan-startup-fund/"
+    },
+    {
+      "id": "bd-idea-sme-entrepreneur-grant-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://apply.idea.gov.bd/sme/"
+    },
+    {
+      "id": "bd-sme-foundation-business-support",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "lk-sarp-youth-agribusiness-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://web.sarp.lk/"
+    },
+    {
+      "id": "lk-irdcrp-agribusiness-investment-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.irdcrp.lk/faq"
+    },
+    {
+      "id": "vn-2026-sme-digital-transformation-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://vioit.moit.gov.vn/vn/tin-hoat-dong-vien/thong-bao-ve-trien-khai-chuong-trinh-ho-tro-doanh-nghiep-nho-va-vua-nam-2026-6875.4048.html"
+    },
+    {
+      "id": "np-agriculture-insurance-premium-subsidy",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "np-karnali-agriculture-subsidy-management-system",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://subsidy.molmac.karnali.gov.np/"
     }
   ]
 }
