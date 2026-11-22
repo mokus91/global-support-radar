@@ -15,7 +15,7 @@ A támogatáskeresés és az alapvető tájékoztatás ingyenes marad; nincs kö
 
 - **Országkereső:** 194 országot tartalmazó országjegyzék.
 - **Témakörök:** család, lakhatás, energia, mezőgazdaság, vállalkozás, oktatás, foglalkoztatás, egészségügy, szociális ellátások, közlekedés és egyéb támogatások.
-- **Többnyelvű felület:** magyar, angol, spanyol, francia, német, olasz, portugál, arab, hindi, orosz és egyszerűsített kínai.
+- **Többnyelvű felület:** magyar, angol, spanyol, francia, német, olasz, portugál, arab, hindi, orosz, egyszerűsített kínai és japán.
 - **Országoldalak:** hivatalos forrásgyűjtemények és közvetlen hivatkozások.
 - **Keresés és szűrés:** a rendelkezésre álló rekordok ország, kategória és keresőkifejezés szerint szűrhetők.
 - **Mentés:** könyvjelzők helyi böngészőtárolóban.
