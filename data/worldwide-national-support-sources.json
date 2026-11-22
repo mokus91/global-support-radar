@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 53 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Country-specific official support discovery portals and programme records across 54 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1387,8 +1387,8 @@
       "url": "https://dss.gov.bd/pages/static-pages/old-age-allowance-46bea6-6922dcb2933eb65569e11974",
       "publisher": "Government of Bangladesh — Department of Social Services",
       "kind": "old-age-cash-allowance",
-      "description_hu": "Állami pénzbeli támogatás rászoruló időseknek. A hivatalos DSS-oldal általános feltételei szerint bangladesi állandó lakóhely, azonosító okmány, legalább 65 éves férfi vagy 62 éves nő, alacsony éves jövedelem és helyi kiválasztás szükséges. A 2026–27-es pénzügyi évre közzétett online jelentkezési időszak augusztus 31-én lezárult; a következő időszakról a DSS portálján tájékozódj. Az összeg és feltételek pénzügyi évenként változhatnak.",
-      "description_en": "Government cash allowance for low-income older people. The official DSS page lists permanent Bangladeshi residence, identity documentation, a minimum age of 65 for men or 62 for women, low annual income and selection by the local committee as general criteria. The published online application window for FY 2026–27 closed on 31 August; check the DSS portal for the next round. Rates and conditions may change by fiscal year.",
+      "description_hu": "Állami pénzbeli támogatás rászoruló időseknek. Az általános korhatár férfiaknál 65, nőknél 62 év; a 2026–27-es pénzügyi évre vonatkozó hivatalos tájékoztatás szerint az alapösszeg havi 700 taka, a 90 év felettiek egy meghatározott csoportja havi 1 000 takát kaphat. A jelentkezési időszak 2026. augusztus 1–31. között volt; a következő időszakot a DSS portálján kell ellenőrizni.",
+      "description_en": "Government cash allowance for low-income older people. General age thresholds are 65 for men and 62 for women; official FY 2026–27 information reports a basic rate of BDT 700 per month, with BDT 1,000 for a specified group aged over 90. The application window ran from 1 to 31 August 2026; check the DSS portal for the next round.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
     },
@@ -1402,8 +1402,8 @@
       "url": "https://pantawid.dswd.gov.ph/",
       "publisher": "Government of the Philippines — Department of Social Welfare and Development",
       "kind": "conditional-cash-transfer-programme",
-      "description_hu": "Szegény és közel szegény háztartások egészségügyi, táplálkozási és oktatási feltételekhez kötött pénzbeli támogatása. A jogosultság általános feltétele a standardizált célzási rendszer szerinti besorolás, valamint 0–18 éves gyermek vagy várandós családtag; a program kiválasztás alapján működik. A DSWD 2026-ban a CBMS-adatok alapján új kedvezményezettek regisztrálását jelentette be, közösségi gyűléseken és helyi önkormányzatokkal együttműködésben. Nem garantált az egyéni, azonnali online jelentkezés.",
-      "description_en": "Conditional cash assistance for poor and near-poor households, tied to health, nutrition and education requirements. General eligibility includes identification through the standardized targeting system and a household member aged 0–18 or a pregnant member; beneficiaries are selected. In 2026, DSWD announced new beneficiary registration using CBMS data through community assemblies coordinated with local governments. This is not a guaranteed individual, instant online application.",
+      "description_hu": "Feltételes pénzbeli családtámogatás szegény vagy közel szegény háztartásoknak, ahol 0–18 éves gyermek vagy várandós családtag él, és vállalják az egészségügyi, oktatási és családfejlesztési feltételeket. A kedvezményezetteket állami célzási adatok alapján választják ki és ellenőrzik; a DSWD 2026-ban mintegy 493 000 új család előzetes azonosítását jelentette be, de ez nem jelent automatikus jogosultságot. A program nem egyszerű, nyílt online jelentkezés.",
+      "description_en": "Conditional cash assistance for poor or near-poor households with a child aged 0–18 or a pregnant member, subject to health, education and family-development conditions. Beneficiaries are identified and validated through government targeting data; in 2026 DSWD announced preliminary identification of around 493,000 new families, but this does not guarantee eligibility. The programme is not a simple open online application.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
     },
@@ -1434,6 +1434,21 @@
       "kind": "social-security-allowance-scheme",
       "description_hu": "Állami pénzbeli juttatás többek között időseknek, özvegyeknek, egyedülálló nőknek, fogyatékossággal élőknek és meghatározott hátrányos helyzetű közösségeknek. A hivatalos díjtáblázat havi 4 000 nepáli rúpiát jelez a 70 év feletti általános időskori kategóriában; egyes csoportok, például a meghatározott térségekben élők és dalit idősek 60 éves kortól eltérő összeget kaphatnak. Az igényléshez szükséges dokumentumok és helyi ügyintézés a hivatalos GYIK-ben találhatók.",
       "description_en": "Government cash allowances for older people, widows, single women, persons with disabilities and specified disadvantaged communities. The official rate table lists NPR 4,000 per month for the general senior-citizen category aged 70+, while some groups, including eligible Dalit seniors and residents of specified areas, qualify from age 60 at a different rate. Required documents and local application procedures are described in the official FAQ.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "pk-benazir-kafaalat",
+      "country_code": "PK",
+      "country_en": "Pakistan",
+      "category": "social",
+      "name_hu": "Pakisztán – Benazir Kafaalat pénzbeli támogatás",
+      "name_en": "Pakistan — Benazir Kafaalat Programme",
+      "url": "https://www.bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5",
+      "publisher": "Government of Pakistan — Benazir Income Support Programme",
+      "kind": "unconditional-cash-transfer-programme",
+      "description_hu": "Rászoruló háztartások női kedvezményezettjeinek nyújtott pénzbeli támogatás. A jogosultakat a National Socio-Economic Registry felmérése és a háztartás szegénységi pontszáma alapján választják ki; a regisztrációhoz a legközelebbi BISP Tehsil Office/Dynamic Registry Center felkeresése szükséges. A 2026. júniusi államfői tájékoztató szerint a negyedéves támogatás 14 500 pakisztáni rúpia volt; a 2027. januári emelés csak tervként szerepelt. A felmérés ingyenes, a BISP hivatalos SMS-száma 8171; más számról érkező fizetési/regisztrációs üzenetek csalások lehetnek. Az aktuális összeget ellenőrizd a BISP-nél.",
+      "description_en": "Cash support for eligible women in low-income households. Beneficiaries are selected using the National Socio-Economic Registry survey and household poverty score; households should visit their nearest BISP Tehsil Office/Dynamic Registry Center for the survey. A June 2026 presidential briefing reported a quarterly stipend of PKR 14,500; a January 2027 increase was only proposed. The survey is free and 8171 is the official BISP SMS number; messages from other numbers requesting payment or registration may be scams. Confirm the current rate with BISP.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
     }
