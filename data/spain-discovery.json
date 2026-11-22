@@ -1,11 +1,47 @@
 {
-  "generated_at": "2026-11-22T02:23:24.474425+00:00",
+  "generated_at": "2026-11-22T14:26:15.015068+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
-  "records_count": 9,
+  "records_count": 10,
   "query_errors": [],
   "records": [
+    {
+      "id": "943841",
+      "country_code": "ES",
+      "title_original": "Subvenciones para cubrir gastos del transporte de agua mediante camiones cisterna municipios alerta y prealerta sequía",
+      "coofficial_title": "Subvencions per cobrir despeses del transport d'aigua mitjançant camions cisterna municipis alerta i prealerta sequera",
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "AUTONOMICA · ILLES BALEARS · DIRECCIÓN GENERAL DE RECURSOS HÍDRICOS",
+      "regions": [
+        "ES53 - ILLES BALEARS"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Otras actuaciones de carácter económico",
+      "start_date": null,
+      "deadline": null,
+      "indefinite_open": true,
+      "total_call_budget": 700000,
+      "total_call_budget_original": 700000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "transport"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943841",
+      "application_url": null,
+      "legal_bases_url": "https://www.caib.es/eboibfront/es/2025/12100/seccion-i-disposiciones-generales/471",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
     {
       "id": "943839",
       "country_code": "ES",

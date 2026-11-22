@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-22T02:22:29+00:00",
-  "records_count": 74,
+  "checked_at": "2026-11-22T14:25:23+00:00",
+  "records_count": 106,
   "summary": {
-    "connection_error": 10,
+    "connection_error": 18,
     "http_error": 2,
-    "reachable": 54,
+    "reachable": 78,
     "restricted": 8
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -217,7 +217,7 @@
     {
       "id": "eu-national-funds-lv",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.esfondi.lv/"
     },
     {
@@ -443,6 +443,190 @@
       "status": "reachable",
       "http_status": 206,
       "final_url": "https://europa.eu/youreurope/business/growing/getting-funding-and-support/index_en.htm"
+    },
+    {
+      "id": "eu-funding-tenders",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/"
+    },
+    {
+      "id": "eu-national-single-portals",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
+    },
+    {
+      "id": "us-sam-assistance-listings",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://sam.gov/assistance-listings"
+    },
+    {
+      "id": "fr-mesdroits-sociaux",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+    },
+    {
+      "id": "mx-apoyos-gobierno",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "kr-gov24-benefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://plus.gov.kr/portal/benefitV2/"
+    },
+    {
+      "id": "ng-government-services",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.gov.ng/"
+    },
+    {
+      "id": "za-social-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/services-residents/grants"
+    },
+    {
+      "id": "ae-social-welfare",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
+    },
+    {
+      "id": "in-pmkisan",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "in-national-scholarship-portal",
+      "status": "connection_error",
+      "error": "RemoteDisconnected"
+    },
+    {
+      "id": "sg-supportgowhere",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://supportgowhere.life.gov.sg/"
+    },
+    {
+      "id": "sg-govbenefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.govbenefits.gov.sg/"
+    },
+    {
+      "id": "br-cadastro-unico-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "global-fao-gef-small-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.fao.org/small-grants-program/"
+    },
+    {
+      "id": "global-eeas-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.eeas.europa.eu/eeas/grants_en"
+    },
+    {
+      "id": "global-worldbank-social-protection-response",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.worldbank.org/en/programs/social-protection-response"
+    },
+    {
+      "id": "ke-inua-jamii",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://socialprotection.go.ke/frequently-asked-questions"
+    },
+    {
+      "id": "ke-social-protection-ecitizen",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://socialprotection.ecitizen.go.ke/"
+    },
+    {
+      "id": "za-sassa-services",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+    },
+    {
+      "id": "uk-international-development-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.uk/international-development-funding"
+    },
+    {
+      "id": "gh-leap",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/"
+    },
+    {
+      "id": "ug-sage-senior-citizens-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://socialprotection.go.ug/"
+    },
+    {
+      "id": "ng-hup-conditional-cash-transfer",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://ncto.gov.ng/hup-cct"
+    },
+    {
+      "id": "bd-old-age-allowance",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ph-4ps-pantawid",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "id-pkh-family-hope",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "np-social-security-allowance",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
+    },
+    {
+      "id": "pk-benazir-kafaalat",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5"
+    },
+    {
+      "id": "pk-benazir-taleemi-wazaif",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bisp.gov.pk/Detail/YzNlY2Q2ZGYtNjIwZS00MjNiLWFhMmEtZGM5NWNkMjZhMjQ3"
+    },
+    {
+      "id": "th-state-welfare-card-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://welfare.mof.go.th/"
+    },
+    {
+      "id": "br-bolsa-familia-2026",
+      "status": "connection_error",
+      "error": "URLError"
     }
   ]
 }

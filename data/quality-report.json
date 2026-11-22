@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T13:39:02.506007+00:00",
+  "generated_at": "2026-11-22T14:29:36.903290+00:00",
   "feeds_checked": 18,
-  "records_checked": 2210,
+  "records_checked": 2211,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
@@ -13,12 +13,12 @@
     "api_window_candidate": 212,
     "official_listing_candidate": 1912,
     "unverified": 76,
-    "other": 9
+    "other": 10
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1996,
+    "needs_verification": 1997,
     "expired_or_closed": 1
   },
   "verification_dimensions": {
@@ -47,7 +47,7 @@
     },
     {
       "file": "spain-discovery.json",
-      "records": 9,
+      "records": 10,
       "procurement_candidates": 0,
       "unverified": 0,
       "api_window_candidates": 0,
@@ -213,7 +213,7 @@
       "name": "Spain — SNPSAP",
       "file": "spain-discovery.json",
       "status": "checked",
-      "records_count": 9,
+      "records_count": 10,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -348,7 +348,7 @@
       "name": "Worldwide — portal reachability",
       "file": "worldwide-portal-health.json",
       "status": "checked",
-      "records_count": 74,
+      "records_count": 106,
       "http_status": null,
       "freshness": "fresh",
       "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline."
@@ -408,7 +408,7 @@
     {
       "source_file": "spain-discovery.json",
       "source_status": "official-api-window-current",
-      "records": 9
+      "records": 10
     },
     {
       "source_file": "us-grants-discovery.json",
@@ -1439,8 +1439,8 @@
     }
   ],
   "historical_archive_records": 4000,
-  "diagnostic_records_checked": 74,
-  "diagnostic_missing_urls": 10,
+  "diagnostic_records_checked": 106,
+  "diagnostic_missing_urls": 18,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
