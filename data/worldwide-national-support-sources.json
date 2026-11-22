@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals across 49 countries, plus European Union-wide official funding and finance discovery resources. Records link to official catalogues, benefits finders and programme portals; they are not all individual grant records and do not imply an open call or eligibility. Coverage remains partial and must not be described as a complete global register.",
+  "scope": "Country-specific official support discovery portals and programme records across 49 countries, plus European Union-wide official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1164,6 +1164,76 @@
       "description_hu": "Hivatalos tájékoztató a szociális jóléti juttatásokról, többek között alap-, kiegészítő, lakhatási, tanulmányi és inflációs támogatásokról. A jogosultság egyes programoknál az állampolgárságtól és a helyi hatóságtól függ.",
       "description_en": "Official information on social welfare allowances, including basic, supplementary, housing, academic excellence and inflation allowances. Eligibility can depend on citizenship and the relevant local authority.",
       "verification_status": "official-government-portal"
+    },
+    {
+      "id": "in-pmkisan",
+      "country_code": "IN",
+      "country_en": "India",
+      "category": "agriculture",
+      "name_hu": "India – PM-KISAN mezőgazdasági jövedelemtámogatás",
+      "name_en": "India — PM-KISAN income support for farmers",
+      "url": "https://pmkisan.gov.in/",
+      "publisher": "Government of India — Ministry of Agriculture and Farmers Welfare",
+      "kind": "farmer-income-support-scheme",
+      "description_hu": "Központi jövedelemtámogatási program jogosult földtulajdonos gazdálkodó családok számára. A jogosultságot, kizáró okokat, aktuális részleteket és eKYC-követelményt a hivatalos portálon kell ellenőrizni.",
+      "description_en": "Central income-support scheme for eligible landholding farmer families. Check eligibility, exclusions, current details and eKYC requirements on the official portal.",
+      "verification_status": "official-government-programme"
+    },
+    {
+      "id": "in-national-scholarship-portal",
+      "country_code": "IN",
+      "country_en": "India",
+      "category": "education",
+      "name_hu": "India – National Scholarship Portal ösztöndíjkereső",
+      "name_en": "India — National Scholarship Portal",
+      "url": "https://scholarships.gov.in/",
+      "publisher": "Government of India",
+      "kind": "scholarship-portal",
+      "description_hu": "Központi ösztöndíjportál különböző oktatási és célcsoportoknak szóló ösztöndíjakhoz. A programonkénti jogosultság, intézményi feltétel és beadási időszak külön ellenőrzendő.",
+      "description_en": "Central scholarship portal for education awards serving different student groups. Check eligibility, institution requirements and application windows for each scheme.",
+      "verification_status": "official-government-portal"
+    },
+    {
+      "id": "sg-supportgowhere",
+      "country_code": "SG",
+      "country_en": "Singapore",
+      "category": "social",
+      "name_hu": "Szingapúr – SupportGoWhere támogatáskereső",
+      "name_en": "Singapore — SupportGoWhere support finder",
+      "url": "https://supportgowhere.life.gov.sg/",
+      "publisher": "Government of Singapore",
+      "kind": "benefits-and-support-finder",
+      "description_hu": "Kormányzati kereső a lakosoknak szóló támogatásokhoz és segítségnyújtási programokhoz. A konkrét jogosultságot és igénylést a kiválasztott program hivatalos oldalán kell ellenőrizni.",
+      "description_en": "Government finder for support and assistance schemes for residents. Confirm eligibility and application details on each selected programme's official page.",
+      "verification_status": "official-government-platform"
+    },
+    {
+      "id": "sg-govbenefits",
+      "country_code": "SG",
+      "country_en": "Singapore",
+      "category": "social",
+      "name_hu": "Szingapúr – GovBenefits állami juttatások",
+      "name_en": "Singapore — GovBenefits government schemes",
+      "url": "https://www.govbenefits.gov.sg/",
+      "publisher": "Government of Singapore",
+      "kind": "government-benefits-directory",
+      "description_hu": "Hivatalos áttekintő az állami juttatásokról és támogatási csomagokról, többek között megélhetési kifizetésekről, adó-visszatérítésekről és időskori megtakarítási kiegészítésekről. Egyes jogosultságok Singpass belépést igényelnek.",
+      "description_en": "Official overview of government benefits and support packages, including cost-of-living payments, tax rebates and retirement top-ups. Some eligibility checks require Singpass login.",
+      "verification_status": "official-government-portal"
+    },
+    {
+      "id": "br-cadastro-unico-programmes",
+      "country_code": "BR",
+      "country_en": "Brazil",
+      "category": "all",
+      "name_hu": "Brazília – Cadastro Único alapján elérhető szövetségi programok jegyzéke",
+      "name_en": "Brazil — federal programmes using Cadastro Único",
+      "url": "https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico",
+      "publisher": "Brazilian Ministry of Development and Social Assistance",
+      "kind": "federal-programme-catalogue",
+      "description_hu": "A Cadastro Único nyilvántartáshoz kapcsolódó szövetségi programok kiindulópontja. A hivatalos 2026. februári jegyzék többek között pénzbeli, lakhatási, energia-, oktatási, vidéki és élelmezési segítségeket sorol fel. A lista nem jelenti azt, hogy minden program minden regisztráltnak jár.",
+      "description_en": "Starting point for federal programmes linked to Cadastro Único. The official February 2026 list includes cash, housing, energy, education, rural development and food assistance. Registration does not mean every programme is available to every household.",
+      "verification_status": "official-government-programme-catalogue"
     }
   ],
   "records_count": 67
