@@ -84,3 +84,15 @@ A bevételszerzés fokozatosan, az ingyenes alapfunkciók megőrzésével kész�
 5. Üzemeltetési mentés, visszaállítás és biztonsági felülvizsgálat dokumentált ellenőrzése.
 
 A cél egy megbízható, hosszú távon fenntartható nemzetközi információs szolgáltatás. A rendszer nem állít teljes körű ország- vagy programlefedettséget; a nyilvános funkciók és az ellenőrzött adatlefedettség fokozatosan bővül.
+
+## Napi forrásfigyelés és új minőségellenőrzések (2026-11-22)
+
+A napi GitHub Actions munkafolyamat a beállított katalógusrekordok hivatalos URL-jeit ellenőrzi, összehasonlít egy legfeljebb 64 KB-os oldalmintát az előző futással, és a megváltozott mintákat külön emberi felülvizsgálati sorba teszi. A beállított RSS/Atom hírcsatornákból lehetséges támogatási híreket is gyűjt, de ezek nem kerülnek automatikusan igazolt támogatásként a katalógusba.
+
+- [Napi forrásállapot](https://mokus91.github.io/global-support-radar/source-status.html)
+- [Megváltozott hivatalos oldalak – felülvizsgálati lista](https://mokus91.github.io/global-support-radar/content-review.html)
+- [Új hivatalos közlemények – felülvizsgálati lista](https://mokus91.github.io/global-support-radar/announcements.html)
+
+A napi munkafolyamat új katalógus-integritási ellenőrzést is futtat (scripts/validate_catalogue.py): vizsgálja a kötelező mezőket, az egyedi azonosítókat, az országkódok formátumát és a HTTPS-forráscímeket. A hibás katalógus megállítja az ellenőrzési folyamatot.
+
+**Korlát:** a napi URL- és oldalminta-ellenőrzés nem olvassa ki megbízhatóan a támogatások aktuális összegét, jogosultságát, határidejét vagy nyitottságát. A változásjelzés nem automatikus tényfrissítés; a támogatási adatokat hivatalos közleményből embernek kell ellenőriznie. A hírcsatornák jelenlegi lefedettsége csak a konfigurációban felsorolt országokra terjed ki, nem a világ összes országára.
