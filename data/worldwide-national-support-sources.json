@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 54 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Country-specific official support discovery portals and programme records across 55 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1466,8 +1466,25 @@
       "description_en": "Education cash support for children in active Benazir Kafaalat beneficiary families, from primary through higher-secondary education. BISP lists age bands of 4–12 for primary, 8–18 for secondary and 13–22 for higher secondary. Enrolment requires the beneficiary mother's CNIC, the child's NADRA-issued B-form/CRC and a school-verified admission slip. Continued payments depend on school admission and at least 70% quarterly attendance. The stipend amounts shown on the BISP page may be outdated; confirm current rates with a local BISP office.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "th-state-welfare-card-2026",
+      "country_code": "TH",
+      "country_en": "Thailand",
+      "category": "social",
+      "name_hu": "Thaiföld – Állami jóléti kártya (State Welfare Card 2026)",
+      "name_en": "Thailand — State Welfare Card 2026",
+      "url": "https://welfare.mof.go.th/",
+      "publisher": "Thai Ministry of Finance — State Welfare Registration Project",
+      "kind": "individual-benefit-programme",
+      "description_hu": "Alacsony jövedelmű, a 2026-os jogosultsági ellenőrzésen megfelelt thaiföldi állampolgárok támogatása. A hivatalos tájékoztató alapjogosultságként legalább 18 éves kort és thaiföldi állampolgárságot ír elő; további jövedelmi, vagyoni és kizáró feltételek is érvényesek. A közzétett juttatási elemek között havi 300 baht alapvető termékekre, 3 havonta 80 baht főzőgáz-kedvezmény, havi 750 baht közösségi közlekedési keret, valamint feltételekhez kötött villany- és vízdíj-támogatás szerepel. A 2026-os új regisztrációs kör lezárult; ez nem jelenti azt, hogy minden korábbi kártyabirtokos automatikusan jogosult. A személyes jogosultságot és az aktuális kereteket a hivatalos portálon kell ellenőrizni.",
+      "description_en": "Support for low-income Thai citizens who pass the 2026 eligibility screening. The Ministry of Finance notice lists Thai citizenship and age 18+ as basic requirements, alongside additional income, asset and exclusion criteria. Published benefit components include THB 300 per month for essential goods, THB 80 every three months for cooking gas, THB 750 per month for public transport, and conditional electricity and water bill relief. The 2026 registration round has closed; previous cardholders are not automatically guaranteed eligibility. Check individual status and current entitlements on the official portal.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22",
+      "application_status": "2026 registration round closed; eligibility/status checks remain available through official channels",
+      "source_reference": "https://www.mof.go.th/wp-content/uploads/2026/06/ข่าวแถลงกระทรวงการคลังฉบับที่-41-2569-1.pdf"
     }
   ],
-  "records_count": 104,
+  "records_count": 105,
   "updated": "2026-11-22"
 }
