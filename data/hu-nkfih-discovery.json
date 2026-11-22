@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T17:25:01.954783+00:00",
+  "generated_at": "2026-11-22T20:08:44.236153+00:00",
   "source_id": "hu-nkfih",
   "source_url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
   "fetch_status": "temporarily-unavailable",
@@ -144,5 +144,5 @@
   ],
   "note": "Latest fetch failed; previous successful snapshot is preserved and may be stale.",
   "error": "<urlopen error timed out>",
-  "last_successful_fetch": "2026-11-22T14:29:34.313917+00:00"
+  "last_successful_fetch": "2026-11-22T17:25:01.954783+00:00"
 }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T17:20:30.359532+00:00",
+  "generated_at": "2026-11-22T20:04:30.596898+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 179,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -269,14 +269,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "C12308 - SNAM 4 EFFICIENCY/MIECI-EVOLVE",
-      "url": "https://dati.agcm.it/dataset/p28329#",
-      "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "CCVG Buyer Profile Support for the publication of essential data",
       "url": "https://www.data.gouv.fr/datasets/profil-dacheteur-de-la-ccvg-support-de-publication-des-donnees-essentielles",
       "query": "public support programmes",
@@ -423,6 +415,14 @@
     {
       "title": "Energy Efficiency Action Plan (EEAP): boiler",
       "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=16#",
+      "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Energy Efficiency Action Plan (EEAP): glazing",
+      "url": "http://walstat.iweps.be/walstat-catalogue.php?indicateur_id=811400&ordre=15#",
       "query": "energy efficiency support",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -743,14 +743,6 @@
     {
       "title": "HOUSING_Car",
       "url": "https://www.data.gouv.fr/datasets/logement-voiture",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1078,7 +1070,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1078,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1311,14 +1303,6 @@
     {
       "title": "Subsidies (applications) - Department of State Support and Technical Assistance for EU Programmes at 30. 11. 2023",
       "url": "https://data.gov.sk/dataset/dotacie-ziadosti-odbor-statnych-podpor-a-technickej-pomoci-programov-eu-k-30-11-2023",
-      "query": "public support programmes",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Subsidies (calls) - Department of State Support and Technical Assistance for EU Programmes as of 16. 12. 2022",
-      "url": "https://data.gov.sk/dataset/dotacie-vyzvy-odbor-statnych-podpor-a-technickej-pomoci-programov-eu",
       "query": "public support programmes",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

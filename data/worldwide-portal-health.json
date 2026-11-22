@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-22T17:20:18+00:00",
-  "records_count": 155,
+  "checked_at": "2026-11-22T20:04:16+00:00",
+  "records_count": 203,
   "summary": {
-    "connection_error": 28,
+    "connection_error": 40,
     "http_error": 4,
-    "reachable": 109,
-    "restricted": 14
+    "reachable": 144,
+    "restricted": 15
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -105,9 +105,8 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "za-sassa",
@@ -452,9 +451,9 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "restricted",
-      "http_status": 429,
-      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "us-sam-assistance-listings",
@@ -504,8 +503,9 @@
     },
     {
       "id": "in-national-scholarship-portal",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://scholarships.gov.in/"
     },
     {
       "id": "sg-supportgowhere",
@@ -640,8 +640,9 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.moet.gov.ae/en/national-programme"
     },
     {
       "id": "ae-national-industrial-resilience-fund-2026",
@@ -911,6 +912,281 @@
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://subsidy.molmac.karnali.gov.np/"
+    },
+    {
+      "id": "my-manfaat-national-aid-finder",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://manfaat.mof.gov.my/"
+    },
+    {
+      "id": "my-sara-2026-basic-needs-assistance",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.sara.gov.my/en/home.html"
+    },
+    {
+      "id": "za-dsbd-msme-support-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "za-agriculture-land-support-programmes",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
+    },
+    {
+      "id": "ng-ngcares-livelihood-food-security-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://ngcares.gov.ng/"
+    },
+    {
+      "id": "ng-nsipa-social-investment-programmes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://nsipa.gov.ng/programmes"
+    },
+    {
+      "id": "gh-leap-cash-transfer",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "gh-sif-gwyesco-women-youth-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "gh-gea-women-youth-msme-grants",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ke-yedf-youth-enterprise-finance",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.portal.youthfund.go.ke/"
+    },
+    {
+      "id": "ke-agpo-youth-women-pwd-procurement",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.treasury.go.ke/agpo"
+    },
+    {
+      "id": "ke-nyota-youth-opportunities",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.msme.go.ke/official-rollout-free-nyota-agpo-digital-training-program"
+    },
+    {
+      "id": "co-economia-popular-para-el-cambio",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+    },
+    {
+      "id": "co-sena-fondo-emprender-seed-capital",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.sena.edu.co/empleabilidad/fondo-emprender"
+    },
+    {
+      "id": "pe-eemri-rural-indigenous-women-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.gob.pe/institucion/midagri/noticias/1360097-midagri-inicia-convocatoria-para-acceder-a-la-estrategia-de-emprendimiento-de-la-mujer-rural-e-indigena"
+    },
+    {
+      "id": "ug-pdm-parish-development-model-financing",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "ug-emyooga-enterprise-revolving-funds",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "ug-grow-women-enterprise-finance",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "ug-small-business-fund-sbf",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "ug-agricultural-credit-facility",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "rw-vup-social-protection-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://sp.minaloc.gov.rw/"
+    },
+    {
+      "id": "rw-sptp-social-protection-transformation",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.loda.gov.rw/sptp"
+    },
+    {
+      "id": "sn-fadsr-rural-sector-financing",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://fadsr.org/"
+    },
+    {
+      "id": "sn-senegalpme-financing-opportunities",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "sn-fsrp-cost-sharing-agriculture-call-2025",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fsrp.sn/appel-a-projets-pour-le-financement-de-projetsagricoles-et-delevage-a-couts-partages/"
+    },
+    {
+      "id": "tz-neec-government-empowerment-funds-directory",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "tz-fsdt-impact-grant-fund-women-youth",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.fsdt.or.tz/igf/"
+    },
+    {
+      "id": "zm-social-cash-transfer-programme",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "zm-constituency-development-fund-grants-loans",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "zm-revised-cash-for-work-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "mw-ncst-ppp-innovation-research-call-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.grants.ncst.mw/index.php?lang=en"
+    },
+    {
+      "id": "mw-fao-afr100-restoration-grants-2026-closed",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fao-grants.smapply.io/prog/malawi_-_the_supporting_afr100_programme_-_2nd_round/"
+    },
+    {
+      "id": "et-startup-proclamation-grants-credit-guarantee",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.startupethiopia.et/Designation"
+    },
+    {
+      "id": "et-dbe-msme-women-enterprise-financing-directory",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://dbe.com.et/?stm_works=external-fund-credit-management"
+    },
+    {
+      "id": "et-gef-small-grants-op8-2026",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.undp.org/ethiopia/publications/project-proposal-template-eighth-operational-phase-gef-small-grants-programme"
+    },
+    {
+      "id": "et-pact-agriculture-climate-transformation-programme",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "et-rural-productive-safety-net-programme",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "et-inclusive-insurance-challenge-fund-2026-closed",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.undp.org/ethiopia/news/call-applications-inclusive-insurance-challenge-fund-2026"
+    },
+    {
+      "id": "ng-boi-guaranteed-loans-women",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://iprogrammes.boi.ng/"
+    },
+    {
+      "id": "ng-boi-rapid-rural-enterprise-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://iprogrammes.boi.ng/"
+    },
+    {
+      "id": "ng-smedan-conditional-grant-scheme",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/cgs/"
+    },
+    {
+      "id": "ng-smedan-adep-agribusiness-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/adep/"
+    },
+    {
+      "id": "ng-smedan-awake-women-agriculture",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/advancement-for-women-in-agriculture-agro-allied-and-cottage-enterprises-program/"
+    },
+    {
+      "id": "gh-leap-cash-transfer-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ke-youth-enterprise-development-fund",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.portal.youthfund.go.ke/"
+    },
+    {
+      "id": "cm-widu-micro-small-business-grant",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://widu.africa/cameroon"
+    },
+    {
+      "id": "ci-widu-micro-small-business-grant",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://widu.africa/cote-divoire"
+    },
+    {
+      "id": "bw-poverty-eradication-enterprise-support",
+      "status": "connection_error",
+      "error": "URLError"
     }
   ]
 }
