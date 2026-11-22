@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Adománygyűjtő és közösségi finanszírozási platformok Magyarországon és nemzetközileg. Tájékoztató, hivatalos hivatkozásokkal.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mokus91.github.io/global-support-radar/donation-platforms.html">
+<meta name="theme-color" content="#101a2d">
+<title>Adománygyűjtő platformok | Global Support Radar</title>
+<style>
+:root{color-scheme:dark;--bg:#101a2d;--panel:#17263d;--line:#30435e;--text:#eef4ff;--muted:#aab8cc;--mint:#77e0c1}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1050px;margin:auto;padding:28px 18px 60px}.top a{color:var(--mint)}h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:24px 0 12px}.lead{font-size:18px;color:var(--muted);max-width:800px}
+.notice{padding:14px 16px;border:1px solid #6a5730;background:#2c271c;color:#f5dfb2;border-radius:13px;margin:22px 0}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.tools input,.tools select{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--text);font:inherit;flex:1;min-width:190px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:19px;display:flex;flex-direction:column}.tag{color:var(--mint);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.card h2{font-size:21px;margin:8px 0}.card p{color:var(--muted);margin:5px 0 14px}.card a{color:var(--mint);font-weight:700;margin-top:auto;overflow-wrap:anywhere}.small{font-size:13px;color:var(--muted)}.back{display:inline-block;margin-top:30px;color:var(--mint)}
+</style>
+</head>
+<body><main>
+<div class="top"><a href="./">← Global Support Radar főoldal</a></div>
+<h1 id="title">Adománygyűjtő platformok</h1>
+<p class="lead" id="lead">Olyan külső felületek gyűjteménye, ahol magánszemélyek vagy civil szervezetek adománygyűjtést indíthatnak, illetve jó ügyeket támogathatnak.</p>
+<div class="notice" id="notice"><b>Fontos:</b> Ezek külső szolgáltatások, nem a Global Support Radar fizetési rendszerei. A gyűjtés indításának lehetősége, az országkorlátozások, az igazolások és a díjak platformonként eltérnek. Adományozás előtt ellenőrizd a kedvezményezettet, a feltételeket és a teljes költséget.</div>
+<div class="tools">
+<input id="q" type="search" placeholder="Keresés név vagy cél szerint…" aria-label="Keresés">
+<select id="kind" aria-label="Platform típusa"><option value="all">Minden típus</option><option value="individual">Magánszemélyek</option><option value="ngo">Civil szervezetek</option><option value="global">Nemzetközi</option></select>
+</div>
+<div class="grid" id="cards">
+<article class="card" data-kind="ngo">
+<span class="tag">Magyarország · civil szervezetek</span><h2>Adjukössze.hu</h2>
+<p>Magyar adománygyűjtő portál civil szervezeteknek. Közösségi kampányok, bankkártyás és más adományozási lehetőségek. A kampányindítás feltételeit a szolgáltató határozza meg.</p>
+<a href="https://adjukossze.hu/" target="_blank" rel="noopener noreferrer">Hivatalos oldal megnyitása ↗</a>
+</article>
+<article class="card" data-kind="individual global">
+<span class="tag">Nemzetközi · magánszemélyek és közösségek</span><h2>WhyDonate</h2>
+<p>Nemzetközi adománygyűjtő szolgáltatás személyes, közösségi és jótékonysági célokra. A támogatott országokat, kifizetési módokat és tranzakciós díjakat indulás előtt ellenőrizni kell.</p>
+<a href="https://whydonate.com/hu/" target="_blank" rel="noopener noreferrer">Hivatalos oldal megnyitása ↗</a>
+</article>
+<article class="card" data-kind="ngo global">
+<span class="tag">Nemzetközi · nonprofit szervezetek</span><h2>GlobalGiving</h2>
+<p>Regisztrált nonprofit szervezetek projektjeinek támogatására szolgáló nemzetközi platform. A szervezetek jelentkezését és projektjeit ellenőrzik; nem általános magánszemélyes pénzgyűjtő oldal.</p>
+<a href="https://www.globalgiving.org/" target="_blank" rel="noopener noreferrer">Hivatalos oldal megnyitása ↗</a>
+</article>
+<article class="card" data-kind="ngo global">
+<span class="tag">Nemzetközi · nonprofit szervezetek</span><h2>Donorbox</h2>
+<p>Adományozási űrlapok és online adománygyűjtő eszközök szervezeteknek. A rendelkezésre állás, fizetési szolgáltatók és díjak országonként, illetve csomagonként változhatnak.</p>
+<a href="https://donorbox.org/" target="_blank" rel="noopener noreferrer">Hivatalos oldal megnyitása ↗</a>
+</article>
+</div>
+<p class="small" id="count" aria-live="polite">4 platform megjelenítve. A lista tájékoztató jellegű, nem teljes körű és nem minősül ajánlásnak.</p>
+<p class="small">A Global Support Radar nem kezeli az adományokat, nem ellenőrzi automatikusan a kampányok hitelességét, és nem áll kapcsolatban a felsorolt szolgáltatókkal. A platformok feltételei és díjai változhatnak.</p>
+<a class="back" href="./">Vissza a főoldalra</a>
+</main>
+<script>
+(()=>{const q=document.getElementById('q'),kind=document.getElementById('kind'),cards=[...document.querySelectorAll('.card')],count=document.getElementById('count');function filter(){const term=q.value.toLocaleLowerCase('hu'),k=kind.value;let n=0;cards.forEach(c=>{const show=(k==='all'||c.dataset.kind.split(' ').includes(k))&&c.innerText.toLocaleLowerCase('hu').includes(term);c.hidden=!show;if(show)n++});count.textContent=n+' platform megjelenítve. A lista tájékoztató jellegű, nem teljes körű és nem minősül ajánlásnak.'}q.addEventListener('input',filter);kind.addEventListener('change',filter)})();
+</script></body></html>
