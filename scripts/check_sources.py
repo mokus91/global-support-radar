@@ -149,7 +149,7 @@ change_queue = {
     "important_note": "Page sample changes are review signals only. They are not verified benefit changes. Do not automatically edit or republish benefit facts.",
     "items": queue_items
 }
-CHANGE_QUEUE.write_text(json.dumps(change_queue, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+CHANGE_QUEUE.write_text(json.dumps(change_queue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 report = {
     "generated_at": now.isoformat(),
