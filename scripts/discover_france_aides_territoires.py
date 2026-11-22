@@ -68,10 +68,40 @@ def main():
         payload=get_json(url)
         if payload.get("_api_error") is not None or payload.get("_api_error_kind"):
             restricted = payload.get("_api_error_kind") == "http"
-            output={"schema_version":"1.0","generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),"country_code":"FR","source":"Aides-territoires official public API","source_url":START,"pages_checked":pages,"records_count":len(records),"records":records,"fetch_status":"temporarily-restricted" if restricted else "temporarily-unavailable","http_status":payload.get("_api_error"),"error":payload.get("_api_error_reason"),"scope":"The official API could not be queried successfully. No current grant or application status is inferred; use the official catalogue directly."}
+            # Preserve the last successful snapshot during an upstream outage.
+            # Its original generated_at remains unchanged so freshness checks do
+            # not mistake old opportunities for newly fetched data.
+            previous = {}
+            if OUT.exists():
+                try:
+                    previous = json.loads(OUT.read_text(encoding="utf-8"))
+                    if not isinstance(previous, dict):
+                        previous = {}
+                except (OSError, json.JSONDecodeError):
+                    previous = {}
+            previous_records = previous.get("records", [])
+            if not isinstance(previous_records, list):
+                previous_records = []
+            now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            output={
+                "schema_version":"1.0",
+                "generated_at":previous.get("generated_at") or now,
+                "checked_at":now,
+                "country_code":"FR",
+                "source":"Aides-territoires official public API",
+                "source_url":START,
+                "pages_checked":pages,
+                "records_count":len(previous_records),
+                "records":previous_records,
+                "fetch_status":"temporarily-restricted" if restricted else "temporarily-unavailable",
+                "http_status":payload.get("_api_error"),
+                "error":payload.get("_api_error_reason"),
+                "stale_snapshot_preserved":bool(previous_records),
+                "scope":"The official API could not be queried successfully. Previously collected records are retained as a stale snapshot, not treated as newly verified. No current grant or application status is inferred; use the official catalogue directly."
+            }
             OUT.parent.mkdir(parents=True,exist_ok=True)
-            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-            print("Aides-territoires API " + ("temporarily restricted" if restricted else "temporarily unavailable") + "; saved a non-fatal status record.")
+            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+            print("Aides-territoires API " + ("temporarily restricted" if restricted else "temporarily unavailable") + f"; preserved {len(previous_records)} records from the last successful snapshot.")
             return
         rows=payload.get("results",[])
         if not isinstance(rows,list): raise RuntimeError("Unexpected API response: results is not a list")
