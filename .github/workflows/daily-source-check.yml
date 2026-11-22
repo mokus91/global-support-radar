@@ -1,0 +1,38 @@
+name: Daily official source link check
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-source-check
+  cancel-in-progress: false
+
+jobs:
+  check-official-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check catalogue URLs
+        run: python scripts/check_sources.py
+      - name: Publish source health report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-health-report.json
+          if git diff --cached --quiet; then
+            echo "Source health report unchanged."
+          else
+            git commit -m "Update daily official source link health report"
+            git push
+          fi
