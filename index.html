@@ -54,6 +54,18 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <div id="offlineNotice" class="offline-banner wrap" role="status" aria-live="polite">Nincs internetkapcsolat. Az élő támogatási adatok nem frissíthetők; a határidőket és jogosultságot a hivatalos forrásban ellenőrizd.</div>
 <section class="hero"><div class="eyebrow" id="eyebrow">TÁMOGATÁSOK HATÁROK NÉLKÜL</div><h1 id="title">Találd meg a neked járó támogatásokat.</h1><p id="subtitle">Állami támogatások, pályázatok és kedvezmények egy helyen. Válassz országot, szűrj kategóriára, és indulj el a hivatalos forrás felé.</p><div class="searchrow"><input id="q" class="search" type="search" placeholder="Keresés támogatásra, témára vagy kulcsszóra…"><button id="searchBtn" class="btn">Keresés →</button></div>
 </section>
+<section id="gsrReturnVisit" class="wrap" style="margin:8px auto 30px;padding:24px 22px;border:1px solid #3b665f;border-radius:19px;background:linear-gradient(120deg,#12372f,#142944 75%);box-shadow:0 14px 34px rgba(0,0,0,.18)">
+ <div style="max-width:980px;margin:auto">
+  <div id="returnEyebrow" style="font-size:12px;letter-spacing:1.6px;font-weight:800;color:#72e6bd">NE MARADJ LE A NEKED SZÓLÓ LEHETŐSÉGEKRŐL</div>
+  <h2 id="returnTitle" style="font-size:clamp(25px,4vw,38px);line-height:1.12;margin:9px 0 10px;color:#f2fff9">Egy új támogatás sokat számíthat. Nézz vissza rendszeresen!</h2>
+  <p id="returnText" style="max-width:790px;color:#d0e5e1;font-size:16px;line-height:1.65;margin:0">Új pályázatok, családi és lakhatási segítségek, vállalkozói és mezőgazdasági lehetőségek jelenhetnek meg év közben is. Keresd ország és témakör szerint, majd ellenőrizd a részleteket az eredeti hivatalos kiírásban. A határidők és feltételek változhatnak – ezért érdemes időről időre visszatérni.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+   <a id="returnSearch" href="#worldwideSupportFinder" style="display:inline-block;padding:12px 17px;border-radius:10px;background:#65e0b7;color:#08251e;text-decoration:none;font-weight:850">Megnézem a támogatásokat →</a>
+   <button id="returnSave" type="button" style="padding:11px 15px;border-radius:10px;border:1px solid #8ab8b0;background:#173d3b;color:#effffb;font-weight:750;cursor:pointer">Oldal mentése a könyvjelzőkhöz ☆</button>
+  </div>
+  <p id="returnTip" style="font-size:12px;color:#b7d2cd;margin:12px 0 0">Tipp: mentsd el ezt az oldalt a könyvjelzőid közé, és nézd meg újra, amikor támogatást keresel. A Global Support Radar nem hivatalos hatósági oldal, és nem garantálja, hogy minden program szerepel a gyűjteményben.</p>
+ </div>
+</section>
 <section class="wrap" id="gsrApplicationJourney" style="padding:26px 22px;margin:22px auto;background:linear-gradient(135deg,#142743,#102033);border:1px solid #355273;border-radius:20px;color:#f5f8ff">
  <div style="max-width:1050px;margin:auto">
   <div style="font-size:12px;letter-spacing:1.5px;color:#8fd8ff;font-weight:800" id="journeyEyebrow">A TALÁLATTÓL AZ UTOLSÓ PAPÍRIG</div>
@@ -1911,6 +1923,18 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
   update();
   window.setInterval(update, 1000);
   lang?.addEventListener("change", update);
+})();
+</script>
+
+
+<script id="gsr-return-visit-copy">
+(()=> {
+ const $=id=>document.getElementById(id);
+ const hu={eyebrow:"NE MARADJ LE A NEKED SZÓLÓ LEHETŐSÉGEKRŐL",title:"Egy új támogatás sokat számíthat. Nézz vissza rendszeresen!",text:"Új pályázatok, családi és lakhatási segítségek, vállalkozói és mezőgazdasági lehetőségek jelenhetnek meg év közben is. Keresd ország és témakör szerint, majd ellenőrizd a részleteket az eredeti hivatalos kiírásban. A határidők és feltételek változhatnak – ezért érdemes időről időre visszatérni.",search:"Megnézem a támogatásokat →",save:"Oldal mentése a könyvjelzőkhöz ☆",tip:"Tipp: mentsd el ezt az oldalt a könyvjelzőid közé, és nézd meg újra, amikor támogatást keresel. A Global Support Radar nem hivatalos hatósági oldal, és nem garantálja, hogy minden program szerepel a gyűjteményben."};
+ const en={eyebrow:"DON’T MISS SUPPORT THAT MAY MATTER TO YOU",title:"A new grant or benefit could make a difference. Check back regularly.",text:"New grants, family and housing assistance, business funding and agricultural opportunities may appear throughout the year. Search by country and topic, then verify the details on the original official notice. Deadlines and eligibility rules can change, so it is worth returning from time to time.",search:"Explore support opportunities →",save:"Bookmark this page ☆",tip:"Tip: bookmark this page and revisit it when you are looking for support. Global Support Radar is not a government agency and does not guarantee that every programme is listed."};
+ function render(){const x=( $("lang")?.value||"hu").startsWith("en")?en:hu; $("returnEyebrow").textContent=x.eyebrow;$("returnTitle").textContent=x.title;$("returnText").textContent=x.text;$("returnSearch").textContent=x.search;$("returnSave").textContent=x.save;$("returnTip").textContent=x.tip;}
+ $("returnSave").addEventListener("click",()=>{const en=( $("lang")?.value||"hu").startsWith("en");const msg=en?"To bookmark this page, use your browser menu and choose “Add bookmark” or tap the star icon.":"A könyvjelző mentéséhez nyisd meg a böngésző menüjét, és válaszd a „Könyvjelző hozzáadása” lehetőséget, vagy koppints a csillag ikonra."; $("returnSave").textContent=msg;});
+ $("lang")?.addEventListener("change",render);render();
 })();
 </script>
 
