@@ -1234,7 +1234,49 @@
       "description_hu": "A Cadastro Único nyilvántartáshoz kapcsolódó szövetségi programok kiindulópontja. A hivatalos 2026. februári jegyzék többek között pénzbeli, lakhatási, energia-, oktatási, vidéki és élelmezési segítségeket sorol fel. A lista nem jelenti azt, hogy minden program minden regisztráltnak jár.",
       "description_en": "Starting point for federal programmes linked to Cadastro Único. The official February 2026 list includes cash, housing, energy, education, rural development and food assistance. Registration does not mean every programme is available to every household.",
       "verification_status": "official-government-programme-catalogue"
+    },
+    {
+      "id": "global-fao-gef-small-grants",
+      "country_code": "GLOBAL",
+      "country_en": "Global",
+      "category": "environment",
+      "name_hu": "Nemzetközi – FAO/GEF Small Grants Program",
+      "name_en": "Global — FAO/GEF Small Grants Programme",
+      "url": "https://www.fao.org/small-grants-program/",
+      "publisher": "Food and Agriculture Organization of the United Nations / Global Environment Facility",
+      "kind": "international-community-grants-programme",
+      "description_hu": "Közösségi és civil szervezetek által vezetett kezdeményezések támogatása biodiverzitás, klímaalkalmazkodás, fenntartható megélhetés és természeti erőforrások témájában. Csak meghatározott részt vevő országokban működik; az országos felhívásokat és jogosultságot külön kell ellenőrizni.",
+      "description_en": "Grant programme for community-led initiatives in biodiversity, climate resilience, sustainable livelihoods and natural resources. Operates only in selected countries; check country-level calls and eligibility.",
+      "verification_status": "official-international-programme"
+    },
+    {
+      "id": "global-eeas-grants",
+      "country_code": "GLOBAL",
+      "country_en": "Global",
+      "category": "all",
+      "name_hu": "Nemzetközi – EEAS nemzetközi támogatási és pályázati felhívások",
+      "name_en": "Global — EEAS international grants and calls",
+      "url": "https://www.eeas.europa.eu/eeas/grants_en",
+      "publisher": "European External Action Service, European Union",
+      "kind": "international-grant-call-directory",
+      "description_hu": "Országok és régiók szerint böngészhető uniós külkapcsolati támogatási felhívások civil szervezeteknek és más jogosult pályázóknak. Nyitott és lezárt felhívásokat is tartalmaz; minden kiírás státuszát és határidejét külön kell ellenőrizni.",
+      "description_en": "Browse EU external-action grant calls by country and region for civil-society organisations and other eligible applicants. Includes ongoing and closed calls; check each call's status and deadline.",
+      "verification_status": "official-eu-directory"
+    },
+    {
+      "id": "global-worldbank-social-protection-response",
+      "country_code": "GLOBAL",
+      "country_en": "Global",
+      "category": "social",
+      "name_hu": "Nemzetközi – Világbank Social Protection Response nemzetközi finanszírozási program",
+      "name_en": "Global — World Bank Social Protection Response programme",
+      "url": "https://www.worldbank.org/en/programs/social-protection-response",
+      "publisher": "World Bank",
+      "kind": "international-development-financing-programme",
+      "description_hu": "Több ország szociális védelmi rendszereit, foglalkoztatási és válságkezelési támogatásait erősítő nemzetközi finanszírozási program. Elsősorban kormányzati rendszereket és intézményi projekteket támogat, nem közvetlen lakossági pénzbeli juttatás.",
+      "description_en": "International financing programme strengthening social protection systems, employment support and crisis response across multiple countries. Primarily supports government systems and institutional projects, not direct household cash benefits.",
+      "verification_status": "official-international-programme"
     }
   ],
-  "records_count": 67
+  "records_count": 91
 }
