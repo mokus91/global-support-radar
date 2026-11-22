@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A Global Support Radar nyilvános, összesített látogatottsági adatai.">
+<title>Látogatottsági statisztikák – Global Support Radar</title>
+<style>
+:root{color-scheme:dark;--bg:#081321;--panel:#122238;--line:#29425e;--text:#edf4fc;--muted:#a9bbcf;--mint:#57e0b2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#18304a 0,#081321 48%);color:var(--text);font:16px system-ui,sans-serif}.wrap{max-width:960px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:12px 0 20px}.brand{font-weight:800;font-size:18px}.brand span{color:var(--mint)}a{color:var(--mint)}.hero{padding:45px 0 24px}.eyebrow{color:var(--mint);font-size:12px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(32px,6vw,52px);margin:10px 0}.hero p{color:var(--muted);max-width:700px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:rgba(18,34,56,.92);border:1px solid var(--line);border-radius:17px;padding:22px}.card small{color:var(--muted)}.number{font-size:clamp(28px,5vw,42px);font-weight:850;color:var(--mint);margin:8px 0}.note{margin:22px 0;padding:15px;border:1px solid #66552f;background:#2c271c;color:#f4dfb6;border-radius:12px;font-size:13px;line-height:1.5}footer{margin-top:35px;padding:22px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}@media(max-width:600px){.grid{grid-template-columns:1fr}.wrap{padding:18px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div class="brand">🌍 <span>Global Support Radar</span></div><a href="./index.html">← Vissza a keresőhöz</a></header>
+<section class="hero"><div class="eyebrow">NYILVÁNOS ÁTLÁTHATÓSÁG</div><h1>Látogatottsági statisztikák</h1><p>Az alábbi számok a weboldal összesített oldalmegtekintéseit mutatják a GoatCounter nyilvános számlálójából. Nem azonosak az egyedi látogatók számával.</p></section>
+<section class="grid" aria-live="polite">
+ <article class="card"><small>Összes oldalmegtekintés</small><div class="number" id="all">Betöltés…</div><small>Az első mérés óta</small></article>
+ <article class="card"><small>Elmúlt 7 nap</small><div class="number" id="week">Betöltés…</div><small>Gördülő heti időszak</small></article>
+ <article class="card"><small>Aktuális hónap</small><div class="number" id="month">Betöltés…</div><small>A hónap első napjától</small></article>
+ <article class="card"><small>Aktuális év</small><div class="number" id="year">Betöltés…</div><small>Január 1-jétől</small></article>
+</section>
+<div class="note" id="status">Az adatok lekérése folyamatban van. A GoatCounter nyilvános számlálója akár négy órán át gyorsítótárazott adatot is mutathat.</div>
+<p><a href="https://global-support-radar-mokus91.goatcounter.com/" target="_blank" rel="noopener noreferrer">Részletes látogatottsági irányítópult megnyitása ↗</a></p>
+<footer>Adatforrás: GoatCounter. A számláló nem garantálja az összes látogatás rögzítését (például a reklámblokkolók befolyásolhatják a mérést). <a href="./methodology.html">Módszertan</a></footer>
+</main>
+<script>
+(()=>{
+ const code="global-support-radar-mokus91";
+ const fmt=n=>Number(n).toLocaleString("hu-HU");
+ const today=new Date();
+ const iso=d=>{const x=new Date(d);return x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0")};
+ const startWeek=new Date(today);startWeek.setDate(today.getDate()-6);
+ const startMonth=new Date(today.getFullYear(),today.getMonth(),1);
+ const startYear=new Date(today.getFullYear(),0,1);
+ const base="https://"+code+".goatcounter.com/counter/TOTAL.json";
+ const jobs=[["all",null],["week",iso(startWeek)],["month",iso(startMonth)],["year",iso(startYear)]];
+ Promise.all(jobs.map(async([id,start])=>{
+  const url=base+(start?"?start="+encodeURIComponent(start)+"&end="+encodeURIComponent(iso(today)):"");
+  const r=await fetch(url,{cache:"no-store"});
+  if(!r.ok)throw new Error("A nyilvános számláló nem érhető el.");
+  const data=await r.json();
+  if(data.count===undefined)throw new Error("A számláló nem adott vissza értéket.");
+  document.getElementById(id).textContent=String(data.count);
+ })).then(()=>{document.getElementById("status").textContent="Az adatok sikeresen betöltődtek. A GoatCounter nyilvános számlálója akár négy órán át gyorsítótárazott adatot is mutathat."})
+ .catch(()=>{for(const id of ["all","week","month","year"])if(document.getElementById(id).textContent==="Betöltés…")document.getElementById(id).textContent="Nem elérhető";document.getElementById("status").textContent="A nyilvános számláló jelenleg nem ad adatot. Ellenőrizd a GoatCounter webhelybeállításaiban az „Allow adding visitor counts on your website” engedélyt, majd töltsd újra ezt az oldalt."});
+})();
+</script></body></html>
