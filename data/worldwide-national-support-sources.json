@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Official support discovery portals and programme records across 76 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 77 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -2934,8 +2934,56 @@
       "description_en": "A government programme offering small-enterprise packages, technical preparation and business training to Botswana citizens aged 18 or older who live in poverty. Examples include kiosks, home laundry, bakeries, food processing, hair salons and gardening. Interested applicants contact their local Social and Community Development office or local authority; eligibility and project suitability are assessed locally. Government guidance says the service is free. This is a targeted, locally assessed programme, not an automatic nationwide cash benefit.",
       "verification_status": "official-government-programme-local-assessment-ongoing-terms-confirm",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "fj-msme-programmes",
+      "country_code": "FJ",
+      "country_en": "Fiji",
+      "category": "business",
+      "name_hu": "Fidzsi – hivatalos MSME vállalkozási támogatási programok",
+      "name_en": "Fiji — official MSME business support programmes",
+      "url": "https://www.businessnow.gov.fj/msme-fiji/programmes/",
+      "publisher": "Fiji Government — Ministry of Trade, Co-operatives, Micro, Small and Medium Enterprises and Communications",
+      "kind": "government-business-support-directory",
+      "description_hu": "Hivatalos kormányzati gyűjtőoldal mikro-, kis- és középvállalkozások támogatási programjaihoz, többek között vállalkozásindítási, export- és regionális fejlesztési támogatásokkal. A programok aktuális elérhetőségét és feltételeit külön ellenőrizni kell.",
+      "description_en": "Official government directory of support programmes for micro, small and medium enterprises, including entrepreneurship, export and regional development support. Current availability and terms must be checked for each programme.",
+      "verification_status": "official-domain-source",
+      "last_checked": "2026-11-22",
+      "source_reference": "https://www.fiji.gov.fj/government-launches-fijis-first-ever-msme-strategic-plan-2025-2030-and-national-msme-database/"
+    },
+    {
+      "id": "fj-first-home-land-assistance",
+      "country_code": "FJ",
+      "country_en": "Fiji",
+      "category": "social",
+      "name_hu": "Fidzsi – első otthon és első telek vásárlási támogatása",
+      "name_en": "Fiji — first home and first land purchase assistance",
+      "url": "https://www.housing.gov.fj/programmes",
+      "publisher": "Fiji Government — Ministry of Housing and Local Government",
+      "kind": "housing-grant-programme-information",
+      "description_hu": "A minisztérium hivatalos programoldala első otthon építéséhez vagy vásárlásához, illetve első telek megszerzéséhez kapcsolódó támogatási lehetőségeket ismertet. A közzétett összegek és jövedelmi feltételek mellett a jelenlegi keret és a jelentkezés módja a közreműködő banknál vagy illetékes hatóságnál ellenőrizendő.",
+      "description_en": "Official ministry page describing assistance for building or purchasing a first home and purchasing first residential land. Published grant amounts and income criteria are subject to confirmation of current funding and application arrangements with participating banks or authorities.",
+      "verification_status": "official-domain-source",
+      "last_checked": "2026-11-22",
+      "source_reference": "https://www.housing.gov.fj/programmes"
+    },
+    {
+      "id": "fj-young-entrepreneurship-scheme",
+      "country_code": "FJ",
+      "country_en": "Fiji",
+      "category": "business",
+      "name_hu": "Fidzsi – Young Entrepreneurship Scheme (YES)",
+      "name_en": "Fiji — Young Entrepreneurship Scheme (YES)",
+      "url": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf",
+      "publisher": "Fiji Government — Ministry of Trade, Co-operatives, Micro, Small and Medium Enterprises and Communications",
+      "kind": "youth-entrepreneurship-grant-policy",
+      "description_hu": "A 2025. decemberi kormányzati programirányelv legfeljebb 50 000 FJD támogatást ír le 18–40 éves fidzsi vállalkozók innovatív üzleti ötleteinek fejlesztésére. A dokumentum szakpolitikai feltételeket ismertet; az aktuális pályázati kör megnyitása és a rendelkezésre álló keret külön megerősítendő.",
+      "description_en": "The December 2025 government policy describes grants of up to FJD 50,000 for Fijian entrepreneurs aged 18–40 developing innovative business ideas. The policy document sets out programme rules; an active application round and available funding must be confirmed separately.",
+      "verification_status": "official-government-policy-source",
+      "last_checked": "2026-11-22",
+      "source_reference": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf"
     }
   ],
-  "records_count": 203,
+  "records_count": 206,
   "updated": "2026-11-22"
 }
