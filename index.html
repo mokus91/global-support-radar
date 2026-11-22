@@ -1892,6 +1892,46 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
 <script>
 (()=>{const b=document.getElementById("gsrShareCopy"),s=document.getElementById("gsrShareStatus");if(!b)return;b.addEventListener("click",async()=>{try{await navigator.clipboard.writeText("https://mokus91.github.io/global-support-radar/");s.textContent="A webcím a vágólapra került."}catch(e){s.textContent="Másold ki ezt a címet: https://mokus91.github.io/global-support-radar/"}})})();
 </script>
+<section id="gsrVisitorCounter" class="wrap" aria-live="polite" style="padding:18px 22px 24px;text-align:center">
+ <div style="display:inline-flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;padding:12px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(18,30,50,.72)">
+  <span aria-hidden="true" style="font-size:20px">👥</span>
+  <span id="gsrVisitorCounterLabel" style="color:var(--muted);font-size:13px">A főoldal eddigi megtekintései</span>
+  <strong id="gsrVisitorCounterValue" style="font-size:20px;color:var(--mint)">Betöltés…</strong>
+  <a href="https://global-support-radar-mokus91.goatcounter.com/" target="_blank" rel="noopener noreferrer" style="font-size:12px">Statisztikák ↗</a>
+ </div>
+ <p id="gsrVisitorCounterNote" style="margin:8px 0 0;color:var(--muted);font-size:11px">A számláló a GoatCounter nyilvános oldalszintű adatát mutatja; nem egyedi személyek számát.</p>
+</section>
+<script id="gsr-public-visitor-counter">
+(()=>{
+ const value=document.getElementById("gsrVisitorCounterValue");
+ const label=document.getElementById("gsrVisitorCounterLabel");
+ const note=document.getElementById("gsrVisitorCounterNote");
+ const lang=document.getElementById("lang");
+ if(!value)return;
+ const renderText=()=>{
+  const en=(lang?.value||"hu").startsWith("en");
+  label.textContent=en?"Homepage pageviews":"A főoldal eddigi megtekintései";
+  note.textContent=en?"This is the public pageview count for this page, not the number of unique people.":"A számláló a főoldal nyilvános megtekintésszámát mutatja, nem az egyedi személyek számát.";
+ };
+ async function load(){
+  renderText();
+  try{
+   const path=location.pathname.replace(/\/$/,"")||"/";
+   const url="https://global-support-radar-mokus91.goatcounter.com/counter/"+encodeURIComponent(path)+".json";
+   const response=await fetch(url,{cache:"no-store"});
+   if(!response.ok)throw new Error("counter unavailable");
+   const data=await response.json();
+   if(typeof data.count!=="string"&&typeof data.count!=="number")throw new Error("invalid counter response");
+   value.textContent=String(data.count);
+  }catch(_){
+   value.textContent=(lang?.value||"hu").startsWith("en")?"Unavailable":"Jelenleg nem elérhető";
+  }
+ }
+ load();
+ window.setInterval(load,60000);
+ lang?.addEventListener("change",renderText);
+})();
+</script>
 <div class="wrap" style="padding:0 22px 24px;text-align:center;font-size:12px"><a href="./licensing.html">Szoftverlicencelés / Software licensing</a></div>
 
 <script id="gsr-full-application-journey">
