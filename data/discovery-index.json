@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T19:59:56.071244+00:00",
+  "generated_at": "2026-11-22T02:22:42.299666+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -117,6 +117,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
+      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Advertising medium line Vienna",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
@@ -213,6 +221,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
+      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
+      "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "BPI ALAPÍTÓ JOG - ORGANOGRAM - MÓDOSÍTÁSOK - FELELŐSSÉG",
       "url": "https://data.gov.gr/dataset/idrytikos-nomos-mfi-organogramma-tropopoihseis-armodiothtesn",
       "query": "business funding",
@@ -231,14 +247,6 @@
     {
       "title": "Business premises restructuring fund",
       "url": "https://www.data.gouv.fr/datasets/fonds-de-restructuration-des-locaux-dactivite",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "business R&D; sources of funding for own R&D activities; Every two years in 2007",
-      "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/FtgForskFinansSUM",
       "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -549,14 +557,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Government Consolidated Fund (Annual)",
-      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
-      "query": "government grants",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "GPS Grants 2021",
       "url": "https://data.grandparissud.fr/explore/dataset/subventions-gps-2021/",
       "query": "government grants",
@@ -741,6 +741,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "IEWA12 - Number of People on Housing Assistance Payment (HAP) Scheme",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA12/JSON-stat/2.0/en",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "IEWA13 - Households (with and without disability) on Housing Assistance Payment (HAP) Scheme",
       "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IEWA13/JSON-stat/2.0/en",
       "query": "housing assistance",
@@ -896,14 +904,6 @@
       "title": "Inventory of subventions - Etterbeek",
       "url": "https://datastore.brussels/web/data/dataset/f5a2ea96-88e2-4ec7-82ae-ade6e47ee930",
       "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "IPA03 - Structural business statistics",
-      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/IPA03/JSON-stat/2.0/en",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1069,16 +1069,8 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Political funding",
-      "url": "https://politikfinanzierung.efk.admin.ch/",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1086,7 +1078,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
