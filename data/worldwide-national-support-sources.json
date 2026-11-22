@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Official support discovery portals and programme records across 73 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 76 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -2889,8 +2889,53 @@
       "description_en": "Government financing and enterprise development for young Kenyan entrepreneurs. Facilities include start-up and growth loans, agriculture and green-enterprise finance, asset finance, financing linked to government tenders, mentorship and market linkages. Main facilities are repayable loans; terms vary by product.",
       "verification_status": "official-government-fund-products-listed-current-terms-confirm",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "cm-widu-micro-small-business-grant",
+      "country_code": "CM",
+      "country_en": "Cameroon",
+      "category": "business",
+      "name_hu": "Kamerun – WIDU.africa mikro- és kisvállalkozási társfinanszírozási támogatás",
+      "name_en": "Cameroon — WIDU.africa matching grant for micro and small businesses",
+      "url": "https://widu.africa/cameroon",
+      "publisher": "WIDU.africa; GIZ; German Federal Ministry for Economic Cooperation and Development; European Union",
+      "kind": "diaspora-matched-microenterprise-grant-and-coaching",
+      "description_hu": "Kameruni mikro- és kisvállalkozások számára elérhető társfinanszírozási konstrukció. Az európai diaszpórában élő családtag vagy ismerős és a vállalkozó saját befizetéseihez a WIDU támogatást kapcsolhat; az első támogatási körben legfeljebb 3 000 EUR, későbbi körökben legfeljebb 5 000 EUR lehet. Három személyre szabott üzleti tanácsadási alkalom is járhat. Nem feltétel nélküli pénz: meghívás, saját/diaszpóra-befektetés, ellenőrzés és jóváhagyás szükséges. A hivatalos országoldal nyitott jelentkezést jelez; a pontos feltételeket a WIDU felületén kell ellenőrizni.",
+      "description_en": "A matching-finance facility for Cameroonian micro and small businesses. WIDU can match contributions from the entrepreneur and a family member or friend in the European diaspora, with grants up to EUR 3,000 for a first round and up to EUR 5,000 for later rounds. Three tailored business-coaching sessions may also be provided. This is not unconditional cash: an invitation, own/diaspora investment, verification and approval are required. The official country page indicates applications are open; confirm current terms on WIDU's platform.",
+      "verification_status": "official-programme-country-page-open-application-terms-apply",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "ci-widu-micro-small-business-grant",
+      "country_code": "CI",
+      "country_en": "Côte d’Ivoire",
+      "category": "business",
+      "name_hu": "Elefántcsontpart – WIDU.africa mikro- és kisvállalkozási társfinanszírozási támogatás",
+      "name_en": "Côte d’Ivoire — WIDU.africa matching grant for micro and small businesses",
+      "url": "https://widu.africa/cote-divoire",
+      "publisher": "WIDU.africa; GIZ; European Union; German Federal Ministry for Economic Cooperation and Development",
+      "kind": "diaspora-matched-microenterprise-grant-and-coaching",
+      "description_hu": "2026-ban indult program helyi mikro- és kisvállalkozásoknak. Az európai diaszpórában élő családtag vagy ismerős bevonásával a vállalkozó és a diaszpóra hozzájárulását WIDU vissza nem térítendő támogatással egészítheti ki: első alkalommal legfeljebb 3 000 EUR, későbbi körökben legfeljebb 5 000 EUR. Három személyre szabott üzleti tanácsadási alkalom is elérhető. A vállalkozásnak és a résztvevőknek meg kell felelniük az állampolgársági, lakóhelyi és vállalkozási feltételeknek; a finanszírozás társfinanszírozáshoz és jóváhagyáshoz kötött. A pontos aktuális feltételeket a hivatalos oldalon kell ellenőrizni.",
+      "description_en": "Launched in 2026 for local micro and small businesses. With a family member or friend in the European diaspora, WIDU can supplement the entrepreneur's and diaspora partner's contributions with a non-repayable grant of up to EUR 3,000 for a first round and up to EUR 5,000 for later rounds. Three tailored business-coaching sessions are also available. Applicants must meet citizenship, residence and business criteria; funding depends on co-investment and approval. Check the official page for current terms.",
+      "verification_status": "official-programme-country-page-application-route-published-terms-apply",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "bw-poverty-eradication-enterprise-support",
+      "country_code": "BW",
+      "country_en": "Botswana",
+      "category": "social",
+      "name_hu": "Botswana – Poverty Eradication Programme vállalkozásindító és megélhetési támogatás",
+      "name_en": "Botswana — Poverty Eradication Programme enterprise and livelihood support",
+      "url": "https://www.gov.bw/taxonomy/term/135?page=0",
+      "publisher": "Government of Botswana — Social and Community Development / local authorities",
+      "kind": "targeted-poverty-eradication-enterprise-support",
+      "description_hu": "A szegénységben élő, legalább 18 éves botswanai állampolgárok számára kisvállalkozási csomagokat, szakmai felkészítést és üzleti képzést biztosító állami program. Példák: kis üzlet, otthoni mosoda, pékség, élelmiszer-feldolgozás, fodrászat és kertészeti tevékenység. Az érdeklődők a helyi Social and Community Development irodánál vagy önkormányzati hivatalnál jelentkezhetnek; a jogosultságot és a projektalkalmasságot helyben vizsgálják. A kormányzati tájékoztató szerint a szolgáltatás díjmentes. Ez célzott, helyi elbírálású program, nem országosan automatikusan járó készpénztámogatás.",
+      "description_en": "A government programme offering small-enterprise packages, technical preparation and business training to Botswana citizens aged 18 or older who live in poverty. Examples include kiosks, home laundry, bakeries, food processing, hair salons and gardening. Interested applicants contact their local Social and Community Development office or local authority; eligibility and project suitability are assessed locally. Government guidance says the service is free. This is a targeted, locally assessed programme, not an automatic nationwide cash benefit.",
+      "verification_status": "official-government-programme-local-assessment-ongoing-terms-confirm",
+      "last_checked": "2026-11-22"
     }
   ],
-  "records_count": 200,
+  "records_count": 203,
   "updated": "2026-11-22"
 }
