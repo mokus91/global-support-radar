@@ -1559,6 +1559,21 @@
       "description_en": "A 2026-launched AED 1 billion financing initiative for selected strategic industrial sectors. It may support capital expenditure and working capital subject to sector, project and credit assessment requirements. It is not a general household benefit.",
       "verification_status": "official-government-portal",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "ae-sme-in-a-box",
+      "country_code": "AE",
+      "country_en": "United Arab Emirates",
+      "category": "business",
+      "name_hu": "Dubai – SME in a Box vállalkozásindítási és működési szolgáltatáscsomag",
+      "name_en": "Dubai — SME in a Box business setup and operations platform",
+      "url": "https://www.dubaidet.gov.ae/en/newsroom/press-releases/sme-in-a-box",
+      "publisher": "Dubai Department of Economy and Tourism",
+      "kind": "official-business-support-service",
+      "description_hu": "2026 júniusában bejelentett dubaji platform, amely vállalkozásindításhoz és működéshez kapcsolódó szolgáltatásokat – például engedélyezési, banki, fizetési, logisztikai és telekommunikációs megoldásokat – fog össze partneri ajánlatokkal. A közölt akár 80 000 AED értékű előny becsült, szolgáltatás- és igényfüggő megtakarítás, nem készpénztámogatás. A szolgáltatások elérhetőségét és feltételeit a platformon kell ellenőrizni.",
+      "description_en": "Announced in June 2026, this Dubai platform bundles business setup and operating services such as licensing, banking, payments, logistics and telecom through partner offers. The stated potential value of up to AED 80,000 is an estimated, needs-dependent value of savings and services, not a cash grant. Availability and terms must be checked on the platform.",
+      "verification_status": "official-government-announcement",
+      "last_checked": "2026-11-22"
     }
   ],
   "records_count": 106,
