@@ -1332,6 +1332,20 @@
       "description_hu": "A brit kormány nemzetközi fejlesztési támogatási keresője, amely ország és finanszírozási státusz szerint szűrhető felhívásokat mutat. A célországot, jogosult pályázókat, nyitottságot és határidőt minden felhívásnál külön ellenőrizni kell.",
       "description_en": "UK government finder for international development funding calls, filterable by country and funding status. Check target countries, eligible applicants, open status and deadlines for each call.",
       "verification_status": "official-government-grant-finder"
+    },
+    {
+      "id": "gh-leap",
+      "country_code": "GH",
+      "country_en": "Ghana",
+      "category": "social",
+      "name_hu": "Ghána – LEAP szegénységcsökkentő pénzbeli támogatás",
+      "name_en": "Ghana — Livelihood Empowerment Against Poverty (LEAP)",
+      "url": "https://leap.mogcsp.gov.gh/",
+      "publisher": "Government of Ghana — Ministry of Gender, Children and Social Protection",
+      "kind": "cash-transfer-programme",
+      "description_hu": "Hivatalos szociális program rendkívül szegény és kiszolgáltatott háztartásoknak. Célcsoportjai közé tartoznak a háztartási támogatás nélkül élő, 65 év feletti idősek, a súlyos fogyatékossággal élők és az árva vagy veszélyeztetett gyermekeket gondozó háztartások. A kiválasztás és a kifizetés feltételeit az aktuális hivatalos tájékoztatóban kell ellenőrizni.",
+      "description_en": "Official social cash-transfer programme for extremely poor and vulnerable households. Target groups include older people aged 65+ without household support, people with severe disabilities, and households caring for orphaned or vulnerable children. Check current official guidance for selection and payment conditions.",
+      "verification_status": "official-government-programme"
     }
   ],
   "records_count": 95
