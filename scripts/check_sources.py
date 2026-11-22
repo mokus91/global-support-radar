@@ -12,6 +12,7 @@ import urllib.request
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/worldwide-national-support-sources.json"
 OUTPUT = ROOT / "data/source-health-report.json"
+CHANGE_QUEUE = ROOT / "data/content-change-review-queue.json"
 UTC = dt.timezone.utc
 now = dt.datetime.now(UTC)
 data = json.loads(SOURCE.read_text(encoding="utf-8"))
@@ -112,6 +113,44 @@ def check(record):
 with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
     results = list(pool.map(check, records))
 
+# Keep a durable human-review queue for changed official pages.
+try:
+    old_queue = json.loads(CHANGE_QUEUE.read_text(encoding="utf-8"))
+except Exception:
+    old_queue = {"items": []}
+queue_items = old_queue.get("items", []) if isinstance(old_queue, dict) else []
+known_change_ids = {x.get("change_id") for x in queue_items}
+for item in results:
+    if item.get("page_change") != "changed":
+        continue
+    change_id = hashlib.sha256(
+        (str(item.get("id")) + "|" + str(item.get("content_sample_sha256"))).encode()
+    ).hexdigest()[:24]
+    if change_id in known_change_ids:
+        continue
+    queue_items.append({
+        "change_id": change_id,
+        "record_id": item.get("id"),
+        "country_code": item.get("country_code"),
+        "name_en": item.get("name_en"),
+        "url": item.get("url"),
+        "detected_at": now.isoformat(),
+        "previous_sample_sha256": previous_by_id.get(item.get("id"), {}).get("content_sample_sha256"),
+        "current_sample_sha256": item.get("content_sample_sha256"),
+        "review_status": "needs_human_review",
+        "review_note": "A bounded page sample changed. Open the official source and verify whether any programme amount, deadline, eligibility or application rule changed before editing the catalogue."
+    })
+    known_change_ids.add(change_id)
+queue_items.sort(key=lambda x: x.get("detected_at", ""), reverse=True)
+change_queue = {
+    "generated_at": now.isoformat(),
+    "pending_review": sum(1 for x in queue_items if x.get("review_status") == "needs_human_review"),
+    "total_changes_recorded": len(queue_items),
+    "important_note": "Page sample changes are review signals only. They are not verified benefit changes. Do not automatically edit or republish benefit facts.",
+    "items": queue_items
+}
+CHANGE_QUEUE.write_text(json.dumps(change_queue, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+
 report = {
     "generated_at": now.isoformat(),
     "checked_records": len(results),
@@ -119,6 +158,7 @@ report = {
     "http_errors": sum(x["status"] == "http_error" for x in results),
     "check_failed": sum(x["status"] in ("check_failed", "invalid_url") for x in results),
     "page_changed": sum(x.get("page_change") == "changed" for x in results),
+    "pending_change_reviews": change_queue["pending_review"],
     "page_baseline_created": sum(x.get("page_change") == "baseline_created" for x in results),
     "content_review_due": sum(x["content_freshness"] in ("review_due", "not_recorded", "invalid_date") for x in results),
     "important_note": "Daily checks test URL availability and compare a bounded 64 KB page sample with the previous run. A detected page change is only a review signal. It does not verify programme status, amounts, deadlines, eligibility or application rules. Benefit facts are never auto-edited.",
