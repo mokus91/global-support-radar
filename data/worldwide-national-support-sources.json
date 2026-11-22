@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 55 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 62 countries, plus European Union-wide and global resources (64 distinct country/region codes in the current catalogue). This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
