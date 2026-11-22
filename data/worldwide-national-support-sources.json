@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 52 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Country-specific official support discovery portals and programme records across 54 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1404,6 +1404,36 @@
       "kind": "conditional-cash-transfer-programme",
       "description_hu": "Szegény és közel szegény háztartások egészségügyi, táplálkozási és oktatási feltételekhez kötött pénzbeli támogatása. A jogosultság általános feltétele a standardizált célzási rendszer szerinti besorolás, valamint 0–18 éves gyermek vagy várandós családtag; a program kiválasztás alapján működik. A DSWD 2026-ban a CBMS-adatok alapján új kedvezményezettek regisztrálását jelentette be, közösségi gyűléseken és helyi önkormányzatokkal együttműködésben. Nem garantált az egyéni, azonnali online jelentkezés.",
       "description_en": "Conditional cash assistance for poor and near-poor households, tied to health, nutrition and education requirements. General eligibility includes identification through the standardized targeting system and a household member aged 0–18 or a pregnant member; beneficiaries are selected. In 2026, DSWD announced new beneficiary registration using CBMS data through community assemblies coordinated with local governments. This is not a guaranteed individual, instant online application.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "id-pkh-family-hope",
+      "country_code": "ID",
+      "country_en": "Indonesia",
+      "category": "social",
+      "name_hu": "Indonézia – Program Keluarga Harapan (PKH) családtámogatás",
+      "name_en": "Indonesia — Program Keluarga Harapan (PKH)",
+      "url": "https://kemensos.go.id/program-keluarga-harapan-pkh",
+      "publisher": "Government of Indonesia — Ministry of Social Affairs",
+      "kind": "conditional-cash-transfer-programme",
+      "description_hu": "Szegény és kiszolgáltatott családok feltételes szociális támogatási programja. Egészségügyi és oktatási összetevőkhöz kapcsolódik; a kedvezményezetteket a kormányzati szociális nyilvántartás és célzási rendszer alapján választják ki. A 2026. augusztus 13-án hatályba lépett 8/2026. szociális miniszteri rendelet újraszabályozta a programot. A részletes összegeket és az aktuális jogosultságot a minisztérium aktuális tájékoztatójában kell ellenőrizni; a közösségi médiában terjedő közvetlen regisztrációs linkekkel szemben légy óvatos.",
+      "description_en": "Conditional social assistance for poor and vulnerable families, linked to health and education components. Beneficiaries are selected through government social registries and targeting processes. Ministerial Regulation No. 8/2026, effective 13 August 2026, updated the programme rules. Confirm current benefit amounts and eligibility with the ministry; beware of unofficial direct-registration links circulating on social media.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "np-social-security-allowance",
+      "country_code": "NP",
+      "country_en": "Nepal",
+      "category": "social",
+      "name_hu": "Nepál – társadalombiztosítási pénzbeli juttatások",
+      "name_en": "Nepal — Social Security Allowance",
+      "url": "https://donidcr.gov.np/pages/social-security-allowance-rate/",
+      "publisher": "Government of Nepal — Department of National ID and Civil Registration",
+      "kind": "social-security-allowance-scheme",
+      "description_hu": "Állami pénzbeli juttatás többek között időseknek, özvegyeknek, egyedülálló nőknek, fogyatékossággal élőknek és meghatározott hátrányos helyzetű közösségeknek. A hivatalos díjtáblázat havi 4 000 nepáli rúpiát jelez a 70 év feletti általános időskori kategóriában; egyes csoportok, például a meghatározott térségekben élők és dalit idősek 60 éves kortól eltérő összeget kaphatnak. Az igényléshez szükséges dokumentumok és helyi ügyintézés a hivatalos GYIK-ben találhatók.",
+      "description_en": "Government cash allowances for older people, widows, single women, persons with disabilities and specified disadvantaged communities. The official rate table lists NPR 4,000 per month for the general senior-citizen category aged 70+, while some groups, including eligible Dalit seniors and residents of specified areas, qualify from age 60 at a different rate. Required documents and local application procedures are described in the official FAQ.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
     }
