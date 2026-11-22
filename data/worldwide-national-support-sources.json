@@ -41,9 +41,10 @@
       "url": "https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-fomento-rural",
       "publisher": "Brazilian Ministry of Development and Social Assistance",
       "kind": "rural-household-support-programme",
-      "description_hu": "Vidéki, alacsony jövedelmű, Cadastro Único nyilvántartásban szereplő családok termelő projektjeit segítő program, technikai kíséréssel és vissza nem térítendő forrással. A részvétel területi partnerségektől és elérhető helyektől függ.",
-      "description_en": "Programme supporting productive projects of low-income rural families registered in Cadastro Único, combining technical assistance and non-repayable funding. Participation depends on local delivery partners and available places.",
-      "verification_status": "official-government-programme"
+      "description_hu": "A program a vidéki, alacsony jövedelmű családoknak társít szakmai és szociális kísérést egyszeri, vissza nem térítendő 4 600 BRL összegű termelési támogatással. Két részletben fizetik (2 600 BRL + 2 000 BRL), a családnak termelési projektet kell készítenie és megvalósítania technikai segítséggel. A célcsoportba a CadÚnico rendszerben szereplő, vidéken élő, szegénységben élő családok tartoznak (az egy főre jutó havi jövedelem legfeljebb 218 BRL). Nem nyílt, egyéni online pályázat: a részvétel a helyi végrehajtó partnerségek és rendelkezésre álló helyek függvénye.",
+      "description_en": "Combines social and productive accompaniment with a one-off non-repayable BRL 4,600 productive grant for low-income rural families. It is paid in two instalments (BRL 2,600 + BRL 2,000); the family must prepare and carry out a productive project with technical assistance. The target group is poor rural households registered in CadÚnico (monthly per-capita household income up to BRL 218). This is not an open individual online application: participation depends on local delivery partnerships and available places.",
+      "verification_status": "official-government-programme-2026-details-confirmed",
+      "last_checked": "2026-11-22"
     },
     {
       "id": "br-social-programmes",
@@ -2242,6 +2243,36 @@
       "description_hu": "2026-os célzott, készpénzmentes alapvető szükségleti támogatás: a jogosultak MyKad-kártyájára jóváírt keretből vásárolhatnak kijelölt üzletekben. A hivatalos tájékoztató szerint a havi SARA 2026 januárjától decemberéig működik, a jogosultsági csoporttól függő havi összeggel; a SARA Untuk Semua egyszeri RM100 támogatását 2026. február 9-től tették elérhetővé a 18 év feletti malajziai állampolgároknak. A havi SARA-hoz STR 2026 jogosultság szükséges; a feltételeket és egyéni jogosultságot a hivatalos ellenőrző oldalon kell megerősíteni.",
       "description_en": "Targeted, cashless basic-needs assistance for 2026: eligible recipients use credits added to their MyKad at participating stores. The official information states that monthly SARA runs from January through December 2026, with monthly amounts varying by eligibility group; the one-off RM100 SARA Untuk Semua was made available from 9 February 2026 to Malaysian citizens aged 18 and above. Monthly SARA requires STR 2026 eligibility; confirm individual eligibility and current rules through the official checker.",
       "verification_status": "official-government-programme-2026",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "za-dsbd-msme-support-programmes",
+      "country_code": "ZA",
+      "country_en": "South Africa",
+      "category": "business",
+      "name_hu": "Dél-Afrika – DSBD kisvállalkozási és mikro vállalkozási támogatási programok",
+      "name_en": "South Africa — DSBD small and micro enterprise support programmes",
+      "url": "https://www.dsbd.gov.za/programmes/",
+      "publisher": "South African Department of Small Business Development",
+      "kind": "government-business-support-programme-directory",
+      "description_hu": "A minisztérium programkatalógusa többek között szövetkezeti fejlesztést, üzleti infrastruktúrát és eszközbeszerzést, informális mikro vállalkozások fejlesztését, vidéki és települési vállalkozások támogatását, fiatal vállalkozók programját, valamint női vállalkozók képzését sorolja fel. Az Asset Assist programnál a minisztériumi oldal legfeljebb 250 000 ZAR támogatást jelez; a hitel- és finanszírozási konstrukciókat nem szabad vissza nem térítendő támogatásként feltüntetni. Az egyes programok nyitottságát és feltételeit külön kell ellenőrizni.",
+      "description_en": "The department's programme catalogue includes cooperative development, business infrastructure and equipment support, informal micro-enterprise development, township and rural enterprise support, a youth business programme and training for women entrepreneurs. The department page lists Asset Assist grants up to ZAR 250,000; credit and financing schemes must not be presented as non-repayable grants. Check each programme's current call status and conditions separately.",
+      "verification_status": "official-government-programme-directory-details-to-confirm",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "za-agriculture-land-support-programmes",
+      "country_code": "ZA",
+      "country_en": "South Africa",
+      "category": "agriculture",
+      "name_hu": "Dél-Afrika – mezőgazdasági és földfejlesztési támogatási programok",
+      "name_en": "South Africa — land and agricultural development support programmes",
+      "url": "https://www.gov.za/zu/issues/land-and-agriculture",
+      "publisher": "South African Government",
+      "kind": "government-agriculture-support-directory",
+      "description_hu": "Kormányzati tájékoztató a mezőgazdasági földhöz jutás, élelmezésbiztonság, öntözés és gazdaságfejlesztés programjairól. A felsorolásban szerepel a Comprehensive Agricultural Support Programme (CASP), amely tanácsadást, képzést, infrastruktúrát és pénzügyi segítséget is magában foglal, továbbá a Mafisa, amely visszafizetendő mezőgazdasági hitel, nem támogatás. A programoldal részletei és az aktuális pályázati lehetőségek ellenőrzendők.",
+      "description_en": "Government information on agricultural land access, food security, irrigation and farm development programmes. The catalogue includes the Comprehensive Agricultural Support Programme (CASP), which can include advisory services, training, infrastructure and financial support, and Mafisa, which is repayable agricultural credit rather than a grant. Check programme pages for details and current application opportunities.",
+      "verification_status": "official-government-source-programme-status-to-confirm",
       "last_checked": "2026-11-22"
     }
   ],
