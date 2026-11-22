@@ -1483,8 +1483,24 @@
       "last_checked": "2026-11-22",
       "application_status": "2026 registration round closed; eligibility/status checks remain available through official channels",
       "source_reference": "https://www.mof.go.th/wp-content/uploads/2026/06/ข่าวแถลงกระทรวงการคลังฉบับที่-41-2569-1.pdf"
+    },
+    {
+      "id": "br-bolsa-familia-2026",
+      "country_code": "BR",
+      "country_en": "Brazil",
+      "category": "social",
+      "name_hu": "Brazília – Bolsa Família családi pénzbeli támogatás",
+      "name_en": "Brazil — Bolsa Família family cash transfer",
+      "url": "https://www.gov.br/pt-br/servicos/receber-o-bolsa-familia",
+      "publisher": "Government of Brazil — Ministry of Development and Social Assistance, Family and Fight against Hunger",
+      "kind": "individual-benefit-programme",
+      "description_hu": "Szövetségi családi támogatás alacsony jövedelmű háztartásoknak. A fő jövedelmi feltétel legfeljebb 218 brazil real havi egy főre jutó családi jövedelem. A hivatalos szolgáltatási tájékoztató a támogatás elemei között 142 real/fő alapösszeget, legalább 600 real/háztartás kiegészítést, 150 real összeget a 7 év alatti gyermekek után, valamint 50 real kiegészítést bizonyos várandós, szoptató és 7–18 év alatti családtagok után ismertet. A családnak először személyesen regisztrálnia kell a Cadastro Único rendszerben a helyi CRAS vagy kijelölt ügyfélszolgálati ponton. A regisztráció nem jelent automatikus jogosultságot; a kiválasztás kormányzati ellenőrzés és költségvetési keret alapján történik. A feltételek és összegek változhatnak, mindig a hivatalos oldalt kell ellenőrizni.",
+      "description_en": "Federal family cash assistance for low-income households. The main income threshold is monthly household income of up to BRL 218 per person. The official service page describes benefit components including BRL 142 per family member, a top-up to a minimum of BRL 600 per household, BRL 150 for each child under age seven, and BRL 50 for eligible pregnant or breastfeeding members and children/adolescents aged 7–17. Families must first register in person in Cadastro Único at the local CRAS or designated registration office. Registration does not guarantee automatic admission; selection is subject to government assessment and programme budget. Rules and amounts can change, so confirm current details on the official page.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22",
+      "application_status": "Cadastro Único registration is ongoing; programme admission is selected by government assessment, not automatic"
     }
   ],
-  "records_count": 105,
+  "records_count": 106,
   "updated": "2026-11-22"
 }
