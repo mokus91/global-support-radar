@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-22",
+  "purpose": "Country-level grouping and transparent coverage metadata for the Global Support Radar.",
+  "regions": {
+    "Africa": [
+      "AO",
+      "BF",
+      "BI",
+      "BJ",
+      "BW",
+      "CD",
+      "CF",
+      "CG",
+      "CI",
+      "CM",
+      "CV",
+      "DJ",
+      "DZ",
+      "EG",
+      "EH",
+      "ER",
+      "ET",
+      "GA",
+      "GH",
+      "GM",
+      "GN",
+      "GQ",
+      "GW",
+      "KE",
+      "KM",
+      "LR",
+      "LS",
+      "LY",
+      "MA",
+      "MG",
+      "ML",
+      "MR",
+      "MU",
+      "MW",
+      "MZ",
+      "NA",
+      "NE",
+      "NG",
+      "RW",
+      "SC",
+      "SD",
+      "SL",
+      "SN",
+      "SO",
+      "SS",
+      "ST",
+      "SZ",
+      "TD",
+      "TG",
+      "TN",
+      "TZ",
+      "UG",
+      "ZA",
+      "ZM",
+      "ZW"
+    ],
+    "Asia": [
+      "AE",
+      "AF",
+      "AM",
+      "AZ",
+      "BD",
+      "BH",
+      "BN",
+      "BT",
+      "CN",
+      "GE",
+      "ID",
+      "IL",
+      "IN",
+      "IQ",
+      "IR",
+      "IR",
+      "JO",
+      "JP",
+      "KG",
+      "KH",
+      "KP",
+      "KR",
+      "KW",
+      "KZ",
+      "LA",
+      "LB",
+      "LK",
+      "MM",
+      "MN",
+      "MV",
+      "MY",
+      "NP",
+      "OM",
+      "PH",
+      "PK",
+      "PS",
+      "QA",
+      "SA",
+      "SG",
+      "TH",
+      "TJ",
+      "TL",
+      "TM",
+      "TR",
+      "TW",
+      "UZ",
+      "VN",
+      "YE"
+    ],
+    "Europe": [
+      "AD",
+      "AL",
+      "AT",
+      "BA",
+      "BE",
+      "BG",
+      "BY",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GB",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MC",
+      "MD",
+      "ME",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "RU",
+      "SE",
+      "SI",
+      "SK",
+      "SM",
+      "UA",
+      "VA"
+    ],
+    "North and Central America & Caribbean": [
+      "AG",
+      "BB",
+      "BS",
+      "BZ",
+      "CA",
+      "CR",
+      "CU",
+      "DM",
+      "DO",
+      "GD",
+      "GT",
+      "HN",
+      "HT",
+      "JM",
+      "KN",
+      "LC",
+      "MX",
+      "NI",
+      "PA",
+      "SV",
+      "TT",
+      "US",
+      "VC"
+    ],
+    "South America": [
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "EC",
+      "GY",
+      "PE",
+      "PY",
+      "SR",
+      "UY",
+      "VE"
+    ],
+    "Oceania": [
+      "AU",
+      "FJ",
+      "FM",
+      "KI",
+      "MH",
+      "NR",
+      "NZ",
+      "PG",
+      "PW",
+      "SB",
+      "TO",
+      "TV",
+      "VU",
+      "WS"
+    ]
+  },
+  "support_categories": [
+    {
+      "id": "family_children",
+      "label_en": "Family, children and parental support"
+    },
+    {
+      "id": "housing",
+      "label_en": "Housing, rent, home purchase and renovation"
+    },
+    {
+      "id": "social_income",
+      "label_en": "Social assistance, minimum income and poverty relief"
+    },
+    {
+      "id": "disability_care",
+      "label_en": "Disability, caregiving and accessibility"
+    },
+    {
+      "id": "older_people",
+      "label_en": "Pensions, older people and retirement"
+    },
+    {
+      "id": "employment",
+      "label_en": "Unemployment, jobseeker and employment incentives"
+    },
+    {
+      "id": "education",
+      "label_en": "Education, scholarships and student aid"
+    },
+    {
+      "id": "health",
+      "label_en": "Healthcare, medicines and public health"
+    },
+    {
+      "id": "business",
+      "label_en": "Business, startups, SMEs and self-employment"
+    },
+    {
+      "id": "agriculture",
+      "label_en": "Agriculture, farming, fisheries and rural development"
+    },
+    {
+      "id": "energy_climate",
+      "label_en": "Energy bills, efficiency, renewables and climate"
+    },
+    {
+      "id": "transport",
+      "label_en": "Transport, mobility and vehicle support"
+    },
+    {
+      "id": "culture_sport",
+      "label_en": "Culture, arts, sport and community"
+    },
+    {
+      "id": "research_innovation",
+      "label_en": "Research, science and innovation"
+    },
+    {
+      "id": "nonprofit",
+      "label_en": "Nonprofits, charities and civil society"
+    },
+    {
+      "id": "migration",
+      "label_en": "Migration, integration and refugee support"
+    },
+    {
+      "id": "disaster",
+      "label_en": "Disaster relief, reconstruction and emergency aid"
+    },
+    {
+      "id": "regional_local",
+      "label_en": "Regional, municipal and local authority support"
+    },
+    {
+      "id": "tax_customs",
+      "label_en": "Tax credits, rebates and fee relief"
+    },
+    {
+      "id": "loans_guarantees",
+      "label_en": "Subsidised loans, guarantees and credit"
+    },
+    {
+      "id": "international",
+      "label_en": "International and cross-border programmes"
+    }
+  ],
+  "support_instruments": [
+    "Non-repayable grant",
+    "Cash benefit or allowance",
+    "Subsidy or rebate",
+    "Scholarship or fellowship",
+    "Tax credit or tax exemption",
+    "Subsidised loan",
+    "Loan guarantee",
+    "In-kind support or service",
+    "Training or advisory support",
+    "Prize or competition",
+    "Public procurement or contract"
+  ],
+  "coverage_rules": {
+    "verified-programme": "Individual programme page checked against its current official source.",
+    "official-source": "Official government or public funder source identified; individual current calls may not yet be indexed.",
+    "historical-lead": "Legacy national portal pointer; current URL and support coverage require verification.",
+    "not-covered": "No reliable source identified yet. This does not mean the country has no support programmes."
+  },
+  "limitations": [
+    "There is no single worldwide registry containing every national, regional, municipal and private support programme.",
+    "Programmes change, close, reopen and have eligibility restrictions; exhaustive real-time completeness cannot be guaranteed.",
+    "Country source counts indicate indexed source records, not the number of grants or benefits.",
+    "Historical UN e-government directory links were assessed in 2013 and must not be presented as currently verified."
+  ]
+}
