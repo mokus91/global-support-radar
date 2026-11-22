@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-19",
-  "scope": "Country-specific official support discovery portals across 46 countries, plus European Union-wide official funding and finance discovery resources. Records link to official national catalogues, benefit finders and funding portals; they are not individual grant records and do not imply an open call or eligibility.",
+  "updated_at": "2026-11-22",
+  "scope": "Country-specific official support discovery portals across 46 countries, plus European Union-wide official funding and finance discovery resources. New records include the EU Funding & Tenders Portal, the European Commission directory of national portals for shared-management funds, and the US SAM.gov Assistance Listings catalogue. Records link to official catalogues and portals; they are not all individual grant records and do not imply an open call or eligibility. Coverage remains partial and must not be described as a complete global register.",
   "records": [
     {
       "id": "au-benefits",
@@ -1038,6 +1038,48 @@
       "description_hu": "Elmagyarázza a közvetlen uniós pályázatok, a tagállami és regionális alapok, valamint a visszafizetendő finanszírozások közötti különbségeket.",
       "description_en": "Explains the difference between directly managed EU calls, national and regional funds, and repayable finance.",
       "verification_status": "official-eu-guidance"
+    },
+    {
+      "id": "eu-funding-tenders",
+      "country_code": "EU",
+      "country_en": "European Union",
+      "category": "all",
+      "name_hu": "Európai Unió – Funding & Tenders Portal",
+      "name_en": "European Union — Funding & Tenders Portal",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "publisher": "European Commission",
+      "kind": "official-funding-and-tenders-search",
+      "description_hu": "Az Európai Bizottság központi keresője uniós pályázati felhívásokhoz, támogatási programokhoz, közbeszerzési lehetőségekhez és projektadatokhoz. A portálon a felhívás státuszát, határidejét és jogosultsági feltételeit külön kell ellenőrizni.",
+      "description_en": "The European Commission's central portal for EU calls for proposals, funding programmes, procurement opportunities and project results. Check each call's status, deadline and eligibility conditions.",
+      "verification_status": "official-eu-portal"
+    },
+    {
+      "id": "eu-national-single-portals",
+      "country_code": "EU",
+      "country_en": "European Union",
+      "category": "regional",
+      "name_hu": "EU – tagállami és regionális uniós alapok nemzeti portáljai",
+      "name_en": "EU — national portals for shared-management funds",
+      "url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en",
+      "publisher": "European Commission",
+      "kind": "national-regional-funds-directory",
+      "description_hu": "Az Európai Bizottság tagállamonként gyűjti össze a 2021–2027-es időszak főbb, közös irányítású uniós alapjainak nemzeti portáljait. Ezeken keresztül regionális és országos kiírások is elérhetők; az adott ország saját portálján kell ellenőrizni a konkrét programokat.",
+      "description_en": "The European Commission directory of Member State portals for major 2021–2027 shared-management EU funds. These portals lead to national and regional calls; verify individual programmes on the relevant country's portal.",
+      "verification_status": "official-eu-directory"
+    },
+    {
+      "id": "us-sam-assistance-listings",
+      "country_code": "US",
+      "country_en": "United States",
+      "category": "all",
+      "name_hu": "USA – SAM.gov Assistance Listings szövetségi támogatási programjegyzék",
+      "name_en": "United States — SAM.gov Assistance Listings",
+      "url": "https://sam.gov/content/assistance-listings",
+      "publisher": "U.S. General Services Administration / U.S. federal government",
+      "kind": "authoritative-federal-assistance-programme-catalogue",
+      "description_hu": "A Grants.gov által hivatkozott hivatalos szövetségi programjegyzék, amely támogatásokat, kölcsönöket, ösztöndíjakat, biztosítási és más szövetségi segítségformákat sorol fel. Ez programkatalógus, nem minden esetben nyitott pályázati felhívás; a beadási lehetőséget a felelős ügynökségnél kell ellenőrizni.",
+      "description_en": "The authoritative federal programme catalogue referenced by Grants.gov, covering grants, loans, scholarships, insurance and other forms of federal assistance. It is a programme catalogue, not necessarily an open-call list; verify application opportunities with the responsible agency.",
+      "verification_status": "official-federal-catalogue"
     }
   ],
   "records_count": 67
