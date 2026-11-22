@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Új támogatási hírek ellenőrzése | Global Support Radar</title>
+<meta name="description" content="Hivatalos kormányzati hírforrásokból gyűjtött, emberi ellenőrzésre váró támogatási hírek.">
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#a9b8ce;--line:#293b56;--mint:#53e0b2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:24px 18px 60px}a{color:var(--mint)}h1{font-size:clamp(28px,5vw,44px);line-height:1.15}.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}.card,.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.card strong{display:block;font-size:28px}.item{margin:12px 0}.tag{display:inline-block;font-size:12px;border-radius:20px;padding:3px 9px;background:#51401d;color:#ffe0a0}.note{border-left:3px solid #d5aa58;padding:10px 14px;background:#302819;color:#f3dfb7;border-radius:6px}input{width:100%;padding:12px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit}
+</style></head><body><main>
+<a href="./source-status.html">← Forrásállapot</a> · <a href="./countries/">Országok és támogatások</a>
+<h1>Új hivatalos közlemények</h1>
+<p class="muted">A rendszer kormányzati hírfolyamokat vizsgál, és a támogatásra utaló közleményeket ellenőrzési listába gyűjti.</p>
+<p class="note"><strong>Fontos:</strong> Ezek csak lehetséges találatok. Nem jelentenek automatikusan új támogatást, nyitott pályázatot vagy biztos jogosultságot. Minden tételt az eredeti hivatalos közlemény alapján kell ellenőrizni, mielőtt bekerül a támogatási adatbázisba.</p>
+<div id="stats" class="stats"><div class="card">Betöltés…</div></div>
+<input id="q" placeholder="Keresés ország, cím vagy kulcsszó szerint">
+<p id="updated" class="muted"></p><section id="results"></section>
+<script>
+let data=null;const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){if(!data)return;const q=document.getElementById("q").value.toLowerCase();const items=data.items.filter(x=>[x.title,x.country_name,x.country_code,x.publisher,(x.matched_keywords||[]).join(" ")].join(" ").toLowerCase().includes(q));
+document.getElementById("stats").innerHTML=[["Ellenőrzött hírfolyam",data.feeds_checked],["Sikeres",data.feeds_ok],["Ellenőrzésre vár",data.pending_review],["Új találat ebben a futásban",data.new_candidates]].map(([k,v])=>'<div class="card"><span class="muted">'+k+'</span><strong>'+v+'</strong></div>').join("");
+document.getElementById("updated").textContent="Frissítve: "+new Date(data.generated_at).toLocaleString("hu-HU")+" · "+items.length+" találat";
+document.getElementById("results").innerHTML=items.map(x=>'<article class="item"><span class="tag">Emberi ellenőrzés szükséges</span><h3>'+esc(x.title)+'</h3><div class="muted">'+esc(x.country_name)+' · '+esc(x.publisher)+(x.published_at?' · '+new Date(x.published_at).toLocaleDateString("hu-HU"):'')+'</div><p>'+esc(x.summary)+'</p><p class="muted">Kulcsszavak: '+esc((x.matched_keywords||[]).join(", "))+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener">Eredeti hivatalos közlemény megnyitása ↗</a></article>').join("")||'<p class="muted">Még nincs megjeleníthető találat.</p>';}
+fetch("./data/announcement-review-queue.json").then(r=>{if(!r.ok)throw Error("Az első automatikus gyűjtés még nem futott le.");return r.json()}).then(x=>{data=x;render()}).catch(e=>document.getElementById("results").textContent=e.message);
+document.getElementById("q").addEventListener("input",render);
+</script></main></body></html>
