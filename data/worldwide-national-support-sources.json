@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Official support discovery portals and programme records across 62 countries, plus European Union-wide and global resources (64 distinct country/region codes in the current catalogue). This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 65 country and region codes. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -2003,8 +2003,106 @@
       "description_hu": "Tajvanon jogszerűen bejegyzett, pozitív saját tőkéjű szolgáltató vállalkozások innovációs kutatás-fejlesztését támogató program. A portálon jelzett keret egyéni pályázatnál legfeljebb 3 millió NT$, együttműködő pályázatnál legfeljebb 10 millió NT$; a beadási időszakot és feltételeket az aktuális kiírás határozza meg.",
       "description_en": "Supports innovation R&D by Taiwan-registered service businesses with positive equity. The portal lists up to NT$3 million for individual applicants and NT$10 million for alliances; current call dates and rules govern eligibility.",
       "verification_status": "official-government-programme"
+    },
+    {
+      "id": "cn-shanghai-suishendui-business-policy-hub",
+      "country_code": "CN",
+      "country_en": "China",
+      "category": "business",
+      "name_hu": "Kína – Sanghaj Suishendui vállalkozási támogatáskereső",
+      "name_en": "China — Shanghai Suishendui business policy support hub",
+      "url": "https://english.shanghai.gov.cn/en-Business-BusinessFinancing/20260818/e878714f83c340bb93654b03ae299246.html",
+      "publisher": "Shanghai Municipal People's Government",
+      "kind": "municipal-business-benefit-and-policy-finder",
+      "description_hu": "Sanghaj városi és kerületi vállalkozási kedvezményeinek egyablakos keresője. Pénzügyi támogatásokat, kamattámogatásokat, adó- és díjcsökkentéseket, foglalkoztatási és tehetségprogramokat is összegyűjt. Kizárólag Sanghajra vonatkozik, nem országos kínai jogosultsági adatbázis.",
+      "description_en": "One-stop finder for Shanghai municipal and district enterprise benefits, including financial subsidies, interest subsidies, tax and fee reductions, employment stability and talent policies. This is Shanghai-specific, not a nationwide China eligibility database.",
+      "verification_status": "official-municipal-government-source"
+    },
+    {
+      "id": "id-bizhub-self-employment-support",
+      "country_code": "ID",
+      "country_en": "Indonesia",
+      "category": "business",
+      "name_hu": "Indonézia – Bizhub önfoglalkoztatási és vállalkozásfejlesztési támogatás",
+      "name_en": "Indonesia — Bizhub self-employment and enterprise support",
+      "url": "https://bizhub.kemnaker.go.id/",
+      "publisher": "Ministry of Manpower, Republic of Indonesia",
+      "kind": "government-enterprise-support-platform",
+      "description_hu": "Munkaügyi minisztériumi platform önfoglalkoztatók és mikro-vállalkozók számára: vállalkozásfejlesztés, piacra jutás, mentorálás és tőkéhez kapcsolás. A TKM Pemula és TKM Lanjutan támogatási lehetőségekhez külön regisztrációs és programfeltételek tartoznak.",
+      "description_en": "Ministry of Manpower platform for self-employed workers and microbusinesses, offering business development, market access, mentoring and access to capital. TKM Pemula and TKM Lanjutan assistance have separate registration and programme conditions.",
+      "verification_status": "official-government-platform"
+    },
+    {
+      "id": "id-pip-ultra-micro-financing",
+      "country_code": "ID",
+      "country_en": "Indonesia",
+      "category": "business",
+      "name_hu": "Indonézia – Pusat Investasi Pemerintah ultra-mikro finanszírozás",
+      "name_en": "Indonesia — Government Investment Center ultra-micro financing",
+      "url": "https://pip-baru.kemenkeu.go.id/",
+      "publisher": "Ministry of Finance, Republic of Indonesia",
+      "kind": "government-backed-microfinance-loan",
+      "description_hu": "Ultra-mikro vállalkozások számára közvetítő pénzügyi intézményeken keresztül elérhető állami finanszírozás. A hivatalos oldal legfeljebb 20 millió IDR hitelkeretet, rövid futamidőt és kísérő képzést jelez. Visszafizetendő kölcsön, nem vissza nem térítendő támogatás.",
+      "description_en": "Government-supported financing for ultra-micro businesses through intermediary non-bank financial institutions. The official site lists financing up to IDR 20 million, short terms and accompanying training. This is a repayable loan, not a grant.",
+      "verification_status": "official-government-finance-source"
+    },
+    {
+      "id": "my-mida-i-incentives-portal",
+      "country_code": "MY",
+      "country_en": "Malaysia",
+      "category": "business",
+      "name_hu": "Malajzia – MIDA i-Incentives beruházási ösztönzőkereső",
+      "name_en": "Malaysia — MIDA i-Incentives investment incentives finder",
+      "url": "https://www.mida.gov.my/forms-and-guidelines/grants/",
+      "publisher": "Malaysian Investment Development Authority",
+      "kind": "government-investment-incentives-directory",
+      "description_hu": "Hivatalos beruházásösztönző és támogatási források gyűjtőoldala. A DIAF-ESG társfinanszírozási támogatás 2026-os beadási határideje 2026. október 31. volt, ezért ezt a kört 2026. november 22-én már lezártként kell kezelni; más konstrukciók státuszát külön ellenőrizd.",
+      "description_en": "Official investment incentives and grants information hub. The 2026 DIAF-ESG matching grant deadline was 31 October 2026 and should therefore be treated as closed as of 22 November 2026; check other schemes individually.",
+      "verification_status": "official-government-source-contains-closed-call"
+    },
+    {
+      "id": "th-nia-mandatory-innovation-business-platform-2027-round1",
+      "country_code": "TH",
+      "country_en": "Thailand",
+      "category": "business",
+      "name_hu": "Thaiföld – NIA innovációs vállalkozási támogatás 2027/1. kör",
+      "name_en": "Thailand — NIA Mandatory Innovation Business Platform FY2027 Round 1",
+      "url": "https://fininno.nia.or.th/manage_news_event/mandatory70r1/",
+      "publisher": "National Innovation Agency, Thailand",
+      "kind": "time-limited-matching-innovation-grant",
+      "description_hu": "A 2027-es pénzügyi év első pályázati köre 2026. október 16. és december 15. között fogad jelentkezéseket. A Thematic Innovation konstrukció legfeljebb a projektköltség 75%-át, maximum 5 millió THB-t biztosíthat legfeljebb három évre; a MIND tanácsadási konstrukció maximum 1 millió THB. Határidő előtt is ellenőrizd a részletes jogosultságot és a rendelkezésre álló keretet.",
+      "description_en": "Round 1 of FY2027 accepts applications from 16 October to 15 December 2026. The Thematic Innovation mechanism can provide up to 75% of project costs, capped at THB 5 million over up to three years; the MIND advisory mechanism is capped at THB 1 million. Check detailed eligibility and available budget before applying.",
+      "verification_status": "official-government-open-call-2026"
+    },
+    {
+      "id": "ph-dost-cradle-rd-commercialization-grant",
+      "country_code": "PH",
+      "country_en": "Philippines",
+      "category": "business",
+      "name_hu": "Fülöp-szigetek – DOST-CRADLE kutatás-fejlesztési és kereskedelmi hasznosítási támogatás",
+      "name_en": "Philippines — DOST-CRADLE R&D Commercialization Grant",
+      "url": "https://startup.gov.ph/programs/view/?id=3",
+      "publisher": "Department of Science and Technology — PCIEERD",
+      "kind": "research-commercialization-grant",
+      "description_hu": "Startupok, kkv-k és felsőoktatási intézmények együttműködésével megvalósuló kutatás-fejlesztési és kereskedelmi hasznosítási projektekhez. A hivatalos Startup Philippines programoldal projektenként legfeljebb 5 millió PHP támogatást jelez; a jogosultság és az aktuális pályázati státusz ellenőrzendő.",
+      "description_en": "Supports R&D commercialisation projects involving partnerships between startups or MSMEs and higher education institutions. The official Startup Philippines programme page lists grants up to PHP 5 million per project; eligibility and current application status must be confirmed.",
+      "verification_status": "official-government-programme"
+    },
+    {
+      "id": "ph-startup-venture-fund",
+      "country_code": "PH",
+      "country_en": "Philippines",
+      "category": "business",
+      "name_hu": "Fülöp-szigetek – Startup Venture Fund állami startup-befektetés",
+      "name_en": "Philippines — Startup Venture Fund government startup investment",
+      "url": "https://www.ndc.gov.ph/svf/",
+      "publisher": "National Development Company / Department of Trade and Industry",
+      "kind": "government-equity-investment",
+      "description_hu": "Innovatív startupok számára magvető és Series B közötti szakaszban nyújtott stratégiai tőkebefektetés és kapcsolódó támogatás. Ez befektetés/tulajdonosi finanszírozás, nem hagyományos vissza nem térítendő pályázati támogatás; az aktuális feltételek a kezelőnél ellenőrzendők.",
+      "description_en": "Strategic equity investment and related support for innovative startups from seed to Series B. This is investment/equity financing, not a conventional non-repayable grant; check current terms with the fund administrator.",
+      "verification_status": "official-government-fund"
     }
   ],
-  "records_count": 140,
+  "records_count": 147,
   "updated": "2026-11-22"
 }
