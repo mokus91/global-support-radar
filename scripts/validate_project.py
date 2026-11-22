@@ -93,7 +93,7 @@ def main():
     if len(worldwide_ids) != len(set(worldwide_ids)):
         raise SystemExit("Duplicate IDs in worldwide national support source directory")
     for row in worldwide_records:
-        if not re.fullmatch(r"[A-Z]{2}", row.get("country_code", "")) and row.get("country_code") != "EU":
+        if not re.fullmatch(r"[A-Z]{2}", row.get("country_code", "")) and row.get("country_code") not in ("EU", "GLOBAL"):
             raise SystemExit("Worldwide support source has an invalid country code")
         parsed = urlparse(row.get("url", ""))
         if parsed.scheme != "https" or not parsed.netloc:
