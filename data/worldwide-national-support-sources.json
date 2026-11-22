@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Official support discovery portals and programme records across 77 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 78 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -2982,8 +2982,42 @@
       "verification_status": "official-government-policy-source",
       "last_checked": "2026-11-22",
       "source_reference": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf"
+    },
+    {
+      "id": "to-tupulaki-community-grants",
+      "country_code": "TO",
+      "country_en": "Tonga",
+      "category": "social",
+      "name_hu": "Tonga – Tupulaki közösségi támogatások",
+      "name_en": "Tonga — Tupulaki Community Grants",
+      "url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html",
+      "publisher": "Australian Government — Australian High Commission in Tonga",
+      "kind": "community-development-grant",
+      "description_hu": "Az ausztrál kormány tongai képviselete által kezelt, nonprofit közösségi fejlesztési kis támogatási program. Civil szervezetek és közösségi csoportok pályázhatnak; a támogatás felső határa 50 000 tongai paʻanga. A közzétett 2026–2027-es ütemezés szerint a 2026. augusztusi–szeptemberi kör lezárult, a következő kör 2027. február 8-án nyílik és február 26-án zárul.",
+      "description_en": "A small competitive community-development grant programme funded by the Australian Government and managed by its High Commission in Tonga. Nonprofit community groups and NGOs may apply; the published grant ceiling is TOP 50,000. Under the published 2026–27 schedule, the August–September 2026 round has closed and the next round opens 8 February 2027 and closes 26 February 2027.",
+      "verification_status": "official-programme-page-2026-2027-details",
+      "last_checked": "2026-11-22",
+      "application_status": "next-round-scheduled-2027-02-08",
+      "source_reference": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
+    },
+    {
+      "id": "to-trade-facilitation-project-implementation-grant",
+      "country_code": "TO",
+      "country_en": "Tonga",
+      "category": "business",
+      "name_hu": "Tonga – kereskedelemkönnyítési projektmegvalósítási támogatás",
+      "name_en": "Tonga — Trade Facilitation Agreement Project Implementation Grants",
+      "url": "https://www.mted.gov.to/tnp/",
+      "publisher": "Tonga Ministry of Trade and Economic Development",
+      "kind": "trade-facilitation-project-grant",
+      "description_hu": "A tongai Kereskedelmi és Gazdaságfejlesztési Minisztérium tájékoztatója a Kereskedelmi Világszervezet kereskedelemkönnyítési megállapodásához kapcsolódó, egyes C kategóriás vállalások megvalósítására szolgáló, legfeljebb 200 000 USD összegű projekt támogatásról. Nem általános vállalkozási támogatás: a jogosult projektek és kérelmezők körét a WTO Trade Facilitation Agreement Facility feltételei határozzák meg. A minisztériumi oldal szerint nincs benyújtási határidő; az aktuális keretet a programgazdánál kell megerősíteni.",
+      "description_en": "The Tongan Ministry of Trade and Economic Development describes project implementation grants of up to USD 200,000 for specified Category C commitments under the WTO Trade Facilitation Agreement. This is not a general business grant: eligible projects and applicants are governed by the WTO Trade Facilitation Agreement Facility. The ministry page states there is no application deadline; current funding availability should be confirmed with the programme administrator.",
+      "verification_status": "official-government-source-programme-information",
+      "last_checked": "2026-11-22",
+      "application_status": "no-deadline-stated-confirm-current-availability",
+      "source_reference": "https://www.tfafacility.org/grant-program"
     }
   ],
-  "records_count": 206,
+  "records_count": 208,
   "updated": "2026-11-22"
 }
