@@ -3033,8 +3033,42 @@
       "last_checked": "2026-11-22",
       "application_status": "Scheme information published; contact MCIL for current eligibility, guidelines and application forms",
       "source_reference": "https://mcil.gov.ws/services/industry"
+    },
+    {
+      "id": "sb-commercial-agriculture-development-support-fund",
+      "country_code": "SB",
+      "country_en": "Solomon Islands",
+      "category": "agriculture",
+      "name_hu": "Salamon-szigetek – Commercial Agriculture Development Project támogatási alap",
+      "name_en": "Solomon Islands — Commercial Agriculture Development Project Support Fund",
+      "url": "https://solomons.gov.sb/minister-hon-giro-signs-funding-agreements-to-support-local-agribusinesses/",
+      "publisher": "Solomon Islands Government — Ministry of Agriculture and Livestock Development",
+      "kind": "agribusiness-capital-grant",
+      "description_hu": "A mezőgazdasági minisztérium által működtetett támogatási alap kis- és középvállalkozó agrárvállalkozások eszközbeszerzését, feldolgozási kapacitását és hozzáadott értékű termelését segíti. A kormány 2026. március 23-án két vállalkozásnak összesen 780 000 SBD támogatást ítélt oda. Ez igazolja a program működését és korábbi támogatásait, de nem bizonyítja, hogy jelenleg új pályázati kör nyitva van; az aktuális jelentkezési feltételeket a minisztériumnál kell ellenőrizni.",
+      "description_en": "A Ministry of Agriculture and Livestock Development support fund that helps small and medium agribusinesses acquire equipment, improve processing capacity and add value to local products. On 23 March 2026 the Government reported awarding a total of SBD 780,000 to two enterprises. This confirms programme activity and previous awards, but does not establish that a new application round is currently open; applicants should confirm current calls and criteria with the Ministry.",
+      "verification_status": "official-government-report-2026-awards-current-call-unconfirmed",
+      "last_checked": "2026-11-22",
+      "application_status": "Recent awards confirmed; no current open application round verified",
+      "source_reference": "https://solomons.gov.sb/minister-hon-giro-signs-funding-agreements-to-support-local-agribusinesses/"
+    },
+    {
+      "id": "sb-sme-subvention-grant-projects",
+      "country_code": "SB",
+      "country_en": "Solomon Islands",
+      "category": "business",
+      "name_hu": "Salamon-szigetek – SME Subvention Grant Projects",
+      "name_en": "Solomon Islands — SME Subvention Grant Projects",
+      "url": "https://solomons.gov.sb/ministry-of-commerce-industry-labour-and-immigration/industrial-development-division/",
+      "publisher": "Solomon Islands Government — Ministry of Commerce, Industry, Labour and Immigration, Industrial Development Division",
+      "kind": "sme-subvention-grant-and-technical-support",
+      "description_hu": "A minisztérium Ipari Fejlesztési Osztálya a kis- és középvállalkozások, valamint a kisipari feldolgozó és hozzáadott értéket előállító vállalkozások támogatását végzi. A hivatalos szolgáltatási oldalon Subvention Grant Projects, műszaki képzés és vállalkozásfejlesztési segítség szerepel. A nyilvános oldal nem igazol aktuális pályázati határidőt vagy mindenki számára nyitott keretet; a jogosultságot, a szükséges dokumentumokat és a beadás lehetőségét az osztálynál kell megerősíteni.",
+      "description_en": "The Ministry's Industrial Development Division supports small and medium enterprises and small-scale manufacturing and value-adding businesses. Its official service page lists Subvention Grant Projects, technical training and business development assistance. The public page does not confirm a current application deadline or an open funding round for all applicants; eligibility, documentation and current submission arrangements should be confirmed with the Division.",
+      "verification_status": "official-government-service-page-current-round-unconfirmed",
+      "last_checked": "2026-11-22",
+      "application_status": "Programme/service information published; confirm current grant round with the Division",
+      "source_reference": "https://solomons.gov.sb/ministry-of-commerce-industry-labour-and-immigration/industrial-development-division/"
     }
   ],
-  "records_count": 209,
+  "records_count": 211,
   "updated": "2026-11-22"
 }
