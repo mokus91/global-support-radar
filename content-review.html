@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Megváltozott hivatalos oldalak | Global Support Radar</title>
+<meta name="description" content="A naponta észlelt hivatalos forrásoldal-változások emberi ellenőrzési listája.">
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#a9b8ce;--line:#293b56;--mint:#53e0b2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:24px 18px 60px}a{color:var(--mint)}h1{font-size:clamp(29px,5vw,44px);line-height:1.15}.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:22px 0}.card,.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.card strong{display:block;font-size:28px}.item{margin:10px 0}.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.note{border-left:3px solid #d5aa58;padding:10px 14px;background:#302819;color:#f3dfb7;border-radius:6px}input{width:100%;padding:12px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit}.tag{font-size:12px;border-radius:20px;padding:3px 9px;background:#493b20;color:#ffe1a3}footer{margin-top:28px;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<div class="top"><a href="./source-status.html">← Forrásállapot</a><a href="./countries/">Országok és támogatások</a></div>
+<h1>Megváltozott hivatalos oldalak</h1>
+<p class="muted">A rendszer a napi ellenőrzéskor észlelt oldalminta-változásokat gyűjti össze, hogy könnyebb legyen megtalálni a felülvizsgálandó támogatásokat.</p>
+<div id="stats" class="stats"><div class="card">Betöltés…</div></div>
+<p class="note"><strong>Fontos:</strong> A változás nem jelenti automatikusan, hogy a támogatás összege, határideje vagy jogosultsága módosult. A listában szereplő hivatalos oldalt meg kell nyitni, és az adatokat embernek kell ellenőriznie. A rendszer nem módosít automatikusan támogatási tényeket.</p>
+<label for="q">Keresés ország vagy program szerint</label><p><input id="q" placeholder="Például: CA, Canada, child benefit"></p>
+<p id="updated" class="muted"></p><section id="items"></section>
+<footer>A felülvizsgálati lista megőrzi az észlelt változásokat. A minta legfeljebb 64 KB, ezért az oldal más részein bekövetkező változás kimaradhat. Az ellenőrzés naponta ütemezett, de a GitHub Actions futása terhelés miatt késhet.</footer>
+</main>
+<script>
+let queue=null;const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){if(!queue)return;const q=document.getElementById("q").value.toLowerCase();const rows=(queue.items||[]).filter(x=>[x.name_en,x.country_code,x.record_id,x.url].join(" ").toLowerCase().includes(q));document.getElementById("stats").innerHTML=[["Összes észlelt változás",queue.total_changes_recorded??0],["Ellenőrzésre vár",queue.pending_review??0]].map(([k,v])=>'<div class="card"><span class="muted">'+k+'</span><strong>'+v+'</strong></div>').join("");document.getElementById("updated").textContent="Lista frissítve: "+new Date(queue.generated_at).toLocaleString("hu-HU")+" · "+rows.length+" találat";document.getElementById("items").innerHTML=rows.map(x=>'<article class="item"><div class="top"><strong>'+esc(x.name_en||x.record_id)+'</strong><span class="tag">Emberi ellenőrzés szükséges</span></div><p class="muted">'+esc(x.country_code||"")+" · észlelve: "+new Date(x.detected_at).toLocaleString("hu-HU")+'</p><p>'+esc(x.review_note)+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener">Hivatalos oldal megnyitása ↗</a></article>').join("")||'<p class="muted">Nincs megjeleníthető változás.</p>'}
+fetch("./data/content-change-review-queue.json").then(r=>{if(!r.ok)throw Error("A változáslista az első sikeres napi ellenőrzés után készül el.");return r.json()}).then(x=>{queue=x;render()}).catch(e=>document.getElementById("items").textContent=e.message);document.getElementById("q").addEventListener("input",render);
+</script></body></html>
