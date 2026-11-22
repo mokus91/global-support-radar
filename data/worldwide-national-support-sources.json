@@ -1451,8 +1451,23 @@
       "description_en": "Cash support for eligible women in low-income households. Beneficiaries are selected using the National Socio-Economic Registry survey and household poverty score; households should visit their nearest BISP Tehsil Office/Dynamic Registry Center for the survey. A June 2026 presidential briefing reported a quarterly stipend of PKR 14,500; a January 2027 increase was only proposed. The survey is free and 8171 is the official BISP SMS number; messages from other numbers requesting payment or registration may be scams. Confirm the current rate with BISP.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "pk-benazir-taleemi-wazaif",
+      "country_code": "PK",
+      "country_en": "Pakistan",
+      "category": "education",
+      "name_hu": "Pakisztán – Benazir Taleemi Wazaif oktatási ösztöndíj",
+      "name_en": "Pakistan — Benazir Taleemi Wazaif",
+      "url": "https://www.bisp.gov.pk/Detail/YzNlY2Q2ZGYtNjIwZS00MjNiLWFhMmEtZGM5NWNkMjZhMjQ3",
+      "publisher": "Government of Pakistan — Benazir Income Support Programme",
+      "kind": "conditional-education-cash-transfer",
+      "description_hu": "Iskolai támogatás aktív Benazir Kafaalat kedvezményezett családok gyermekeinek, általános, közép- és felső középfokú oktatásban. A hivatalos BISP-tájékoztató szerinti korcsoportok: alapfok 4–12 év, középfok 8–18 év, felső középfok 13–22 év. A beiratkozáshoz a kedvezményezett anya CNIC-azonosítója, a gyermek NADRA által kiállított B-form/CRC okmánya és az iskola által hitelesített beiratkozási igazolás szükséges. A támogatás feltétele az iskolai felvétel és legalább 70%-os negyedéves jelenlét. A BISP oldalon szereplő ösztöndíjösszegek elavultak lehetnek; az aktuális összeget a helyi BISP irodánál kell megerősíteni.",
+      "description_en": "Education cash support for children in active Benazir Kafaalat beneficiary families, from primary through higher-secondary education. BISP lists age bands of 4–12 for primary, 8–18 for secondary and 13–22 for higher secondary. Enrolment requires the beneficiary mother's CNIC, the child's NADRA-issued B-form/CRC and a school-verified admission slip. Continued payments depend on school admission and at least 70% quarterly attendance. The stipend amounts shown on the BISP page may be outdated; confirm current rates with a local BISP office.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
     }
   ],
-  "records_count": 95,
+  "records_count": 104,
   "updated": "2026-11-22"
 }
