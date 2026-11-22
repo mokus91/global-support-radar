@@ -57,7 +57,7 @@ def parse_feed(raw, feed):
             "candidate_id":digest,"country_code":feed["country_code"],
             "country_name":feed["country_name"],"publisher":feed["publisher"],
             "feed_id":feed["id"],"title":title,"url":link,
-            "published_at":parse_date(date),"summary":re.sub(r"\\s+"," ",summary)[:1200],
+            "published_at":parse_date(date),"summary":re.sub(r"\s+"," ",summary)[:1200],
             "matched_keywords":matched,"review_status":"needs_human_review",
             "review_note":"A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
         })
