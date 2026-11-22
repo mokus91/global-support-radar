@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-11-22",
-  "description": "Verified official government announcement feeds. Candidates are collected for human review; they are never published as confirmed benefits automatically.",
+  "description": "Official government announcement feeds. Candidates are collected for human review and are never auto-published as confirmed benefits. Feed coverage is partial and country-specific.",
   "feeds": [
     {
       "id": "uk-government-updates",
@@ -46,6 +46,24 @@
       "publisher": "Press Information Bureau, Government of India",
       "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=5",
       "format": "rss",
+      "enabled": true
+    },
+    {
+      "id": "us-grantsgov-modified-opportunities-category",
+      "country_code": "US",
+      "country_name": "United States",
+      "publisher": "Grants.gov",
+      "url": "https://www.grants.gov/rss/GG_OppModByCategory.xml",
+      "format": "rss",
+      "enabled": true
+    },
+    {
+      "id": "australia-social-services-news",
+      "country_code": "AU",
+      "country_name": "Australia",
+      "publisher": "Australian Government Department of Social Services",
+      "url": "https://www.dss.gov.au/news/rss",
+      "format": "auto",
       "enabled": true
     }
   ],
