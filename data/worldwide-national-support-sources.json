@@ -1276,7 +1276,63 @@
       "description_hu": "Több ország szociális védelmi rendszereit, foglalkoztatási és válságkezelési támogatásait erősítő nemzetközi finanszírozási program. Elsősorban kormányzati rendszereket és intézményi projekteket támogat, nem közvetlen lakossági pénzbeli juttatás.",
       "description_en": "International financing programme strengthening social protection systems, employment support and crisis response across multiple countries. Primarily supports government systems and institutional projects, not direct household cash benefits.",
       "verification_status": "official-international-programme"
+    },
+    {
+      "id": "ke-inua-jamii",
+      "country_code": "KE",
+      "country_en": "Kenya",
+      "category": "social",
+      "name_hu": "Kenya – Inua Jamii szociális pénzbeli támogatások",
+      "name_en": "Kenya — Inua Jamii cash transfer programme",
+      "url": "https://socialprotection.go.ke/frequently-asked-questions",
+      "publisher": "Government of Kenya — State Department for Social Protection and Senior Citizen Affairs",
+      "kind": "social-cash-transfer-programme",
+      "description_hu": "Állami pénzbeli támogatási program időseknek, súlyos fogyatékossággal élő személyeket gondozó háztartásoknak és árva vagy veszélyeztetett gyermekeket nevelő családoknak. A jogosultsági feltételek és az aktuális igénylési folyamat a minisztériumi tájékoztatóban található.",
+      "description_en": "Government cash transfer programme for older persons, households caring for persons with severe disabilities, and families caring for orphans and vulnerable children. Check eligibility and current enrolment steps in the ministry guidance.",
+      "verification_status": "official-government-programme"
+    },
+    {
+      "id": "ke-social-protection-ecitizen",
+      "country_code": "KE",
+      "country_en": "Kenya",
+      "category": "all",
+      "name_hu": "Kenya – Szociális Védelmi Minisztérium online ügyintézése",
+      "name_en": "Kenya — State Department for Social Protection eCitizen services",
+      "url": "https://socialprotection.ecitizen.go.ke/",
+      "publisher": "Government of Kenya — State Department for Social Protection and Senior Citizen Affairs",
+      "kind": "government-service-portal",
+      "description_hu": "Hivatalos online ügyintézési felület a szociális védelmi állami szolgáltatásokhoz. Az elérhető ügytípusok és az esetleges eCitizen-belépési követelmények a portálon ellenőrizhetők.",
+      "description_en": "Official online service portal for government social-protection services. Check available service types and any eCitizen sign-in requirements on the portal.",
+      "verification_status": "official-government-portal"
+    },
+    {
+      "id": "za-sassa-services",
+      "country_code": "ZA",
+      "country_en": "South Africa",
+      "category": "social",
+      "name_hu": "Dél-Afrika – SASSA szociális támogatások igénylési portálja",
+      "name_en": "South Africa — SASSA social grants services portal",
+      "url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home",
+      "publisher": "South African Social Security Agency (SASSA)",
+      "kind": "social-grants-application-portal",
+      "description_hu": "Hivatalos ügyintézési portál időskori, fogyatékossági, gyermekgondozási, nevelőszülői és más szociális támogatásokhoz. A profil létrehozása és az egyes támogatások igénylési feltételei a portálon találhatók.",
+      "description_en": "Official service portal for older persons, disability, care dependency, foster child, child support and other social grants. Profile registration and application requirements are provided on the portal.",
+      "verification_status": "official-government-application-portal"
+    },
+    {
+      "id": "uk-international-development-funding",
+      "country_code": "GB",
+      "country_en": "United Kingdom",
+      "category": "international",
+      "name_hu": "Egyesült Királyság – nemzetközi fejlesztési támogatások keresője",
+      "name_en": "United Kingdom — International Development Funding Finder",
+      "url": "https://www.gov.uk/international-development-funding",
+      "publisher": "UK Foreign, Commonwealth & Development Office",
+      "kind": "international-development-grant-finder",
+      "description_hu": "A brit kormány nemzetközi fejlesztési támogatási keresője, amely ország és finanszírozási státusz szerint szűrhető felhívásokat mutat. A célországot, jogosult pályázókat, nyitottságot és határidőt minden felhívásnál külön ellenőrizni kell.",
+      "description_en": "UK government finder for international development funding calls, filterable by country and funding status. Check target countries, eligible applicants, open status and deadlines for each call.",
+      "verification_status": "official-government-grant-finder"
     }
   ],
-  "records_count": 91
+  "records_count": 95
 }
