@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Official support discovery portals and programme records across 78 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across 79 country and region codes in the current catalogue. This is a partial and growing catalogue, not a complete global register. Portal listings, grants, loans, guarantees, tax incentives and equity investments are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -3016,8 +3016,25 @@
       "last_checked": "2026-11-22",
       "application_status": "no-deadline-stated-confirm-current-availability",
       "source_reference": "https://www.tfafacility.org/grant-program"
+    },
+    {
+      "id": "ws-duty-concession-scheme",
+      "country_code": "WS",
+      "country_en": "Samoa",
+      "category": "tax_customs",
+      "name_hu": "Szamoa – Duty Concession Scheme vámkedvezmény",
+      "name_en": "Samoa — Duty Concession Scheme",
+      "url": "https://mcil.gov.ws/services/industry",
+      "publisher": "Samoa Ministry of Commerce, Industry and Labour (MCIL)",
+      "kind": "customs-duty-concession",
+      "description_hu": "A szamoai Ipari Fejlesztési törvény keretében működő vámkedvezményi rendszer. A minisztérium tájékoztatója többek között az Aviation Transport Development Scheme-et ismerteti, amely jóváhagyott repülőgépek és alkatrészek behozatalára adhat vámmentességet a feltételeknek megfelelő kis légitársaságoknak. Nem általános, minden vállalkozásnak járó támogatás: az egyes ágazati konstrukciók jogosultságát, engedélyezését és aktuális feltételeit a minisztériumnál kell ellenőrizni.",
+      "description_en": "A customs-duty concession framework operating under Samoa's industrial development policy. The Ministry's information includes the Aviation Transport Development Scheme, which may exempt approved aircraft and parts imported by qualifying small aircraft carriers from customs duty. This is not a general benefit for every business: eligibility, approval and current conditions must be confirmed with the Ministry for the relevant scheme.",
+      "verification_status": "official-ministry-scheme-information-2026",
+      "last_checked": "2026-11-22",
+      "application_status": "Scheme information published; contact MCIL for current eligibility, guidelines and application forms",
+      "source_reference": "https://mcil.gov.ws/services/industry"
     }
   ],
-  "records_count": 208,
+  "records_count": 209,
   "updated": "2026-11-22"
 }
