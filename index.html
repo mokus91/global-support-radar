@@ -811,6 +811,44 @@ async function loadLiveListings(){
    });
   }catch(_){return[]}
  }));
+ // Add the maintained country/region source catalogue to the same searchable result set.
+ // These are official starting points, not individual open grant calls.
+ try{
+  const directoryResponse=await fetch("./data/worldwide-national-support-sources.json",{cache:"no-store"});
+  if(directoryResponse.ok){
+   const directory=await directoryResponse.json();
+   const categoryMap={housing:"housing",family:"family",agriculture:"agriculture",business:"business",education:"education",healthcare:"healthcare",health:"healthcare",energy:"energy",employment:"employment",social:"social",transport:"transport"};
+   const directoryRows=(Array.isArray(directory.records)?directory.records:[]).map(row=>{
+    let host="";try{host=new URL(row.url).hostname;}catch(_){}
+    return {
+     ...row,
+     title:row.name_en||row.name_hu||row.id,
+     title_hu:row.name_hu||"",
+     summary:row.description_en||row.description_hu||"",
+     description_original:row.description_en||"",
+     _country:row.country_code||"",
+     _source:row.publisher||"Official national source directory",
+     _hosts:host?[host]:[],
+     _fallback:row.url||"",
+     _official:row.url||"",
+     _deadline:null,_amount:null,_currency:"",_amountType:"",
+     _category:categoryMap[String(row.category||"").toLowerCase()]||null,
+     _verification:row.verification_status||"unverified",
+     _sourceDirectory:true
+    };
+   });
+   results.push(directoryRows);
+   const countrySelect=$("country");
+   if(countrySelect){
+    const existing=new Set([...countrySelect.options].map(option=>option.value));
+    const names=new Map(directoryRows.map(row=>[row._country,row.country_en||row._country]));
+    [...names.entries()].sort((a,b)=>a[1].localeCompare(b[1])).forEach(([code,name])=>{
+     if(!code||existing.has(code))return;
+     const option=document.createElement("option");option.value=code;option.textContent=name+" ("+code+")";countrySelect.append(option);existing.add(code);
+    });
+   }
+  }
+ }catch(directoryError){console.warn("National source catalogue could not be added to live search.",directoryError);}
  const merged=new Map();
  const normalizeUrl=value=>{try{const url=new URL(value);url.hash="";url.search="";return url.origin+url.pathname.replace(/\/+$/,"");}catch(_){return""}};
  const titleKey=row=>String(row.title_original||row.title||row.title_en||row.identifier||"").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -947,7 +985,7 @@ function renderCards(){
  }).sort((a,b)=>{if(sortOrder==="relevance"){const score=row=>{let points=0;const verified=["official_page_open_status_and_amount_checked","official-page-open-status-and-amount-checked"].includes(String(row._verification||"").toLowerCase());if(verified)points+=8;if(row._official)points+=4;if(row._deadline){const days=(Date.parse(row._deadline)-Date.now())/86400000;if(days>=0&&days<=30)points+=5;else if(days>30&&days<=90)points+=3;else if(days>90)points+=1;}if(row._amount!==undefined&&row._amount!==null&&row._amount!=="")points+=2;if(row._currency)points+=1;if(row.summary||row.description_original)points+=1;if(row.eligibility_status||row.eligibility_summary_hu||row.eligibility_summary_en||row.eligible_applicants||row.eligible_entities)points+=2;if(row._feedUpdated)points+=1;return points;};return score(b)-score(a);}if(sortOrder==="quality"){const score=row=>[row._official,row._deadline,row._amount,row._currency,row.summary||row.description_original,row.eligibility_status||row.eligibility_summary_hu||row.eligibility_summary_en,row._verification,row._feedUpdated].filter(value=>value!==undefined&&value!==null&&value!=="").length;return score(b)-score(a);}if(sortOrder==="updated"){const ua=Date.parse(a._feedUpdated||a.updated_at||a.fetched_at||a.retrieved_at||"");const ub=Date.parse(b._feedUpdated||b.updated_at||b.fetched_at||b.retrieved_at||"");if(Number.isNaN(ua)&&Number.isNaN(ub))return 0;if(Number.isNaN(ua))return 1;if(Number.isNaN(ub))return -1;return ub-ua;}if(sortOrder==="country"){const byCountry=String(a._country||"").localeCompare(String(b._country||""));if(byCountry)return byCountry;}const da=Date.parse(a._deadline||"");const db=Date.parse(b._deadline||"");if(Number.isNaN(da)&&Number.isNaN(db))return String(a.title||a.title_original||"").localeCompare(String(b.title||b.title_original||""));if(Number.isNaN(da))return 1;if(Number.isNaN(db))return -1;return da-db;});
  currentRows=rows;
  syncSearchUrl();
- $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"7 adatkapcsolat":"7 data connections");
+ $("count").textContent=rows.length+" "+(lang==="hu"?"találat":"results")+" · "+(lang==="hu"?"élő adatfolyamok és hivatalos országportálok":"live feeds and official country portals");
  const savedButton=$("savedToggle");if(savedButton){savedButton.textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+saved.size+")";savedButton.classList.toggle("active",showSavedOnly);$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items stay on this device only."; }
  const box=$("cards");box.replaceChildren();
  if(!rows.length){$("loadMoreWrap").style.display="none";const empty=document.createElement("div");empty.className="empty";const countryHasFeed=country==="all"||liveListings.some(row=>row._country===country);empty.textContent=!countryHasFeed?(lang==="hu"?"Ehhez az országhoz még nincs bekötött automatikus élő pályázati adatfolyam. Az alábbi hivatalos forrásjegyzékben találsz kiindulópontokat.":"No automated live grant feed is connected for this country yet. Check the official source directory below for starting points."):liveListings.length?t.empty:(lang==="hu"?"A hivatalos adatforrások betöltése folyamatban van, vagy jelenleg nem adtak vissza találatot.":"Official source data is loading or currently has no results.");box.append(empty);return;}
@@ -960,7 +998,7 @@ function renderCards(){
   const tag=document.createElement("span");tag.className="tag";tag.textContent=category<0?(lang==="hu"?"Egyéb támogatás":"Other support"):catNames[category];
   const badge=document.createElement("span");badge.className="demo";
   const verified=["official_page_open_status_and_amount_checked","official-page-open-status-and-amount-checked"].includes(String(row._verification||"").toLowerCase());
-  badge.textContent=verified?(lang==="hu"?"HIVATALOS ADATELLENŐRZÉS":"OFFICIAL DATA CHECK"):(lang==="hu"?"ELLENŐRIZENDŐ JELÖLT":"VERIFY CANDIDATE");top.append(tag,badge);
+  badge.textContent=row._sourceDirectory?(lang==="hu"?"HIVATALOS FORRÁSKATALÓGUS":"OFFICIAL SOURCE DIRECTORY"):(verified?(lang==="hu"?"HIVATALOS ADATELLENŐRZÉS":"OFFICIAL DATA CHECK"):(lang==="hu"?"ELLENŐRIZENDŐ JELÖLT":"VERIFY CANDIDATE"));top.append(tag,badge);
   const title=document.createElement("h3");title.textContent=row.title_hu&&lang==="hu"?row.title_hu:(row.title||row.title_original||row.title_en||row.identifier||"—");
   const desc=document.createElement("p");const summary=lang==="hu"?(row.summary||row.description_original||row.purpose_original||row.eligibility_summary_hu||row.note_hu||""):(row.summary||row.description_original||row.purpose_original||row.eligibility_summary_en||row.note_en||"");desc.textContent=[summary,row.identifier].filter(Boolean).join(" · ")||(lang==="hu"?"A részleteket az eredeti hivatalos oldalon ellenőrizd.":"Check details on the original official page.");
   const meta=document.createElement("div");meta.className="meta";
@@ -971,7 +1009,7 @@ function renderCards(){
   const updatedMeta=document.createElement("span");const staleAfterMs=48*60*60*1000;const feedUpdatedAt=Date.parse(row._feedUpdated||"");const feedIsStale=!Number.isFinite(feedUpdatedAt)||(Date.now()-feedUpdatedAt)>staleAfterMs;updatedMeta.textContent=(lang==="hu"?"Adat ellenőrizve: ":"Feed checked: ")+(row._feedUpdated?String(row._feedUpdated).slice(0,10):(lang==="hu"?"nincs adat":"not available"))+(feedIsStale?(lang==="hu"?" · Régi adat – ellenőrizd a hivatalos oldalon":" · Older data – verify on the official page"):"");
   const statusMeta=document.createElement("span");const opportunityState=classifyOpportunity(row);const statusText=opportunityState.label;statusMeta.textContent=(lang==="hu"?"Státusz: ":"Status: ")+statusText;const eligibilityMeta=document.createElement("span");const eligibilityText=row.eligibility_status||row.eligibility_summary_hu||row.eligibility_summary_en||"";eligibilityMeta.textContent=(lang==="hu"?"Jogosultság: ":"Eligibility: ")+(row.eligibility_verified===true?(lang==="hu"?"hivatalosan ellenőrizve":"officially verified"):(eligibilityText?String(eligibilityText)+" · "+(lang==="hu"?"nem igazolt":"not verified"):(lang==="hu"?"nincs részletes adat":"details not provided")));meta.append(countryMeta,dateMeta,amountMeta,sourceMeta,updatedMeta,statusMeta,eligibilityMeta);
   const foot=document.createElement("div");foot.className="cardfoot";
-  const note=document.createElement("span");note.textContent=lang==="hu"?"Ellenőrizd a feltételeket és a beadási időszakot":"Verify eligibility and application window";
+  const note=document.createElement("span");note.textContent=row._sourceDirectory?(lang==="hu"?"Kiindulópont – az aktuális programokat a portálon keresd":"Starting point — find current programmes on the portal"):(lang==="hu"?"Ellenőrizd a feltételeket és a beadási időszakot":"Verify eligibility and application window");
   const fav=document.createElement("button");fav.type="button";fav.className="filter";fav.style.marginRight="8px";const key=savedId(row);const isSaved=saved.has(key);fav.textContent=isSaved?(lang==="hu"?"★ Mentve":"★ Saved"):(lang==="hu"?"☆ Mentés":"☆ Save");fav.setAttribute("aria-pressed",String(isSaved));fav.onclick=()=>{const next=getSaved();if(next.has(key))next.delete(key);else next.add(key);saveSaved(next);renderCards();};
   const link=document.createElement("a");let href="";
   try{const u=new URL(row._official||"");if(u.protocol==="https:"&&(row._hosts||[]).some(h=>u.hostname===h||u.hostname.endsWith("."+h)))href=u.href;}catch(_){}
