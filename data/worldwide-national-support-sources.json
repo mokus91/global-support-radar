@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 49 countries, plus European Union-wide official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Country-specific official support discovery portals and programme records across 51 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1346,6 +1346,36 @@
       "description_hu": "Hivatalos szociális program rendkívül szegény és kiszolgáltatott háztartásoknak. Célcsoportjai közé tartoznak a háztartási támogatás nélkül élő, 65 év feletti idősek, a súlyos fogyatékossággal élők és az árva vagy veszélyeztetett gyermekeket gondozó háztartások. A kiválasztás és a kifizetés feltételeit az aktuális hivatalos tájékoztatóban kell ellenőrizni.",
       "description_en": "Official social cash-transfer programme for extremely poor and vulnerable households. Target groups include older people aged 65+ without household support, people with severe disabilities, and households caring for orphaned or vulnerable children. Check current official guidance for selection and payment conditions.",
       "verification_status": "official-government-programme"
+    },
+    {
+      "id": "ug-sage-senior-citizens-grant",
+      "country_code": "UG",
+      "country_en": "Uganda",
+      "category": "social",
+      "name_hu": "Uganda – SAGE időskorúak támogatása",
+      "name_en": "Uganda — SAGE Senior Citizens Grant",
+      "url": "https://socialprotection.go.ug/",
+      "publisher": "Government of Uganda — Ministry of Gender, Labour and Social Development",
+      "kind": "senior-citizens-cash-transfer",
+      "description_hu": "Az Expanding Social Protection program részeként működő állami időskori pénzbeli támogatás. A minisztérium 2025/26-os szolgáltatási tájékoztatója 80 éves kortól jelöli meg az általános jogosultságot (Karamoja térségében eltérő korhatár szerepelhet), és havi 25 000 ugandai shillingnek megfelelő, negyedévente folyósított összeget ír le. A 65 éves korhatárra tervezett bővítést 2026-ban finanszírozási okból elhalasztották; mindig ellenőrizd a helyi hatóságnál az aktuális szabályokat.",
+      "description_en": "Government senior-citizen cash support under the Expanding Social Protection programme. The ministry's 2025/26 service charter lists general eligibility from age 80 (a different threshold may apply in Karamoja) and describes a quarterly payment equivalent to UGX 25,000 per month. A planned expansion to age 65 was reported delayed in 2026 because funding was not provided; confirm current rules with local authorities.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "ng-hup-conditional-cash-transfer",
+      "country_code": "NG",
+      "country_en": "Nigeria",
+      "category": "social",
+      "name_hu": "Nigéria – Household Uplifting Programme (HUP-CCT)",
+      "name_en": "Nigeria — Household Uplifting Programme Conditional Cash Transfer",
+      "url": "https://ncto.gov.ng/hup-cct",
+      "publisher": "Federal Government of Nigeria — National Cash Transfer Office",
+      "kind": "conditional-cash-transfer-programme",
+      "description_hu": "Célzott pénzbeli támogatás szegény és kiszolgáltatott háztartásoknak. A kedvezményezetteket állami és közösségi azonosítással veszik fel a National Social Register nyilvántartásba; a hivatalos tájékoztató szerint nem nyilvános, bárki által kitölthető jelentkezési űrlap alapján történik a kiválasztás. Óvakodj a regisztrációs díjat kérő közvetítőktől és hamis oldalaktól.",
+      "description_en": "Targeted cash support for poor and vulnerable households. Beneficiaries are identified through state and community processes and included in the National Social Register; the official office warns that selection is not through a public, open-to-everyone application form. Beware of intermediaries charging registration fees and fake websites.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
     }
   ],
   "records_count": 95
