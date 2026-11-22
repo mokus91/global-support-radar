@@ -100,7 +100,7 @@ def main():
                 "scope":"The official API could not be queried successfully. Previously collected records are retained as a stale snapshot, not treated as newly verified. No current grant or application status is inferred; use the official catalogue directly."
             }
             OUT.parent.mkdir(parents=True,exist_ok=True)
-            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+            OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
             print("Aides-territoires API " + ("temporarily restricted" if restricted else "temporarily unavailable") + f"; preserved {len(previous_records)} records from the last successful snapshot.")
             return
         rows=payload.get("results",[])
