@@ -808,6 +808,7 @@ async function loadOpportunityAlerts(){
 function renderCards(){
  const savedCount=liveListings.reduce((count,row)=>count+(getSaved().has(savedId(row))?1:0),0);$("savedToggle").textContent=(lang==="hu"?"★ Mentettek (":"★ Saved (")+savedCount+")";$("savedPrivacy").textContent=lang==="hu"?"A mentések csak ezen az eszközön tárolódnak.":"Saved items are stored only on this device.";
  const t=translations[lang],q=$("q").value.trim().toLowerCase(),country=$("country").value,saved=getSaved(),applicantType=$("applicantType")?.value||"",statusFilter=$("statusFilter")?.value||"",deadlineWindow=$("deadlineWindow")?.value||"",sortOrder=$("sortOrder")?.value||"deadline";
+ const deadlineSelect=$("deadlineWindow");if(deadlineSelect){const keep=deadlineSelect.value;deadlineSelect.replaceChildren();const options=lang==="hu"?[["","Bármely határidő"],["7","7 napon belül"],["30","30 napon belül"],["90","90 napon belül"],["none","Nincs megadott határidő"]]:[["","Any deadline"],["7","Within 7 days"],["30","Within 30 days"],["90","Within 90 days"],["none","No deadline listed"]];options.forEach(([value,label])=>{const option=document.createElement("option");option.value=value;option.textContent=label;deadlineSelect.append(option)});deadlineSelect.value=keep;}
  const rows=liveListings.filter(row=>{
   const category=inferCategory(row);
   const categories=Array.isArray(row.categories)?row.categories:[];
