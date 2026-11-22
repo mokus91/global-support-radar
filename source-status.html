@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forrásállapot | Global Support Radar</title>
+<meta name="description" content="A Global Support Radar hivatalos forráslinkjeinek automatikus elérhetőségi ellenőrzése.">
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e32;--text:#eef4ff;--muted:#a9b8ce;--line:#293b56;--mint:#53e0b2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:24px 18px 60px}a{color:var(--mint)}h1{font-size:clamp(30px,5vw,46px);line-height:1.15}.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}.card,.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.card strong{display:block;font-size:28px}.row{margin:9px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.ok{color:#8ff0cb}.bad{color:#ffb6a8}.pill{font-size:12px;border-radius:20px;padding:3px 9px;background:#173b34}.bad.pill{background:#512b2b}.note{border-left:3px solid #d5aa58;padding:10px 14px;background:#302819;color:#f3dfb7;border-radius:6px}.top{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}input{width:100%;padding:12px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit}footer{margin-top:28px;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<div class="top"><a href="./">← Global Support Radar</a><a href="./countries/">Országok és támogatások</a></div>
+<h1>Hivatalos források elérhetősége</h1>
+<p class="muted">A rendszer naponta ellenőrzi, hogy az adatbázisban szereplő hivatalos webcímek válaszolnak-e.</p>
+<div id="stats" class="stats"><div class="card">Ellenőrzés folyamatban…</div></div>
+<p class="note"><strong>Fontos:</strong> A működő webcím nem bizonyítja, hogy a támogatás még nyitott, az összeg aktuális, vagy a jogosultsági feltételek változatlanok. Ezeket az adatokat külön, hivatalos közlemények alapján kell ellenőrizni.</p>
+<label for="q">Keresés ország, program vagy státusz szerint</label><p><input id="q" placeholder="Például: Brazil, Bolsa Família, http_error"></p>
+<p id="updated" class="muted"></p><section id="results"></section>
+<footer>Az ellenőrzés GitHub Actions segítségével fut naponta. A jelentés automatikusan frissül, amikor az eredmény megváltozik.</footer>
+</main>
+<script>
+let report=null;
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){
+ if(!report)return;
+ const q=document.getElementById("q").value.toLowerCase();
+ const items=report.results.filter(x=>[x.name_en,x.country_code,x.id,x.status,x.url].join(" ").toLowerCase().includes(q));
+ document.getElementById("stats").innerHTML=[
+ ["Ellenőrzött forrás",report.checked_records],["Elérhető",report.reachable],["HTTP-hiba",report.http_errors],["Ellenőrzési hiba",report.check_failed]
+ ].map(([k,v])=>'<div class="card"><span class="muted">'+k+'</span><strong>'+v+'</strong></div>').join("");
+ document.getElementById("updated").textContent="Utolsó ellenőrzés: "+new Date(report.generated_at).toLocaleString("hu-HU")+" · "+items.length+" találat";
+ document.getElementById("results").innerHTML=items.map(x=>'<div class="row"><div><strong>'+esc(x.name_en||x.id)+'</strong><div class="muted">'+esc(x.country_code||"")+' · HTTP '+esc(x.http_status??"—")+'</div><a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.url)+'</a></div><span class="pill '+(x.status==="reachable"?"ok":"bad")+'">'+esc(x.status)+'</span></div>').join("")||'<p class="muted">Nincs találat.</p>';
+}
+fetch("./data/source-health-report.json").then(r=>{if(!r.ok)throw Error("A napi jelentés még nem készült el.");return r.json()}).then(x=>{report=x;render()}).catch(e=>document.getElementById("results").textContent=e.message+" A GitHub Actions első futtatása után jelenik meg.");
+document.getElementById("q").addEventListener("input",render);
+</script></body></html>
