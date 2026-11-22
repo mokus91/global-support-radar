@@ -33,14 +33,25 @@
  const startYear=new Date(today.getFullYear(),0,1);
  const base="https://"+code+".goatcounter.com/counter/TOTAL.json";
  const jobs=[["all",null],["week",iso(startWeek)],["month",iso(startMonth)],["year",iso(startYear)]];
- Promise.all(jobs.map(async([id,start])=>{
+ const results=await Promise.allSettled(jobs.map(async([id,start])=>{
   const url=base+(start?"?start="+encodeURIComponent(start)+"&end="+encodeURIComponent(iso(today)):"");
   const r=await fetch(url,{cache:"no-store"});
-  if(!r.ok)throw new Error("A nyilvános számláló nem érhető el.");
+  if(!r.ok)throw new Error("HTTP "+r.status);
   const data=await r.json();
-  if(data.count===undefined)throw new Error("A számláló nem adott vissza értéket.");
-  document.getElementById(id).textContent=String(data.count);
- })).then(()=>{document.getElementById("status").textContent="Az adatok sikeresen betöltődtek. A GoatCounter nyilvános számlálója akár négy órán át gyorsítótárazott adatot is mutathat."})
- .catch(()=>{for(const id of ["all","week","month","year"])if(document.getElementById(id).textContent==="Betöltés…")document.getElementById(id).textContent="Nem elérhető";document.getElementById("status").textContent="A nyilvános számláló jelenleg nem ad adatot. Ellenőrizd a GoatCounter webhelybeállításaiban az „Allow adding visitor counts on your website” engedélyt, majd töltsd újra ezt az oldalt."});
+  if(data.count===undefined)throw new Error("Hiányzó számlálóérték");
+  document.getElementById(id).textContent=fmt(data.count);
+ }));
+ const failed=results.filter(x=>x.status==="rejected").length;
+ for(let i=0;i<results.length;i++){
+  if(results[i].status==="rejected")document.getElementById(jobs[i][0]).textContent="Nem elérhető";
+ }
+ const status=document.getElementById("status");
+ if(failed===0){
+  status.textContent="Minden statisztika sikeresen betöltődött. Utolsó lekérdezés: "+new Date().toLocaleString("hu-HU")+". A GoatCounter adatai akár négy órán át gyorsítótárazottak lehetnek.";
+ }else if(failed<jobs.length){
+  status.textContent="A statisztikák részben érhetők el ("+(jobs.length-failed)+"/"+jobs.length+"). Utolsó lekérdezés: "+new Date().toLocaleString("hu-HU")+". Próbáld újratölteni később.";
+ }else{
+  status.textContent="A nyilvános számláló jelenleg nem ad adatot. Ellenőrizd a GoatCounter webhelybeállításaiban az „Allow adding visitor counts on your website” engedélyt, majd töltsd újra ezt az oldalt.";
+ }
 })();
 </script></body></html>
