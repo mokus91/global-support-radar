@@ -1,4 +1,4 @@
-name: Daily official source link check
+name: Daily official source monitoring
 
 on:
   schedule:
@@ -9,13 +9,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-source-check
+  group: daily-source-monitoring
   cancel-in-progress: false
 
 jobs:
-  check-official-links:
+  monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -23,16 +23,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Check catalogue URLs
+      - name: Validate catalogue JSON
+        run: python -m json.tool data/worldwide-national-support-sources.json > /dev/null
+      - name: Check official source URLs and content review dates
         run: python scripts/check_sources.py
-      - name: Publish source health report
+      - name: Publish monitoring report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/source-health-report.json
           if git diff --cached --quiet; then
-            echo "Source health report unchanged."
+            echo "Monitoring report unchanged."
           else
-            git commit -m "Update daily official source link health report"
+            git commit -m "Update daily official source monitoring report"
             git push
           fi
