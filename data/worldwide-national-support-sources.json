@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-22",
-  "scope": "Country-specific official support discovery portals and programme records across 51 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Country-specific official support discovery portals and programme records across 53 countries, plus European Union-wide and global official funding and finance discovery resources. This is a partial and growing catalogue, not a complete global register. Portal listings and programme records are distinguished; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
   "records": [
     {
       "id": "au-benefits",
@@ -1376,7 +1376,38 @@
       "description_en": "Targeted cash support for poor and vulnerable households. Beneficiaries are identified through state and community processes and included in the National Social Register; the official office warns that selection is not through a public, open-to-everyone application form. Beware of intermediaries charging registration fees and fake websites.",
       "verification_status": "official-government-programme",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "bd-old-age-allowance",
+      "country_code": "BD",
+      "country_en": "Bangladesh",
+      "category": "social",
+      "name_hu": "Banglades – időskori szociális támogatás",
+      "name_en": "Bangladesh — Old Age Allowance",
+      "url": "https://dss.gov.bd/pages/static-pages/old-age-allowance-46bea6-6922dcb2933eb65569e11974",
+      "publisher": "Government of Bangladesh — Department of Social Services",
+      "kind": "old-age-cash-allowance",
+      "description_hu": "Állami pénzbeli támogatás rászoruló időseknek. A hivatalos DSS-oldal általános feltételei szerint bangladesi állandó lakóhely, azonosító okmány, legalább 65 éves férfi vagy 62 éves nő, alacsony éves jövedelem és helyi kiválasztás szükséges. A 2026–27-es pénzügyi évre közzétett online jelentkezési időszak augusztus 31-én lezárult; a következő időszakról a DSS portálján tájékozódj. Az összeg és feltételek pénzügyi évenként változhatnak.",
+      "description_en": "Government cash allowance for low-income older people. The official DSS page lists permanent Bangladeshi residence, identity documentation, a minimum age of 65 for men or 62 for women, low annual income and selection by the local committee as general criteria. The published online application window for FY 2026–27 closed on 31 August; check the DSS portal for the next round. Rates and conditions may change by fiscal year.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "ph-4ps-pantawid",
+      "country_code": "PH",
+      "country_en": "Philippines",
+      "category": "social",
+      "name_hu": "Fülöp-szigetek – 4Ps feltételes pénzbeli családtámogatás",
+      "name_en": "Philippines — Pantawid Pamilyang Pilipino Program (4Ps)",
+      "url": "https://pantawid.dswd.gov.ph/",
+      "publisher": "Government of the Philippines — Department of Social Welfare and Development",
+      "kind": "conditional-cash-transfer-programme",
+      "description_hu": "Szegény és közel szegény háztartások egészségügyi, táplálkozási és oktatási feltételekhez kötött pénzbeli támogatása. A jogosultság általános feltétele a standardizált célzási rendszer szerinti besorolás, valamint 0–18 éves gyermek vagy várandós családtag; a program kiválasztás alapján működik. A DSWD 2026-ban a CBMS-adatok alapján új kedvezményezettek regisztrálását jelentette be, közösségi gyűléseken és helyi önkormányzatokkal együttműködésben. Nem garantált az egyéni, azonnali online jelentkezés.",
+      "description_en": "Conditional cash assistance for poor and near-poor households, tied to health, nutrition and education requirements. General eligibility includes identification through the standardized targeting system and a household member aged 0–18 or a pregnant member; beneficiaries are selected. In 2026, DSWD announced new beneficiary registration using CBMS data through community assemblies coordinated with local governments. This is not a guaranteed individual, instant online application.",
+      "verification_status": "official-government-programme",
+      "last_checked": "2026-11-22"
     }
   ],
-  "records_count": 95
+  "records_count": 95,
+  "updated": "2026-11-22"
 }
