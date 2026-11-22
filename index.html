@@ -236,6 +236,13 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 })();
 </script>
 
+
+<section aria-label="Weboldal üzemideje" style="margin:24px auto 28px;padding:16px 18px;max-width:900px;border:1px solid var(--line);border-radius:16px;background:var(--panel);text-align:center">
+  <div id="uptimeLabel" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:7px">Az oldal indulása óta</div>
+  <div id="siteUptime" role="timer" aria-live="off" style="font-size:clamp(24px,5vw,38px);font-weight:800;letter-spacing:.03em;color:var(--mint);font-variant-numeric:tabular-nums">-- nap -- óra -- perc -- mp</div>
+  <div id="uptimeSince" style="font-size:12px;color:var(--muted);margin-top:7px">Első igazolt indulás: 2026. november 20. 22:20:26 (magyar idő)</div>
+</section>
+
 <footer><div class="footrow"><span>© 2026 Global Support Radar · Independent information project · <a href="./faq.html">Gyakori kérdések / FAQ</a> · <a href="./guide.html">Útmutató / Guide</a> · <a href="./countries/">Országok / Countries</a> · <a href="./methodology.html">Módszertan / Methodology</a> · <a href="./quality.html">Adatminőség / Data quality</a> · <a href="./updates.html">Adatváltozások / Updates</a> · <a href="./free-policy.html">Ingyenes használat / Free use</a> · <a href="./privacy.html">Adatvédelem / Privacy</a> · <a href="./en/">English</a> · <a href="./es/">Español</a> · <a href="./fr/">Français</a> · <a href="./de/">Deutsch</a> · <a href="./it/">Italiano</a> · <a href="./pt/">Português</a> · <a href="./ar/">العربية</a> · <a href="./hi/">हिन्दी</a> · <a href="./ru/">Русский</a> · <a href="./zh-cn/">简体中文</a></span><span id="footnote">Nem állami weboldal. A végleges jogosultságot mindig a hivatalos kiíró határozza meg.</span></div></footer>
 </div>
 <script>
@@ -1863,6 +1870,33 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
  function prepare(){const en=isEn(),t=copy[en?"en":"hu"],type=$("handoffType").value,detail=$("handoffDetails").value.trim(),place=$("handoffPlace").value.trim(),r=routes[type];if(!detail){$("handoffStatus").textContent=t.no;$("handoffDetails").focus();return}
  $("handoffResult").hidden=false;$("handoffRouteText").textContent=r.text;$("handoffDraft").value=t.draftText+detail+"\n\n"+(place?(en?"Town: ":"Település: ")+place+"\n\n":"")+(en?"Please let me know the required documents, submission method and deadline.\n\nYours faithfully,\n[Your name]":"Kérem tájékoztatásukat a szükséges dokumentumokról, a benyújtás módjáról és a határidőről.\n\nTisztelettel:\n[Név]");const links=$("handoffLinks");links.replaceChildren();const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=t.links+" – "+r.name;a.style.cssText="display:inline-block;padding:10px 13px;background:#1267a5;color:white;border-radius:8px;text-decoration:none;font-weight:700";links.append(a);if(type==="appointment"||place){const m=document.createElement("a");m.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent((type==="appointment"?"kormányablak ":"ügyintézés ")+place);m.target="_blank";m.rel="noopener noreferrer";m.textContent=t.map;m.style.cssText="display:inline-block;padding:10px 13px;background:#e9f1fa;color:#17456d;border:1px solid #b8c8da;border-radius:8px;text-decoration:none;font-weight:700";links.append(m)}$("handoffStatus").textContent=t.extra;}
  $("handoffPrepare").addEventListener("click",prepare);$("handoffCopy").addEventListener("click",async()=>{const v=$("handoffDraft").value;if(!v){prepare();if(!$("handoffDraft").value)return}try{await navigator.clipboard.writeText($("handoffDraft").value);$("handoffStatus").textContent=copy[isEn()?"en":"hu"].copied}catch(e){$("handoffDraft").focus();$("handoffDraft").select();$("handoffStatus").textContent=isEn()?"Select and copy the text manually.":"Jelöld ki a szöveget, majd másold ki kézzel."}});$("lang")?.addEventListener("change",render);render();
+})();
+</script>
+
+
+<script>
+(()=> {
+  // Az első dokumentált, sikeres nyilvános működés visszaigazolt időpontja.
+  const launchedAt = Date.UTC(2026, 10, 20, 21, 20, 26);
+  const out = document.getElementById("siteUptime");
+  const label = document.getElementById("uptimeLabel");
+  const lang = document.getElementById("lang");
+  if (!out) return;
+  const update = () => {
+    const seconds = Math.max(0, Math.floor((Date.now() - launchedAt) / 1000));
+    const days = Math.floor(seconds / 86400);
+    const hours = Math.floor((seconds % 86400) / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    const en = (lang?.value || "hu").startsWith("en");
+    label.textContent = en ? "Time since website launch" : "Az oldal indulása óta";
+    out.textContent = en
+      ? days + " days " + hours + " hours " + minutes + " min " + secs + " sec"
+      : days + " nap " + hours + " óra " + minutes + " perc " + secs + " mp";
+  };
+  update();
+  window.setInterval(update, 1000);
+  lang?.addEventListener("change", update);
 })();
 </script>
 
