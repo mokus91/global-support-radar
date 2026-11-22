@@ -2694,6 +2694,36 @@
       "description_en": "The 2026 call offered MWK 8.62–25.86 million to registered local organisations for landscape restoration, agroforestry and soil and water conservation. Eligibility was restricted to organisations operating in specified traditional authorities in Ntcheu and Mangochi. The application window ran from 17–28 August 2026 and is therefore closed.",
       "verification_status": "official-fao-call-closed-2026-08-28",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "et-startup-proclamation-grants-credit-guarantee",
+      "country_code": "ET",
+      "country_en": "Ethiopia",
+      "category": "business",
+      "name_hu": "Etiópia – Startup Proclamation induló vállalkozási támogatás és hitelgarancia",
+      "name_en": "Ethiopia — Startup Proclamation grants and credit guarantees",
+      "url": "https://www.startupethiopia.et/Designation",
+      "publisher": "Government of Ethiopia; Ministry-administered startup support framework",
+      "kind": "startup-grants-credit-guarantees-and-investment",
+      "description_hu": "A Startup Proclamation No. 1396/2025 alapján kijelölt startupok számára közvetlen, célhoz kötött állami induló támogatás, valamint a Nemzeti Hitelgarancia Alapon keresztül banki finanszírozáshoz jutást segítő garancia szerepel a rendszerben. A támogatás nem általánosan jár minden vállalkozásnak: előfeltétel a startup hivatalos kijelölése, és a támogatás felhasználása kötött. A kijelölési feltételeket és a ténylegesen megnyitott pályázati köröket külön ellenőrizni kell.",
+      "description_en": "Under Startup Proclamation No. 1396/2025, designated startups may access direct, ring-fenced government startup grants and credit guarantees through the National Credit Guarantee Fund to improve access to bank finance. Support is not available automatically to every business: formal startup designation is a prerequisite and grant use is restricted. Check designation criteria and whether a specific application round is open.",
+      "verification_status": "official-startup-support-framework-eligibility-and-open-calls-to-confirm",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "id": "et-dbe-msme-women-enterprise-financing-directory",
+      "country_code": "ET",
+      "country_en": "Ethiopia",
+      "category": "business",
+      "name_hu": "Etiópia – Development Bank of Ethiopia kkv- és női vállalkozási finanszírozási programok",
+      "name_en": "Ethiopia — Development Bank of Ethiopia MSME and women enterprise finance programmes",
+      "url": "https://dbe.com.et/?stm_works=external-fund-credit-management",
+      "publisher": "Development Bank of Ethiopia",
+      "kind": "official-development-bank-financing-programme-directory",
+      "description_hu": "A Fejlesztési Bank hivatalos programkatalógusa többek között a Women Entrepreneurship Development Programot (WEDP), a Small and Medium Enterprises Finance Projectet, mezőgazdasági gépesítési lízinget, kkv-hitelkereteket és hitelkockázati garanciaprogramokat sorol fel. A kínálat támogatást, hitelt, garanciát és technikai segítséget is tartalmaz; ezek nem felcserélhető konstrukciók. A konkrét hozzáférést és az aktuális finanszírozási keretet a banknál kell ellenőrizni.",
+      "description_en": "The Development Bank's official programme directory lists the Women Entrepreneurship Development Program (WEDP), Small and Medium Enterprises Finance Project, agricultural mechanisation leasing, SME credit lines and credit-risk guarantee programmes. Instruments include grants, loans, guarantees and technical assistance; they are not interchangeable. Confirm current availability and access conditions with the bank.",
+      "verification_status": "official-development-bank-programme-directory-current-facility-status-to-confirm",
+      "last_checked": "2026-11-22"
     }
   ],
   "records_count": 147,
