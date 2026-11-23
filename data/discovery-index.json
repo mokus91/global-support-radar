@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T20:04:30.596898+00:00",
+  "generated_at": "2026-11-23T02:28:32.172171+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 179,
+  "discovered_datasets_count": 178,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -221,14 +221,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Best Agri-cultural trails in Languedoc-Roussillon (2014)",
-      "url": "https://atom.geo-ide.e2.rie.gouv.fr/atomArchive/GetResource?id=94a1f8e8-64ce-4981-b2af-9314befda26b&dataType=dataset",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "BPI ALAPÍTÓ JOG - ORGANOGRAM - MÓDOSÍTÁSOK - FELELŐSSÉG",
       "url": "https://data.gov.gr/dataset/idrytikos-nomos-mfi-organogramma-tropopoihseis-armodiothtesn",
       "query": "business funding",
@@ -247,14 +239,6 @@
     {
       "title": "Business premises restructuring fund",
       "url": "https://www.data.gouv.fr/datasets/fonds-de-restructuration-des-locaux-dactivite",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "business R&D; sources of funding for own R&D activities; Every two years in 2007",
-      "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/FtgForskFinansSUM",
       "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -320,6 +304,14 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Comparison of cities - Business 2022",
+      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -693,6 +685,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "HOUSING - Number_pieces",
+      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
+      "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Housing assistance for HEPA seniors by Canton CD76 2023",
       "url": "https://www.opendata76.fr/datasets/seine-maritime::aides-hebergement-en-etablissement-personnes-agees-hepa-par-canton-cd76-2023",
       "query": "housing assistance",
@@ -957,14 +957,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -999,6 +991,14 @@
     {
       "title": "MIRRI_Subsidies 2022_2023_interreg plsk_call list",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-interreg-plsk-zoznam-vyziev",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI_Subsidies 2022_HUSKROUA ENI_Schemes",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-huskroua-eni-schemy",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1048,14 +1048,6 @@
       "title": "Otwarte Dane - Programy Wsparcia - Automatyczny - Dane z iPFRON+",
       "url": "https://dane.gov.pl/pl/dataset/2873,otwarte-dane-programy-wsparcia-dane-z-ipfron",
       "query": "public support programmes",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "PACA4JOB Business Events",
-      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"

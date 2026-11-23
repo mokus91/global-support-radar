@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-11-22T14:26:15+00:00",
-  "checked_at": "2026-11-22T20:05:09+00:00",
+  "checked_at": "2026-11-23T02:29:23+00:00",
   "country_code": "FR",
   "source": "Aides-territoires official public API",
   "source_url": "https://aides-territoires.beta.gouv.fr/api/aids/",

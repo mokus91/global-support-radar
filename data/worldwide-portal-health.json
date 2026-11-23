@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-22T20:04:16+00:00",
-  "records_count": 203,
+  "checked_at": "2026-11-23T02:28:19+00:00",
+  "records_count": 211,
   "summary": {
-    "connection_error": 40,
-    "http_error": 4,
-    "reachable": 144,
+    "connection_error": 32,
+    "http_error": 7,
+    "reachable": 157,
     "restricted": 15
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -23,13 +23,15 @@
     },
     {
       "id": "br-fomento-rural",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-fomento-rural"
     },
     {
       "id": "br-social-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas"
     },
     {
       "id": "ca-benefits",
@@ -105,8 +107,9 @@
     },
     {
       "id": "za-incentives",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
     },
     {
       "id": "za-sassa",
@@ -392,8 +395,8 @@
     },
     {
       "id": "cl-fondos-gob",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://fondos.gob.cl/"
     },
     {
@@ -434,8 +437,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "http_error",
+      "http_status": 500,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",
@@ -492,9 +496,8 @@
     },
     {
       "id": "ae-social-welfare",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "in-pmkisan",
@@ -521,8 +524,9 @@
     },
     {
       "id": "br-cadastro-unico-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico"
     },
     {
       "id": "global-fao-gef-small-grants",
@@ -567,8 +571,9 @@
     },
     {
       "id": "gh-leap",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
       "id": "ug-sage-senior-citizens-grant",
@@ -589,8 +594,9 @@
     },
     {
       "id": "ph-4ps-pantawid",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://pantawid.dswd.gov.ph/"
     },
     {
       "id": "id-pkh-family-hope",
@@ -600,7 +606,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -623,8 +629,9 @@
     },
     {
       "id": "br-bolsa-familia-2026",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.br/pt-br/servicos/receber-o-bolsa-familia"
     },
     {
       "id": "ae-dubai-sme-funding-startups",
@@ -811,7 +818,7 @@
     {
       "id": "hk-bud-fund",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.bud.hkpc.org/"
     },
     {
@@ -950,13 +957,15 @@
     },
     {
       "id": "gh-leap-cash-transfer",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
     },
     {
       "id": "gh-sif-gwyesco-women-youth-2026",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://apply.sifinghana.gov.gh/"
     },
     {
       "id": "gh-gea-women-youth-msme-grants",
@@ -1098,9 +1107,8 @@
     },
     {
       "id": "et-startup-proclamation-grants-credit-guarantee",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.startupethiopia.et/Designation"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "et-dbe-msme-women-enterprise-financing-directory",
@@ -1162,8 +1170,9 @@
     },
     {
       "id": "gh-leap-cash-transfer-2026",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/home/"
     },
     {
       "id": "ke-youth-enterprise-development-fund",
@@ -1187,6 +1196,53 @@
       "id": "bw-poverty-eradication-enterprise-support",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "fj-msme-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "fj-first-home-land-assistance",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.housing.gov.fj/programmes"
+    },
+    {
+      "id": "fj-young-entrepreneurship-scheme",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf"
+    },
+    {
+      "id": "to-tupulaki-community-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
+    },
+    {
+      "id": "to-trade-facilitation-project-implementation-grant",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.mted.gov.to/tnp/"
+    },
+    {
+      "id": "ws-duty-concession-scheme",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://mcil.gov.ws/services/industry"
+    },
+    {
+      "id": "sb-commercial-agriculture-development-support-fund",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://solomons.gov.sb/minister-hon-giro-signs-funding-agreements-to-support-local-agribusinesses/"
+    },
+    {
+      "id": "sb-sme-subvention-grant-projects",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://solomons.gov.sb/ministry-of-commerce-industry-labour-and-immigration/industrial-development-division/"
     }
   ]
 }

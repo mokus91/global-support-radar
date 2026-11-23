@@ -1,29 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-22T20:09:48+00:00",
-  "events_count": 3,
-  "events": [
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52968501topicsen",
-      "title": "Not-for-profit European sport events",
-      "detected_at": "2026-11-22T20:09:48+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53050046topicsen",
-      "title": "Large scale not-for-profit European sport event",
-      "detected_at": "2026-11-22T20:09:48+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53294913topicsen",
-      "title": "Capacity Building in the Field of Sport",
-      "detected_at": "2026-11-22T20:09:48+00:00"
-    }
-  ],
+  "generated_at": "2026-11-23T02:33:06+00:00",
+  "events_count": 0,
+  "events": [],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }
