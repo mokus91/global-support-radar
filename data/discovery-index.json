@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T06:32:58.726374+00:00",
+  "generated_at": "2026-11-23T08:51:57.382680+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 177,
+  "discovered_datasets_count": 178,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -56,6 +56,14 @@
       "title": "[Challenge 4] Energy Efficiency & Public Buildings",
       "url": "https://www.data.gouv.fr/datasets/defi-4-efficacite-energetique-batiments-publics",
       "query": "energy efficiency support",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "[F1] ÜZLETI KERESÉS",
+      "url": "https://data.gov.gr/dataset/st1-anazhthsh-epixeirhsewn",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -304,14 +312,6 @@
       "title": "Communal fund agricultural census in Corsica",
       "url": "https://georchestra.ac-corse.fr/geoserver/wfs?service=wfs&REQUEST=getcapabilities",
       "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Comparison of cities - Business 2022",
-      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1040,6 +1040,14 @@
       "title": "Otwarte Dane - Programy Wsparcia - Automatyczny - Dane z iPFRON+",
       "url": "https://dane.gov.pl/pl/dataset/2873,otwarte-dane-programy-wsparcia-dane-z-ipfron",
       "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "PACA4JOB Business Events",
+      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
+      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"

@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-23T06:32:47+00:00",
-  "records_count": 238,
+  "checked_at": "2026-11-23T08:51:44+00:00",
+  "records_count": 247,
   "summary": {
-    "connection_error": 40,
+    "connection_error": 41,
     "http_error": 8,
-    "reachable": 170,
-    "restricted": 20
+    "reachable": 176,
+    "restricted": 22
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -66,6 +66,12 @@
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://business.gov.au/grants-and-programs"
+    },
+    {
+      "id": "au-grantconnect",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.grants.gov.au/"
     },
     {
       "id": "bd-idea-sme-entrepreneur-grant-portal",
@@ -155,10 +161,22 @@
       "final_url": "https://www.canada.ca/en/services/benefits/finder.html"
     },
     {
+      "id": "ca-business-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://ised-isde.canada.ca/site/ised/en/supports-for-business"
+    },
+    {
       "id": "ca-grants",
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://www.canada.ca/en/government/grants-funding.html"
+    },
+    {
+      "id": "ca-grants-finder",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html"
     },
     {
       "id": "national-ch-business-1",
@@ -228,13 +246,13 @@
     {
       "id": "cy-eu-funds-single-portal",
       "status": "reachable",
-      "http_status": 202,
+      "http_status": 200,
       "final_url": "https://eufunds.com.cy/"
     },
     {
       "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 202,
+      "http_status": 200,
       "final_url": "https://eufunds.com.cy/"
     },
     {
@@ -259,7 +277,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://validate.perfdrive.com/?ssa=36bd05ae-f9c3-4a1b-8329-d6a68d9a4453&ssb=57959277826&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=d2f77ac6-dxzy-456f-b010-61e50ff35c5b&ssk=botmanager_support@radware.com&ssm=12840655301649160100424723119754&ssn=225f833fbc474da8f89dd4c443eeae8087a44d067568-be06-4b0b-b1d3c6&sso=7261f768-95e2018ca7a4e0de789a3bb2ca4245633b1f902117672bb3&ssp=40260671431795407302179541491807316&ssq=08269171546433913072515464592423671229128&ssr=MjAuODMuMzguMTk=&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMGRhNGY5MDMtZGQ3YS00ZGRlLTk1MGEtYmNkNTQ3ZjYyZWNjMS0xNzk1NDE1NDY0MDA2MC0wMGY0M2NhNTM1ZWI0NzJmNDBjMTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDA2NzU2OC1iZTA2LTRiMGItYjc2OC05NWUyMDE4Y2E3YTQxLTE3OTU0MTU0NjQwMDYwLTAwMjRmY2EwZjYzMWVkYzQxNjIxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
+      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -353,7 +371,7 @@
       "id": "eu-national-single-portals",
       "status": "restricted",
       "http_status": 429,
-      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "eu-step-funding",
@@ -629,9 +647,8 @@
     },
     {
       "id": "ke-agpo-youth-women-pwd-procurement",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.treasury.go.ke/agpo"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ke-inua-jamii",
@@ -908,7 +925,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -928,6 +945,12 @@
       "status": "reachable",
       "http_status": 206,
       "final_url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer"
+    },
+    {
+      "id": "nz-business-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.business.govt.nz/"
     },
     {
       "id": "nz-environment-funding",
@@ -960,8 +983,9 @@
     },
     {
       "id": "national-ph-agriculture-2",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
     },
     {
       "id": "national-ph-business-3",
@@ -977,8 +1001,9 @@
     },
     {
       "id": "ph-4ps-pantawid",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://pantawid.dswd.gov.ph/"
     },
     {
       "id": "ph-dost-cradle-rd-commercialization-grant",
@@ -1320,6 +1345,12 @@
       "final_url": "https://www.usa.gov/benefits"
     },
     {
+      "id": "us-benefits-finder",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.usa.gov/benefit-finder"
+    },
+    {
       "id": "us-grants",
       "status": "connection_error",
       "error": "URLError"
@@ -1344,9 +1375,8 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1355,9 +1385,8 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sassa",
@@ -1397,6 +1426,30 @@
       "id": "zm-social-cash-transfer-programme",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "in-national-portal-government-schemes",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.india.gov.in/my-government/schemes"
+    },
+    {
+      "id": "sg-nrf-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.nrf.gov.sg/grants/"
+    },
+    {
+      "id": "sg-government-funding-resources",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.sgpo.gov.sg/take-action/partners-portal/funding-resources/"
+    },
+    {
+      "id": "sg-national-arts-council-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.nac.gov.sg/find-your-funding/"
     }
   ]
 }

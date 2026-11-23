@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-23T08:09:02.418955+00:00",
+  "generated_at": "2026-11-23T08:57:09.775973+00:00",
   "feeds_checked": 18,
-  "records_checked": 2205,
+  "records_checked": 2208,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1983,
+  "unverified_status": 1986,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 212,
-    "official_listing_candidate": 1909,
+    "official_listing_candidate": 1912,
     "unverified": 74,
     "other": 9
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1991,
+    "needs_verification": 1994,
     "expired_or_closed": 1
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 500,
+      "records": 503,
       "procurement_candidates": 1,
-      "unverified": 500,
+      "unverified": 503,
       "api_window_candidates": 0,
-      "official_listing_candidates": 500,
+      "official_listing_candidates": 503,
       "historical_archive_records": 0
     },
     {
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 501,
+      "records_count": 504,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -348,7 +348,7 @@
       "name": "Worldwide — portal reachability",
       "file": "worldwide-portal-health.json",
       "status": "checked",
-      "records_count": 238,
+      "records_count": 247,
       "http_status": null,
       "freshness": "fresh",
       "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline."
@@ -388,7 +388,7 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 242
+      "records": 245
     },
     {
       "source_file": "eu-open-calls-discovery.json",
@@ -1439,8 +1439,8 @@
     }
   ],
   "historical_archive_records": 4000,
-  "diagnostic_records_checked": 238,
-  "diagnostic_missing_urls": 40,
+  "diagnostic_records_checked": 247,
+  "diagnostic_missing_urls": 41,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
