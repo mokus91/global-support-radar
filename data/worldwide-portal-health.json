@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-23T14:36:29+00:00",
+  "checked_at": "2026-11-23T20:17:28+00:00",
   "records_count": 247,
   "summary": {
-    "connection_error": 40,
-    "http_error": 7,
-    "reachable": 178,
-    "restricted": 22
+    "connection_error": 46,
+    "http_error": 9,
+    "reachable": 171,
+    "restricted": 21
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -35,15 +35,13 @@
     },
     {
       "id": "ae-social-welfare",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -187,8 +185,8 @@
     },
     {
       "id": "ci-widu-micro-small-business-grant",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "http_error",
+      "http_status": 503,
       "final_url": "https://widu.africa/cote-divoire"
     },
     {
@@ -210,8 +208,8 @@
     },
     {
       "id": "cm-widu-micro-small-business-grant",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "http_error",
+      "http_status": 503,
       "final_url": "https://widu.africa/cameroon"
     },
     {
@@ -246,15 +244,13 @@
     },
     {
       "id": "cy-eu-funds-single-portal",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufunds.com.cy/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "eu-national-funds-cy",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufunds.com.cy/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "cz-eu-funds-single-portal",
@@ -278,7 +274,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
+      "final_url": "https://validate.perfdrive.com/?ssa=9a688864-a570-44d7-b82b-9aa0e4adfcea&ssb=93608278286&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=411c3922-dxzy-42b6-9f12-76b65dc4bd84&ssk=botmanager_support@radware.com&ssm=18586191628136381107700292258633&ssn=b3bbbfbff018404d131619dafdde6ee3d58fdf4902ad-50c3-411f-884962&sso=b1c598af-06368feca7a0cd512b06f74318a9e918dba0307937fc29d1&ssp=56399732071795459566179540932334298&ssq=29525876492964246046964929641076931394771&ssr=MjAuNDAuMjIzLjY1&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBkZjQ5MDJhZC01MGMzLTQxMWYtODhhZi0wNjM2OGZlY2E3YTAxLTE3OTU0NjQ5Mjk0NjAwLTAwMjBhOTcyY2M0YjdmZjkxMDkxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUiLCJ1em14IjoiN2ZjMDAwYWQxYmQzMDktMjk1ZS00M2RjLTkzZjgtYjk5ZTVhOTQwYTRhMS0xNzk1NDY0OTI5NDYwMC0wMGZhNDkwMjMzZDVlMjI3MmVjMTAifQ=="
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -369,8 +365,8 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "restricted",
-      "http_status": 429,
+      "status": "reachable",
+      "http_status": 206,
       "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
@@ -469,27 +465,23 @@
     },
     {
       "id": "gh-leap",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "gh-leap-cash-transfer",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "gh-leap-cash-transfer-2026",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/home/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "gh-sif-gwyesco-women-youth-2026",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://apply.sifinghana.gov.gh/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "global-eeas-grants",
@@ -551,7 +543,7 @@
     {
       "id": "id-pip-ultra-micro-financing",
       "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "error": "URLError"
     },
     {
       "id": "id-pkh-family-hope",
@@ -801,7 +793,7 @@
     {
       "id": "national-mx-social-2",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.programasparaelbienestar.gob.mx/"
     },
     {
@@ -926,7 +918,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -1009,7 +1001,7 @@
     {
       "id": "ph-dost-cradle-rd-commercialization-grant",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://startup.gov.ph/programs/view/?id=3"
     },
     {
@@ -1038,13 +1030,15 @@
     },
     {
       "id": "eu-national-funds-pl",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://funduszeeuropejskie.gov.pl/"
     },
     {
       "id": "pl-eu-funds-single-portal",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://funduszeeuropejskie.gov.pl/"
     },
     {
       "id": "eu-national-funds-pt",

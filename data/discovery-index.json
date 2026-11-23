@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T14:36:44.936332+00:00",
+  "generated_at": "2026-11-23T20:17:41.330412+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 178,
+  "discovered_datasets_count": 177,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -56,14 +56,6 @@
       "title": "[Challenge 4] Energy Efficiency & Public Buildings",
       "url": "https://www.data.gouv.fr/datasets/defi-4-efficacite-energetique-batiments-publics",
       "query": "energy efficiency support",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "[F1] ÜZLETI KERESÉS",
-      "url": "https://data.gov.gr/dataset/st1-anazhthsh-epixeirhsewn",
-      "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
