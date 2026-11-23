@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T14:41:23.870790+00:00",
+  "generated_at": "2026-11-23T19:41:59.537795+00:00",
   "feeds_checked": 18,
   "records_checked": 2174,
   "expired_deadlines": 1,
@@ -18,8 +18,8 @@
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1960,
-    "expired_or_closed": 1
+    "needs_verification": 1959,
+    "expired_or_closed": 2
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -885,26 +885,6 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "15982COMPETITIVE_CALLen",
-      "title": "Comprehensive and inclusive support for women and girls' victims of GBV",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47589185",
-      "deadline": "2026-11-23T15:00:00.000+0000",
-      "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "application_state": "needs_verification",
-      "priority_score": 40,
-      "priority_reasons": [
-        "needs_verification",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "funding_candidate",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
       "id": "15681COMPETITIVE_CALLen",
       "title": "SYSTEMEU - Financial Support to Third Parties (FSTP) \n\nWhat is the aim?\nTo support digital innovations in healthcare, energy and mobility as they progress from the prototype stage (TRL 6) to a market-ready system (TRL 8).\n\nWho can take part",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45659376",
@@ -1416,6 +1396,25 @@
       "priority_reasons": [
         "needs_verification",
         "deadline_within_30_days"
+      ],
+      "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "15982COMPETITIVE_CALLen",
+      "title": "Comprehensive and inclusive support for women and girls' victims of GBV",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47589185",
+      "deadline": "2026-11-23T15:00:00.000+0000",
+      "deadline_state": "upcoming",
+      "source_status": "31094502",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
