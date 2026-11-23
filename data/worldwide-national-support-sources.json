@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-23",
-  "scope": "Official support discovery portals and programme records across an expanding set of country and region codes. EU national single portals have been added from the European Commission's 2021–2027 national portal directory. This remains a partial catalogue, not a complete global register. Portal listings are not verified open grants; individual eligibility, application windows and amounts must be confirmed with the responsible official authority. Additional official federal benefit and grant finders for Australia, Canada, the United States and New Zealand were added on 2026-11-23. These are entry points; individual programmes still require separate status and eligibility verification.",
+  "scope": "Official support discovery portals and programme records across an expanding set of country and region codes. EU national single portals have been added from the European Commission's 2021–2027 national portal directory. This remains a partial catalogue, not a complete global register. Portal listings are not verified open grants; individual eligibility, application windows and amounts must be confirmed with the responsible official authority. Additional official federal benefit and grant finders for Australia, Canada, the United States and New Zealand were added on 2026-11-23. These are entry points; individual programmes still require separate status and eligibility verification. Additional official government scheme and grant directories for India and Singapore were added on 2026-11-23; these are discovery sources, not confirmation that every listed programme is open.",
   "records": [
     {
       "id": "ae-dubai-business-incentives-2026",
@@ -3575,6 +3575,66 @@
       "description_en": "National targeted cash support for the poorest and most vulnerable households, prioritising older people, persons with disabilities, chronically ill people and households caring for orphaned or vulnerable children. The ministry's 2026 information lists ZMW 800 every two months, or ZMW 1,200 for eligible households including a person with a disability. Beneficiaries are targeted; this is not a general open application.",
       "verification_status": "official-government-2026-benefit-amounts-published-targeted-enrolment",
       "last_checked": "2026-11-22"
+    },
+    {
+      "id": "in-national-portal-government-schemes",
+      "country_code": "IN",
+      "country_en": "India",
+      "category": "all",
+      "name_hu": "India – Nemzeti Kormányzati Portál: állami programok",
+      "name_en": "India — National Portal of India government schemes",
+      "url": "https://www.india.gov.in/my-government/schemes",
+      "publisher": "Government of India — National Portal of India",
+      "kind": "national-government-scheme-directory",
+      "description_hu": "Az indiai kormány hivatalos programjegyzéke központi és tagállami kezdeményezésekkel. Szociális, mezőgazdasági, vállalkozási, oktatási, egészségügyi és lakhatási témákban ad tájékoztatást; a jogosultságot és a jelentkezési időszakot minden programnál külön kell ellenőrizni.",
+      "description_en": "Official Government of India directory of central and state schemes covering social development, agriculture, business, education, health and housing. Verify eligibility and application windows separately for each scheme.",
+      "verification_status": "official-government-portal",
+      "last_checked": "2026-11-23"
+    },
+    {
+      "id": "sg-nrf-grants",
+      "country_code": "SG",
+      "country_en": "Singapore",
+      "category": "education",
+      "name_hu": "Szingapúr – National Research Foundation támogatási programjai",
+      "name_en": "Singapore — National Research Foundation grants",
+      "url": "https://www.nrf.gov.sg/grants/",
+      "publisher": "National Research Foundation Singapore",
+      "kind": "official-research-grant-directory",
+      "description_hu": "A szingapúri Nemzeti Kutatási Alapítvány kutatási és innovációs támogatási programjainak hivatalos gyűjtőoldala, többek között kutatói ösztöndíjakkal és kutatási pályázatokkal. A programok célcsoportja és beadási határideje eltérő.",
+      "description_en": "Official directory of Singapore National Research Foundation research and innovation grants, including research fellowships and competitive programmes. Applicant groups and deadlines vary by scheme.",
+      "verification_status": "official-government-portal",
+      "last_checked": "2026-11-23"
+    },
+    {
+      "id": "sg-government-funding-resources",
+      "country_code": "SG",
+      "country_en": "Singapore",
+      "category": "all",
+      "name_hu": "Szingapúr – kormányzati támogatások és finanszírozási források",
+      "name_en": "Singapore — government funding and resources",
+      "url": "https://www.sgpo.gov.sg/take-action/partners-portal/funding-resources/",
+      "publisher": "Singapore Government Partnerships Office",
+      "kind": "official-government-funding-directory",
+      "description_hu": "Hivatalos kormányzati áttekintés közösségi, környezetvédelmi és egyéb támogatási alapokról, valamint vállalkozási finanszírozási belépési pontokról. A felsorolt programok különböző célcsoportoknak szólnak; az aktuális felhívást és feltételeket a programgazdánál kell ellenőrizni.",
+      "description_en": "Official government overview of community, environmental and other grant funds, plus business funding entry points. Programmes serve different applicant groups; confirm current calls and terms with each administrator.",
+      "verification_status": "official-government-portal",
+      "last_checked": "2026-11-23"
+    },
+    {
+      "id": "sg-national-arts-council-funding",
+      "country_code": "SG",
+      "country_en": "Singapore",
+      "category": "education",
+      "name_hu": "Szingapúr – Nemzeti Művészeti Tanács támogatáskeresője",
+      "name_en": "Singapore — National Arts Council Find Your Funding",
+      "url": "https://www.nac.gov.sg/find-your-funding/",
+      "publisher": "National Arts Council Singapore",
+      "kind": "official-sector-grant-finder",
+      "description_hu": "Művészeknek, művészeti szervezeteknek, oktatóknak és közösségi szereplőknek szóló hivatalos támogatáskereső. A támogatási programoknak külön jogosultsági, projektkezdési és beadási szabályaik vannak; egyes pályázati ciklusok már lezárultak vagy későbbi időpontra nyílnak.",
+      "description_en": "Official funding finder for arts practitioners, arts organisations, educators and community stakeholders. Each grant has separate eligibility, project-start and application rules; some cycles may be closed or open later.",
+      "verification_status": "official-government-portal",
+      "last_checked": "2026-11-23"
     }
   ],
   "records_count": 211,
