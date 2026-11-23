@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-23",
-  "scope": "Official support discovery portals and programme records across an expanding set of country and region codes. EU national single portals have been added from the European Commission's 2021–2027 national portal directory. This remains a partial catalogue, not a complete global register. Portal listings are not verified open grants; individual eligibility, application windows and amounts must be confirmed with the responsible official authority.",
+  "scope": "Official support discovery portals and programme records across an expanding set of country and region codes. EU national single portals have been added from the European Commission's 2021–2027 national portal directory. This remains a partial catalogue, not a complete global register. Portal listings are not verified open grants; individual eligibility, application windows and amounts must be confirmed with the responsible official authority. Additional official federal benefit and grant finders for Australia, Canada, the United States and New Zealand were added on 2026-11-23. These are entry points; individual programmes still require separate status and eligibility verification.",
   "records": [
     {
       "id": "ae-dubai-business-incentives-2026",
@@ -147,6 +147,22 @@
       "description_hu": "Hivatalos vállalkozási támogatási és programkereső. A feltételek, földrajzi korlátozások és nyitottság programonként eltérnek.",
       "description_en": "Official business grants and programmes finder. Eligibility, geographic restrictions and application status vary by programme.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "au-grantconnect",
+      "country_code": "AU",
+      "country_en": "Australia",
+      "category": "all",
+      "name_hu": "Ausztrália – GrantConnect állami pályázati adatbázis",
+      "name_en": "Australia — GrantConnect government grants database",
+      "url": "https://www.grants.gov.au/",
+      "publisher": "Australian Government — Department of Finance",
+      "kind": "national-government-grant-database",
+      "description_hu": "A szövetségi kormány központi pályázati rendszere: előre jelzett, aktuális és korábban odaítélt támogatási lehetőségekkel. A pályázati feltételek és nyitottság minden kiírásnál külön ellenőrzendő.",
+      "description_en": "The Commonwealth Government's central grants system covering forecast, current and previously awarded grant opportunities. Check eligibility and application status in each grant notice.",
+      "verification_status": "official-government-source",
+      "source_directory_url": "https://www.finance.gov.au/individuals/find-grant-grantconnect",
+      "last_checked": "2026-11-23"
     },
     {
       "id": "bd-idea-sme-entrepreneur-grant-portal",
@@ -387,6 +403,21 @@
       "verification_status": "official-domain-source"
     },
     {
+      "id": "ca-business-support",
+      "country_code": "CA",
+      "country_en": "Canada",
+      "category": "business",
+      "name_hu": "Kanada – vállalkozási támogatások és finanszírozás",
+      "name_en": "Canada — business supports and funding",
+      "url": "https://ised-isde.canada.ca/site/ised/en/supports-for-business",
+      "publisher": "Innovation, Science and Economic Development Canada",
+      "kind": "national-business-support-directory",
+      "description_hu": "Hivatalos kormányzati gyűjtőoldal vállalkozási finanszírozáshoz, növekedési programokhoz, innovációhoz, exporthoz és üzletfejlesztéshez.",
+      "description_en": "Official government directory for business financing, growth programmes, innovation, export and business development.",
+      "verification_status": "official-government-source",
+      "last_checked": "2026-11-23"
+    },
+    {
       "id": "ca-grants",
       "country_code": "CA",
       "country_en": "Canada",
@@ -399,6 +430,21 @@
       "description_hu": "Szövetségi finanszírozási lehetőségek többek között mezőgazdaság, vállalkozás, oktatás, egészségügy, munka és kutatás területén.",
       "description_en": "Federal funding opportunities across agriculture, business, education, health, jobs and research.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "ca-grants-finder",
+      "country_code": "CA",
+      "country_en": "Canada",
+      "category": "all",
+      "name_hu": "Kanada – Grants and Funding Finder",
+      "name_en": "Canada — Grants and Funding Finder",
+      "url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html",
+      "publisher": "Government of Canada",
+      "kind": "national-grants-and-funding-finder",
+      "description_hu": "Szövetségi támogatások, hozzájárulások és finanszírozási programok keresője projektek és szervezetek számára; külön keresők személyes ellátásokhoz és vállalkozásokhoz is.",
+      "description_en": "Federal grants, contributions and funding programmes for projects and organisations, alongside separate finders for personal benefits and businesses.",
+      "verification_status": "official-government-source",
+      "last_checked": "2026-11-23"
     },
     {
       "id": "national-ch-business-1",
@@ -2315,6 +2361,21 @@
       "verification_status": "official-domain-source"
     },
     {
+      "id": "nz-business-support",
+      "country_code": "NZ",
+      "country_en": "New Zealand",
+      "category": "business",
+      "name_hu": "Új-Zéland – Business.govt.nz vállalkozási támogatások",
+      "name_en": "New Zealand — Business.govt.nz support",
+      "url": "https://www.business.govt.nz/",
+      "publisher": "New Zealand Government",
+      "kind": "national-business-support-portal",
+      "description_hu": "Kormányzati vállalkozási tájékoztató és támogatási kiindulópont vállalkozásindításhoz, működtetéshez és fejlesztéshez.",
+      "description_en": "Government business information and support starting point for starting, operating and growing a business.",
+      "verification_status": "official-government-source",
+      "last_checked": "2026-11-23"
+    },
+    {
       "id": "nz-environment-funding",
       "country_code": "NZ",
       "country_en": "New Zealand",
@@ -3295,6 +3356,21 @@
       "description_hu": "Hivatalos kiindulópont szövetségi juttatásokhoz és pénzügyi segítséghez.",
       "description_en": "Official starting point for federal benefits and financial assistance.",
       "verification_status": "official-domain-source"
+    },
+    {
+      "id": "us-benefits-finder",
+      "country_code": "US",
+      "country_en": "United States",
+      "category": "social",
+      "name_hu": "Egyesült Államok – USAGov Benefit Finder",
+      "name_en": "United States — USAGov Benefit Finder",
+      "url": "https://www.usa.gov/benefit-finder",
+      "publisher": "U.S. General Services Administration",
+      "kind": "national-benefits-finder",
+      "description_hu": "Hivatalos szövetségi tájékoztató és kereső állami juttatásokhoz. A jogosultságot és az igénylést az illetékes program hivatalos oldalán kell ellenőrizni.",
+      "description_en": "Official federal guide and finder for government benefits. Confirm eligibility and applications with the responsible programme.",
+      "verification_status": "official-government-source",
+      "last_checked": "2026-11-23"
     },
     {
       "id": "us-grants",
