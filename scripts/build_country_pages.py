@@ -81,6 +81,7 @@ def render_page(code: str, country: str, portal: dict | None, sources: list[dict
                 '<small>Állapot: történeti címtáradat, jelenleg nem ellenőrzött.</small></section>'
             )
     body = "\n".join(items) if items else '<p>Ehhez az országhoz jelenleg nincs külön indexelt, hivatalos támogatási forrás. A nemzeti portál kiindulópontként használható, ha elérhető.</p>'
+    source_summary = f'<p class="muted">A nyilvántartásban szereplő országos forráslinkek száma: {len(items)}. A linkek hivatalos kiindulópontok; nem mindegyik jelent aktuálisan nyitott támogatást.</p>'
     return f"""<!doctype html>
 <html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(country)} – hivatalos támogatási források | Global Support Radar</title>
@@ -96,7 +97,7 @@ h1{{font-size:clamp(2rem,6vw,3rem);line-height:1.15}}.muted{{color:#bdc9d8}}.not
 <h1>{esc(country)}</h1><p class="muted">Országkód: {esc(code)} · Automatikusan összeállított forrásjegyzék · Frissítve: {esc(generated)}</p>
 <p>Az oldal hivatalos állami forrásokhoz vezető hivatkozásokat gyűjt. A felsorolt oldalak nem jelentenek automatikusan nyitott pályázatot, támogatási jogosultságot vagy garantált kifizetést. Mindig az eredeti kiírás az irányadó.</p>
 {portal_html}
-<section><h2>Országspecifikus források</h2>{body}</section>
+<section><h2>Országspecifikus források</h2>{source_summary}{body}</section>
 <footer><p><a href="{BASE_URL}">Global Support Radar főoldal</a> · <a href="{BASE_URL}methodology.html">Adatminőségi módszertan</a> · <a href="{BASE_URL}free-policy.html">Ingyenes használat</a></p>
 <p class="muted">A felfedezett hivatkozásokat rendszeresen újraépítjük. A gépi forrásfelderítés nem helyettesíti az egyedi hivatalos ellenőrzést.</p></footer>
 </main></body></html>
