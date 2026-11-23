@@ -66,7 +66,7 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <section class="gsr-audio" id="gsrAudioPlayer" aria-label="Háttérzene-lejátszó">
  <div class="audio-main">
   <button class="primary" id="gsrPlay" type="button" aria-label="Zene lejátszása">▶</button>
-  <div class="audio-copy"><strong>🎵 Global Support Radar – nyugodt háttérdallam</strong><small id="gsrAudioHint">Finom, halk, futurisztikus ambient zene · indítás koppintással</small></div>
+  <div class="audio-copy"><strong>🎹 Beethoven – Für Elise (saját szintetizált változat)</strong><small id="gsrAudioHint">Közismert klasszikus dallam · saját hangszintézis · indítás koppintással</small></div>
  </div>
  <div class="audio-controls">
   <span class="audio-state" id="gsrAudioState" aria-live="polite">Szünetel</span>
@@ -2086,8 +2086,10 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
  const play=document.getElementById("gsrPlay"),stop=document.getElementById("gsrStop"),volume=document.getElementById("gsrVolume"),state=document.getElementById("gsrAudioState"),hint=document.getElementById("gsrAudioHint");
  if(!play||!stop||!volume||!state)return;
  let ctx=null,master=null,playing=false,timer=null,step=0,voices=[];
- const tempo=1800;
- const chords=[[130.81,164.81,196.00,261.63],[110.00,146.83,174.61,220.00],[98.00,130.81,164.81,196.00],[116.54,146.83,174.61,233.08]];
+ const tempo=390;
+ // Beethoven: Für Elise – a zenemű közkincs; ez a lejátszó saját, böngészőben szintetizált előadás.
+ const melody=[659.25,622.25,659.25,622.25,659.25,493.88,587.33,523.25,440,261.63,329.63,440,493.88,329.63,415.30,493.88,523.25,329.63,659.25,622.25,659.25,622.25,659.25,493.88,587.33,523.25,440];
+ const lengths=[1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,3];
  function setVolume(){if(master&&ctx)master.gain.setTargetAtTime(Number(volume.value)/100*.18,ctx.currentTime,.12)}
  function tone(freq,duration,when,amp,type="sine"){
   const osc=ctx.createOscillator(),gain=ctx.createGain(),filter=ctx.createBiquadFilter();
@@ -2101,18 +2103,12 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
  }
  function musicStep(){
   if(!playing||!ctx)return;
-  const chord=chords[Math.floor(step/4)%chords.length],now=ctx.currentTime;
-  if(step%4===0){chord.forEach((f,i)=>tone(f,5.7,now,.026-i*.003,"sine"))}
-  const notes=[0,2,1,3,2,1,0,2],base=chord[notes[step%8]];
-  tone(base*2,1.25,now,.052,"triangle");
-  if(step%2===1)tone(base*1.5,1.8,now+.12,.018,"sine");
-  step++;timer=setTimeout(musicStep,tempo);
- }
- async function start(){
-  const AudioContext=window.AudioContext||window.webkitAudioContext;
-  if(!AudioContext){state.textContent="A böngésző nem támogatja a hangot.";return}
-  if(!ctx){ctx=new AudioContext();master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination)}
-  await ctx.resume();setVolume();playing=true;play.textContent="Ⅱ";play.setAttribute("aria-label","Zene szüneteltetése");state.textContent="Lejátszás";hint.textContent="Most szól a Global Support Radar saját, nyugodt dallama.";musicStep();
+  const now=ctx.currentTime,idx=step%melody.length,f=melody[idx],dur=lengths[idx]*tempo/1000;
+  // Lágy, harangszerű főhang, finom felhanggal.
+  tone(f,Math.max(.22,dur*.88),now,.075,"triangle");
+  tone(f*2,Math.max(.18,dur*.55),now,.012,"sine");
+  step++;
+  timer=setTimeout(musicStep,tempo*lengths[idx]);
  }
  function pause(){playing=false;clearTimeout(timer);if(master&&ctx)master.gain.setTargetAtTime(0,ctx.currentTime,.15);play.textContent="▶";play.setAttribute("aria-label","Zene lejátszása");state.textContent="Szünetel"}
  play.addEventListener("click",()=>{if(playing)pause();else start().catch(()=>{state.textContent="A lejátszás nem indítható el."})});
