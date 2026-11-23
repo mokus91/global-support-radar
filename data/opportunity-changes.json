@@ -1,7 +1,40 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-23T02:33:06+00:00",
-  "events_count": 0,
-  "events": [],
+  "generated_at": "2026-11-23T06:38:16+00:00",
+  "events_count": 4,
+  "events": [
+    {
+      "type": "removed_from_feed",
+      "feed": "spain-discovery.json",
+      "key": "id:943592",
+      "title": "Concurso de decoración de balcones, fachadas y calles de Montmeló con motivo de las Fiestas de Navidad 2026",
+      "detected_at": "2026-11-23T06:38:16+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52968501topicsen",
+      "title": "Not-for-profit European sport events",
+      "detected_at": "2026-11-23T06:38:16+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53050046topicsen",
+      "title": "Large scale not-for-profit European sport event",
+      "detected_at": "2026-11-23T06:38:16+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53294913topicsen",
+      "title": "Capacity Building in the Field of Sport",
+      "detected_at": "2026-11-23T06:38:16+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    }
+  ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
 }

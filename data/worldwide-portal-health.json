@@ -1,15 +1,61 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-23T02:28:19+00:00",
-  "records_count": 211,
+  "checked_at": "2026-11-23T06:32:47+00:00",
+  "records_count": 238,
   "summary": {
-    "connection_error": 32,
-    "http_error": 7,
-    "reachable": 157,
-    "restricted": 15
+    "connection_error": 40,
+    "http_error": 8,
+    "reachable": 170,
+    "restricted": 20
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
+    {
+      "id": "ae-dubai-business-incentives-2026",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.investindubai.gov.ae/en/dubai-government-support-for-business-2026"
+    },
+    {
+      "id": "ae-dubai-sme-funding-startups",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.dubai.ae/investing/expanding-your-business/funding-smes-and-startups"
+    },
+    {
+      "id": "ae-national-industrial-resilience-fund-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ae-sme-in-a-box",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.dubaidet.gov.ae/en/newsroom/press-releases/sme-in-a-box"
+    },
+    {
+      "id": "ae-social-welfare",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
+    },
+    {
+      "id": "ae-uae-sme-national-programme",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "at-eu-funds-single-portal",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://www.oerok.gv.at/eu-fonds-2021-2027"
+    },
+    {
+      "id": "eu-national-funds-at",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://www.oerok.gv.at/eu-fonds-2021-2027"
+    },
     {
       "id": "au-benefits",
       "status": "connection_error",
@@ -22,16 +68,85 @@
       "final_url": "https://business.gov.au/grants-and-programs"
     },
     {
-      "id": "br-fomento-rural",
+      "id": "bd-idea-sme-entrepreneur-grant-portal",
       "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-fomento-rural"
+      "http_status": 200,
+      "final_url": "https://apply.idea.gov.bd/sme/"
+    },
+    {
+      "id": "bd-old-age-allowance",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "bd-sme-foundation-business-support",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "be-eu-funds-single-portal",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "eu-national-funds-be",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "bg-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eufunds.bg/bg"
+    },
+    {
+      "id": "eu-national-funds-bg",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eufunds.bg/bg"
+    },
+    {
+      "id": "bh-tamkeen-enterprise-financing",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/tamweel-2/"
+    },
+    {
+      "id": "bh-tamkeen-isteshara-advisory",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/advisory/"
+    },
+    {
+      "id": "bh-tamkeen-programmes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://tamkeen.bh/en/programs/"
+    },
+    {
+      "id": "br-bolsa-familia-2026",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "br-cadastro-unico-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "br-fomento-rural",
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "br-social-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas"
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "bw-poverty-eradication-enterprise-support",
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ca-benefits",
@@ -46,282 +161,57 @@
       "final_url": "https://www.canada.ca/en/government/grants-funding.html"
     },
     {
-      "id": "in-myscheme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.myscheme.gov.in/"
-    },
-    {
-      "id": "ie-enterprise",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.enterprise-ireland.com/en/"
-    },
-    {
-      "id": "ie-social",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.gov.ie/en/department-of-social-protection/collections/social-welfare-schemes/"
-    },
-    {
-      "id": "jp-egov-benefits",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.e-gov.go.jp/benefitsandpayments/"
-    },
-    {
-      "id": "jp-jgrants",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.jgrants-portal.go.jp/"
-    },
-    {
-      "id": "ke-youthfund",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.youthfund.go.ke/"
-    },
-    {
-      "id": "nz-benefits",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.workandincome.govt.nz/products/a-z-benefits/index.html"
-    },
-    {
-      "id": "nz-business",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.business.govt.nz/"
-    },
-    {
-      "id": "sg-bizsg",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.bizsg.gov.sg/"
-    },
-    {
-      "id": "sg-oursg-grants",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.oursggrants.gov.sg/grants/new"
-    },
-    {
-      "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
-    },
-    {
-      "id": "za-sassa",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
-    },
-    {
-      "id": "za-sedfa",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.sedfa.org.za/"
-    },
-    {
-      "id": "gb-business",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.uk/business-finance-support"
-    },
-    {
-      "id": "gb-grants",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://find-government-grants.service.gov.uk/"
-    },
-    {
-      "id": "us-benefits",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.usa.gov/benefits"
-    },
-    {
-      "id": "us-grants",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "eu-national-funds-at",
-      "status": "http_error",
-      "http_status": 307,
-      "final_url": "https://www.oerok.gv.at/eu-fonds-2021-2027"
-    },
-    {
-      "id": "eu-national-funds-be",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "eu-national-funds-bg",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.eufunds.bg/bg"
-    },
-    {
-      "id": "eu-national-funds-cy",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufunds.com.cy/"
-    },
-    {
-      "id": "eu-national-funds-cz",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.dotaceeu.cz/cs/uvod"
-    },
-    {
-      "id": "eu-national-funds-dk",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufonde.dk/"
-    },
-    {
-      "id": "eu-national-funds-ee",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.rtk.ee/"
-    },
-    {
-      "id": "eu-national-funds-fi",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.businessfinland.fi:443/palvelut/tieto-ja-neuvonta/eurahoitusneuvonta/"
-    },
-    {
-      "id": "eu-national-funds-fr",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.europe-en-france.gouv.fr/fr"
-    },
-    {
-      "id": "eu-national-funds-de",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
-    },
-    {
-      "id": "eu-national-funds-gr",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "eu-national-funds-it",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://opencoesione.gov.it/it/"
-    },
-    {
-      "id": "eu-national-funds-lv",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.esfondi.lv/"
-    },
-    {
-      "id": "eu-national-funds-lt",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://lrv.lt/lt"
-    },
-    {
-      "id": "eu-national-funds-lu",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://fonds-europeens.public.lu/fr.html"
-    },
-    {
-      "id": "eu-national-funds-mt",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://fondi.eu/"
-    },
-    {
-      "id": "eu-national-funds-nl",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.europaomdehoek.nl/"
-    },
-    {
-      "id": "eu-national-funds-pl",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://funduszeeuropejskie.gov.pl/"
-    },
-    {
-      "id": "eu-national-funds-pt",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://portugal2030.pt/"
-    },
-    {
-      "id": "eu-national-funds-ro",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.fonduri-ue.ro/"
-    },
-    {
-      "id": "eu-national-funds-es",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
-    },
-    {
-      "id": "eu-national-funds-se",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://eufonder.se/"
-    },
-    {
-      "id": "eu-national-funds-si",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://evropskasredstva.si/"
-    },
-    {
-      "id": "eu-national-funds-sk",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.eurofondy.gov.sk/"
-    },
-    {
-      "id": "national-no-business-1",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.innovasjonnorge.no/en/our-services"
-    },
-    {
       "id": "national-ch-business-1",
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://www.innosuisse.admin.ch/en/support-offers"
     },
     {
-      "id": "national-tr-business-1",
+      "id": "ci-widu-micro-small-business-grant",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri"
+      "final_url": "https://widu.africa/cote-divoire"
     },
     {
-      "id": "national-tr-all-2",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://yatirimadestek.gov.tr/searchsupport"
+      "id": "cl-fondos-gob",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://fondos.gob.cl/"
     },
     {
-      "id": "national-mx-all-1",
+      "id": "national-cl-all-2",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "national-mx-social-2",
+      "id": "national-cl-business-1",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.chileemprende.gob.cl/"
+    },
+    {
+      "id": "cm-widu-micro-small-business-grant",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.programasparaelbienestar.gob.mx/"
+      "final_url": "https://widu.africa/cameroon"
+    },
+    {
+      "id": "cn-shanghai-suishendui-business-policy-hub",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://english.shanghai.gov.cn/en-Business-BusinessFinancing/20260818/e878714f83c340bb93654b03ae299246.html"
+    },
+    {
+      "id": "co-economia-popular-para-el-cambio",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+    },
+    {
+      "id": "co-sena-fondo-emprender-seed-capital",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.sena.edu.co/empleabilidad/fondo-emprender"
     },
     {
       "id": "national-co-business-1",
@@ -336,104 +226,110 @@
       "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
     },
     {
-      "id": "national-my-business-1",
+      "id": "cy-eu-funds-single-portal",
       "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.malaysia.gov.my/en/topics/identifying-kuskop-grants-and-financing-opportunities"
+      "http_status": 202,
+      "final_url": "https://eufunds.com.cy/"
     },
     {
-      "id": "national-my-business-2",
+      "id": "eu-national-funds-cy",
       "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
+      "http_status": 202,
+      "final_url": "https://eufunds.com.cy/"
     },
     {
-      "id": "national-my-business-3",
+      "id": "cz-eu-funds-single-portal",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.bnm.gov.my/funds4sme"
+      "final_url": "https://www.dotaceeu.cz/cs/uvod"
     },
     {
-      "id": "national-ph-employment-1",
+      "id": "eu-national-funds-cz",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.dotaceeu.cz/cs/uvod"
+    },
+    {
+      "id": "de-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
+    },
+    {
+      "id": "eu-national-funds-de",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://validate.perfdrive.com/?ssa=36bd05ae-f9c3-4a1b-8329-d6a68d9a4453&ssb=57959277826&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=d2f77ac6-dxzy-456f-b010-61e50ff35c5b&ssk=botmanager_support@radware.com&ssm=12840655301649160100424723119754&ssn=225f833fbc474da8f89dd4c443eeae8087a44d067568-be06-4b0b-b1d3c6&sso=7261f768-95e2018ca7a4e0de789a3bb2ca4245633b1f902117672bb3&ssp=40260671431795407302179541491807316&ssq=08269171546433913072515464592423671229128&ssr=MjAuODMuMzguMTk=&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMGRhNGY5MDMtZGQ3YS00ZGRlLTk1MGEtYmNkNTQ3ZjYyZWNjMS0xNzk1NDE1NDY0MDA2MC0wMGY0M2NhNTM1ZWI0NzJmNDBjMTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDA2NzU2OC1iZTA2LTRiMGItYjc2OC05NWUyMDE4Y2E3YTQxLTE3OTU0MTU0NjQwMDYwLTAwMjRmY2EwZjYzMWVkYzQxNjIxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
+    },
+    {
+      "id": "dk-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufonde.dk/"
+    },
+    {
+      "id": "eu-national-funds-dk",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufonde.dk/"
+    },
+    {
+      "id": "ee-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.rtk.ee/"
+    },
+    {
+      "id": "eu-national-funds-ee",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.rtk.ee/"
+    },
+    {
+      "id": "es-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
+    },
+    {
+      "id": "eu-national-funds-es",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondoseuropeos.gob.es/es-es/Paginas/Inicio.aspx"
+    },
+    {
+      "id": "et-dbe-msme-women-enterprise-financing-directory",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://dbe.com.et/?stm_works=external-fund-credit-management"
+    },
+    {
+      "id": "et-gef-small-grants-op8-2026",
       "status": "restricted",
       "http_status": 403,
-      "final_url": "https://bwsc.dole.gov.ph/dileep/dilp/"
+      "final_url": "https://www.undp.org/ethiopia/publications/project-proposal-template-eighth-operational-phase-gef-small-grants-programme"
     },
     {
-      "id": "national-ph-agriculture-2",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.da.gov.ph/services/agricultural-credit-and-financing-programs/"
+      "id": "et-inclusive-insurance-challenge-fund-2026-closed",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.undp.org/ethiopia/news/call-applications-inclusive-insurance-challenge-fund-2026"
     },
     {
-      "id": "national-ph-business-3",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://startup.gov.ph/"
-    },
-    {
-      "id": "national-cl-business-1",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.chileemprende.gob.cl/"
-    },
-    {
-      "id": "national-cl-all-2",
+      "id": "et-pact-agriculture-climate-transformation-programme",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "national-pe-agriculture-1",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.gob.pe/foncodes"
-    },
-    {
-      "id": "national-id-business-1",
+      "id": "et-rural-productive-safety-net-programme",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "cl-fondos-gob",
+      "id": "et-startup-proclamation-grants-credit-guarantee",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://fondos.gob.cl/"
-    },
-    {
-      "id": "national-gb-all-find-a-grant",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://find-government-grants.service.gov.uk/grants"
-    },
-    {
-      "id": "gb-find-a-grant",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://find-government-grants.service.gov.uk/grants"
-    },
-    {
-      "id": "fr-aides-territoires",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://aides-territoires.beta.gouv.fr/"
-    },
-    {
-      "id": "nz-business-funding-explorer",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer"
-    },
-    {
-      "id": "nz-environment-funding",
-      "status": "http_error",
-      "http_status": 302,
-      "final_url": "https://environment.govt.nz/what-you-can-do/funding/"
-    },
-    {
-      "id": "eu-step-funding",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://strategic-technologies.europa.eu/get-funding_en"
+      "final_url": "https://www.startupethiopia.et/Designation"
     },
     {
       "id": "eu-access-finance",
@@ -455,15 +351,62 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "reachable",
-      "http_status": 206,
+      "status": "restricted",
+      "http_status": 429,
       "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
-      "id": "us-sam-assistance-listings",
+      "id": "eu-step-funding",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://sam.gov/assistance-listings"
+      "final_url": "https://strategic-technologies.europa.eu/get-funding_en"
+    },
+    {
+      "id": "eu-national-funds-fi",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.businessfinland.fi:443/palvelut/tieto-ja-neuvonta/eurahoitusneuvonta/"
+    },
+    {
+      "id": "fi-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.businessfinland.fi:443/palvelut/tieto-ja-neuvonta/eurahoitusneuvonta/"
+    },
+    {
+      "id": "fj-first-home-land-assistance",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.housing.gov.fj/programmes"
+    },
+    {
+      "id": "fj-msme-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "fj-young-entrepreneurship-scheme",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf"
+    },
+    {
+      "id": "eu-national-funds-fr",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europe-en-france.gouv.fr/fr"
+    },
+    {
+      "id": "fr-aides-territoires",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://aides-territoires.beta.gouv.fr/"
+    },
+    {
+      "id": "fr-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europe-en-france.gouv.fr/fr"
     },
     {
       "id": "fr-mesdroits-sociaux",
@@ -472,30 +415,168 @@
       "final_url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
     },
     {
-      "id": "mx-apoyos-gobierno",
+      "id": "gb-business",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.uk/business-finance-support"
+    },
+    {
+      "id": "gb-find-a-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://find-government-grants.service.gov.uk/grants"
+    },
+    {
+      "id": "gb-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://find-government-grants.service.gov.uk/"
+    },
+    {
+      "id": "national-gb-all-find-a-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://find-government-grants.service.gov.uk/grants"
+    },
+    {
+      "id": "uk-international-development-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.uk/international-development-funding"
+    },
+    {
+      "id": "gh-gea-women-youth-msme-grants",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "kr-gov24-benefits",
+      "id": "gh-leap",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://plus.gov.kr/portal/benefitV2/"
+      "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
-      "id": "ng-government-services",
+      "id": "gh-leap-cash-transfer",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
+    },
+    {
+      "id": "gh-leap-cash-transfer-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://leap.mogcsp.gov.gh/home/"
+    },
+    {
+      "id": "gh-sif-gwyesco-women-youth-2026",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://services.gov.ng/"
+      "final_url": "https://apply.sifinghana.gov.gh/"
     },
     {
-      "id": "za-social-grants",
+      "id": "global-eeas-grants",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://www.gov.za/services/services-residents/grants"
+      "final_url": "https://www.eeas.europa.eu/eeas/grants_en"
     },
     {
-      "id": "ae-social-welfare",
+      "id": "global-fao-gef-small-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.fao.org/small-grants-program/"
+    },
+    {
+      "id": "global-worldbank-social-protection-response",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.worldbank.org/en/programs/social-protection-response"
+    },
+    {
+      "id": "eu-national-funds-gr",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "gr-eu-funds-single-portal",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "hk-bud-fund",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.bud.hkpc.org/"
+    },
+    {
+      "id": "hk-sme-funding-schemes",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.smelink.gov.hk/en/web/sme-portal/government-funding-schemes.html"
+    },
+    {
+      "id": "hr-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://eufondovi.gov.hr/"
+    },
+    {
+      "id": "hu-eu-funds-single-portal",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "id-bizhub-self-employment-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://bizhub.kemnaker.go.id/"
+    },
+    {
+      "id": "id-pip-ultra-micro-financing",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "id-pkh-family-hope",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-id-business-1",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ie-enterprise",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.enterprise-ireland.com/en/"
+    },
+    {
+      "id": "ie-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eufunds.ie/"
+    },
+    {
+      "id": "ie-social",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gov.ie/en/department-of-social-protection/collections/social-welfare-schemes/"
+    },
+    {
+      "id": "in-myscheme",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.myscheme.gov.in/"
+    },
+    {
+      "id": "in-national-scholarship-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://scholarships.gov.in/"
+    },
+    {
+      "id": "in-pmegp",
       "status": "connection_error",
       "error": "URLError"
     },
@@ -505,51 +586,63 @@
       "error": "URLError"
     },
     {
-      "id": "in-national-scholarship-portal",
+      "id": "in-startup-india-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.startupindia.gov.in/"
+    },
+    {
+      "id": "eu-national-funds-it",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://opencoesione.gov.it/it/"
+    },
+    {
+      "id": "it-eu-funds-single-portal",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://opencoesione.gov.it/it/"
+    },
+    {
+      "id": "jp-cabinet-startup-support-portal",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.cas.go.jp/jp/seisaku/su-portal/support.html"
+    },
+    {
+      "id": "jp-egov-benefits",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.e-gov.go.jp/benefitsandpayments/"
+    },
+    {
+      "id": "jp-jgrants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.jgrants-portal.go.jp/"
+    },
+    {
+      "id": "jp-mirasapo-subsidy-schedule-2026",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://scholarships.gov.in/"
+      "final_url": "https://mirasapo-plus.go.jp/"
     },
     {
-      "id": "sg-supportgowhere",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://supportgowhere.life.gov.sg/"
-    },
-    {
-      "id": "sg-govbenefits",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.govbenefits.gov.sg/"
-    },
-    {
-      "id": "br-cadastro-unico-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico"
-    },
-    {
-      "id": "global-fao-gef-small-grants",
+      "id": "ke-agpo-youth-women-pwd-procurement",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.fao.org/small-grants-program/"
-    },
-    {
-      "id": "global-eeas-grants",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.eeas.europa.eu/eeas/grants_en"
-    },
-    {
-      "id": "global-worldbank-social-protection-response",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.worldbank.org/en/programs/social-protection-response"
+      "final_url": "https://www.treasury.go.ke/agpo"
     },
     {
       "id": "ke-inua-jamii",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "ke-nyota-youth-opportunities",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.msme.go.ke/official-rollout-free-nyota-agpo-digital-training-program"
     },
     {
       "id": "ke-social-protection-ecitizen",
@@ -558,28 +651,194 @@
       "final_url": "https://socialprotection.ecitizen.go.ke/"
     },
     {
-      "id": "za-sassa-services",
+      "id": "ke-yedf-youth-enterprise-finance",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.portal.youthfund.go.ke/"
+    },
+    {
+      "id": "ke-youth-enterprise-development-fund",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.portal.youthfund.go.ke/"
+    },
+    {
+      "id": "ke-youthfund",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+      "final_url": "https://www.youthfund.go.ke/"
     },
     {
-      "id": "uk-international-development-funding",
+      "id": "kr-bizinfo-sme-support-database",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://www.gov.uk/international-development-funding"
+      "final_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null"
     },
     {
-      "id": "gh-leap",
+      "id": "kr-global-startup-commercialization-2026",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/"
+      "final_url": "https://mss.go.kr/site/eng/ex/bbs/View.do?bcIdx=1066324&cbIdx=244"
     },
     {
-      "id": "ug-sage-senior-citizens-grant",
+      "id": "kr-gov24-benefits",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://socialprotection.go.ug/"
+      "final_url": "https://plus.gov.kr/portal/benefitV2/"
+    },
+    {
+      "id": "kw-national-fund-sme",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://nationalfund.gov.kw/en/"
+    },
+    {
+      "id": "kw-national-fund-support-centre",
+      "status": "http_error",
+      "http_status": 307,
+      "final_url": "https://nationalfund.gov.kw/en/about-us/our-services/support-services-center/"
+    },
+    {
+      "id": "lk-irdcrp-agribusiness-investment-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.irdcrp.lk/faq"
+    },
+    {
+      "id": "lk-sarp-youth-agribusiness-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://web.sarp.lk/"
+    },
+    {
+      "id": "eu-national-funds-lt",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://lrv.lt/lt"
+    },
+    {
+      "id": "lt-eu-funds-single-portal",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://lrv.lt/lt"
+    },
+    {
+      "id": "eu-national-funds-lu",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://fonds-europeens.public.lu/fr.html"
+    },
+    {
+      "id": "lu-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://fonds-europeens.public.lu/fr.html"
+    },
+    {
+      "id": "eu-national-funds-lv",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.esfondi.lv/"
+    },
+    {
+      "id": "lv-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.esfondi.lv/"
+    },
+    {
+      "id": "eu-national-funds-mt",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondi.eu/"
+    },
+    {
+      "id": "mt-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fondi.eu/"
+    },
+    {
+      "id": "mw-fao-afr100-restoration-grants-2026-closed",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fao-grants.smapply.io/prog/malawi_-_the_supporting_afr100_programme_-_2nd_round/"
+    },
+    {
+      "id": "mw-ncst-ppp-innovation-research-call-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.grants.ncst.mw/index.php?lang=en"
+    },
+    {
+      "id": "mx-apoyos-gobierno",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-mx-all-1",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-mx-social-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.programasparaelbienestar.gob.mx/"
+    },
+    {
+      "id": "my-manfaat-national-aid-finder",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://manfaat.mof.gov.my/"
+    },
+    {
+      "id": "my-mida-i-incentives-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
+    },
+    {
+      "id": "my-sara-2026-basic-needs-assistance",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.sara.gov.my/en/home.html"
+    },
+    {
+      "id": "national-my-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.malaysia.gov.my/en/topics/identifying-kuskop-grants-and-financing-opportunities"
+    },
+    {
+      "id": "national-my-business-2",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
+    },
+    {
+      "id": "national-my-business-3",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bnm.gov.my/funds4sme"
+    },
+    {
+      "id": "ng-boi-guaranteed-loans-women",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://iprogrammes.boi.ng/"
+    },
+    {
+      "id": "ng-boi-rapid-rural-enterprise-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://iprogrammes.boi.ng/"
+    },
+    {
+      "id": "ng-government-services",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.gov.ng/"
     },
     {
       "id": "ng-hup-conditional-cash-transfer",
@@ -588,26 +847,150 @@
       "final_url": "https://ncto.gov.ng/hup-cct"
     },
     {
-      "id": "bd-old-age-allowance",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "ph-4ps-pantawid",
+      "id": "ng-ngcares-livelihood-food-security-grants",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://pantawid.dswd.gov.ph/"
+      "final_url": "https://ngcares.gov.ng/"
     },
     {
-      "id": "id-pkh-family-hope",
+      "id": "ng-nsipa-social-investment-programmes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://nsipa.gov.ng/programmes"
+    },
+    {
+      "id": "ng-smedan-adep-agribusiness-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/adep/"
+    },
+    {
+      "id": "ng-smedan-awake-women-agriculture",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/advancement-for-women-in-agriculture-agro-allied-and-cottage-enterprises-program/"
+    },
+    {
+      "id": "ng-smedan-conditional-grant-scheme",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://smedan.gov.ng/our-programs/cgs/"
+    },
+    {
+      "id": "eu-national-funds-nl",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europaomdehoek.nl/"
+    },
+    {
+      "id": "nl-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.europaomdehoek.nl/"
+    },
+    {
+      "id": "national-no-business-1",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.innovasjonnorge.no/en/our-services"
+    },
+    {
+      "id": "np-agriculture-insurance-premium-subsidy",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "np-karnali-agriculture-subsidy-management-system",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://subsidy.molmac.karnali.gov.np/"
     },
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
+    },
+    {
+      "id": "nz-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.workandincome.govt.nz/products/a-z-benefits/index.html"
+    },
+    {
+      "id": "nz-business",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.business.govt.nz/"
+    },
+    {
+      "id": "nz-business-funding-explorer",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.business.govt.nz/browse-our-resource-library/funding-explorer"
+    },
+    {
+      "id": "nz-environment-funding",
+      "status": "http_error",
+      "http_status": 302,
+      "final_url": "https://environment.govt.nz/what-you-can-do/funding/"
+    },
+    {
+      "id": "om-sme-authority-programmes",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "om-sme-financing-incentives",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sme.gov.om/en/financing-related-programs-for-private-companies/"
+    },
+    {
+      "id": "national-pe-agriculture-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.gob.pe/foncodes"
+    },
+    {
+      "id": "pe-eemri-rural-indigenous-women-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.gob.pe/institucion/midagri/noticias/1360097-midagri-inicia-convocatoria-para-acceder-a-la-estrategia-de-emprendimiento-de-la-mujer-rural-e-indigena"
+    },
+    {
+      "id": "national-ph-agriculture-2",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "national-ph-business-3",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://startup.gov.ph/"
+    },
+    {
+      "id": "national-ph-employment-1",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://bwsc.dole.gov.ph/dileep/dilp/"
+    },
+    {
+      "id": "ph-4ps-pantawid",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "ph-dost-cradle-rd-commercialization-grant",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://startup.gov.ph/programs/view/?id=3"
+    },
+    {
+      "id": "ph-startup-venture-fund",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ndc.gov.ph/svf/"
     },
     {
       "id": "pk-benazir-kafaalat",
@@ -622,45 +1005,88 @@
       "final_url": "https://www.bisp.gov.pk/Detail/YzNlY2Q2ZGYtNjIwZS00MjNiLWFhMmEtZGM5NWNkMjZhMjQ3"
     },
     {
-      "id": "th-state-welfare-card-2026",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://welfare.mof.go.th/"
-    },
-    {
-      "id": "br-bolsa-familia-2026",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.br/pt-br/servicos/receber-o-bolsa-familia"
-    },
-    {
-      "id": "ae-dubai-sme-funding-startups",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.dubai.ae/investing/expanding-your-business/funding-smes-and-startups"
-    },
-    {
-      "id": "ae-dubai-business-incentives-2026",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.investindubai.gov.ae/en/dubai-government-support-for-business-2026"
-    },
-    {
-      "id": "ae-uae-sme-national-programme",
+      "id": "pk-pakistan-startup-fund",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "final_url": "https://ignite.org.pk/pakistan-startup-fund/"
     },
     {
-      "id": "ae-national-industrial-resilience-fund-2026",
-      "status": "connection_error",
-      "error": "URLError"
+      "id": "eu-national-funds-pl",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://funduszeeuropejskie.gov.pl/"
     },
     {
-      "id": "ae-sme-in-a-box",
+      "id": "pl-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://funduszeeuropejskie.gov.pl/"
+    },
+    {
+      "id": "eu-national-funds-pt",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://portugal2030.pt/"
+    },
+    {
+      "id": "pt-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://portugal2030.pt/"
+    },
+    {
+      "id": "qa-qdb-credit-guarantee",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/financing-and-funding/credit-guarantees"
+    },
+    {
+      "id": "qa-qdb-situation-room-2026",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/en/national-initiatives/situationroom2026"
+    },
+    {
+      "id": "qa-startup-qatar-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.startupqatar.qa/en"
+    },
+    {
+      "id": "qa-startup-qatar-investment",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.qdb.qa/en/Financing-And-Funding/Equity-And-Investment/Startup-Qatar-Investment-Program"
+    },
+    {
+      "id": "eu-national-funds-ro",
       "status": "restricted",
       "http_status": 403,
-      "final_url": "https://www.dubaidet.gov.ae/en/newsroom/press-releases/sme-in-a-box"
+      "final_url": "https://www.fonduri-ue.ro/"
+    },
+    {
+      "id": "ro-eu-funds-single-portal",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.fonduri-ue.ro/"
+    },
+    {
+      "id": "rw-sptp-social-protection-transformation",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.loda.gov.rw/sptp"
+    },
+    {
+      "id": "rw-vup-social-protection-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://sp.minaloc.gov.rw/"
+    },
+    {
+      "id": "sa-kafalah-guarantees",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.smebank.gov.sa/ar"
     },
     {
       "id": "sa-monshaat-support-programmes",
@@ -686,75 +1112,34 @@
       "final_url": "https://www.sdb.gov.sa/en/facilities-financing/"
     },
     {
-      "id": "sa-kafalah-guarantees",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.smebank.gov.sa/ar"
-    },
-    {
-      "id": "qa-startup-qatar-investment",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.qdb.qa/en/Financing-And-Funding/Equity-And-Investment/Startup-Qatar-Investment-Program"
-    },
-    {
-      "id": "qa-startup-qatar-grants",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.startupqatar.qa/en"
-    },
-    {
-      "id": "qa-qdb-credit-guarantee",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.qdb.qa/financing-and-funding/credit-guarantees"
-    },
-    {
-      "id": "qa-qdb-situation-room-2026",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.qdb.qa/en/national-initiatives/situationroom2026"
-    },
-    {
-      "id": "om-sme-authority-programmes",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "om-sme-financing-incentives",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.sme.gov.om/en/financing-related-programs-for-private-companies/"
-    },
-    {
-      "id": "kw-national-fund-sme",
+      "id": "sb-commercial-agriculture-development-support-fund",
       "status": "http_error",
       "http_status": 307,
-      "final_url": "https://nationalfund.gov.kw/en/"
+      "final_url": "https://solomons.gov.sb/minister-hon-giro-signs-funding-agreements-to-support-local-agribusinesses/"
     },
     {
-      "id": "kw-national-fund-support-centre",
+      "id": "sb-sme-subvention-grant-projects",
       "status": "http_error",
       "http_status": 307,
-      "final_url": "https://nationalfund.gov.kw/en/about-us/our-services/support-services-center/"
+      "final_url": "https://solomons.gov.sb/ministry-of-commerce-industry-labour-and-immigration/industrial-development-division/"
     },
     {
-      "id": "bh-tamkeen-programmes",
+      "id": "eu-national-funds-se",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://tamkeen.bh/en/programs/"
+      "final_url": "https://eufonder.se/"
     },
     {
-      "id": "bh-tamkeen-enterprise-financing",
+      "id": "se-eu-funds-single-portal",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://tamkeen.bh/en/programs/tamweel-2/"
+      "final_url": "https://eufonder.se/"
     },
     {
-      "id": "bh-tamkeen-isteshara-advisory",
+      "id": "sg-bizsg",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://tamkeen.bh/en/programs/advisory/"
+      "final_url": "https://www.bizsg.gov.sg/"
     },
     {
       "id": "sg-edge-grant-2026",
@@ -769,92 +1154,69 @@
       "final_url": "https://www.enterprisesg.gov.sg/financial-support/enterprise-financing-scheme"
     },
     {
+      "id": "sg-govbenefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.govbenefits.gov.sg/"
+    },
+    {
+      "id": "sg-oursg-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.oursggrants.gov.sg/grants/new"
+    },
+    {
       "id": "sg-sme-cash-grant-2026",
       "status": "reachable",
       "http_status": 206,
       "final_url": "https://www.gov.sg/budget2026/"
     },
     {
-      "id": "kr-global-startup-commercialization-2026",
+      "id": "sg-supportgowhere",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://mss.go.kr/site/eng/ex/bbs/View.do?bcIdx=1066324&cbIdx=244"
+      "final_url": "https://supportgowhere.life.gov.sg/"
     },
     {
-      "id": "kr-bizinfo-sme-support-database",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null"
-    },
-    {
-      "id": "jp-cabinet-startup-support-portal",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.cas.go.jp/jp/seisaku/su-portal/support.html"
-    },
-    {
-      "id": "jp-mirasapo-subsidy-schedule-2026",
+      "id": "eu-national-funds-si",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://mirasapo-plus.go.jp/"
+      "final_url": "https://evropskasredstva.si/"
     },
     {
-      "id": "in-pmegp",
+      "id": "si-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://evropskasredstva.si/"
+    },
+    {
+      "id": "eu-national-funds-sk",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eurofondy.gov.sk/"
+    },
+    {
+      "id": "sk-eu-funds-single-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.eurofondy.gov.sk/"
+    },
+    {
+      "id": "sn-fadsr-rural-sector-financing",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://fadsr.org/"
+    },
+    {
+      "id": "sn-fsrp-cost-sharing-agriculture-call-2025",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://fsrp.sn/appel-a-projets-pour-le-financement-de-projetsagricoles-et-delevage-a-couts-partages/"
+    },
+    {
+      "id": "sn-senegalpme-financing-opportunities",
       "status": "connection_error",
       "error": "URLError"
-    },
-    {
-      "id": "in-startup-india-funding",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.startupindia.gov.in/"
-    },
-    {
-      "id": "hk-sme-funding-schemes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.smelink.gov.hk/en/web/sme-portal/government-funding-schemes.html"
-    },
-    {
-      "id": "hk-bud-fund",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.bud.hkpc.org/"
-    },
-    {
-      "id": "tw-startup-funding-finder",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://startup.sme.gov.tw/en/incentive"
-    },
-    {
-      "id": "tw-siir-grant",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://startup.sme.gov.tw/en/incentive"
-    },
-    {
-      "id": "cn-shanghai-suishendui-business-policy-hub",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://english.shanghai.gov.cn/en-Business-BusinessFinancing/20260818/e878714f83c340bb93654b03ae299246.html"
-    },
-    {
-      "id": "id-bizhub-self-employment-support",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://bizhub.kemnaker.go.id/"
-    },
-    {
-      "id": "id-pip-ultra-micro-financing",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "my-mida-i-incentives-portal",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.mida.gov.my/forms-and-guidelines/grants/"
     },
     {
       "id": "th-nia-mandatory-innovation-business-platform-2027-round1",
@@ -863,153 +1225,60 @@
       "final_url": "https://fininno.nia.or.th/manage_news_event/mandatory70r1/"
     },
     {
-      "id": "ph-dost-cradle-rd-commercialization-grant",
+      "id": "th-state-welfare-card-2026",
       "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://startup.gov.ph/programs/view/?id=3"
+      "http_status": 206,
+      "final_url": "https://welfare.mof.go.th/"
     },
     {
-      "id": "ph-startup-venture-fund",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.ndc.gov.ph/svf/"
+      "id": "to-trade-facilitation-project-implementation-grant",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.mted.gov.to/tnp/"
     },
     {
-      "id": "pk-pakistan-startup-fund",
+      "id": "to-tupulaki-community-grants",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://ignite.org.pk/pakistan-startup-fund/"
+      "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
     },
     {
-      "id": "bd-idea-sme-entrepreneur-grant-portal",
+      "id": "national-tr-all-2",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://apply.idea.gov.bd/sme/"
+      "final_url": "https://yatirimadestek.gov.tr/searchsupport"
     },
     {
-      "id": "bd-sme-foundation-business-support",
+      "id": "national-tr-business-1",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.kosgeb.gov.tr/site/tr/ulusaldestekler/destekkategorileri"
+    },
+    {
+      "id": "tw-siir-grant",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://startup.sme.gov.tw/en/incentive"
+    },
+    {
+      "id": "tw-startup-funding-finder",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://startup.sme.gov.tw/en/incentive"
+    },
+    {
+      "id": "tz-fsdt-impact-grant-fund-women-youth",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.fsdt.or.tz/igf/"
+    },
+    {
+      "id": "tz-neec-government-empowerment-funds-directory",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "lk-sarp-youth-agribusiness-grant",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://web.sarp.lk/"
-    },
-    {
-      "id": "lk-irdcrp-agribusiness-investment-grants",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.irdcrp.lk/faq"
-    },
-    {
-      "id": "vn-2026-sme-digital-transformation-support",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://vioit.moit.gov.vn/vn/tin-hoat-dong-vien/thong-bao-ve-trien-khai-chuong-trinh-ho-tro-doanh-nghiep-nho-va-vua-nam-2026-6875.4048.html"
-    },
-    {
-      "id": "np-agriculture-insurance-premium-subsidy",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "np-karnali-agriculture-subsidy-management-system",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://subsidy.molmac.karnali.gov.np/"
-    },
-    {
-      "id": "my-manfaat-national-aid-finder",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://manfaat.mof.gov.my/"
-    },
-    {
-      "id": "my-sara-2026-basic-needs-assistance",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.sara.gov.my/en/home.html"
-    },
-    {
-      "id": "za-dsbd-msme-support-programmes",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "za-agriculture-land-support-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
-    },
-    {
-      "id": "ng-ngcares-livelihood-food-security-grants",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://ngcares.gov.ng/"
-    },
-    {
-      "id": "ng-nsipa-social-investment-programmes",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://nsipa.gov.ng/programmes"
-    },
-    {
-      "id": "gh-leap-cash-transfer",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
-    },
-    {
-      "id": "gh-sif-gwyesco-women-youth-2026",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://apply.sifinghana.gov.gh/"
-    },
-    {
-      "id": "gh-gea-women-youth-msme-grants",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "ke-yedf-youth-enterprise-finance",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.portal.youthfund.go.ke/"
-    },
-    {
-      "id": "ke-agpo-youth-women-pwd-procurement",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.treasury.go.ke/agpo"
-    },
-    {
-      "id": "ke-nyota-youth-opportunities",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.msme.go.ke/official-rollout-free-nyota-agpo-digital-training-program"
-    },
-    {
-      "id": "co-economia-popular-para-el-cambio",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
-    },
-    {
-      "id": "co-sena-fondo-emprender-seed-capital",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.sena.edu.co/empleabilidad/fondo-emprender"
-    },
-    {
-      "id": "pe-eemri-rural-indigenous-women-2026",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.gob.pe/institucion/midagri/noticias/1360097-midagri-inicia-convocatoria-para-acceder-a-la-estrategia-de-emprendimiento-de-la-mujer-rural-e-indigena"
-    },
-    {
-      "id": "ug-pdm-parish-development-model-financing",
+      "id": "ug-agricultural-credit-facility",
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
@@ -1027,61 +1296,92 @@
       "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
     },
     {
+      "id": "ug-pdm-parish-development-model-financing",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
+    },
+    {
+      "id": "ug-sage-senior-citizens-grant",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://socialprotection.go.ug/"
+    },
+    {
       "id": "ug-small-business-fund-sbf",
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
     },
     {
-      "id": "ug-agricultural-credit-facility",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://doingbusiness.finance.go.ug/opportunities/financing-schemes"
-    },
-    {
-      "id": "rw-vup-social-protection-support",
+      "id": "us-benefits",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://sp.minaloc.gov.rw/"
+      "final_url": "https://www.usa.gov/benefits"
     },
     {
-      "id": "rw-sptp-social-protection-transformation",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.loda.gov.rw/sptp"
+      "id": "us-grants",
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
-      "id": "sn-fadsr-rural-sector-financing",
+      "id": "us-sam-assistance-listings",
       "status": "reachable",
       "http_status": 206,
-      "final_url": "https://fadsr.org/"
+      "final_url": "https://sam.gov/assistance-listings"
     },
     {
-      "id": "sn-senegalpme-financing-opportunities",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "sn-fsrp-cost-sharing-agriculture-call-2025",
+      "id": "vn-2026-sme-digital-transformation-support",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://fsrp.sn/appel-a-projets-pour-le-financement-de-projetsagricoles-et-delevage-a-couts-partages/"
+      "final_url": "https://vioit.moit.gov.vn/vn/tin-hoat-dong-vien/thong-bao-ve-trien-khai-chuong-trinh-ho-tro-doanh-nghiep-nho-va-vua-nam-2026-6875.4048.html"
     },
     {
-      "id": "tz-neec-government-empowerment-funds-directory",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "tz-fsdt-impact-grant-fund-women-youth",
+      "id": "ws-duty-concession-scheme",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.fsdt.or.tz/igf/"
+      "final_url": "https://mcil.gov.ws/services/industry"
     },
     {
-      "id": "zm-social-cash-transfer-programme",
+      "id": "za-agriculture-land-support-programmes",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
+    },
+    {
+      "id": "za-dsbd-msme-support-programmes",
       "status": "connection_error",
       "error": "URLError"
+    },
+    {
+      "id": "za-incentives",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
+    },
+    {
+      "id": "za-sassa",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+    },
+    {
+      "id": "za-sassa-services",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+    },
+    {
+      "id": "za-sedfa",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sedfa.org.za/"
+    },
+    {
+      "id": "za-social-grants",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/services-residents/grants"
     },
     {
       "id": "zm-constituency-development-fund-grants-loans",
@@ -1094,155 +1394,9 @@
       "error": "URLError"
     },
     {
-      "id": "mw-ncst-ppp-innovation-research-call-2026",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.grants.ncst.mw/index.php?lang=en"
-    },
-    {
-      "id": "mw-fao-afr100-restoration-grants-2026-closed",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://fao-grants.smapply.io/prog/malawi_-_the_supporting_afr100_programme_-_2nd_round/"
-    },
-    {
-      "id": "et-startup-proclamation-grants-credit-guarantee",
+      "id": "zm-social-cash-transfer-programme",
       "status": "connection_error",
       "error": "URLError"
-    },
-    {
-      "id": "et-dbe-msme-women-enterprise-financing-directory",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://dbe.com.et/?stm_works=external-fund-credit-management"
-    },
-    {
-      "id": "et-gef-small-grants-op8-2026",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.undp.org/ethiopia/publications/project-proposal-template-eighth-operational-phase-gef-small-grants-programme"
-    },
-    {
-      "id": "et-pact-agriculture-climate-transformation-programme",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "et-rural-productive-safety-net-programme",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "et-inclusive-insurance-challenge-fund-2026-closed",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.undp.org/ethiopia/news/call-applications-inclusive-insurance-challenge-fund-2026"
-    },
-    {
-      "id": "ng-boi-guaranteed-loans-women",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://iprogrammes.boi.ng/"
-    },
-    {
-      "id": "ng-boi-rapid-rural-enterprise-support",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://iprogrammes.boi.ng/"
-    },
-    {
-      "id": "ng-smedan-conditional-grant-scheme",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://smedan.gov.ng/our-programs/cgs/"
-    },
-    {
-      "id": "ng-smedan-adep-agribusiness-support",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://smedan.gov.ng/our-programs/adep/"
-    },
-    {
-      "id": "ng-smedan-awake-women-agriculture",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://smedan.gov.ng/our-programs/advancement-for-women-in-agriculture-agro-allied-and-cottage-enterprises-program/"
-    },
-    {
-      "id": "gh-leap-cash-transfer-2026",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://leap.mogcsp.gov.gh/home/"
-    },
-    {
-      "id": "ke-youth-enterprise-development-fund",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.portal.youthfund.go.ke/"
-    },
-    {
-      "id": "cm-widu-micro-small-business-grant",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://widu.africa/cameroon"
-    },
-    {
-      "id": "ci-widu-micro-small-business-grant",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://widu.africa/cote-divoire"
-    },
-    {
-      "id": "bw-poverty-eradication-enterprise-support",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "fj-msme-programmes",
-      "status": "connection_error",
-      "error": "URLError"
-    },
-    {
-      "id": "fj-first-home-land-assistance",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.housing.gov.fj/programmes"
-    },
-    {
-      "id": "fj-young-entrepreneurship-scheme",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.mcttt.gov.fj/wp-content/uploads/2026/01/YES-Policy-23-December-2025.pdf"
-    },
-    {
-      "id": "to-tupulaki-community-grants",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
-    },
-    {
-      "id": "to-trade-facilitation-project-implementation-grant",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.mted.gov.to/tnp/"
-    },
-    {
-      "id": "ws-duty-concession-scheme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://mcil.gov.ws/services/industry"
-    },
-    {
-      "id": "sb-commercial-agriculture-development-support-fund",
-      "status": "http_error",
-      "http_status": 307,
-      "final_url": "https://solomons.gov.sb/minister-hon-giro-signs-funding-agreements-to-support-local-agribusinesses/"
-    },
-    {
-      "id": "sb-sme-subvention-grant-projects",
-      "status": "http_error",
-      "http_status": 307,
-      "final_url": "https://solomons.gov.sb/ministry-of-commerce-industry-labour-and-immigration/industrial-development-division/"
     }
   ]
 }

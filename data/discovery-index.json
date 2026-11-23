@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T02:28:32.172171+00:00",
+  "generated_at": "2026-11-23T06:32:58.726374+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 178,
+  "discovered_datasets_count": 177,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -125,7 +125,7 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Advertising medium line Vienna",
+      "title": "Advertising medium Punkt Wien",
       "url": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/",
       "query": "public support programmes",
       "source_id": "eu-data",
@@ -679,14 +679,6 @@
     {
       "title": "HOUSING - Evolution_number",
       "url": "https://www.data.gouv.fr/datasets/logement-evolution-nombre",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "HOUSING - Number_pieces",
-      "url": "https://www.data.gouv.fr/datasets/logement-nombre-pieces",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
