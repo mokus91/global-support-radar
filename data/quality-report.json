@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T20:09:48.448884+00:00",
+  "generated_at": "2026-11-23T01:57:57.470167+00:00",
   "feeds_checked": 18,
   "records_checked": 2209,
   "expired_deadlines": 1,
@@ -532,10 +532,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -552,10 +552,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -572,10 +572,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -592,10 +592,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -612,10 +612,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -632,10 +632,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -652,10 +652,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -672,10 +672,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -692,10 +692,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -712,10 +712,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -732,10 +732,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -752,10 +752,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -772,10 +772,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -792,10 +792,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -812,10 +812,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -832,10 +832,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -952,10 +952,10 @@
       "deadline_state": "upcoming",
       "source_status": "official-api-window-current",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -972,10 +972,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -992,10 +992,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1012,10 +1012,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
