@@ -2082,39 +2082,51 @@ $("lang").onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;re
 
 
 <script id="gsr-ambient-audio">
-(()=>{
- const play=document.getElementById("gsrPlay"),stop=document.getElementById("gsrStop"),volume=document.getElementById("gsrVolume"),state=document.getElementById("gsrAudioState"),hint=document.getElementById("gsrAudioHint");
+(()=> {
+ const play=document.getElementById("gsrPlay"), stop=document.getElementById("gsrStop"), volume=document.getElementById("gsrVolume"), state=document.getElementById("gsrAudioState"), hint=document.getElementById("gsrAudioHint");
  if(!play||!stop||!volume||!state)return;
- let ctx=null,master=null,playing=false,timer=null,step=0,voices=[];
+ let ctx=null, master=null, playing=false, timer=null, step=0;
  const tempo=390;
- // Beethoven: Für Elise – a zenemű közkincs; ez a lejátszó saját, böngészőben szintetizált előadás.
  const melody=[659.25,622.25,659.25,622.25,659.25,493.88,587.33,523.25,440,261.63,329.63,440,493.88,329.63,415.30,493.88,523.25,329.63,659.25,622.25,659.25,622.25,659.25,493.88,587.33,523.25,440];
  const lengths=[1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,3];
- function setVolume(){if(master&&ctx)master.gain.setTargetAtTime(Number(volume.value)/100*.18,ctx.currentTime,.12)}
- function tone(freq,duration,when,amp,type="sine"){
-  const osc=ctx.createOscillator(),gain=ctx.createGain(),filter=ctx.createBiquadFilter();
-  osc.type=type;osc.frequency.setValueAtTime(freq,when);
-  filter.type="lowpass";filter.frequency.setValueAtTime(type==="triangle"?950:1500,when);
-  gain.gain.setValueAtTime(.0001,when);gain.gain.exponentialRampToValueAtTime(amp,when+.18);
-  gain.gain.setTargetAtTime(.0001,when+duration*.58,.45);
-  osc.connect(filter);filter.connect(gain);gain.connect(master);
-  osc.start(when);osc.stop(when+duration+1);
-  voices.push(osc);
+ function setup(){
+   const AC=window.AudioContext||window.webkitAudioContext;
+   if(!AC)throw new Error("A böngésző nem támogatja a Web Audio lejátszást.");
+   if(!ctx){ctx=new AC();master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);}
+ }
+ function setVolume(){if(master&&ctx)master.gain.setTargetAtTime(Number(volume.value)/100*.22,ctx.currentTime,.08);}
+ function tone(freq,duration,when,amp,type){
+   const osc=ctx.createOscillator(),gain=ctx.createGain(),filter=ctx.createBiquadFilter();
+   osc.type=type;osc.frequency.setValueAtTime(freq,when);filter.type="lowpass";filter.frequency.value=1600;
+   gain.gain.setValueAtTime(.0001,when);gain.gain.exponentialRampToValueAtTime(amp,when+.025);
+   gain.gain.setTargetAtTime(.0001,when+duration*.62,.12);
+   osc.connect(filter);filter.connect(gain);gain.connect(master);osc.start(when);osc.stop(when+duration+.5);
  }
  function musicStep(){
-  if(!playing||!ctx)return;
-  const now=ctx.currentTime,idx=step%melody.length,f=melody[idx],dur=lengths[idx]*tempo/1000;
-  // Lágy, harangszerű főhang, finom felhanggal.
-  tone(f,Math.max(.22,dur*.88),now,.075,"triangle");
-  tone(f*2,Math.max(.18,dur*.55),now,.012,"sine");
-  step++;
-  timer=setTimeout(musicStep,tempo*lengths[idx]);
+   if(!playing||!ctx)return;
+   const idx=step%melody.length, dur=lengths[idx]*tempo/1000, now=ctx.currentTime;
+   tone(melody[idx],Math.max(.16,dur*.9),now,.10,"triangle");
+   tone(melody[idx]*2,Math.max(.12,dur*.55),now,.018,"sine");
+   step++;timer=setTimeout(musicStep,tempo*lengths[idx]);
  }
- function pause(){playing=false;clearTimeout(timer);if(master&&ctx)master.gain.setTargetAtTime(0,ctx.currentTime,.15);play.textContent="▶";play.setAttribute("aria-label","Zene lejátszása");state.textContent="Szünetel"}
- play.addEventListener("click",()=>{if(playing)pause();else start().catch(()=>{state.textContent="A lejátszás nem indítható el."})});
- stop.addEventListener("click",()=>{pause();step=0;state.textContent="Leállítva";hint.textContent="A dallam újraindítható a lejátszás gombbal."});
+ async function start(){
+   setup();
+   if(ctx.state!=="running")await ctx.resume();
+   if(ctx.state!=="running")throw new Error("A hang le van tiltva a böngészőben.");
+   playing=true;setVolume();master.gain.setTargetAtTime(Number(volume.value)/100*.22,ctx.currentTime,.08);
+   play.textContent="Ⅱ";play.setAttribute("aria-label","Zene szüneteltetése");
+   state.textContent="Lejátszás folyamatban";if(hint)hint.textContent="Für Elise · saját szintetizált változat";
+   clearTimeout(timer);musicStep();
+ }
+ function pause(){
+   playing=false;clearTimeout(timer);
+   if(master&&ctx)master.gain.setTargetAtTime(0,ctx.currentTime,.04);
+   play.textContent="▶";play.setAttribute("aria-label","Zene lejátszása");state.textContent="Szünetel";
+ }
+ play.addEventListener("click",()=>{if(playing){pause();return;} start().catch(e=>{state.textContent=e.message||"A lejátszás nem indítható el.";});});
+ stop.addEventListener("click",()=>{pause();step=0;state.textContent="Leállítva";});
  volume.addEventListener("input",setVolume);
- document.addEventListener("visibilitychange",()=>{if(document.hidden&&playing)pause()});
+ document.addEventListener("visibilitychange",()=>{if(document.hidden&&playing)pause();});
 })();
 </script>
 
