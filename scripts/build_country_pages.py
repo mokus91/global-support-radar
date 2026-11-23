@@ -157,6 +157,11 @@ for (const card of document.querySelectorAll(".country")) {
             page_text = page_text.replace("</body>", snippet + "</body>")
             directory_page.write_text(page_text, encoding="utf-8")
 
+    # Keep manually maintained utility pages discoverable after every country rebuild.
+    for static_path in ("revenue-calculator.html",):
+        if (ROOT / static_path).is_file():
+            urls.add(f"{BASE_URL}{static_path}")
+
     sitemap_path = ROOT / "sitemap.xml"
     tree = ET.parse(sitemap_path)
     root = tree.getroot()
