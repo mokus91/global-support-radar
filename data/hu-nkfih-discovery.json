@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T08:56:05.806548+00:00",
+  "generated_at": "2026-11-23T14:41:20.548580+00:00",
   "source_id": "hu-nkfih",
   "source_url": "https://nkfih.gov.hu/palyazoknak/palyazatok/aktualis-felhivasok",
-  "fetch_status": "temporarily-unavailable",
+  "fetch_status": "checked",
   "record_type": "official-current-calls-listing-candidates",
   "records_count": 9,
   "records": [
@@ -142,7 +142,5 @@
       "verification_status": "official-listing-detail-not-yet-verified"
     }
   ],
-  "note": "Latest fetch failed; previous successful snapshot is preserved and may be stale.",
-  "error": "<urlopen error timed out>",
-  "last_successful_fetch": "2026-11-23T06:37:11.146533+00:00"
+  "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
 }

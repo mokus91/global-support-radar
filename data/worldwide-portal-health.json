@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-23T08:51:44+00:00",
+  "checked_at": "2026-11-23T14:36:29+00:00",
   "records_count": 247,
   "summary": {
-    "connection_error": 41,
-    "http_error": 8,
-    "reachable": 176,
+    "connection_error": 40,
+    "http_error": 7,
+    "reachable": 178,
     "restricted": 22
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -41,8 +41,9 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.moet.gov.ae/en/national-programme"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -351,9 +352,8 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "http_error",
-      "http_status": 500,
-      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-funding-guide",
@@ -371,7 +371,7 @@
       "id": "eu-national-single-portals",
       "status": "restricted",
       "http_status": 429,
-      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "eu-step-funding",
@@ -551,7 +551,7 @@
     {
       "id": "id-pip-ultra-micro-financing",
       "status": "connection_error",
-      "error": "URLError"
+      "error": "RemoteDisconnected"
     },
     {
       "id": "id-pkh-family-hope",
@@ -647,8 +647,9 @@
     },
     {
       "id": "ke-agpo-youth-women-pwd-procurement",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.treasury.go.ke/agpo"
     },
     {
       "id": "ke-inua-jamii",
@@ -925,7 +926,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -1008,7 +1009,7 @@
     {
       "id": "ph-dost-cradle-rd-commercialization-grant",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://startup.gov.ph/programs/view/?id=3"
     },
     {
@@ -1037,15 +1038,13 @@
     },
     {
       "id": "eu-national-funds-pl",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://funduszeeuropejskie.gov.pl/"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "pl-eu-funds-single-portal",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://funduszeeuropejskie.gov.pl/"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-national-funds-pt",
@@ -1375,8 +1374,9 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1385,8 +1385,9 @@
     },
     {
       "id": "za-incentives",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
     },
     {
       "id": "za-sassa",

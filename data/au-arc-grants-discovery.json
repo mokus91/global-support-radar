@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T08:55:55.816868+00:00",
+  "generated_at": "2026-11-23T14:41:08.969132+00:00",
   "source_id": "au-arc-grants",
   "source_url": "https://dataportal.arc.gov.au/RGS/Web/Grants",
   "api_url": "https://dataportal.arc.gov.au/NCGP/API/grants",
@@ -7,7 +7,7 @@
   "pages_fetched": 40,
   "maximum_pages": 40,
   "time_budget_seconds": 180,
-  "collection_time_seconds": 80.24,
+  "collection_time_seconds": 73.88,
   "collection_truncated": true,
   "pagination_complete": false,
   "records_count": 4000,

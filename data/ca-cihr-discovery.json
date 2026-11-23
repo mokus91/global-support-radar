@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-11-23T08:55:57.200677+00:00",
+  "generated_at": "2026-11-23T14:41:11.057391+00:00",
   "source_id": "ca-cihr",
   "source_url": "https://cihr-irsc.gc.ca/e/51605.html",
   "feed_url": "https://www.researchnet-recherchenet.ca/rnr16/fodRss.do?type=ALL&chanTyp=ALL&lang=E",
-  "records_count": 17,
+  "records_count": 18,
   "records": [
+    {
+      "title": "Notice of Upcoming Funding Opportunity: Operating Grant: Advancing a Life Course Approach to Menopause Research",
+      "official_url": "https://cihr-irsc.gc.ca/e/54865.html",
+      "summary": "Official CIHR page listing. Check the linked notice and ResearchNet for current dates and application status.",
+      "source_id": "ca-cihr",
+      "record_type": "official-upcoming-announcement",
+      "source_section": "Upcoming funding opportunities",
+      "source_status": "planned-announcement-not-open",
+      "verification_status": "unverified",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "open_status_verified": false
+    },
     {
       "title": "Notice of Funding Opportunity: Team Grant – GACD 2027: Implementation research focused on strategies targeting chronic non-communicable diseases (NCD) in children and young people",
       "official_url": "https://cihr-irsc.gc.ca/e/54858.html",

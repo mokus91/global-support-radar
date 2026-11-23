@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-23T08:54:34.614488+00:00",
+  "generated_at": "2026-11-23T14:39:54.031356+00:00",
   "source_id": "us-grants-gov",
   "source_url": "https://www.grants.gov/",
   "api_url": "https://api.grants.gov/v1/api/search2",
   "purpose": "Posted and forecasted federal funding opportunities returned by the official public Grants.gov API. Forecasted items are not presented as currently open application windows. Posted status, deadlines, funding amounts and eligibility must be checked on each official detail page; the API search result alone does not verify applicant eligibility.",
-  "total_available": 1376,
-  "records_count": 1376,
+  "total_available": 1377,
+  "records_count": 1377,
   "records": [
     {
       "id": "355824",
@@ -27523,6 +27523,26 @@
       "amount_verified": false,
       "category_codes": [],
       "official_url": "https://www.grants.gov/search-results-detail/358100",
+      "source_id": "us-grants-gov",
+      "record_type": "official-api-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "id": "364301",
+      "title": "Food for Peace International Food Relief Partnership Shelf-Stable Food Commodity Production, Packaging, and Stockpiling",
+      "identifier": "USDA-FAS-10627-0700-25-26-P",
+      "agency": "USDA-FAS",
+      "open_date": "2026-11-23",
+      "start_date": "2026-11-23",
+      "deadline": "2027-01-07",
+      "country_code": "US",
+      "source_language": "en",
+      "status": "posted",
+      "application_window_status": "posted_status_requires_detail_page_check",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "category_codes": [],
+      "official_url": "https://www.grants.gov/search-results-detail/364301",
       "source_id": "us-grants-gov",
       "record_type": "official-api-discovery-candidate",
       "verification_status": "unverified"

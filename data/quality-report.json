@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-23T13:59:47.893719+00:00",
+  "generated_at": "2026-11-23T14:41:23.870790+00:00",
   "feeds_checked": 18,
-  "records_checked": 2208,
+  "records_checked": 2174,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1986,
+  "unverified_status": 1952,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 212,
-    "official_listing_candidate": 1912,
-    "unverified": 74,
+    "official_listing_candidate": 1875,
+    "unverified": 77,
     "other": 9
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1994,
+    "needs_verification": 1960,
     "expired_or_closed": 1
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 503,
+      "records": 465,
       "procurement_candidates": 1,
-      "unverified": 503,
+      "unverified": 465,
       "api_window_candidates": 0,
-      "official_listing_candidates": 503,
+      "official_listing_candidates": 465,
       "historical_archive_records": 0
     },
     {
@@ -101,29 +101,29 @@
     },
     {
       "file": "eu-national-agriculture-discovery.json",
-      "records": 7,
+      "records": 8,
       "procurement_candidates": 0,
-      "unverified": 7,
+      "unverified": 8,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 50,
+      "records": 51,
       "procurement_candidates": 0,
-      "unverified": 50,
+      "unverified": 51,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "us-grants-discovery.json",
-      "records": 1376,
+      "records": 1377,
       "procurement_candidates": 0,
-      "unverified": 1376,
+      "unverified": 1377,
       "api_window_candidates": 0,
-      "official_listing_candidates": 1376,
+      "official_listing_candidates": 1377,
       "historical_archive_records": 0
     },
     {
@@ -146,9 +146,9 @@
     },
     {
       "file": "ca-cihr-discovery.json",
-      "records": 17,
+      "records": 18,
       "procurement_candidates": 0,
-      "unverified": 17,
+      "unverified": 18,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -224,7 +224,7 @@
       "status": "temporarily-unavailable",
       "records_count": 0,
       "http_status": 401,
-      "freshness": "fresh",
+      "freshness": "aging",
       "note": "Unauthorized"
     },
     {
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 504,
+      "records_count": 466,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -267,7 +267,7 @@
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
       "status": "checked",
-      "records_count": 7,
+      "records_count": 8,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 50,
+      "records_count": 51,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -285,7 +285,7 @@
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
       "status": "checked",
-      "records_count": 1376,
+      "records_count": 1377,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -312,7 +312,7 @@
       "name": "Canada — CIHR",
       "file": "ca-cihr-discovery.json",
       "status": "checked",
-      "records_count": 17,
+      "records_count": 18,
       "http_status": null,
       "freshness": "fresh",
       "note": "CIHR notices are discovery candidates only. Upcoming announcements are not open calls; verify the linked official notice and ResearchNet before applying."
@@ -338,11 +338,11 @@
     {
       "name": "Hungary — NKFIH current calls",
       "file": "hu-nkfih-discovery.json",
-      "status": "temporarily-unavailable",
+      "status": "checked",
       "records_count": 9,
       "http_status": null,
       "freshness": "fresh",
-      "note": "<urlopen error timed out>"
+      "note": "Official listing candidates only; confirm current application status, eligibility and deadline on each detailed call page."
     },
     {
       "name": "Worldwide — portal reachability",
@@ -378,22 +378,22 @@
     {
       "source_file": "eu-national-agriculture-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 7
+      "records": 8
     },
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 50
+      "records": 51
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 245
+      "records": 222
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 258
+      "records": 243
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -418,7 +418,7 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 788
+      "records": 789
     }
   ],
   "review_queue_count": 50,
@@ -1440,7 +1440,7 @@
   ],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 247,
-  "diagnostic_missing_urls": 41,
+  "diagnostic_missing_urls": 40,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

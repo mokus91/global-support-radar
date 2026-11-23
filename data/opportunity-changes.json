@@ -1,28 +1,340 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-23T08:57:09+00:00",
-  "events_count": 3,
+  "generated_at": "2026-11-23T14:41:23+00:00",
+  "events_count": 42,
   "events": [
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52968501topicsen",
-      "title": "Not-for-profit European sport events",
-      "detected_at": "2026-11-23T08:57:09+00:00"
+      "key": "id:17522competitive_callen",
+      "title": "Fourth Call for Pilots Work Strand 1 - Connecting Existing Local Digital Twins",
+      "detected_at": "2026-11-23T14:41:23+00:00"
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50127691topicsen",
+      "title": "Call 04 - single stage (2026)",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129721topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52256519topicsen",
+      "title": "Call for Proposals for ERC Consolidator Grant",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131715topicsen",
+      "title": "AI in Science",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52519580topicsen",
+      "title": "European video games and immersive content",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51474244topicsen",
+      "title": "European Remembrance - 2026",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51474284topicsen",
+      "title": "European Remembrance - 2026",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52617992topicsen",
+      "title": "Call for proposals for action grants to support transnational projects on judicial training covering civil law, criminal law or fundamental rights",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52456240topicsen",
+      "title": "Call for proposals for ERC Proof of Concept",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133030topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133046topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133060topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133076topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133091topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52617949topicsen",
+      "title": "Deploying Strategic Cyber Capabilities Across Europe - Cyber Hubs",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131803topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131925topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131963topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131996topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50132047topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50132158topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129422topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129746topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130350topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130372topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130465topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130896topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130943topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130167topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130277topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50161057topicsen",
+      "title": "Interconnected Innovation Ecosystems (2027.1)",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130689topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130730topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130810topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129698topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129862topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129926topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129948topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52689240topicsen",
+      "title": "Innovative models for neighbourhoods that integrate beauty, inclusiveness and sustainability",
+      "detected_at": "2026-11-23T14:41:23+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53050046topicsen",
-      "title": "Large scale not-for-profit European sport event",
-      "detected_at": "2026-11-23T08:57:09+00:00"
+      "feed": "us-grants-discovery.json",
+      "key": "id:364301",
+      "title": "Food for Peace International Food Relief Partnership Shelf-Stable Food Commodity Production, Packaging, and Stockpiling",
+      "detected_at": "2026-11-23T14:41:23+00:00"
     },
     {
       "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53294913topicsen",
-      "title": "Capacity Building in the Field of Sport",
-      "detected_at": "2026-11-23T08:57:09+00:00"
+      "feed": "ca-cihr-discovery.json",
+      "key": "fallback:56d0667562852decd205b8cb96dc48630fefb80d00d73453122126c4b425225f",
+      "title": "Notice of Upcoming Funding Opportunity: Operating Grant: Advancing a Life Course Approach to Menopause Research",
+      "detected_at": "2026-11-23T14:41:23+00:00"
     }
   ],
   "note": "Changes are detected by comparing repository snapshots. Removals are suppressed for unavailable feeds and capped ARC snapshots; removed records are not assumed closed. Always confirm status at the official source."
