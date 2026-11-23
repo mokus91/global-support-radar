@@ -184,6 +184,38 @@ a{color:var(--mint)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{displ
 <div><b>02 · Nyitottság / Open status</b><span>„Hivatalosan ellenőrzött nyitott” csak akkor jelenik meg, ha az adatkapcsolat az adott rekord jelentkezési időablakát is ellenőrizte. A forrás által nyitottnak jelölt, de külön nem ellenőrzött rekordot megkülönböztetjük.</span></div>
 <div><b>03 · Jogosultság és összeg / Eligibility & amount</b><span>Csak a részletes hivatalos feltételek alapján igazolt jogosultság kap ellenőrzött jelölést. A teljes pályázati keretet nem nevezzük egyéni támogatási összegnek.</span></div>
 </div>
+<div id="liveQualityPanel" class="card" style="margin:18px 0;padding:18px;border-color:#45617d" aria-live="polite">
+ <div class="cardtop"><strong>📊 Az adatbázis ellenőrzöttsége</strong><span class="tag">AUTOMATIKUS JELENTÉS</span></div>
+ <p style="margin:8px 0 14px;color:var(--muted);font-size:13px">A számok a legutóbbi minőségellenőrzésből származnak. A felfedezett rekord nem feltétlenül aktuális vagy igényelhető támogatás.</p>
+ <div class="status-grid">
+  <div class="status-item"><b id="qTotal">Betöltés…</b><span>vizsgált rekord</span></div>
+  <div class="status-item status-good"><b id="qVerified">—</b><span>igazoltan nyitott felhívás</span></div>
+  <div class="status-item status-warn"><b id="qPending">—</b><span>további ellenőrzést igényel</span></div>
+  <div class="status-item"><b id="qEligibility">—</b><span>jogosultság részletesen igazolva</span></div>
+ </div>
+ <p id="qUpdated" style="margin:12px 0 0;color:var(--muted);font-size:12px">A jelentés betöltése folyamatban…</p>
+ <p style="margin:7px 0 0;font-size:12px"><a href="./quality.html">Részletes adatminőségi jelentés megtekintése ↗</a></p>
+</div>
+<script>
+(async function(){
+ const set=(id,value)=>{const el=document.getElementById(id);if(el)el.textContent=value};
+ try{
+  const response=await fetch("./data/quality-report.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("HTTP "+response.status);
+  const d=await response.json();
+  const tiers=d.application_state_tiers||{};
+  const dimensions=d.verification_dimensions||{};
+  set("qTotal",Number(d.records_checked||0).toLocaleString("hu-HU"));
+  set("qVerified",Number(tiers.verified_open||0).toLocaleString("hu-HU"));
+  set("qPending",Number(tiers.needs_verification||0).toLocaleString("hu-HU"));
+  set("qEligibility",Number(dimensions.eligibility_verified||0).toLocaleString("hu-HU"));
+  const date=d.generated_at?new Date(d.generated_at).toLocaleString("hu-HU"):"ismeretlen időpont";
+  set("qUpdated","Jelentés frissítve: "+date+". A többi jelöltet ne tekintsd igazoltan nyitott támogatásnak.");
+ }catch(error){
+  set("qTotal","Nem elérhető");set("qUpdated","Az automatikus minőségjelentés most nem tölthető be. Kérjük, ellenőrizd a részletes jelentést később.");
+ }
+})();
+</script>
 <p class="notice"><strong>Fontos / Important:</strong> A rendszer tájékoztató kereső, nem hatóság és nem pályázatkezelő. A beadás előtt mindig ellenőrizd az eredeti kiírást, a jogosultságot, a határidőt, a keretösszeget és a benyújtás módját. A rendszer nem garantál támogatást és nem nyújt be kérelmet. / This is an independent information service, not a government agency or grant administrator. Always confirm the original terms before applying.</p>
 </section>
 <section><div class="sectionhead"><div><h2 id="howTitle">Hogyan működik?</h2><p id="howSub">A cél egy megbízható, országokon átívelő támogatáskereső.</p></div></div><div class="how"><div><b>01 · <span id="h1">Keresés</span></b><span id="hd1">Ország és támogatási kategória kiválasztása.</span></div><div><b>02 · <span id="h2">Ellenőrzés</span></b><span id="hd2">Hivatalos kormányzati vagy önkormányzati forrás megnyitása.</span></div><div><b>03 · <span id="h3">Jelentkezés</span></b><span id="hd3">A feltételek és határidők ellenőrzése után jelentkezés a kiíró oldalán.</span></div></div></section>
