@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reklámbevétel-kalkulátor | Global Support Radar</title>
+<meta name="description" content="Becsüld meg a Global Support Radar lehetséges havi és éves reklámbevételét látogatottság és hirdetési RPM alapján.">
+<link rel="canonical" href="https://mokus91.github.io/global-support-radar/revenue-calculator.html">
+<style>
+:root{color-scheme:dark;--bg:#071522;--panel:#10263a;--line:#29445b;--text:#eef6ff;--muted:#b7c9da;--mint:#76e0c0;--gold:#ffd27a}*{box-sizing:border-box}body{margin:0;background:linear-gradient(140deg,#071522,#0b2032 60%,#102c3e);font:16px/1.55 system-ui,Arial;color:var(--text)}main{max-width:920px;margin:32px auto;padding:20px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0;box-shadow:0 12px 30px #0003}h1{font-size:clamp(27px,5vw,42px);line-height:1.1;margin:8px 0 12px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}label{display:block;font-weight:700;margin-bottom:7px}input,select{width:100%;padding:13px;border:1px solid #55718a;border-radius:10px;background:#081a29;color:white;font:inherit}button{padding:12px 16px;border:0;border-radius:10px;background:var(--mint);color:#06251e;font-weight:800;font:inherit;cursor:pointer}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.metric{background:#091c2b;border:1px solid var(--line);border-radius:13px;padding:16px}.metric strong{display:block;color:var(--mint);font-size:clamp(22px,4vw,30px);margin-top:5px}.note{border-left:3px solid var(--gold);padding:10px 14px;background:#1c2b37;color:#e8edf2;font-size:14px}a{color:var(--mint)}footer{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<p class="muted">GLOBAL SUPPORT RADAR · BEVÉTELTERVEZÉS</p><h1>Reklámbevétel-kalkulátor</h1>
+<p class="muted">Állítsd be a havi látogatottságot és a becsült hirdetési RPM-et. A kalkulátor tájékoztató jellegű forgatókönyvet mutat, nem garantált bevételt.</p>
+<section class="card"><div class="grid">
+<div><label for="views">Havi oldalmegtekintések</label><input id="views" type="number" min="0" step="100" value="10000"></div>
+<div><label for="rpm">Becsült RPM (USD / 1000 oldalmegtekintés)</label><input id="rpm" type="number" min="0" step="0.1" value="1"></div>
+<div><label for="fx">USD → HUF árfolyam (tervezési érték)</label><input id="fx" type="number" min="1" step="1" value="350"></div>
+</div><p style="margin:18px 0 0"><button id="calc" type="button">Újraszámolás</button></p></section>
+<section class="card"><h2>Várható AdSense-bevétel</h2><div class="results">
+<div class="metric">Havi becslés<strong id="monthly">3 500 Ft</strong></div>
+<div class="metric">Éves becslés<strong id="yearly">42 000 Ft</strong></div>
+<div class="metric">Napi átlag<strong id="daily">115 Ft</strong></div>
+</div><p class="muted" id="usd" style="margin-top:14px">Havi becslés: 10,00 USD</p></section>
+<section class="card"><h2>Forgatókönyvek</h2><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;padding:9px;border-bottom:1px solid var(--line)">Havi megtekintés</th><th style="text-align:right;padding:9px;border-bottom:1px solid var(--line)">Havi bevétel</th><th style="text-align:right;padding:9px;border-bottom:1px solid var(--line)">Éves bevétel</th></tr></thead><tbody id="scenarios"></tbody></table></div></section>
+<p class="note">Fontos: az RPM a ténylegesen realizált bevétel 1000 oldalmegtekintésre vetítve. Ország, téma, hirdetési kereslet, eszköz, hozzájárulás és hirdetésmegjelenés szerint jelentősen változhat. A kalkulátor nem számol közvetlen reklámszerződésekkel, partnerjutalékokkal, adókkal vagy költségekkel. A Global Support Radar jelenlegi AdSense-jóváhagyása és tényleges hirdetésbevétele nem igazolt.</p>
+<p><a href="./index.html">← Vissza a Global Support Radar főoldalára</a></p></main><footer>Független információs projekt · A bevételi értékek kizárólag becslések.</footer>
+<script>
+(()=>{const el=id=>document.getElementById(id),fmt=n=>new Intl.NumberFormat('hu-HU',{maximumFractionDigits:0}).format(Math.round(n))+' Ft';function run(){const views=Math.max(0,Number(el('views').value)||0),rpm=Math.max(0,Number(el('rpm').value)||0),fx=Math.max(1,Number(el('fx').value)||350),usd=views/1000*rpm,huf=usd*fx;el('monthly').textContent=fmt(huf);el('yearly').textContent=fmt(huf*12);el('daily').textContent=fmt(huf/30);el('usd').textContent='Havi becslés: '+usd.toLocaleString('en-US',{maximumFractionDigits:2})+' USD';el('scenarios').innerHTML=[1000,5000,10000,50000,100000,500000,1000000].map(v=>'<tr><td style="padding:9px;border-bottom:1px solid #29445b">'+fmt(v).replace(' Ft','')+'</td><td style="text-align:right;padding:9px;border-bottom:1px solid #29445b">'+fmt(v/1000*rpm*fx)+'</td><td style="text-align:right;padding:9px;border-bottom:1px solid #29445b">'+fmt(v/1000*rpm*fx*12)+'</td></tr>').join('')}el('calc').addEventListener('click',run);['views','rpm','fx'].forEach(id=>el(id).addEventListener('input',run));run()})();
+</script></body></html>
