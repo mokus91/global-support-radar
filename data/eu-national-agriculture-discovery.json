@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-24T08:41:31Z",
+  "generated_at": "2026-11-24T14:32:59Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 9,
+  "records_count": 7,
   "records": [
     {
       "id": "national-agri-cz-1",
@@ -38,21 +38,6 @@
       "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
     },
     {
-      "id": "national-agri-ie-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "title": "Leading Agri-Food Technology",
-      "official_url": "https://www.eufunds.ie/story/leading-agri-food-technology/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
       "id": "national-agri-lu-1",
       "country_code": "LU",
       "country_en": "Luxembourg",
@@ -60,21 +45,6 @@
       "title": "FEADER",
       "official_url": "https://fonds-europeens.public.lu/fr/fonds-europeens/feader.html",
       "portal_url": "https://fonds-europeens.public.lu/fr.html",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
-    {
-      "id": "national-agri-lv-1",
-      "country_code": "LV",
-      "country_en": "Latvia",
-      "country_hu": "Lettország",
-      "title": "https://www.esfondi.lv/par-es-fondiem/zinas/zemkopibas-ministrs-uldis-augulis-latvijai-nav-pienemami-es-finansejuma-nosacijumi-kas-saglaba-nevienlidzigu-konkurenci-lauksaimnieciba",
-      "official_url": "https://www.esfondi.lv/par-es-fondiem/zinas/zemkopibas-ministrs-uldis-augulis-latvijai-nav-pienemami-es-finansejuma-nosacijumi-kas-saglaba-nevienlidzigu-konkurenci-lauksaimnieciba",
-      "portal_url": "https://www.esfondi.lv/",
       "publisher": "Official national EU funding portal",
       "category": "agriculture",
       "record_type": "national-agriculture-link-discovery",
@@ -162,7 +132,7 @@
     },
     {
       "country_code": "GR",
-      "error": "<urlopen error timed out>"
+      "error": "Remote end closed connection without response"
     },
     {
       "country_code": "HU",

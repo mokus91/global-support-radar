@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-24T08:39:45+00:00",
+  "checked_at": "2026-11-24T14:31:27+00:00",
   "records_count": 247,
   "summary": {
-    "connection_error": 38,
+    "connection_error": 43,
     "http_error": 7,
-    "reachable": 180,
+    "reachable": 175,
     "restricted": 22
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -41,9 +41,8 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -278,7 +277,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
+      "final_url": "https://validate.perfdrive.com/?ssa=825fff03-2b53-4f1f-a053-1c4fdbb89173&ssb=95656228465&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=63b91da6-dxzy-48b8-9299-42ea549be659&ssk=botmanager_support@radware.com&ssm=47767260106459045101471323982388&ssn=b4fd347c860d2a157e49f3618110e548a7c6a6f1d5af-42c5-4b50-bcdd9b&sso=52007183-d94b3b7b558b34959b47388679716c6ef5736c7830c71c7b&ssp=29112423631795513349179554191687029&ssq=41525103060158976554330601941071822837909&ssr=MjAuMTUuMjMxLjIyNA==&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhNmYxZDVhZi00MmM1LTRiNTAtYjE4My1kOTRiM2I3YjU1OGIxLTE3OTU1MzA2MDE5MDUwLTAwMjQ5OTlkMDQ3ZjBmZGVhZDExMCIsInV6bXgiOiI3ZmMwMDBhYTVmMDA3Zi1iZGRiLTRjOGMtYjc1Zi1hZmVhOWMzMmUzNDExLTE3OTU1MzA2MDE5MDUwLTAwZjMxMDVkNTE4YjU1MmU5NTkxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -512,12 +511,12 @@
     {
       "id": "eu-national-funds-gr",
       "status": "connection_error",
-      "error": "URLError"
+      "error": "RemoteDisconnected"
     },
     {
       "id": "gr-eu-funds-single-portal",
       "status": "connection_error",
-      "error": "URLError"
+      "error": "RemoteDisconnected"
     },
     {
       "id": "hk-bud-fund",
@@ -589,9 +588,8 @@
     },
     {
       "id": "in-national-scholarship-portal",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://scholarships.gov.in/"
+      "status": "connection_error",
+      "error": "RemoteDisconnected"
     },
     {
       "id": "in-pmegp",
@@ -926,7 +924,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -1110,9 +1108,8 @@
     },
     {
       "id": "sa-kafalah-guarantees",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.smebank.gov.sa/ar"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "sa-monshaat-support-programmes",
@@ -1121,15 +1118,13 @@
     },
     {
       "id": "sa-sme-bank-funding-gate",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://smebank.gov.sa/en/services/funding-gate"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "sa-sme-bank-programmes",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://smebank.gov.sa/en/services/programs"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "sa-social-development-bank-business",

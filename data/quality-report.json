@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-24T13:56:22.979483+00:00",
+  "generated_at": "2026-11-24T14:36:21.814359+00:00",
   "feeds_checked": 18,
-  "records_checked": 2139,
+  "records_checked": 2131,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1919,
+  "unverified_status": 1911,
   "verification_tiers": {
     "verified_open": 1,
     "api_window_candidate": 213,
-    "official_listing_candidate": 1841,
-    "unverified": 78,
+    "official_listing_candidate": 1836,
+    "unverified": 75,
     "other": 6
   },
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 213,
-    "needs_verification": 1922,
+    "needs_verification": 1914,
     "expired_or_closed": 3
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 437,
+      "records": 431,
       "procurement_candidates": 0,
-      "unverified": 437,
+      "unverified": 431,
       "api_window_candidates": 0,
-      "official_listing_candidates": 437,
+      "official_listing_candidates": 431,
       "historical_archive_records": 0
     },
     {
@@ -101,29 +101,29 @@
     },
     {
       "file": "eu-national-agriculture-discovery.json",
-      "records": 9,
+      "records": 7,
       "procurement_candidates": 0,
-      "unverified": 9,
+      "unverified": 7,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 51,
+      "records": 50,
       "procurement_candidates": 0,
-      "unverified": 51,
+      "unverified": 50,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
     {
       "file": "us-grants-discovery.json",
-      "records": 1371,
+      "records": 1372,
       "procurement_candidates": 0,
-      "unverified": 1371,
+      "unverified": 1372,
       "api_window_candidates": 0,
-      "official_listing_candidates": 1371,
+      "official_listing_candidates": 1372,
       "historical_archive_records": 0
     },
     {
@@ -224,7 +224,7 @@
       "status": "temporarily-unavailable",
       "records_count": 0,
       "http_status": 401,
-      "freshness": "aging",
+      "freshness": "stale",
       "note": "Unauthorized"
     },
     {
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 437,
+      "records_count": 431,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -267,7 +267,7 @@
       "name": "EU — national agriculture",
       "file": "eu-national-agriculture-discovery.json",
       "status": "checked",
-      "records_count": 9,
+      "records_count": 7,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 51,
+      "records_count": 50,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -285,7 +285,7 @@
       "name": "USA — Grants.gov",
       "file": "us-grants-discovery.json",
       "status": "checked",
-      "records_count": 1371,
+      "records_count": 1372,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -378,22 +378,22 @@
     {
       "source_file": "eu-national-agriculture-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 9
+      "records": 7
     },
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 51
+      "records": 50
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 215
+      "records": 208
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 222
+      "records": 223
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -418,7 +418,7 @@
     {
       "source_file": "us-grants-discovery.json",
       "source_status": "posted",
-      "records": 783
+      "records": 784
     }
   ],
   "review_queue_count": 50,
@@ -1105,26 +1105,6 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "187639PROSPECTSEN",
-      "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187639",
-      "deadline": "2026-12-02T22:59:31.000+0000",
-      "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "application_state": "needs_verification",
-      "priority_score": 34,
-      "priority_reasons": [
-        "needs_verification",
-        "deadline_within_30_days"
-      ],
-      "opportunity_type": "funding_candidate",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
       "id": "15482COMPETITIVE_CALLen",
       "title": "NetZeroCities ECT2: Enabling City Transformation 2",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48400288",
@@ -1405,10 +1385,30 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "187757PROSPECTSEN",
-      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187757",
-      "deadline": "2026-12-11T10:00:02.000+0000",
+      "id": "16481COMPETITIVE_CALLen",
+      "title": "SoS2LearnDBS 1st Open Call for Transition Agendas (OC-TAg1-SoS2LearnDBS-2026)",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46939903",
+      "deadline": "2026-12-11T16:00:00.000+0000",
+      "deadline_state": "upcoming",
+      "source_status": "31094502",
+      "application_state": "needs_verification",
+      "priority_score": 34,
+      "priority_reasons": [
+        "needs_verification",
+        "deadline_within_30_days"
+      ],
+      "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "16281COMPETITIVE_CALLen",
+      "title": "UPRAISE: Financial Support to Third Parties (FSTP) call for International Mobility, Type of financial support: Advanced Digital Skills Scholarships for International Mobility at University of Camerino (UNICAM), Cycle 1 – Academic Year 2026/",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46813062",
+      "deadline": "2026-12-11T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
@@ -1430,7 +1430,7 @@
   "procurement_review_queue": [],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 247,
-  "diagnostic_missing_urls": 38,
+  "diagnostic_missing_urls": 43,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
