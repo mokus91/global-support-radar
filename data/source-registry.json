@@ -1499,6 +1499,42 @@
       "status": "discovery-source",
       "notes": "Official page describes a 100% grant for crop inputs and services up to P4,400 per hectare for up to one hectare, plus separate seasonal loans. Fencing and tractor subsidy components have been discontinued. Confirm current-season availability, registration and individual eligibility before presenting as open.",
       "country_code": "BW"
+    },
+    {
+      "id": "na-sme-fund-prosme",
+      "name": "SME Fund Namibia — Funding Calls",
+      "publisher": "SME Fund Namibia / Namibia Investment Promotion and Development Board",
+      "url": "https://www.smefund.na/how-to-apply/funding",
+      "coverage": "Namibia; MSME grants, business growth, agriculture, equipment, market access, mentorship",
+      "kind": "msme-grant-calls",
+      "access": "Official searchable funding-call portal; no public structured feed/API confirmed",
+      "status": "discovery-source",
+      "notes": "Official page lists upcoming second and third calls opening 27 November 2026, up to N$100,000. Homepage currently says no calls are open; preserve upcoming status until the opening date and confirm call-specific eligibility.",
+      "country_code": "NA"
+    },
+    {
+      "id": "na-ssc-development-fund",
+      "name": "Social Security Commission — Development Fund",
+      "publisher": "Social Security Commission of Namibia",
+      "url": "https://df.ssc.org.na/",
+      "coverage": "Namibia; student bursaries, graduate internships, employment and training schemes",
+      "kind": "education-and-employment-support-portal",
+      "access": "Official application portal; no public structured feed/API confirmed",
+      "status": "discovery-source",
+      "notes": "Portal currently labels bursary and internship applications open; confirm deadlines, applicant criteria and availability on the live scheme pages.",
+      "country_code": "NA"
+    },
+    {
+      "id": "na-ssc-csr-fund",
+      "name": "Social Security Commission — CSR Fund",
+      "publisher": "Social Security Commission of Namibia",
+      "url": "https://csr.ssc.org.na/",
+      "coverage": "Namibia; community grants for education, sport, health, women and youth empowerment, vulnerable children, marginalised communities, arts and media",
+      "kind": "community-project-grant-portal",
+      "access": "Official application portal; no public structured feed/API confirmed",
+      "status": "discovery-source",
+      "notes": "Portal reports a 2026 funding-cycle application window; verify whether submissions remain open, eligible applicant types and deadline before listing as open.",
+      "country_code": "NA"
     }
   ],
   "publication_requirements": [
