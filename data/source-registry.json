@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-24",
   "policy": "Only publish individual support programmes after checking the original official publisher page. Portal/catalogue records are discovery sources, not proof of eligibility or an open application.",
   "sources": [
     {
@@ -1487,6 +1487,18 @@
       "status": "discovery-source",
       "notes": "Covers 12 areas including healthcare, sickness, maternity, invalidity, old-age, survivors, employment injuries, family, unemployment, minimum resources and long-term care. The MISSOC database moved to the European Commission website on 14 October 2026. Reference information, not a live grant feed or proof of individual eligibility.",
       "country_code": "EU"
+    },
+    {
+      "id": "bw-ndb-lemang-dijo",
+      "name": "National Development Bank of Botswana – Lemang Dijo Programme",
+      "publisher": "National Development Bank of Botswana / Government of Botswana",
+      "url": "https://www.ndb.bw/lemang-dijo/",
+      "coverage": "Botswana; smallholder crop production inputs and services, agricultural grants and seasonal loans",
+      "kind": "agricultural-grant-and-loan-programme",
+      "access": "Official programme page; no public structured feed/API confirmed",
+      "status": "discovery-source",
+      "notes": "Official page describes a 100% grant for crop inputs and services up to P4,400 per hectare for up to one hectare, plus separate seasonal loans. Fencing and tractor subsidy components have been discontinued. Confirm current-season availability, registration and individual eligibility before presenting as open.",
+      "country_code": "BW"
     }
   ],
   "publication_requirements": [
