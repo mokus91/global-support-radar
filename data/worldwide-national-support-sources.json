@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "scope": "Official support discovery portals and programme records across an expanding set of country and region codes. EU national single portals have been added from the European Commission's 2021–2027 national portal directory. This remains a partial catalogue, not a complete global register. Portal listings are not verified open grants; individual eligibility, application windows and amounts must be confirmed with the responsible official authority. Additional official federal benefit and grant finders for Australia, Canada, the United States and New Zealand were added on 2026-11-23. These are entry points; individual programmes still require separate status and eligibility verification. Additional official government scheme and grant directories for India and Singapore were added on 2026-11-23; these are discovery sources, not confirmation that every listed programme is open.",
   "records": [
     {
@@ -3635,6 +3635,21 @@
       "description_en": "Official funding finder for arts practitioners, arts organisations, educators and community stakeholders. Each grant has separate eligibility, project-start and application rules; some cycles may be closed or open later.",
       "verification_status": "official-government-portal",
       "last_checked": "2026-11-23"
+    },
+    {
+      "id": "bw-lemang-dijo-crop-input-grant-2026",
+      "country_code": "BW",
+      "country_en": "Botswana",
+      "category": "agriculture",
+      "name_hu": "Botswana – Lemang Dijo mezőgazdasági input- és szolgáltatási támogatás",
+      "name_en": "Botswana — Lemang Dijo agricultural input and service grant",
+      "url": "https://www.ndb.bw/lemang-dijo/",
+      "publisher": "National Development Bank of Botswana / Government of Botswana",
+      "kind": "official-agricultural-grant-and-seasonal-loan-programme",
+      "description_hu": "A Lemang Dijo program kisgazdálkodóknak nyújtott mezőgazdasági támogatást tartalmaz. A hivatalos programoldal szerint a növénytermesztési inputokhoz és szolgáltatásokhoz hektáronként legfeljebb 4 400 pula értékű, 100%-os támogatás érhető el, legfeljebb egy hektárra. A támogatás többek között talajművelési szolgáltatásokat, növényvédő szereket, cséplést és műtrágyát fedhet le. A szezonális mezőgazdasági kölcsön külön, visszafizetendő konstrukció. A korábbi kerítés- és traktortámogatási elemeket megszüntették. A részvételhez a Temo Crop Management System rendszerben történő regisztráció és az illetékes mezőgazdasági hatóságnál történő igénylés szükséges; az aktuális szezon feltételeit és a jogosultságot jelentkezés előtt ellenőrizni kell.",
+      "description_en": "The Lemang Dijo programme provides agricultural support to smallholder farmers. The official programme page states that 100% grant support for crop-production inputs and services is available up to P4,400 per hectare, for up to one hectare. Eligible items can include tillage services, pesticides, shelling and threshing, and fertilisers. Seasonal agricultural loans are a separate repayable facility. Earlier fencing and tractor subsidy components have been discontinued. Participation requires registration in the Temo Crop Management System and application through the relevant agriculture authorities; farmers should confirm current-season terms and eligibility before applying.",
+      "verification_status": "official-programme-details-published-current-season-and-individual-eligibility-to-confirm",
+      "last_checked": "2026-11-24"
     }
   ],
   "records_count": 211,
