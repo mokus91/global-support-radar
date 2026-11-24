@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T07:52:51.138065+00:00",
+  "generated_at": "2026-11-24T07:37:45.477935+00:00",
   "feeds_checked": 7,
   "feeds_ok": 3,
-  "new_candidates": 55,
-  "pending_review": 55,
+  "new_candidates": 7,
+  "pending_review": 62,
   "feed_results": [
     {
       "feed_id": "uk-government-updates",
       "country_code": "GB",
-      "fetched": 0,
+      "fetched": 1,
       "status": "ok"
     },
     {
@@ -26,7 +26,7 @@
     {
       "feed_id": "canada-national-news",
       "country_code": "CA",
-      "fetched": 35,
+      "fetched": 36,
       "status": "ok"
     },
     {
@@ -67,6 +67,121 @@
     }
   ],
   "items": [
+    {
+      "candidate_id": "8737f445ea50f3fb9db0",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Official Statistics: Access arrangements for GCSE, AS and A level: 2025 to 2026 academic year",
+      "url": "https://www.gov.uk/government/statistics/announcements/access-arrangements-for-gcse-as-and-a-level-2025-to-2026-academic-year",
+      "published_at": "2026-11-23T23:21:36+00:00",
+      "summary": "Numbers of approved access arrangements for GCSE, AS and A level in England which were valid for use during the 2025 to 2026 academic year, and the number of requests granted for modified papers for the 2026 summer GCSE, AS and A level series.",
+      "matched_keywords": [
+        "grant"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "d70236ca740ff8ded063",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada investment supports Ontario businesses through New Domestic Trade programs",
+      "url": "https://www.canada.ca/en/economic-development-southern-ontario/news/2026/11/government-of-canada-investment-supports-ontario-businesses-through-new-domestic-trade-programs.html",
+      "published_at": "2026-11-23T21:00:09+00:00",
+      "summary": "FedDev Ontario invests nearly $1 million for the Toronto Region Board of Trade to deliver new programming to help Ontario businesses grow and diversify.",
+      "matched_keywords": [
+        "support",
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "b73c999cb829f16f205f",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Canada invests in new mineral exploration capabilities through the Canadian Digital Core Library",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/canada-invests-in-new-mineral-exploration-capabilities-through-the-canadian-digital-core-library.html",
+      "published_at": "2026-11-23T19:00:33+00:00",
+      "summary": "Today, Claude Guay, Parliamentary Secretary to the Minister of Energy and Natural Resources, announced nearly $3 million in funding for the Northwest Territories to scan and digitize the territory’s drill core collections under the Canadian Digital Core Library (CDCL). He also highlighted that in Manitoba, scanning of the Manitoba Geological Survey drill core began on October 19, 2026, at the Midland Sample and Core Library in Winnipeg.",
+      "matched_keywords": [
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "cb33e1be82388b2eb191",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Statement from the Minister of National Defence on Cadet Program",
+      "url": "https://www.canada.ca/en/department-national-defence/news/2026/11/statement-from-the-minister-of-national-defence-on-cadet-program.html",
+      "published_at": "2026-11-23T18:35:31+00:00",
+      "summary": "The Honourable Minister of National Defence, David J. McGuinty, issued the following statement on the cadet program.",
+      "matched_keywords": [
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "a500878c2660af1ba873",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder: Secretary of State Buckley Belanger announces funding for Saskatchewan-based agricultural projects",
+      "url": "https://www.canada.ca/en/agriculture-agri-food/news/2026/11/backgrounder-secretary-of-state-buckley-belanger-announces-funding-for-saskatchewan-based-agricultural-projects.html",
+      "published_at": "2026-11-23T17:30:39+00:00",
+      "summary": "While at the opening event, Burning of the Brand, on behalf of the Honourable Heath MacDonald, Minister of Agriculture and Agri-Food, the Honourable Buckley Belanger, Secretary of State for Rural Development announced up to $15.8 million in funding for 27 agricultural projects taking place across Saskatchewan.",
+      "matched_keywords": [
+        "funding",
+        "agriculture"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "0f4825360c111f4af553",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Secretary of State Buckley Belanger announces funding for Saskatchewan-based agricultural projects at Canadian Western Agribition",
+      "url": "https://www.canada.ca/en/agriculture-agri-food/news/2026/11/secretary-of-state-buckley-belanger-announces-funding-for-saskatchewan-based-agricultural-projects-at-canadian-western-agribition.html",
+      "published_at": "2026-11-23T17:25:48+00:00",
+      "summary": "Canadian Western Agribition (CWA) is Canada’s largest livestock show, bringing the agricultural community together with Canadian and international guests to conduct business, share knowledge, and support industry growth.",
+      "matched_keywords": [
+        "support",
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "fb091156424a0cef98fe",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada announces reconstruction of wharf 401 at Petit-de-Grat Small Craft Harbour",
+      "url": "https://www.canada.ca/en/fisheries-oceans/news/2026/11/mp-jaime-battiste-announces-reconstruction-of-wharf-401-at-petit-de-grat-small-craft-harbour.html",
+      "published_at": "2026-11-23T17:01:51+00:00",
+      "summary": "Small craft harbours are vital infrastructure for coastal and rural communities, supporting fishing, transportation, and the local economies built around them. Billions of dollars in fish and seafood are landed at these harbours every year. Canada’s commercial fisheries, aquaculture, and seafood processing sectors support nearly 65,000 jobs, including more than 42,900 commercial fish harvesters from coast to coast to coast. In 2025, Canada’s fish and seafood exports totaled $8.47 billion.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
     {
       "candidate_id": "9f8f26b231774b00ca11",
       "country_code": "CA",
