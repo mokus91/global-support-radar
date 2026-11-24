@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T02:34:40.147821+00:00",
+  "generated_at": "2026-11-24T08:01:55.380341+00:00",
   "feeds_checked": 18,
   "records_checked": 2136,
   "expired_deadlines": 8,
@@ -17,9 +17,9 @@
   },
   "application_state_tiers": {
     "verified_open": 1,
-    "likely_available": 214,
+    "likely_available": 213,
     "needs_verification": 1911,
-    "expired_or_closed": 10
+    "expired_or_closed": 11
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -435,26 +435,6 @@
       "priority_score": 120,
       "priority_reasons": [
         "verified_open",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WfQ000003rLvpUAE",
-      "title": "第１４回（令和８年度第３回）躍進的な事業推進のための設備投資支援事業",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003rLvpUAE",
-      "deadline": "2026-11-24T04:00:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "likely_available",
-      "priority_score": 80,
-      "priority_reasons": [
-        "likely_available",
         "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
@@ -1418,6 +1398,25 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WfQ000003rLvpUAE",
+      "title": "第１４回（令和８年度第３回）躍進的な事業推進のための設備投資支援事業",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003rLvpUAE",
+      "deadline": "2026-11-24T04:00:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
+      ],
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
