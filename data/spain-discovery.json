@@ -1,11 +1,52 @@
 {
-  "generated_at": "2026-11-24T02:29:57.039786+00:00",
+  "generated_at": "2026-11-24T08:40:37.064475+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
   "records_count": 6,
   "query_errors": [],
   "records": [
+    {
+      "id": "944146",
+      "country_code": "ES",
+      "title_original": "CONVOCATORIA CURSO ACADÉMICO 2026/2027\nMOVILIDADES “ERASMUS PLUS”/ “INTERNACIONALES” ESTUDIOS PARA\nESTUDIANTES DEL MASTER UNIVERSITARIO EN COMERCIO EXTERIOR Y DEL\nMASTER UNIVERSITARIO EN RELACIONES INTERNACIONALES Y ESTUDIOS DE\nASIA ORIENTAL Y MERIDIONAL",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "OTROS · UNIVERSIDAD DE VALLADOLID",
+      "regions": [
+        "ES414 - Palencia",
+        "ES416 - Segovia",
+        "ES417 - Soria",
+        "ES418 - Valladolid"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Educación",
+      "start_date": "2026-11-23",
+      "deadline": "2026-12-10",
+      "indefinite_open": false,
+      "total_call_budget": 31000,
+      "total_call_budget_original": 31000,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education",
+        "transport",
+        "business"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/944146",
+      "application_url": "https://portal.sede.uva.es/sobre-la-sede/registro-electronico",
+      "legal_bases_url": "https://bocyl.jcyl.es/boletines/2021/02/09/pdf/BOCYL-D-09022021-6.pdf",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
     {
       "id": "944124",
       "country_code": "ES",
@@ -179,44 +220,6 @@
       "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/944050",
       "application_url": "https://sede.uca.es/opencms/system/modules/sede/index",
       "legal_bases_url": "https://areadeportes.uca.es/convocatorias-de-ayudas-para-deportistas-de-alto-nivel/",
-      "status": "official-api-window-current",
-      "eligibility_verified": false,
-      "amount_verified": false,
-      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
-      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
-      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
-    },
-    {
-      "id": "943979",
-      "country_code": "ES",
-      "title_original": "Ajut extra obra Sant Aniol de Finestres església",
-      "coofficial_title": null,
-      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · DIPUTACIÓN PROV. DE GIRONA · DIPUTACIÓN PROVINCIAL DE GIRONA",
-      "regions": [
-        "ES51 - CATALUÑA"
-      ],
-      "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
-        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
-      ],
-      "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Cultura",
-      "start_date": "2026-01-01",
-      "deadline": "2026-12-31",
-      "indefinite_open": false,
-      "total_call_budget": 6800,
-      "total_call_budget_original": 6800,
-      "amount_currency": "EUR",
-      "amount_type": "total_call_budget_not_individual_award",
-      "amount_status": "published",
-      "categories": [
-        "all"
-      ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/943979",
-      "application_url": null,
-      "legal_bases_url": "https://www.ddgi.cat/basescast/2023/ordenanza_general_subvenciones_SL_16_1scc.pdf",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
