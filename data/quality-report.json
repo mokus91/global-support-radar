@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T20:23:13.826404+00:00",
+  "generated_at": "2026-11-24T01:56:03.736044+00:00",
   "feeds_checked": 18,
   "records_checked": 2137,
-  "expired_deadlines": 1,
+  "expired_deadlines": 10,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
@@ -18,8 +18,8 @@
   "application_state_tiers": {
     "verified_open": 1,
     "likely_available": 212,
-    "needs_verification": 1922,
-    "expired_or_closed": 2
+    "needs_verification": 1912,
+    "expired_or_closed": 12
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -852,10 +852,10 @@
       "deadline_state": "upcoming",
       "source_status": "acceptance-open-api-filtered",
       "application_state": "likely_available",
-      "priority_score": 74,
+      "priority_score": 80,
       "priority_reasons": [
         "likely_available",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "unclassified",
       "score": 8,
@@ -864,20 +864,20 @@
       ]
     },
     {
-      "source_file": "eu-open-calls-discovery.json",
-      "id": "15681COMPETITIVE_CALLen",
-      "title": "SYSTEMEU - Financial Support to Third Parties (FSTP) \n\nWhat is the aim?\nTo support digital innovations in healthcare, energy and mobility as they progress from the prototype stage (TRL 6) to a market-ready system (TRL 8).\n\nWho can take part",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/45659376",
-      "deadline": "2026-11-23T23:59:00.000+0000",
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WfQ0000049swXUAQ",
+      "title": "令和７年度補正「次世代革新炉の開発・建設に向けた技術開発・サプライチェーン構築支援事業補助金」【三次公募】",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ0000049swXUAQ",
+      "deadline": "2026-12-11T03:00:00.000Z",
       "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "application_state": "needs_verification",
-      "priority_score": 40,
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
+      "priority_score": 74,
       "priority_reasons": [
-        "needs_verification",
-        "deadline_within_7_days"
+        "likely_available",
+        "deadline_within_30_days"
       ],
-      "opportunity_type": "funding_candidate",
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -992,10 +992,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1012,10 +1012,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1032,10 +1032,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1052,10 +1052,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1405,16 +1405,17 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "15982COMPETITIVE_CALLen",
-      "title": "Comprehensive and inclusive support for women and girls' victims of GBV",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/47589185",
-      "deadline": "2026-11-23T15:00:00.000+0000",
+      "id": "187757PROSPECTSEN",
+      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
+      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187757",
+      "deadline": "2026-12-11T10:00:02.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
-      "application_state": "expired_or_closed",
-      "priority_score": 8,
+      "application_state": "needs_verification",
+      "priority_score": 34,
       "priority_reasons": [
-        "expired_or_closed"
+        "needs_verification",
+        "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
