@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T20:18:51.811459+00:00",
+  "generated_at": "2026-11-24T02:30:30.769169+00:00",
   "source_id": "eu-cap-network",
   "source_url": "https://eu-cap-network.ec.europa.eu/eip-agri-innovation-cooperation-funding/funding-opportunities_en",
   "purpose": "Featured agriculture and rural innovation funding leads from the official EU CAP Network. Expired dated calls are excluded; all records require manual verification on the original call page.",
@@ -20,7 +20,7 @@
       "record_type": "agriculture-funding-discovery-candidate",
       "verification_status": "unverified",
       "status": "planned-announcement-not-open",
-      "last_discovered_at": "2026-11-23T20:18:51.810115+00:00"
+      "last_discovered_at": "2026-11-24T02:30:30.767798+00:00"
     },
     {
       "id": "biodiversa",
@@ -37,7 +37,7 @@
       "record_type": "agriculture-funding-discovery-candidate",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "last_discovered_at": "2026-11-23T20:18:51.810137+00:00"
+      "last_discovered_at": "2026-11-24T02:30:30.767820+00:00"
     },
     {
       "id": "forest-partnership-joint-call-2026",
@@ -54,7 +54,7 @@
       "record_type": "agriculture-funding-discovery-candidate",
       "verification_status": "unverified",
       "status": "deadline-in-future-unverified",
-      "last_discovered_at": "2026-11-23T20:18:51.811419+00:00"
+      "last_discovered_at": "2026-11-24T02:30:30.769126+00:00"
     },
     {
       "id": "interreg-calls-on-greener-europe",
@@ -71,7 +71,7 @@
       "record_type": "agriculture-funding-discovery-candidate",
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
-      "last_discovered_at": "2026-11-23T20:18:51.811456+00:00"
+      "last_discovered_at": "2026-11-24T02:30:30.769165+00:00"
     }
   ]
 }

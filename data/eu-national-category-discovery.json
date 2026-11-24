@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T20:20:37Z",
+  "generated_at": "2026-11-24T02:32:01Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
@@ -733,7 +733,7 @@
     },
     {
       "country_code": "CY",
-      "error": "<urlopen error timed out>"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "country_code": "FR",

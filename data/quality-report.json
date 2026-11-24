@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-24T01:56:03.736044+00:00",
+  "generated_at": "2026-11-24T02:34:40.147821+00:00",
   "feeds_checked": 18,
-  "records_checked": 2137,
-  "expired_deadlines": 10,
+  "records_checked": 2136,
+  "expired_deadlines": 8,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1918,
+  "unverified_status": 1915,
   "verification_tiers": {
     "verified_open": 1,
-    "api_window_candidate": 212,
-    "official_listing_candidate": 1841,
+    "api_window_candidate": 214,
+    "official_listing_candidate": 1838,
     "unverified": 77,
     "other": 6
   },
   "application_state_tiers": {
     "verified_open": 1,
-    "likely_available": 212,
-    "needs_verification": 1912,
-    "expired_or_closed": 12
+    "likely_available": 214,
+    "needs_verification": 1911,
+    "expired_or_closed": 10
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -29,10 +29,10 @@
   "feed_summary": [
     {
       "file": "jgrants-discovery.json",
-      "records": 212,
+      "records": 214,
       "procurement_candidates": 0,
       "unverified": 0,
-      "api_window_candidates": 212,
+      "api_window_candidates": 214,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 430,
-      "procurement_candidates": 1,
-      "unverified": 430,
+      "records": 427,
+      "procurement_candidates": 0,
+      "unverified": 427,
       "api_window_candidates": 0,
-      "official_listing_candidates": 430,
+      "official_listing_candidates": 427,
       "historical_archive_records": 0
     },
     {
@@ -195,7 +195,7 @@
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
       "status": "checked",
-      "records_count": 212,
+      "records_count": 214,
       "http_status": null,
       "freshness": "unknown",
       "note": ""
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 431,
+      "records_count": 427,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -388,12 +388,12 @@
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 200
+      "records": 207
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 230
+      "records": 220
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -403,7 +403,7 @@
     {
       "source_file": "jgrants-discovery.json",
       "source_status": "acceptance-open-api-filtered",
-      "records": 212
+      "records": 214
     },
     {
       "source_file": "spain-discovery.json",
@@ -1125,26 +1125,6 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "187639PROSPECTSEN",
-      "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187639",
-      "deadline": "2026-12-02T22:59:31.000+0000",
-      "deadline_state": "upcoming",
-      "source_status": "31094502",
-      "application_state": "needs_verification",
-      "priority_score": 34,
-      "priority_reasons": [
-        "needs_verification",
-        "deadline_within_30_days"
-      ],
-      "opportunity_type": "funding_candidate",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "eu-open-calls-discovery.json",
       "id": "15482COMPETITIVE_CALLen",
       "title": "NetZeroCities ECT2: Enabling City Transformation 2",
       "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48400288",
@@ -1405,10 +1385,30 @@
     },
     {
       "source_file": "eu-open-calls-discovery.json",
-      "id": "187757PROSPECTSEN",
-      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
-      "official_url": "https://webgate.ec.europa.eu/prospect/external/publishedcalls.htm?callId=187757",
-      "deadline": "2026-12-11T10:00:02.000+0000",
+      "id": "16481COMPETITIVE_CALLen",
+      "title": "SoS2LearnDBS 1st Open Call for Transition Agendas (OC-TAg1-SoS2LearnDBS-2026)",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46939903",
+      "deadline": "2026-12-11T16:00:00.000+0000",
+      "deadline_state": "upcoming",
+      "source_status": "31094502",
+      "application_state": "needs_verification",
+      "priority_score": 34,
+      "priority_reasons": [
+        "needs_verification",
+        "deadline_within_30_days"
+      ],
+      "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "16281COMPETITIVE_CALLen",
+      "title": "UPRAISE: Financial Support to Third Parties (FSTP) call for International Mobility, Type of financial support: Advanced Digital Skills Scholarships for International Mobility at University of Camerino (UNICAM), Cycle 1 – Academic Year 2026/",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46813062",
+      "deadline": "2026-12-11T23:59:00.000+0000",
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
@@ -1425,22 +1425,12 @@
     }
   ],
   "non_opportunity_records": 5,
-  "procurement_candidate_records": 1,
-  "procurement_review_queue_count": 1,
-  "procurement_review_queue": [
-    {
-      "source_file": "eu-open-calls-discovery.json",
-      "id": "17045COMPETITIVE_CALLen",
-      "title": "Service request: 𝘏𝘰𝘸 𝘮𝘪𝘨𝘩𝘵 𝘸𝘦 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘢𝘤𝘤𝘦𝘴𝘴 𝘵𝘰 𝘤𝘳𝘪𝘵𝘪𝘤𝘢𝘭 𝘤𝘪𝘷𝘪𝘭 𝘱𝘳𝘰𝘵𝘦𝘤𝘵𝘪𝘰𝘯 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘧𝘰𝘳 𝘳𝘦𝘴𝘪𝘥𝘦𝘯𝘵𝘴 - 𝘦𝘴𝘱𝘦𝘤𝘪𝘢𝘭𝘭𝘺 𝘵𝘩𝘰𝘴𝘦 𝘸𝘩𝘰 𝘥𝘰 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘮𝘰𝘣𝘪𝘭𝘦 𝘢𝘱𝘱𝘴 - 𝘴𝘰 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦𝘺 𝘤𝘢𝘯 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘤𝘭𝘦𝘢𝘳, 𝘵𝘪𝘮𝘦𝘭𝘺 𝘨𝘶𝘪𝘥𝘢𝘯𝘤𝘦 𝘣𝘺 𝘱𝘩𝘰𝘯𝘦 𝘥𝘶𝘳𝘪𝘯𝘨 𝘦𝘮𝘦𝘳𝘨𝘦𝘯𝘤𝘪𝘦𝘴? ",
-      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46807003",
-      "deadline": "2026-11-23T17:00:00.000+0000",
-      "opportunity_type": "procurement_candidate",
-      "classification_basis": "title_identifier_keyword_heuristic; verify original notice"
-    }
-  ],
+  "procurement_candidate_records": 0,
+  "procurement_review_queue_count": 0,
+  "procurement_review_queue": [],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 247,
-  "diagnostic_missing_urls": 46,
+  "diagnostic_missing_urls": 40,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",
