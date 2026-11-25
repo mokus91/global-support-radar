@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T19:41:52.688259+00:00",
+  "generated_at": "2026-11-25T01:59:20.547583+00:00",
   "feeds_checked": 18,
   "records_checked": 2131,
-  "expired_deadlines": 1,
+  "expired_deadlines": 5,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
@@ -18,8 +18,8 @@
   "application_state_tiers": {
     "verified_open": 0,
     "likely_available": 213,
-    "needs_verification": 1914,
-    "expired_or_closed": 4
+    "needs_verification": 1912,
+    "expired_or_closed": 6
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -1032,10 +1032,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1052,10 +1052,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1072,10 +1072,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1404,19 +1404,20 @@
       ]
     },
     {
-      "source_file": "chile-discovery.json",
-      "id": "corfo-startup-chile-growth-13-2026",
-      "title": "Start-Up Chile — Growth 13",
-      "official_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
-      "deadline": "2026-11-24T13:00:00-03:00",
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "16721COMPETITIVE_CALLen",
+      "title": "Low threshold - Elérhető",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46357639",
+      "deadline": "2026-12-12T12:00:00.000+0000",
       "deadline_state": "upcoming",
-      "source_status": "open-and-current",
-      "application_state": "expired_or_closed",
-      "priority_score": 8,
+      "source_status": "31094502",
+      "application_state": "needs_verification",
+      "priority_score": 34,
       "priority_reasons": [
-        "expired_or_closed"
+        "needs_verification",
+        "deadline_within_30_days"
       ],
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
