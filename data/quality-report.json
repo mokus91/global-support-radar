@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:05:47.877320+00:00",
+  "generated_at": "2026-11-25T13:56:30.163617+00:00",
   "feeds_checked": 18,
   "records_checked": 2131,
   "expired_deadlines": 5,
@@ -17,9 +17,9 @@
   },
   "application_state_tiers": {
     "verified_open": 0,
-    "likely_available": 210,
+    "likely_available": 209,
     "needs_verification": 1912,
-    "expired_or_closed": 9
+    "expired_or_closed": 10
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -423,26 +423,6 @@
   ],
   "review_queue_count": 50,
   "review_queue": [
-    {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WJ200000CDYDCMA5",
-      "title": "【農林水産省】中山間地域所得確保推進事業",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYDCMA5",
-      "deadline": "2026-11-25T08:15:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "likely_available",
-      "priority_score": 80,
-      "priority_reasons": [
-        "likely_available",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
     {
       "source_file": "jgrants-discovery.json",
       "id": "a0WJ200000CDY5GMAX",
@@ -1418,6 +1398,25 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WJ200000CDYDCMA5",
+      "title": "【農林水産省】中山間地域所得確保推進事業",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYDCMA5",
+      "deadline": "2026-11-25T08:15:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
+      ],
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
