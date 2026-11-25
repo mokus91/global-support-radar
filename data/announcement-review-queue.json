@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-24T07:37:45.477935+00:00",
+  "generated_at": "2026-11-25T07:41:33.830259+00:00",
   "feeds_checked": 7,
   "feeds_ok": 3,
-  "new_candidates": 7,
-  "pending_review": 62,
+  "new_candidates": 10,
+  "pending_review": 72,
   "feed_results": [
     {
       "feed_id": "uk-government-updates",
       "country_code": "GB",
-      "fetched": 1,
+      "fetched": 4,
       "status": "ok"
     },
     {
@@ -67,6 +67,166 @@
     }
   ],
   "items": [
+    {
+      "candidate_id": "0248ca863ab6745d2bc2",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "World leading licensing scheme for knife sellers",
+      "url": "https://www.gov.uk/government/news/world-leading-licensing-scheme-for-knife-sellers",
+      "published_at": "2026-11-25T07:00:04+00:00",
+      "summary": "Government to take forward plans for new licensing scheme covering businesses and private sellers of knives to keep dangerous weapons off streets.",
+      "matched_keywords": [
+        "scheme"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "86f38c0366f4e5e6b03d",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Procedure rules and forms for civil proceedings in magistrates’ courts and the Crown Court",
+      "url": "https://www.gov.uk/guidance/other-procedure-rules-for-magistrates-courts-and-the-crown-court-with-statutory-instruments",
+      "published_at": "2026-11-25T00:30:04+00:00",
+      "summary": "Procedures rules and forms not replaced by the Criminal Procedure Rules or the Family Procedure Rules and statutory instruments.",
+      "matched_keywords": [
+        "family"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "21c57ee1551746f60641",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Form: Apply to vary or discharge a domestic abuse protection order made in a family court: Form DA3",
+      "url": "https://www.gov.uk/government/publications/apply-to-vary-or-discharge-a-domestic-abuse-protection-order-made-in-a-family-court-form-da3",
+      "published_at": "2026-11-25T00:01:04+00:00",
+      "summary": "Use this form to apply to vary or discharge a domestic abuse protection order made in a family court. The order must still be in force.",
+      "matched_keywords": [
+        "family"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "0192b2125a2e138019fa",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Guidance: Domestic abuse protection notices and orders: guidance for local authorities and support services",
+      "url": "https://www.gov.uk/government/publications/domestic-abuse-protection-notices-and-orders-guidance-for-local-authorities-and-support-services",
+      "published_at": "2026-11-25T00:01:04+00:00",
+      "summary": "Information for local authority staff and domestic abuse support services helping people who need protection from domestic abuse.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "39252befbc4fd7ec95ae",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Parliamentary Secretary Bardeesy to deliver remarks at the Canadian Science and Innovation Policy Conference",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/parliamentary-secretary-bardeesy-to-deliver-remarks-at-the-canadian-science-and-innovation-policy-conference.html",
+      "published_at": "2026-11-24T22:06:03+00:00",
+      "summary": "Karim Bardeesy, Parliamentary Secretary to the Minister of Industry, will deliver remarks at the Canadian Science and Innovation Policy Conference and highlight Government of Canada support for science and research.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "0b6a5751aca9d185a103",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Build Canada Homes marks completion of new homes in Kugluktuk, advancing housing delivery across Nunavut",
+      "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/11/build-canada-homes-marks-completion-of-new-homes-in-kugluktuk-advancing-housing-delivery-across-nunavut.html",
+      "published_at": "2026-11-24T21:55:54+00:00",
+      "summary": "The federal government, government of Nunavut, and Inuit partners are working together to address Nunavut’s critical housing needs by accelerating the delivery of new homes across the territory.",
+      "matched_keywords": [
+        "housing"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "5380d7d6d2e8caafb66b",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "$5,000 Team Canada Strong Red Seal Completion Bonus payments to start landing in bank accounts of approved applicants in early December",
+      "url": "https://www.canada.ca/en/employment-social-development/news/2026/11/5000-team-canada-strong-red-seal-completion-bonus-payments-to-start-landing-in-bank-accounts-of-approved-applicants-in-early-december.html",
+      "published_at": "2026-11-24T15:45:56+00:00",
+      "summary": "Today, the Honourable Patty Hajdu, Minister of Jobs and Families and Minister responsible for the Federal Economic Development Agency for Northern Ontario, announced that over 18,000 applications have been received and determination letters from Service Canada will be sent to applicants in the coming days, with first payments to be issued to eligible journeypersons starting the first week of December.",
+      "matched_keywords": [
+        "payment"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "454f718168c94aef8ddc",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder : Team Canada Strong",
+      "url": "https://www.canada.ca/en/employment-social-development/news/2026/11/backgrounder--team-canada-strong.html",
+      "published_at": "2026-11-24T15:43:57+00:00",
+      "summary": "Team Canada Strong is an $8 billion investment to recruit, train, and hire 80,000 to 100,000 new Red Seal skilled trades workers by 2030-2031. It includes a $2 billion federal investment to help support PT workforce development efforts to better align skills development with local labour market needs and grow apprenticeship opportunities across Canada.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "af75e66edeb5d5fe5449",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Valdez to announce federal support for crisis hotlines responding to gender-based violence in Ontario",
+      "url": "https://www.canada.ca/en/women-gender-equality/news/2026/11/minister-valdez-to-announce-federal-support-for-crisis-hotlines-responding-to-gender-based-violence-in-ontario.html",
+      "published_at": "2026-11-24T15:33:21+00:00",
+      "summary": "The Honourable Rechie Valdez, Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism), alongside the Honourable Charmaine Williams, Associate Minister of Women’s Social and Economic Opportunity, will announce support for crisis hotlines across Ontario.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "955b226901c1bd6450fd",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Miller announces the appointment of Dorothy Myo as Commissioner of Indigenous Languages",
+      "url": "https://www.canada.ca/en/canadian-heritage/news/2026/11/minister-miller-announces-the-appointment-of-dorothy-myo-as-commissioner-of-indigenous-languages.html",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "summary": "Since its creation in 2021, the Office of the Commissioner of Indigenous Languages has supported the efforts of Indigenous Peoples across Canada to reclaim, revitalize, maintain and strengthen their languages",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
     {
       "candidate_id": "8737f445ea50f3fb9db0",
       "country_code": "GB",
