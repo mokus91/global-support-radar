@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/site-health.yml"
       - "scripts/check_published_site.py"
+      - "data/feed-status.json"
   schedule:
     - cron: "17 */6 * * *"
 
