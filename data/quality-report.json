@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-25T19:36:54.321326+00:00",
+  "generated_at": "2026-11-26T01:58:52.167446+00:00",
   "feeds_checked": 18,
   "records_checked": 2131,
-  "expired_deadlines": 5,
+  "expired_deadlines": 16,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
@@ -18,8 +18,8 @@
   "application_state_tiers": {
     "verified_open": 0,
     "likely_available": 209,
-    "needs_verification": 1912,
-    "expired_or_closed": 10
+    "needs_verification": 1905,
+    "expired_or_closed": 17
   },
   "verification_dimensions": {
     "open_status_verified": 1,
@@ -824,6 +824,26 @@
       ]
     },
     {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WfQ000003dVevUAE",
+      "title": "GX地域共創補助金2026",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WfQ000003dVevUAE",
+      "deadline": "2026-12-14T03:00:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "likely_available",
+      "priority_score": 74,
+      "priority_reasons": [
+        "likely_available",
+        "deadline_within_30_days"
+      ],
+      "opportunity_type": "unclassified",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
       "source_file": "eu-open-calls-discovery.json",
       "id": "16242COMPETITIVE_CALLen",
       "title": "LLM-BRIDGE – Venture Incubation Programme - Open Call for Incubators – 2nd Call",
@@ -1072,10 +1092,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
@@ -1398,25 +1418,6 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
-    {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WJ200000CDYDCMA5",
-      "title": "【農林水産省】中山間地域所得確保推進事業",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDYDCMA5",
-      "deadline": "2026-11-25T08:15:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "expired_or_closed",
-      "priority_score": 8,
-      "priority_reasons": [
-        "expired_or_closed"
-      ],
-      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
