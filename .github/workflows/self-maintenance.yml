@@ -33,7 +33,9 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Audit opportunity data quality
-        run: python scripts/audit_opportunity_quality.py > reports/self-maintenance-quality-audit.json
+        run: |
+          mkdir -p reports
+          python scripts/audit_opportunity_quality.py > reports/self-maintenance-quality-audit.json
       - name: Build maintenance summary
         run: |
           python - <<'PY'
@@ -63,7 +65,7 @@ jobs:
               "- A részletes gépi audit a csomagban található JSON-fájl.",
               ""
           ]
-          Path("reports/self-maintenance-summary.md").write_text("\n".join(lines), encoding="utf-8")
+          Path("reports/self-maintenance-summary.md").write_text("\\n".join(lines), encoding="utf-8")
           PY
       - name: Preserve maintenance report
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
