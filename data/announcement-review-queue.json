@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T07:41:33.830259+00:00",
+  "generated_at": "2026-11-26T07:40:00.374092+00:00",
   "feeds_checked": 7,
   "feeds_ok": 3,
-  "new_candidates": 10,
-  "pending_review": 72,
+  "new_candidates": 6,
+  "pending_review": 78,
   "feed_results": [
     {
       "feed_id": "uk-government-updates",
       "country_code": "GB",
-      "fetched": 4,
+      "fetched": 2,
       "status": "ok"
     },
     {
@@ -26,7 +26,7 @@
     {
       "feed_id": "canada-national-news",
       "country_code": "CA",
-      "fetched": 36,
+      "fetched": 34,
       "status": "ok"
     },
     {
@@ -67,6 +67,103 @@
     }
   ],
   "items": [
+    {
+      "candidate_id": "2a2fe17b762d2f733c85",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Guidance: Simplified Process for Internal Market Movements (SPIMM) and UK Carrier (UKC) Scheme: Declaration Category Data Sets",
+      "url": "https://www.gov.uk/government/publications/simplified-process-for-internal-market-movements-spimm-and-uk-carrier-ukc-scheme-declaration-category-data-sets",
+      "published_at": "2026-11-26T00:15:00+00:00",
+      "summary": "Find out the specific data elements that are needed for each declaration category that may be used for imports into Northern Ireland (NI) using SPIMM or UKC.",
+      "matched_keywords": [
+        "scheme"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "fbc53c9dc89e5061f340",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Disability Confident shake-up gives disabled people a greater say",
+      "url": "https://www.gov.uk/government/news/disability-confident-shake-up-gives-disabled-people-a-greater-say",
+      "published_at": "2026-11-26T00:01:02+00:00",
+      "summary": "More disabled people will have the chance to start and stay in work under major reforms to the Disability Confident scheme announced today.",
+      "matched_keywords": [
+        "disability",
+        "scheme"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "3f9d56ca536e3ca81f73",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada advances women’s health research and care",
+      "url": "https://www.canada.ca/en/institutes-health-research/news/2026/11/government-of-canada-advances-womens-health-research-and-care.html",
+      "published_at": "2026-11-25T21:15:02+00:00",
+      "summary": "Women deserve access to care that reflects their health needs at every stage of life. Gaps in research and health care have left too many without appropriate information, treatment, and support. Closing these gaps means building stronger evidence, putting that knowledge into practice and addressing the barriers that affect women’s health and well-being.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "f6038ca70fb598d0c7ed",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada and Lheidli T’enneh First Nation expand recently announced Prince George Hatchery with additional sockeye salmon infrastructure to support Fraser River salmon conservation",
+      "url": "https://www.canada.ca/en/fisheries-oceans/news/2026/11/government-of-canada-and-lheidli-tenneh-first-nation-expand-recently-announced-prince-george-hatchery-with-additional-sockeye-salmon-infrastructure.html",
+      "published_at": "2026-11-25T20:00:41+00:00",
+      "summary": "The Government of Canada and Lheidli T’enneh First Nation are taking another important step to support the conservation and rebuilding of Fraser River salmon.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "b3273975f334a123f2c9",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "The Government of Canada issues joint statement to mark the beginning of the 16 Days of Activism Against Gender-based Violence",
+      "url": "https://www.canada.ca/en/women-gender-equality/news/2026/11/the-government-of-canada-issues-joint-statement-to-mark-the-beginning-of-the-16-days-of-activism-against-gender-based-violence.html",
+      "published_at": "2026-11-25T14:36:32+00:00",
+      "summary": "Today, the Honourable Rechie Valdez, Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism), supported by federal cabinet ministers and secretaries of state*, issued the following statement to mark the beginning of the 16 Days of Activism Against Gender-based Violence and commemorate the International Day for the Elimination of Violence Against Women:",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "a6627291844cd7aa9fc5",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "New initiatives to prevent and address child maltreatment in Canada",
+      "url": "https://www.canada.ca/en/public-health/news/2026/11/new-initiatives-to-prevent-and-address-child-maltreatment-in-canada.html",
+      "published_at": "2026-11-25T14:10:00+00:00",
+      "summary": "Today, the Honourable Marjorie Michel, Minister of Health, announced more than $21 million over five years to support 16 projects that will prevent and address child maltreatment across Canada. Recipients include non-profit organizations and academic institutions.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
     {
       "candidate_id": "0248ca863ab6745d2bc2",
       "country_code": "GB",
