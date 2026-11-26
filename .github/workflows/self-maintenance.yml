@@ -73,7 +73,7 @@ jobs:
       - name: Preserve maintenance report
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: global-support-radar-maintenance-\${{ github.run_number }}
+          name: global-support-radar-maintenance-${{ github.run_number }}
           path: |
             reports/self-maintenance-summary.md
             reports/self-maintenance-quality-audit.json
