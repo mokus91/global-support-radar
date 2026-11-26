@@ -130,7 +130,7 @@ def main() -> None:
     for code, entry in sorted(countries.items()):
         target = COUNTRIES / code.lower() / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(render_page(code, str(entry["name"]), entry.get("portal"), entry["sources"], generated), encoding="utf-8")
+        display_name = "Magyarország" if code == "HU" else str(entry["name"])\n        target.write_text(render_page(code, display_name, entry.get("portal"), entry["sources"], generated), encoding="utf-8")
         urls.add(f"{BASE_URL}countries/{code.lower()}/")
 
     # Add a direct route from every existing country card to its generated profile.
