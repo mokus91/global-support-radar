@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T14:33:36Z",
+  "generated_at": "2026-11-26T15:39:55Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
@@ -274,48 +274,6 @@
       "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-ie-employment-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "employment",
-      "title": "https://www.eufunds.ie/bitci-employment-fair/",
-      "official_url": "https://www.eufunds.ie/bitci-employment-fair/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-ie-housing-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "housing",
-      "title": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
-      "official_url": "https://www.eufunds.ie/e34-million-erdf-social-housing-scheme-launched-for-the-northern-and-western-region/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Housing-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-ie-education-1",
-      "country_code": "IE",
-      "country_en": "Ireland",
-      "country_hu": "Írország",
-      "category": "education",
-      "title": "EU in our Schools",
-      "official_url": "https://www.eufunds.ie/eu-in-schools/",
-      "portal_url": "https://www.eufunds.ie/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
       "id": "eu-lu-housing-1",
       "country_code": "LU",
       "country_en": "Luxembourg",
@@ -370,6 +328,20 @@
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
       "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-lv-business-1",
+      "country_code": "LV",
+      "country_en": "Latvia",
+      "country_hu": "Lettország",
+      "category": "business",
+      "title": "https://www.esfondi.lv/par-es-fondiem/zinas/ar-atveselosanas-fonda-investicijam-pilnveido-satiksmes-un-sakaru-infrastrukturu-latvija",
+      "official_url": "https://www.esfondi.lv/par-es-fondiem/zinas/ar-atveselosanas-fonda-investicijam-pilnveido-satiksmes-un-sakaru-infrastrukturu-latvija",
+      "portal_url": "https://www.esfondi.lv/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
       "id": "eu-mt-education-1",
@@ -456,6 +428,20 @@
       "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-nl-employment-1",
+      "country_code": "NL",
+      "country_en": "Netherlands",
+      "country_hu": "Hollandia",
+      "category": "employment",
+      "title": "Van akker tot brood: Europese samenwerking voor duurzamer brood Een Duitse boer, een Belgische molen en een Limburgse bakker werken met Europese steun samen aan gezonder en duurzamer brood. Lees verder",
+      "official_url": "https://www.europaomdehoek.nl/projecten/van-akker-tot-brood-europese-samenwerking-voor-duurzamer-brood",
+      "portal_url": "https://www.europaomdehoek.nl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-nl-business-1",
       "country_code": "NL",
       "country_en": "Netherlands",
@@ -470,7 +456,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-nl-employment-1",
+      "id": "eu-nl-employment-2",
       "country_code": "NL",
       "country_en": "Netherlands",
       "country_hu": "Hollandia",
@@ -575,6 +561,20 @@
       "category": "business",
       "title": "Założenie działalności gospodarczej",
       "official_url": "https://funduszeeuropejskie.gov.pl/jak-osoby-fizyczne-korzystaja-z-funduszy-europejskich/zalozenie-firmy",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-8",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Webinarium Fundusze Europejskie 2021-2027 dla przedsiębiorców. Wsparcie na szkolenia i podnoszenie kwalifikacji pracowników",
+      "official_url": "https://funduszeeuropejskie.gov.pl/spotkania-informacyjne-i-wydarzenia/webinarium-pt-fundusze-europejskie-2021-2027-dla-przedsiebiorcow-wsparcie-na-szkolenia-i-podnoszenie",
       "portal_url": "https://funduszeeuropejskie.gov.pl/",
       "publisher": "Official national EU funding portal",
       "verification_status": "unverified",

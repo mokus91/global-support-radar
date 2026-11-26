@@ -1,43 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-24T14:31:49+00:00",
+  "updated_at": "2026-11-26T15:38:19+00:00",
   "country_code": "CL",
   "country_en": "Chile",
   "source": "CORFO official active-call page",
   "source_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
-  "scope": "Official CORFO call pages checked by the daily discovery adapter. Only calls whose original page explicitly indicates open applications and provides parseable dates are included.",
-  "records_count": 1,
-  "records": [
-    {
-      "id": "corfo-startup-chile-growth-13-2026",
-      "country_code": "CL",
-      "country_en": "Chile",
-      "country_hu": "Chile",
-      "title": "Start-Up Chile — Growth 13",
-      "title_hu": "Start-Up Chile – Growth 13 startupfejlesztési támogatás",
-      "category": "business",
-      "region": "Todo Chile",
-      "status": "open-and-current",
-      "opening_date": "2026-11-03",
-      "deadline": "2026-11-24T13:00:00-03:00",
-      "amount_max": 75000000,
-      "currency": "CLP",
-      "amount_maximum": 75000000,
-      "amount_currency": "CLP",
-      "amount_type": "maximum_co_funding_per_project",
-      "amount_status": "published",
-      "funding_rate_max_percent": 50,
-      "funding_rate_female_project_lead_percent": 60,
-      "eligibility_summary_hu": "18 év feletti chilei vagy külföldi természetes személyek, illetve a kiírásban meghatározott chilei vagy külföldi startupvállalkozások. A Growth kategória fejlettebb, értékesítéssel rendelkező technológiai startupokat céloz; a pontos bevételi és jogi feltételeket az eredeti szabályzat tartalmazza.",
-      "eligibility_summary_en": "Chilean or foreign individuals aged 18+ and qualifying Chilean or foreign startup entities. Growth targets more mature technology startups with sales; exact revenue and legal requirements are set out in the official rules.",
-      "eligibility_verified": false,
-      "amount_verified": true,
-      "official_url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-13/",
-      "publisher": "Corporación de Fomento de la Producción (CORFO), Government of Chile",
-      "verification_status": "official_page_open_status_and_amount_checked",
-      "source_checked_at": "2026-11-24T14:31:49+00:00",
-      "note_hu": "A nyitott státusz, nyitás/zárás és maximális társfinanszírozás a CORFO hivatalos oldaláról származik. A támogatás legfeljebb a projektköltség 50%-a; női projektvezető esetén a hivatalos oldal 60%-ot jelez. A teljes jogosultságot és a saját hozzájárulást a szabályzatban ellenőrizni kell.",
-      "note_en": "Open status, opening/closing dates and maximum co-financing are taken from CORFO's official page. Funding covers up to 50% of project cost; the page states 60% for a female project leader. Confirm full eligibility and matching contribution in the rules."
-    }
-  ]
+  "scope": "Official CORFO call page checked by the daily discovery adapter. No currently open application was explicitly indicated on the official page at the time of checking.",
+  "source_status": "no_open_calls_detected",
+  "records_count": 0,
+  "records": []
 }

@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-24T14:31:27+00:00",
-  "records_count": 247,
+  "checked_at": "2026-11-26T15:37:59+00:00",
+  "records_count": 289,
   "summary": {
-    "connection_error": 43,
-    "http_error": 7,
-    "reachable": 175,
-    "restricted": 22
+    "connection_error": 40,
+    "http_error": 9,
+    "not_found": 1,
+    "reachable": 214,
+    "restricted": 25
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -41,8 +42,9 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.moet.gov.ae/en/national-programme"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -277,7 +279,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://validate.perfdrive.com/?ssa=825fff03-2b53-4f1f-a053-1c4fdbb89173&ssb=95656228465&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=63b91da6-dxzy-48b8-9299-42ea549be659&ssk=botmanager_support@radware.com&ssm=47767260106459045101471323982388&ssn=b4fd347c860d2a157e49f3618110e548a7c6a6f1d5af-42c5-4b50-bcdd9b&sso=52007183-d94b3b7b558b34959b47388679716c6ef5736c7830c71c7b&ssp=29112423631795513349179554191687029&ssq=41525103060158976554330601941071822837909&ssr=MjAuMTUuMjMxLjIyNA==&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhNmYxZDVhZi00MmM1LTRiNTAtYjE4My1kOTRiM2I3YjU1OGIxLTE3OTU1MzA2MDE5MDUwLTAwMjQ5OTlkMDQ3ZjBmZGVhZDExMCIsInV6bXgiOiI3ZmMwMDBhYTVmMDA3Zi1iZGRiLTRjOGMtYjc1Zi1hZmVhOWMzMmUzNDExLTE3OTU1MzA2MDE5MDUwLTAwZjMxMDVkNTE4YjU1MmU5NTkxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
+      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -351,8 +353,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "http_error",
+      "http_status": 500,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",
@@ -368,8 +371,8 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "restricted",
-      "http_status": 429,
+      "status": "reachable",
+      "http_status": 206,
       "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
@@ -469,19 +472,19 @@
     {
       "id": "gh-leap",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
       "id": "gh-leap-cash-transfer",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
     },
     {
       "id": "gh-leap-cash-transfer-2026",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/home/"
     },
     {
@@ -510,8 +513,9 @@
     },
     {
       "id": "eu-national-funds-gr",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.espa.gr"
     },
     {
       "id": "gr-eu-funds-single-portal",
@@ -588,8 +592,9 @@
     },
     {
       "id": "in-national-scholarship-portal",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://scholarships.gov.in/"
     },
     {
       "id": "in-pmegp",
@@ -799,7 +804,7 @@
     {
       "id": "national-mx-social-2",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.programasparaelbienestar.gob.mx/"
     },
     {
@@ -1108,8 +1113,9 @@
     },
     {
       "id": "sa-kafalah-guarantees",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.smebank.gov.sa/ar"
     },
     {
       "id": "sa-monshaat-support-programmes",
@@ -1118,13 +1124,15 @@
     },
     {
       "id": "sa-sme-bank-funding-gate",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://smebank.gov.sa/en/services/funding-gate"
     },
     {
       "id": "sa-sme-bank-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://smebank.gov.sa/en/services/programs"
     },
     {
       "id": "sa-social-development-bank-business",
@@ -1259,8 +1267,8 @@
     },
     {
       "id": "to-tupulaki-community-grants",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "http_error",
+      "http_status": 520,
       "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
     },
     {
@@ -1371,9 +1379,8 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1382,9 +1389,8 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sassa",
@@ -1406,9 +1412,8 @@
     },
     {
       "id": "za-social-grants",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/services-residents/grants"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "zm-constituency-development-fund-grants-loans",
@@ -1448,6 +1453,257 @@
       "status": "reachable",
       "http_status": 206,
       "final_url": "https://www.nac.gov.sg/find-your-funding/"
+    },
+    {
+      "id": "bw-lemang-dijo-crop-input-grant-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ndb.bw/lemang-dijo/"
+    },
+    {
+      "id": "na-sme-fund-prosme-upcoming-calls-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.smefund.na/how-to-apply/funding"
+    },
+    {
+      "id": "na-ssc-development-fund-bursary-internship-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://df.ssc.org.na/"
+    },
+    {
+      "id": "na-ssc-csr-community-project-fund-2026",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://csr.ssc.org.na/"
+    },
+    {
+      "id": "de-federal-funding-database",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.foerderdatenbank.de/FDB/DE/Home/home.html"
+    },
+    {
+      "id": "de-funding-centre",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://foerderzentrale.gov.de/"
+    },
+    {
+      "id": "de-family-portal",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://familienportal.de/"
+    },
+    {
+      "id": "de-employment-agency",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.arbeitsagentur.de/"
+    },
+    {
+      "id": "de-energy-bafa",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bafa.de/DE/Home/home_node.html"
+    },
+    {
+      "id": "de-kfw-funding",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.kfw.de/inlandsfoerderung/Inlandsf%C3%B6rderung/?redirect=793792"
+    },
+    {
+      "id": "de-agriculture-bmel",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ble.de/DE/Startseite/startseite_node.html"
+    },
+    {
+      "id": "it-incentivi-gov",
+      "status": "connection_error",
+      "error": "URLError"
+    },
+    {
+      "id": "it-invitalia",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.invitalia.it/"
+    },
+    {
+      "id": "it-inps-benefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.inps.it/"
+    },
+    {
+      "id": "it-family-department",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://famiglia.governo.it/it/politiche-e-attivita/finanziamenti-avvisi-e-bandi/"
+    },
+    {
+      "id": "it-cliclavoro",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://cliclavoro.gov.it/"
+    },
+    {
+      "id": "it-agriculture-masaf",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202"
+    },
+    {
+      "id": "it-energy-gse",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gse.it/"
+    },
+    {
+      "id": "nl-rvo-subsidy-guide",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.rvo.nl/subsidies-financiering"
+    },
+    {
+      "id": "nl-business-schemes",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://business.gov.nl/subsidies-and-schemes/"
+    },
+    {
+      "id": "nl-svb-child-benefit",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.svb.nl/en/child-benefit"
+    },
+    {
+      "id": "nl-toeslagen",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/toeslagen"
+    },
+    {
+      "id": "nl-uwv-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.uwv.nl/nl"
+    },
+    {
+      "id": "nl-rvo-agriculture",
+      "status": "not_found",
+      "http_status": 404,
+      "final_url": "https://www.rvo.nl/onderwerpen/subsidies-financiering"
+    },
+    {
+      "id": "pl-gov-family-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.gov.pl/web/family/family-benefits"
+    },
+    {
+      "id": "pl-800-plus",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.pl/web/family/family-800"
+    },
+    {
+      "id": "pl-social-assistance",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.pl/web/gov/skorzystaj-z-pomocy-spolecznej"
+    },
+    {
+      "id": "pl-arimr",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.pl/web/arimr"
+    },
+    {
+      "id": "pl-parp",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.parp.gov.pl/"
+    },
+    {
+      "id": "pl-zus",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.zus.pl/"
+    },
+    {
+      "id": "at-transparency-portal",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://transparenzportal.gv.at/tdb/tp/startpage"
+    },
+    {
+      "id": "at-government-support",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.oesterreich.gv.at/de/themen/steuern_und_finanzen/unterstuetzungen_beihilfen_und_foerderungen"
+    },
+    {
+      "id": "at-aws-business",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.aws.at/"
+    },
+    {
+      "id": "at-ams-employment",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.ams.at/"
+    },
+    {
+      "id": "at-agriculture",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ama.at/"
+    },
+    {
+      "id": "at-energy-climate",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.klimafonds.gv.at/"
+    },
+    {
+      "id": "se-fk-child-benefit",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.forsakringskassan.se/english/parents/child-allowance"
+    },
+    {
+      "id": "se-fk-benefits",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.forsakringskassan.se/english"
+    },
+    {
+      "id": "se-arbetsformedlingen",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://arbetsformedlingen.se/other-languages/english-engelska/additional-support"
+    },
+    {
+      "id": "se-verksamt-business",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://verksamt.se/en/financing-business-advice"
+    },
+    {
+      "id": "se-jordbruksverket",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://jordbruksverket.se/"
+    },
+    {
+      "id": "se-energy-agency",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.energimyndigheten.se/"
     }
   ]
 }

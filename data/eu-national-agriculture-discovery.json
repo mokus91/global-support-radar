@@ -1,27 +1,12 @@
 {
-  "generated_at": "2026-11-24T14:32:59Z",
+  "generated_at": "2026-11-26T15:39:19Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 7,
+  "records_count": 6,
   "records": [
-    {
-      "id": "national-agri-cz-1",
-      "country_code": "CZ",
-      "country_en": "Czechia",
-      "country_hu": "Csehország",
-      "title": "Kde fondy EU pomáhají: Hasiči ve Starči mají moderní zázemí. Nová zbrojnice usnadnila výjezdy 16. 11. 2026 Novotou stále září zbrojnice, která slouží hasičům ve Starči na Třebíčsku. I když z ní vyjíždějí k zásahům už sedm let. Výstavbu nové budovy podpořily evropské fondy částkou přes šest milionů korun. více",
-      "official_url": "https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/novinky/kde-fondy-eu-pomahaji-hasici-ve-starci-maji-modern",
-      "portal_url": "https://www.dotaceeu.cz/cs/uvod",
-      "publisher": "Official national EU funding portal",
-      "category": "agriculture",
-      "record_type": "national-agriculture-link-discovery",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Agriculture-related link discovered on the country official EU funding portal. Confirm the current call, eligibility and deadline on the linked page."
-    },
     {
       "id": "national-agri-dk-1",
       "country_code": "DK",

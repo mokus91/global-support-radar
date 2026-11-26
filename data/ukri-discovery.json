@@ -1,11 +1,65 @@
 {
-  "generated_at": "2026-11-24T14:33:41.514661+00:00",
+  "generated_at": "2026-11-26T15:39:59.271848+00:00",
   "source_id": "uk-ukri",
   "source_url": "https://www.ukri.org/opportunity/",
   "feed_url": "https://www.ukri.org/opportunity/feed/",
   "purpose": "Recent UKRI opportunity feed items. The feed may not contain all grants or application deadlines; verify each item on its official page.",
   "records_count": 20,
   "records": [
+    {
+      "title": "Increasing energy efficiency of AI systems strand one",
+      "official_url": "https://www.ukri.org/opportunity/increasing-energy-efficiency-of-ai-systems-strand-one/",
+      "summary": "This competition is open to start ups, spin-outs, universities and UK registered small and medium-sized enterprises. Research organisations and research technology organisations applying for this competition must provide a clear plan on how they will commercialise or spin-out products. Innovate UK",
+      "published_at": "Thu, 26 Nov 2026 10:08:03 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "UKRI R&D Missions Accelerator Programme: Local Opportunity Lab for NEET Young People",
+      "official_url": "https://www.ukri.org/opportunity/ukri-rd-missions-accelerator-programme-local-opportunity-lab-for-neet-young-people/",
+      "summary": "Apply for funding to establish a Local Opportunity Lab to design, test and evaluate approaches to improve outcomes for young people Not in Education, Employment or Training (NEET). Applicants must be at UKRI-eligible UK research organisations or mayoral strategic, local or combined, or regional authorities. UKRI-wide ESRC",
+      "published_at": "Thu, 26 Nov 2026 09:49:17 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Pre-announcement: UKRI Translation: Proof of Concept 2027",
+      "official_url": "https://www.ukri.org/opportunity/ukri-translation-proof-of-concept-2027/",
+      "summary": "Apply for funding for early-to-mid-stage research commercialisation activities leading to the development of new products, processes or services. Applications are welcomed from all research disciplines including cross and multi-disciplinary approaches. You must be based at a UK research organisation eligible for UKRI funding. UKRI-wide AHRC BBSRC EPSRC ESRC MRC NERC STFC",
+      "published_at": "Thu, 26 Nov 2026 00:00:38 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "AI hardware: Increasing Energy Efficiency strand 2",
+      "official_url": "https://www.ukri.org/opportunity/ai-hardware-increasing-energy-efficiency-strand-2/",
+      "summary": "This competition will be open to start ups, spin outs, universities and UK registered SMEs. A clear plan must be provided by RO’s and RTO’s applying for this competition on how they will commercialise or spin out products. Innovate UK",
+      "published_at": "Wed, 25 Nov 2026 13:51:42 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Astronomy solar and planetary small awards 2027",
+      "official_url": "https://www.ukri.org/opportunity/astronomy-solar-and-planetary-small-awards-2027/",
+      "summary": "Apply for funding to support theory, including modelling, simulation and related software development, observation, experiment and new technology research, relevant to all aspects of solar system science. You must be based at a UK research organisation eligible for UK Research and Innovation (UKRI) funding. STFC",
+      "published_at": "Wed, 25 Nov 2026 12:23:12 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Astronomy observation and theory small awards 2027",
+      "official_url": "https://www.ukri.org/opportunity/astronomy-observation-and-theory-small-awards-2027/",
+      "summary": "Apply for funding to support theory, including modelling, simulation and related software development, observation, experiment and new technology research, relevant to all aspects of astronomy and astrophysics beyond the solar system. You must be based at a UK research organisation eligible for UK Research and Innovation (UKRI) Funding. STFC",
+      "published_at": "Wed, 25 Nov 2026 12:20:55 +0000",
+      "source_id": "uk-ukri",
+      "record_type": "official-rss-discovery-candidate",
+      "verification_status": "unverified"
+    },
     {
       "title": "ICURe Exploit 2027 to 2029",
       "official_url": "https://www.ukri.org/opportunity/icure-exploit-2027-to-2029/",
@@ -128,60 +182,6 @@
       "official_url": "https://www.ukri.org/opportunity/wearables-and-observables-understanding-home-learning-environment/",
       "summary": "Apply for funding to develop, test and validate innovative approaches for measuring and understanding children's home learning environments and their influence on learning, development, school readiness and educational outcomes. Open to UKRI-eligible UK research organisations. UKRI-wide ESRC NERC Innovate UK AHRC BBSRC EPSRC MRC",
       "published_at": "Wed, 04 Nov 2026 14:50:23 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Arctic frontier: accelerating innovation in ocean autonomy",
-      "official_url": "https://www.ukri.org/opportunity/arctic-frontier-accelerating-innovation-in-ocean-autonomy/",
-      "summary": "Apply for funding to develop technological solutions to address the challenges of operating marine autonomous vehicles in remote and exceptionally harsh environments. You must be based at a UK research organisation eligible for UKRI funding. UKRI-wide",
-      "published_at": "Wed, 04 Nov 2026 08:56:12 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "UK-Netherlands co-innovation for quantum technology 2026",
-      "official_url": "https://www.ukri.org/opportunity/uk-netherlands-co-innovation-for-quantum-technology-2026/",
-      "summary": "UK registered businesses can apply for a share of up to £1.5 million for projects in quantum technology. You must collaborate with at least one Netherlands based business applying under the equivalent Netherlands Enterprise Agency (RVO) programme. Innovate UK",
-      "published_at": "Tue, 03 Nov 2026 12:08:52 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Investor Partnerships: National Materials Innovation Programme one",
-      "official_url": "https://www.ukri.org/opportunity/investor-partnerships-national-materials-innovation-programme-one/",
-      "summary": "UK registered micro, small or medium sized businesses can apply for grant funding alongside private investment from selected investor partners. Innovate UK",
-      "published_at": "Tue, 03 Nov 2026 11:44:40 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "2026 to 2027 strategic Longer and Larger (sLoLa): full stage",
-      "official_url": "https://www.ukri.org/opportunity/2026-to-2027-strategic-longer-and-larger-slola/",
-      "summary": "Apply for funding to undertake a large team-based curiosity-driven bioscience discovery research project. You must be based at a UK research organisation eligible for BBSRC funding. Full stage submissions are invitation only following assessment of an sLoLa outline application. BBSRC",
-      "published_at": "Tue, 03 Nov 2026 09:00:51 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Doctoral focal award: chemical threat reduction",
-      "official_url": "https://www.ukri.org/opportunity/doctoral-focal-award-chemical-threat-reduction/",
-      "summary": "Apply for funding to deliver a doctoral focal award (DFA), offering high quality, cohort-based doctoral training in chemical threat reduction skills related to the defence section of the UK government’s Industrial Strategy and the protection of UK national security. EPSRC",
-      "published_at": "Tue, 03 Nov 2026 09:00:44 +0000",
-      "source_id": "uk-ukri",
-      "record_type": "official-rss-discovery-candidate",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "National research and training hub: electromagnetic environment",
-      "official_url": "https://www.ukri.org/opportunity/national-research-and-training-hub-electromagnetic-environment/",
-      "summary": "Apply for funding to deliver a research and training hub, offering both high quality research and cohort-based doctoral training in electromagnetic environment skills related to the defence section of the UK government’s Industrial Strategy and the protection of UK national security. EPSRC",
-      "published_at": "Tue, 03 Nov 2026 09:00:42 +0000",
       "source_id": "uk-ukri",
       "record_type": "official-rss-discovery-candidate",
       "verification_status": "unverified"
