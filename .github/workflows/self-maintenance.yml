@@ -2,6 +2,9 @@ name: Global Support Radar self-maintenance
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/self-maintenance.yml"
   schedule:
     - cron: "53 5 * * *"
 
