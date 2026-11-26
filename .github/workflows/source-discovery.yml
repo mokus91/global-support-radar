@@ -102,6 +102,14 @@ jobs:
         run: python scripts/build_localized_support_pages.py de
       - name: Build Swedish-language official support directory
         run: python scripts/build_localized_support_pages.py sv
+      - name: Build Finnish-language official support directory
+        run: python scripts/build_nordic_ie_pages.py fi
+      - name: Build Danish-language official support directory
+        run: python scripts/build_nordic_ie_pages.py da
+      - name: Build Norwegian-language official support directory
+        run: python scripts/build_nordic_ie_pages.py no
+      - name: Build English-language Ireland support directory
+        run: python scripts/build_nordic_ie_pages.py ie
       - name: Validate refreshed discovery outputs
         run: python scripts/validate_discovery_outputs.py
       - name: Build feed freshness and result-status manifest
