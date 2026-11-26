@@ -1,1489 +1,792 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-26T15:41:36+00:00",
-  "events_count": 193,
+  "generated_at": "2026-11-26T16:37:27+00:00",
+  "events_count": 104,
   "events": [
     {
-      "type": "changed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wj200000cde82mad",
-      "title": "「太陽光発電導入拡大等技術開発事業」の第3回公募",
-      "before": {
-        "status": "acceptance-open-api-filtered",
-        "acceptance_end": "2026-11-25T03:00:00.000Z",
-        "title_original": "「太陽光発電導入拡大等技術開発事業」の第3回公募"
-      },
-      "after": {
-        "status": "acceptance-open-api-filtered",
-        "acceptance_end": "2026-12-08T03:00:00.000Z",
-        "title_original": "「太陽光発電導入拡大等技術開発事業」の第3回公募"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000004btqnuag",
-      "title": "令和８年度在宅医療現場における防犯機器等導入支援事業",
-      "before": {
-        "status": "acceptance-open-api-filtered",
-        "acceptance_end": "2026-12-31T00:00:00.000Z",
-        "amount_maximum": 50000.0,
-        "amount_currency": "JPY",
-        "title_original": "令和８年度在宅医療現場における防犯機器等導入支援事業"
-      },
-      "after": {
-        "status": "acceptance-open-api-filtered",
-        "acceptance_end": "2026-12-19T00:00:00.000Z",
-        "amount_maximum": 50000.0,
-        "amount_currency": "JPY",
-        "title_original": "令和８年度在宅医療現場における防犯機器等導入支援事業"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
       "type": "new",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000004hz0fuag",
-      "title": "都城市中小企業退職金等共済加入促進事業補助金（令和８年度）",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000003ps4fuaa",
-      "title": "女性活躍のための施設整備助成金（リース費用助成コース）",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000003tev3uae",
-      "title": "「２０２６年度　ＮＥＤＯ先導研究プログラムにおける成果把握・要因分析調査」の公募",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000003tibnuaq",
-      "title": "「再生可能エネルギー技術の多様化に関する動向調査」の公募",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wj200000cdydcma5",
-      "title": "【農林水産省】中山間地域所得確保推進事業",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "jgrants-discovery.json",
-      "key": "id:a0wfq000003cyijuao",
-      "title": "「ポスト5G情報通信システム基盤強化研究開発事業（社会課題解決に向けた量子コンピュータ次世代機開発・実証の加速）」（g12-2：部素材）の追加公募",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "chile-discovery.json",
-      "key": "id:corfo-startup-chile-growth-13-2026",
-      "title": "Start-Up Chile — Growth 13",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:945046",
-      "title": "Aprobación das bases para a convocatoria pública de subvencións municipais a familias polo nacemento, adopción ou acollemento de fillo/a, ano 2025-2026. Expte. 506/2026.",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "spain-discovery.json",
-      "key": "id:944997",
-      "title": "Subvención nominativa a la entidad ASOCIACIÓN AMIGOS DEL LIBRO ANTIGUO otorgada por Resolución de la  Vicepresidencia del Instituto de Cultura y Artes de Sevilla (ICAS), de fecha 9 de septiembre de 2026, del Servicio de Gestión Administrativa y Subv.",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944146",
-      "title": "CONVOCATORIA CURSO ACADÉMICO 2026/2027\nMOVILIDADES “ERASMUS PLUS”/ “INTERNACIONALES” ESTUDIOS PARA\nESTUDIANTES DEL MASTER UNIVERSITARIO EN COMERCIO EXTERIOR Y DEL\nMASTER UNIVERSITARIO EN RELACIONES INTERNACIONALES Y ESTUDIOS DE\nASIA ORIENTAL Y MERIDIONAL",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944124",
-      "title": "Programa de Ayudas ONEKIN, 2026. REG (UE) 717/2014.",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944123",
-      "title": "Programa de Ayudas ONEKIN, 2026. REG (UE) 1408/2013.",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944122",
-      "title": "Programa de Ayudas ONEKIN 2026 Reg.(UE) 2023/2831",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944092",
-      "title": "Subvención nominativa a la entidad Noletia, S.L. otorgada por Resolución de la Vicepresidencia del Instituto de Cultura y Artes de Sevilla\n(ICAS), de fecha 17 de junio de 2026, del Servicio de Gestión Administrativa y Subvenciones",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "spain-discovery.json",
-      "key": "id:944050",
-      "title": "Resolución del Vicerrectorado de Estudiantes de la Universidad de Cádiz UCA/REC073VE/2026, por la que se aprueba la convocatoria de ayudas económicas y otros beneficios para Deportistas de Alto Nivel Universitario para el curso 2026/2027",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129401topicsen",
-      "title": "ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129441topicsen",
-      "title": "ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50217944topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218038topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218088topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218126topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218159topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218237topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52395682topicsen",
-      "title": "The European Prize for Women Innovators",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52395722topicsen",
-      "title": "The European Prize for Women Innovators",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:187639prospectsen",
-      "title": "Transatlantic Perspectives: Strengthening the Partnership with Think Tanks in the US",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:187757prospectsen",
-      "title": "Support to Civil Society Organisations (CSOs) and Support to Human Rights and Democracy (HR&D)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52805487topicsen",
-      "title": "Interconnected Innovation Ecosystems (2027.2)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:187909prospectsen",
-      "title": "Une société civile engagée pour des villes résilientes et inclusives, des droits fondamentaux protégés et une faune préservée.",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52657951topicsen",
-      "title": "Films on the Move",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52766713topicsen",
-      "title": "Support for Information Measures relating to the Common Agricultural Policy (IMCAP)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51104692topicsen",
-      "title": "NEWS - Media Freedom Rapid Response Mechanism",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:17463competitive_callen",
-      "title": "COLOURS External Pilots Open Call",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-01-27T17:00:00.000+0000",
-        "title": "COLOURS External Pilots Open Call"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-01-27T17:00:00.000+0000",
-        "title": "COLOURS External Pilots Open Call"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50127970topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50127991topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128010topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128031topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128050topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128065topicsen",
-      "title": "INDUSTRY-FTRI",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128083topicsen",
-      "title": "INDUSTRY-FTRI",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128100topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128116topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128131topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128150topicsen",
-      "title": "INDUSTRY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50131259topicsen",
-      "title": "INDUSTRY-two-stage",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53046693topicsen",
-      "title": "Jean Monnet Policy Debate",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53046721topicsen",
-      "title": "Jean Monnet Policy Debate",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53046749topicsen",
-      "title": "Jean Monnet Policy Debate",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53046777topicsen",
-      "title": "Jean Monnet Policy Debate",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53046805topicsen",
-      "title": "Jean Monnet Policy Debate",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53096851topicsen",
-      "title": "Jean Monnet Actions in other fields of Education and Training: Learning EU",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53099729topicsen",
-      "title": "Jean Monnet Actions for other fields of Education and Training: Teacher Training",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53194793topicsen",
-      "title": "Jean Monnet Actions in the field of Higher Education Teaching and Research",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53194821topicsen",
-      "title": "Jean Monnet Actions in the field of Higher Education Teaching and Research",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53194849topicsen",
-      "title": "Jean Monnet Actions in the field of Higher Education Teaching and Research",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52740251topicsen",
-      "title": "Erasmus Mundus Joint Masters",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51474264topicsen",
-      "title": "European Remembrance - 2026",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569577topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569586topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569595topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569604topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569613topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52569622topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53097108topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53097117topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53097126topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53097135topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53097144topicsen",
-      "title": "EU4H SANTE Open Calls WP2026 first wave",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52951142topicsen",
-      "title": "EIC PATHFINDER 2027",
-      "before": {
-        "status": "31094501",
-        "deadline": "2027-02-25T00:00:00.000+0000",
-        "title": "EIC PATHFINDER 2027"
-      },
-      "after": {
-        "status": "31094502",
-        "deadline": "2027-02-25T00:00:00.000+0000",
-        "title": "EIC PATHFINDER 2027"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51659859topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50127765topicsen",
-      "title": "Excellence Hubs",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128974topicsen",
-      "title": "CLIMATE",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129018topicsen",
-      "title": "CLIMATE",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129079topicsen",
-      "title": "CLIMATE",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129614topicsen",
-      "title": "CLIMATE",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51186858topicsen",
-      "title": "Volunteering Teams in High Priority Areas (VTHPA) - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53135295topicsen",
-      "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of education and training submitted by European NGOs",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53294913topicsen",
-      "title": "Capacity Building in the Field of Sport",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53346112topicsen",
-      "title": "SPORT 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53346144topicsen",
-      "title": "SPORT 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52617926topicsen",
-      "title": "Deploying Strategic Cyber Capabilities Across Europe - Cyber Hubs",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50131963topicsen",
-      "title": "DIGITAL",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50131996topicsen",
-      "title": "DIGITAL",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129572topicsen",
-      "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130058topicsen",
-      "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50132976topicsen",
-      "title": "MSCA COFUND 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50134367topicsen",
-      "title": "MSCA Staff Exchanges 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129307topicsen",
-      "title": "BATTERIES and MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130465topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130557topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53367420topicsen",
-      "title": "Call for proposals for action grants to promote judicial cooperation in civil and criminal matters",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:53367439topicsen",
-      "title": "Call for proposals for action grants to promote judicial cooperation in civil and criminal matters",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51179606topicsen",
-      "title": "Volunteering in support of humanitarian aid operations",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50143142topicsen",
-      "title": "MSCA and Citizens 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50142930topicsen",
-      "title": "Research Infrastructures 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50142949topicsen",
-      "title": "Research Infrastructures 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50142968topicsen",
-      "title": "Research Infrastructures 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50143015topicsen",
-      "title": "Research Infrastructures 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130209topicsen",
-      "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50142773topicsen",
-      "title": "Indirectly Managed Action by the ECCC (2027)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50161078topicsen",
-      "title": "Interconnected Innovation Ecosystems (2027.1)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50161094topicsen",
-      "title": "Interconnected Innovation Ecosystems (2027.1)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50161257topicsen",
-      "title": "Cluster 1 - Health (Single stage - 2027/2)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52891484topicsen",
-      "title": "Quality Label Humanitarian Aid Strand",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50143265topicsen",
-      "title": "Call 01 - single stage (2027)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149001topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149084topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149121topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149169topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149211topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149248topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149265topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149284topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149329topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149561topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149633topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50149727topicsen",
-      "title": "Culture, Creativity and Inclusive Society - 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50128894topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130643topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50147590topicsen",
-      "title": "Civil Security for Society 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50147687topicsen",
-      "title": "Civil Security for Society 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50129464topicsen",
-      "title": "ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50312892topicsen",
-      "title": "SPACE",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:52968829topicsen",
-      "title": "EU Humanitarian Partnership Certificate 2028-2034",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50220812topicsen",
-      "title": "MSCA Doctoral Networks 2026",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50220831topicsen",
-      "title": "RAISE Doctoral Networks for AI in Science",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51426227topicsen",
-      "title": "Submarine Cable Repair Capacities",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50127691topicsen",
-      "title": "Call 04 - single stage (2026)",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17239competitive_callen",
       "title": "Seedbed Venture Catalyst Call for Startups",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17237competitive_callen",
       "title": "Open Call for Implementing Participants of the Empowering Women in Agrifood (EWA) Programme 2027-2028",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17243competitive_callen",
       "title": "Open Call 4 - Short Term and Long Term Funding to support ICT standardisation",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:16621competitive_callen",
       "title": "Skills4Deca –  RTU 1st Scholarship Call",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17241competitive_callen",
       "title": "D-STORM FSTP Call 1 - Loitering Munitions & UCAS: Use Cases, Scenarios and CONOPS",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52256519topicsen",
       "title": "Call for Proposals for ERC Consolidator Grant",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17061competitive_callen",
       "title": "DIGISOC Scholarship Programme - Call for Application - Academic Year 2026/2027 - Issued by the Palacky University in Olomouc (UPOL)",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:15741competitive_callen",
       "title": "O-CEI 2nd OPEN CALL FOR UPTAKE PROJECTS",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:187670prospectsen",
       "title": "Cross-border Programme North Macedonia - Albania under the Instrument of Pre-accession Assistance (IPA III) allocations for 2024",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17238competitive_callen",
       "title": "Proof of Concept & Technology Validation Call",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:17281competitive_callen",
       "title": "First Open Call",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:187607prospectsen",
       "title": "Support to Civil Society, Human Rights and Democracy in Uzbekistan 2026-2027",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:16941competitive_callen",
       "title": "INTEGRATION OF INNOVATIVE OCEAN SOLUTIONS INTO EDITO",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50131715topicsen",
       "title": "AI in Science",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:187959prospectsen",
       "title": "Enhancing the institutional capacity of the Economic Security Bureau of Ukraine in combating currency counterfeiting through the implementation of the International Convention for the Suppression of Counterfeiting Currency, signed in Geneva on 20 April 1929, and EU acquis.",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198573topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198631topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198689topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198747topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198805topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198863topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198921topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53198979topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53199037topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53199095topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53199153topicsen",
+      "title": "Capacity Building in Higher Education",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:16542competitive_callen",
       "title": "GRAIL Open Call — Genesis (1st Open Call)",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51348808topicsen",
+      "title": "European Youth Together 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52867055topicsen",
+      "title": "Capacity Building in the field of Youth",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52867084topicsen",
+      "title": "Capacity Building in the field of Youth",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52867113topicsen",
+      "title": "Capacity Building in the field of Youth",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52867142topicsen",
+      "title": "Capacity Building in the field of Youth",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52617992topicsen",
       "title": "Call for proposals for action grants to support transnational projects on judicial training covering civil law, criminal law or fundamental rights",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51346381topicsen",
+      "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of Youth submitted by European NGOs 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50133030topicsen",
       "title": "Enhancing the European R&I system",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50133046topicsen",
       "title": "Enhancing the European R&I system",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50133060topicsen",
       "title": "Enhancing the European R&I system",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50129422topicsen",
       "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50130350topicsen",
       "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50130372topicsen",
       "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50130896topicsen",
       "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:52547845topicsen",
       "title": "EIC STEP Scale Up Defence",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50130167topicsen",
       "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50161057topicsen",
       "title": "Interconnected Innovation Ecosystems (2027.1)",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+      "detected_at": "2026-11-26T16:37:27+00:00"
     },
     {
-      "type": "removed_from_feed",
+      "type": "new",
       "feed": "eu-open-calls-discovery.json",
       "key": "id:50130689topicsen",
       "title": "MOBILITY",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "new",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52689240topicsen",
+      "title": "Innovative models for neighbourhoods that integrate beauty, inclusiveness and sustainability",
+      "detected_at": "2026-11-26T16:37:27+00:00"
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129401topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52689240topicsen",
-      "title": "Innovative models for neighbourhoods that integrate beauty, inclusiveness and sustainability",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "changed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:356163",
-      "title": "Cooperative Research Agreements Related to the World Trade Center Health Program (U01)",
-      "before": {
-        "status": "posted",
-        "deadline": "2026-12-08",
-        "title": "Cooperative Research Agreements Related to the World Trade Center Health Program (U01)"
-      },
-      "after": {
-        "status": "posted",
-        "deadline": "2027-01-05",
-        "title": "Cooperative Research Agreements Related to the World Trade Center Health Program (U01)"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364215",
-      "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 State Preparedness Funding Opportunity",
-      "before": {
-        "status": "posted",
-        "deadline": "2027-01-07",
-        "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 State Preparedness Funding Opportunity"
-      },
-      "after": {
-        "status": "posted",
-        "deadline": "2027-02-03",
-        "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 State Preparedness Funding Opportunity"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "changed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364214",
-      "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 Industry Preparedness Funding Opportunity",
-      "before": {
-        "status": "posted",
-        "deadline": "2027-01-07",
-        "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 Industry Preparedness Funding Opportunity"
-      },
-      "after": {
-        "status": "posted",
-        "deadline": "2027-02-03",
-        "title": "National Animal Disease Preparedness and Response Program (NADPRP) FY 2027 Industry Preparedness Funding Opportunity"
-      },
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364307",
-      "title": "U.S. Mission to the Kingdom of Bahrain Annual Program Statement (Public Diplomacy Small Grants Program)",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364305",
-      "title": "Cooperative Agreement for affiliated Partner with Rocky Mountain Cooperative Ecosystem Studies Unit",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364304",
-      "title": "ROSES 2025: E.3 Space Biology: Research Studies",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364043",
-      "title": "BJA FY 2026 Residential Substance Abuse Treatment for State Prisoners &ndash; Formula Grants Program",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364309",
-      "title": "Media Projects",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364310",
-      "title": "Curriculum Development: Western Civilization",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364311",
-      "title": "Disaster Assistance for State Units on Aging (SUAs) and Tribal Organizations",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364312",
-      "title": "American Indian Alaska Native Head Start Expansion, Early Head Start Expansion and Early Head Start-Child Care Partnership Grants",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364313",
-      "title": "American Indian Alaska Native Head Start Grants in Multiple States",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364314",
-      "title": "Strengthening U.S. Public Health Infrastructure Through Tailored Support",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:351124",
-      "title": "Competing Revisions to Existing NIH Single Project Research Grants and Cooperative Agreements (Clinical Trial Optional)",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "key": "id:50129441topicsen",
+      "title": "ENERGY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364063",
-      "title": "SMART FY26 Support for Adam Walsh Act Implementation Grant Program",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52303917topicsen",
+      "title": "Strengthening European Cybersecurity Technologies, Capacities and Preparedness",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364159",
-      "title": "Charles B. Rangel Graduate Foreign Affairs Fellowship Program Administration Grant",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52303950topicsen",
+      "title": "Strengthening European Cybersecurity Technologies, Capacities and Preparedness",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364158",
-      "title": "2027 Thomas R. Pickering Foreign Affairs Fellowship Program Selection Grant",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52303958topicsen",
+      "title": "Strengthening European Cybersecurity Technologies, Capacities and Preparedness",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364155",
-      "title": "2027 Donald M.  Payne International Development Graduate Fellowship Program &ndash; Selection",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664269topicsen",
+      "title": "Transformative change towards a nature-positive economy and society",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364161",
-      "title": "Charles B. Rangel Graduate Foreign Affairs Fellowship Program&#8239;Selection Grant",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664453topicsen",
+      "title": "Transformative change towards a nature-positive economy and society",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "us-grants-discovery.json",
-      "key": "id:364162",
-      "title": "2027 Thomas R. Pickering Foreign Affairs Fellowship Program Administration Grant",
-      "detected_at": "2026-11-26T15:41:36+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:e6d93e66a471b0633acfc49786f1ec5d4ce4c6fa3d05895bf356b0bcaf0b06ba",
-      "title": "Increasing energy efficiency of AI systems strand one",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:3059f5f130965c15c473e215851c15d29c09523b5fbf97e3049bff0b6deea1cf",
-      "title": "UKRI R&D Missions Accelerator Programme: Local Opportunity Lab for NEET Young People",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:611483e30ff6ea1e20cf6dee6ef8087085c8d68b3ea5925d9ebc504fdfc550a9",
-      "title": "Pre-announcement: UKRI Translation: Proof of Concept 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:33660d2067ec6f89274b90523dd4735146182a7f2ba5100e238f2e94ea586352",
-      "title": "AI hardware: Increasing Energy Efficiency strand 2",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:2af03669ef4c6a8073a1b01763b44ed91b824cb6a1ef451d2cbc56ddf421fa02",
-      "title": "Astronomy solar and planetary small awards 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:442a6b347c02692d68e2795c2ccca9c511e956333be443d9bec4d96e9a8d90a9",
-      "title": "Astronomy observation and theory small awards 2027",
-      "detected_at": "2026-11-26T15:41:36+00:00"
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:33b9d6c1620cee4538dd8a09187555cc69422b57f85ddefcdd6673bb621737a3",
-      "title": "Arctic frontier: accelerating innovation in ocean autonomy",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664569topicsen",
+      "title": "Transformative change towards a nature-positive economy and society",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:539c0a0b3fe6e4574fd4d3ec8b797fbe337afe160378bfecf526b1933862e470",
-      "title": "UK-Netherlands co-innovation for quantum technology 2026",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52968501topicsen",
+      "title": "Not-for-profit European sport events",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:b9eb28779103582ada25f2ea54f7bc033f898c0fbb3a88f9cf705c8ad5d5205a",
-      "title": "Investor Partnerships: National Materials Innovation Programme one",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:53050046topicsen",
+      "title": "Large scale not-for-profit European sport event",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:eb080037428a9521b7ab60f1dfc868533295dcb15487148b05474ae65f31e3c5",
-      "title": "2026 to 2027 strategic Longer and Larger (sLoLa): full stage",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52304288topicsen",
+      "title": "NEWS - Media Literacy",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:2e707d14ad810b7a66489cdd69cbabcbfe8c7e79ae9622ba6a13e3ebdfe9d94a",
-      "title": "Doctoral focal award: chemical threat reduction",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:17463competitive_callen",
+      "title": "COLOURS External Pilots Open Call",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ukri-discovery.json",
-      "key": "fallback:bbf35a922fe499f078fd354b5189be76847e931e03a6cfd419668fd27a80425a",
-      "title": "National research and training hub: electromagnetic environment",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128031topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
-      "type": "new",
-      "feed": "ca-cihr-discovery.json",
-      "key": "fallback:28f7f496412362c0768f6ff2c86955a2b8941b53bbacba19e40fc0ee556ee981",
-      "title": "Notice of Upcoming Funding Opportunity: Team Grant – GACD 2027: Implementation research focused on strategies targeting chronic non-communicable diseases (NCD) in children and young people",
-      "detected_at": "2026-11-26T15:41:36+00:00"
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128050topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "ca-cihr-discovery.json",
-      "key": "fallback:abda392544f77e2a0ae075f432a295c0abf67d8820e598c3e18e42bac2156fe3",
-      "title": "Notice of Funding Opportunity: Team Grant – GACD 2027: Implementation research focused on strategies targeting chronic non-communicable diseases (NCD) in children and young people",
-      "detected_at": "2026-11-26T15:41:36+00:00",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128065topicsen",
+      "title": "INDUSTRY-FTRI",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128083topicsen",
+      "title": "INDUSTRY-FTRI",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128100topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128116topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128131topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128150topicsen",
+      "title": "INDUSTRY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131259topicsen",
+      "title": "INDUSTRY-two-stage",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664946topicsen",
+      "title": "Bridging actions 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664966topicsen",
+      "title": "Bridging actions 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52740251topicsen",
+      "title": "Erasmus Mundus Joint Masters",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51474244topicsen",
+      "title": "European Remembrance - 2026",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51474264topicsen",
+      "title": "European Remembrance - 2026",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:51474284topicsen",
+      "title": "European Remembrance - 2026",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50128974topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129018topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129041topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129079topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129170topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129614topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129635topicsen",
+      "title": "CLIMATE",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52762960topicsen",
+      "title": "European Universities",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52456240topicsen",
+      "title": "Call for proposals for ERC Proof of Concept",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133076topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50133091topicsen",
+      "title": "Enhancing the European R&I system",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52617926topicsen",
+      "title": "Deploying Strategic Cyber Capabilities Across Europe - Cyber Hubs",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131803topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50131822topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50132158topicsen",
+      "title": "DIGITAL",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130058topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50132976topicsen",
+      "title": "MSCA COFUND 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50129307topicsen",
+      "title": "BATTERIES and MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130465topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130557topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664675topicsen",
+      "title": "Bridging actions 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664744topicsen",
+      "title": "Bridging actions 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52664775topicsen",
+      "title": "Bridging actions 2027",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130209topicsen",
+      "title": "BATTERIES and ENERGY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50161078topicsen",
+      "title": "Interconnected Innovation Ecosystems (2027.1)",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50161094topicsen",
+      "title": "Interconnected Innovation Ecosystems (2027.1)",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50161257topicsen",
+      "title": "Cluster 1 - Health (Single stage - 2027/2)",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130643topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130730topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:50130810topicsen",
+      "title": "MOBILITY",
+      "detected_at": "2026-11-26T16:37:27+00:00",
+      "note": "No longer present in this feed; this does not prove the opportunity is closed."
+    },
+    {
+      "type": "removed_from_feed",
+      "feed": "eu-open-calls-discovery.json",
+      "key": "id:52592866topicsen",
+      "title": "EIC STEP Scale Up",
+      "detected_at": "2026-11-26T16:37:27+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     }
   ],

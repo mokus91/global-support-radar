@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-26T15:41:37.001085+00:00",
+  "generated_at": "2026-11-26T16:37:27.417726+00:00",
   "feeds_checked": 18,
-  "records_checked": 2200,
+  "records_checked": 2187,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1987,
+  "unverified_status": 1974,
   "verification_tiers": {
     "verified_open": 0,
     "api_window_candidate": 211,
-    "official_listing_candidate": 1913,
-    "unverified": 74,
+    "official_listing_candidate": 1901,
+    "unverified": 73,
     "other": 2
   },
   "application_state_tiers": {
     "verified_open": 0,
     "likely_available": 211,
-    "needs_verification": 1988,
+    "needs_verification": 1975,
     "expired_or_closed": 1
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 505,
+      "records": 493,
       "procurement_candidates": 0,
-      "unverified": 505,
+      "unverified": 493,
       "api_window_candidates": 0,
-      "official_listing_candidates": 505,
+      "official_listing_candidates": 493,
       "historical_archive_records": 0
     },
     {
@@ -110,9 +110,9 @@
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 50,
+      "records": 49,
       "procurement_candidates": 0,
-      "unverified": 50,
+      "unverified": 49,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 505,
+      "records_count": 493,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 50,
+      "records_count": 49,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -348,7 +348,7 @@
       "name": "Worldwide — portal reachability",
       "file": "worldwide-portal-health.json",
       "status": "checked",
-      "records_count": 289,
+      "records_count": 313,
       "http_status": null,
       "freshness": "fresh",
       "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline."
@@ -378,17 +378,17 @@
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 50
+      "records": 49
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 239
+      "records": 251
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 266
+      "records": 242
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -1424,8 +1424,8 @@
   "procurement_review_queue_count": 0,
   "procurement_review_queue": [],
   "historical_archive_records": 4000,
-  "diagnostic_records_checked": 289,
-  "diagnostic_missing_urls": 40,
+  "diagnostic_records_checked": 313,
+  "diagnostic_missing_urls": 48,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

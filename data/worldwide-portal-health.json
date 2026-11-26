@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-26T15:37:59+00:00",
-  "records_count": 289,
+  "checked_at": "2026-11-26T16:31:08+00:00",
+  "records_count": 313,
   "summary": {
-    "connection_error": 40,
-    "http_error": 9,
-    "not_found": 1,
-    "reachable": 214,
-    "restricted": 25
+    "connection_error": 48,
+    "http_error": 7,
+    "not_found": 2,
+    "reachable": 226,
+    "restricted": 30
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -42,9 +42,8 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -223,9 +222,8 @@
     },
     {
       "id": "co-economia-popular-para-el-cambio",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "co-sena-fondo-emprender-seed-capital",
@@ -241,9 +239,8 @@
     },
     {
       "id": "national-co-social-2",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "cy-eu-funds-single-portal",
@@ -353,9 +350,8 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "http_error",
-      "http_status": 500,
-      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "eu-funding-guide",
@@ -371,9 +367,9 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "status": "restricted",
+      "http_status": 429,
+      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "eu-step-funding",
@@ -644,8 +640,8 @@
     },
     {
       "id": "jp-mirasapo-subsidy-schedule-2026",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "restricted",
+      "http_status": 403,
       "final_url": "https://mirasapo-plus.go.jp/"
     },
     {
@@ -757,15 +753,13 @@
     },
     {
       "id": "eu-national-funds-lv",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.esfondi.lv/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "lv-eu-funds-single-portal",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.esfondi.lv/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "eu-national-funds-mt",
@@ -929,7 +923,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -969,9 +963,8 @@
     },
     {
       "id": "om-sme-financing-incentives",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.sme.gov.om/en/financing-related-programs-for-private-companies/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "national-pe-agriculture-1",
@@ -1261,14 +1254,13 @@
     },
     {
       "id": "to-trade-facilitation-project-implementation-grant",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.mted.gov.to/tnp/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "to-tupulaki-community-grants",
-      "status": "http_error",
-      "http_status": 520,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
     },
     {
@@ -1379,8 +1371,9 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1389,20 +1382,19 @@
     },
     {
       "id": "za-incentives",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
+    },
+    {
+      "id": "za-sassa",
       "status": "connection_error",
       "error": "URLError"
     },
     {
-      "id": "za-sassa",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
-    },
-    {
       "id": "za-sassa-services",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sedfa",
@@ -1412,8 +1404,9 @@
     },
     {
       "id": "za-social-grants",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/services-residents/grants"
     },
     {
       "id": "zm-constituency-development-fund-grants-loans",
@@ -1516,9 +1509,8 @@
     },
     {
       "id": "de-agriculture-bmel",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.ble.de/DE/Startseite/startseite_node.html"
+      "status": "connection_error",
+      "error": "TimeoutError"
     },
     {
       "id": "it-incentivi-gov",
@@ -1606,7 +1598,7 @@
     {
       "id": "pl-800-plus",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.gov.pl/web/family/family-800"
     },
     {
@@ -1623,8 +1615,8 @@
     },
     {
       "id": "pl-parp",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://www.parp.gov.pl/"
     },
     {
@@ -1704,6 +1696,150 @@
       "status": "reachable",
       "http_status": 200,
       "final_url": "https://www.energimyndigheten.se/"
+    },
+    {
+      "id": "fi-grants-search",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.haeavustuksia.fi/"
+    },
+    {
+      "id": "fi-apply-grants",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.valtiokonttori.fi/en/services/government-grant-services/apply-for-grants/"
+    },
+    {
+      "id": "fi-kela-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.kela.fi/families"
+    },
+    {
+      "id": "fi-suomi-business",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.suomi.fi/company/financing-a-business-and-business-subsidies/aid-and-subsidies"
+    },
+    {
+      "id": "fi-business-finland",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.businessfinland.fi/en/services/funding/"
+    },
+    {
+      "id": "fi-agriculture",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ruokavirasto.fi/en/"
+    },
+    {
+      "id": "dk-life-denmark-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://lifeindenmark.borger.dk/"
+    },
+    {
+      "id": "dk-child-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://lifeindenmark.borger.dk/family-and-children/family-benefits/child-and-youth-benefits"
+    },
+    {
+      "id": "dk-housing-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://lifeindenmark.borger.dk/housing-and-moving/housing-benefits"
+    },
+    {
+      "id": "dk-business-support",
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://businessindenmark.virk.dk/"
+    },
+    {
+      "id": "dk-agriculture",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.lbst.dk/"
+    },
+    {
+      "id": "dk-energy",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://ens.dk/en"
+    },
+    {
+      "id": "no-nav-benefits",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.nav.no/tjenester/en"
+    },
+    {
+      "id": "no-nav-family",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.nav.no/familie"
+    },
+    {
+      "id": "no-housing-bank",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.husbanken.no/person/bostotte/"
+    },
+    {
+      "id": "no-innovation-norway",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.innovasjonnorge.no/en/"
+    },
+    {
+      "id": "no-agriculture",
+      "status": "not_found",
+      "http_status": 404,
+      "final_url": "https://www.landbruksdirektoratet.no/en"
+    },
+    {
+      "id": "no-financial-assistance",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.nav.no/okonomisk-sosialhjelp/en"
+    },
+    {
+      "id": "ie-enterprise-hub",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.neh.gov.ie/"
+    },
+    {
+      "id": "ie-enterprise-ireland",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.enterprise-ireland.com/en/supports/funding-and-grants"
+    },
+    {
+      "id": "ie-social-welfare",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gov.ie/en/organisation/department-of-social-protection/"
+    },
+    {
+      "id": "ie-child-benefit",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gov.ie/en/department-of-social-protection/services/child-benefit/"
+    },
+    {
+      "id": "ie-agriculture",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/collections/schemes-and-payments/"
+    },
+    {
+      "id": "ie-seai-energy",
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.seai.ie/grants/"
     }
   ]
 }

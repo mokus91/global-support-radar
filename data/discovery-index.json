@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-26T15:38:11.155326+00:00",
+  "generated_at": "2026-11-26T16:31:25.312541+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 179,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -247,6 +247,14 @@
     {
       "title": "Business premises restructuring fund",
       "url": "https://www.data.gouv.fr/datasets/fonds-de-restructuration-des-locaux-dactivite",
+      "query": "business funding",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "business R&D; sources of funding for own R&D activities; Every two years in 2007",
+      "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/FtgForskFinansSUM",
       "query": "business funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -525,6 +533,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "FSS — Scholarship students by level and sector of training",
+      "url": "https://www.data.gouv.fr/datasets/fss-etudiants-boursiers-par-echelon-et-par-secteur-de-formation-idf",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "FVG University Scholarships",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/borse-di-studio-universitarie-fvg#",
       "query": "scholarships",
@@ -544,6 +560,14 @@
       "title": "goult-housing",
       "url": "https://opendata.ozwillo.com/dataset/goult-logement",
       "query": "housing assistance",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Government Consolidated Fund (Annual)",
+      "url": "https://irisapi.nso.gov.mt/nsi_ws/rest/v2/structure/dataflow/MT1/DF_GOV_CONS_FUND_ANNUAL",
+      "query": "government grants",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1037,14 +1061,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "PACA4JOB Business Events",
-      "url": "https://www.data.gouv.fr/datasets/paca4job-business-events",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "PoliS - Lombardy Grants subsidies economic advantages - Grants Scholarships -",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/polis-lombardia-sovvenzioni-sussidi-vantaggi-economici-contributi-borse-di-studio#",
       "query": "scholarships",
@@ -1191,14 +1207,6 @@
     {
       "title": "Scholarship students in health and social training (Feb. 2014)",
       "url": "https://data.iledefrance.fr/explore/dataset/etudiants-boursiers-des-formations-sanitaires-et-sociales-fev-2014/",
-      "query": "scholarships",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Scholarship students in health and social training (Sept. 2009)",
-      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2009/",
       "query": "scholarships",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

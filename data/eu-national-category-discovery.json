@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T15:39:55Z",
+  "generated_at": "2026-11-26T16:35:03Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
-  "portals_checked": 18,
-  "records_count": 50,
+  "portals_checked": 17,
+  "records_count": 49,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -328,20 +328,6 @@
       "verification_status": "unverified",
       "status": "unverified-directory-lead",
       "description": "Education-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
-    },
-    {
-      "id": "eu-lv-business-1",
-      "country_code": "LV",
-      "country_en": "Latvia",
-      "country_hu": "Lettország",
-      "category": "business",
-      "title": "https://www.esfondi.lv/par-es-fondiem/zinas/ar-atveselosanas-fonda-investicijam-pilnveido-satiksmes-un-sakaru-infrastrukturu-latvija",
-      "official_url": "https://www.esfondi.lv/par-es-fondiem/zinas/ar-atveselosanas-fonda-investicijam-pilnveido-satiksmes-un-sakaru-infrastrukturu-latvija",
-      "portal_url": "https://www.esfondi.lv/",
-      "publisher": "Official national EU funding portal",
-      "verification_status": "unverified",
-      "status": "unverified-directory-lead",
-      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
       "id": "eu-mt-education-1",
@@ -740,6 +726,10 @@
     {
       "country_code": "LT",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "country_code": "LV",
+      "error": "<urlopen error timed out>"
     },
     {
       "country_code": "RO",
