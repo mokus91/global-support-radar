@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-26T19:43:09.312559+00:00",
+  "generated_at": "2026-11-26T20:25:26.611135+00:00",
   "feeds_checked": 18,
-  "records_checked": 2187,
+  "records_checked": 2177,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 1974,
+  "unverified_status": 1964,
   "verification_tiers": {
     "verified_open": 0,
     "api_window_candidate": 211,
-    "official_listing_candidate": 1901,
-    "unverified": 73,
+    "official_listing_candidate": 1887,
+    "unverified": 77,
     "other": 2
   },
   "application_state_tiers": {
     "verified_open": 0,
     "likely_available": 211,
-    "needs_verification": 1975,
+    "needs_verification": 1965,
     "expired_or_closed": 1
   },
   "verification_dimensions": {
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 493,
+      "records": 479,
       "procurement_candidates": 0,
-      "unverified": 493,
+      "unverified": 479,
       "api_window_candidates": 0,
-      "official_listing_candidates": 493,
+      "official_listing_candidates": 479,
       "historical_archive_records": 0
     },
     {
@@ -110,9 +110,9 @@
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 49,
+      "records": 53,
       "procurement_candidates": 0,
-      "unverified": 49,
+      "unverified": 53,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 493,
+      "records_count": 479,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 49,
+      "records_count": 53,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -378,17 +378,17 @@
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 49
+      "records": 53
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 251
+      "records": 228
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 242
+      "records": 251
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -1425,7 +1425,7 @@
   "procurement_review_queue": [],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 313,
-  "diagnostic_missing_urls": 48,
+  "diagnostic_missing_urls": 40,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

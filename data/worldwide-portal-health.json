@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-26T16:31:08+00:00",
+  "checked_at": "2026-11-26T20:21:13+00:00",
   "records_count": 313,
   "summary": {
-    "connection_error": 48,
+    "connection_error": 40,
     "http_error": 7,
     "not_found": 2,
-    "reachable": 226,
-    "restricted": 30
+    "reachable": 232,
+    "restricted": 32
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -42,8 +42,9 @@
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.moet.gov.ae/en/national-programme"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -222,8 +223,9 @@
     },
     {
       "id": "co-economia-popular-para-el-cambio",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
     },
     {
       "id": "co-sena-fondo-emprender-seed-capital",
@@ -239,8 +241,9 @@
     },
     {
       "id": "national-co-social-2",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://prosperidadsocial.gov.co/programas/economia-popular-para-el-cambio/"
     },
     {
       "id": "cy-eu-funds-single-portal",
@@ -276,7 +279,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
+      "final_url": "https://validate.perfdrive.com/?ssa=ee2079ad-b15f-4ab6-825d-e6938f2cfccb&ssb=10496224443&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=10642b20-dxzy-4b9c-b33a-c42ea4f4685b&ssk=botmanager_support@radware.com&ssm=51365239736536881106896735870576&ssn=17237c2a9035fd771f89bef01362e15020f11ee9a99c-0566-4cbc-a4afa8&sso=4590ba70-d55ac88de3d72389fa50d95e8016fa1913a654c982b79808&ssp=83349139711795727266179576678430146&ssq=93973982436551855938824365239170622003979&ssr=NTIuMjUwLjIzNC4yMw==&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAxZWU5YTk5Yy0wNTY2LTRjYmMtYWE3MC1kNTVhYzg4ZGUzZDcxLTE3OTU3MjQzNjUyMjIwLTAwMmU1MmNmMTQ2ZWY4ODFhNWUxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUiLCJ1em14IjoiN2ZjMDAwZjBhMGU5NTMtMWRkNS00MWVhLWFmNTYtM2Q0NGIxOGFkZmQ2MS0xNzk1NzI0MzY1MjIyMC0wMGY3MmQzZWY1YTk1YmRlNmZkMTAifQ=="
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -468,19 +471,19 @@
     {
       "id": "gh-leap",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
       "id": "gh-leap-cash-transfer",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
     },
     {
       "id": "gh-leap-cash-transfer-2026",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/home/"
     },
     {
@@ -515,8 +518,9 @@
     },
     {
       "id": "gr-eu-funds-single-portal",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.espa.gr/"
     },
     {
       "id": "hk-bud-fund",
@@ -640,8 +644,8 @@
     },
     {
       "id": "jp-mirasapo-subsidy-schedule-2026",
-      "status": "restricted",
-      "http_status": 403,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://mirasapo-plus.go.jp/"
     },
     {
@@ -753,13 +757,15 @@
     },
     {
       "id": "eu-national-funds-lv",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.esfondi.lv/"
     },
     {
       "id": "lv-eu-funds-single-portal",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.esfondi.lv/"
     },
     {
       "id": "eu-national-funds-mt",
@@ -798,7 +804,7 @@
     {
       "id": "national-mx-social-2",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.programasparaelbienestar.gob.mx/"
     },
     {
@@ -963,8 +969,9 @@
     },
     {
       "id": "om-sme-financing-incentives",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.sme.gov.om/en/financing-related-programs-for-private-companies/"
     },
     {
       "id": "national-pe-agriculture-1",
@@ -1254,8 +1261,9 @@
     },
     {
       "id": "to-trade-facilitation-project-implementation-grant",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.mted.gov.to/tnp/"
     },
     {
       "id": "to-tupulaki-community-grants",
@@ -1371,9 +1379,8 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1382,19 +1389,20 @@
     },
     {
       "id": "za-incentives",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/business-incentives"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "za-sassa",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
     },
     {
       "id": "za-sassa-services",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://services.sassa.gov.za/portal/r/sassa/sassa/home"
     },
     {
       "id": "za-sedfa",
@@ -1404,9 +1412,8 @@
     },
     {
       "id": "za-social-grants",
-      "status": "reachable",
-      "http_status": 206,
-      "final_url": "https://www.gov.za/services/services-residents/grants"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "zm-constituency-development-fund-grants-loans",
@@ -1509,8 +1516,9 @@
     },
     {
       "id": "de-agriculture-bmel",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.ble.de/DE/Startseite/startseite_node.html"
     },
     {
       "id": "it-incentivi-gov",
@@ -1598,13 +1606,13 @@
     {
       "id": "pl-800-plus",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.gov.pl/web/family/family-800"
     },
     {
       "id": "pl-social-assistance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.gov.pl/web/gov/skorzystaj-z-pomocy-spolecznej"
     },
     {
@@ -1615,8 +1623,8 @@
     },
     {
       "id": "pl-parp",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "restricted",
+      "http_status": 403,
       "final_url": "https://www.parp.gov.pl/"
     },
     {
