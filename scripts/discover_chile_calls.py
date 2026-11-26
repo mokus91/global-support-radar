@@ -3,7 +3,9 @@
 
 The adapter extracts only fields present on the original government page.
 If the page layout changes or key fields disappear, it fails rather than
-publishing a guessed deadline or amount.
+publishing a guessed deadline or amount. If the official page clearly says
+applications are no longer open, it publishes an empty feed so a closed call
+cannot remain visible as current.
 """
 from __future__ import annotations
 import json
@@ -54,21 +56,52 @@ def main():
         raise RuntimeError(f"CORFO request failed after retries: {last_error}")
     parser=TextParser();parser.feed(html)
     text=" ".join(parser.parts)
+
+    # A closed call is a valid data outcome, not a pipeline failure. Replace
+    # the previous snapshot with an empty feed so the old call is not shown
+    # as current. If the page layout changes unexpectedly, keep failing below.
+    if not re.search(r"Postulaciones\\s+Abierta",text,re.I):
+        payload={
+          "schema_version":"1.0",
+          "updated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+          "country_code":"CL","country_en":"Chile",
+          "source":"CORFO official active-call page",
+          "source_url":final_url,
+          "scope":"Official CORFO call page checked by the daily discovery adapter. No currently open application was explicitly indicated on the official page at the time of checking.",
+          "source_status":"no_open_calls_detected",
+          "records_count":0,"records":[]
+        }
+        OUT.parent.mkdir(parents=True,exist_ok=True)
+        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        print("No currently open CORFO call was explicitly indicated; published an empty feed to prevent stale open-call display.")
+        return
+
     def require(pattern, label, flags=re.I):
         match=re.search(pattern,text,flags)
         if not match: raise RuntimeError(f"Could not verify {label} on official CORFO page")
         return match.group(1)
-    opening=require(r"Apertura:\s*(\d{2}/\d{2}/\d{4})","opening date")
-    closing=require(r"Cierre:\s*(\d{2}/\d{2}/\d{4})","closing date")
-    amount=require(r"tope de hasta\s*\$\s*([\d.]+)","maximum co-financing amount")
-    if not re.search(r"Postulaciones\s+Abierta",text,re.I):
-        raise RuntimeError("Official CORFO page no longer marks this call as open; refusing to publish as open")
+    opening=require(r"Apertura:\\s*(\\d{2}/\\d{2}/\\d{4})","opening date")
+    closing=require(r"Cierre:\\s*(\\d{2}/\\d{2}/\\d{4})","closing date")
+    amount=require(r"tope de hasta\\s*\\$\\s*([\\d.]+)","maximum co-financing amount")
     def iso_date(value):
         return datetime.strptime(value,"%d/%m/%Y").date().isoformat()
     start=iso_date(opening); end=iso_date(closing)
     deadline=datetime.fromisoformat(end+"T13:00:00-03:00")
     if deadline <= datetime.now(timezone.utc):
-        raise RuntimeError("CORFO application deadline has passed; refusing to publish as open")
+        payload={
+          "schema_version":"1.0",
+          "updated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+          "country_code":"CL","country_en":"Chile",
+          "source":"CORFO official active-call page",
+          "source_url":final_url,
+          "scope":"Official CORFO page showed the call, but its stated deadline has passed; no current application is published.",
+          "source_status":"deadline_passed",
+          "records_count":0,"records":[]
+        }
+        OUT.parent.mkdir(parents=True,exist_ok=True)
+        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        print("CORFO deadline has passed; published an empty feed rather than a stale open call.")
+        return
     amount_clp=int(amount.replace(".",""))
     record={
       "id":"corfo-startup-chile-growth-13-2026",
@@ -104,7 +137,7 @@ def main():
       "records_count":1,"records":[record]
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
     print(f"Verified one open CORFO call; deadline {deadline.isoformat()}, maximum CLP {amount_clp:,}.")
 if __name__=="__main__":
     main()
