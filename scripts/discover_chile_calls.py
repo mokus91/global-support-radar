@@ -60,7 +60,7 @@ def main():
     # A closed call is a valid data outcome, not a pipeline failure. Replace
     # the previous snapshot with an empty feed so the old call is not shown
     # as current. If the page layout changes unexpectedly, keep failing below.
-    if not re.search(r"Postulaciones\\s+Abierta",text,re.I):
+    if not re.search(r"Postulaciones\s+Abierta",text,re.I):
         payload={
           "schema_version":"1.0",
           "updated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -72,7 +72,7 @@ def main():
           "records_count":0,"records":[]
         }
         OUT.parent.mkdir(parents=True,exist_ok=True)
-        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("No currently open CORFO call was explicitly indicated; published an empty feed to prevent stale open-call display.")
         return
 
@@ -80,9 +80,9 @@ def main():
         match=re.search(pattern,text,flags)
         if not match: raise RuntimeError(f"Could not verify {label} on official CORFO page")
         return match.group(1)
-    opening=require(r"Apertura:\\s*(\\d{2}/\\d{2}/\\d{4})","opening date")
-    closing=require(r"Cierre:\\s*(\\d{2}/\\d{2}/\\d{4})","closing date")
-    amount=require(r"tope de hasta\\s*\\$\\s*([\\d.]+)","maximum co-financing amount")
+    opening=require(r"Apertura:\s*(\d{2}/\d{2}/\d{4})","opening date")
+    closing=require(r"Cierre:\s*(\d{2}/\d{2}/\d{4})","closing date")
+    amount=require(r"tope de hasta\s*\$\s*([\d.]+)","maximum co-financing amount")
     def iso_date(value):
         return datetime.strptime(value,"%d/%m/%Y").date().isoformat()
     start=iso_date(opening); end=iso_date(closing)
@@ -99,7 +99,7 @@ def main():
           "records_count":0,"records":[]
         }
         OUT.parent.mkdir(parents=True,exist_ok=True)
-        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("CORFO deadline has passed; published an empty feed rather than a stale open call.")
         return
     amount_clp=int(amount.replace(".",""))
@@ -137,7 +137,7 @@ def main():
       "records_count":1,"records":[record]
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Verified one open CORFO call; deadline {deadline.isoformat()}, maximum CLP {amount_clp:,}.")
 if __name__=="__main__":
     main()
