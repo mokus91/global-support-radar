@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:56:40.322905+00:00",
+  "generated_at": "2026-11-27T19:39:13.996511+00:00",
   "feeds_checked": 18,
   "records_checked": 2177,
   "expired_deadlines": 1,
@@ -17,9 +17,9 @@
   },
   "application_state_tiers": {
     "verified_open": 0,
-    "likely_available": 209,
+    "likely_available": 208,
     "needs_verification": 1965,
-    "expired_or_closed": 3
+    "expired_or_closed": 4
   },
   "verification_dimensions": {
     "open_status_verified": 0,
@@ -418,26 +418,6 @@
   ],
   "review_queue_count": 50,
   "review_queue": [
-    {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WJ200000CDY5GMAX",
-      "title": "令和７年度補正 ディマンドリスポンスの拡大に向けたIoT化推進事業",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDY5GMAX",
-      "deadline": "2026-11-27T15:00:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "likely_available",
-      "priority_score": 80,
-      "priority_reasons": [
-        "likely_available",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
     {
       "source_file": "jgrants-discovery.json",
       "id": "a0WJ200000CDZzQMAX",
@@ -1413,6 +1393,25 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WJ200000CDY5GMAX",
+      "title": "令和７年度補正 ディマンドリスポンスの拡大に向けたIoT化推進事業",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDY5GMAX",
+      "deadline": "2026-11-27T15:00:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
+      ],
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
