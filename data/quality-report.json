@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:25:26.611135+00:00",
+  "generated_at": "2026-11-27T01:59:23.019249+00:00",
   "feeds_checked": 18,
   "records_checked": 2177,
   "expired_deadlines": 1,
@@ -1167,10 +1167,10 @@
       "deadline_state": "upcoming",
       "source_status": "31094502",
       "application_state": "needs_verification",
-      "priority_score": 34,
+      "priority_score": 40,
       "priority_reasons": [
         "needs_verification",
-        "deadline_within_30_days"
+        "deadline_within_7_days"
       ],
       "opportunity_type": "funding_candidate",
       "score": 8,
