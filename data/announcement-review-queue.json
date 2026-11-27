@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T07:40:00.374092+00:00",
+  "generated_at": "2026-11-27T07:39:29.139261+00:00",
   "feeds_checked": 7,
   "feeds_ok": 3,
-  "new_candidates": 6,
-  "pending_review": 78,
+  "new_candidates": 9,
+  "pending_review": 87,
   "feed_results": [
     {
       "feed_id": "uk-government-updates",
@@ -26,7 +26,7 @@
     {
       "feed_id": "canada-national-news",
       "country_code": "CA",
-      "fetched": 34,
+      "fetched": 30,
       "status": "ok"
     },
     {
@@ -67,6 +67,152 @@
     }
   ],
   "items": [
+    {
+      "candidate_id": "3bce6ea0e47045d268ae",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Over half a million households to get help with water bills",
+      "url": "https://www.gov.uk/government/news/over-half-a-million-households-to-get-help-with-water-bills",
+      "published_at": "2026-11-27T00:01:05+00:00",
+      "summary": "Up to 250,000 more vulnerable households to be supported with £428 a year off their water bills",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "15be75692ffbc70ac2a7",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Water charter: your customer rights",
+      "url": "https://www.gov.uk/guidance/water-charter-your-customer-rights",
+      "published_at": "2026-11-27T00:01:05+00:00",
+      "summary": "This charter sets out the standards you can expect from your water or sewerage company, and the support available if something goes wrong.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "f866018eed61a515307a",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government supports Indigenous economic participation in major energy infrastructure",
+      "url": "https://www.canada.ca/en/department-finance/news/2026/11/government-supports-indigenous-economic-participation-in-major-energy-infrastructure.html",
+      "published_at": "2026-11-26T21:19:14+00:00",
+      "summary": "Today, on behalf of the Honourable François-Philippe Champagne, Minister of Finance and National Revenue, the Honourable Tim Hodgson, Minister of Energy and Natural Resources, and the Honourable Rebecca Alty, Minister of Crown-Indigenous Relations, welcomed the fifth transaction to close under the Indigenous Loan Guarantee Program.",
+      "matched_keywords": [
+        "support",
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "da02611db08985bb6cb6",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Infrastructure and Housing Announcement in Winnipeg",
+      "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/11/infrastructure-and-housing-announcement-in-winnipeg.html",
+      "published_at": "2026-11-26T20:00:08+00:00",
+      "summary": "Members of the media are invited to an announcement with the Honourable Rebecca Chartrand, Minister of Northern and Arctic Affairs and Minister responsible for the Canadian Northern Economic Development Agency and Ben Carr, Member of Parliament for Winnipeg South Centre.",
+      "matched_keywords": [
+        "housing"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "e242c36c2fb7bcf5c95f",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada boosts AI innovation from Canadian SMEs with $700 million expansion of the AI Compute Access Fund",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html",
+      "published_at": "2026-11-26T16:57:42+00:00",
+      "summary": "Expanded fund opens new call for proposals and announces funding for 45 additional Canadian companies",
+      "matched_keywords": [
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "d7b2a4fbc687dac0a3c2",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada boosts AI innovation from Canadian SMEs with $700 million expansion of the AI Compute Access Fund",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/backgrounder-government-of-canada-announces-support-for-45-canadian-companies-through-the-ai-compute-access-fund.html",
+      "published_at": "2026-11-26T16:57:37+00:00",
+      "summary": "Government of Canada announces support for 45 Canadian companies through the AI Compute Access Fund",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "1da63f7ae8ad6287026b",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder: Government of Canada supports 44 Canadian companies using AI to transform industries and create jobs",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/backgrounder-government-of-canada-supports-44-canadian-companies-using-ai-to-transform-industries-and-create-jobs.html",
+      "published_at": "2026-11-26T16:57:31+00:00",
+      "summary": "Government of Canada supports 45 Canadian companies using AI to transform industries and create jobs",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "70c0355d3fc46a8e03c6",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Valdez announces federal support for crisis hotlines responding to gender-based violence in Ontario",
+      "url": "https://www.canada.ca/en/women-gender-equality/news/2026/11/minister-valdez-announces-federal-support-for-crisis-hotlines-responding-to-gender-based-violence-in-ontario.html",
+      "published_at": "2026-11-26T15:30:00+00:00",
+      "summary": "Today, the Honourable Rechie Valdez, Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism), alongside the Honourable Charmaine Williams, Ontario’s Associate Minister of Women’s Social and Economic Opportunity, announced $8 million over five years in renewed federal support for Ontario to strengthen crisis hotline services across the province.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "c4aab92ad57103627c21",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Federal government to announce support for Manitoba businesses affected by trade pressures and U.S. tariffs",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/11/federal-government-to-announce-support-for-manitoba-businesses-affected-by-trade-pressures-and-us-tariffs.html",
+      "published_at": "2026-11-26T15:16:36+00:00",
+      "summary": "The Honourable Rebecca Chartrand, Minister of Northern and Arctic Affairs and Minister responsible for the Canadian Northern Economic Development Agency, on behalf of the Honourable Eleanor Olszewski, Minister of Emergency Management and Community Resilience and Minister responsible for Prairies Economic Development Canada (PrairiesCan), will announce federal funding to support Manitoba businesses and organizations as they adapt to tariff pressures by strengthening their operations and pursuing new opportunities for growth.",
+      "matched_keywords": [
+        "support",
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
     {
       "candidate_id": "2a2fe17b762d2f733c85",
       "country_code": "GB",
