@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:23:08Z",
+  "generated_at": "2026-11-27T20:17:59Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Agriculture-related links discovered on the 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
@@ -117,7 +117,7 @@
     },
     {
       "country_code": "GR",
-      "error": "Remote end closed connection without response"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "country_code": "HU",

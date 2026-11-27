@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T20:23:55Z",
+  "generated_at": "2026-11-27T20:18:33Z",
   "source_id": "eu-national-funding-portals",
   "source_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en",
   "scope": "Category-related links discovered on 27 official EU national shared-management funding portals. Results are unverified leads, not confirmed open calls.",
   "portals_total": 27,
   "portals_checked": 18,
-  "records_count": 53,
+  "records_count": 56,
   "records": [
     {
       "id": "eu-dk-business-1",
@@ -615,8 +615,22 @@
       "country_en": "Poland",
       "country_hu": "Lengyelország",
       "category": "business",
-      "title": "Webinarium Fundusze Europejskie 2021-2027 dla przedsiębiorców. Wsparcie na szkolenia i podnoszenie kwalifikacji pracowników",
-      "official_url": "https://funduszeeuropejskie.gov.pl/spotkania-informacyjne-i-wydarzenia/webinarium-pt-fundusze-europejskie-2021-2027-dla-przedsiebiorcow-wsparcie-na-szkolenia-i-podnoszenie",
+      "title": "Odwołane spotkanie: Fundusze Europejskie na rozwój firmy",
+      "official_url": "https://funduszeeuropejskie.gov.pl/spotkania-informacyjne-i-wydarzenia/fundusze-europejskie-na-rozwoj-firmy-8",
+      "portal_url": "https://funduszeeuropejskie.gov.pl/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-pl-business-9",
+      "country_code": "PL",
+      "country_en": "Poland",
+      "country_hu": "Lengyelország",
+      "category": "business",
+      "title": "Granty i pożyczki na cyfryzację przedsiębiorstw - webinarium",
+      "official_url": "https://funduszeeuropejskie.gov.pl/spotkania-informacyjne-i-wydarzenia/granty-i-pozyczki-na-cyfryzacje-przedsiebiorstw-webinarium",
       "portal_url": "https://funduszeeuropejskie.gov.pl/",
       "publisher": "Official national EU funding portal",
       "verification_status": "unverified",
@@ -680,7 +694,35 @@
       "description": "Employment-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
+      "id": "eu-sk-energy-1",
+      "country_code": "SK",
+      "country_en": "Slovakia",
+      "country_hu": "Szlovákia",
+      "category": "energy",
+      "title": "https://eurofondy.gov.sk/pozvanka-na-on-line-informacny-seminar-podpora-zariadeni-na-vyrobu-elektriny-zo-slnecnej-energie-v-transformujucich-sa-regionoch/",
+      "official_url": "https://eurofondy.gov.sk/pozvanka-na-on-line-informacny-seminar-podpora-zariadeni-na-vyrobu-elektriny-zo-slnecnej-energie-v-transformujucich-sa-regionoch/",
+      "portal_url": "https://www.eurofondy.gov.sk/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Energy-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
       "id": "eu-sk-business-1",
+      "country_code": "SK",
+      "country_en": "Slovakia",
+      "country_hu": "Szlovákia",
+      "category": "business",
+      "title": "https://eurofondy.gov.sk/pozvanka-na-on-line-informacny-seminar-podpora-coworkingovych-centier-a-podnikatelskych-inkubatorov/",
+      "official_url": "https://eurofondy.gov.sk/pozvanka-na-on-line-informacny-seminar-podpora-coworkingovych-centier-a-podnikatelskych-inkubatorov/",
+      "portal_url": "https://www.eurofondy.gov.sk/",
+      "publisher": "Official national EU funding portal",
+      "verification_status": "unverified",
+      "status": "unverified-directory-lead",
+      "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
+    },
+    {
+      "id": "eu-sk-business-2",
       "country_code": "SK",
       "country_en": "Slovakia",
       "country_hu": "Szlovákia",
@@ -694,7 +736,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-sk-business-2",
+      "id": "eu-sk-business-3",
       "country_code": "SK",
       "country_en": "Slovakia",
       "country_hu": "Szlovákia",
@@ -708,7 +750,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-sk-business-3",
+      "id": "eu-sk-business-4",
       "country_code": "SK",
       "country_en": "Slovakia",
       "country_hu": "Szlovákia",
@@ -722,7 +764,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-sk-business-4",
+      "id": "eu-sk-business-5",
       "country_code": "SK",
       "country_en": "Slovakia",
       "country_hu": "Szlovákia",
@@ -736,7 +778,7 @@
       "description": "Business-related link discovered on the official national EU funding portal. Confirm the programme, opening status, deadline and eligibility on the linked page."
     },
     {
-      "id": "eu-sk-energy-1",
+      "id": "eu-sk-energy-2",
       "country_code": "SK",
       "country_en": "Slovakia",
       "country_hu": "Szlovákia",

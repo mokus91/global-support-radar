@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-26T20:21:28.488083+00:00",
+  "generated_at": "2026-11-27T20:16:10.177709+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
-  "discovered_datasets_count": 181,
+  "discovered_datasets_count": 180,
   "records": [
     {
       "title": "2014 Grants – Blagnac",
@@ -119,14 +119,6 @@
     {
       "title": "A KÖRFORGALMI MEZŐGAZDASÁGI GYÓGYSZERKEZETI KERESKEDELMI TÁROLÁS TÁBLÁZATA",
       "url": "https://data.gov.gr/dataset/http-www-pnai-gov-gr",
-      "query": "agricultural funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "A MEZŐGAZDASÁGI GYÓGYSZERÉSZETI ÁRUOSZTÁLYOK NYILVÁNTARTÁSBA VÉTELE FTIÓTIÁBAN",
-      "url": "https://data.gov.gr/dataset/eggrafh-sto-mhtrwo-katasthmatwn-gewrgikwn-farmakwn-pe-f8iwtidas",
       "query": "agricultural funding",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -365,14 +357,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Dane inwestycji Osiedle Śpiewających Ptaków_1",
-      "url": "https://dane.gov.pl/pl/dataset/6703,dane-inwestycji-osiedle-spiewajacych-ptakow_1",
-      "query": "housing assistance",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Dataset Grants",
       "url": "https://www.data.gouv.fr/datasets/jeu-de-donnees-subventions",
       "query": "government grants",
@@ -533,6 +517,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "FSS — Scholarship students by level and sector of training",
+      "url": "https://www.data.gouv.fr/datasets/fss-etudiants-boursiers-par-echelon-et-par-secteur-de-formation-idf",
+      "query": "scholarships",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "FVG University Scholarships",
       "url": "https://www.dati.gov.it/view-dataset/dataset_id/borse-di-studio-universitarie-fvg#",
       "query": "scholarships",
@@ -576,6 +568,14 @@
       "title": "Grants - City of Lorient",
       "url": "https://opendata56.fr/explore/dataset/subventions-ville-de-lorient/information/",
       "query": "government grants",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "GRANTS - SUBSIDY CONTRIBUTIONS - ECONOMIC ADVANTAGES YEAR 2021",
+      "url": "https://www.dati.gov.it/view-dataset/dataset_id/dfc20e6db026c1643e1e66167c0fed13807dba2d946da377a68e5a242e183122#",
+      "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -853,24 +853,8 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Inventories of subsidies - Sint-Gilles",
-      "url": "https://datastore.brussels/web/data/dataset/3fbe4704-5359-454d-8a8e-2a01fc1fbb4a",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "Inventories of subsidies - Watermael-Boitsfort",
-      "url": "https://datastore.brussels/web/data/dataset/2b433797-3d51-43c6-9d5b-de425c8aa5e2",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -943,6 +927,14 @@
     {
       "title": "MIRRI Subsidies-Applications OPTP Section (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-ziadosti-sekcia-optp-2021-06-30",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
+      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1062,7 +1054,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1070,7 +1062,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1205,8 +1197,8 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Scholarship students in health and social training (Sept. 2009)",
-      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2009/",
+      "title": "Scholarship students in health and social training (Sept. 2008)",
+      "url": "https://data.iledefrance.fr/explore/dataset/etudiants_boursiers_des_formations_sanitaires_et_sociales_sept_2008/",
       "query": "scholarships",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

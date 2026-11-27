@@ -1,42 +1,40 @@
 {
-  "generated_at": "2026-11-26T20:22:15.461150+00:00",
+  "generated_at": "2026-11-27T20:16:47.560082+00:00",
   "country_code": "ES",
   "source": "https://www.infosubvenciones.es/bdnstrans/api",
   "records_checked": 50,
-  "records_count": 2,
+  "records_count": 5,
   "query_errors": [],
   "records": [
     {
-      "id": "945046",
+      "id": "945384",
       "country_code": "ES",
-      "title_original": "Aprobación das bases para a convocatoria pública de subvencións municipais a familias polo nacemento, adopción ou acollemento de fillo/a, ano 2025-2026. Expte. 506/2026.",
+      "title_original": "CONVOCATORIA SUBVENCIONES ENTIDADES DEPORTIVAS 2026",
       "coofficial_title": null,
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · XERMADE · AYUNTAMIENTO DE XERMADE",
+      "granting_authority": "LOCAL · AGÜIMES · AYUNTAMIENTO DE AGÜIMES",
       "regions": [
-        "ES112 - Lugo"
+        "ES705 - Gran Canaria"
       ],
       "eligible_beneficiaries_original": [
-        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
       "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Servicios Sociales y Promoción Social",
-      "start_date": "2025-12-01",
-      "deadline": "2026-11-30",
-      "indefinite_open": false,
-      "total_call_budget": 7200,
-      "total_call_budget_original": 7200,
+      "purpose_original": "Otras Prestaciones económicas",
+      "start_date": null,
+      "deadline": null,
+      "indefinite_open": true,
+      "total_call_budget": 123000,
+      "total_call_budget_original": 123000,
       "amount_currency": "EUR",
       "amount_type": "total_call_budget_not_individual_award",
       "amount_status": "published",
       "categories": [
-        "family",
-        "healthcare",
-        "social_support"
+        "all"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945046",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945384",
       "application_url": null,
-      "legal_bases_url": "https://concelloxermade.sedelectronica.es/info.0",
+      "legal_bases_url": "https://aguimes.es/deportes/",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,
@@ -45,34 +43,143 @@
       "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
     },
     {
-      "id": "944997",
+      "id": "945334",
       "country_code": "ES",
-      "title_original": "Subvención nominativa a la entidad ASOCIACIÓN AMIGOS DEL LIBRO ANTIGUO otorgada por Resolución de la  Vicepresidencia del Instituto de Cultura y Artes de Sevilla (ICAS), de fecha 9 de septiembre de 2026, del Servicio de Gestión Administrativa y Subv.",
+      "title_original": "Convocatoria de 3 becas de colaboración en la Unidad Técnica de Acreditación, Seguimiento y Evaluación de la Universidad de Castilla-La Mancha Curso 2026-2027.",
       "coofficial_title": null,
       "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
-      "granting_authority": "LOCAL · SEVILLA · INSTITUTO DE LA CULTURA Y DE LAS ARTES DE SEVILLA (ICAS)",
+      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
       "regions": [
-        "ES618 - Sevilla"
+        "ES42 - CASTILLA LA MANCHA"
       ],
       "eligible_beneficiaries_original": [
-        "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
       ],
       "eligibility_status": "beneficiary_types_listed_in_official_api",
-      "purpose_original": "Cultura",
+      "purpose_original": "Educación",
+      "start_date": "2026-11-27",
+      "deadline": "2026-12-11",
+      "indefinite_open": false,
+      "total_call_budget": 9346,
+      "total_call_budget_original": 9346,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945334",
+      "application_url": null,
+      "legal_bases_url": "https://www.uclm.es/global/promotores/organos-de-gobierno/vicerrectorado-de-docencia/carpeta-de-convocatorias/26-27_-becas-utase-3-2c",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "945320",
+      "country_code": "ES",
+      "title_original": "Convocatoria 11 becas-colaboración para la formación en técnicas de planificación, aplicación y análisis de encuestas en máster universitario y apoyo a Centros, Facultad Medicina Albacete, Escuela Ingeniería Minera e Industrial Almadén. 2º CT curso 26-27",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "OTROS · UNIVERSIDAD DE CASTILLA-LA MANCHA",
+      "regions": [
+        "ES42 - CASTILLA LA MANCHA"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Educación",
+      "start_date": "2026-11-27",
+      "deadline": "2026-12-11",
+      "indefinite_open": false,
+      "total_call_budget": 10490,
+      "total_call_budget_original": 10490,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "education",
+        "business"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945320",
+      "application_url": null,
+      "legal_bases_url": "https://www.uclm.es/global/promotores/organos-de-gobierno/vicerrectorado-de-docencia/carpeta-de-convocatorias/26-27_becasmu_centros_2c",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "945299",
+      "country_code": "ES",
+      "title_original": "Resolución por la que se convocan las subvenciones en régimen de concesión directa para ayuntamientos en las áreas de influencia socioeconómica de los Parques Nacionales en Castilla-La Mancha para el año 2026",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "AUTONOMICA · CASTILLA-LA MANCHA · DIRECCIÓN GENERAL DE MEDIO NATURAL Y BIODIVERSIDAD",
+      "regions": [
+        "ES42 - CASTILLA LA MANCHA"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Comercio, Turismo y Pymes",
       "start_date": null,
       "deadline": null,
       "indefinite_open": true,
-      "total_call_budget": 30000,
-      "total_call_budget_original": 30000,
+      "total_call_budget": 310720,
+      "total_call_budget_original": 310720,
+      "amount_currency": "EUR",
+      "amount_type": "total_call_budget_not_individual_award",
+      "amount_status": "published",
+      "categories": [
+        "business"
+      ],
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945299",
+      "application_url": "https://www.jccm.es",
+      "legal_bases_url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2018/10/31/pdf/2018_12478.pdf&tipo=rutaDocm",
+      "status": "official-api-window-current",
+      "eligibility_verified": false,
+      "amount_verified": false,
+      "source_api": "https://www.infosubvenciones.es/bdnstrans/api",
+      "note_hu": "Az API szerinti jelentkezési időszak jelenleg aktív vagy határozatlan idejű. A teljes pályázati keret nem az egy pályázónak járó összeg. A részletes feltételeket az eredeti kiírásban ellenőrizd.",
+      "note_en": "The API indicates a current or indefinite application window. The published total call budget is not an individual award. Beneficiary categories are copied from the official API but do not establish an individual applicant eligibility. Verify full terms in the original notice."
+    },
+    {
+      "id": "945194",
+      "country_code": "ES",
+      "title_original": "Convocatoria de Subvención \"Campaña Navidad 2026\", para  Ayuntamientos y Eatims de la provincia de Ciudad Real menores de 10.000 habitantes.",
+      "coofficial_title": null,
+      "publisher": "Spain National Transparency Register for Public Grants and Public Aid (SNPSAP/BDNS)",
+      "granting_authority": "LOCAL · DIPUTACIÓN PROV. DE CIUDAD REAL · DIPUTACIÓN PROVINCIAL DE CIUDAD REAL",
+      "regions": [
+        "ES422 - Ciudad Real"
+      ],
+      "eligible_beneficiaries_original": [
+        "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+      ],
+      "eligibility_status": "beneficiary_types_listed_in_official_api",
+      "purpose_original": "Otras Prestaciones económicas",
+      "start_date": null,
+      "deadline": null,
+      "indefinite_open": true,
+      "total_call_budget": 33255,
+      "total_call_budget_original": 33255,
       "amount_currency": "EUR",
       "amount_type": "total_call_budget_not_individual_award",
       "amount_status": "published",
       "categories": [
         "all"
       ],
-      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/944997",
-      "application_url": null,
-      "legal_bases_url": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1721343725875-final-13268e29-1.pdf   icas",
+      "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/945194",
+      "application_url": "https://sede.dipucr.es/",
+      "legal_bases_url": "https://dipucr.transparencialocal.gob.es/es_ES/buscar/contenido/articulo/articulo-30519-aprobacion-definitiva-de-modificacion-del-reglamento-regulador-del-plan-de-asistencia-economica-y-cooperacion-municipal",
       "status": "official-api-window-current",
       "eligibility_verified": false,
       "amount_verified": false,

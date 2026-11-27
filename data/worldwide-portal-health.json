@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-26T20:21:13+00:00",
+  "checked_at": "2026-11-27T20:15:56+00:00",
   "records_count": 313,
   "summary": {
-    "connection_error": 40,
-    "http_error": 7,
-    "not_found": 2,
-    "reachable": 232,
-    "restricted": 32
+    "connection_error": 41,
+    "http_error": 8,
+    "not_found": 3,
+    "reachable": 230,
+    "restricted": 31
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -36,15 +36,13 @@
     },
     {
       "id": "ae-social-welfare",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -279,7 +277,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://validate.perfdrive.com/?ssa=ee2079ad-b15f-4ab6-825d-e6938f2cfccb&ssb=10496224443&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=10642b20-dxzy-4b9c-b33a-c42ea4f4685b&ssk=botmanager_support@radware.com&ssm=51365239736536881106896735870576&ssn=17237c2a9035fd771f89bef01362e15020f11ee9a99c-0566-4cbc-a4afa8&sso=4590ba70-d55ac88de3d72389fa50d95e8016fa1913a654c982b79808&ssp=83349139711795727266179576678430146&ssq=93973982436551855938824365239170622003979&ssr=NTIuMjUwLjIzNC4yMw==&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAxZWU5YTk5Yy0wNTY2LTRjYmMtYWE3MC1kNTVhYzg4ZGUzZDcxLTE3OTU3MjQzNjUyMjIwLTAwMmU1MmNmMTQ2ZWY4ODFhNWUxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUiLCJ1em14IjoiN2ZjMDAwZjBhMGU5NTMtMWRkNS00MWVhLWFmNTYtM2Q0NGIxOGFkZmQ2MS0xNzk1NzI0MzY1MjIyMC0wMGY3MmQzZWY1YTk1YmRlNmZkMTAifQ=="
+      "final_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Europa/eu-kohaesions-und-strukturpolitik.html"
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -518,9 +516,8 @@
     },
     {
       "id": "gr-eu-funds-single-portal",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.espa.gr/"
+      "status": "connection_error",
+      "error": "RemoteDisconnected"
     },
     {
       "id": "hk-bud-fund",
@@ -839,8 +836,8 @@
     },
     {
       "id": "national-my-business-3",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "not_found",
+      "http_status": 404,
       "final_url": "https://www.bnm.gov.my/funds4sme"
     },
     {
@@ -928,9 +925,8 @@
     },
     {
       "id": "np-social-security-allowance",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "nz-benefits",
@@ -1267,8 +1263,8 @@
     },
     {
       "id": "to-tupulaki-community-grants",
-      "status": "reachable",
-      "http_status": 200,
+      "status": "http_error",
+      "http_status": 520,
       "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
     },
     {
@@ -1379,8 +1375,9 @@
     },
     {
       "id": "za-agriculture-land-support-programmes",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/zu/issues/land-and-agriculture"
     },
     {
       "id": "za-dsbd-msme-support-programmes",
@@ -1389,8 +1386,9 @@
     },
     {
       "id": "za-incentives",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/business-incentives"
     },
     {
       "id": "za-sassa",
@@ -1412,8 +1410,9 @@
     },
     {
       "id": "za-social-grants",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://www.gov.za/services/services-residents/grants"
     },
     {
       "id": "zm-constituency-development-fund-grants-loans",
@@ -1606,13 +1605,13 @@
     {
       "id": "pl-800-plus",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.gov.pl/web/family/family-800"
     },
     {
       "id": "pl-social-assistance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.gov.pl/web/gov/skorzystaj-z-pomocy-spolecznej"
     },
     {
