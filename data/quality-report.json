@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:59:23.019249+00:00",
+  "generated_at": "2026-11-27T08:01:57.179082+00:00",
   "feeds_checked": 18,
   "records_checked": 2177,
   "expired_deadlines": 1,
@@ -17,9 +17,9 @@
   },
   "application_state_tiers": {
     "verified_open": 0,
-    "likely_available": 211,
+    "likely_available": 209,
     "needs_verification": 1965,
-    "expired_or_closed": 1
+    "expired_or_closed": 3
   },
   "verification_dimensions": {
     "open_status_verified": 0,
