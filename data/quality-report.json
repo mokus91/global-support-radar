@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T08:29:05.982542+00:00",
+  "generated_at": "2026-11-28T13:44:53.062741+00:00",
   "feeds_checked": 18,
   "records_checked": 2225,
   "expired_deadlines": 1,
@@ -17,9 +17,9 @@
   },
   "application_state_tiers": {
     "verified_open": 0,
-    "likely_available": 209,
+    "likely_available": 208,
     "needs_verification": 2015,
-    "expired_or_closed": 1
+    "expired_or_closed": 2
   },
   "verification_dimensions": {
     "open_status_verified": 0,
@@ -418,26 +418,6 @@
   ],
   "review_queue_count": 50,
   "review_queue": [
-    {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WJ200000CDZzQMAX",
-      "title": "【令和８年度】二酸化炭素排出抑制対策事業費等補助金（地域再エネ水素ステーション保守点検等支援事業）",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDZzQMAX",
-      "deadline": "2026-11-28T09:00:00.000Z",
-      "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "likely_available",
-      "priority_score": 80,
-      "priority_reasons": [
-        "likely_available",
-        "deadline_within_7_days"
-      ],
-      "opportunity_type": "unclassified",
-      "score": 8,
-      "missing_details": [
-        "eligibility"
-      ]
-    },
     {
       "source_file": "jgrants-discovery.json",
       "id": "a0WJ200000CDa1gMAD",
@@ -1413,6 +1393,25 @@
         "deadline_within_30_days"
       ],
       "opportunity_type": "funding_candidate",
+      "score": 8,
+      "missing_details": [
+        "eligibility"
+      ]
+    },
+    {
+      "source_file": "jgrants-discovery.json",
+      "id": "a0WJ200000CDZzQMAX",
+      "title": "【令和８年度】二酸化炭素排出抑制対策事業費等補助金（地域再エネ水素ステーション保守点検等支援事業）",
+      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDZzQMAX",
+      "deadline": "2026-11-28T09:00:00.000Z",
+      "deadline_state": "upcoming",
+      "source_status": "acceptance-open-api-filtered",
+      "application_state": "expired_or_closed",
+      "priority_score": 8,
+      "priority_reasons": [
+        "expired_or_closed"
+      ],
+      "opportunity_type": "unclassified",
       "score": 8,
       "missing_details": [
         "eligibility"
