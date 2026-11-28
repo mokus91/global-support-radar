@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:16:10.177709+00:00",
+  "generated_at": "2026-11-28T02:27:20.606465+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 180,
@@ -309,14 +309,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "Comparison of cities - Business 2022",
-      "url": "https://open-data.dortmund.de/explore/dataset/stadtevergleich-gewerbe-2022/",
-      "query": "business funding",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "Conservatories – CD92 Grants",
       "url": "https://data.seineouest.fr/explore/dataset/conservatoires-subventions-du-conseil-departemental-des-hauts-de-seine/",
       "query": "government grants",
@@ -352,6 +344,14 @@
       "title": "Curriculum Swimming Support Programme",
       "url": "http://www.cm-lisboa.pt/viver/educacao/dentro-da-escola/projetos-promovidos-pelo-municipio",
       "query": "public support programmes",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Dane inwestycji Osiedle Śpiewających Ptaków_1",
+      "url": "https://dane.gov.pl/pl/dataset/6703,dane-inwestycji-osiedle-spiewajacych-ptakow_1",
+      "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
       "verification_status": "unverified"
@@ -1054,7 +1054,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -1062,7 +1062,7 @@
     },
     {
       "title": "Population covered by housing assistance — Gironde",
-      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-1",
+      "url": "https://www.data.gouv.fr/datasets/population-couverte-par-une-aide-au-logement-gironde-2",
       "query": "housing assistance",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
