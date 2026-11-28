@@ -1,268 +1,191 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-28T02:32:13+00:00",
-  "events_count": 35,
+  "generated_at": "2026-11-28T08:29:05+00:00",
+  "events_count": 25,
   "events": [
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52256519topicsen",
-      "title": "Call for Proposals for ERC Consolidator Grant",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:52252019topicsen",
+      "title": "Digital Investigations and Standardisation",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52303950topicsen",
-      "title": "Strengthening European Cybersecurity Technologies, Capacities and Preparedness",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:52546784topicsen",
+      "title": "Innovative tools and business models",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52303958topicsen",
-      "title": "Strengthening European Cybersecurity Technologies, Capacities and Preparedness",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:53295353topicsen",
+      "title": "Erasmus+ Teacher Academies",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664238topicsen",
-      "title": "Transformative change towards a nature-positive economy and society",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:52642893topicsen",
+      "title": "European Film Sales",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664453topicsen",
-      "title": "Transformative change towards a nature-positive economy and society",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50222141topicsen",
+      "title": "ERA Fellowships",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664569topicsen",
-      "title": "Transformative change towards a nature-positive economy and society",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50146633topicsen",
+      "title": "Call 02 - single stage (2027)",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52304288topicsen",
-      "title": "NEWS - Media Literacy",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149595topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664946topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149633topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664966topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149659topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50140523topicsen",
-      "title": "Cluster 1 - Health (Two stage - 2027)",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149693topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52762960topicsen",
-      "title": "European Universities",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149727topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664675topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149768topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664744topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149799topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52664775topicsen",
-      "title": "Bridging actions 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149852topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "new",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50139318topicsen",
-      "title": "Supporting the implementation of the Restore our Ocean and Waters Mission",
-      "detected_at": "2026-11-28T02:32:13+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50139433topicsen",
-      "title": "Supporting the implementation of the Restore our Ocean and Waters Mission",
-      "detected_at": "2026-11-28T02:32:13+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50139607topicsen",
-      "title": "Supporting the implementation of the Climate-Neutral and Smart Cities Mission",
-      "detected_at": "2026-11-28T02:32:13+00:00"
-    },
-    {
-      "type": "new",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50139644topicsen",
-      "title": "Supporting the implementation of the Climate-Neutral and Smart Cities Mission",
-      "detected_at": "2026-11-28T02:32:13+00:00"
+      "key": "id:50149891topicsen",
+      "title": "Culture, Creativity and Inclusive Society - 2027",
+      "detected_at": "2026-11-28T08:29:05+00:00"
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50218200topicsen",
-      "title": "Beautiful, inclusive and sustainable neighbourhoods for communities",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:50128083topicsen",
+      "title": "INDUSTRY-FTRI",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:52676172topicsen",
-      "title": "Information measures for the EU Cohesion policy for 2026",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:52617926topicsen",
+      "title": "Deploying Strategic Cyber Capabilities Across Europe - Cyber Hubs",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50131259topicsen",
-      "title": "INDUSTRY-two-stage",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51474244topicsen",
-      "title": "European Remembrance - 2026",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51474264topicsen",
-      "title": "European Remembrance - 2026",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:51474284topicsen",
-      "title": "European Remembrance - 2026",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50133076topicsen",
-      "title": "Enhancing the European R&I system",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50133091topicsen",
-      "title": "Enhancing the European R&I system",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50132158topicsen",
-      "title": "DIGITAL",
-      "detected_at": "2026-11-28T02:32:13+00:00",
-      "note": "No longer present in this feed; this does not prove the opportunity is closed."
-    },
-    {
-      "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130058topicsen",
+      "key": "id:50129484topicsen",
       "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50132976topicsen",
-      "title": "MSCA COFUND 2027",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:50129307topicsen",
+      "title": "BATTERIES and MOBILITY",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130465topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:50161078topicsen",
+      "title": "Interconnected Innovation Ecosystems (2027.1)",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130557topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:50161094topicsen",
+      "title": "Interconnected Innovation Ecosystems (2027.1)",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130209topicsen",
-      "title": "BATTERIES and ENERGY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:50161257topicsen",
+      "title": "Cluster 1 - Health (Single stage - 2027/2)",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
       "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130643topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "key": "id:52676497topicsen",
+      "title": "Transformative change towards a nature-positive economy and society",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130730topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "feed": "us-grants-discovery.json",
+      "key": "id:364166",
+      "title": "FY27 Northeast Corridor Cooperative Agreement to the National Railroad Passenger Corporation",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     },
     {
       "type": "removed_from_feed",
-      "feed": "eu-open-calls-discovery.json",
-      "key": "id:50130810topicsen",
-      "title": "MOBILITY",
-      "detected_at": "2026-11-28T02:32:13+00:00",
+      "feed": "us-grants-discovery.json",
+      "key": "id:364167",
+      "title": "FY27 National Network Cooperative Agreement to the National Railroad Passenger Corporation",
+      "detected_at": "2026-11-28T08:29:05+00:00",
       "note": "No longer present in this feed; this does not prove the opportunity is closed."
     }
   ],

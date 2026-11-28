@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-28T02:27:08+00:00",
+  "checked_at": "2026-11-28T08:25:33+00:00",
   "records_count": 313,
   "summary": {
-    "connection_error": 40,
-    "http_error": 10,
-    "not_found": 3,
-    "reachable": 229,
+    "connection_error": 39,
+    "http_error": 8,
+    "not_found": 2,
+    "reachable": 233,
     "restricted": 31
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
@@ -278,7 +278,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://validate.perfdrive.com/?ssa=b8e5cfb6-c95e-496e-90bc-2b2dd05375e4&ssb=98104218407&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=c5c16ae5-dxzy-47d0-9ee8-c30c94f1ef03&ssk=botmanager_support@radware.com&ssm=13065936324885168106750296463658&ssn=8fa7b360a7fbfa8df4b8b9b2e1cdf6c30a7fb656631b-8b72-4323-99aa92&sso=16b7302c-a4c183f4262b57b70d3001ccd0f052a6158f0d3238125402&ssp=13312040481795871981179581578189906&ssq=61706453271615316863232716511465799567584&ssr=MjAuMjkuNTIuMjQy&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwZGJiYTU2NGUtMjJiOS00NGRiLWE1OTAtZDA1N2JmMTFhZGUyMS0xNzk1ODMyNzE2NTk1MC0wMGY4OTU3ZWI2MDg5Mjc4ZmQ1MTAiLCJyZCI6ImV2YWx1YXRpb25lbi1ibXdrLmRlIiwiX191em1mIjoiN2Y5MDAwYjY1NjYzMWItOGI3Mi00MzIzLTkwMmMtYTRjMTgzZjQyNjJiMS0xNzk1ODMyNzE2NTk1MC0wMDIwMWZlMTAyMTNhMGNiMDVmMTAifQ=="
+      "final_url": "https://validate.perfdrive.com/?ssa=c07d2c07-1e84-417e-8637-46b39c778269&ssb=43878201361&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=b46e1b42-dxzy-429f-9c9c-3c060e4da55e&ssk=botmanager_support@radware.com&ssm=07160774332638267109790752329957&ssn=efb250d0fa3d070d9bc527125a24399edaec6967fa4b-ecec-45e3-935414&sso=279cfb78-a7e4dace22f054950be978baa6e97458226d16718485b413&ssp=17187420671795808620179589839386289&ssq=16251795424143000022254241469940585054339&ssr=MTcyLjIxMC4xNDMuNTc=&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2OTY3ZmE0Yi1lY2VjLTQ1ZTMtOWI3OC1hN2U0ZGFjZTIyZjAxLTE3OTU4NTQyNDE0MTEwLTAwMjJjMWI3YTZhZjJkNGU0ZTQxMCIsInV6bXgiOiI3ZmMwMDBkNDYzZmQ2Zi00NDM3LTQ2ZTItYmFjYi04Zjc0Mzc5NWRmODYxLTE3OTU4NTQyNDE0MTEwLTAwZjE4ZTI5NGNhMDljMjA2N2YxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -352,8 +352,9 @@
     },
     {
       "id": "eu-access-finance",
-      "status": "connection_error",
-      "error": "TimeoutError"
+      "status": "http_error",
+      "http_status": 500,
+      "final_url": "https://youreurope.europa.eu/business/finance-funding/getting-funding/access-finance/financial-intermediaries"
     },
     {
       "id": "eu-funding-guide",
@@ -371,7 +372,7 @@
       "id": "eu-national-single-portals",
       "status": "restricted",
       "http_status": 429,
-      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "eu-step-funding",
@@ -470,19 +471,19 @@
     {
       "id": "gh-leap",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
       "id": "gh-leap-cash-transfer",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
     },
     {
       "id": "gh-leap-cash-transfer-2026",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://leap.mogcsp.gov.gh/home/"
     },
     {
@@ -511,14 +512,14 @@
     },
     {
       "id": "eu-national-funds-gr",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.espa.gr"
+      "status": "connection_error",
+      "error": "RemoteDisconnected"
     },
     {
       "id": "gr-eu-funds-single-portal",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.espa.gr/"
     },
     {
       "id": "hk-bud-fund",
@@ -837,9 +838,9 @@
     },
     {
       "id": "national-my-business-3",
-      "status": "not_found",
-      "http_status": 404,
-      "final_url": "https://www.bnm.gov.my/funds4sme"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bnm.gov.my/our-roles/financial-inclusion/sme-financing/smes-funding/"
     },
     {
       "id": "ng-boi-guaranteed-loans-women",
@@ -926,8 +927,9 @@
     },
     {
       "id": "np-social-security-allowance",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
       "id": "nz-benefits",
@@ -1151,14 +1153,14 @@
     },
     {
       "id": "eu-national-funds-se",
-      "status": "http_error",
-      "http_status": 307,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://eufonder.se/"
     },
     {
       "id": "se-eu-funds-single-portal",
-      "status": "http_error",
-      "http_status": 307,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://eufonder.se/"
     },
     {
@@ -1264,8 +1266,8 @@
     },
     {
       "id": "to-tupulaki-community-grants",
-      "status": "http_error",
-      "http_status": 520,
+      "status": "reachable",
+      "http_status": 200,
       "final_url": "https://tonga.highcommission.gov.au/nkfa/DirectAidProgram.html"
     },
     {
@@ -1504,9 +1506,8 @@
     },
     {
       "id": "de-energy-bafa",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.bafa.de/DE/Home/home_node.html"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "de-kfw-funding",
@@ -1552,7 +1553,7 @@
     {
       "id": "it-agriculture-masaf",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202"
     },
     {
@@ -1600,7 +1601,7 @@
     {
       "id": "pl-gov-family-benefits",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.gov.pl/web/family/family-benefits"
     },
     {
@@ -1612,7 +1613,7 @@
     {
       "id": "pl-social-assistance",
       "status": "reachable",
-      "http_status": 206,
+      "http_status": 200,
       "final_url": "https://www.gov.pl/web/gov/skorzystaj-z-pomocy-spolecznej"
     },
     {
