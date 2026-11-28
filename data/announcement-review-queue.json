@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27T07:39:29.139261+00:00",
+  "generated_at": "2026-11-28T07:32:07.376437+00:00",
   "feeds_checked": 7,
   "feeds_ok": 3,
-  "new_candidates": 9,
-  "pending_review": 87,
+  "new_candidates": 20,
+  "pending_review": 107,
   "feed_results": [
     {
       "feed_id": "uk-government-updates",
       "country_code": "GB",
-      "fetched": 2,
+      "fetched": 3,
       "status": "ok"
     },
     {
@@ -26,7 +26,7 @@
     {
       "feed_id": "canada-national-news",
       "country_code": "CA",
-      "fetched": 30,
+      "fetched": 34,
       "status": "ok"
     },
     {
@@ -67,6 +67,334 @@
     }
   ],
   "items": [
+    {
+      "candidate_id": "e244251e720328a8a349",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Millions in water company fines to go to water clean-up projects across the country",
+      "url": "https://www.gov.uk/government/news/millions-in-water-company-fines-to-go-to-water-clean-up-projects-across-the-country",
+      "published_at": "2026-11-28T00:01:00+00:00",
+      "summary": "More than 300 local projects will get funding to bring local waterways back to life.",
+      "matched_keywords": [
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "5a04f2d15e91d8e6d288",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Olszewski highlights Canada’s first-ever federal forest sector strategy and the Prairies forest sector",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/11/minister-olszewski-highlights-canadas-first-ever-federal-forest-sector-strategy-and-the-prairies-forest-sector.html",
+      "published_at": "2026-11-27T21:37:36+00:00",
+      "summary": "To support the sector’s long-term growth and prosperity, the federal government is taking bold action under Canada’s first-ever federal Forest Sector Strategy.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "21b34bb47f9d7c7db2b4",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder: Minister Olszewski highlights Canada’s first-ever federal forest sector strategy and the Prairies forest sector",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/11/backgrounder-minister-olszewski-highlights-canadas-first-ever-federal-forest-sector-strategy-and-the-prairies-forest-sector.html",
+      "published_at": "2026-11-27T21:37:25+00:00",
+      "summary": "Today, the Honourable Eleanor Olszewski, Minister of Emergency Management and Community Resilience, highlighted the release of the country’s first-ever comprehensive strategy for the forest sector and its benefits to Alberta, Saskatchewan and Manitoba. The Forest Sector Strategy for Canada is supported by a proposed investment of $6.5 billion in Budget 2026, marking the largest federal investment in Canada’s forest sector history.",
+      "matched_keywords": [
+        "benefit",
+        "benefits",
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "f4c213a5c149eb7bb35f",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "CBSA reminds travellers of upcoming closure of the Remote Area Border Crossing Program and expansion of telephone reporting",
+      "url": "https://www.canada.ca/en/border-services-agency/news/2026/11/cbsa-reminds-travellers-of-upcoming-closure-of-the-remote-area-border-crossing-program-and-expansion-of-telephone-reporting.html",
+      "published_at": "2026-11-27T20:30:50+00:00",
+      "summary": "CBSA reminds travellers of upcoming closure of the Remote Area Border Crossing Program and expansion of telephone reporting",
+      "matched_keywords": [
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "eb2cb6777b55b649ff2d",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Parliamentary Secretary Claude Guay highlights Canada’s first-ever federal forest sector strategy in Quebec",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/parliamentary-secretary-claude-guay-highlights-canadas-first-ever-federal-forest-sector-strategy-in-quebec.html",
+      "published_at": "2026-11-27T20:30:27+00:00",
+      "summary": "To support the sector’s long-term growth and prosperity, the federal government is taking bold action under Canada’s first-ever federal Forest Sector Strategy. Today, Claude Guay, Parliamentary Secretary to the Minister of Energy and Natural Resources, highlighted that Quebec will play a key role in building a stronger future for forest sector workers, communities and businesses.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "f6476f25d5cde232ccf5",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Parliamentary Secretary Pauline Rochefort highlights Canada’s first-ever federal forest sector strategy in Ontario",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/parliamentary-secretary-pauline-rochefort-highlights-canadas-first-ever-federal-forest-sector-strategy-in-ontario.html",
+      "published_at": "2026-11-27T19:31:12+00:00",
+      "summary": "In Canada, the forest sector supports nearly 200,000 jobs, 300 communities and contributed nearly $30 billion to our GDP in 2025 alone.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "35cec590c31127b5992b",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder: Forest Sector Strategy for Canada: Investments in Ontario",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/backgrounder-forest-sector-strategy-for-canada-investments-in-ontario.html",
+      "published_at": "2026-11-27T19:31:07+00:00",
+      "summary": "Today, Pauline Rochefort, Parliamentary Secretary to the Secretary of State (Rural Development), highlighted [Cl1.1]the release of the country’s first-ever comprehensive strategy for the forest sector and its benefits to Ontario.",
+      "matched_keywords": [
+        "benefit",
+        "benefits"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "2113eabe2c38330ffc7a",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada launches consultations on the Canada Creative Credit to support artists and creators, foster artistic production, and encourage cultural entrepreneurship across Canada",
+      "url": "https://www.canada.ca/en/canadian-heritage/news/2026/11/government-of-canada-launches-consultations-on-the-canada-creative-credit-to-support-artists-and-creators-foster-artistic-production-and-encourage-.html",
+      "published_at": "2026-11-27T19:00:00+00:00",
+      "summary": "Canadian Heritage will consult artists, organizations representing artists, and the Canadian public on the Canada Creative Credit, announced as part of Budget 2026.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "a9288cb91edb4f9e4d7a",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Parliamentary Secretary Blois highlights Canada’s first-ever federal forest sector strategy in Atlantic Canada",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/parliamentary-secretary-blois-highlights-canadas-first-ever-federal-forest-sector-strategy-in-atlantic-canada.html",
+      "published_at": "2026-11-27T18:35:54+00:00",
+      "summary": "In Canada, the forest sector supports nearly 200,000 jobs, 300 communities and contributed nearly $30 billion to our GDP in 2025.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "7ecadfc1e50e29165034",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government highlights support for Tla’amin Nation’s acquisition of British Columbia forestry operation",
+      "url": "https://www.canada.ca/en/department-finance/news/2026/11/government-highlights-support-for-tlaamin-nations-acquisition-of-british-columbia-forestry-operation.html",
+      "published_at": "2026-11-27T18:27:49+00:00",
+      "summary": "Today, on behalf of the Honourable François-Philippe Champagne, Minister of Finance and National Revenue, the Honourable Tim Hodgson, Minister of Energy and Natural Resources, highlighted the Government of Canada’s $64 million loan guarantee supporting Tla’amin Nation’s acquisition of Tree Farm Licence 39, Block 1 (TFL 39) in Powell River (qathet region), British Columbia. The transaction, the fourth to close under the Indigenous Loan Guarantee Program (ILGP), allows Tla’amin Nation to acquire 100 per cent ownership of the assets that make up Western Forest Products Inc.’s Stillwater Forest Operation.",
+      "matched_keywords": [
+        "support",
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "6e7c6fb64647dd113983",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Hodgson unveils first-ever federal strategy for Canada’s forest sector",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/minister-hodgson-unveils-first-ever-federal-strategy-for-canadas-forest-sector.html",
+      "published_at": "2026-11-27T17:43:14+00:00",
+      "summary": "Today, the Honourable Tim Hodgson, Minister of Energy and Natural Resources Canada, announced the release of the country’s first-ever strategy for the forest sector. The Strategy is supported by a proposed investment of $6.5 billion in Budget 2026, marking the largest federal investment Canada’s forest sector history.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "1ee47fbe3d37cc9d7b9d",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Minister Hodgson unveils first-ever federal strategy for Canada's forest sector",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/minister-hodgson-unveils-first-ever-federal-strategy-for-canadas-forest-sector0.html",
+      "published_at": "2026-11-27T17:42:52+00:00",
+      "summary": "Today, the Honourable Tim Hodgson, Minister of Energy and Natural Resources, announced the release of the country’s first-ever Forest Sector Strategy for Canada. This plan is supported by a proposed investment of $6.5 billion in Budget 2026, marking this the largest federal investment in the history of Canada’s forest sector. Together with measures announced since August 2025, the Government of Canada has committed more than $9 billion to supporting Canada's forest sector and its workers today and for the long term.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "c2d1e0ccbf8c2f0dde53",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Forest Sector Strategy for Canada: Investments in British Columbia",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2026/11/forest-sector-strategy-for-canada-investments-in-british-columbia.html",
+      "published_at": "2026-11-27T17:42:39+00:00",
+      "summary": "Today, the Honourable Tim Hodgson, Minister of Energy and Natural Resources Canada, announced the release of the country’s first-ever strategy for the forest sector. The Forest Sector Strategy for Canada is supported by a proposed investment of $6.5 billion in Budget 2026, marking the largest federal investment Canada’s forest sector history. Minister Hodgson, on behalf of the Honourable Minister Gregor Robertson, Minister of Housing and Infrastructure and Minister responsible for Pacific Economic Development Canada, announced up to $31.6 million for forest sector projects and businesses in British Columbia, which includes an investment of $19.2 million from PacifiCan. Some funding remains subject to approval and final due diligence.",
+      "matched_keywords": [
+        "support",
+        "funding",
+        "housing"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "723fbe1d45b4444b2a2e",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "Guidance: Determinations of the UK ETS carbon price",
+      "url": "https://www.gov.uk/government/publications/determinations-of-the-uk-ets-carbon-price",
+      "published_at": "2026-11-27T17:15:00+00:00",
+      "summary": "Determinations made by the UK ETS Authority under article 46 of the Greenhouse Gas Emission Trading Scheme Order 2020.",
+      "matched_keywords": [
+        "scheme"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "d3188430892803227196",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "publisher": "GOV.UK",
+      "feed_id": "uk-government-updates",
+      "title": "England 2014 to 2020 European Structural and Investment Funds",
+      "url": "https://www.gov.uk/guidance/england-2014-to-2020-european-structural-and-investment-funds",
+      "published_at": "2026-11-27T17:06:57+00:00",
+      "summary": "Information about the European Structural and Investment Funds programme for 2014 to 2020 in England.",
+      "matched_keywords": [
+        "programme",
+        "program"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "ec9d904f235968b2b8c0",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Build Canada Homes selects builders for Naawi-Oodena Direct Build project, advancing housing delivery on public lands",
+      "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/11/build-canada-homes-selects-builders-for-naawi-oodena-direct-build-project-advancing-housing-delivery-on-public-lands.html",
+      "published_at": "2026-11-27T17:00:34+00:00",
+      "summary": "Build Canada Homes (BCH) announced the selection of the Mamawi Anookiiyak Niigaan, a partnership formed between Treaty One and Bockstael Construction as the design-build partner for the Naawi-Oodena Direct Build project, marking a major milestone in BCH's efforts to increase housing supply and affordability across Canada.",
+      "matched_keywords": [
+        "housing"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "02c8eb92e55e26edb99f",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Backgrounder: Federal government supports Manitoba businesses in building resilience amid trade pressures and U.S. tariffs",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/11/backgrounder-federal-government-supports-manitoba-businesses-in-building-resilience-amid-trade-pressures-and-us-tariffs.html",
+      "published_at": "2026-11-27T15:16:57+00:00",
+      "summary": "Federal government supports Manitoba businesses in building resilience amid trade pressures and U.S. tariffs",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "768734dceddb46853b3c",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Federal government supports Manitoba businesses in building resilience amid trade pressures and U.S. tariffs",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/11/federal-government-supports-manitoba-businesses-in-building-resilience-amid-trade-pressures-and-us-tariffs.html",
+      "published_at": "2026-11-27T15:16:31+00:00",
+      "summary": "Federal government supports Manitoba businesses in building resilience amid trade pressures and U.S. tariffs",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "5a3f6943f3f20022c330",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada announces funding for Small Craft Harbours in Val-Comeau and McEachern’s Point (Wishart Point)",
+      "url": "https://www.canada.ca/en/fisheries-oceans/news/2026/11/government-of-canada-announces-funding-for-small-craft-harbours-in-val-comeau-and-mceacherns-point-wishart-point.html",
+      "published_at": "2026-11-27T15:00:16+00:00",
+      "summary": "Val-Comeau, New Brunswick - Small craft harbours are vital infrastructure for coastal and rural communities, supporting fishing, transportation, and the local economies built around them. Billions of dollars in fish and seafood are landed at these harbours every year. Canada’s commercial fisheries, aquaculture, and seafood processing sectors support nearly 68,000 jobs, including more than 36,500 commercial fish harvesters and crew from coast to coast to coast. In 2025, Canada’s fish and seafood exports totaled $8.47 billion.",
+      "matched_keywords": [
+        "support",
+        "funding"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
+    {
+      "candidate_id": "e1c7eec37c8de628d38b",
+      "country_code": "CA",
+      "country_name": "Canada",
+      "publisher": "Government of Canada – National news",
+      "feed_id": "canada-national-news",
+      "title": "Government of Canada to announce support for businesses and organizations in Ottawa and surrounding areas",
+      "url": "https://www.canada.ca/en/economic-development-southern-ontario/news/2026/11/government-of-canada-to-announce-support-for-businesses-and-organizations-in-ottawa-and-surrounding-areas.html",
+      "published_at": "2026-11-27T14:50:47+00:00",
+      "summary": "The Honourable Evan Solomon, Minister of Artificial Intelligence and Digital Innovation and Minister responsible for the Federal Economic Development Agency for Southern Ontario (FedDev Ontario), will make an important announcement to help strengthen businesses and innovation.",
+      "matched_keywords": [
+        "support"
+      ],
+      "review_status": "needs_human_review",
+      "review_note": "A hír releváns lehet, de támogatási programként, összegként, határidőként vagy jogosultságként még nincs ellenőrizve."
+    },
     {
       "candidate_id": "3bce6ea0e47045d268ae",
       "country_code": "GB",
