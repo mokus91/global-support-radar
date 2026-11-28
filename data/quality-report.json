@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-28T13:44:53.062741+00:00",
+  "generated_at": "2026-11-28T14:23:07.554000+00:00",
   "feeds_checked": 18,
-  "records_checked": 2225,
+  "records_checked": 2201,
   "expired_deadlines": 1,
   "missing_urls": 0,
   "invalid_urls": 0,
   "duplicate_ids": 0,
   "missing_titles": 0,
-  "unverified_status": 2011,
+  "unverified_status": 1988,
   "verification_tiers": {
     "verified_open": 0,
-    "api_window_candidate": 209,
-    "official_listing_candidate": 1934,
-    "unverified": 77,
+    "api_window_candidate": 208,
+    "official_listing_candidate": 1908,
+    "unverified": 80,
     "other": 5
   },
   "application_state_tiers": {
     "verified_open": 0,
     "likely_available": 208,
-    "needs_verification": 2015,
-    "expired_or_closed": 2
+    "needs_verification": 1992,
+    "expired_or_closed": 1
   },
   "verification_dimensions": {
     "open_status_verified": 0,
@@ -29,10 +29,10 @@
   "feed_summary": [
     {
       "file": "jgrants-discovery.json",
-      "records": 209,
+      "records": 208,
       "procurement_candidates": 0,
       "unverified": 0,
-      "api_window_candidates": 209,
+      "api_window_candidates": 208,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
     },
@@ -83,11 +83,11 @@
     },
     {
       "file": "eu-open-calls-discovery.json",
-      "records": 528,
+      "records": 502,
       "procurement_candidates": 0,
-      "unverified": 528,
+      "unverified": 502,
       "api_window_candidates": 0,
-      "official_listing_candidates": 528,
+      "official_listing_candidates": 502,
       "historical_archive_records": 0
     },
     {
@@ -110,9 +110,9 @@
     },
     {
       "file": "eu-national-category-discovery.json",
-      "records": 53,
+      "records": 56,
       "procurement_candidates": 0,
-      "unverified": 53,
+      "unverified": 56,
       "api_window_candidates": 0,
       "official_listing_candidates": 0,
       "historical_archive_records": 0
@@ -195,7 +195,7 @@
       "name": "Japan — JGrants",
       "file": "jgrants-discovery.json",
       "status": "checked",
-      "records_count": 209,
+      "records_count": 208,
       "http_status": null,
       "freshness": "unknown",
       "note": ""
@@ -249,7 +249,7 @@
       "name": "EU — open calls",
       "file": "eu-open-calls-discovery.json",
       "status": "checked",
-      "records_count": 528,
+      "records_count": 502,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -276,7 +276,7 @@
       "name": "EU — national categories",
       "file": "eu-national-category-discovery.json",
       "status": "checked",
-      "records_count": 53,
+      "records_count": 56,
       "http_status": null,
       "freshness": "fresh",
       "note": ""
@@ -378,17 +378,17 @@
     {
       "source_file": "eu-national-category-discovery.json",
       "source_status": "unverified-directory-lead",
-      "records": 53
+      "records": 56
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094501",
-      "records": 252
+      "records": 249
     },
     {
       "source_file": "eu-open-calls-discovery.json",
       "source_status": "31094502",
-      "records": 276
+      "records": 253
     },
     {
       "source_file": "hu-nkfih-discovery.json",
@@ -398,7 +398,7 @@
     {
       "source_file": "jgrants-discovery.json",
       "source_status": "acceptance-open-api-filtered",
-      "records": 209
+      "records": 208
     },
     {
       "source_file": "spain-discovery.json",
@@ -1399,19 +1399,20 @@
       ]
     },
     {
-      "source_file": "jgrants-discovery.json",
-      "id": "a0WJ200000CDZzQMAX",
-      "title": "【令和８年度】二酸化炭素排出抑制対策事業費等補助金（地域再エネ水素ステーション保守点検等支援事業）",
-      "official_url": "https://www.jgrants-portal.go.jp/grants/view/a0WJ200000CDZzQMAX",
-      "deadline": "2026-11-28T09:00:00.000Z",
+      "source_file": "eu-open-calls-discovery.json",
+      "id": "16601COMPETITIVE_CALLen",
+      "title": "EIT STEM Tech Talent Induction Call: Building Future-Ready STEM Talent",
+      "official_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/48939712",
+      "deadline": "2026-12-14T17:00:00.000+0000",
       "deadline_state": "upcoming",
-      "source_status": "acceptance-open-api-filtered",
-      "application_state": "expired_or_closed",
-      "priority_score": 8,
+      "source_status": "31094502",
+      "application_state": "needs_verification",
+      "priority_score": 34,
       "priority_reasons": [
-        "expired_or_closed"
+        "needs_verification",
+        "deadline_within_30_days"
       ],
-      "opportunity_type": "unclassified",
+      "opportunity_type": "funding_candidate",
       "score": 8,
       "missing_details": [
         "eligibility"
@@ -1424,7 +1425,7 @@
   "procurement_review_queue": [],
   "historical_archive_records": 4000,
   "diagnostic_records_checked": 313,
-  "diagnostic_missing_urls": 39,
+  "diagnostic_missing_urls": 38,
   "feed_errors": [],
   "notes": [
     "Schema-aware audit: title_original and coofficial_title are accepted title fields for international feeds.",

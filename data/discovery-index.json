@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T08:25:45.995484+00:00",
+  "generated_at": "2026-11-28T14:18:22.334380+00:00",
   "purpose": "Discovery only. Catalogue datasets are not verified grant or benefit offers.",
   "verified_programmes_count": 0,
   "discovered_datasets_count": 180,
@@ -845,6 +845,14 @@
       "verification_status": "unverified"
     },
     {
+      "title": "Inventories of subsidies - Port of Brussels",
+      "url": "https://datastore.brussels/web/data/dataset/a09de8f8-24f0-44f7-9190-9916a6c67179",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
       "title": "Inventories of subsidies - Schaerbeek",
       "url": "https://datastore.brussels/web/data/dataset/ea7cffcb-28e5-4704-bfd4-a283b73750b3",
       "query": "subsidies",
@@ -855,6 +863,14 @@
     {
       "title": "Inventories of subsidies - Uccle",
       "url": "https://datastore.brussels/web/data/dataset/6700d894-7c1d-402a-a59f-ee919d8835e4",
+      "query": "subsidies",
+      "source_id": "eu-data",
+      "record_type": "dataset-discovery",
+      "verification_status": "unverified"
+    },
+    {
+      "title": "Inventories of subsidies - Watermael-Boitsfort",
+      "url": "https://datastore.brussels/web/data/dataset/2b433797-3d51-43c6-9d5b-de425c8aa5e2",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",
@@ -933,14 +949,6 @@
       "verification_status": "unverified"
     },
     {
-      "title": "MIRRI Subsidies-Challenges Section OPTP (2021-06-30)",
-      "url": "https://data.gov.sk/dataset/mirri-dotacie-vyzvy-sekcia-optp-2021-06-30",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
       "title": "MIRRI Subsidies-Limits Section OPTP (2021-06-30)",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-limity-sekcia-optp-2021-06-30",
       "query": "subsidies",
@@ -959,14 +967,6 @@
     {
       "title": "MIRRI_Subsidies 2022_2023-06-06",
       "url": "https://data.gov.sk/dataset/mirri-dotacie-2022-2023-06-06",
-      "query": "subsidies",
-      "source_id": "eu-data",
-      "record_type": "dataset-discovery",
-      "verification_status": "unverified"
-    },
-    {
-      "title": "MIRRI_Subsidies 2022_2023-06-06",
-      "url": "https://data.gov.sk/dataset/2-mirri-dotacie-2022-2023-06-06",
       "query": "subsidies",
       "source_id": "eu-data",
       "record_type": "dataset-discovery",

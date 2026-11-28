@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-28T08:25:33+00:00",
+  "checked_at": "2026-11-28T14:18:09+00:00",
   "records_count": 313,
   "summary": {
-    "connection_error": 39,
+    "connection_error": 38,
     "http_error": 8,
     "not_found": 2,
-    "reachable": 233,
-    "restricted": 31
+    "reachable": 235,
+    "restricted": 30
   },
   "note": "Reachability only. HTTP status does not confirm programme availability, eligibility or deadline.",
   "records": [
@@ -36,14 +36,14 @@
     },
     {
       "id": "ae-social-welfare",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://u.ae/en/information-and-services/social-affairs/social-welfare/social-welfare-programmes"
     },
     {
       "id": "ae-uae-sme-national-programme",
-      "status": "reachable",
-      "http_status": 200,
-      "final_url": "https://www.moet.gov.ae/en/national-programme"
+      "status": "connection_error",
+      "error": "URLError"
     },
     {
       "id": "at-eu-funds-single-portal",
@@ -278,7 +278,7 @@
       "id": "eu-national-funds-de",
       "status": "reachable",
       "http_status": 200,
-      "final_url": "https://validate.perfdrive.com/?ssa=c07d2c07-1e84-417e-8637-46b39c778269&ssb=43878201361&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=b46e1b42-dxzy-429f-9c9c-3c060e4da55e&ssk=botmanager_support@radware.com&ssm=07160774332638267109790752329957&ssn=efb250d0fa3d070d9bc527125a24399edaec6967fa4b-ecec-45e3-935414&sso=279cfb78-a7e4dace22f054950be978baa6e97458226d16718485b413&ssp=17187420671795808620179589839386289&ssq=16251795424143000022254241469940585054339&ssr=MTcyLjIxMC4xNDMuNTc=&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2OTY3ZmE0Yi1lY2VjLTQ1ZTMtOWI3OC1hN2U0ZGFjZTIyZjAxLTE3OTU4NTQyNDE0MTEwLTAwMjJjMWI3YTZhZjJkNGU0ZTQxMCIsInV6bXgiOiI3ZmMwMDBkNDYzZmQ2Zi00NDM3LTQ2ZTItYmFjYi04Zjc0Mzc5NWRmODYxLTE3OTU4NTQyNDE0MTEwLTAwZjE4ZTI5NGNhMDljMjA2N2YxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
+      "final_url": "https://validate.perfdrive.com/?ssa=05e3dc34-35e2-445c-aefa-1f6e757f35c9&ssb=42917267583&ssc=https%3A%2F%2Fwww.bmwk.de%2FRedaktion%2FDE%2FArtikel%2FEuropa%2Feu-kohaesions-und-strukturpolitik.html&ssi=88d49d4e-dxzy-4011-9caa-238aa024e680&ssk=botmanager_support@radware.com&ssm=29122665406614478109036654299249&ssn=a9e92175d774b01a12dde7a45256ad3a9f918fc89501-676a-42ed-8d1ecb&sso=3d25a812-926bacfafd8e3eb6d7829139c9958275eef3a9bd26eb79d1&ssp=72977949331795861951179587269742927&ssq=33545567539193488062575391089617147483063&ssr=NTIuMTY1LjEwMS41Mg==&sst=GlobalSupportRadar-SourceMonitor/1.0%20(+https://mokus91.github.io/global-support-radar/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwZmQxMzQ2MWQtZjcwMC00ZjE3LWI4ZjItNWRmM2U1NTZlNTU4MS0xNzk1ODc1MzkxMDA5MC0wMGZlZGZjZjlhNTkwYTE1NzEyMTAiLCJfX3V6bWYiOiI3ZjkwMDA4ZmM4OTUwMS02NzZhLTQyZWQtODgxMi05MjZiYWNmYWZkOGUxLTE3OTU4NzUzOTEwMDkwLTAwMjZjN2U2YWY1NTFmZmEyNDYxMCIsInJkIjoiZXZhbHVhdGlvbmVuLWJtd2suZGUifQ=="
     },
     {
       "id": "dk-eu-funds-single-portal",
@@ -370,9 +370,9 @@
     },
     {
       "id": "eu-national-single-portals",
-      "status": "restricted",
-      "http_status": 429,
-      "final_url": "https://commission.europa.eu/funding-tenders/find-funding/funding-management-mode/national-single-portals_en"
+      "status": "reachable",
+      "http_status": 206,
+      "final_url": "https://commission.europa.eu/funding-and-tenders/find-funding/funding-management-mode/national-single-portals_en"
     },
     {
       "id": "eu-step-funding",
@@ -471,19 +471,19 @@
     {
       "id": "gh-leap",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/"
     },
     {
       "id": "gh-leap-cash-transfer",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/statement-on-implementation-of-emergency-leap/"
     },
     {
       "id": "gh-leap-cash-transfer-2026",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://leap.mogcsp.gov.gh/home/"
     },
     {
@@ -512,14 +512,14 @@
     },
     {
       "id": "eu-national-funds-gr",
-      "status": "connection_error",
-      "error": "RemoteDisconnected"
+      "status": "restricted",
+      "http_status": 403,
+      "final_url": "https://www.espa.gr"
     },
     {
       "id": "gr-eu-funds-single-portal",
-      "status": "restricted",
-      "http_status": 403,
-      "final_url": "https://www.espa.gr/"
+      "status": "connection_error",
+      "error": "RemoteDisconnected"
     },
     {
       "id": "hk-bud-fund",
@@ -928,7 +928,7 @@
     {
       "id": "np-social-security-allowance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://donidcr.gov.np/pages/social-security-allowance-rate/"
     },
     {
@@ -1506,8 +1506,9 @@
     },
     {
       "id": "de-energy-bafa",
-      "status": "connection_error",
-      "error": "URLError"
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://www.bafa.de/DE/Home/home_node.html"
     },
     {
       "id": "de-kfw-funding",
@@ -1601,7 +1602,7 @@
     {
       "id": "pl-gov-family-benefits",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.gov.pl/web/family/family-benefits"
     },
     {
@@ -1613,7 +1614,7 @@
     {
       "id": "pl-social-assistance",
       "status": "reachable",
-      "http_status": 200,
+      "http_status": 206,
       "final_url": "https://www.gov.pl/web/gov/skorzystaj-z-pomocy-spolecznej"
     },
     {
